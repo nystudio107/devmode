@@ -1,0 +1,7 @@
+{
+  "name": "jquery.payment",
+  "main": "lib/jquery.payment.js",
+  "dependencies": {
+    "jquery": ">=1.5"
+  }
+}

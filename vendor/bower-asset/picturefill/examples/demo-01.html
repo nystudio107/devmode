@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Picturefill - srcset and sizes attributes</title>
+		<link href='//fonts.googleapis.com/css?family=Raleway:500|Source+Sans+Pro:400|Source+Sans+Pro:900' rel='stylesheet' type='text/css'>
+
+		<link href='../examples/styles.css' rel='stylesheet' type='text/css'>
+		<link href="https://raw.githubusercontent.com/ResponsiveImagesCG/responsiveimages.org/master/img/favicon.ico" rel="icon">
+		<script async="" src="../dist/plugins/intrinsic-dimension/pf.intrinsic.min.js"></script>
+		<script async="" src="../dist/picturefill.min.js"></script>
+	</head>
+	<body>
+		<main>
+			<h1 class="hed">Picturefill</h1>
+			<p class="subhed">A responsive image polyfill</p>
+			<span class="ricg-seal">Officially endorsed by the <abbr title="Responsive Issues Community Group">RICG</abbr></span>
+
+		<h2 class="hed-pattern">An img with <code>srcset</code> and <code>sizes</code> attributes</h2>
+<pre><code>&lt;img
+sizes=&quot;(min-width: 40em) 80vw, 100vw&quot;
+srcset=&quot;examples/images/medium.jpg 375w,
+        examples/images/large.jpg 480w,
+        examples/images/extralarge.jpg 768w&quot;
+alt=&quot;…&quot;&gt;</code></pre>
+
+		<p>Here's how that renders in the browser. Feel free to resize to see it change.</p>
+
+		<img sizes="(min-width: 40em) 80vw, 100vw"
+				srcset="../examples/images/small.jpg 375w, ../examples/images/large.jpg 480w, ../examples/images/extralarge.jpg 768w" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+		</main>
+	</body>
+</html>
