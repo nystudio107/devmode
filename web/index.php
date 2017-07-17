@@ -6,8 +6,6 @@
 // Project root path
 $root = dirname(__DIR__);
 
-echo $root;
-
 // Composer autoloader
 require_once $root.'/vendor/autoload.php';
 
