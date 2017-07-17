@@ -21,8 +21,8 @@
 /storage/*
 /web/cpresources/*
 
-# SUB-MODULES
-/vendor/**/.git
+# COMPOSER
+/vendor/*
 
 # ASSETS
 /web/assets/*
