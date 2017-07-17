@@ -1,0 +1,23 @@
+<?php // v{VERSION} */
+/**
+ * @link http://craftcms.com/
+ * @copyright Copyright (c) Pixel & Tonic, Inc.
+ * @license http://craftcms.com/license
+ */
+
+namespace craft\behaviors;
+
+use yii\base\Behavior;
+
+/**
+ * Content behavior
+ *
+ * This class provides attributes for all the unique custom field handles.
+ */
+class ContentBehavior extends Behavior
+{
+	// Properties
+	// =========================================================================
+
+/* PROPERTIES */
+}

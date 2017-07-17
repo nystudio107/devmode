@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8 />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Picturefill - srcset and sizes attributes</title>
+		<link href='//fonts.googleapis.com/css?family=Raleway:500|Source+Sans+Pro:400|Source+Sans+Pro:900' rel='stylesheet' type='text/css'>
+
+		<link href='../examples/styles.css' rel='stylesheet' type='text/css'>
+		<link href="https://raw.githubusercontent.com/ResponsiveImagesCG/responsiveimages.org/master/img/favicon.ico" rel="icon">
+		<script async="" src="../dist/plugins/intrinsic-dimension/pf.intrinsic.min.js"></script>
+		<script async="" src="../dist/picturefill.min.js"></script>
+	</head>
+	<body>
+
+	<main>
+		<h1 class="hed">Picturefill</h1>
+		<p class="subhed">A responsive image polyfill</p>
+		<span class="ricg-seal">Officially endorsed by the <abbr title="Responsive Issues Community Group">RICG</abbr></span>
+
+	<h2 class="hed-pattern">The <code>picture</code> element</h2>
+
+	<pre><code>&lt;picture&gt;
+  &lt;source srcset=&quot;../examples/images/extralarge.jpg&quot; media=&quot;(min-width: 1000px)&quot;&gt;
+  &lt;source srcset=&quot;../examples/images/art-large.jpg&quot; media=&quot;(min-width: 600px)&quot;&gt;
+  &lt;img srcset=&quot;../examples/images/art-medium.jpg&quot; alt=&quot;…&quot;&gt;
+&lt;/picture&gt;</code></pre>
+
+		<h3 class="subhed">Supporting Picture in Internet Explorer 9</h3>
+		<p>While most versions of IE (even older ones!) are supported well, IE9 has a little conflict to work around. To support IE9, you will need to wrap a <code>video</code> element wrapper around the source elements in your <code>picture</code> tag. You can do this using conditional comments, like so:</p>
+
+<pre><code>&lt;picture&gt;
+  &lt;!--[if IE 9]&gt;&lt;video style=&quot;display: none;&quot;&gt;&lt;![endif]--&gt;
+  &lt;source srcset=&quot;../examples/images/extralarge.jpg&quot; media=&quot;(min-width: 1000px)&quot;&gt;
+  &lt;source srcset=&quot;../examples/images/art-large.jpg&quot; media=&quot;(min-width: 600px)&quot;&gt;
+  &lt;!--[if IE 9]&gt;&lt;/video&gt;&lt;![endif]--&gt;
+  &lt;img srcset=&quot;../examples/images/art-medium.jpg&quot; alt=&quot;…&quot;&gt;
+&lt;/picture&gt;</code></pre>
+
+		<p>Here's how that renders in the browser. Feel free to resize to see it change.</p>
+
+		<picture>
+			<!--[if IE 9]><video style="display: none;"><![endif]-->
+			<source srcset="../examples/images/extralarge.jpg" media="(min-width: 1000px)">
+			<source srcset="../examples/images/art-large.jpg" media="(min-width: 600px)">
+			<!--[if IE 9]></video><![endif]-->
+			<img srcset="../examples/images/art-medium.jpg" alt="A giant stone face at The Bayon temple in Angkor Thom, Cambodia">
+		</picture>
+
+	</main>
+
+	</body>
+</html>
