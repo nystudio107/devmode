@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0691e5210d585f3e708ce0b8afd06334",
+    "content-hash": "93f9ffbf6171e7b13849a713f5871b21",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -1383,6 +1383,62 @@
                 "shell"
             ],
             "time": "2017-06-30T06:21:01+00:00"
+        },
+        {
+            "name": "nystudio107/craft3-transcoder",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft3-transcoder.git",
+                "reference": "b673e6fa56a7c9100c1e162fb4de1233853815df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft3-transcoder/zipball/b673e6fa56a7c9100c1e162fb4de1233853815df",
+                "reference": "b673e6fa56a7c9100c1e162fb4de1233853815df",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-beta.1",
+                "mikehaertl/php-shellcommand": "~1.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Transcoder",
+                "handle": "transcoder",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-transcoder/master/CHANGELOG.md",
+                "components": {
+                    "transcode": "nystudio107\\transcoder\\services\\Transcode"
+                },
+                "class": "nystudio107\\transcoder\\Transcoder"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\transcoder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Transcode video & audio files to various formats, and provide video thumbnails",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "transcoder"
+            ],
+            "time": "2017-07-15T12:13:44+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
