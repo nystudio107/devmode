@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7b4fb8b75e13ba6f4f72b4c1058af90",
+    "content-hash": "135baab71452d4869ec978af3b833f52",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2231,6 +2231,62 @@
                 "multi-environment"
             ],
             "time": "2017-11-25T14:35:54+00:00"
+        },
+        {
+            "name": "nystudio107/craft3-transcoder",
+            "version": "1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft3-transcoder.git",
+                "reference": "2a9faf6a799813e766f8595299a0d432e26560e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft3-transcoder/zipball/2a9faf6a799813e766f8595299a0d432e26560e3",
+                "reference": "2a9faf6a799813e766f8595299a0d432e26560e3",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-beta.23",
+                "mikehaertl/php-shellcommand": "~1.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Transcoder",
+                "handle": "transcoder",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-transcoder/master/CHANGELOG.md",
+                "components": {
+                    "transcode": "nystudio107\\transcoder\\services\\Transcode"
+                },
+                "class": "nystudio107\\transcoder\\Transcoder"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\transcoder\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Transcode video & audio files to various formats, and provide video thumbnails",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "transcoder"
+            ],
+            "time": "2017-11-25T00:36:24+00:00"
         },
         {
             "name": "nystudio107/craft3-typogrify",
