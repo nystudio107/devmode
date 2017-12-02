@@ -30,9 +30,13 @@ return [
 
     // All environments
     '*' => [
-        'ASSET_HANDLE' => [
-            'path' => getenv('CRAFTENV_BASE_PATH') . 'ASSET_PATH',
-            'url' => getenv('CRAFTENV_BASE_URL') . 'ASSET_PATH',
+        'site' => [
+            'path' => getenv('CRAFTENV_BASE_PATH') . 'assets/site',
+            'url' => getenv('CRAFTENV_BASE_URL') . 'assets/site',
+        ],
+        'users' => [
+            'path' => getenv('CRAFTENV_BASE_PATH') . 'assets/users',
+            'url' => getenv('CRAFTENV_BASE_URL') . 'assets/users',
         ],
     ],
 
