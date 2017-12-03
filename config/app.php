@@ -16,7 +16,7 @@
 return [
 
     // All environments
-    '*' => [
+    '*'       => [
         'modules' => [
             'my-module' => \modules\Module::class,
         ],
@@ -24,74 +24,76 @@ return [
     ],
 
     // Live (production) environment
-    'live'  => [
+    'live'    => [
         'components' => [
             // Default to database 0, so PHP sessions are in a separate database
-            'redis' => [
-                'class' => yii\redis\Connection::class,
+            'redis'   => [
+                'class'    => yii\redis\Connection::class,
                 'hostname' => 'localhost',
-                'port' => 6379,
+                'port'     => 6379,
                 'database' => 0,
             ],
-            'cache' => [
+            'cache'   => [
                 // Use database 3 for live production
                 'class' => yii\redis\Cache::class,
                 'redis' => [
                     'hostname' => 'localhost',
-                    'port' => 6379,
+                    'port'     => 6379,
                     'database' => 3,
                 ],
             ],
-            'session' => function() {
-                $stateKeyPrefix = md5('Craft.'.craft\web\Session::class.'.'.Craft::$app->id);
+            'session' => function () {
+                $stateKeyPrefix = md5('Craft.' . craft\web\Session::class . '.' . Craft::$app->id);
                 /** @var yii\redis\Session $session */
                 $session = Craft::createObject([
-                    'class' => yii\redis\Session::class,
-                    'flashParam' => $stateKeyPrefix.'__flash',
-                    'name' => Craft::$app->getConfig()->getGeneral()->phpSessionName,
+                    'class'        => yii\redis\Session::class,
+                    'flashParam'   => $stateKeyPrefix . '__flash',
+                    'name'         => Craft::$app->getConfig()->getGeneral()->phpSessionName,
                     'cookieParams' => Craft::cookieConfig(),
                 ]);
                 $session->attachBehaviors([craft\behaviors\SessionBehavior::class]);
+
                 return $session;
             },
         ],
     ],
 
     // Staging (pre-production) environment
-    'staging'  => [
+    'staging' => [
         // Default to database 0, so PHP sessions are in a separate database
         'components' => [
-            'redis' => [
-                'class' => yii\redis\Connection::class,
+            'redis'   => [
+                'class'    => yii\redis\Connection::class,
                 'hostname' => 'localhost',
-                'port' => 6379,
+                'port'     => 6379,
                 'database' => 0,
             ],
             // Use database 4 for staging
-            'cache' => [
+            'cache'   => [
                 'class' => yii\redis\Cache::class,
                 'redis' => [
                     'hostname' => 'localhost',
-                    'port' => 6379,
+                    'port'     => 6379,
                     'database' => 4,
                 ],
             ],
-            'session' => function() {
-                $stateKeyPrefix = md5('Craft.'.craft\web\Session::class.'.'.Craft::$app->id);
+            'session' => function () {
+                $stateKeyPrefix = md5('Craft.' . craft\web\Session::class . '.' . Craft::$app->id);
                 /** @var yii\redis\Session $session */
                 $session = Craft::createObject([
-                    'class' => yii\redis\Session::class,
-                    'flashParam' => $stateKeyPrefix.'__flash',
-                    'name' => Craft::$app->getConfig()->getGeneral()->phpSessionName,
+                    'class'        => yii\redis\Session::class,
+                    'flashParam'   => $stateKeyPrefix . '__flash',
+                    'name'         => Craft::$app->getConfig()->getGeneral()->phpSessionName,
                     'cookieParams' => Craft::cookieConfig(),
                 ]);
                 $session->attachBehaviors([craft\behaviors\SessionBehavior::class]);
+
                 return $session;
             },
         ],
     ],
 
     // Local (development) environment
-    'local'  => [
+    'local'   => [
     ],
 ];
