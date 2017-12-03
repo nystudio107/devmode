@@ -37,7 +37,7 @@
         
         <itunes:explicit>clean</itunes:explicit>
         
-        <itunes:image href="{{ showInfo.showImage.one().getUrl() }}" />
+        <itunes:image href="{{ url(showInfo.showImage.one().getUrl(), null, 'http') }}" />
         
         <itunes:category text="{{ showInfo.showGenre }}">
             <itunes:category text="Tech News" />
@@ -78,7 +78,7 @@
                 {% if transAudioUrl |length %}
                     {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
         
-                    <enclosure url="{{ url(transAudioUrl |trim('/', 'left')) }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
+                    <enclosure url="{{ url(transAudioUrl, null, 'http') }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
                     <guid>{{ url(episode.episodeNumber) }}</guid>
                     
                     <itunes:duration>{{ fileInfo.duration |round }}</itunes:duration>
