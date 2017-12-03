@@ -1,10 +1,38 @@
+{% import '_partials/_macros.twig' as macro %}
+{% spaceless %}
+    {% set codeLines = [] %}
+    {% set codeLine %}
+        {% verbatim %}
+            <span class="text-grey">{%</span><span class="text-purple"> if </span><span class="text-grey">header %}</span>
+        {% endverbatim %}
+    {% endset  %}
+    {% set codeLines = codeLines |merge({
+        'line1': codeLine
+    }) %}
+    {% set codeLine %}
+        {% verbatim %}
+            <span class="text-grey">{%</span><span class="text-purple"> endif </span><span class="text-grey"> %}</span>
+        {% endverbatim %}
+    {% endset  %}
+    {% set codeLines = codeLines |merge({
+        'line10': codeLine
+    }) %}
+{% endspaceless %}
 <header>
-    <div>
-        <p>
-            Header
-        </p>
+    <div class="px-4 py-4 bg-grey-darkest">
+        <div class="h-48 flex items-center justify-center flex-no-wrap relative">
+            {{  macro.displayCodeLines(1, 10, codeLines) }}
+            <div class="w-full text-center">
+                <div class="inline-block text-left p-8 m-4">
+                    <p class="font-mono text-grey-lightest text-5xl">
+                        devMode.fm
+                    </p>
+                    <p class="font-mono text-grey text-1xl">
+                        // a podcast about modern web development
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
-
     {% include '_partials/_navbar' %}
-
 </header>

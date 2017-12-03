@@ -1,7 +1,31 @@
+{% import '_partials/_macros.twig' as macro %}
+{% spaceless %}
+    {% set codeLines = [] %}
+    {% set codeLine %}
+        <span class="text-grey">// Copyright &copy; {{ now |date('Y') }} Andrew Welch &amp; Patrick Harrington.</span>
+    {% endset  %}
+    {% set codeLines = codeLines |merge({
+        'line22': codeLine
+    }) %}
+    {% set codeLine %}
+        <span class="text-grey">// Sponsored by nystudio107.com</span>
+    {% endset  %}
+    {% set codeLines = codeLines |merge({
+        'line23': codeLine
+    }) %}
+    {% set codeLine %}
+        {% verbatim %}
+            <span class="text-grey-light"> {{ footer.privacyPolicy }} </span><span class="text-grey-light"> {{ footer.termsOfService }} </span>
+        {% endverbatim %}
+    {% endset  %}
+    {% set codeLines = codeLines |merge({
+        'line24': codeLine
+    }) %}
+{% endspaceless %}
 <footer>
-    <div>
-        <p>
-            Footer
-        </p>
+    <div class="px-4 py-4 bg-grey-darkest">
+        <div class="h-64 relative">
+            {{  macro.displayCodeLines(11, 24, codeLines) }}
+        </div>
     </div>
 </footer>
