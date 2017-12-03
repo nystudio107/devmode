@@ -38,6 +38,10 @@ return [
             'path' => getenv('CRAFTENV_BASE_PATH') . 'assets/users',
             'url' => getenv('CRAFTENV_BASE_URL') . 'assets/users',
         ],
+        'episodes' => [
+            'path' => getenv('CRAFTENV_BASE_PATH') . 'assets/episodes',
+            'url' => getenv('CRAFTENV_BASE_URL') . 'assets/episodes',
+        ],
     ],
 
     // Live (production) environment
