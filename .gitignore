@@ -34,6 +34,9 @@
 /yarn-error.log
 /npm-debug.log
 
+# TRANSCODER
+/web/transcoder/*
+
 # MISC FILES
 .cache
 .DS_Store
