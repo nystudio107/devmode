@@ -1,4 +1,4 @@
-{% import '_partials/_macros.twig' as macro %}
+{% from '_partials/_macros.twig' import displayCodeLines %}
 {% spaceless %}
     {% set codeLines = [] %}
     {% set codeLine %}
@@ -21,7 +21,7 @@
 <header>
     <div class="px-4 py-4 bg-grey-darkest">
         <div class="h-48 flex items-center justify-center flex-no-wrap relative">
-            {{  macro.displayCodeLines(1, 10, codeLines) }}
+            {{ displayCodeLines(1, 10, codeLines) }}
             <div class="w-full text-center">
                 <div class="inline-block text-left p-8 m-4">
                     <p class="font-mono text-grey-lightest text-5xl">
