@@ -14,8 +14,8 @@
         
         <language>{{ craft.app.language |slice(0,2) }}</language>
         <atom:link href="{{ url(craft.app.request.pathInfo) }}" rel="self" type="application/rss+xml" />
-        <pubDate>{{ now.rss }}</pubDate>
-        <lastBuildDate>{{ now.rss }}</lastBuildDate>
+        <pubDate>{{ now |rss }}</pubDate>
+        <lastBuildDate>{{ now |rss }}</lastBuildDate>
         
         <copyright>Copyright ©{{ now |date('Y') }} {% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</copyright>
         
@@ -50,7 +50,7 @@
                 <title>{{ episode.title }}</title>
                 <link>{{ episode.url }}</link>
                 
-                <itunes:author>{% for host in episode.episodeHosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
+                <itunes:author>{% for host in episode.episodeHosts.all() %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
                 
                 <itunes:subtitle>Episode {{ episode.episodeNumber }}</itunes:subtitle>
                 
