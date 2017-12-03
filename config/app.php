@@ -34,12 +34,12 @@ return [
                 'database' => 0,
             ],
             'cache' => [
-                // Use database 1 for live production
+                // Use database 3 for live production
                 'class' => yii\redis\Cache::class,
                 'redis' => [
                     'hostname' => 'localhost',
                     'port' => 6379,
-                    'database' => 1,
+                    'database' => 3,
                 ],
             ],
             'session' => function() {
@@ -67,13 +67,13 @@ return [
                 'port' => 6379,
                 'database' => 0,
             ],
-            // Use database 2 for staging
+            // Use database 4 for staging
             'cache' => [
                 'class' => yii\redis\Cache::class,
                 'redis' => [
                     'hostname' => 'localhost',
                     'port' => 6379,
-                    'database' => 2,
+                    'database' => 4,
                 ],
             ],
             'session' => function() {
