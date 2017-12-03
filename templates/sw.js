@@ -1,5 +1,5 @@
-{% set baseUrl = craft.config.environmentVariables.baseUrl %}
-{% set staticAssetsVersion = "." ~ craft.config.environmentVariables.staticAssetsVersion %}
+{% set baseUrl = craft.app.config.general.custom.baseUrl %}
+{% set staticAssetsVersion = craft.app.config.general.custom.staticAssetsVersion %}
 {% minify js %}
 // borrowed mightily from Fillament Group - https://www.filamentgroup.com/lab/modernizing-delivery.html
 
@@ -10,8 +10,6 @@
 /*global Response:true */
 /*global Request:true */
 
-{% set blogEntries = craft.routeMap.getSectionUrls('blog', {'limit': 9}) %}
-
 (function(){
 'use strict';
 
@@ -21,36 +19,19 @@ const maxStaticAssetsCache = 100;
 
 // borrowing heavily from adactio's sw patterns here... Thanks JK!
 
-const version = 'nys1.1::';
+const version = 'devmode1.0::';
 const staticCacheName = version + 'static';
 const pagesCacheName = version + 'pages';
 const imagesCacheName = version + 'images';
 const offlinePages = [
-  '/blog/index',
-{% for blogEntry in blogEntries %}
-    '{{ blogEntry }}',
-{% endfor %}
   '/offline',
   '/'
 ];
 
 const staticAssets = [
   '{{ baseUrl }}js/lazysizes.min{{staticAssetsVersion}}.js',
-  '{{ baseUrl }}js/prism.min{{staticAssetsVersion}}.js',
-  '{{ baseUrl }}js/vue.min{{staticAssetsVersion}}.js',
-  '{{ baseUrl }}js/vue-resource.min{{staticAssetsVersion}}.js',
 
-  '{{ baseUrl }}css/site.combined.min{{staticAssetsVersion}}.css',
-
-  '{{ baseUrl }}fonts/esfera-webfont.woff2',
-  '{{ baseUrl }}fonts/brandon-regular-webfont.woff2',
-  '{{ baseUrl }}fonts/brandon-bold-webfont.woff2',
-  '{{ baseUrl }}fonts/brandon-regular-italic-webfont.woff2',
-  '{{ baseUrl }}fonts/fontello.woff2',
-  '{{ baseUrl }}fonts/OperatorMonoSSm-Book.woff2',
-  '{{ baseUrl }}fonts/OperatorMonoSSm-BookItalic.woff2',
-
-  '/api/blog.json',
+  '{{ baseUrl }}css/site.combined.min{{staticAssetsVersion}}.css'
 ];
 
 function stashInCache(cacheName, request, response) {
