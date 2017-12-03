@@ -1,15 +1,27 @@
 /* -- Site fonts */
 
-/* -- Esfera Regular */
+/* -- Operator Mono normal */
 
 @font-face {
-    font-family: 'esfera';
-    src: local('esfera-webfont'),
-         url('{{ baseUrl }}fonts/esfera-webfont.eot');
-    src: url('{{ baseUrl }}fonts/esfera-webfont.eot?#iefix') format('embedded-opentype'),
-         url('{{ baseUrl }}fonts/esfera-webfont.woff2') format('woff2'),
-         url('{{ baseUrl }}fonts/esfera-webfont.woff') format('woff'),
-         url('{{ baseUrl }}fonts/esfera-webfont.ttf') format('truetype');
-    font-weight: 400;
+    font-family: 'Operator Mono';
+    src: url('{{ baseUrl }}fonts/OperatorMonoSSm-Book.eot');
+    src: url('{{ baseUrl }}fonts/OperatorMonoSSm-Book.eot?#iefix') format('embedded-opentype'),
+    url('{{ baseUrl }}fonts/OperatorMonoSSm-Book.woff2') format('woff2'),
+    url('{{ baseUrl }}fonts/OperatorMonoSSm-Book.woff') format('woff'),
+    url('{{ baseUrl }}fonts/OperatorMonoSSm-Book.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
+}
+
+/* -- Operator Mono italic */
+
+@font-face {
+    font-family: 'Operator Mono';
+    src: url('{{ baseUrl }}fonts/OperatorMonoSSm-BookItalic.eot');
+    src: url('{{ baseUrl }}fonts/OperatorMonoSSm-BookItalic.eot?#iefix') format('embedded-opentype'),
+    url('{{ baseUrl }}fonts/OperatorMonoSSm-BookItalic.woff2') format('woff2'),
+    url('{{ baseUrl }}fonts/OperatorMonoSSm-BookItalic.woff') format('woff'),
+    url('{{ baseUrl }}fonts/OperatorMonoSSm-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
