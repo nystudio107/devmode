@@ -21,7 +21,7 @@
         </div>
         {# -- Episode tags -- #}
         <div class="text-grey-dark text-xl py-2">
-            {% for tag in episode.episodeTags %}
+            {% for tag in episode.episodeTags.all() %}
                 <span>#{{ tag.title }}{% if not loop.last %} {% endif %}</span>
             {% endfor %}
         </div>
