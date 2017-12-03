@@ -103,12 +103,14 @@
         <div id="page-container">
         
             {% include '_partials/_info_header' %}
-        
-            <main>
-                {% block content %}
-                {% endblock %}
-            </main>
-        
+    
+            <div id="content-container" class="container mx-auto">
+                <main>
+                    {% block content %}
+                    {% endblock %}
+                </main>
+            </div>
+            
             {% block subcontent %}
             {% endblock %}
             

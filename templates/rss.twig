@@ -10,7 +10,7 @@
         
         <link>{{ showInfo.showUrl }}</link>
         
-        <language>"{{ craft.app.language |slice(0,2) }}</language>
+        <language>{{ craft.app.language |slice(0,2) }}</language>
         <atom:link href="{{ craft.request.url }}" rel="self" type="application/rss+xml" />
         <pubDate>{{ now.rss }}</pubDate>
         <lastBuildDate>{{ now.rss }}</lastBuildDate>

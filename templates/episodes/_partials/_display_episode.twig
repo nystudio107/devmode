@@ -1,0 +1,51 @@
+<div class="w-full sm:w-1/2 bg-white">
+    {% set showImage = showInfo.showImage.one() %}
+    <picture>
+        <source srcset="{{ showImage.optimizedImages.srcsetWebP() }}"
+                sizes="50vw"
+                type="image/webp" />
+        <img src="{{ showImage.optimizedImages.src() }}"
+             srcset="{{ showImage.optimizedImages.srcset() }}"
+             sizes="50vw" />
+    </picture>
+</div>
+<div class="w-full sm:w-1/2 bg-white">
+    <div class="p-4">
+        {# -- Episode number and date -- #}
+        <div class="text-grey-dark text-lg uppercase  py-2">
+            {{ "Episode " ~ episode.episodeNumber }} &middot; {{ episode.postDate |date() }}
+        </div>
+        {# -- Episode title -- #}
+        <div class="text-black text-3xl  py-2">
+            {{ episode.title |typogrify }}
+        </div>
+        {# -- Episode tags -- #}
+        <div class="text-grey-dark text-xl py-2">
+            {% for tag in episode.episodeTags %}
+                <span>#{{ tag.title }}{% if not loop.last %} {% endif %}</span>
+            {% endfor %}
+        </div>
+        {# -- Episode summary -- #}
+        <div class="text-black text-xl  py-2">
+            {{ episode.episodeSummary |typogrify }}
+        </div>
+        {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
+            "audioBitRate": "64k",
+            "audioSampleRate": 22050,
+            "audioChannels": 1
+        }) %}
+        {% if transAudioUrl |length %}
+            <div class="py-2">
+                <audio controls>
+                    <source src="{{ transAudioUrl }}" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
+                
+            </div>
+            <div class="text-grey-dark text-xl py-2">
+                Play time: {{ fileInfo.duration |humanDuration }}
+            </div>
+        {% endif %}
+    </div>
+</div>
