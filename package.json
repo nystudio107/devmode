@@ -1,7 +1,7 @@
 {
-    "name": "nystudio107",
+    "name": "devmode",
     "version": "1.0.0",
-    "description": "Website for nystudio107.com",
+    "description": "Website for devmode.fm",
     "main": "gulpfile.js",
     "author": "Andrew Welch, nystudio107 <andrew@nystudio107.com>",
     "copyright": "nystudio107",
@@ -47,9 +47,9 @@
         "templates": "./templates/"
     },
     "urls": {
-        "live": "https://nystudio107.com/",
-        "local": "https://nystudio107.dev/",
-        "critical": "https://nystudio107.com/"
+        "live": "https://devmode.fm/",
+        "local": "http://devmode.dev/",
+        "critical": "https://devmode.fm/"
     },
     "vars": {
         "siteCssName": "site.combined.min.css",
