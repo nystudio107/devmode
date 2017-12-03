@@ -65,7 +65,7 @@
                     ]]>
                 </description>
                 
-                <itunes:image href="{{ showInfo.showImage.one().getUrl() }}" />
+                <itunes:image href="{{ url(showInfo.showImage.one().getUrl(), null, 'http') }}" />
                 
                 <itunes:explicit>clean</itunes:explicit>
                 <pubDate>{{ episode.postDate.rss }}</pubDate>
