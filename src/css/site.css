@@ -136,3 +136,19 @@ html.user-is-tabbing *:focus {
     /* Uncomment for 3D effect */
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+
+* {
+
+    /* -- Font smoothing and ligatures */
+
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
