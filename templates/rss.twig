@@ -1,5 +1,7 @@
 {% header "Content-Type: application/rss+xml" %}
 {% set hosts = craft.users.group('owners').all() %}
+{% set baseUrl = craft.app.config.general.custom.baseUrl %}
+{% set staticAssetsVersion = craft.app.config.general.custom.staticAssetsVersion %}
 <?xml version="1.0" encoding="UTF-8"?>
 
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -54,12 +56,12 @@
                 
                 <itunes:summary>
                     <![CDATA[
-                    {{ episode.episodeSummary }}
+                    {{ episode.episodeSummary |raw }}
                     ]]>
                 </itunes:summary>
                 <description>
                     <![CDATA[
-                    {{ episode.episodeSummary }}
+                    {{ episode.episodeSummary |raw }}
                     ]]>
                 </description>
                 
@@ -76,10 +78,10 @@
                 {% if transAudioUrl |length %}
                     {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
         
-                    <enclosure url="{{ transAudioUrl }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
+                    <enclosure url="{{ url(transAudioUrl) }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
                     <guid>{{ url(episode.episodeNumber) }}</guid>
                     
-                    <itunes:duration>{{ fileInfo.duration }}</itunes:duration>
+                    <itunes:duration>{{ fileInfo.duration |round }}</itunes:duration>
                 {% endif %}
             </item>
         {% endfor %}
