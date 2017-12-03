@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa0729ce1dbdb8e03419b77fdfdebd58",
+    "content-hash": "f832c251bfaba4f2f1fa0e937532dd18",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -2097,6 +2097,61 @@
                 "shell"
             ],
             "time": "2017-11-14T21:09:57+00:00"
+        },
+        {
+            "name": "nystudio107/craft3-disqus",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft3-disqus.git",
+                "reference": "f19591809af3d87190f8598cc1fae8f750c648ae"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft3-disqus/zipball/f19591809af3d87190f8598cc1fae8f750c648ae",
+                "reference": "f19591809af3d87190f8598cc1fae8f750c648ae",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-beta.23"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Disqus",
+                "handle": "disqus",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-disqus/master/CHANGELOG.md",
+                "components": {
+                    "disqusService": "nystudio107\\disqus\\services\\DisqusService"
+                },
+                "class": "nystudio107\\disqus\\Disqus"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\disqus\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Integrates the Disqus commenting system into Craft 3 websites, including Single Sign On (SSO) and custom login/logout URLs",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "disqus"
+            ],
+            "time": "2017-08-05T17:26:15+00:00"
         },
         {
             "name": "nystudio107/craft3-eagerbeaver",
