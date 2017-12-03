@@ -3,26 +3,15 @@
 if (document.documentElement.className.indexOf( "fonts-loaded" ) < 0 ) {
     var fontello = new FontFaceObserver("fontello", {
     });
-    var BrandonRegular = new FontFaceObserver("brandon", {
-        weight: 400,
+    var OperatorMonoRegular = new FontFaceObserver("Operator Mono", {
     });
-    var BrandonRegularItalic = new FontFaceObserver("brandon", {
-        weight: 400,
-        style: "italic",
-    });
-    var BrandonBold = new FontFaceObserver("brandon", {
-        weight: 700,
-    });
-    var Esfera = new FontFaceObserver("esfera", {
-        weight: 400,
+    var OperatorMonoItalic = new FontFaceObserver("Operator Mono", {
     });
 
     Promise.all([
         fontello.load(''),
-        BrandonRegular.load(),
-        BrandonRegularItalic.load(),
-        BrandonBold.load(),
-        Esfera.load(),
+        OperatorMonoRegular.load(),
+        OperatorMonoItalic.load(),
     ]).then(function() {
 
       document.documentElement.className += " fonts-loaded";
