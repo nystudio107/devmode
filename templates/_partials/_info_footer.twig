@@ -3,13 +3,13 @@
 {% spaceless %}
     {% set codeLines = [] %}
     {% set codeLine %}
-        <span class="text-grey">// Copyright &copy; {{ now |date('Y') }} Andrew Welch &amp; Patrick Harrington.</span>
+        <span class="text-grey italic">// Copyright &copy; {{ now |date('Y') }} Andrew Welch &amp; Patrick Harrington.</span>
     {% endset  %}
     {% set codeLines = codeLines |merge({
         'line22': codeLine
     }) %}
     {% set codeLine %}
-        <span class="text-grey">// Sponsored by nystudio107.com</span>
+        <span class="text-grey italic">// Sponsored by nystudio107.com</span>
     {% endset  %}
     {% set codeLines = codeLines |merge({
         'line23': codeLine
