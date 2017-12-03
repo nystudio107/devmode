@@ -1,0 +1,90 @@
+{% header "Content-Type: application/rss+xml" %}
+{% set hosts = craft.users.group('owners').all() %}
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
+    
+    <channel>
+        
+        <title>{{ showInfo.showTitle }}</title>
+        
+        <link>{{ showInfo.showUrl }}</link>
+        
+        <language>"{{ craft.app.language |slice(0,2) }}</language>
+        <atom:link href="{{ craft.request.url }}" rel="self" type="application/rss+xml" />
+        <pubDate>{{ now.rss }}</pubDate>
+        <lastBuildDate>{{ now.rss }}</lastBuildDate>
+        
+        <copyright>Copyright &copy;{{ now.year }} {% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</copyright>
+        
+        <itunes:subtitle>showInfo.showSubTitle</itunes:subtitle>
+        
+        <itunes:summary>{{ showInfo.showDescription }}</itunes:summary>
+        <description>{{ showInfo.showDescription }}</description>
+        
+        
+        <itunes:author>{% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
+    
+        <itunes:owner>
+        {% for host in hosts %}
+            
+            <itunes:name>{{ host.fullName }}</itunes:name>
+            <itunes:email>{{ host.email }}</itunes:email>
+        {% endfor %}
+        </itunes:owner>
+        
+        <itunes:explicit>clean</itunes:explicit>
+        
+        <itunes:image href="{{ showInfo.showImage.one().getUrl() }}" />
+        
+        <itunes:category text="{{ showInfo.showGenre }}">
+            <itunes:category text="Tech News" />
+        </itunes:category>
+        
+        
+        {% for episode in craft.entries.section('episodes').all() %}
+            <item>
+                
+                <title>{{ episode.title }}</title>
+                <link>{{ episode.url }}</link>
+                
+                <itunes:author>{% for host in episode.episodeHosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
+                
+                <itunes:subtitle>Episode {{ episode.episodeNumber }}</itunes:subtitle>
+                
+                <itunes:summary>
+                    <![CDATA[
+                    {{ episode.episodeSummary }}
+                    ]]>
+                </itunes:summary>
+                <description>
+                    <![CDATA[
+                    {{ episode.episodeSummary }}
+                    ]]>
+                </description>
+                
+                <itunes:image href="{{ showInfo.showImage.one().getUrl() }}" />
+                
+                <itunes:explicit>clean</itunes:explicit>
+                <pubDate>{{ episode.postDate.rss }}</pubDate>
+    
+                {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
+                    "audioBitRate": "64k",
+                    "audioSampleRate": 22050,
+                    "audioChannels": 1
+                }) %}
+                {% if transAudioUrl |length %}
+                    {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
+        
+                    <enclosure url="{{ transAudioUrl }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
+                    <guid>{{ url(ep.episodeNumber) }}</guid>
+                    
+                    <itunes:duration>{{ fileInfo.duration }}</itunes:duration>
+                {% endif %}
+            </item>
+        {% endfor %}
+    
+    
+    </channel>
+
+</rss>
