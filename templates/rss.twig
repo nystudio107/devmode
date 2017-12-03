@@ -78,7 +78,7 @@
                 {% if transAudioUrl |length %}
                     {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
         
-                    <enclosure url="{{ url(transAudioUrl) }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
+                    <enclosure url="{{ url(transAudioUrl |trim('/', 'left')) }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
                     <guid>{{ url(episode.episodeNumber) }}</guid>
                     
                     <itunes:duration>{{ fileInfo.duration |round }}</itunes:duration>
