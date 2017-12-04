@@ -17,7 +17,9 @@
         </div>
         {# -- Episode title -- #}
         <div class="text-black text-3xl  py-2">
-            {{ episode.title |typogrify }}
+            <a href="{{ episode.url }}" class="title-link">
+                {{ episode.title |typogrify }}
+            </a>
         </div>
         {# -- Episode tags -- #}
         <div class="text-grey-dark text-xl py-2">

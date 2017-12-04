@@ -37,6 +37,14 @@
     @apply .text-white
 }
 
+.title-link {
+    @apply .text-grey-darkest .no-underline
+}
+
+.title-link:hover {
+    @apply .text-black
+}
+
 .footer-link {
     @apply .text-grey-lightest .font-sans .text-lg .no-underline
 }
