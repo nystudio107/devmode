@@ -17,6 +17,9 @@
                 } only %}
             </div>
         </div>
+        {% if not craft.request.isLivePreview and entry.status == "live" %}
+            {{ disqusEmbed(entry.slug, entry.title, entry.url) }}
+        {% endif %}
     </section>
 
 {% endblock %}
