@@ -9,6 +9,7 @@ if (document.documentElement.className.indexOf( "fonts-loaded" ) < 0 ) {
     });
 
     Promise.all([
+        fontello.load(''),
         OperatorMonoRegular.load(),
         OperatorMonoItalic.load(),
     ]).then(function() {

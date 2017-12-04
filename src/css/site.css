@@ -29,6 +29,22 @@
  * @import "components/forms";
  */
 
+.navbar-link {
+    @apply .text-purple-darker .font-sans .text-lg .no-underline
+}
+
+.navbar-link:hover {
+    @apply .text-white
+}
+
+.footer-link {
+    @apply .text-grey-lightest .font-sans .text-lg .no-underline
+}
+
+.footer-link:hover {
+    @apply .text-white
+}
+
 /* -- CSS variables */
 :root {
     --outlineColor: #5db7a5,
