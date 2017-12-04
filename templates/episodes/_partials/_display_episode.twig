@@ -32,6 +32,7 @@
         <div class="text-black text-xl  py-2">
             {{ episode.episodeSummary |typogrify }}
         </div>
+        {# -- Audio player -- #}
         {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
             "audioBitRate": "64k",
             "audioSampleRate": 22050,
@@ -44,10 +45,25 @@
                     Your browser does not support the audio element.
                 </audio>
                 {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
-                
             </div>
-            <div class="text-grey-dark text-xl py-2">
-                Play time: {{ fileInfo.duration |humanDuration }}
+            {# -- Play time -- #}
+            {% if  fileInfo |length %}
+                <div class="text-grey-dark text-xl py-2">
+                    Play time: {{ fileInfo.duration |humanDuration }}
+                </div>
+            {% endif %}
+        {% endif %}
+        {# -- Reference links -- #}
+        {% if  episode.episodeReferenceLinks |length %}
+            <div class="text-grey-dark text-lg uppercase  py-2">
+                Mentioned in the show:
+            </div>
+            <div class="text-black text-xl py-2">
+                {% for link in episode.episodeReferenceLinks %}
+                    <li>
+                        <a href="{{ link.linkUrl }}" class="title-link" title="{{ link.linkName }}" rel="nofollow,noopener">{{ link.linkName }}</a>
+                    </li>
+                {% endfor %}
             </div>
         {% endif %}
     </div>
