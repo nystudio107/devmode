@@ -1,8 +1,9 @@
-<div class="w-full sm:w-1/2 bg-white">
+<div class="w-full md:w-1/2 bg-white">
     {% set showImage = showInfo.showImage.one() %}
     <picture>
         <source srcset="{{ showImage.optimizedImages.srcsetWebP() }}"
-                sizes="50vw"
+                sizes="(min-width: 768px) 50vw,
+                    100vw"
                 type="image/webp" />
         <img src="{{ showImage.optimizedImages.src() }}"
              srcset="{{ showImage.optimizedImages.srcset() }}"
