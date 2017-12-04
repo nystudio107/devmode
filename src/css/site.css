@@ -45,11 +45,11 @@
     @apply .text-black
 }
 
-.footer-link {
-    @apply .text-grey-lightest .font-sans .text-lg .no-underline
+.header-link {
+    @apply .text-grey-lightest .no-underline
 }
 
-.footer-link:hover {
+.header-link:hover {
     @apply .text-white
 }
 
