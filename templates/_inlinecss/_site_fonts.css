@@ -1,5 +1,19 @@
 /* -- Site fonts */
 
+/* -- Fontello normal */
+
+@font-face {
+    font-family: 'fontello';
+    src: url('{{ baseUrl }}fonts/fontello.eot');
+    src: url('{{ baseUrl }}fonts/fontello.eot?#iefix') format('embedded-opentype'),
+    url('{{ baseUrl }}fonts/fontello.woff2') format('woff2'),
+    url('{{ baseUrl }}fonts/fontello.woff') format('woff'),
+    url('{{ baseUrl }}fonts/fontello.ttf') format('truetype'),
+    url('{{ baseUrl }}fonts/fontello.svg#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* -- Operator Mono normal */
 
 @font-face {
