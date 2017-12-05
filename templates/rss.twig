@@ -1,6 +1,6 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 {% header "Content-Type: application/rss+xml" %}
-{% set hosts = craft.users.group('owners').all() %}
+{% set hosts = craft.users.group("owners").all() %}
 {% set baseUrl = craft.app.config.general.custom.baseUrl %}
 {% set staticAssetsVersion = craft.app.config.general.custom.staticAssetsVersion %}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -18,7 +18,7 @@
         <pubDate>{{ now |rss }}</pubDate>
         <lastBuildDate>{{ now |rss }}</lastBuildDate>
         
-        <copyright>Copyright ©{{ now |date('Y') }} {% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</copyright>
+        <copyright>Copyright ©{{ now |date("Y") }} {% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</copyright>
         
         <itunes:subtitle>showInfo.showSubTitle</itunes:subtitle>
         
@@ -38,14 +38,14 @@
         
         <itunes:explicit>clean</itunes:explicit>
         
-        <itunes:image href="{{ url(showInfo.showImage.one().getUrl(), null, 'http') }}" />
+        <itunes:image href="{{ url(showInfo.showImage.one().getUrl(), null, "http") }}" />
         
         <itunes:category text="{{ showInfo.showGenre }}">
             <itunes:category text="Tech News" />
         </itunes:category>
         
         
-        {% for episode in craft.entries.section('episodes').all() %}
+        {% for episode in craft.entries.section("episodes").all() %}
             <item>
                 
                 <title>{{ episode.title }}</title>
@@ -66,7 +66,7 @@
                     ]]>
                 </description>
                 
-                <itunes:image href="{{ url(showInfo.showImage.one().getUrl(), null, 'http') }}" />
+                <itunes:image href="{{ url(showInfo.showImage.one().getUrl(), null, "http") }}" />
                 
                 <itunes:explicit>clean</itunes:explicit>
                 <pubDate>{{ episode.postDate |rss }}</pubDate>
@@ -79,7 +79,7 @@
                 {% if transAudioUrl |length %}
                     {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
         
-                    <enclosure url="{{ url(transAudioUrl, null, 'http') }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
+                    <enclosure url="{{ url(transAudioUrl, null, "http") }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
                     <guid>{{ url(episode.episodeNumber) }}</guid>
                     
                     <itunes:duration>{{ fileInfo.duration |round }}</itunes:duration>

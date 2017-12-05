@@ -1,20 +1,19 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
-{% from '_partials/_macros.twig' import displayCodeLines %}
-{% import '' as macro %}
+{% from "_partials/_macros.twig" import displayCodeLines %}
 {% spaceless %}
-    {% set hosts = craft.users.group('owners').all() %}
+    {% set hosts = craft.users.group("owners").all() %}
     {% set codeLines = [] %}
     {% set codeLine %}
-        <span class="text-grey italic">// Copyright &copy; {{ now |date('Y') }} {% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</span>
+        <span class="text-grey italic">// Copyright &copy; {{ now |date("Y") }} {% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</span>
     {% endset  %}
     {% set codeLines = codeLines |merge({
-        'line22': codeLine
+        "line22": codeLine
     }) %}
     {% set codeLine %}
         <span class="text-grey italic">// Sponsored by nystudio107.com</span>
     {% endset  %}
     {% set codeLines = codeLines |merge({
-        'line23': codeLine
+        "line23": codeLine
     }) %}
     {% set codeLine %}
         {% verbatim %}
@@ -22,7 +21,7 @@
         {% endverbatim %}
     {% endset  %}
     {% set codeLines = codeLines |merge({
-        'line24': codeLine
+        "line24": codeLine
     }) %}
 {% endspaceless %}
 <footer>

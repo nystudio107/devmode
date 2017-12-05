@@ -1,5 +1,5 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
-{% from '_partials/_macros.twig' import displayCodeLines %}
+{% from "_partials/_macros.twig" import displayCodeLines %}
 {% spaceless %}
     {% set codeLines = [] %}
     {% set codeLine %}
@@ -8,7 +8,7 @@
         {% endverbatim %}
     {% endset  %}
     {% set codeLines = codeLines |merge({
-        'line1': codeLine
+        "line1": codeLine
     }) %}
     {% set codeLine %}
         {% verbatim %}
@@ -16,7 +16,7 @@
         {% endverbatim %}
     {% endset  %}
     {% set codeLines = codeLines |merge({
-        'line10': codeLine
+        "line10": codeLine
     }) %}
 {% endspaceless %}
 <header>
@@ -37,5 +37,5 @@
             </div>
         </div>
     </div>
-    {% include '_partials/_navbar' %}
+    {% include "_partials/_navbar.twig" %}
 </header>
