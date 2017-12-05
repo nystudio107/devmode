@@ -1,9 +1,9 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
-{% extends "_layouts/_layout" %}
+{% extends "_layouts/_layout.twig" %}
 
 {% block _inline_css %}
     <style>
-        {{ source ('index_critical.min.css', ignore_missing = true) }}
+        {{ source ("index_critical.min.css", ignore_missing = true) }}
     </style>
 {% endblock %}
 
@@ -11,11 +11,11 @@
     
     <section>
         <div>
-            {% for episode in craft.entries.section('episodes').all() %}
+            {% for episode in craft.entries.section("episodes").all() %}
                 <div class="flex flex-wrap">
-                    {% include 'episodes/_partials/_display_episode' with {
-                        'episode': episode,
-                        'showInfo': showInfo,
+                    {% include "episodes/_partials/_display_episode.twig" with {
+                        "episode": episode,
+                        "showInfo": showInfo,
                     } only %}
                 </div>
             {% endfor %}
