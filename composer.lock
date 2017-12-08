@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce8d1834e2255e4ab97f145492d58196",
+    "content-hash": "9ef4392f726646e328a8c9529d1f86dd",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -2479,16 +2479,16 @@
         },
         {
             "name": "nystudio107/craft3-typogrify",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-typogrify.git",
-                "reference": "673ebe8b2abd86dd92a1fae3979b3d89277aa8dd"
+                "reference": "6d01051971462a3f2550d722eff9c80cf26f6660"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-typogrify/zipball/673ebe8b2abd86dd92a1fae3979b3d89277aa8dd",
-                "reference": "673ebe8b2abd86dd92a1fae3979b3d89277aa8dd",
+                "url": "https://api.github.com/repos/nystudio107/craft3-typogrify/zipball/6d01051971462a3f2550d722eff9c80cf26f6660",
+                "reference": "6d01051971462a3f2550d722eff9c80cf26f6660",
                 "shasum": ""
             },
             "require": {
@@ -2532,7 +2532,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2017-12-08T05:06:24+00:00"
+            "time": "2017-12-08T22:08:06+00:00"
         },
         {
             "name": "paragonie/random_compat",
