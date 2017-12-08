@@ -1,5 +1,5 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
-<div class="w-full md:w-1/2 bg-white">
+<div class="w-full md:w-1/2 bg-grey-lightest">
     {% set showImage = showInfo.showImage.one() %}
     <picture>
         <source srcset="{{ showImage.optimizedImages.srcsetWebP() }}"
@@ -11,7 +11,7 @@
              sizes="50vw" />
     </picture>
 </div>
-<div class="w-full sm:w-1/2 bg-grey-light">
+<div class="w-full sm:w-1/2 bg-grey-lightest">
     <div class="p-4">
         {# -- Episode number and date -- #}
         <div class="text-grey-dark text-lg uppercase  py-2">
