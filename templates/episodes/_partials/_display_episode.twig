@@ -11,7 +11,7 @@
              sizes="50vw" />
     </picture>
 </div>
-<div class="w-full sm:w-1/2 bg-white">
+<div class="w-full sm:w-1/2 bg-grey-light">
     <div class="p-4">
         {# -- Episode number and date -- #}
         <div class="text-grey-dark text-lg uppercase  py-2">
@@ -41,7 +41,7 @@
         }) %}
         {% if transAudioUrl |length %}
             <div class="py-2">
-                <audio controls>
+                <audio class="w-full" controls>
                     <source src="{{ transAudioUrl }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
