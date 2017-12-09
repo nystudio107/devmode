@@ -3,9 +3,9 @@
     <div class="mb-8">
         <div class="bg-devmode-yellow text-devmode-pink inline-block p-4">
             <span class="font-mono italic text-bold text-4xl align-middle ">
-                {{ showInfo.showTitle }}
+                <a href="/" class="title-link" @mouseover="prerenderLink">{{ showInfo.showTitle }}</a>
             </span>
-            <span class="text-devmode-pink font-mono italic text-md align-middle">
+            <span class="text-devmode-pink font-mono italic text-md align-middle pl-4">
                 {{ showInfo.showSubTitle }}
             </span>
         </div>
