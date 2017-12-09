@@ -44,6 +44,14 @@ var defaultConfig = require('tailwindcss/defaultConfig')()
 */
 
 var colors = {
+  // Site-specific colors
+
+    'devmode-pink': '#eb5286',
+    'devmode-aqua': '#00b2c2',
+    'devmode-yellow': '#f2d024',
+
+  // Tailwind colors
+
   'transparent': 'transparent',
 
   'black': '#222b2f',

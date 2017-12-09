@@ -15,7 +15,7 @@
     <div class="p-4">
         {# -- Episode number and date -- #}
         <div class="text-grey-dark text-lg uppercase  py-2">
-            {{ "Episode " ~ episode.episodeNumber }} &middot; {{ episode.postDate |date() }}
+            {{ "Episode " ~ episode.episodeNumber }} &middot; {{ episode.postDate |date('Y.m.d') }}
         </div>
         {# -- Episode title -- #}
         <div class="text-black text-3xl  py-2">
