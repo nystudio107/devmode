@@ -24,5 +24,22 @@
 
 {% endblock %}
 
+{% block subcontent %}
+    <section>
+        <div class="bg-devmode-aqua">
+            {% for episode in craft.entries.section("episodes").limit(5).all() %}
+                <div class="container mx-auto py-8">
+                    <div class="flex flex-wrap">
+                        {% include "episodes/_partials/_display_episode_excerpt.twig" with {
+                            "episode": episode,
+                            "showInfo": showInfo,
+                        } only %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+{% endblock %}
+
 {% block _inline_js %}
 {% endblock %}

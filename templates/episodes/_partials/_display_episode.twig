@@ -1,39 +1,44 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
-<div class="w-full md:w-1/2 bg-grey-lightest">
-    {% set showImage = showInfo.showImage.one() %}
-    <picture>
-        <source srcset="{{ showImage.optimizedImages.srcsetWebP() }}"
-                sizes="(min-width: 768px) 50vw,
-                    100vw"
-                type="image/webp" />
-        <img src="{{ showImage.optimizedImages.src() }}"
-             srcset="{{ showImage.optimizedImages.srcset() }}"
-             sizes="50vw" />
-    </picture>
-</div>
-<div class="w-full sm:w-1/2 bg-grey-lightest">
-    <div class="p-4">
+<div class="my-8 w-full">
+    <div class="w-5/6 P-4 mx-auto">
         {# -- Episode number and date -- #}
-        <div class="text-grey-dark text-lg uppercase  py-2">
-            {{ "Episode " ~ episode.episodeNumber }} &middot; {{ episode.postDate |date('Y.m.d') }}
+        <div>
+            <div class="inline-block text-devmode-pink bg-grey-lightest font-mono text-xs text-right uppercase p-8">
+                {{ "Episode " ~ episode.episodeNumber }} &middot; {{ episode.postDate |date('Y.m.d') }}
+            </div>
         </div>
         {# -- Episode title -- #}
-        <div class="text-black text-3xl  py-2">
-            <a href="{{ episode.url }}" class="title-link">
-                {{ episode.title |typogrify }}
-            </a>
-        </div>
-        {# -- Episode tags -- #}
-        <div class="text-grey-dark text-xl py-2">
-            {% for tag in episode.episodeTags.all() %}
-                <span>#{{ tag.title }}{% if not loop.last %} {% endif %}</span>
-            {% endfor %}
+        <div>
+            <div class="inline-block leading-loose text-devmode-pink bg-grey-lightest font-mono italic text-bold text-5xl px-8">
+                <a href="{{ episode.url }}" class="title-link">
+                    <strong>
+                        {{ episode.title |typogrify }}
+                    </strong>
+                </a>
+            </div>
         </div>
         {# -- Episode summary -- #}
-        <div class="text-black text-xl  py-2">
-            {{ episode.episodeSummary |typogrify }}
+        <div>
+            <div class="text-devmode-pink bg-grey-lightest font-sans text-xl p-8">
+                {{ episode.episodeSummary |typogrify }}
+            </div>
         </div>
-        {# -- Audio player -- #}
+        {# -- Episode tags -- #}
+        <div>
+            <div class="inline-block bg-grey-lightest p-8">
+                {% for tag in episode.episodeTags.all() %}
+                    <span class="font-mono italic font-bold text-xs bg-devmode-yellow text-devmode-pink px-2 py-1 m-1">
+                        #{{ tag.title }}
+                    </span>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="my-8 w-full">
+    <div class="w-full P-4 mx-auto">
+{# -- Audio player -- #}
         {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
             "audioBitRate": "64k",
             "audioSampleRate": 22050,
@@ -45,27 +50,36 @@
                     <source src="{{ transAudioUrl }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
-                {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
             </div>
+        {% endif %}
+    </div>
+</div>
+<div class="my-8 w-full">
+    <div class="w-5/6 P-4 mx-auto">
+        <div class="mb-8">
             {# -- Play time -- #}
+            {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
             {% if  fileInfo |length %}
-                <div class="text-grey-dark text-xl py-2">
-                    Play time: {{ fileInfo.duration |humanDuration }}
+                <div>
+                    <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-xl p-8">
+                        Play time: {{ fileInfo.duration |humanDuration }}
+                    </div>
                 </div>
             {% endif %}
-        {% endif %}
-        {# -- Reference links -- #}
-        {% if  episode.episodeReferenceLinks |length %}
-            <div class="text-grey-dark text-lg uppercase  py-2">
-                Mentioned in the show:
-            </div>
-            <div class="text-black text-xl py-2">
-                {% for link in episode.episodeReferenceLinks %}
-                    <li>
-                        <a href="{{ link.linkUrl }}" class="title-link" title="{{ link.linkName }}" rel="nofollow,noopener">{{ link.linkName }}</a>
-                    </li>
-                {% endfor %}
-            </div>
-        {% endif %}
+            {# -- Reference links -- #}
+            {% if  episode.episodeReferenceLinks |length %}
+                <div>
+                    <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-xl p-8">
+                        <span class="uppercase">Mentioned in the show:</span>
+                        
+                        {% for link in episode.episodeReferenceLinks %}
+                            <li>
+                                <a href="{{ link.linkUrl }}" class="title-link" title="{{ link.linkName }}" rel="nofollow,noopener">{{ link.linkName }}</a>
+                            </li>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
     </div>
 </div>

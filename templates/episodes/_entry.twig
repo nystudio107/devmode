@@ -18,11 +18,35 @@
                 } only %}
             </div>
         </div>
-        {% if not craft.app.request.isLivePreview and entry.status == "live" %}
-            {{ disqusEmbed(entry.slug, entry.title, entry.url) }}
-        {% endif %}
     </section>
 
+{% endblock %}
+
+{% block subcontent %}
+<section>
+    <div class="bg-grey-whitest">
+        <div class="container mx-auto py-8">
+    {% if not craft.app.request.isLivePreview and entry.status == "live" %}
+        {{ disqusEmbed(entry.slug, entry.title, entry.url) }}
+    {% endif %}
+        </div>
+    </div>
+</section>
+
+    <section>
+        <div class="bg-devmode-aqua">
+            {% for episode in craft.entries.section("episodes").limit(5).all() %}
+                <div class="container mx-auto py-8">
+                    <div class="flex flex-wrap">
+                        {% include "episodes/_partials/_display_episode_excerpt.twig" with {
+                            "episode": episode,
+                            "showInfo": showInfo,
+                        } only %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
 {% endblock %}
 
 {% block _inline_js %}
