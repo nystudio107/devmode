@@ -102,18 +102,21 @@
     {# -- HTML Body -- #}
     <body>
         <div id="page-container">
-
+    
+            <div id="content-container" style="background-image: url('{{ showInfo.showImage.one().url() }}')">
+    
             {# -- Info header, including _navbar.twig -- #}
             {% include "_partials/_info_header.twig" %}
     
-            <div id="content-container" class="container mx-auto">
                 <main>
-                    {# -- Primary content block -- #}
-                    {% block content %}
-                    {% endblock %}
+                    <div class="container mx-auto">
+                        {# -- Primary content block -- #}
+                        {% block content %}
+                        {% endblock %}
+                    </div>
                 </main>
             </div>
-        
+            
             {# -- Content that appears below the primary content block -- #}
             {% block subcontent %}
             {% endblock %}

@@ -1,41 +1,16 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
-{% from "_partials/_macros.twig" import displayCodeLines %}
-{% spaceless %}
-    {% set codeLines = [] %}
-    {% set codeLine %}
-        {% verbatim %}
-            <span class="text-grey">{%</span><span class="text-purple"> if </span><span class="text-grey">header %}</span>
-        {% endverbatim %}
-    {% endset  %}
-    {% set codeLines = codeLines |merge({
-        "line1": codeLine
-    }) %}
-    {% set codeLine %}
-        {% verbatim %}
-            <span class="text-grey">{%</span><span class="text-purple"> endif </span><span class="text-grey"> %}</span>
-        {% endverbatim %}
-    {% endset  %}
-    {% set codeLines = codeLines |merge({
-        "line10": codeLine
-    }) %}
-{% endspaceless %}
 <header>
-    <div class="px-4 py-4 bg-grey-darkest">
-        <div class="h-48 flex items-center justify-center flex-no-wrap relative">
-            {{ displayCodeLines(1, 10, codeLines) }}
-            <div class="w-full text-center">
-                <div class="inline-block text-left p-8 m-4">
-                    <p class="font-mono text-grey-lightest text-5xl">
-                        <a href="/" class="header-link">
-                            devMode.fm
-                        </a>
-                    </p>
-                    <p class="font-mono text-grey text-1xl italic">
-                        // a podcast about modern web development
-                    </p>
-                </div>
-            </div>
+    <div class="mb-8">
+        <div class="bg-devmode-yellow text-devmode-pink inline-block p-4">
+            <span class="font-mono italic text-bold text-4xl align-middle ">
+                {{ showInfo.showTitle }}
+            </span>
+            <span class="text-devmode-pink font-mono italic text-md align-middle">
+                {{ showInfo.showSubTitle }}
+            </span>
         </div>
     </div>
-    {% include "_partials/_navbar.twig" %}
+    {#
+     {% include "_partials/_navbar.twig" %}
+   #}
 </header>
