@@ -134,13 +134,13 @@
             // define a dependency bundle
             loadjs(
                 [
-                    '{{ baseUrl }}js/vue.min.{{staticAssetsVersion}}.js',
+                    '{{ baseUrl }}js/vue.min.{{ staticAssetsVersion }}.js',
                 ],
                 'vue'
             );
             loadjs(
                 [
-                    '{{ baseUrl }}js/axios.min.{{staticAssetsVersion}}.js',
+                    '{{ baseUrl }}js/axios.min.{{ staticAssetsVersion }}.js',
                 ],
                 'axios'
             );
@@ -151,10 +151,10 @@
                     // Create our Vue component
                     var vm = new Vue({
                         el: '#page-container',
-                        components: {
-                        },
+                        components: {},
                         delimiters: ['${', '}'],
                         data: {
+                            menuOpen: false,
                         },
                         methods: {
                             // Pre-render pages when the user mouses over a link
@@ -162,21 +162,23 @@
                             prerenderLink: function(e) {
                                 var head = document.getElementsByTagName("head")[0];
                                 var refs = head.childNodes;
-                                ref = refs[ refs.length - 1];
+                                ref = refs[refs.length - 1];
 
                                 var elements = head.getElementsByTagName("link");
                                 Array.prototype.forEach.call(elements, function(el, i) {
-                                    if (("rel" in el) && (el.rel === "prerender"))
+                                    if (("rel" in el) && (el.rel === "prerender")) {
                                         el.parentNode.removeChild(el);
+                                    }
                                 });
 
                                 var prerenderTag = document.createElement("link");
                                 prerenderTag.rel = "prerender";
                                 prerenderTag.href = e.currentTarget.href;
-                                ref.parentNode.insertBefore(prerenderTag,  ref);
+                                ref.parentNode.insertBefore(prerenderTag, ref);
                             },
-                        },
-                        mounted: function() {
+                            toggle: function() {
+                                this.menuOpen = !this.menuOpen;
+                            }
                         }
                     });
                 }

@@ -30,7 +30,8 @@
  */
 
 .navbar-link {
-    @apply .text-purple-darker .font-sans .text-lg .no-underline
+    color: config('colors.devmode-pink');
+    @apply .font-sans .text-lg .no-underline
 }
 
 .navbar-link:hover {
@@ -175,4 +176,8 @@ html.user-is-tabbing *:focus {
     box-sizing: border-box;
     -webkit-appearance: none;
     appearance: none;
+}
+
+.menuBlock {
+    display: block;
 }
