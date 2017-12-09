@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "devmode",
+  "description": "Website for devmode.fm",
+  "icons": {
+    "60": "/img/site/firefox_app_60x60.png",
+    "128": "/img/site/firefox_app_128x128.png",
+    "512": "/img/site/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Andrew Welch, nystudio107 <andrew@nystudio107.com>",
+    "url": "https://devmode.fm/"
+  }
+}
