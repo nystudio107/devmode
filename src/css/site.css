@@ -38,11 +38,11 @@
 }
 
 .title-link {
-    @apply .text-grey-darkest .no-underline
+    @apply .text-devmode-pink .no-underline
 }
 
 .title-link:hover {
-    @apply .text-black
+    @apply .text-devmode-pink
 }
 
 .header-link {
