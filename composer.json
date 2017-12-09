@@ -32,7 +32,8 @@
     "nystudio107/craft3-minify": "^1.2.5",
     "nystudio107/craft3-typogrify": "^1.1.4",
     "nystudio107/craft3-transcoder": "^1.0.0",
-    "nystudio107/craft3-disqus": "^1.0"
+    "nystudio107/craft3-disqus": "^1.0",
+    "craftcms/redactor": "^1.0"
   },
   "config": {
     "optimize-autoloader": true
