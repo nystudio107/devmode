@@ -28,12 +28,11 @@
         
         <itunes:author>{% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
     
-        {% for host in hosts %}
+        {% set host = hosts[0] %}
             <itunes:owner>
                 <itunes:name>{{ host.fullName }}</itunes:name>
                 <itunes:email>{{ host.email }}</itunes:email>
             </itunes:owner>
-        {% endfor %}
         
         <itunes:explicit>clean</itunes:explicit>
         
