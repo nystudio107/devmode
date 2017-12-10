@@ -17,7 +17,14 @@
     "source": "https://github.com/nystudio107/craft",
     "docs": "https://github.com/nystudio107/craft"
   },
-  "minimum-stability": "RC",
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/nystudio107/craft3-seomatic"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
   "require": {
     "php": ">=7.0.0",
     "craftcms/cms": "^3.0.0-RC1",
@@ -30,11 +37,13 @@
     "nystudio107/craft3-fastcgicachebust": "^1.0.0",
     "nystudio107/craft3-imageoptimize": "^1.3.4",
     "nystudio107/craft3-minify": "^1.2.5",
+    "nystudio107/craft3-seomatic": "dev-develop@dev",
     "nystudio107/craft3-typogrify": "^1.1.4",
     "nystudio107/craft3-transcoder": "^1.0.0",
     "nystudio107/craft3-disqus": "^1.0",
     "craftcms/redactor": "^1.0"
   },
+
   "config": {
     "optimize-autoloader": true
   },
