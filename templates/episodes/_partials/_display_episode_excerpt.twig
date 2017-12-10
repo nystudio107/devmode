@@ -12,12 +12,12 @@
             <div class="flex flex-wrap items-center justify-center">
                 {# -- Episode title -- #}
                 <div class=" w-full md:w-2/3 font-mono italic font-bold text-devmode-pink text-left text-3xl  py-2">
-                    <a href="{{ episode.url }}" class="title-link">
+                    <a href="{{ episode.url }}" class="title-link" @mouseover="prerenderLink">
                         {{ episode.title |typogrify }}
                     </a>
                 </div>
                 {# -- Episode number and date -- #}
-                <div class="w-full md:w-1/3 text-devmode-pink font-mono text-xs text-right uppercase py-2">
+                <div class="w-full md:w-1/3 text-devmode-pink font-mono text-xs text-left md:text-right uppercase py-2">
                     {{ "Episode " ~ episode.episodeNumber }} / {{ episode.postDate |date("Y.m.d") }}
                 </div>
             </div>
