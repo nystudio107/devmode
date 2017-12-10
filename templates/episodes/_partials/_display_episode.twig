@@ -10,7 +10,7 @@
         {# -- Episode title -- #}
         <div>
             <div class="inline-block text-devmode-pink bg-grey-lightest font-mono italic text-bold text-5xl p-8">
-                <a href="{{ episode.url }}" class="title-link">
+                <a href="{{ episode.url }}" class="title-link" @mouseover="prerenderLink">
                     <strong>
                         {{ episode.title |typogrify }}
                     </strong>

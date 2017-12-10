@@ -10,23 +10,26 @@
 {% endblock %}
 
 {% block content %}
-    
+{% endblock %}
+
+{% block subcontent %}
     <section>
-        <div class="text-center p-8 mb-8">
-            <h1 class="text-devmode-pink font-mono italic text-bold text-5xl pt-4">
-                {{ entry.errorHeadline }}
-            </h1>
-            <div class="inline-block">
-                <p class="text-black font-mono text-left text-xl pt-4">
-                    {{ entry.errorText |nl2br }}
-                </p>
+        <div class="bg-grey-whitest">
+            <div class="container mx-auto py-8">
+                <div class="text-center p-8 mb-8">
+                    <h1 class="text-devmode-pink font-mono italic text-bold text-5xl pt-4">
+                        {{ entry.errorHeadline }}
+                    </h1>
+                    <div class="inline-block">
+                        <p class="text-black font-mono text-left text-xl pt-4">
+                            {{ entry.errorText |nl2br }}
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-{% endblock %}
-
-{% block subcontent %}
     <section>
         <div class="bg-devmode-aqua">
             {% for episode in craft.entries.section("episodes").limit(5).all() %}
