@@ -25,6 +25,7 @@
     
         {% do seomaticGlobals.setSeoTitle("devMode.fm | " ~ seomaticGlobals.seoTitle) %}
         {% do seomaticGlobals.setSeoImage(showInfo.showImage.one().getUrl()) %}
+        {% do seomaticSettings.setTwitterHandle('devmodefm') %}
     
         {# -- ServiceWorker, loadjs, and tiny-cookie -- #}
         <script>
