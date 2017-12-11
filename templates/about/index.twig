@@ -43,7 +43,7 @@
                 {# -- Episode tags -- #}
                 <div>
                     <div class="inline-block bg-grey-lightest p-8">
-                        {% for tag in craft.tags.group('episodes') %}
+                        {% for tag in craft.tags.group('episodes').all() %}
                             <span class="devmode-tags">
                                 #{{ tag.title }}
                             </span>
