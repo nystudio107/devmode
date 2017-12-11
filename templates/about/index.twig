@@ -31,7 +31,7 @@
                 {# -- Show hosts -- #}
                 <div>
                     <div class="inline-block text-devmode-pink bg-grey-lightest font-mono text-xs text-left p-8">
-                        {% for host in craft.users.group("hosts").all() %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}
+                        {% for host in craft.users.group("hosts").orderBy("elements.dateCreated ASC").all() %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}
                     </div>
                 </div>
                 {# -- Episode summary -- #}
@@ -68,7 +68,7 @@
                     </div>
                 </div>
             </div>
-            {% for host in craft.users.group("hosts").all() %}
+            {% for host in craft.users.group("hosts").orderBy("elements.dateCreated ASC").all() %}
                 <div class="container mx-auto py-8">
                     <div class="flex flex-wrap">
                         {% include "about/_partials/_display_host_excerpt.twig" with {
