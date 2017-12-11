@@ -27,7 +27,7 @@
 {% block subcontent %}
     <section>
         <div class="bg-grey-whitest">
-            <div class="container mx-auto py-8">
+            <div class="container mx-auto p-4 my-8">
         {% if not craft.app.request.isLivePreview and entry.status == "live" %}
             {{ disqusEmbed(entry.slug, entry.title, entry.url) }}
         {% endif %}
