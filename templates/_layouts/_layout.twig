@@ -23,6 +23,9 @@
         {% import "_partials/_macros.twig" as macro %}
         {% include "_partials/_global_header.twig" %}
     
+        {% do seomaticGlobals.setSeoTitle("devMode.fm | " ~ seomaticGlobals.seoTitle) %}
+        {% do seomaticGlobals.setSeoImage(showInfo.showImage.one().getUrl()) %}
+    
         {# -- ServiceWorker, loadjs, and tiny-cookie -- #}
         <script>
             {% if craft.app.config.general.isSystemOn %}
