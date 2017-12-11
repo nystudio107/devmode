@@ -1,10 +1,10 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 <div class="my-8 w-full">
-    <div class="w-5/6 P-4 mx-auto">
+    <div class="w-5/6 mx-auto">
         {# -- Episode number and date -- #}
         <div>
-            <div class="inline-block text-devmode-pink bg-grey-lightest font-mono text-xs text-right uppercase p-8">
-                {{ "Episode " ~ episode.episodeNumber }} &middot; {{ episode.postDate |date('Y.m.d') }}
+            <div class="inline-block text-devmode-pink bg-grey-lightest font-mono text-xs text-left uppercase p-8">
+                {{ "Episode " ~ episode.episodeNumber }} / {{ episode.postDate |date('Y.m.d') }}
             </div>
         </div>
         {# -- Episode title -- #}
@@ -17,41 +17,49 @@
                 </a>
             </div>
         </div>
-        {# -- Episode summary -- #}
+        {# -- Episode hosts -- #}
         <div>
-            <div class="text-devmode-pink bg-grey-lightest font-sans text-xl p-8">
-                {{ episode.episodeSummary |typogrify }}
+            <div class="inline-block text-devmode-pink bg-grey-lightest font-mono text-xs text-left p-8">
+                {% for host in episode.episodeHosts.all() %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}
             </div>
         </div>
         {# -- Episode tags -- #}
         <div>
             <div class="inline-block bg-grey-lightest p-8">
                 {% for tag in episode.episodeTags.all() %}
-                    <span class="font-mono italic font-bold text-xs bg-devmode-yellow text-devmode-pink px-2 py-1 m-1">
+                    <span class="devmode-tags">
                         #{{ tag.title }}
                     </span>
                 {% endfor %}
             </div>
         </div>
+        {# -- Episode summary -- #}
+        <div>
+            <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-xl p-8">
+                {{ episode.episodeSummary |typogrify }}
+            </div>
+        </div>
         {# -- Reference links -- #}
         {% if  episode.episodeReferenceLinks |length %}
             <div>
-                <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-xl p-8">
-                    <span class="uppercase">Mentioned in the show:</span>
-                
-                    {% for link in episode.episodeReferenceLinks %}
-                        <li>
-                            <a href="{{ link.linkUrl }}" class="title-link" title="{{ link.linkName }}" rel="nofollow,noopener">{{ link.linkName }}</a>
-                        </li>
-                    {% endfor %}
+                <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-2xl p-8">
+                    <i class="icon-info-circled align-middle"></i>
+                    <ul class="list-reset inline">
+                        {% for link in episode.episodeReferenceLinks %}
+                            <li class="inline">
+                                <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkName }}" rel="nofollow,noopener">{{ link.linkName }}</a>
+                                <span> </span>
+                            </li>
+                        {% endfor %}
+                    </ul>
                 </div>
             </div>
         {% endif %}
     </div>
 </div>
 
-<div class="py-8 mb-8 w-full">
-    <div class="w-full P-4 mx-auto">
+<div class="p-8 my-8 w-full bg-grey-lightest rounded-full">
+    <div class="w-full mx-auto">
 {# -- Audio player -- #}
         {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
             "audioBitRate": "64k",
@@ -59,7 +67,7 @@
             "audioChannels": 1
         }) %}
         {% if transAudioUrl |length %}
-            <div class="py-2">
+            <div class="">
                 <audio class="w-full" controls>
                     <source src="{{ transAudioUrl }}" type="audio/mpeg">
                     Your browser does not support the audio element.
