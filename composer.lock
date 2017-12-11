@@ -411,12 +411,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "b8076bc2e61c7a0ed33a4b3e47a23bccc2a797d7"
+                "reference": "bd9f7c7fda16845cc0a2d646331ec2bad8cc156d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/b8076bc2e61c7a0ed33a4b3e47a23bccc2a797d7",
-                "reference": "b8076bc2e61c7a0ed33a4b3e47a23bccc2a797d7",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/bd9f7c7fda16845cc0a2d646331ec2bad8cc156d",
+                "reference": "bd9f7c7fda16845cc0a2d646331ec2bad8cc156d",
                 "shasum": ""
             },
             "require": {
@@ -484,7 +484,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2017-12-10T23:42:04+00:00"
+            "time": "2017-12-11T17:03:11+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -580,16 +580,16 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "1.0.0",
+            "version": "1.0.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/redactor.git",
-                "reference": "78acbe7d24092f8ed6ef1c096a02a3e560a571f2"
+                "reference": "0225ce422ab76a21b003d5dde6a7a3813a05b4ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/78acbe7d24092f8ed6ef1c096a02a3e560a571f2",
-                "reference": "78acbe7d24092f8ed6ef1c096a02a3e560a571f2",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/0225ce422ab76a21b003d5dde6a7a3813a05b4ca",
+                "reference": "0225ce422ab76a21b003d5dde6a7a3813a05b4ca",
                 "shasum": ""
             },
             "require": {
@@ -625,7 +625,7 @@
                 "html",
                 "yii2"
             ],
-            "time": "2017-12-04T21:09:43+00:00"
+            "time": "2017-12-11T03:18:41+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -2491,12 +2491,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-seomatic.git",
-                "reference": "442185edeb710eed295e6203a64ce56fb4152122"
+                "reference": "5274ab58bd8ba1307244c8480cc53a4de9fd1966"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/442185edeb710eed295e6203a64ce56fb4152122",
-                "reference": "442185edeb710eed295e6203a64ce56fb4152122",
+                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/5274ab58bd8ba1307244c8480cc53a4de9fd1966",
+                "reference": "5274ab58bd8ba1307244c8480cc53a4de9fd1966",
                 "shasum": ""
             },
             "require": {
@@ -2549,7 +2549,7 @@
                 "issues": "https://github.com/nystudio107/craft3-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft3-seomatic/tree/develop"
             },
-            "time": "2017-12-07T18:01:46+00:00"
+            "time": "2017-12-11T16:55:33+00:00"
         },
         {
             "name": "nystudio107/craft3-transcoder",
