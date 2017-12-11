@@ -76,6 +76,10 @@
                 "template": "index"
             },
             {
+                "url": "about",
+                "template": "about/index"
+            },
+            {
                 "url": "episodes/talking-craft-cms-rc1",
                 "template": "episodes/_entry"
             },
