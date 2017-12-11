@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "553c4e262834764dfa784abddbb411c6",
+    "content-hash": "36a3b17764351a575d36ea8f2903114d",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -486,16 +486,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "c269bee9d8e7def9470b2e41d0a5b09c08c7f594"
+                "reference": "b8076bc2e61c7a0ed33a4b3e47a23bccc2a797d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c269bee9d8e7def9470b2e41d0a5b09c08c7f594",
-                "reference": "c269bee9d8e7def9470b2e41d0a5b09c08c7f594",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/b8076bc2e61c7a0ed33a4b3e47a23bccc2a797d7",
+                "reference": "b8076bc2e61c7a0ed33a4b3e47a23bccc2a797d7",
                 "shasum": ""
             },
             "require": {
@@ -563,7 +563,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2017-12-05T18:19:22+00:00"
+            "time": "2017-12-10T23:42:04+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -4503,9 +4503,17 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "3.0.0-RC99",
+            "alias_normalized": "3.0.0.0-RC99",
+            "version": "dev-develop",
+            "package": "craftcms/cms"
+        }
+    ],
     "minimum-stability": "dev",
     "stability-flags": {
+        "craftcms/cms": 20,
         "roave/security-advisories": 20,
         "nystudio107/craft3-seomatic": 20
     },
