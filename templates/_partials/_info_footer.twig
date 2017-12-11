@@ -7,13 +7,13 @@
         <span class="text-grey italic">// Copyright &copy; {{ now |date("Y") }} {% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</span>
     {% endset  %}
     {% set codeLines = codeLines |merge({
-        "line22": codeLine
+        "line21": codeLine
     }) %}
     {% set codeLine %}
-        <span class="text-grey italic">// Sponsored by nystudio107.com</span>
+        <span class="text-grey italic">// Site by <a class="header-link" href="https://nystudio107.com/" target="_blank">nystudio107.com</a>, designed by <a class="header-link" href="https://codemdd.io/" target="_blank">codemdd.io</a></span>
     {% endset  %}
     {% set codeLines = codeLines |merge({
-        "line23": codeLine
+        "line22": codeLine
     }) %}
     {% set codeLine %}
         {% verbatim %}
@@ -25,7 +25,7 @@
     }) %}
 {% endspaceless %}
 <footer>
-    <div class="px-4 py-4 bg-grey-darkest">
+    <div class="px-4 py-4 bg-blue-darkest">
         <div class="h-64 relative">
             {{ displayCodeLines(11, 24, codeLines) }}
         </div>

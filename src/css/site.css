@@ -31,27 +31,51 @@
 
 .navbar-link {
     color: config('colors.devmode-pink');
-    @apply .font-sans .text-lg .no-underline
+    @apply .font-sans .text-lg .no-underline .px-2 .py-1 .m-1;
 }
 
 .navbar-link:hover {
-    @apply .text-white
+    color: config('colors.devmode-yellow');
+    background-color: config('colors.devmode-pink');
 }
 
 .title-link {
-    @apply .text-devmode-pink .no-underline
+    @apply .text-devmode-pink .no-underline;
 }
 
 .title-link:hover {
-    @apply .text-devmode-pink
+    @apply .text-pink-light;
 }
 
 .header-link {
-    @apply .text-grey-lightest .no-underline
+    @apply .text-grey-lightest .no-underline;
 }
 
 .header-link:hover {
-    @apply .text-white
+    @apply .text-white;
+}
+
+.devmode-tags {
+    @apply .font-mono .italic .font-bold .text-xs .bg-devmode-yellow .text-devmode-pink .px-2 .py-1 .mx-1 .my-2 .leading-loose
+}
+
+.tags-link {
+    @apply .devmode-tags .no-underline;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+.tags-link:hover {
+    @apply .bg-devmode-pink .text-devmode-yellow;
+}
+
+.hamburger-menu {
+    @apply .text-devmode-pink .font-mono .italic .font-bold .text-4xl .align-middle;
+}
+
+.hamburger-menu:hover {
+    color: config('colors.devmode-yellow');
+    background-color: config('colors.devmode-pink');
 }
 
 /* -- CSS variables */
@@ -180,4 +204,24 @@ html.user-is-tabbing *:focus {
 
 .menuBlock {
     display: block;
+}
+
+.circle-image-wrapper {
+}
+
+.circle-image-cropper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+
+img.circle-image {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
 }

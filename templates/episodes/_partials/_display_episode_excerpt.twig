@@ -1,17 +1,10 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
-<div class="mb-8">
-    <div class="w-full bg-transparent">
-        <div class="p-8 mb-8">
-            <h3 class="text-white text-center">
-                Recent Episodes
-            </h3>
-        </div>
-    </div>
+<div class="w-full mb-8">
     <div class="w-full bg-grey-lightest">
         <div class="p-8">
-            <div class="flex flex-wrap items-center justify-center">
+            <div class="flex flex-wrap items-center justify-center flex-row-reverse md:flex-row flex-col-reverse">
                 {# -- Episode title -- #}
-                <div class=" w-full md:w-2/3 font-mono italic font-bold text-devmode-pink text-left text-3xl  py-2">
+                <div class=" w-full md:w-2/3 font-mono italic font-bold text-devmode-pink text-left text-3xl py-2">
                     <a href="{{ episode.url }}" class="title-link" @mouseover="prerenderLink">
                         {{ episode.title |typogrify }}
                     </a>
