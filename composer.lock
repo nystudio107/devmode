@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "36a3b17764351a575d36ea8f2903114d",
+    "content-hash": "553c4e262834764dfa784abddbb411c6",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -407,16 +407,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "dev-develop",
+            "version": "3.0.0-RC2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "bb756bca014aa48262c31466cae938d4c55b6bfd"
+                "reference": "526218356fc0c0e272ecc113c969eeb11e46e0ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/bb756bca014aa48262c31466cae938d4c55b6bfd",
-                "reference": "bb756bca014aa48262c31466cae938d4c55b6bfd",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/526218356fc0c0e272ecc113c969eeb11e46e0ee",
+                "reference": "526218356fc0c0e272ecc113c969eeb11e46e0ee",
                 "shasum": ""
             },
             "require": {
@@ -484,7 +484,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2017-12-11T23:06:50+00:00"
+            "time": "2017-12-12T20:42:34+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2332,16 +2332,16 @@
         },
         {
             "name": "nystudio107/craft3-imageoptimize",
-            "version": "1.3.6",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-imageoptimize.git",
-                "reference": "6157c528511ddd1d46f6021e4a2169d3660499ff"
+                "reference": "9315e8ae27c572ee6e1f7b2e36a45beaf9fa2f12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/6157c528511ddd1d46f6021e4a2169d3660499ff",
-                "reference": "6157c528511ddd1d46f6021e4a2169d3660499ff",
+                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/9315e8ae27c572ee6e1f7b2e36a45beaf9fa2f12",
+                "reference": "9315e8ae27c572ee6e1f7b2e36a45beaf9fa2f12",
                 "shasum": ""
             },
             "require": {
@@ -2363,6 +2363,7 @@
                 "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-imageoptimize/master/CHANGELOG.md",
                 "components": {
                     "optimize": "nystudio107\\imageoptimize\\services\\Optimize",
+                    "optimizedImages": "nystudio107\\imageoptimize\\services\\OptimizedImages",
                     "placeholder": "nystudio107\\imageoptimize\\services\\Placeholder"
                 },
                 "class": "nystudio107\\imageoptimize\\ImageOptimize"
@@ -2394,7 +2395,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2017-12-10T19:49:43+00:00"
+            "time": "2017-12-12T23:16:04+00:00"
         },
         {
             "name": "nystudio107/craft3-minify",
@@ -2553,20 +2554,20 @@
         },
         {
             "name": "nystudio107/craft3-transcoder",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-transcoder.git",
-                "reference": "2a9faf6a799813e766f8595299a0d432e26560e3"
+                "reference": "8b7f2fca27de3771306cfe39f1cf90018982cffa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-transcoder/zipball/2a9faf6a799813e766f8595299a0d432e26560e3",
-                "reference": "2a9faf6a799813e766f8595299a0d432e26560e3",
+                "url": "https://api.github.com/repos/nystudio107/craft3-transcoder/zipball/8b7f2fca27de3771306cfe39f1cf90018982cffa",
+                "reference": "8b7f2fca27de3771306cfe39f1cf90018982cffa",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "~3.0.0-beta.23",
+                "craftcms/cms": "^3.0.0-RC1",
                 "mikehaertl/php-shellcommand": "~1.2"
             },
             "type": "craft-plugin",
@@ -2605,7 +2606,7 @@
                 "craftcms",
                 "transcoder"
             ],
-            "time": "2017-11-25T00:36:24+00:00"
+            "time": "2017-12-12T05:08:34+00:00"
         },
         {
             "name": "nystudio107/craft3-typogrify",
@@ -4425,17 +4426,9 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [
-        {
-            "alias": "3.0.0-RC99",
-            "alias_normalized": "3.0.0.0-RC99",
-            "version": "dev-develop",
-            "package": "craftcms/cms"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "craftcms/cms": 20,
         "roave/security-advisories": 20,
         "nystudio107/craft3-seomatic": 20
     },
