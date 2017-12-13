@@ -29,6 +29,22 @@
  * @import "components/forms";
  */
 
+html {
+
+    /* -- Font smoothing and ligatures */
+
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
 .navbar-link {
     color: config('colors.devmode-pink');
     @apply .font-sans .text-lg .no-underline .px-2 .py-1 .m-1;
@@ -186,20 +202,14 @@ html.user-is-tabbing *:focus {
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-* {
+.header-background {
+    background-size: 85%;
+}
 
-    /* -- Font smoothing and ligatures */
-
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-smooth: always;
-    box-sizing: border-box;
-    -webkit-appearance: none;
-    appearance: none;
+@screen sm {
+    .header-background {
+        background-size: 50%;
+    }
 }
 
 .menuBlock {
