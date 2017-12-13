@@ -34,13 +34,7 @@
                         {% for host in craft.users.group("hosts").orderBy("elements.dateCreated ASC").all() %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}
                     </div>
                 </div>
-                {# -- Episode summary -- #}
-                <div>
-                    <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-xl p-8">
-                        {{ showInfo.showDescription |typogrify }}
-                    </div>
-                </div>
-                {# -- Episode tags -- #}
+                {# -- Recent tags -- #}
                 <div>
                     <div class="inline-block bg-grey-lightest p-8">
                         {% for tag in craft.tags.group('episodes').all() %}
@@ -50,6 +44,28 @@
                         {% endfor %}
                     </div>
                 </div>
+                {# -- Show summary -- #}
+                <div>
+                    <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-xl p-8">
+                        {{ showInfo.showDescription |typogrify }}
+                    </div>
+                </div>
+                {# -- Reference links -- #}
+                {% if  showInfo.showTechnologiesLinks |length %}
+                    <div>
+                        <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-2xl p-8">
+                            <i class="icon-info-circled align-middle"></i>
+                            <ul class="list-reset inline">
+                                {% for link in showInfo.showTechnologiesLinks %}
+                                    <li class="inline">
+                                        <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkName }}" rel="nofollow,noopener">{{ link.linkName }}</a>
+                                        <span> </span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                {% endif %}
             </div>
         </div>
     </section>
