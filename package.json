@@ -48,7 +48,7 @@
     },
     "urls": {
         "live": "https://devmode.fm/",
-        "local": "http://devmode.dev/",
+        "local": "http://devmode.test/",
         "critical": "https://devmode.fm/"
     },
     "vars": {
