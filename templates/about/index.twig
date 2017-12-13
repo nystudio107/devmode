@@ -37,7 +37,7 @@
                 {# -- Recent tags -- #}
                 <div>
                     <div class="inline-block bg-grey-lightest p-8">
-                        {% for tag in craft.tags.group('episodes').all() %}
+                        {% for tag in craft.tags.group('episodes').limit(5).all() %}
                             <span class="devmode-tags">
                                 #{{ tag.title }}
                             </span>
