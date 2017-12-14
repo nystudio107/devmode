@@ -30,7 +30,7 @@ const offlinePages = [
 ];
 
 const staticAssets = [
-    '{{ baseUrl }}css/site.combined.min.{{staticAssetsVersion}}.css'
+    '{{ baseUrl }}css/site.combined.min.{{staticAssetsVersion}}.css',
 
     '{{ baseUrl }}img/site/devmode-fm-light-bg-opaque.svg',
 
