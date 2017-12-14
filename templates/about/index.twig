@@ -63,7 +63,7 @@
                             <ul class="list-reset inline">
                                 {% for link in showInfo.showTechnologiesLinks %}
                                     <li class="inline">
-                                        <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkName }}" rel="nofollow,noopener">{{ link.linkName }}</a>
+                                        <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkName }}" rel="nofollow,noopener" target="_blank">{{ link.linkName }}</a>
                                         <span> </span>
                                     </li>
                                 {% endfor %}
@@ -71,6 +71,24 @@
                         </div>
                     </div>
                 {% endif %}
+                {% set plugins = craft.app.plugins.allPlugins() %}
+                {# -- Plugins -- #}
+                {% if  plugins |length %}
+                    <div>
+                        <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-2xl p-8">
+                            <i class="icon-plug align-middle"></i>
+                            <ul class="list-reset inline">
+                                {% for plugin in plugins %}
+                                    <li class="inline">
+                                        <a href="{{ "https://github.com/#{plugin.packageName}" }}" class="tags-link align-middle whitespace-no-wrap" title="{{ plugin.name }}" rel="nofollow,noopener" target="_blank">{{ plugin.name }}</a>
+                                        <span> </span>
+                                    </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                {% endif %}
+
             </div>
         </div>
     </section>
