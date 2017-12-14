@@ -68,7 +68,7 @@
         }) %}
         {% if transAudioUrl |length %}
             <div class="">
-                <audio class="w-full" controls>
+                <audio class="w-full" preload="metadata" controls>
                     <source src="{{ transAudioUrl }}" type="audio/mpeg">
                     Your browser does not support the audio element.
                 </audio>
