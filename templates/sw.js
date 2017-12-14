@@ -24,14 +24,23 @@ const staticCacheName = version + 'static';
 const pagesCacheName = version + 'pages';
 const imagesCacheName = version + 'images';
 const offlinePages = [
-  '/offline',
-  '/'
+    '/about',
+    '/offline',
+    '/'
 ];
 
 const staticAssets = [
-  '{{ baseUrl }}js/lazysizes.min.{{staticAssetsVersion}}.js',
+    '{{ baseUrl }}css/site.combined.min.{{staticAssetsVersion}}.css'
 
-  '{{ baseUrl }}css/site.combined.min.{{staticAssetsVersion}}.css'
+    '{{ baseUrl }}img/site/devmode-fm-light-bg-opaque.svg',
+
+    '{{ baseUrl }}fonts/fontello.woff2',
+    '{{ baseUrl }}fonts/OperatorMonoSSm-Book.woff2',
+    '{{ baseUrl }}fonts/OperatorMonoSSm-BookItalic.woff2',
+
+    '{{ baseUrl }}js/vue.min.{{staticAssetsVersion}}.js',
+    '{{ baseUrl }}js/axios.min.{{staticAssetsVersion}}.js',
+    '{{ baseUrl }}js/lazysizes.min.{{staticAssetsVersion}}.js'
 ];
 
 function stashInCache(cacheName, request, response) {
