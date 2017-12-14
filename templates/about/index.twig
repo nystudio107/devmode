@@ -104,4 +104,16 @@
 {% endblock %}
 
 {% block _inline_js %}
+    <script>
+        loadjs(
+            [
+                '{{ baseUrl }}js/lazysizes.min.{{staticAssetsVersion}}.js'
+            ],
+            'lazysizes'
+        );
+        loadjs.ready('lazysizes', {
+            success: function() {
+            }
+        });
+    </script>
 {% endblock %}

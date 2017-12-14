@@ -2,6 +2,7 @@
 {%- minify -%}
 {% set baseUrl = craft.app.config.general.custom.baseUrl %}
 {% set staticAssetsVersion = craft.app.config.general.custom.staticAssetsVersion %}
+{% set backgroundUrl = "#{baseUrl}img/site/devmode-fm-light-bg-opaque.svg" %}
 {% header "Link: <#{baseUrl}>; rel=dns-prefetch;,<#{baseUrl}>; rel=preconnect; crossorigin;" %}
 <!DOCTYPE html>
 {%- endminify -%}
@@ -14,6 +15,8 @@
     <head>
         <link rel="dns-prefetch" href="{{ baseUrl }}">
         <link rel="preconnect" href="{{ baseUrl }}" crossorigin>
+        <link rel="preload" href="{{ backgroundUrl }}" as="image" type="image/svg+xml" crossorigin="anonymous">
+
         <meta name="google-site-verification" content="z4PCW2St_q-MrBx9BNNQvdMIcX0_ihrlM2di__Bs5Gc" />
     
         {# -- Any <link> tags that should be included in the header #}
@@ -107,7 +110,7 @@
     <body>
         <div id="page-container">
     
-            <div id="content-container" class="bg-repeat header-background animate-opacity" style="background-image: url('/img/site/devmode-fm-light-bg-opaque.svg');">
+            <div id="content-container" class="bg-repeat header-background animate-opacity" style="background-image: url('{{ backgroundUrl }}');">
     
             {# -- Info header, including _navbar.twig -- #}
             {% include "_partials/_info_header.twig" %}
