@@ -9,7 +9,15 @@
                     <figure class="inline-block">
                         <div class="circle-image-wrapper">
                             <div class="circle-image-cropper">
-                                <img class="circle-image lazyload" src="{{ hostPhoto.profileOptimizedImages.placeholderSilhouette() }}" data-src="{{ hostPhoto.profileOptimizedImages.src }}" alt="{{ host.fullName |typogrify }}" height="100" width="100">
+                                <picture>
+                                    <source data-srcset="{{ hostPhoto.profileOptimizedImages.srcsetWebP() }}"
+                                            data-sizes="100px"
+                                            type="image/webp" />
+                                    <img class="circle-image lazyload"
+                                         src="{{ hostPhoto.profileOptimizedImages.placeholderSilhouette() }}"
+                                         data-srcset="{{ hostPhoto.profileOptimizedImages.srcset() }}"
+                                         data-sizes="100px" />
+                                </picture>
                             </div>
                         </div>
                     </figure>
