@@ -3,19 +3,13 @@
     <div class="w-full bg-grey-lightest">
         <div class="p-8">
             {# -- Host picture -- #}
-            {% if host.getPhoto() |length %}
-                {% set thumb = {
-                    mode: 'crop',
-                    width: 100,
-                    height: 100,
-                    quality: 75,
-                    position: 'center-center'
-                } %}
+            {% set hostPhoto = host.getPhoto() %}
+            {% if hostPhoto |length %}
                 <div class="text-left">
                     <figure class="inline-block">
                         <div class="circle-image-wrapper">
                             <div class="circle-image-cropper">
-                                <img class="circle-image lazyload" src="{{ craft.imageOptimize.placeholderBox(100,100,"#CCC") }}" data-src="{{ host.getPhoto().getUrl(thumb) }}" alt="{{ host.fullName |typogrify }}" height="100" width="100">
+                                <img class="circle-image lazyload" src="{{ hostPhoto.profileOptimizedImages.placeholderSilhouette() }}" data-src="{{ hostPhoto.profileOptimizedImages.src }}" alt="{{ host.fullName |typogrify }}" height="100" width="100">
                             </div>
                         </div>
                     </figure>
