@@ -203,7 +203,7 @@ html.user-is-tabbing *:focus {
 }
 
 .animate-opacity {
-    animation: opac 2s
+    animation: opac 1s
 }
 
 @keyframes opac {
