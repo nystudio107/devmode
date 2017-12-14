@@ -2283,16 +2283,16 @@
         },
         {
             "name": "nystudio107/craft3-imageoptimize",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-imageoptimize.git",
-                "reference": "9315e8ae27c572ee6e1f7b2e36a45beaf9fa2f12"
+                "reference": "316d162af53ecb3ed5fada509f205700d986d324"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/9315e8ae27c572ee6e1f7b2e36a45beaf9fa2f12",
-                "reference": "9315e8ae27c572ee6e1f7b2e36a45beaf9fa2f12",
+                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/316d162af53ecb3ed5fada509f205700d986d324",
+                "reference": "316d162af53ecb3ed5fada509f205700d986d324",
                 "shasum": ""
             },
             "require": {
@@ -2346,7 +2346,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2017-12-12T23:16:04+00:00"
+            "time": "2017-12-14T20:37:48+00:00"
         },
         {
             "name": "nystudio107/craft3-minify",
@@ -2443,12 +2443,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-seomatic.git",
-                "reference": "d0f49bb89427b5af5d8a614b4f3ace9bc338dfc0"
+                "reference": "6ee339f32e4438e0bb91317ba1fdd5010b981658"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/d0f49bb89427b5af5d8a614b4f3ace9bc338dfc0",
-                "reference": "d0f49bb89427b5af5d8a614b4f3ace9bc338dfc0",
+                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/6ee339f32e4438e0bb91317ba1fdd5010b981658",
+                "reference": "6ee339f32e4438e0bb91317ba1fdd5010b981658",
                 "shasum": ""
             },
             "require": {
@@ -2501,7 +2501,7 @@
                 "issues": "https://github.com/nystudio107/craft3-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft3-seomatic/tree/develop"
             },
-            "time": "2017-12-12T02:00:28+00:00"
+            "time": "2017-12-13T20:19:33+00:00"
         },
         {
             "name": "nystudio107/craft3-transcoder",
