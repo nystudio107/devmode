@@ -26,7 +26,7 @@
         {% do seomaticGlobals.setSeoTitle("𝚍𝚎𝚟𝙼𝚘𝚍𝚎.𝚏𝚖 🎙️ " ~ seomaticGlobals.seoTitle) %}
         {% do seomaticGlobals.setSeoImage(showInfo.showImage.one().getUrl()) %}
         {% do seomaticSettings.setTwitterHandle('devmodefm') %}
-    
+
         {# -- ServiceWorker, loadjs, and tiny-cookie -- #}
         <script>
             {% if craft.app.config.general.isSystemOn %}
@@ -107,7 +107,7 @@
     <body>
         <div id="page-container">
     
-            <div id="content-container" class="bg-devmode-aqua bg-repeat header-background" style="background-image: url('/img/site/devmode-fm-light-bg-opaque.svg');">
+            <div id="content-container" class="bg-repeat header-background animate-opacity" style="background-image: url('/img/site/devmode-fm-light-bg-opaque.svg');">
     
             {# -- Info header, including _navbar.twig -- #}
             {% include "_partials/_info_header.twig" %}

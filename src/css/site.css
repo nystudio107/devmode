@@ -202,6 +202,20 @@ html.user-is-tabbing *:focus {
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
+.animate-opacity {
+    animation: opac 2s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 .header-background {
     background-size: 85%;
 }
