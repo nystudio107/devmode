@@ -13,9 +13,9 @@
             "css": "./src/css/",
             "fontello": "./src/fontello/",
             "fonts": "./src/fonts/",
+            "img": "./src/img/",
             "json": "./src/json/",
             "js": "./src/js/",
-            "img": "./src/img/",
             "scss": "./src/scss/"
         },
         "dist": {
@@ -44,6 +44,7 @@
             "conf": "./tailwind.js"
         },
         "scss": [],
+        "craftConfig": "./config/",
         "templates": "./templates/"
     },
     "urls": {
@@ -64,11 +65,13 @@
         "img": [
             "./web/img/"
         ],
-        "components": [
-        ],
+        "components": [],
         "fonts": [
             "./build/fonts/fontello/font/*.{eot,ttf,woff,woff2}",
             "./src/fonts/*.{eot,ttf,woff,woff2}"
+        ],
+        "purgecss": [
+            "./templates/**/*.{html,twig}"
         ],
         "critical": [
             {
@@ -130,10 +133,10 @@
         "siteIcon": "./web/img/site/favicon.*"
     },
     "dependencies": {
+        "HTML5-Audio": "https://github.com/alexanderkatz/HTML5-Audio.git",
         "axios": "^0.17.1",
         "fg-loadcss": "^1.2.0",
         "fontfaceobserver": "^2.0.5",
-        "HTML5-Audio": "https://github.com/alexanderkatz/HTML5-Audio.git",
         "lazysizes": "^2.0.6",
         "loadjs": "^3.3.1",
         "normalize.css": "^5.0.0",
@@ -168,6 +171,7 @@
         "gulp-plumber": "^1.1.0",
         "gulp-postcss": "^7.0.0",
         "gulp-print": "^2.0.1",
+        "gulp-purgecss": "^0.15.0",
         "gulp-rename": "^1.2.2",
         "gulp-replace": "0.5.4",
         "gulp-rev": "^7.1.0",
