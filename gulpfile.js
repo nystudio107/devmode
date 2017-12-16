@@ -14,36 +14,31 @@ const $ = require("gulp-load-plugins")({
     scope: ["devDependencies"]
 });
 
+// error logging
 const onError = (err) => {
     console.log(err);
 };
 
-try {
-    var banner = [
-        "/**",
-        " * @project        <%= pkg.name %>",
-        " * @author         <%= pkg.author %>",
-        " * @build          " + $.moment().format("llll") + " ET",
-        " * @release        " + $.gitRevSync.long() + " [" + $.gitRevSync.branch() + "]",
-        " * @copyright      Copyright (c) " + $.moment().format("YYYY") + ", <%= pkg.copyright %>",
-        " *",
-        " */",
-        ""
-    ].join("\n");
-}
-catch (err) {
-    var banner = [
-        "/**",
-        " * @project        <%= pkg.name %>",
-        " * @author         <%= pkg.author %>",
-        " * @build          " + $.moment().format("llll") + " ET",
-        " * @release        " + "n/a",
-        " * @copyright      Copyright (c) " + $.moment().format("YYYY") + ", <%= pkg.copyright %>",
-        " *",
-        " */",
-        ""
-    ].join("\n");
-}
+// Our banner
+const banner = (function() {
+    let result = "";
+    try {
+        result = [
+            "/**",
+            " * @project        <%= pkg.name %>",
+            " * @author         <%= pkg.author %>",
+            " * @build          " + $.moment().format("llll") + " ET",
+            " * @release        " + $.gitRevSync.long() + " [" + $.gitRevSync.branch() + "]",
+            " * @copyright      Copyright (c) " + $.moment().format("YYYY") + ", <%= pkg.copyright %>",
+            " *",
+            " */",
+            ""
+        ].join("\n");
+    }
+    catch (err) {
+    }
+    return result;
+})();
 
 // scss - build the scss to the build folder, including the required paths, and writing out a sourcemap
 gulp.task("scss", () => {
@@ -332,7 +327,7 @@ gulp.task("a11y", (callback) => {
     });
 });
 
-//favicons-generate task
+// favicons-generate task
 gulp.task("favicons-generate", () => {
     $.fancyLog("-> Generating favicons");
     return gulp.src(pkg.paths.favicon.src).pipe($.favicons({
@@ -365,7 +360,7 @@ gulp.task("favicons-generate", () => {
     })).pipe(gulp.dest(pkg.paths.favicon.dest));
 });
 
-//copy favicons task
+// copy favicons task
 gulp.task("favicons", ["favicons-generate"], () => {
     $.fancyLog("-> Copying favicon.ico");
     return gulp.src(pkg.globs.siteIcon)
