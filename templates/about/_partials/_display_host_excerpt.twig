@@ -30,7 +30,7 @@
                 </div>
                 {# -- Host info -- #}
                 <div class="w-full md:w-1/3 text-devmode-pink font-mono text-xs text-left md:text-right uppercase py-2">
-                    <a href="{{ host.profileUrl }}" class="title-link" target="_blank">
+                    <a href="{{ host.profileUrl }}" class="title-link" target="_blank" rel="noopener">
                         {{ host.profileCompany |typogrify }}
                     </a>
                 </div>
@@ -44,7 +44,7 @@
                 <div class="inline">
                     {% if host.profileTwitterUrl |length %}
                         <span class="font-mono italic font-bold text-xs bg-devmode-yellow text-devmode-pink">
-                            <a class="tags-link align-middle whitespace-no-wrap" href="{{ host.profileTwitterUrl }}" target="_blank" rel="noindex,nofollow"><i class="icon-github-circled"></i> Twitter</a>
+                            <a class="tags-link align-middle whitespace-no-wrap" href="{{ host.profileTwitterUrl }}" target="_blank" rel="noopener,nofollow"><i class="icon-github-circled"></i> Twitter</a>
                         </span>
                         <span> </span>
                     {% endif %}
@@ -52,7 +52,7 @@
                 <div class="inline">
                     {% if host.profileGithubUrl |length %}
                         <span class="font-mono italic font-bold text-xs bg-devmode-yellow text-devmode-pink">
-                            <a class="tags-link align-middle whitespace-no-wrap" href="{{ host.profileGithubUrl }}" target="_blank" rel="noindex,nofollow"><i class="icon-github-circled"></i> GitHub</a>
+                            <a class="tags-link align-middle whitespace-no-wrap" href="{{ host.profileGithubUrl }}" target="_blank" rel="noopener,nofollow"><i class="icon-github-circled"></i> GitHub</a>
                         </span>
                         <span> </span>
                     {% endif %}
