@@ -1,33 +1,22 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
+{% set backgroundUrl = "#{baseUrl}img/site/devmode-fm-dark-bg.svg" %}
 {% from "_partials/_macros.twig" import displayCodeLines %}
 {% spaceless %}
     {% set hosts = craft.users.group("owners").all() %}
-    {% set codeLines = [] %}
-    {% set codeLine %}
-        <span class="text-grey italic">// Copyright &copy; {{ now |date("Y") }} {% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</span>
-    {% endset  %}
-    {% set codeLines = codeLines |merge({
-        "line21": codeLine
-    }) %}
-    {% set codeLine %}
-        <span class="text-grey italic">// Site by <a class="header-link" href="https://nystudio107.com/" target="_blank" rel="noopener">nystudio107.com</a>, designed by <a class="header-link" href="https://codemdd.io/" target="_blank" rel="noopener">codemdd.io</a></span>
-    {% endset  %}
-    {% set codeLines = codeLines |merge({
-        "line22": codeLine
-    }) %}
-    {% set codeLine %}
-        {% verbatim %}
-            <span class="text-grey-light"> {{ footer.privacyPolicy }} </span><span class="text-grey-light"> {{ footer.termsOfService }} </span>
-        {% endverbatim %}
-    {% endset  %}
-    {% set codeLines = codeLines |merge({
-        "line24": codeLine
-    }) %}
 {% endspaceless %}
 <footer>
-    <div class="px-4 py-4 bg-blue-darkest overflow-x-scroll">
-        <div class="h-64 relative">
-            {{ displayCodeLines(11, 24, codeLines) }}
+    <div class="lazyload bg-repeat header-background relative" data-bgset="{{ backgroundUrl }} 600w" data-sizes="auto" style="min-height: 14rem;">
+        <div class="w-full md:w-auto bg-devmode-yellow text-devmode-pink inline-block p-4 absolute pin-b pin-l">
+            <div class="inline text-devmode-pink font-mono italic text-sm align-middle">
+                // Copyright &copy;{{ now |date("Y") }} {% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}
+                <br />
+                // Site by<a class="navbar-link font-mono text-sm" href="https://nystudio107.com/" target="_blank" rel="noopener">nystudio107.com</a>designed by<a class="navbar-link font-mono text-sm" href="https://codemdd.io/" target="_blank" rel="noopener">codemdd.io</a></span>
+                <br />
+                <br />
+                {% verbatim %}
+                    <span class="whitespace-no-wrap">{{ footer.privacyPolicy }}</span> <span class="whitespace-no-wrap">{{ footer.termsOfService }}</span>
+                {% endverbatim %}
+            </div>
         </div>
     </div>
 </footer>
