@@ -145,6 +145,7 @@
                             mounted: function() {
                                 var self = this;
                                 Amplitude.init({
+                                    "preload": "metadata",
                                     "songs": [
                                         {
                                             "name": "{{ episode.title }}",
