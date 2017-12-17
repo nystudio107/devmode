@@ -41,22 +41,20 @@
             </div>
             {# -- Host tags -- #}
             <div class="text-devmode-pink font-sans text-xl py-2">
-                <div class="inline">
+                <ul class="list-reset inline">
                     {% if host.profileTwitterUrl |length %}
-                        <span class="font-mono italic font-bold text-xs bg-devmode-yellow text-devmode-pink">
-                            <a class="tags-link align-middle whitespace-no-wrap" href="{{ host.profileTwitterUrl }}" target="_blank" rel="noopener nofollow"><i class="icon-github-circled"></i> Twitter</a>
-                        </span>
+                    <li class="inline">
+                            <a class="tags-link align-middle whitespace-no-wrap" href="{{ host.profileTwitterUrl }}" target="_blank" rel="noopener nofollow"><i class="icon-twitter"></i> Twitter</a>
                         <span> </span>
+                    </li>
                     {% endif %}
-                </div>
-                <div class="inline">
                     {% if host.profileGithubUrl |length %}
-                        <span class="font-mono italic font-bold text-xs bg-devmode-yellow text-devmode-pink">
+                        <li class="inline">
                             <a class="tags-link align-middle whitespace-no-wrap" href="{{ host.profileGithubUrl }}" target="_blank" rel="noopener nofollow"><i class="icon-github-circled"></i> GitHub</a>
-                        </span>
-                        <span> </span>
+                            <span> </span>
+                        </li>
                     {% endif %}
-                </div>
+                </ul>
             </div>
         </div>
     </div>
