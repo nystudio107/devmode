@@ -190,6 +190,27 @@
                     });
                 }
             });
+            // Lazysizes
+            loadjs(
+                [
+                    '{{ baseUrl }}js/ls.bgset.min.{{staticAssetsVersion}}.js'
+                ],
+                'ls.bgset'
+            );
+            loadjs.ready('ls.bgset', {
+                success: function() {
+                    loadjs(
+                        [
+                            '{{ baseUrl }}js/lazysizes.min.{{staticAssetsVersion}}.js'
+                        ],
+                        'lazysizes'
+                    );
+                    loadjs.ready('lazysizes', {
+                        success: function() {
+                        }
+                    });
+                }
+            });
         </script>
 
         {# -- Inline JS -- #}

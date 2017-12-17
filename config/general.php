@@ -44,7 +44,7 @@ return [
             'basePath' => getenv('CRAFTENV_BASE_PATH'),
             'baseUrl' => getenv('CRAFTENV_BASE_URL'),
             'craftEnv' => CRAFT_ENVIRONMENT,
-            'staticAssetsVersion' => 23,
+            'staticAssetsVersion' => 24,
         ]
     ],
 

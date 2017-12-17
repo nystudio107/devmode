@@ -41,7 +41,8 @@ const staticAssets = [
     '{{ baseUrl }}js/vue.min.{{staticAssetsVersion}}.js',
     '{{ baseUrl }}js/axios.min.{{staticAssetsVersion}}.js',
     '{{ baseUrl }}js/amplitude.min.{{staticAssetsVersion}}.js',
-    '{{ baseUrl }}js/lazysizes.min.{{staticAssetsVersion}}.js'
+    '{{ baseUrl }}js/lazysizes.min.{{staticAssetsVersion}}.js',
+    '{{ baseUrl }}js/ls.bgset.min.{{staticAssetsVersion}}.js'
 ];
 
 function stashInCache(cacheName, request, response) {
