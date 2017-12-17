@@ -219,6 +219,12 @@
       "css": "plug",
       "code": 61926,
       "src": "fontawesome"
+    },
+    {
+      "uid": "0b28050bac9d3facf2f0226db643ece0",
+      "css": "pause",
+      "code": 59418,
+      "src": "fontawesome"
     }
   ]
 }
