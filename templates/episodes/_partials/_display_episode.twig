@@ -169,6 +169,10 @@
                                         }
                                     }
                                 });
+                                // We're handling spacebar keypresses
+                                window.onkeydown = function(e) {
+                                    return !(e.keyCode == 32);
+                                };
                             },
                         });
                     }
