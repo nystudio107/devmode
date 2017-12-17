@@ -63,7 +63,7 @@
                             <ul class="list-reset inline">
                                 {% for link in showInfo.showTechnologiesLinks %}
                                     <li class="inline">
-                                        <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkName }}" rel="noopener,nofollow" target="_blank">{{ link.linkName }}</a>
+                                        <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkName }}" rel="noopener nofollow" target="_blank">{{ link.linkName }}</a>
                                         <span> </span>
                                     </li>
                                 {% endfor %}
@@ -80,7 +80,7 @@
                             <ul class="list-reset inline">
                                 {% for plugin in plugins %}
                                     <li class="inline">
-                                        <a href="{{ "https://github.com/#{plugin.packageName}" }}" class="tags-link align-middle whitespace-no-wrap" title="{{ plugin.name }}" rel="noopener,nofollow" target="_blank">{{ plugin.name }}</a>
+                                        <a href="{{ "https://github.com/#{plugin.packageName}" }}" class="tags-link align-middle whitespace-no-wrap" title="{{ plugin.name }}" rel="noopener nofollow" target="_blank">{{ plugin.name }}</a>
                                         <span> </span>
                                     </li>
                                 {% endfor %}
