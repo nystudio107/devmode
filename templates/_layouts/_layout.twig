@@ -141,23 +141,23 @@
             // define a dependency bundle
             loadjs(
                 [
-                    '{{ baseUrl }}js/vue.min.{{ staticAssetsVersion }}.js',
+                    "{{ baseUrl }}js/vue.min.{{ staticAssetsVersion }}.js",
                 ],
-                'vue'
+                "vue"
             );
             loadjs(
                 [
-                    '{{ baseUrl }}js/axios.min.{{ staticAssetsVersion }}.js',
+                    "{{ baseUrl }}js/axios.min.{{ staticAssetsVersion }}.js",
                 ],
-                'axios'
+                "axios"
             );
-            loadjs.ready(['vue', 'axios'], {
+            loadjs.ready(["vue", "axios"], {
                 success: function() {
                     // Use Axios as our http client
                     Vue.prototype.$http = axios;
                     // Create our Vue component
                     var vm = new Vue({
-                        el: '#page-container',
+                        el: '#page-header',
                         components: {},
                         delimiters: ['${', '}'],
                         data: {

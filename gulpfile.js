@@ -82,6 +82,7 @@ class TailwindExtractor {
 gulp.task("purgecss", ["tailwind", "scss"], () => {
     switch (process.env.NODE_ENV) {
         case 'development':
+            $.fancyLog("-> Copying CSS");
             return gulp.src(pkg.globs.distCss)
                 .pipe(gulp.dest(pkg.paths.build.css));
             break;
@@ -421,7 +422,7 @@ gulp.task("set-prod-node-env", function() {
 });
 
 // Default task
-gulp.task("default", ["css", "js"], () => {
+gulp.task("default", ["set-dev-node-env","css", "js"], () => {
     $.fancyLog("-> Livereload listening for changes");
     $.livereload.listen();
     gulp.watch([pkg.paths.src.scss + "**/*.scss"], ["css"]);

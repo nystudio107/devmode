@@ -19,10 +19,6 @@
     normalize-path "^2.0.1"
     through2 "^2.0.3"
 
-"HTML5-Audio@https://github.com/alexanderkatz/HTML5-Audio.git":
-  version "0.0.0"
-  resolved "https://github.com/alexanderkatz/HTML5-Audio.git#3938ec37e40efcd4b0eb191c2433221f3abc077a"
-
 JSONStream@^0.8.4:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-0.8.4.tgz#91657dfe6ff857483066132b4618b62e8f4887bd"
@@ -87,6 +83,10 @@ alphanum-sort@^1.0.1, alphanum-sort@^1.0.2:
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
+
+amplitudejs@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/amplitudejs/-/amplitudejs-3.2.3.tgz#c2a2e060f472ac8f67959c4fdc345d1aa460a899"
 
 ansi-align@^1.0.0:
   version "1.1.0"
