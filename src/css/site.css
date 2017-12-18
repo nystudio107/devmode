@@ -217,12 +217,12 @@ html.user-is-tabbing *:focus {
 }
 
 .header-background {
-    background-size: 85%;
+    background-size: 600px;
 }
 
 @screen sm {
     .header-background {
-        background-size: 50%;
+        background-size: 600px;
     }
 }
 
