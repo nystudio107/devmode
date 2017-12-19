@@ -176,16 +176,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.5.5",
+            "version": "1.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "aab6229c9a4b6731f23b36107c39f4007c290b50"
+                "reference": "4f7f9c12753ec43f1e4629e2a71cabe81f2a4eab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/aab6229c9a4b6731f23b36107c39f4007c290b50",
-                "reference": "aab6229c9a4b6731f23b36107c39f4007c290b50",
+                "url": "https://api.github.com/repos/composer/composer/zipball/4f7f9c12753ec43f1e4629e2a71cabe81f2a4eab",
+                "reference": "4f7f9c12753ec43f1e4629e2a71cabe81f2a4eab",
                 "shasum": ""
             },
             "require": {
@@ -249,7 +249,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2017-12-01T13:42:57+00:00"
+            "time": "2017-12-18T11:09:18+00:00"
         },
         {
             "name": "composer/semver",
@@ -2283,21 +2283,21 @@
         },
         {
             "name": "nystudio107/craft3-imageoptimize",
-            "version": "1.4.2",
+            "version": "1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-imageoptimize.git",
-                "reference": "6181159c567d8e8145cf514341e149831ab04135"
+                "reference": "a67ddf935610fef41cd3bdb00b129a4f506abcee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/6181159c567d8e8145cf514341e149831ab04135",
-                "reference": "6181159c567d8e8145cf514341e149831ab04135",
+                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/a67ddf935610fef41cd3bdb00b129a4f506abcee",
+                "reference": "a67ddf935610fef41cd3bdb00b129a4f506abcee",
                 "shasum": ""
             },
             "require": {
                 "cloudinary/cloudinary_php": "^1.8.0",
-                "craftcms/cms": "^3.0.0-RC1",
+                "craftcms/cms": "^3.0.0-RC2",
                 "imageoptim/imageoptim": "^1.0.0",
                 "imgix/imgix-php": "^1.1.0",
                 "kraken-io/kraken-php": "^1.2",
@@ -2346,7 +2346,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2017-12-15T20:40:07+00:00"
+            "time": "2017-12-19T17:32:46+00:00"
         },
         {
             "name": "nystudio107/craft3-minify",
