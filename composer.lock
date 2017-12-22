@@ -2283,16 +2283,16 @@
         },
         {
             "name": "nystudio107/craft3-imageoptimize",
-            "version": "1.4.4",
+            "version": "1.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-imageoptimize.git",
-                "reference": "21659d586232dd7f142a16427148dbdbae4a82c6"
+                "reference": "6b42ee8b96a8a72689e3457ad16441e7aaa049f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/21659d586232dd7f142a16427148dbdbae4a82c6",
-                "reference": "21659d586232dd7f142a16427148dbdbae4a82c6",
+                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/6b42ee8b96a8a72689e3457ad16441e7aaa049f5",
+                "reference": "6b42ee8b96a8a72689e3457ad16441e7aaa049f5",
                 "shasum": ""
             },
             "require": {
@@ -2346,7 +2346,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2017-12-19T22:32:40+00:00"
+            "time": "2017-12-22T16:05:56+00:00"
         },
         {
             "name": "nystudio107/craft3-minify",
