@@ -13,7 +13,7 @@
     
     <section>
         <div>
-            {% for episode in craft.entries.section("episodes").all() %}
+            {% for episode in craft.entries.section("episodes").limit(1).all() %}
                 <div class="flex flex-wrap">
                     {% include "episodes/_partials/_display_episode.twig" with {
                         "episode": episode,
