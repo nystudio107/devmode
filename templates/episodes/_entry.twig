@@ -34,30 +34,10 @@
             </div>
         </div>
     </section>
-
-    <section>
-        <div class="bg-devmode-aqua">
-            <div class="pt-8">
-                <div class="w-full bg-transparent">
-                    <div class="pt-8 mb-8">
-                        <h3 class="text-white text-center">
-                            Recent Episodes
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            {% for episode in craft.entries.section("episodes").limit(5).all() %}
-                <div class="container mx-auto py-8">
-                    <div class="flex flex-wrap py-8">
-                        {% include "episodes/_partials/_display_episode_excerpt.twig" with {
-                            "episode": episode,
-                            "showInfo": showInfo,
-                        } only %}
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </section>
+    
+    {% include "episodes/_partials/_display_recent_episodes.twig" with {
+        "showInfo": showInfo,
+    } only %}
 {% endblock %}
 
 {% block _inline_js %}
