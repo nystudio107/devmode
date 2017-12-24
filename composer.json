@@ -42,7 +42,11 @@
     "nystudio107/craft3-transcoder": "^1.0.0",
     "nystudio107/craft3-disqus": "^1.0"
   },
-
+  "autoload": {
+    "psr-4": {
+      "modules\\": "modules/"
+    }
+  },
   "config": {
     "optimize-autoloader": true
   },

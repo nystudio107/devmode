@@ -1,0 +1,19 @@
+/**
+ * SiteModule CSS
+ *
+ * @author    nystudio107
+ * @copyright Copyright (c) 2017 nystudio107
+ * @link      https://nystudio107.com
+ * @package   SiteModule
+ * @since     1.0.0
+ */
+
+body.login {
+    background-size: 600px;
+    background-repeat: repeat;
+    background-image: url('/img/site/devmode-fm-light-bg-opaque.svg');
+}
+
+body.login label, body.login #forgot-password {
+    background-color: #FFF;
+}
