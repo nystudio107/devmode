@@ -13,8 +13,6 @@ use modules\nystudio107\sitemodule\assetbundles\sitemodule\SiteModuleAsset;
 use Craft;
 use craft\events\TemplateEvent;
 use craft\web\View;
-use craft\redactor\events\RegisterPluginPathsEvent;
-use craft\redactor\Field as RichText;
 
 use yii\base\Event;
 use yii\base\InvalidConfigException;
@@ -63,23 +61,6 @@ class SiteModule extends Module
                     }
                 }
             );
-            // Make sure the Redactor plugin is installed
-            if (Craft::$app->getPlugins()->getPlugin('redactor')) {
-                // Handler: RichText::EVENT_REGISTER_PLUGIN_PATHS
-                Event::on(
-                    RichText::class,
-                    RichText::EVENT_REGISTER_PLUGIN_PATHS,
-                    function (RegisterPluginPathsEvent $event) {
-                        Craft::trace(
-                            'View::EVENT_REGISTER_PLUGIN_PATHS',
-                            __METHOD__
-                        );
-                        // Add our Redactor plugins
-                        $src = Craft::getAlias('@site-module/redactor/plugins');
-                        $event->paths[] = $src;
-                    }
-                );
-            }
         }
     }
 }
