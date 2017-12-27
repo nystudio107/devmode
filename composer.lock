@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "479adfd9b80d431fd4a8b3b5c23d31ea",
+    "content-hash": "5ce5590a7dfe63e0b120c391d958fd5b",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2283,16 +2283,16 @@
         },
         {
             "name": "nystudio107/craft3-imageoptimize",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-imageoptimize.git",
-                "reference": "6b42ee8b96a8a72689e3457ad16441e7aaa049f5"
+                "reference": "9df0712d03bc5ababe82f83dfce9937d00f2f810"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/6b42ee8b96a8a72689e3457ad16441e7aaa049f5",
-                "reference": "6b42ee8b96a8a72689e3457ad16441e7aaa049f5",
+                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/9df0712d03bc5ababe82f83dfce9937d00f2f810",
+                "reference": "9df0712d03bc5ababe82f83dfce9937d00f2f810",
                 "shasum": ""
             },
             "require": {
@@ -2346,7 +2346,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2017-12-22T16:05:56+00:00"
+            "time": "2017-12-27T14:42:01+00:00"
         },
         {
             "name": "nystudio107/craft3-minify",
@@ -2436,6 +2436,65 @@
                 "multi-environment"
             ],
             "time": "2017-11-25T14:35:54+00:00"
+        },
+        {
+            "name": "nystudio107/craft3-routemap",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft3-routemap.git",
+                "reference": "c2051f14c88b24be3597bcdd4d5c949e77ebe8bd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft3-routemap/zipball/c2051f14c88b24be3597bcdd4d5c949e77ebe8bd",
+                "reference": "c2051f14c88b24be3597bcdd4d5c949e77ebe8bd",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-RC3"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Route Map",
+                "handle": "route-map",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-routemap/master/CHANGELOG.md",
+                "components": {
+                    "routes": "nystudio107\\routemap\\services\\Routes"
+                },
+                "class": "nystudio107\\routemap\\RouteMap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\routemap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com/"
+                }
+            ],
+            "description": "Returns a list of Craft/Vue/React route rules and element URLs for ServiceWorkers from Craft entries",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "react",
+                "route map",
+                "routes",
+                "serviceworker",
+                "vue"
+            ],
+            "time": "2017-12-27T14:16:36+00:00"
         },
         {
             "name": "nystudio107/craft3-seomatic",
@@ -2924,12 +2983,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "40b035345ed34a4cc92c842f60a6cc739101542f"
+                "reference": "0703d860f83775029738dc4a519301e8e3d81853"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/40b035345ed34a4cc92c842f60a6cc739101542f",
-                "reference": "40b035345ed34a4cc92c842f60a6cc739101542f",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0703d860f83775029738dc4a519301e8e3d81853",
+                "reference": "0703d860f83775029738dc4a519301e8e3d81853",
                 "shasum": ""
             },
             "conflict": {
@@ -3012,7 +3071,7 @@
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
+                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
                 "twig/twig": "<1.20",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
@@ -3061,7 +3120,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2017-12-12T00:38:43+00:00"
+            "time": "2017-12-24T19:52:27+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -4052,16 +4111,16 @@
         },
         {
             "name": "yiisoft/yii2-queue",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-queue.git",
-                "reference": "5e3bc6c389c4374acaf40dfa1901ba258983f575"
+                "reference": "8c2b337f7d9ea934c2affdfc21c9fb387d0a0773"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/5e3bc6c389c4374acaf40dfa1901ba258983f575",
-                "reference": "5e3bc6c389c4374acaf40dfa1901ba258983f575",
+                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/8c2b337f7d9ea934c2affdfc21c9fb387d0a0773",
+                "reference": "8c2b337f7d9ea934c2affdfc21c9fb387d0a0773",
                 "shasum": ""
             },
             "require": {
@@ -4070,6 +4129,7 @@
                 "yiisoft/yii2": "~2.0.13"
             },
             "require-dev": {
+                "enqueue/amqp-lib": "^0.8",
                 "jeremeamia/superclosure": "*",
                 "pda/pheanstalk": "*",
                 "php-amqplib/php-amqplib": "*",
@@ -4079,6 +4139,7 @@
                 "yiisoft/yii2-redis": "*"
             },
             "suggest": {
+                "enqueue/amqp-lib": "Need for AMQP interop queue.",
                 "ext-gearman": "Need for Gearman queue.",
                 "ext-pcntl": "Need for process signals.",
                 "pda/pheanstalk": "Need for Beanstalk queue.",
@@ -4095,6 +4156,7 @@
                 "psr-4": {
                     "yii\\queue\\": "src",
                     "yii\\queue\\amqp\\": "src/drivers/amqp",
+                    "yii\\queue\\amqp_interop\\": "src/drivers/amqp_interop",
                     "yii\\queue\\beanstalk\\": "src/drivers/beanstalk",
                     "yii\\queue\\db\\": "src/drivers/db",
                     "yii\\queue\\file\\": "src/drivers/file",
@@ -4125,7 +4187,7 @@
                 "redis",
                 "yii"
             ],
-            "time": "2017-11-13T19:49:43+00:00"
+            "time": "2017-12-26T17:16:14+00:00"
         },
         {
             "name": "yiisoft/yii2-redis",
