@@ -10,6 +10,8 @@
 /*global Response:true */
 /*global Request:true */
 
+{% set episodes = craft.routeMap.getSectionUrls('episodes', {'limit': 9}) %}
+
 (function(){
 'use strict';
 
@@ -24,7 +26,10 @@ const staticCacheName = version + 'static';
 const pagesCacheName = version + 'pages';
 const imagesCacheName = version + 'images';
 const offlinePages = [
-    '/about',
+    '/about/',
+{% for episode in episodes %}
+    '{{ episode }}',
+{% endfor %}
     '/offline',
     '/'
 ];
@@ -33,6 +38,7 @@ const staticAssets = [
     '{{ baseUrl }}css/site.combined.min.{{staticAssetsVersion}}.css',
 
     '{{ baseUrl }}img/site/devmode-fm-light-bg-opaque.svg',
+    '{{ baseUrl }}img/site/devmode-fm-dark-bg.svg',
 
     '{{ baseUrl }}fonts/fontello.woff2',
     '{{ baseUrl }}fonts/OperatorMonoSSm-Book.woff2',
