@@ -73,6 +73,9 @@
         "purgecss": [
             "./templates/**/*.{html,twig}"
         ],
+        "purgecssWhitelist": [
+            "menuOpen", "open", "main-logo-svg", "sub-logo-svg", "scaling-svg", "lazyloaded"
+        ],
         "critical": [
             {
                 "url": "",
