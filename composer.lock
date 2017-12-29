@@ -2283,16 +2283,16 @@
         },
         {
             "name": "nystudio107/craft3-imageoptimize",
-            "version": "1.4.6",
+            "version": "1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-imageoptimize.git",
-                "reference": "9df0712d03bc5ababe82f83dfce9937d00f2f810"
+                "reference": "ea8e702f9bb370e52645134a35bb2a6b084be4ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/9df0712d03bc5ababe82f83dfce9937d00f2f810",
-                "reference": "9df0712d03bc5ababe82f83dfce9937d00f2f810",
+                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/ea8e702f9bb370e52645134a35bb2a6b084be4ee",
+                "reference": "ea8e702f9bb370e52645134a35bb2a6b084be4ee",
                 "shasum": ""
             },
             "require": {
@@ -2346,7 +2346,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2017-12-27T14:42:01+00:00"
+            "time": "2017-12-29T20:08:29+00:00"
         },
         {
             "name": "nystudio107/craft3-minify",
@@ -2439,16 +2439,16 @@
         },
         {
             "name": "nystudio107/craft3-routemap",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-routemap.git",
-                "reference": "c2051f14c88b24be3597bcdd4d5c949e77ebe8bd"
+                "reference": "9aa0dc62c244d883045939c3a377e43d04607dbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-routemap/zipball/c2051f14c88b24be3597bcdd4d5c949e77ebe8bd",
-                "reference": "c2051f14c88b24be3597bcdd4d5c949e77ebe8bd",
+                "url": "https://api.github.com/repos/nystudio107/craft3-routemap/zipball/9aa0dc62c244d883045939c3a377e43d04607dbd",
+                "reference": "9aa0dc62c244d883045939c3a377e43d04607dbd",
                 "shasum": ""
             },
             "require": {
@@ -2494,7 +2494,7 @@
                 "serviceworker",
                 "vue"
             ],
-            "time": "2017-12-27T14:16:36+00:00"
+            "time": "2017-12-29T20:31:48+00:00"
         },
         {
             "name": "nystudio107/craft3-seomatic",
@@ -2502,12 +2502,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-seomatic.git",
-                "reference": "6ee339f32e4438e0bb91317ba1fdd5010b981658"
+                "reference": "c7bcbbbcb5c96c4e588ecc57e839309cd53048d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/6ee339f32e4438e0bb91317ba1fdd5010b981658",
-                "reference": "6ee339f32e4438e0bb91317ba1fdd5010b981658",
+                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/c7bcbbbcb5c96c4e588ecc57e839309cd53048d9",
+                "reference": "c7bcbbbcb5c96c4e588ecc57e839309cd53048d9",
                 "shasum": ""
             },
             "require": {
@@ -2560,7 +2560,7 @@
                 "issues": "https://github.com/nystudio107/craft3-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft3-seomatic/tree/develop"
             },
-            "time": "2017-12-13T20:19:33+00:00"
+            "time": "2017-12-28T17:22:09+00:00"
         },
         {
             "name": "nystudio107/craft3-transcoder",
