@@ -106,6 +106,8 @@
                 "template": "404"
             }
         ],
+        "criticalWhitelist": [
+        ],
         "download": [
             {
                 "url": "https://www.google-analytics.com/analytics.js",
