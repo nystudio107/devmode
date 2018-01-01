@@ -58,6 +58,9 @@
     "post-create-project-cmd": [
       "@php craft setup/welcome",
       "@php nys-setup welcome"
+    ],
+    "post-update-cmd": [
+      "@php nys-setup update"
     ]
   }
 }
