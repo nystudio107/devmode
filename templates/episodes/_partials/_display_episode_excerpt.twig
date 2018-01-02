@@ -5,9 +5,11 @@
             <div class="flex flex-wrap items-center justify-center flex-row-reverse md:flex-row flex-col-reverse">
                 {# -- Episode title -- #}
                 <div class=" w-full md:w-2/3 text-left py-2">
-                    <a href="{{ episode.url }}" class="title-link" @mouseover="prerenderLink">
-                        <h2 class="font-mono italic font-bold text-devmode-pink text-3xl">{{ episode.title |typogrify }}</h2>
-                    </a>
+                    <h2 class="font-mono italic font-bold text-devmode-pink text-3xl">
+                        <a href="{{ episode.url }}" class="title-link" @mouseover="prerenderLink">
+                        {{ episode.title |typogrify }}
+                        </a>
+                    </h2>
                 </div>
                 {# -- Episode number and date -- #}
                 <div class="w-full md:w-1/3 text-devmode-pink font-mono text-xs text-left md:text-right uppercase py-2">

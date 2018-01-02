@@ -5,9 +5,11 @@
             <div class="w-full md:w-5/6">
                 <div class="w-full md:w-auto bg-devmode-yellow text-devmode-pink inline-block p-4">
                     <span class="">
-                        <a href="/" class="navbar-link align-middle" @mouseover="prerenderLink" rel="noopener">
-                            <h3 class="font-mono italic text-bold text-3xl sm:text-4xl inline-block">{{ showInfo.showTitle }}</h3>
-                        </a>
+                        <h3 class="inline-block">
+                            <a href="/" class="navbar-link font-mono italic text-bold text-3xl sm:text-4xl align-middle" @mouseover="prerenderLink" rel="noopener">
+                                {{ showInfo.showTitle }}
+                            </a>
+                        </h3>
                     </span>
                     <span class="hidden md:inline text-devmode-pink font-mono italic text-md align-middle pr-3">
                         // {{ showInfo.showSubTitle }}
