@@ -407,16 +407,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC3",
+            "version": "3.0.0-RC4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "fbecf432a08ef457667234ea938218031f1a4e6e"
+                "reference": "c8fd183b7eb21d4d4c2584dd687e056a2c58510b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/fbecf432a08ef457667234ea938218031f1a4e6e",
-                "reference": "fbecf432a08ef457667234ea938218031f1a4e6e",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/c8fd183b7eb21d4d4c2584dd687e056a2c58510b",
+                "reference": "c8fd183b7eb21d4d4c2584dd687e056a2c58510b",
                 "shasum": ""
             },
             "require": {
@@ -426,7 +426,7 @@
                 "craftcms/server-check": "~1.1.0",
                 "creocoder/yii2-nested-sets": "~0.9.0",
                 "danielstjules/stringy": "~3.1.0",
-                "enshrined/svg-sanitize": "~0.7.2",
+                "enshrined/svg-sanitize": "~0.8.2",
                 "ext-curl": "*",
                 "ext-dom": "*",
                 "ext-json": "*",
@@ -484,7 +484,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2017-12-19T18:07:14+00:00"
+            "time": "2018-01-02T18:31:00+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -915,16 +915,16 @@
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.7.2",
+            "version": "0.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "2768fb1c8868d97145e8f2a5457caf590c8d2062"
+                "reference": "432fc4fc7e95b8a866790ba27e35076b9dd96ebe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/2768fb1c8868d97145e8f2a5457caf590c8d2062",
-                "reference": "2768fb1c8868d97145e8f2a5457caf590c8d2062",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/432fc4fc7e95b8a866790ba27e35076b9dd96ebe",
+                "reference": "432fc4fc7e95b8a866790ba27e35076b9dd96ebe",
                 "shasum": ""
             },
             "require-dev": {
@@ -948,7 +948,7 @@
                 }
             ],
             "description": "An SVG sanitizer for PHP",
-            "time": "2017-08-31T00:10:18+00:00"
+            "time": "2017-12-06T15:31:26+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
