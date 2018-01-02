@@ -165,7 +165,14 @@
                                             var audio = Amplitude.audio();
                                             self.paused = audio.paused;
                                             {% if not craft.app.config.general.devMode %}
-                                            window.ga('send', 'event', 'podcast', 'play', '{{ episode.title }}', 1);
+                                            var hitObj = {
+                                                hitType: 'event',
+                                                eventCategory: 'podcast',
+                                                eventAction: 'play',
+                                                eventLabel: '{{ episode.title }}'
+                                            };
+                                            window.ga('send', hitObj);
+                                            console.log(hitObj);
                                             {% endif %}
 
                                         },
