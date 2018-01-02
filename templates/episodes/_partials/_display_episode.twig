@@ -12,11 +12,13 @@
         {# -- Episode title -- #}
         <div>
             <div class="inline-block bg-grey-lightest p-8">
-                <a href="{{ episode.url }}" class="title-link" @mouseover="prerenderLink">
-                    <strong>
-                        <h1 class="text-devmode-pink font-mono italic text-bold text-4xl sm:text-5xl">{{ episode.title |typogrify }}</h1>
-                    </strong>
-                </a>
+                <strong>
+                    <h1 class="text-devmode-pink font-mono italic text-bold text-4xl sm:text-5xl">
+                        <a href="{{ episode.url }}" class="title-link" @mouseover="prerenderLink">
+                        {{ episode.title |typogrify }}
+                        </a>
+                    </h1>
+                </strong>
             </div>
         </div>
         {# -- Episode hosts -- #}
