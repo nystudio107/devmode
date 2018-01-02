@@ -4,9 +4,9 @@
         <div class="p-8">
             <div class="flex flex-wrap items-center justify-center flex-row-reverse md:flex-row flex-col-reverse">
                 {# -- Episode title -- #}
-                <div class=" w-full md:w-2/3 font-mono italic font-bold text-devmode-pink text-left text-3xl py-2">
+                <div class=" w-full md:w-2/3 text-left py-2">
                     <a href="{{ episode.url }}" class="title-link" @mouseover="prerenderLink">
-                        {{ episode.title |typogrify }}
+                        <h2 class="font-mono italic font-bold text-devmode-pink text-3xl">{{ episode.title |typogrify }}</h2>
                     </a>
                 </div>
                 {# -- Episode number and date -- #}
