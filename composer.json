@@ -41,7 +41,8 @@
     "nystudio107/craft3-typogrify": "^1.1.4",
     "nystudio107/craft3-transcoder": "^1.0.0",
     "nystudio107/craft3-disqus": "^1.0",
-    "nystudio107/craft3-routemap": "^1.0"
+    "nystudio107/craft3-routemap": "^1.0",
+    "nystudio107/craft3-instantanalytics": "^1.0.2"
   },
   "autoload": {
     "psr-4": {

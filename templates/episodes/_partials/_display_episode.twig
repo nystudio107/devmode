@@ -164,6 +164,10 @@
                                         'after_play': function() {
                                             var audio = Amplitude.audio();
                                             self.paused = audio.paused;
+                                            {% if not craft.app.config.general.devMode %}
+                                            ga('send', 'event', 'podcast', 'play', '{{ episode.title }}', 1);
+                                            {% endif %}
+
                                         },
                                         'after_pause': function() {
                                             var audio = Amplitude.audio();
