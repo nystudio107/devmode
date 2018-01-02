@@ -74,7 +74,12 @@
             "./templates/**/*.{html,twig}"
         ],
         "purgecssWhitelist": [
-            "menuOpen", "open", "main-logo-svg", "sub-logo-svg", "scaling-svg", "lazyloaded"
+            "menuOpen",
+            "open",
+            "main-logo-svg",
+            "sub-logo-svg",
+            "scaling-svg",
+            "lazyloaded"
         ],
         "critical": [
             {
@@ -106,8 +111,7 @@
                 "template": "404"
             }
         ],
-        "criticalWhitelist": [
-        ],
+        "criticalWhitelist": [],
         "download": [
             {
                 "url": "https://www.google-analytics.com/analytics.js",

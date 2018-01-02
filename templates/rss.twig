@@ -3,6 +3,8 @@
 {% set hosts = craft.users.group("owners").all() %}
 {% set baseUrl = craft.app.config.general.custom.baseUrl %}
 {% set staticAssetsVersion = craft.app.config.general.custom.staticAssetsVersion %}
+{% set myAnalytics = eventAnalytics("podcast", "access", "Podcast RSS Feed", 1) %}
+{% do myAnalytics.sendEvent() %}
 <?xml version="1.0" encoding="UTF-8"?>
 
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -77,7 +79,7 @@
                 {% if transAudioUrl |length %}
                     {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
         
-                    <enclosure url="{{ url(transAudioUrl, null, "http") }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
+                    <enclosure url="{{ url(eventTrackingUrl(transAudioUrl, "podcast", "access", episode.title, 1), null, "http") |raw }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
                     <guid>{{ url(episode.episodeNumber) }}</guid>
                     
                     <itunes:duration>{{ fileInfo.duration |round }}</itunes:duration>
