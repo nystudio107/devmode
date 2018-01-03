@@ -155,12 +155,15 @@
                 success: function() {
                     loadjs(
                         [
-                            '{{ baseUrl }}js/vue-clickaway.min.{{staticAssetsVersion}}.js'
+                            '{{ baseUrl }}js/vue-clickaway.min.{{staticAssetsVersion}}.js',
+                            '{{ baseUrl }}js/vue-typer.min.{{staticAssetsVersion}}.js',
                         ],
-                        'vue-clickaway'
+                        'vue-components'
                     );
-                    loadjs.ready('vue-clickaway', {
+                    loadjs.ready(["vue-components"], {
                         success: function() {
+                            var VueTyperPlugin = window.VueTyper.default
+                            Vue.use(VueTyperPlugin);
                             // Use Axios as our http client
                             Vue.prototype.$http = axios;
                             // Create our Vue component
