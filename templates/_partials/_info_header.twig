@@ -15,7 +15,7 @@
                         // {{ showInfo.showSubTitle }}
                     </span>
                     <div class="block md:hidden float-right">
-                        <button @click="toggle" aria-label="Menu" title="Menu">
+                        <button @click.stop="toggle" aria-label="Menu" title="Menu">
                             <span class="text-devmode-pink font-mono italic text-bold text-4xl align-middle hamburger-menu">
                                 <i class="icon-menu"></i>
                             </span>
@@ -25,7 +25,7 @@
             </div>
             <div class="hidden md:block w-full md:w-1/6 text-right">
                 <div class="inline-block bg-devmode-yellow inline-block p-4">
-                    <button @click="toggle" aria-label="Menu" title="Menu">
+                    <button @click.stop="toggle" aria-label="Menu" title="Menu">
                         <span class="text-devmode-pink font-mono italic text-bold text-4xl align-middle hamburger-menu">
                             <i class="icon-menu"></i>
                         </span>

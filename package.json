@@ -125,6 +125,7 @@
             "./node_modules/lazysizes/lazysizes.min.js",
             "./node_modules/lazysizes/plugins/bgset/ls.bgset.min.js",
             "./node_modules/picturefill/dist/picturefill.min.js",
+            "./node_modules/vue-clickaway/dist/vue-clickaway.min.js",
             "./node_modules/vue/dist/vue.min.js"
         ],
         "babelJs": [
@@ -152,6 +153,7 @@
         "normalize.css": "^5.0.0",
         "picturefill": "^3.0.2",
         "tiny-cookie": "^1.0.1",
+        "vue-clickaway": "^2.1.0",
         "vue": "^2.5.9"
     },
     "devDependencies": {
