@@ -2609,12 +2609,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-seomatic.git",
-                "reference": "81bcc6a514186f79356dcbdf4845938a40dafcae"
+                "reference": "87eb2cb6d738df3e1adb4f70c04a81a27bd79205"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/81bcc6a514186f79356dcbdf4845938a40dafcae",
-                "reference": "81bcc6a514186f79356dcbdf4845938a40dafcae",
+                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/87eb2cb6d738df3e1adb4f70c04a81a27bd79205",
+                "reference": "87eb2cb6d738df3e1adb4f70c04a81a27bd79205",
                 "shasum": ""
             },
             "require": {
@@ -2667,7 +2667,7 @@
                 "issues": "https://github.com/nystudio107/craft3-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft3-seomatic/tree/develop"
             },
-            "time": "2018-01-04T21:54:28+00:00"
+            "time": "2018-01-05T00:52:26+00:00"
         },
         {
             "name": "nystudio107/craft3-transcoder",
