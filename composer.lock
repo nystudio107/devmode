@@ -1313,16 +1313,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.54",
+            "version": "v1.2.55",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "9af25770d9382917b680009a88497162405bbe48"
+                "reference": "e745d69502afc610ff993315e2607ad41e3bc13c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/9af25770d9382917b680009a88497162405bbe48",
-                "reference": "9af25770d9382917b680009a88497162405bbe48",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/e745d69502afc610ff993315e2607ad41e3bc13c",
+                "reference": "e745d69502afc610ff993315e2607ad41e3bc13c",
                 "shasum": ""
             },
             "require": {
@@ -1358,7 +1358,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2017-10-28T13:05:55+00:00"
+            "time": "2018-01-05T07:59:11+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2063,16 +2063,16 @@
         },
         {
             "name": "mundschenk-at/php-typography",
-            "version": "v5.2.3",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mundschenk-at/php-typography.git",
-                "reference": "7cd4991d4ec56b47ec85266ef3072fad8173e324"
+                "reference": "31341b619f0ba0da767ef150b289738f46dbb684"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/7cd4991d4ec56b47ec85266ef3072fad8173e324",
-                "reference": "7cd4991d4ec56b47ec85266ef3072fad8173e324",
+                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/31341b619f0ba0da767ef150b289738f46dbb684",
+                "reference": "31341b619f0ba0da767ef150b289738f46dbb684",
                 "shasum": ""
             },
             "require": {
@@ -2082,14 +2082,15 @@
                 "php": ">=5.6.0"
             },
             "require-dev": {
+                "brain/monkey": "^2.2.0",
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
                 "ext-curl": "*",
-                "phpbench/phpbench": "^1.0@dev",
-                "phpstan/phpstan": "^0.8.0",
+                "phpbench/phpbench": "^0.13||^1.0@dev",
+                "phpstan/phpstan": "^0.9",
                 "phpunit/phpunit": "5.*||6.*",
-                "squizlabs/php_codesniffer": "^3.1.0",
-                "wimg/php-compatibility": "^8.0.1",
-                "wp-coding-standards/wpcs": "^0.13.1"
+                "squizlabs/php_codesniffer": "^3.2",
+                "wimg/php-compatibility": "^8.0",
+                "wp-coding-standards/wpcs": "^0.14.0"
             },
             "bin": [
                 "src/bin/update-patterns.php",
@@ -2120,7 +2121,7 @@
                 }
             ],
             "description": "A PHP library for improving your web typography",
-            "time": "2017-12-02T14:04:33+00:00"
+            "time": "2018-01-05T17:52:24+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
@@ -2609,12 +2610,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-seomatic.git",
-                "reference": "87eb2cb6d738df3e1adb4f70c04a81a27bd79205"
+                "reference": "74db84b23e8e533e04331531121c456a0011c467"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/87eb2cb6d738df3e1adb4f70c04a81a27bd79205",
-                "reference": "87eb2cb6d738df3e1adb4f70c04a81a27bd79205",
+                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/74db84b23e8e533e04331531121c456a0011c467",
+                "reference": "74db84b23e8e533e04331531121c456a0011c467",
                 "shasum": ""
             },
             "require": {
@@ -2634,10 +2635,15 @@
                 "class": "nystudio107\\seomatic\\Seomatic",
                 "components": {
                     "frontendTemplates": "nystudio107\\seomatic\\services\\FrontendTemplates",
+                    "jsonLd": "nystudio107\\seomatic\\services\\JsonLd",
+                    "link": "nystudio107\\seomatic\\services\\Link",
                     "metaContainers": "nystudio107\\seomatic\\services\\MetaContainers",
                     "metaBundles": "nystudio107\\seomatic\\services\\MetaBundles",
+                    "redirects": "nystudio107\\seomatic\\services\\Redirects",
+                    "script": "nystudio107\\seomatic\\services\\Script",
                     "sitemaps": "nystudio107\\seomatic\\services\\Sitemaps",
-                    "redirects": "nystudio107\\seomatic\\services\\Redirects"
+                    "tag": "nystudio107\\seomatic\\services\\Tag",
+                    "title": "nystudio107\\seomatic\\services\\Title"
                 }
             },
             "autoload": {
@@ -2667,7 +2673,7 @@
                 "issues": "https://github.com/nystudio107/craft3-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft3-seomatic/tree/develop"
             },
-            "time": "2018-01-05T00:52:26+00:00"
+            "time": "2018-01-08T13:13:59+00:00"
         },
         {
             "name": "nystudio107/craft3-transcoder",
@@ -2727,22 +2733,22 @@
         },
         {
             "name": "nystudio107/craft3-typogrify",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-typogrify.git",
-                "reference": "6d01051971462a3f2550d722eff9c80cf26f6660"
+                "reference": "b42c9d2fef0790c672bcb067a38f6402263d4d56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-typogrify/zipball/6d01051971462a3f2550d722eff9c80cf26f6660",
-                "reference": "6d01051971462a3f2550d722eff9c80cf26f6660",
+                "url": "https://api.github.com/repos/nystudio107/craft3-typogrify/zipball/b42c9d2fef0790c672bcb067a38f6402263d4d56",
+                "reference": "b42c9d2fef0790c672bcb067a38f6402263d4d56",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0-RC1",
                 "michelf/php-smartypants": "^1.8",
-                "mundschenk-at/php-typography": "^5.2"
+                "mundschenk-at/php-typography": "^6.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2780,7 +2786,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2017-12-08T22:08:06+00:00"
+            "time": "2018-01-07T00:18:26+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3090,12 +3096,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "21b3900483e9bc1536a298bc3eb3d647ab56d8a1"
+                "reference": "fe89fd2178cabef137b9a76fa91d64925474b956"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/21b3900483e9bc1536a298bc3eb3d647ab56d8a1",
-                "reference": "21b3900483e9bc1536a298bc3eb3d647ab56d8a1",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/fe89fd2178cabef137b9a76fa91d64925474b956",
+                "reference": "fe89fd2178cabef137b9a76fa91d64925474b956",
                 "shasum": ""
             },
             "conflict": {
@@ -3178,7 +3184,7 @@
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
+                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
                 "twig/twig": "<1.20",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
@@ -3227,7 +3233,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-01-03T11:17:07+00:00"
+            "time": "2018-01-07T00:56:33+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -3475,16 +3481,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.2",
+            "version": "v3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "9f21adfb92a9315b73ae2ed43138988ee4913d4e"
+                "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/9f21adfb92a9315b73ae2ed43138988ee4913d4e",
-                "reference": "9f21adfb92a9315b73ae2ed43138988ee4913d4e",
+                "url": "https://api.github.com/repos/symfony/console/zipball/8394c8ef121949e8f858f13bc1e34f05169e4e7d",
+                "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d",
                 "shasum": ""
             },
             "require": {
@@ -3540,20 +3546,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2017-12-14T19:40:10+00:00"
+            "time": "2018-01-03T07:37:34+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v4.0.2",
+            "version": "v4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "8c3e709209ce3b952a31c0f4a31ac7703c3d0226"
+                "reference": "9ae4223a661b56a9abdce144de4886cca37f198f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/8c3e709209ce3b952a31c0f4a31ac7703c3d0226",
-                "reference": "8c3e709209ce3b952a31c0f4a31ac7703c3d0226",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/9ae4223a661b56a9abdce144de4886cca37f198f",
+                "reference": "9ae4223a661b56a9abdce144de4886cca37f198f",
                 "shasum": ""
             },
             "require": {
@@ -3596,20 +3602,20 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2017-12-12T08:41:51+00:00"
+            "time": "2018-01-03T17:15:19+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.4.2",
+            "version": "v3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "25b135bea251829e3db6a77d773643408b575ed4"
+                "reference": "e078773ad6354af38169faf31c21df0f18ace03d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/25b135bea251829e3db6a77d773643408b575ed4",
-                "reference": "25b135bea251829e3db6a77d773643408b575ed4",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/e078773ad6354af38169faf31c21df0f18ace03d",
+                "reference": "e078773ad6354af38169faf31c21df0f18ace03d",
                 "shasum": ""
             },
             "require": {
@@ -3645,20 +3651,20 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2017-12-14T19:40:10+00:00"
+            "time": "2018-01-03T07:37:34+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v3.4.2",
+            "version": "v3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "dac8d7db537bac7ad8143eb11360a8c2231f251a"
+                "reference": "613e26310776f49a1773b6737c6bd554b8bc8c6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/dac8d7db537bac7ad8143eb11360a8c2231f251a",
-                "reference": "dac8d7db537bac7ad8143eb11360a8c2231f251a",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/613e26310776f49a1773b6737c6bd554b8bc8c6f",
+                "reference": "613e26310776f49a1773b6737c6bd554b8bc8c6f",
                 "shasum": ""
             },
             "require": {
@@ -3694,7 +3700,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2017-11-05T16:10:10+00:00"
+            "time": "2018-01-03T07:37:34+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -3757,16 +3763,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.2",
+            "version": "v3.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "bb3ef65d493a6d57297cad6c560ee04e2a8f5098"
+                "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/bb3ef65d493a6d57297cad6c560ee04e2a8f5098",
-                "reference": "bb3ef65d493a6d57297cad6c560ee04e2a8f5098",
+                "url": "https://api.github.com/repos/symfony/process/zipball/ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
+                "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
                 "shasum": ""
             },
             "require": {
@@ -3802,7 +3808,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2017-12-14T19:40:10+00:00"
+            "time": "2018-01-03T07:37:34+00:00"
         },
         {
             "name": "theiconic/php-ga-measurement-protocol",
