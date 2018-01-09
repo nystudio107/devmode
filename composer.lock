@@ -407,16 +407,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC4",
+            "version": "3.0.0-RC5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "c8fd183b7eb21d4d4c2584dd687e056a2c58510b"
+                "reference": "d3ee52019f3c772fd2d69017f0e2071308e5be85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c8fd183b7eb21d4d4c2584dd687e056a2c58510b",
-                "reference": "c8fd183b7eb21d4d4c2584dd687e056a2c58510b",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/d3ee52019f3c772fd2d69017f0e2071308e5be85",
+                "reference": "d3ee52019f3c772fd2d69017f0e2071308e5be85",
                 "shasum": ""
             },
             "require": {
@@ -484,7 +484,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-01-02T18:31:00+00:00"
+            "time": "2018-01-09T19:21:35+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2400,16 +2400,16 @@
         },
         {
             "name": "nystudio107/craft3-instantanalytics",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-instantanalytics.git",
-                "reference": "d9f381ac9a3dd5847c9b34af0fb041bce389b11f"
+                "reference": "9efdd2b891ae9a149dd282cf5bc25177c2e0d218"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-instantanalytics/zipball/d9f381ac9a3dd5847c9b34af0fb041bce389b11f",
-                "reference": "d9f381ac9a3dd5847c9b34af0fb041bce389b11f",
+                "url": "https://api.github.com/repos/nystudio107/craft3-instantanalytics/zipball/9efdd2b891ae9a149dd282cf5bc25177c2e0d218",
+                "reference": "9efdd2b891ae9a149dd282cf5bc25177c2e0d218",
                 "shasum": ""
             },
             "require": {
@@ -2454,7 +2454,7 @@
                 "craftcms",
                 "instant analytics"
             ],
-            "time": "2018-01-02T15:45:21+00:00"
+            "time": "2018-01-08T20:25:14+00:00"
         },
         {
             "name": "nystudio107/craft3-minify",
