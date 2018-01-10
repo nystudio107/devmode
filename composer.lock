@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c9b59b49207087cae4eb8fd37201ff1c",
+    "content-hash": "e82c9545d81263bcd86e70cb025a6625",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2400,16 +2400,16 @@
         },
         {
             "name": "nystudio107/craft3-instantanalytics",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-instantanalytics.git",
-                "reference": "9efdd2b891ae9a149dd282cf5bc25177c2e0d218"
+                "reference": "09c528567bcc3f9fcac07fff23c5c2dab0c374c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-instantanalytics/zipball/9efdd2b891ae9a149dd282cf5bc25177c2e0d218",
-                "reference": "9efdd2b891ae9a149dd282cf5bc25177c2e0d218",
+                "url": "https://api.github.com/repos/nystudio107/craft3-instantanalytics/zipball/09c528567bcc3f9fcac07fff23c5c2dab0c374c2",
+                "reference": "09c528567bcc3f9fcac07fff23c5c2dab0c374c2",
                 "shasum": ""
             },
             "require": {
@@ -2454,7 +2454,7 @@
                 "craftcms",
                 "instant analytics"
             ],
-            "time": "2018-01-08T20:25:14+00:00"
+            "time": "2018-01-10T14:22:47+00:00"
         },
         {
             "name": "nystudio107/craft3-minify",
