@@ -225,6 +225,12 @@
       "css": "pause",
       "code": 59418,
       "src": "fontawesome"
+    },
+    {
+      "uid": "85528017f1e6053b2253785c31047f44",
+      "css": "comment",
+      "code": 59421,
+      "src": "fontawesome"
     }
   ]
 }

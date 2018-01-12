@@ -28,6 +28,16 @@
                     </span>
                 {% endfor %}
             </div>
+            {# -- Comments -- #}
+            {% set commentsCount = disqusCount(episode.slug) %}
+            <div class="text-devmode-pink font-sans text-xl py-2 leading-normal">
+                <a class="title-link" href="{{ episode.url ~ "#comments" }}">
+                    <i class="icon-comment align-middle"></i>
+                    <span class="text-devmode-pink font-sans text-xl leading-normal">
+                    {{ commentsCount }} {{ "comment" | pluralize(commentsCount, 1) }}
+                </span>
+                </a>
+            </div>
         </div>
     </div>
 </div>
