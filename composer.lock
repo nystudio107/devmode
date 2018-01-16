@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e82c9545d81263bcd86e70cb025a6625",
+    "content-hash": "bbef489ccd0c23074b31d7dc981f0673",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2164,6 +2164,63 @@
             "time": "2017-11-14T21:09:57+00:00"
         },
         {
+            "name": "nystudio107/craft-similar",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-similar.git",
+                "reference": "fb15598acf67aa2fbfe0195ccf1cb29b7bd4d33b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-similar/zipball/fb15598acf67aa2fbfe0195ccf1cb29b7bd4d33b",
+                "reference": "fb15598acf67aa2fbfe0195ccf1cb29b7bd4d33b",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Similar",
+                "handle": "similar",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-similar/master/CHANGELOG.md",
+                "components": {
+                    "similar": "nystudio107\\similar\\services\\Similar"
+                },
+                "class": "nystudio107\\similar\\Similar"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\similar\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107.com",
+                    "homepage": "https://nystudio107.com/"
+                }
+            ],
+            "description": "Similar for Craft lets you find elements, Entries, Categories, Commerce Products, etc, that are similar, based on... other related elements.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "elements",
+                "relations",
+                "similar"
+            ],
+            "time": "2018-01-16T19:42:45+00:00"
+        },
+        {
             "name": "nystudio107/craft3-disqus",
             "version": "1.0.6",
             "source": {
@@ -2610,12 +2667,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-seomatic.git",
-                "reference": "3b14a8839a352d4b6fde8d390f76cada178b85d6"
+                "reference": "e6ba014ec5b5c9e0d80484997937ccb4f61a62d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/3b14a8839a352d4b6fde8d390f76cada178b85d6",
-                "reference": "3b14a8839a352d4b6fde8d390f76cada178b85d6",
+                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/e6ba014ec5b5c9e0d80484997937ccb4f61a62d4",
+                "reference": "e6ba014ec5b5c9e0d80484997937ccb4f61a62d4",
                 "shasum": ""
             },
             "require": {
@@ -2673,7 +2730,7 @@
                 "issues": "https://github.com/nystudio107/craft3-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft3-seomatic/tree/develop"
             },
-            "time": "2018-01-15T15:28:40+00:00"
+            "time": "2018-01-16T19:11:47+00:00"
         },
         {
             "name": "nystudio107/craft3-transcoder",
@@ -3853,16 +3910,16 @@
         },
         {
             "name": "tubalmartin/cssmin",
-            "version": "v4.1.0",
+            "version": "v4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tubalmartin/YUI-CSS-compressor-PHP-port.git",
-                "reference": "1c7ae93cf6b392d4dae5c4ae18979918413af16e"
+                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tubalmartin/YUI-CSS-compressor-PHP-port/zipball/1c7ae93cf6b392d4dae5c4ae18979918413af16e",
-                "reference": "1c7ae93cf6b392d4dae5c4ae18979918413af16e",
+                "url": "https://api.github.com/repos/tubalmartin/YUI-CSS-compressor-PHP-port/zipball/3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
+                "reference": "3cbf557f4079d83a06f9c3ff9b957c022d7805cf",
                 "shasum": ""
             },
             "require": {
@@ -3902,7 +3959,7 @@
                 "minify",
                 "yui"
             ],
-            "time": "2017-05-16T13:45:26+00:00"
+            "time": "2018-01-15T15:26:51+00:00"
         },
         {
             "name": "twig/twig",
