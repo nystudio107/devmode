@@ -407,16 +407,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC5",
+            "version": "3.0.0-RC6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "d3ee52019f3c772fd2d69017f0e2071308e5be85"
+                "reference": "320a2ded079ac7a66e0a328bd8f468986e7c3b8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d3ee52019f3c772fd2d69017f0e2071308e5be85",
-                "reference": "d3ee52019f3c772fd2d69017f0e2071308e5be85",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/320a2ded079ac7a66e0a328bd8f468986e7c3b8e",
+                "reference": "320a2ded079ac7a66e0a328bd8f468986e7c3b8e",
                 "shasum": ""
             },
             "require": {
@@ -426,6 +426,7 @@
                 "craftcms/server-check": "~1.1.0",
                 "creocoder/yii2-nested-sets": "~0.9.0",
                 "danielstjules/stringy": "~3.1.0",
+                "elvanto/litemoji": "^1.3.1",
                 "enshrined/svg-sanitize": "~0.8.2",
                 "ext-curl": "*",
                 "ext-dom": "*",
@@ -484,7 +485,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-01-09T19:21:35+00:00"
+            "time": "2018-01-16T23:38:38+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -912,6 +913,44 @@
                 "validator"
             ],
             "time": "2017-11-15T23:40:40+00:00"
+        },
+        {
+            "name": "elvanto/litemoji",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/elvanto/litemoji.git",
+                "reference": "fc1d2b8b3d174ee9425ac506430377dc3b50cdfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/elvanto/litemoji/zipball/fc1d2b8b3d174ee9425ac506430377dc3b50cdfb",
+                "reference": "fc1d2b8b3d174ee9425ac506430377dc3b50cdfb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "milesj/emojibase": "*",
+                "phpunit/phpunit": "^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "LitEmoji\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP library simplifying the conversion of unicode, HTML and shortcode emoji.",
+            "keywords": [
+                "emoji",
+                "php-emoji"
+            ],
+            "time": "2017-10-09T01:54:36+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
