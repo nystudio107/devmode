@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bbef489ccd0c23074b31d7dc981f0673",
+    "content-hash": "6f809513a93bca372db5a918142ea638",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2203,6 +2203,77 @@
             "time": "2018-01-17T21:02:54+00:00"
         },
         {
+            "name": "nystudio107/craft-seomatic",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-seomatic.git",
+                "reference": "8b8868aa94bc13d257cc771515aef6ec6ce35fea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8b8868aa94bc13d257cc771515aef6ec6ce35fea",
+                "reference": "8b8868aa94bc13d257cc771515aef6ec6ce35fea",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1",
+                "craftcms/vue-asset": "^1.0",
+                "davechild/textstatistics": "^1.0.1",
+                "sunra/php-simple-html-dom-parser": "^1.5.2"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "SEOmatic",
+                "handle": "seomatic",
+                "schemaVersion": "3.0.0",
+                "hasCpSettings": true,
+                "hasCpSection": true,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-seomatic/master/CHANGELOG.md",
+                "class": "nystudio107\\seomatic\\Seomatic",
+                "components": {
+                    "frontendTemplates": "nystudio107\\seomatic\\services\\FrontendTemplates",
+                    "jsonLd": "nystudio107\\seomatic\\services\\JsonLd",
+                    "link": "nystudio107\\seomatic\\services\\Link",
+                    "metaContainers": "nystudio107\\seomatic\\services\\MetaContainers",
+                    "metaBundles": "nystudio107\\seomatic\\services\\MetaBundles",
+                    "redirects": "nystudio107\\seomatic\\services\\Redirects",
+                    "script": "nystudio107\\seomatic\\services\\Script",
+                    "sitemaps": "nystudio107\\seomatic\\services\\Sitemaps",
+                    "tag": "nystudio107\\seomatic\\services\\Tag",
+                    "title": "nystudio107\\seomatic\\services\\Title"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\seomatic\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "A turnkey SEO implementation for Craft CMS that is comprehensive, powerful, and flexible",
+            "keywords": [
+                "cms",
+                "craft",
+                "craft-plugin",
+                "craftcms",
+                "seomatic"
+            ],
+            "support": {
+                "docs": "https://github.com/nystudio107/craft-seomatic/blob/master/README.md",
+                "issues": "https://github.com/nystudio107/craft-seomatic/issues",
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
+            },
+            "time": "2018-01-20T18:11:15+00:00"
+        },
+        {
             "name": "nystudio107/craft-similar",
             "version": "1.0.0",
             "source": {
@@ -2699,77 +2770,6 @@
                 "vue"
             ],
             "time": "2017-12-29T20:31:48+00:00"
-        },
-        {
-            "name": "nystudio107/craft3-seomatic",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft3-seomatic.git",
-                "reference": "e6ba014ec5b5c9e0d80484997937ccb4f61a62d4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-seomatic/zipball/e6ba014ec5b5c9e0d80484997937ccb4f61a62d4",
-                "reference": "e6ba014ec5b5c9e0d80484997937ccb4f61a62d4",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0-RC1",
-                "craftcms/vue-asset": "^1.0",
-                "davechild/textstatistics": "^1.0.1",
-                "sunra/php-simple-html-dom-parser": "^1.5.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "SEOmatic",
-                "handle": "seomatic",
-                "schemaVersion": "3.0.0",
-                "hasCpSettings": true,
-                "hasCpSection": true,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-seomatic/master/CHANGELOG.md",
-                "class": "nystudio107\\seomatic\\Seomatic",
-                "components": {
-                    "frontendTemplates": "nystudio107\\seomatic\\services\\FrontendTemplates",
-                    "jsonLd": "nystudio107\\seomatic\\services\\JsonLd",
-                    "link": "nystudio107\\seomatic\\services\\Link",
-                    "metaContainers": "nystudio107\\seomatic\\services\\MetaContainers",
-                    "metaBundles": "nystudio107\\seomatic\\services\\MetaBundles",
-                    "redirects": "nystudio107\\seomatic\\services\\Redirects",
-                    "script": "nystudio107\\seomatic\\services\\Script",
-                    "sitemaps": "nystudio107\\seomatic\\services\\Sitemaps",
-                    "tag": "nystudio107\\seomatic\\services\\Tag",
-                    "title": "nystudio107\\seomatic\\services\\Title"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\seomatic\\": "src/"
-                }
-            },
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com"
-                }
-            ],
-            "description": "A turnkey SEO implementation for Craft CMS that is comprehensive, powerful, and flexible",
-            "keywords": [
-                "cms",
-                "craft",
-                "craft-plugin",
-                "craftcms",
-                "seomatic"
-            ],
-            "support": {
-                "docs": "https://github.com/nystudio107/craft3-seomatic/blob/master/README.md",
-                "issues": "https://github.com/nystudio107/craft3-seomatic/issues",
-                "source": "https://github.com/nystudio107/craft3-seomatic/tree/develop"
-            },
-            "time": "2018-01-16T19:11:47+00:00"
         },
         {
             "name": "nystudio107/craft3-transcoder",
@@ -4694,7 +4694,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "roave/security-advisories": 20,
-        "nystudio107/craft3-seomatic": 20
+        "nystudio107/craft-seomatic": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
