@@ -2829,16 +2829,16 @@
         },
         {
             "name": "nystudio107/craft3-typogrify",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-typogrify.git",
-                "reference": "b42c9d2fef0790c672bcb067a38f6402263d4d56"
+                "reference": "d7e7224d721bb5fe2c9702d8b056950a6c6393ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-typogrify/zipball/b42c9d2fef0790c672bcb067a38f6402263d4d56",
-                "reference": "b42c9d2fef0790c672bcb067a38f6402263d4d56",
+                "url": "https://api.github.com/repos/nystudio107/craft3-typogrify/zipball/d7e7224d721bb5fe2c9702d8b056950a6c6393ba",
+                "reference": "d7e7224d721bb5fe2c9702d8b056950a6c6393ba",
                 "shasum": ""
             },
             "require": {
@@ -2882,7 +2882,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2018-01-07T00:18:26+00:00"
+            "time": "2018-01-21T23:39:56+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -2934,16 +2934,16 @@
         },
         {
             "name": "pimple/pimple",
-            "version": "v3.2.2",
+            "version": "v3.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silexphp/Pimple.git",
-                "reference": "4d45fb62d96418396ec58ba76e6f065bca16e10a"
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/4d45fb62d96418396ec58ba76e6f065bca16e10a",
-                "reference": "4d45fb62d96418396ec58ba76e6f065bca16e10a",
+                "url": "https://api.github.com/repos/silexphp/Pimple/zipball/9e403941ef9d65d20cba7d54e29fe906db42cf32",
+                "reference": "9e403941ef9d65d20cba7d54e29fe906db42cf32",
                 "shasum": ""
             },
             "require": {
@@ -2980,7 +2980,7 @@
                 "container",
                 "dependency injection"
             ],
-            "time": "2017-07-23T07:32:15+00:00"
+            "time": "2018-01-21T07:42:36+00:00"
         },
         {
             "name": "pixelandtonic/imagine",
