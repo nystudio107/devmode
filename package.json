@@ -154,9 +154,9 @@
     "normalize.css": "^5.0.0",
     "picturefill": "^3.0.2",
     "tiny-cookie": "^1.0.1",
+    "vue": "^2.5.9",
     "vue-clickaway": "^2.1.0",
-    "vue-typer": "^1.2.0",
-    "vue": "^2.5.9"
+    "vue-typer": "^1.2.0"
   },
   "devDependencies": {
     "babel-plugin-transform-runtime": "^6.15.0",
