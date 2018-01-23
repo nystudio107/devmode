@@ -63,6 +63,9 @@
     ],
     "post-update-cmd": [
       "@php nys-setup update"
+    ],
+    "post-install-cmd": [
+      "@php nys-setup update"
     ]
   }
 }
