@@ -4,14 +4,16 @@
 {% set baseUrl = craft.app.config.general.custom.baseUrl %}
 {% set staticAssetsVersion = craft.app.config.general.custom.staticAssetsVersion %}
 {% set myAnalytics = eventAnalytics("podcast", "access", "Podcast RSS Feed", 1) %}
-{% do myAnalytics.sendEvent() %}
+{% if myAnalytics |length %}
+    {% do myAnalytics.sendEvent() %}
+{% endif %}
 <?xml version="1.0" encoding="UTF-8"?>
 
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
     
     <channel>
         
-        <title>{{ showInfo.showTitle }}</title>
+        <title>{{ showInfo.showTitle |typogrifyFeed }}</title>
         
         <link>{{ showInfo.showUrl }}</link>
         
@@ -24,15 +26,15 @@
         
         <itunes:subtitle>showInfo.showSubTitle</itunes:subtitle>
         
-        <itunes:summary>{{ showInfo.showDescription }}</itunes:summary>
-        <description>{{ showInfo.showDescription }}</description>
+        <itunes:summary>{{ showInfo.showDescription  |typogrifyFeed }}</itunes:summary>
+        <description>{{ showInfo.showDescription |typogrifyFeed }}</description>
         
         
         <itunes:author>{% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
     
         {% set host = hosts[0] %}
             <itunes:owner>
-                <itunes:name>{{ host.fullName }}</itunes:name>
+                <itunes:name>{{ host.fullName |typogrifyFeed }}</itunes:name>
                 <itunes:email>{{ host.email }}</itunes:email>
             </itunes:owner>
         
@@ -40,7 +42,7 @@
         
         <itunes:image href="{{ url(showInfo.showImage.one().getUrl(), null, "http") }}" />
         
-        <itunes:category text="{{ showInfo.showGenre }}">
+        <itunes:category text="{{ showInfo.showGenre |typogrifyFeed }}">
             <itunes:category text="Tech News" />
         </itunes:category>
         
@@ -51,18 +53,18 @@
                 <title>{{ episode.title }}</title>
                 <link>{{ episode.url }}</link>
                 
-                <itunes:author>{% for host in episode.episodeHosts.all() %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
+                <itunes:author>{% for host in episode.episodeHosts.all() %}{{ host.fullName |typogrifyFeed }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
                 
                 <itunes:subtitle>Episode {{ episode.episodeNumber }}</itunes:subtitle>
                 
                 <itunes:summary>
                     <![CDATA[
-                    {{ episode.episodeSummary |raw }}
+                    {{ episode.episodeSummary |typogrifyFeed |raw }}
                     ]]>
                 </itunes:summary>
                 <description>
                     <![CDATA[
-                    {{ episode.episodeSummary |raw }}
+                    {{ episode.episodeSummary |typogrifyFeed |raw }}
                     ]]>
                 </description>
                 
