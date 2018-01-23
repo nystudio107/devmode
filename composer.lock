@@ -407,16 +407,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC6",
+            "version": "3.0.0-RC7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "320a2ded079ac7a66e0a328bd8f468986e7c3b8e"
+                "reference": "b592e1d16c36618399f03e5a565a30067dff57e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/320a2ded079ac7a66e0a328bd8f468986e7c3b8e",
-                "reference": "320a2ded079ac7a66e0a328bd8f468986e7c3b8e",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/b592e1d16c36618399f03e5a565a30067dff57e4",
+                "reference": "b592e1d16c36618399f03e5a565a30067dff57e4",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +485,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-01-16T23:38:38+00:00"
+            "time": "2018-01-23T21:16:12+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2208,12 +2208,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "54ea323eb7c2a746bc700c37ec24cc4a1d7515fd"
+                "reference": "7473ec61c75e8c541dd8ceeaa8048af764a8524b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/54ea323eb7c2a746bc700c37ec24cc4a1d7515fd",
-                "reference": "54ea323eb7c2a746bc700c37ec24cc4a1d7515fd",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/7473ec61c75e8c541dd8ceeaa8048af764a8524b",
+                "reference": "7473ec61c75e8c541dd8ceeaa8048af764a8524b",
                 "shasum": ""
             },
             "require": {
@@ -2271,7 +2271,7 @@
                 "issues": "https://github.com/nystudio107/craft-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
             },
-            "time": "2018-01-23T19:51:10+00:00"
+            "time": "2018-01-23T21:30:15+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
