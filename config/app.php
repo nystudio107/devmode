@@ -17,8 +17,10 @@ return [
 
     // All environments
     '*'       => [
-        'modules' => [
-            'site-module' => \modules\nystudio107\sitemodule\SiteModule::class,
+        'modules'   => [
+            'site-module' => [
+                'class' => \modules\sitemodule\SiteModule::class,
+            ],
         ],
         'bootstrap' => ['site-module'],
     ],
