@@ -407,16 +407,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC7",
+            "version": "3.0.0-RC7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "b592e1d16c36618399f03e5a565a30067dff57e4"
+                "reference": "f8c991cb01afce44cb0803749e84e776f1ce2d51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/b592e1d16c36618399f03e5a565a30067dff57e4",
-                "reference": "b592e1d16c36618399f03e5a565a30067dff57e4",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/f8c991cb01afce44cb0803749e84e776f1ce2d51",
+                "reference": "f8c991cb01afce44cb0803749e84e776f1ce2d51",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +485,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-01-23T21:16:12+00:00"
+            "time": "2018-01-24T23:47:15+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2208,12 +2208,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "8239128d4f1060b4db00fad1cf17421e7007a9ed"
+                "reference": "9d31be9a14635d7cada6ef672f3c728a81a188fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8239128d4f1060b4db00fad1cf17421e7007a9ed",
-                "reference": "8239128d4f1060b4db00fad1cf17421e7007a9ed",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/9d31be9a14635d7cada6ef672f3c728a81a188fb",
+                "reference": "9d31be9a14635d7cada6ef672f3c728a81a188fb",
                 "shasum": ""
             },
             "require": {
@@ -2271,7 +2271,7 @@
                 "issues": "https://github.com/nystudio107/craft-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
             },
-            "time": "2018-01-23T21:40:42+00:00"
+            "time": "2018-01-24T18:00:39+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -3382,16 +3382,16 @@
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.7.0",
+            "version": "1.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "9b355654ea99460397b89c132b5c1087b6bf4473"
+                "reference": "d15f59a67ff805a44c50ea0516d2341740f81a38"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/9b355654ea99460397b89c132b5c1087b6bf4473",
-                "reference": "9b355654ea99460397b89c132b5c1087b6bf4473",
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/d15f59a67ff805a44c50ea0516d2341740f81a38",
+                "reference": "d15f59a67ff805a44c50ea0516d2341740f81a38",
                 "shasum": ""
             },
             "require": {
@@ -3427,7 +3427,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2018-01-03T12:13:57+00:00"
+            "time": "2018-01-24T12:46:19+00:00"
         },
         {
             "name": "seld/phar-utils",
