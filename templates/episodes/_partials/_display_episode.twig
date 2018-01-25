@@ -1,5 +1,5 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
-{% set baseUrl = craft.app.config.general.custom.baseUrl %}
+{% set baseUrl = alias('@baseUrl') ~ '/' %}
 {% set staticAssetsVersion = craft.app.config.general.custom.staticAssetsVersion %}
 <div class="my-8 w-full">
     <div class="w-full max-w-lg mx-auto">

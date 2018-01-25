@@ -1,6 +1,6 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 {%- minify -%}
-{% set baseUrl = craft.app.config.general.custom.baseUrl %}
+{% set baseUrl = alias('@baseUrl') ~ '/' %}
 {% set staticAssetsVersion = craft.app.config.general.custom.staticAssetsVersion %}
 {% set backgroundUrl = "#{baseUrl}img/site/devmode-fm-light-bg-opaque.svg" %}
 {% header "Link: <#{baseUrl}>; rel=dns-prefetch;,<#{baseUrl}>; rel=preconnect; crossorigin;" %}

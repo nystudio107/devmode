@@ -31,16 +31,16 @@ return [
     // All environments
     '*' => [
         'site' => [
-            'path' => getenv('CRAFTENV_BASE_PATH') . 'assets/site',
-            'url' => getenv('CRAFTENV_BASE_URL') . 'assets/site',
+            'path' => '@basePath/assets/site',
+            'url' => '@baseUrl/assets/site',
         ],
         'users' => [
-            'path' => getenv('CRAFTENV_BASE_PATH') . 'assets/users',
-            'url' => getenv('CRAFTENV_BASE_URL') . 'assets/users',
+            'path' => '@basePath/assets/users',
+            'url' => '@baseUrl/assets/users',
         ],
         'episodes' => [
-            'path' => getenv('CRAFTENV_BASE_PATH') . 'assets/episodes',
-            'url' => getenv('CRAFTENV_BASE_URL') . 'assets/episodes',
+            'path' => '@basePath/assets/episodes',
+            'url' => '@baseUrl/assets/episodes',
         ],
     ],
 
