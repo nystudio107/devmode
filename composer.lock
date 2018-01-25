@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f809513a93bca372db5a918142ea638",
+    "content-hash": "704089ddf7424c66b6414fb49f86f07f",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2773,16 +2773,16 @@
         },
         {
             "name": "nystudio107/craft3-transcoder",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-transcoder.git",
-                "reference": "8b7f2fca27de3771306cfe39f1cf90018982cffa"
+                "reference": "bca23d83eb3d1b2fc142fcaad0948d27775c42a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-transcoder/zipball/8b7f2fca27de3771306cfe39f1cf90018982cffa",
-                "reference": "8b7f2fca27de3771306cfe39f1cf90018982cffa",
+                "url": "https://api.github.com/repos/nystudio107/craft3-transcoder/zipball/bca23d83eb3d1b2fc142fcaad0948d27775c42a8",
+                "reference": "bca23d83eb3d1b2fc142fcaad0948d27775c42a8",
                 "shasum": ""
             },
             "require": {
@@ -2825,7 +2825,7 @@
                 "craftcms",
                 "transcoder"
             ],
-            "time": "2017-12-12T05:08:34+00:00"
+            "time": "2018-01-25T21:28:39+00:00"
         },
         {
             "name": "nystudio107/craft3-typogrify",
