@@ -27,7 +27,7 @@
   "prefer-stable": true,
   "require": {
     "php": ">=7.0.0",
-    "craftcms/cms": "^3.0.0-RC1",
+    "craftcms/cms": "^3.0.0-RC7",
     "vlucas/phpdotenv": "^2.4.0",
     "roave/security-advisories": "dev-master",
     "yiisoft/yii2-redis": "^2.0.6",
@@ -39,7 +39,7 @@
     "nystudio107/craft3-minify": "^1.2.5",
     "nystudio107/craft-seomatic": "dev-develop@dev",
     "nystudio107/craft3-typogrify": "^1.1.4",
-    "nystudio107/craft3-transcoder": "^1.0.0",
+    "nystudio107/craft3-transcoder": "^1.0.9",
     "nystudio107/craft3-disqus": "^1.0",
     "nystudio107/craft3-routemap": "^1.0",
     "nystudio107/craft-similar": "^1.0.0",
