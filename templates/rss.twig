@@ -1,7 +1,7 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 {% header "Content-Type: application/rss+xml" %}
 {% set hosts = craft.users.group("owners").all() %}
-{% set baseUrl = craft.app.config.general.custom.baseUrl %}
+{% set baseUrl = alias('@baseUrl') ~ '/' %}
 {% set staticAssetsVersion = craft.app.config.general.custom.staticAssetsVersion %}
 {% set myAnalytics = eventAnalytics("podcast", "access", "Podcast RSS Feed", 1) %}
 {% if myAnalytics |length %}
