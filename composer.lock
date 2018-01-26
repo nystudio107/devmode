@@ -2208,12 +2208,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "9d31be9a14635d7cada6ef672f3c728a81a188fb"
+                "reference": "7d1feef8e4a0565c71ab96bf9159768281b695fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/9d31be9a14635d7cada6ef672f3c728a81a188fb",
-                "reference": "9d31be9a14635d7cada6ef672f3c728a81a188fb",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/7d1feef8e4a0565c71ab96bf9159768281b695fe",
+                "reference": "7d1feef8e4a0565c71ab96bf9159768281b695fe",
                 "shasum": ""
             },
             "require": {
@@ -2271,7 +2271,7 @@
                 "issues": "https://github.com/nystudio107/craft-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
             },
-            "time": "2018-01-24T18:00:39+00:00"
+            "time": "2018-01-26T22:59:44+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2500,21 +2500,21 @@
         },
         {
             "name": "nystudio107/craft3-imageoptimize",
-            "version": "1.4.9",
+            "version": "1.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-imageoptimize.git",
-                "reference": "1330b56f0f02b22e13d7196c924be8c461142876"
+                "reference": "6e38c1d4cb8fa7c88c19190391e6804cb918f42d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/1330b56f0f02b22e13d7196c924be8c461142876",
-                "reference": "1330b56f0f02b22e13d7196c924be8c461142876",
+                "url": "https://api.github.com/repos/nystudio107/craft3-imageoptimize/zipball/6e38c1d4cb8fa7c88c19190391e6804cb918f42d",
+                "reference": "6e38c1d4cb8fa7c88c19190391e6804cb918f42d",
                 "shasum": ""
             },
             "require": {
                 "cloudinary/cloudinary_php": "^1.8.0",
-                "craftcms/cms": "^3.0.0-RC3",
+                "craftcms/cms": "^3.0.0-RC7",
                 "imageoptim/imageoptim": "^1.0.0",
                 "imgix/imgix-php": "^1.1.0",
                 "kraken-io/kraken-php": "^1.2",
@@ -2563,7 +2563,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-01-20T15:31:55+00:00"
+            "time": "2018-01-26T22:32:22+00:00"
         },
         {
             "name": "nystudio107/craft3-instantanalytics",
@@ -2681,17 +2681,21 @@
         },
         {
             "name": "nystudio107/craft3-multi-environment",
-            "version": "1.0.5",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-multi-environment.git",
-                "reference": "73890ddc8205d97b9c8b63cd4593d48323bafac3"
+                "reference": "6059dfd01efdce64e9c3ceb598cf8d517c559576"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-multi-environment/zipball/73890ddc8205d97b9c8b63cd4593d48323bafac3",
-                "reference": "73890ddc8205d97b9c8b63cd4593d48323bafac3",
+                "url": "https://api.github.com/repos/nystudio107/craft3-multi-environment/zipball/6059dfd01efdce64e9c3ceb598cf8d517c559576",
+                "reference": "6059dfd01efdce64e9c3ceb598cf8d517c559576",
                 "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC7",
+                "php": ">=7.0.0"
             },
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
@@ -2710,7 +2714,7 @@
                 "craftcms",
                 "multi-environment"
             ],
-            "time": "2017-11-25T14:35:54+00:00"
+            "time": "2018-01-25T22:00:35+00:00"
         },
         {
             "name": "nystudio107/craft3-routemap",
