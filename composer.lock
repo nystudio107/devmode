@@ -1266,16 +1266,16 @@
         },
         {
             "name": "imgix/imgix-php",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/imgix/imgix-php.git",
-                "reference": "6caef36aec0a80ba5c79d1cc2859c703f12d1494"
+                "reference": "05a55575db7a366657245e97f243aaed8fda9a8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/6caef36aec0a80ba5c79d1cc2859c703f12d1494",
-                "reference": "6caef36aec0a80ba5c79d1cc2859c703f12d1494",
+                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/05a55575db7a366657245e97f243aaed8fda9a8c",
+                "reference": "05a55575db7a366657245e97f243aaed8fda9a8c",
                 "shasum": ""
             },
             "require": {
@@ -1295,7 +1295,7 @@
             "keywords": [
                 "imgix"
             ],
-            "time": "2016-02-25T19:46:23+00:00"
+            "time": "2018-01-29T17:26:43+00:00"
         },
         {
             "name": "intervention/httpauth",
@@ -2209,12 +2209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "51fd796274a25dc442fc096483864262a58e9a22"
+                "reference": "ae3124897277bf3c0ba129cb537ca8210684a67b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/51fd796274a25dc442fc096483864262a58e9a22",
-                "reference": "51fd796274a25dc442fc096483864262a58e9a22",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/ae3124897277bf3c0ba129cb537ca8210684a67b",
+                "reference": "ae3124897277bf3c0ba129cb537ca8210684a67b",
                 "shasum": ""
             },
             "require": {
@@ -2272,7 +2272,7 @@
                 "issues": "https://github.com/nystudio107/craft-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
             },
-            "time": "2018-01-28T05:03:52+00:00"
+            "time": "2018-01-28T21:21:47+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2778,16 +2778,16 @@
         },
         {
             "name": "nystudio107/craft3-transcoder",
-            "version": "1.0.9",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft3-transcoder.git",
-                "reference": "bca23d83eb3d1b2fc142fcaad0948d27775c42a8"
+                "reference": "c5b81bb029e97ede0a3b89708ff8a83a228d4550"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-transcoder/zipball/bca23d83eb3d1b2fc142fcaad0948d27775c42a8",
-                "reference": "bca23d83eb3d1b2fc142fcaad0948d27775c42a8",
+                "url": "https://api.github.com/repos/nystudio107/craft3-transcoder/zipball/c5b81bb029e97ede0a3b89708ff8a83a228d4550",
+                "reference": "c5b81bb029e97ede0a3b89708ff8a83a228d4550",
                 "shasum": ""
             },
             "require": {
@@ -2830,7 +2830,7 @@
                 "craftcms",
                 "transcoder"
             ],
-            "time": "2018-01-25T21:28:39+00:00"
+            "time": "2018-01-29T21:22:46+00:00"
         },
         {
             "name": "nystudio107/craft3-typogrify",
@@ -3583,16 +3583,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.3",
+            "version": "v3.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d"
+                "reference": "26b6f419edda16c19775211987651cb27baea7f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/8394c8ef121949e8f858f13bc1e34f05169e4e7d",
-                "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d",
+                "url": "https://api.github.com/repos/symfony/console/zipball/26b6f419edda16c19775211987651cb27baea7f1",
+                "reference": "26b6f419edda16c19775211987651cb27baea7f1",
                 "shasum": ""
             },
             "require": {
@@ -3648,20 +3648,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T07:37:34+00:00"
+            "time": "2018-01-29T09:03:43+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v4.0.3",
+            "version": "v4.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "9ae4223a661b56a9abdce144de4886cca37f198f"
+                "reference": "c77bb31d0f6310a2ac11e657475d396a92e5dc54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/9ae4223a661b56a9abdce144de4886cca37f198f",
-                "reference": "9ae4223a661b56a9abdce144de4886cca37f198f",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/c77bb31d0f6310a2ac11e657475d396a92e5dc54",
+                "reference": "c77bb31d0f6310a2ac11e657475d396a92e5dc54",
                 "shasum": ""
             },
             "require": {
@@ -3704,11 +3704,11 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T17:15:19+00:00"
+            "time": "2018-01-18T22:19:33+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.4.3",
+            "version": "v3.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -3757,7 +3757,7 @@
         },
         {
             "name": "symfony/finder",
-            "version": "v3.4.3",
+            "version": "v3.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -3865,16 +3865,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.3",
+            "version": "v3.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba"
+                "reference": "09a5172057be8fc677840e591b17f385e58c7c0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
-                "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
+                "url": "https://api.github.com/repos/symfony/process/zipball/09a5172057be8fc677840e591b17f385e58c7c0d",
+                "reference": "09a5172057be8fc677840e591b17f385e58c7c0d",
                 "shasum": ""
             },
             "require": {
@@ -3910,7 +3910,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T07:37:34+00:00"
+            "time": "2018-01-29T09:03:43+00:00"
         },
         {
             "name": "theiconic/php-ga-measurement-protocol",

@@ -36,10 +36,10 @@ return [
         'ffprobeOptions' => '-v quiet -print_format json -show_format -show_streams',
 
         // The path where the transcoded videos are stored; must have a trailing /
-        'transcoderPath' => '{DOCUMENT_ROOT}/transcoder/',
+        'transcoderPath' => '@webroot/transcoder/',
 
         // The URL where the transcoded videos are stored; must have a trailing /
-        'transcoderUrl' => '/transcoder/',
+        'transcoderUrl' => '@web/transcoder/',
 
         // Use a md5 hash for the filenames instead of parameterized naming
         'useHashedNames' => false,
@@ -129,8 +129,6 @@ return [
 
     // Live (production) environment
     'live'  => [
-        // The path where the transcoded videos are stored; must have a trailing /
-        'transcoderPath' => '/home/forge/devmode.fm/web/transcoder/',
     ],
 
     // Staging (pre-production) environment
@@ -139,7 +137,5 @@ return [
 
     // Local (development) environment
     'local'  => [
-        // The path where the transcoded videos are stored; must have a trailing /
-        'transcoderPath' => '/home/vagrant/sites/devmode/web/transcoder/',
     ],
 ];
