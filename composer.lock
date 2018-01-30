@@ -2276,12 +2276,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "cb06deb82069176d17e2ad9dcac66f182fe2159b"
+                "reference": "dccbec23db001786f215bcee79549648a70cce3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/cb06deb82069176d17e2ad9dcac66f182fe2159b",
-                "reference": "cb06deb82069176d17e2ad9dcac66f182fe2159b",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/dccbec23db001786f215bcee79549648a70cce3c",
+                "reference": "dccbec23db001786f215bcee79549648a70cce3c",
                 "shasum": ""
             },
             "require": {
@@ -2339,7 +2339,7 @@
                 "issues": "https://github.com/nystudio107/craft-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
             },
-            "time": "2018-01-30T05:34:21+00:00"
+            "time": "2018-01-30T16:03:14+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
