@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bda199edcbaad28142572e5ae0be01e",
+    "content-hash": "14e46320df3e7feea44689663b977417",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -1352,16 +1352,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.55",
+            "version": "v1.2.56",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "e745d69502afc610ff993315e2607ad41e3bc13c"
+                "reference": "fb89599ea8b113b31683419e87461d07ff84aa0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/e745d69502afc610ff993315e2607ad41e3bc13c",
-                "reference": "e745d69502afc610ff993315e2607ad41e3bc13c",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/fb89599ea8b113b31683419e87461d07ff84aa0e",
+                "reference": "fb89599ea8b113b31683419e87461d07ff84aa0e",
                 "shasum": ""
             },
             "require": {
@@ -1397,7 +1397,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-01-05T07:59:11+00:00"
+            "time": "2018-01-31T19:47:49+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2164,17 +2164,185 @@
             "time": "2018-01-05T17:52:24+00:00"
         },
         {
-            "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.11",
+            "name": "nystudio107/craft-disqus",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "ef598e8c9d5fa24fd608890ec8685fbffba8b3bc"
+                "url": "https://github.com/nystudio107/craft-disqus.git",
+                "reference": "d4ce2982bbffdadc1b5ba4e5f3b2b7520b244720"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/ef598e8c9d5fa24fd608890ec8685fbffba8b3bc",
-                "reference": "ef598e8c9d5fa24fd608890ec8685fbffba8b3bc",
+                "url": "https://api.github.com/repos/nystudio107/craft-disqus/zipball/d4ce2982bbffdadc1b5ba4e5f3b2b7520b244720",
+                "reference": "d4ce2982bbffdadc1b5ba4e5f3b2b7520b244720",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Disqus",
+                "handle": "disqus",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-disqus/master/CHANGELOG.md",
+                "components": {
+                    "disqusService": "nystudio107\\disqus\\services\\DisqusService"
+                },
+                "class": "nystudio107\\disqus\\Disqus"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\disqus\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Integrates the Disqus commenting system into Craft 3 websites, including Single Sign On (SSO) and custom login/logout URLs",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "disqus"
+            ],
+            "time": "2018-02-01T22:43:19+00:00"
+        },
+        {
+            "name": "nystudio107/craft-eagerbeaver",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-eagerbeaver.git",
+                "reference": "9c82150f36cb863f80f596ae9e598a73f349a083"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-eagerbeaver/zipball/9c82150f36cb863f80f596ae9e598a73f349a083",
+                "reference": "9c82150f36cb863f80f596ae9e598a73f349a083",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Eager Beaver",
+                "handle": "eager-beaver",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-eagerbeaver/master/CHANGELOG.md",
+                "components": {
+                    "eagerBeaverService": "nystudio107\\eagerbeaver\\services\\EagerBeaverService"
+                },
+                "class": "nystudio107\\eagerbeaver\\EagerBeaver"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\eagerbeaver\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Allows you to eager load elements from auto-injected Entry elements on demand from your templates.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "eager",
+                "eager beaver",
+                "eager loeading",
+                "loading"
+            ],
+            "time": "2018-02-01T23:03:53+00:00"
+        },
+        {
+            "name": "nystudio107/craft-fastcgicachebust",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-fastcgicachebust.git",
+                "reference": "eeddaefa0be954f0ec5f9c240de751771b55bada"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-fastcgicachebust/zipball/eeddaefa0be954f0ec5f9c240de751771b55bada",
+                "reference": "eeddaefa0be954f0ec5f9c240de751771b55bada",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "FastCGI Cache Bust",
+                "handle": "fastcgi-cache-bust",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-fastcgicachebust/master/CHANGELOG.md",
+                "components": {
+                    "cache": "nystudio107\\fastcgicachebust\\services\\Cache"
+                },
+                "class": "nystudio107\\fastcgicachebust\\FastcgiCacheBust"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\fastcgicachebust\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Bust the Nginx FastCGI Cache when entries are saved or created.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "fastcgi cache bust"
+            ],
+            "time": "2018-02-01T23:47:32+00:00"
+        },
+        {
+            "name": "nystudio107/craft-imageoptimize",
+            "version": "1.4.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-imageoptimize.git",
+                "reference": "5d836e514942da81f9ae4b5f5cc4567c4ddf2b22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/5d836e514942da81f9ae4b5f5cc4567c4ddf2b22",
+                "reference": "5d836e514942da81f9ae4b5f5cc4567c4ddf2b22",
                 "shasum": ""
             },
             "require": {
@@ -2228,7 +2396,180 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-01-30T14:30:04+00:00"
+            "time": "2018-02-01T18:53:22+00:00"
+        },
+        {
+            "name": "nystudio107/craft-instantanalytics",
+            "version": "1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-instantanalytics.git",
+                "reference": "d3f6aac669230f4a768155eaaf2003933d8e5e19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/d3f6aac669230f4a768155eaaf2003933d8e5e19",
+                "reference": "d3f6aac669230f4a768155eaaf2003933d8e5e19",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1",
+                "jaybizzle/crawler-detect": "^1.2.37",
+                "theiconic/php-ga-measurement-protocol": "^2.5.1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Instant Analytics",
+                "handle": "instant-analytics",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": true,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-instantanalytics/master/CHANGELOG.md",
+                "components": {
+                    "ia": "nystudio107\\instantanalytics\\services\\IA",
+                    "commerce": "nystudio107\\instantanalytics\\services\\Commerce"
+                },
+                "class": "nystudio107\\instantanalytics\\InstantAnalytics"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\instantanalytics\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Instant Analytics brings full Google Analytics support to your Twig templates and automatic Craft Commerce integration with Google Enhanced Ecommerce",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "instant analytics"
+            ],
+            "time": "2018-02-02T00:14:53+00:00"
+        },
+        {
+            "name": "nystudio107/craft-minify",
+            "version": "1.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-minify.git",
+                "reference": "42445dbed41f614d91b3dfe6190d389969b9636b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-minify/zipball/42445dbed41f614d91b3dfe6190d389969b9636b",
+                "reference": "42445dbed41f614d91b3dfe6190d389969b9636b",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1",
+                "mrclay/minify": "^3.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Minify",
+                "handle": "minify",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-minify/CHANGELOG.md",
+                "class": "nystudio107\\minify\\Minify",
+                "components": {
+                    "minify": "nystudio107\\minify\\services\\MinifyService"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\minify\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com/"
+                }
+            ],
+            "description": "A simple plugin that allows you to minify blocks of HTML, CSS, and JS inline in Craft CMS templates.",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "minify"
+            ],
+            "time": "2018-02-02T02:21:45+00:00"
+        },
+        {
+            "name": "nystudio107/craft-routemap",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-routemap.git",
+                "reference": "b4e0cc94e11d50c27eb7fa638f321449630a2cd0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-routemap/zipball/b4e0cc94e11d50c27eb7fa638f321449630a2cd0",
+                "reference": "b4e0cc94e11d50c27eb7fa638f321449630a2cd0",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "~3.0.0-RC3"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Route Map",
+                "handle": "route-map",
+                "schemaVersion": "1.0.0",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-routemap/master/CHANGELOG.md",
+                "components": {
+                    "routes": "nystudio107\\routemap\\services\\Routes"
+                },
+                "class": "nystudio107\\routemap\\RouteMap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\routemap\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com/"
+                }
+            ],
+            "description": "Returns a list of Craft/Vue/React route rules and element URLs for ServiceWorkers from Craft entries",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "react",
+                "route map",
+                "routes",
+                "serviceworker",
+                "vue"
+            ],
+            "time": "2018-02-02T05:08:59+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
@@ -2399,214 +2740,44 @@
             "time": "2018-01-16T19:42:45+00:00"
         },
         {
-            "name": "nystudio107/craft3-disqus",
-            "version": "1.0.6",
+            "name": "nystudio107/craft-transcoder",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nystudio107/craft3-disqus.git",
-                "reference": "64da87386f46d153081959a307f8a9b9effcb4b4"
+                "url": "https://github.com/nystudio107/craft-transcoder.git",
+                "reference": "8cbe8f3c274bc207c763bfabb0729ba2c8dc7e86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-disqus/zipball/64da87386f46d153081959a307f8a9b9effcb4b4",
-                "reference": "64da87386f46d153081959a307f8a9b9effcb4b4",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0-RC1"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Disqus",
-                "handle": "disqus",
-                "schemaVersion": "1.0.0",
-                "hasCpSettings": true,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-disqus/master/CHANGELOG.md",
-                "components": {
-                    "disqusService": "nystudio107\\disqus\\services\\DisqusService"
-                },
-                "class": "nystudio107\\disqus\\Disqus"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\disqus\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com"
-                }
-            ],
-            "description": "Integrates the Disqus commenting system into Craft 3 websites, including Single Sign On (SSO) and custom login/logout URLs",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "disqus"
-            ],
-            "time": "2018-01-12T19:24:34+00:00"
-        },
-        {
-            "name": "nystudio107/craft3-eagerbeaver",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft3-eagerbeaver.git",
-                "reference": "f0d6fea987871ee1af41255c1ee4efbb274b0da1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-eagerbeaver/zipball/f0d6fea987871ee1af41255c1ee4efbb274b0da1",
-                "reference": "f0d6fea987871ee1af41255c1ee4efbb274b0da1",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0-RC1"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Eager Beaver",
-                "handle": "eager-beaver",
-                "schemaVersion": "1.0.0",
-                "hasCpSettings": false,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-eagerbeaver/master/CHANGELOG.md",
-                "components": {
-                    "eagerBeaverService": "nystudio107\\eagerbeaver\\services\\EagerBeaverService"
-                },
-                "class": "nystudio107\\eagerbeaver\\EagerBeaver"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\eagerbeaver\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com"
-                }
-            ],
-            "description": "Allows you to eager load elements from auto-injected Entry elements on demand from your templates.",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "eager",
-                "eager beaver",
-                "eager loeading",
-                "loading"
-            ],
-            "time": "2017-12-12T00:23:40+00:00"
-        },
-        {
-            "name": "nystudio107/craft3-fastcgicachebust",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft3-fastcgicachebust.git",
-                "reference": "a9483d76297f7c069db7300195b4bafe2e165d3d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-fastcgicachebust/zipball/a9483d76297f7c069db7300195b4bafe2e165d3d",
-                "reference": "a9483d76297f7c069db7300195b4bafe2e165d3d",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0-RC1"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "FastCGI Cache Bust",
-                "handle": "fastcgi-cache-bust",
-                "schemaVersion": "1.0.0",
-                "hasCpSettings": true,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-fastcgicachebust/master/CHANGELOG.md",
-                "components": {
-                    "cache": "nystudio107\\fastcgicachebust\\services\\Cache"
-                },
-                "class": "nystudio107\\fastcgicachebust\\FastcgiCacheBust"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\fastcgicachebust\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com"
-                }
-            ],
-            "description": "Bust the Nginx FastCGI Cache when entries are saved or created.",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "fastcgi cache bust"
-            ],
-            "time": "2017-12-12T00:30:39+00:00"
-        },
-        {
-            "name": "nystudio107/craft3-instantanalytics",
-            "version": "1.0.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft3-instantanalytics.git",
-                "reference": "d8edb36f8de11fd3df5a4889d32e7c3fce2869dc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-instantanalytics/zipball/d8edb36f8de11fd3df5a4889d32e7c3fce2869dc",
-                "reference": "d8edb36f8de11fd3df5a4889d32e7c3fce2869dc",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/8cbe8f3c274bc207c763bfabb0729ba2c8dc7e86",
+                "reference": "8cbe8f3c274bc207c763bfabb0729ba2c8dc7e86",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0-RC1",
-                "jaybizzle/crawler-detect": "^1.2.37",
-                "theiconic/php-ga-measurement-protocol": "^2.5.1"
+                "mikehaertl/php-shellcommand": "~1.2"
             },
             "type": "craft-plugin",
             "extra": {
-                "name": "Instant Analytics",
-                "handle": "instant-analytics",
+                "name": "Transcoder",
+                "handle": "transcoder",
                 "schemaVersion": "1.0.0",
-                "hasCpSettings": true,
+                "hasCpSettings": false,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-instantanalytics/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-transcoder/master/CHANGELOG.md",
                 "components": {
-                    "ia": "nystudio107\\instantanalytics\\services\\IA",
-                    "commerce": "nystudio107\\instantanalytics\\services\\Commerce"
+                    "transcode": "nystudio107\\transcoder\\services\\Transcode"
                 },
-                "class": "nystudio107\\instantanalytics\\InstantAnalytics"
+                "class": "nystudio107\\transcoder\\Transcoder"
             },
             "autoload": {
                 "psr-4": {
-                    "nystudio107\\instantanalytics\\": "src/"
+                    "nystudio107\\transcoder\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "proprietary"
             ],
             "authors": [
                 {
@@ -2614,50 +2785,51 @@
                     "homepage": "https://nystudio107.com"
                 }
             ],
-            "description": "Instant Analytics brings full Google Analytics support to your Twig templates and automatic Craft Commerce integration with Google Enhanced Ecommerce",
+            "description": "Transcode video & audio files to various formats, and provide video thumbnails",
             "keywords": [
                 "Craft",
                 "cms",
                 "craft-plugin",
                 "craftcms",
-                "instant analytics"
+                "transcoder"
             ],
-            "time": "2018-01-10T15:06:07+00:00"
+            "time": "2018-02-02T05:30:31+00:00"
         },
         {
-            "name": "nystudio107/craft3-minify",
-            "version": "1.2.6",
+            "name": "nystudio107/craft-typogrify",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nystudio107/craft3-minify.git",
-                "reference": "41c647f2250159c12c261088710c1852c851552c"
+                "url": "https://github.com/nystudio107/craft-typogrify.git",
+                "reference": "e86a58415bf2d2f6ac7b78933a596b35bf9410d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-minify/zipball/41c647f2250159c12c261088710c1852c851552c",
-                "reference": "41c647f2250159c12c261088710c1852c851552c",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/e86a58415bf2d2f6ac7b78933a596b35bf9410d0",
+                "reference": "e86a58415bf2d2f6ac7b78933a596b35bf9410d0",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0-RC1",
-                "mrclay/minify": "^3.0.0"
+                "michelf/php-smartypants": "^1.8",
+                "mundschenk-at/php-typography": "^6.0"
             },
             "type": "craft-plugin",
             "extra": {
-                "name": "Minify",
-                "handle": "minify",
+                "name": "Typogrify",
+                "handle": "typogrify",
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": false,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-minify/CHANGELOG.md",
-                "class": "nystudio107\\minify\\Minify",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-typogrify/master/CHANGELOG.md",
                 "components": {
-                    "minify": "nystudio107\\minify\\services\\MinifyService"
-                }
+                    "typogrify": "nystudio107\\typogrify\\services\\TypogrifyService"
+                },
+                "class": "nystudio107\\typogrify\\Typogrify"
             },
             "autoload": {
                 "psr-4": {
-                    "nystudio107\\minify\\": "src/"
+                    "nystudio107\\typogrify\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -2670,15 +2842,15 @@
                     "homepage": "https://nystudio107.com/"
                 }
             ],
-            "description": "A simple plugin that allows you to minify blocks of HTML, CSS, and JS inline in Craft CMS templates.",
+            "description": "Typogrify prettifies your web typography by preventing ugly quotes and 'widows' and more",
             "keywords": [
                 "Craft",
                 "cms",
                 "craft-plugin",
                 "craftcms",
-                "minify"
+                "typogrify"
             ],
-            "time": "2017-12-12T00:50:28+00:00"
+            "time": "2018-02-02T05:46:03+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
@@ -2716,178 +2888,6 @@
                 "multi-environment"
             ],
             "time": "2018-01-25T22:00:35+00:00"
-        },
-        {
-            "name": "nystudio107/craft3-routemap",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft3-routemap.git",
-                "reference": "9aa0dc62c244d883045939c3a377e43d04607dbd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-routemap/zipball/9aa0dc62c244d883045939c3a377e43d04607dbd",
-                "reference": "9aa0dc62c244d883045939c3a377e43d04607dbd",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "~3.0.0-RC3"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Route Map",
-                "handle": "route-map",
-                "schemaVersion": "1.0.0",
-                "hasCpSettings": false,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-routemap/master/CHANGELOG.md",
-                "components": {
-                    "routes": "nystudio107\\routemap\\services\\Routes"
-                },
-                "class": "nystudio107\\routemap\\RouteMap"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\routemap\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com/"
-                }
-            ],
-            "description": "Returns a list of Craft/Vue/React route rules and element URLs for ServiceWorkers from Craft entries",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "react",
-                "route map",
-                "routes",
-                "serviceworker",
-                "vue"
-            ],
-            "time": "2017-12-29T20:31:48+00:00"
-        },
-        {
-            "name": "nystudio107/craft3-transcoder",
-            "version": "1.0.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft3-transcoder.git",
-                "reference": "c5b81bb029e97ede0a3b89708ff8a83a228d4550"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-transcoder/zipball/c5b81bb029e97ede0a3b89708ff8a83a228d4550",
-                "reference": "c5b81bb029e97ede0a3b89708ff8a83a228d4550",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0-RC1",
-                "mikehaertl/php-shellcommand": "~1.2"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Transcoder",
-                "handle": "transcoder",
-                "schemaVersion": "1.0.0",
-                "hasCpSettings": false,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-transcoder/master/CHANGELOG.md",
-                "components": {
-                    "transcode": "nystudio107\\transcoder\\services\\Transcode"
-                },
-                "class": "nystudio107\\transcoder\\Transcoder"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\transcoder\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com"
-                }
-            ],
-            "description": "Transcode video & audio files to various formats, and provide video thumbnails",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "transcoder"
-            ],
-            "time": "2018-01-29T21:22:46+00:00"
-        },
-        {
-            "name": "nystudio107/craft3-typogrify",
-            "version": "1.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nystudio107/craft3-typogrify.git",
-                "reference": "d7e7224d721bb5fe2c9702d8b056950a6c6393ba"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft3-typogrify/zipball/d7e7224d721bb5fe2c9702d8b056950a6c6393ba",
-                "reference": "d7e7224d721bb5fe2c9702d8b056950a6c6393ba",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0-RC1",
-                "michelf/php-smartypants": "^1.8",
-                "mundschenk-at/php-typography": "^6.0"
-            },
-            "type": "craft-plugin",
-            "extra": {
-                "name": "Typogrify",
-                "handle": "typogrify",
-                "schemaVersion": "1.0.0",
-                "hasCpSettings": false,
-                "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft3-typogrify/master/CHANGELOG.md",
-                "components": {
-                    "typogrify": "nystudio107\\typogrify\\services\\TypogrifyService"
-                },
-                "class": "nystudio107\\typogrify\\Typogrify"
-            },
-            "autoload": {
-                "psr-4": {
-                    "nystudio107\\typogrify\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "nystudio107",
-                    "homepage": "https://nystudio107.com/"
-                }
-            ],
-            "description": "Typogrify prettifies your web typography by preventing ugly quotes and 'widows' and more",
-            "keywords": [
-                "Craft",
-                "cms",
-                "craft-plugin",
-                "craftcms",
-                "typogrify"
-            ],
-            "time": "2018-01-21T23:39:56+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -3197,12 +3197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "0be5f7071b9007938a360d01da654b13d9caf12d"
+                "reference": "a5ff7ff05264c8796ffb1b7b6fdde43a9c6b0776"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0be5f7071b9007938a360d01da654b13d9caf12d",
-                "reference": "0be5f7071b9007938a360d01da654b13d9caf12d",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a5ff7ff05264c8796ffb1b7b6fdde43a9c6b0776",
+                "reference": "a5ff7ff05264c8796ffb1b7b6fdde43a9c6b0776",
                 "shasum": ""
             },
             "conflict": {
@@ -3262,8 +3262,8 @@
                 "silverstripe/forum": "<=0.6.1|>=0.7,<=0.7.3",
                 "silverstripe/framework": ">=3,<3.3",
                 "silverstripe/userforms": "<3",
-                "simplesamlphp/saml2": "<1.8.1|>=1.9,<1.9.1|>=1.10,<1.10.3|>=2,<2.3.3",
-                "simplesamlphp/simplesamlphp": "<1.14.16",
+                "simplesamlphp/saml2": "<1.10.4|>=2,<2.3.5|>=3,<3.1.1",
+                "simplesamlphp/simplesamlphp": "<1.15.2",
                 "simplesamlphp/simplesamlphp-module-infocard": "<1.0.1",
                 "socalnick/scn-social-auth": "<1.15.2",
                 "squizlabs/php_codesniffer": ">=1,<2.8.1",
@@ -3335,7 +3335,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-01-31T06:22:20+00:00"
+            "time": "2018-01-31T19:36:12+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -3806,16 +3806,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.6.0",
+            "version": "v1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
+                "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
-                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/78be803ce01e55d3491c1397cf1c64beb9c1b63b",
+                "reference": "78be803ce01e55d3491c1397cf1c64beb9c1b63b",
                 "shasum": ""
             },
             "require": {
@@ -3827,7 +3827,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -3861,7 +3861,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-10-11T12:05:26+00:00"
+            "time": "2018-01-30T19:27:44+00:00"
         },
         {
             "name": "symfony/process",

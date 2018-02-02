@@ -20,7 +20,7 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/nystudio107/craft3-seomatic"
+      "url": "https://github.com/nystudio107/craft-seomatic"
     }
   ],
   "minimum-stability": "dev",
@@ -35,15 +35,15 @@
     "nystudio107/craft-imageoptimize": "^1.0.0",
     "nystudio107/craft3-multi-environment": "^1.0.5",
     "nystudio107/craft-scripts": "^1.2.4",
-    "nystudio107/craft3-eagerbeaver": "^1.0.0",
-    "nystudio107/craft3-fastcgicachebust": "^1.0.0",
-    "nystudio107/craft3-minify": "^1.2.5",
-    "nystudio107/craft3-typogrify": "^1.1.4",
-    "nystudio107/craft3-transcoder": "^1.0.9",
-    "nystudio107/craft3-disqus": "^1.0",
-    "nystudio107/craft3-routemap": "^1.0",
+    "nystudio107/craft-eagerbeaver": "^1.0.0",
+    "nystudio107/craft-fastcgicachebust": "^1.0.0",
+    "nystudio107/craft-minify": "^1.2.5",
+    "nystudio107/craft-typogrify": "^1.1.4",
+    "nystudio107/craft-transcoder": "^1.0.9",
+    "nystudio107/craft-disqus": "^1.0",
+    "nystudio107/craft-routemap": "^1.0",
     "nystudio107/craft-similar": "^1.0.0",
-    "nystudio107/craft3-instantanalytics": "^1.0.4"
+    "nystudio107/craft-instantanalytics": "^1.0.4"
   },
   "autoload": {
     "psr-4": {
