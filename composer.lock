@@ -1266,16 +1266,16 @@
         },
         {
             "name": "imgix/imgix-php",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/imgix/imgix-php.git",
-                "reference": "05a55575db7a366657245e97f243aaed8fda9a8c"
+                "reference": "caa168910f99f9413a28147885ec37e91a16b786"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/05a55575db7a366657245e97f243aaed8fda9a8c",
-                "reference": "05a55575db7a366657245e97f243aaed8fda9a8c",
+                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/caa168910f99f9413a28147885ec37e91a16b786",
+                "reference": "caa168910f99f9413a28147885ec37e91a16b786",
                 "shasum": ""
             },
             "require": {
@@ -1295,7 +1295,7 @@
             "keywords": [
                 "imgix"
             ],
-            "time": "2018-01-29T17:26:43+00:00"
+            "time": "2018-02-02T17:34:06+00:00"
         },
         {
             "name": "intervention/httpauth",
@@ -1352,16 +1352,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.56",
+            "version": "v1.2.57",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "fb89599ea8b113b31683419e87461d07ff84aa0e"
+                "reference": "2f1502a434baad1da0fa43c3f3e2b09504fa6b81"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/fb89599ea8b113b31683419e87461d07ff84aa0e",
-                "reference": "fb89599ea8b113b31683419e87461d07ff84aa0e",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/2f1502a434baad1da0fa43c3f3e2b09504fa6b81",
+                "reference": "2f1502a434baad1da0fa43c3f3e2b09504fa6b81",
                 "shasum": ""
             },
             "require": {
@@ -1397,7 +1397,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-01-31T19:47:49+00:00"
+            "time": "2018-02-03T12:01:03+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2103,22 +2103,22 @@
         },
         {
             "name": "mundschenk-at/php-typography",
-            "version": "v6.1.0",
+            "version": "v6.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mundschenk-at/php-typography.git",
-                "reference": "31341b619f0ba0da767ef150b289738f46dbb684"
+                "reference": "cacc8c0d25de78b9ca3b718ed58faac76834f725"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/31341b619f0ba0da767ef150b289738f46dbb684",
-                "reference": "31341b619f0ba0da767ef150b289738f46dbb684",
+                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/cacc8c0d25de78b9ca3b718ed58faac76834f725",
+                "reference": "cacc8c0d25de78b9ca3b718ed58faac76834f725",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
                 "ext-pcre": "*",
-                "masterminds/html5": "2.3.0",
+                "masterminds/html5": "^2.3.0",
                 "php": ">=5.6.0"
             },
             "require-dev": {
@@ -2144,7 +2144,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "GPL 2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2161,7 +2161,7 @@
                 }
             ],
             "description": "A PHP library for improving your web typography",
-            "time": "2018-01-05T17:52:24+00:00"
+            "time": "2018-02-04T19:22:19+00:00"
         },
         {
             "name": "nystudio107/craft-disqus",
@@ -2333,16 +2333,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.12",
+            "version": "1.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "5d836e514942da81f9ae4b5f5cc4567c4ddf2b22"
+                "reference": "691b0fb543570572a3d13a68b387d523c0dc742d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/5d836e514942da81f9ae4b5f5cc4567c4ddf2b22",
-                "reference": "5d836e514942da81f9ae4b5f5cc4567c4ddf2b22",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/691b0fb543570572a3d13a68b387d523c0dc742d",
+                "reference": "691b0fb543570572a3d13a68b387d523c0dc742d",
                 "shasum": ""
             },
             "require": {
@@ -2361,7 +2361,7 @@
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": true,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-imageoptimize/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-imageoptimize/v1/CHANGELOG.md",
                 "components": {
                     "optimize": "nystudio107\\imageoptimize\\services\\Optimize",
                     "optimizedImages": "nystudio107\\imageoptimize\\services\\OptimizedImages",
@@ -2396,7 +2396,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-02-01T18:53:22+00:00"
+            "time": "2018-02-05T14:04:23+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2617,12 +2617,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "2978654f2c020b0c4f6c7c7295e824c9ac6aadd3"
+                "reference": "fbafce3104582f022e57575c74a01991b7fa42de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/2978654f2c020b0c4f6c7c7295e824c9ac6aadd3",
-                "reference": "2978654f2c020b0c4f6c7c7295e824c9ac6aadd3",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/fbafce3104582f022e57575c74a01991b7fa42de",
+                "reference": "fbafce3104582f022e57575c74a01991b7fa42de",
                 "shasum": ""
             },
             "require": {
@@ -2638,7 +2638,7 @@
                 "schemaVersion": "3.0.0",
                 "hasCpSettings": true,
                 "hasCpSection": true,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-seomatic/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-seomatic/v3/CHANGELOG.md",
                 "class": "nystudio107\\seomatic\\Seomatic",
                 "components": {
                     "frontendTemplates": "nystudio107\\seomatic\\services\\FrontendTemplates",
@@ -2676,11 +2676,11 @@
                 "seomatic"
             ],
             "support": {
-                "docs": "https://github.com/nystudio107/craft-seomatic/blob/master/README.md",
+                "docs": "https://github.com/nystudio107/craft-seomatic/blob/v3/README.md",
                 "issues": "https://github.com/nystudio107/craft-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
             },
-            "time": "2018-01-30T16:54:35+00:00"
+            "time": "2018-02-04T21:36:45+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2741,16 +2741,16 @@
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "1.0.11",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "8cbe8f3c274bc207c763bfabb0729ba2c8dc7e86"
+                "reference": "5abc55a492f200ae18f77cdcda065a09d69cbe15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/8cbe8f3c274bc207c763bfabb0729ba2c8dc7e86",
-                "reference": "8cbe8f3c274bc207c763bfabb0729ba2c8dc7e86",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/5abc55a492f200ae18f77cdcda065a09d69cbe15",
+                "reference": "5abc55a492f200ae18f77cdcda065a09d69cbe15",
                 "shasum": ""
             },
             "require": {
@@ -2764,7 +2764,7 @@
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": false,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-transcoder/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-transcoder/v1/CHANGELOG.md",
                 "components": {
                     "transcode": "nystudio107\\transcoder\\services\\Transcode"
                 },
@@ -2793,7 +2793,7 @@
                 "craftcms",
                 "transcoder"
             ],
-            "time": "2018-02-02T05:30:31+00:00"
+            "time": "2018-02-03T16:46:45+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -3197,12 +3197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "a5ff7ff05264c8796ffb1b7b6fdde43a9c6b0776"
+                "reference": "3df94834c80037130b533703df4672785b6ea112"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/a5ff7ff05264c8796ffb1b7b6fdde43a9c6b0776",
-                "reference": "a5ff7ff05264c8796ffb1b7b6fdde43a9c6b0776",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/3df94834c80037130b533703df4672785b6ea112",
+                "reference": "3df94834c80037130b533703df4672785b6ea112",
                 "shasum": ""
             },
             "conflict": {
@@ -3286,7 +3286,7 @@
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
+                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
                 "twig/twig": "<1.20",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
@@ -3335,7 +3335,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-01-31T19:36:12+00:00"
+            "time": "2018-02-04T22:09:50+00:00"
         },
         {
             "name": "seld/cli-prompt",
