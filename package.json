@@ -87,6 +87,10 @@
         "template": "index"
       },
       {
+        "url": "",
+        "template": "amp_index"
+      },
+      {
         "url": "about",
         "template": "about/index"
       },
