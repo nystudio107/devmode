@@ -87,7 +87,7 @@
                         <div class="flex flex-shrink">
                             {% if craft.app.config.general.devMode %}
                             <amp-audio src="{{ ('https://devmode.fm' ~ transAudioUrl) }}"
-                                width="250px"
+                                width="250"
                                 height="30"
                                 title="{{ episode.title }}"
                                 album="{{ showInfo.showTitle }}"
@@ -97,7 +97,7 @@
                             </amp-audio>
                             {% else %}
                             <amp-audio src="{{ alias('@baseUrl' ~ transAudioUrl) }}">
-                                width="250px"
+                                width="250"
                                 height="30"
                                 title="{{ episode.title }}"
                                 album="{{ showInfo.showTitle }}"
