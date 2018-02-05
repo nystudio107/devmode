@@ -1,17 +1,36 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
-<amp-sidebar id='sidebar1' layout='nodisplay'>
+<amp-sidebar id='sidebar1' layout='nodisplay' class="bg-devmode-yellow">
     <ul class="nav-amp">
         <li></li>
-        <li><a class="nav-link" href="">Blog</a></li>
+        <li>
+            <a href="/rss" class="navbar-link" target="_blank" rel="noopener">
+                <i class="icon-rss"></i> RSS Feed
+            </a>
+        </li>
+        <li>
+            <a href="https://itunes.apple.com/us/podcast/devmode-fm/id1323364824?mt=2" class="navbar-link" rel="noopener nofollow" target="_blank">
+                <i class="icon-itunes"></i> iTunes
+            </a>
+        </li>
+        <li>
+            <a href="https://play.google.com/music/m/Ijjc3udlxfsiqqilxxs7k2pqrbu?t=devModefm" class="navbar-link" rel="noopener nofollow" target="_blank">
+                <i class="icon-google-play"></i> Google Play
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/devmodefm" class="navbar-link" rel="noopener nofollow" target="_blank">
+                <i class="icon-twitter"></i> <span class="font-mono italic">devMode.fm</span> Twitter
+            </a>
+        </div>
+        <li>
+            <a href="https://facebook.com/devmodefm" class="navbar-link" rel="noopener nofollow" target="_blank">
+                <i class="icon-facebook"></i> <span class="font-mono italic">devMode.fm</span> Facebook
+            </a>
+        </li>
+        <li>
+            <a href="/about" class="navbar-link" @mouseover="prerenderLink">
+                <i class="icon-help-circled"></i> About <span class="font-mono italic">devMode.fm</span>
+            </a>
+        </li>
     </ul>
 </amp-sidebar>
-<header>
-    <div id="nav-menu">
-        <nav>
-            <div class="nav-menu">
-                <div id="nav-icon" on='tap:sidebar1.toggle' role="nav" tabindex=0>
-                </div>
-            </div>
-        </nav>
-    </div>
-</header>

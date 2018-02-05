@@ -95,6 +95,10 @@
         "template": "episodes/_entry"
       },
       {
+        "url": "episodes/talking-craft-cms-rc1",
+        "template": "episodes/_amp_entry"
+      },
+      {
         "url": "offline",
         "template": "offline"
       },

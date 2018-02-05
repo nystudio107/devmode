@@ -16,12 +16,11 @@
         <link rel="dns-prefetch" href="{{ baseUrl }}">
         <link rel="preconnect" href="{{ baseUrl }}" crossorigin>
         <link rel="preload" href="{{ backgroundUrl }}" as="image" type="image/svg+xml" crossorigin="anonymous">
-
-        <meta name="google-site-verification" content="z4PCW2St_q-MrBx9BNNQvdMIcX0_ihrlM2di__Bs5Gc" />
-    
-        {# -- Any <link> tags that should be included in the header #}
+        <link rel="alternate" type="application/rss+xml" href="{{ siteUrl("/rss") }}" />
         {% block _head_links %}
         {% endblock %}
+        
+        <meta name="google-site-verification" content="z4PCW2St_q-MrBx9BNNQvdMIcX0_ihrlM2di__Bs5Gc" />
         
         {% import "_partials/_macros.twig" as macro %}
         {% include "_partials/_global_header.twig" %}

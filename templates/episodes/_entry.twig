@@ -1,6 +1,10 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
 {% extends "_layouts/_layout.twig" %}
 
+{% block _head_links %}
+    <link rel="amphtml" href="{{ siteUrl(craft.app.request.url ~ '/amp') }}">
+{% endblock %}
+
 {% block _inline_css %}
     <style>
         {{ source ("episodes/_entry_critical.min.css", ignore_missing = true) }}

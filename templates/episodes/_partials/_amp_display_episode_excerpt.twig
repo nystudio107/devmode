@@ -1,0 +1,43 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+<div class="w-full mb-8 max-w-lg mx-auto">
+    <div class="w-full bg-grey-lightest">
+        <div class="p-8">
+            <div class="flex flex-wrap items-center justify-center flex-row-reverse md:flex-row flex-col-reverse">
+                {# -- Episode title -- #}
+                <div class=" w-full md:w-2/3 text-left py-2">
+                    <h2 class="font-mono italic font-bold text-devmode-pink text-3xl">
+                        <a href="{{ episode.url }}" class="title-link">
+                        {{ episode.title |typogrify }}
+                        </a>
+                    </h2>
+                </div>
+                {# -- Episode number and date -- #}
+                <div class="w-full md:w-1/3 text-devmode-pink font-mono text-xs text-left md:text-right uppercase py-2">
+                    {{ "Episode " ~ episode.episodeNumber }} / {{ episode.postDate |date("Y.m.d") }}
+                </div>
+            </div>
+            {# -- Episode summary -- #}
+            <div class="text-devmode-pink font-sans text-xl py-2 leading-normal">
+                {{ episode.episodeSummary |truncateOnWord(400) |typogrify }}
+            </div>
+            {# -- Episode tags -- #}
+            <div class="text-grey-dark py-2">
+                {% for tag in episode.episodeTags.all() %}
+                    <span class="font-mono italic font-bold text-xs bg-devmode-yellow text-devmode-pink px-2 py-1 m-1">
+                        #{{ tag.title }}
+                    </span>
+                {% endfor %}
+            </div>
+            {# -- Comments -- #}
+            {% set commentsCount = disqusCount(episode.slug) %}
+            <div class="text-devmode-pink font-sans text-xl py-2 leading-normal">
+                <a class="title-link" href="{{ episode.url ~ "#comments" }}">
+                    <i class="icon-comment align-middle"></i>
+                    <span class="text-devmode-pink font-sans text-xl leading-normal align-middle">
+                    {{ commentsCount }} {{ "comment" | pluralize(commentsCount, 1) }}
+                </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
