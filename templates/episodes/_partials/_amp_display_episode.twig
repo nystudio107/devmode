@@ -83,29 +83,30 @@
         {% if transAudioUrl |length %}
             <div class="">
                 <div id="single-song-player">
-                    <div class="bottom-container flex items-center">
-                        
-                        {% if craft.app.config.general.devMode %}
-                        <amp-audio src="{{ ('https://devmode.fm' ~ transAudioUrl) }}"
-                            width="100vw"
-                            height="30px"
-                            title="{{ episode.title }}"
-                            album="{{ showInfo.showTitle }}"
-                            artist="{{ showInfo.showTitle }}"
-                            controls>
-                            <source type="audio/mpeg" src="{{ ('https://devmode.fm' ~ transAudioUrl) }}">
-                        </amp-audio>
-                        {% else %}
-                        <amp-audio src="{{ alias('@baseUrl' ~ transAudioUrl) }}">
-                            width="100vw"
-                            height="30px"
-                            title="{{ episode.title }}"
-                            album="{{ showInfo.showTitle }}"
-                            artist="{{ showInfo.showTitle }}"
-                            controls>
-                            <source type="audio/mpeg" src="{{ alias('@baseUrl' ~ transAudioUrl) }}">
-                        </amp-audio>
-                        {% endif %}
+                    <div class="bottom-container flex items-center justify-center">
+                        <div class="flex flex-shrink">
+                            {% if craft.app.config.general.devMode %}
+                            <amp-audio src="{{ ('https://devmode.fm' ~ transAudioUrl) }}"
+                                width="250px"
+                                height="30"
+                                title="{{ episode.title }}"
+                                album="{{ showInfo.showTitle }}"
+                                artist="{{ showInfo.showTitle }}"
+                                controls>
+                                <source type="audio/mpeg" src="{{ ('https://devmode.fm' ~ transAudioUrl) }}">
+                            </amp-audio>
+                            {% else %}
+                            <amp-audio src="{{ alias('@baseUrl' ~ transAudioUrl) }}">
+                                width="250px"
+                                height="30"
+                                title="{{ episode.title }}"
+                                album="{{ showInfo.showTitle }}"
+                                artist="{{ showInfo.showTitle }}"
+                                controls>
+                                <source type="audio/mpeg" src="{{ alias('@baseUrl' ~ transAudioUrl) }}">
+                            </amp-audio>
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
             </div>
