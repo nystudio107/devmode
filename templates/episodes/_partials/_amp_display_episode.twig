@@ -86,11 +86,23 @@
                     <div class="bottom-container flex items-center">
                         
                         {% if craft.app.config.general.devMode %}
-                        <amp-audio width="100vw" height="30px" src="{{ ('https://devmode.fm' ~ transAudioUrl) }}">
+                        <amp-audio src="{{ ('https://devmode.fm' ~ transAudioUrl) }}"
+                            width="100vw"
+                            height="30px"
+                            title="{{ episode.title }}"
+                            album="{{ showInfo.showTitle }}"
+                            artist="{{ showInfo.showTitle }}"
+                            controls>
                             <source type="audio/mpeg" src="{{ ('https://devmode.fm' ~ transAudioUrl) }}">
                         </amp-audio>
                         {% else %}
-                        <amp-audio width="100vw" height="30px" src="{{ alias('@baseUrl' ~ transAudioUrl) }}">
+                        <amp-audio src="{{ alias('@baseUrl' ~ transAudioUrl) }}">
+                            width="100vw"
+                            height="30px"
+                            title="{{ episode.title }}"
+                            album="{{ showInfo.showTitle }}"
+                            artist="{{ showInfo.showTitle }}"
+                            controls>
                             <source type="audio/mpeg" src="{{ alias('@baseUrl' ~ transAudioUrl) }}">
                         </amp-audio>
                         {% endif %}
