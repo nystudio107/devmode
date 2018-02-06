@@ -20,8 +20,6 @@
         {% block _head_links %}
         {% endblock %}
         
-        <meta name="google-site-verification" content="z4PCW2St_q-MrBx9BNNQvdMIcX0_ihrlM2di__Bs5Gc" />
-        
         {% import "_partials/_macros.twig" as macro %}
         {% include "_partials/_global_header.twig" %}
     
@@ -29,6 +27,7 @@
         {% do seomatic.meta.seoImage(showInfo.showImage.one().getUrl()) %}
         {% do seomatic.site.twitterHandle('devmodefm') %}
         {% do seomatic.site.facebookProfileId('554989811519723') %}
+        {% do seomatic.site.googleSiteVerification('z4PCW2St_q-MrBx9BNNQvdMIcX0_ihrlM2di__Bs5Gc') %}
 
         {# -- ServiceWorker, loadjs, and tiny-cookie -- #}
         <script>
