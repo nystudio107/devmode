@@ -95,6 +95,10 @@
         "template": "about/index"
       },
       {
+        "url": "about",
+        "template": "about/amp_index"
+      },
+      {
         "url": "episodes/talking-craft-cms-rc1",
         "template": "episodes/_entry"
       },

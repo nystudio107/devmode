@@ -1,17 +1,19 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
-{% extends "_layouts/_layout.twig" %}
+{% extends "_layouts/_amp_layout.twig" %}
 
 {% block _inline_css %}
-    <style>
-        {{ source ("about/index_critical.min.css", ignore_missing = true) }}
-    </style>
+    {{ source ("about/amp_index_critical.min.css", ignore_missing = true) }}
 {% endblock %}
 
-{% block _head_links %}
-    <link rel="amphtml" href="{{ siteUrl('/about/amp') }}">
-{% endblock %}
+{% if entry is not defined %}
+    {% set entry = craft.entries({
+        "uri": "about",
+    }).one() %}
+{% endif %}
 
+{% do seomatic.meta.seoTitle(entry.title) %}
 {% do seomatic.meta.seoDescription(showInfo.showDescription) %}
+{% do seomatic.meta.canonicalUrl(entry.url) %}
 
 {% block content %}
     
@@ -29,7 +31,7 @@
                     <div class="inline-block bg-grey-lightest p-8">
                         <strong>
                             <h1 class="text-devmode-pink font-mono italic text-bold text-4xl sm:text-5xl">
-                                <a href="/" class="title-link" @mouseover="prerenderLink" rel="noopener">
+                                <a href="/" class="title-link" rel="noopener">
                                 {{ showInfo.showTitle }}</h1>
                                 </a>
                         </strong>
@@ -115,7 +117,7 @@
             {% for host in craft.users.group("hosts").orderBy("elements.dateCreated ASC").all() %}
                 <div class="container mx-auto py-8">
                     <div class="flex flex-wrap {% if loop.last %} pb-8{% endif %}">
-                        {% include "about/_partials/_display_host_excerpt.twig" with {
+                        {% include "about/_partials/_amp_display_host_excerpt.twig" with {
                             "host": host,
                             "showInfo": showInfo,
                         } only %}

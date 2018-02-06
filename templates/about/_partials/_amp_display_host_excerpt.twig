@@ -1,0 +1,58 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+<div class="w-full mb-8 max-w-lg mx-auto">
+    <div class="w-full bg-grey-lightest">
+        <div class="p-8">
+            {# -- Host picture -- #}
+            {% set hostPhoto = host.getPhoto() %}
+            {% if hostPhoto |length %}
+                <div class="text-left">
+                    <figure class="inline-block pb-3">
+                        <div class="circle-image-wrapper">
+                            <div class="circle-image-cropper">
+                                <amp-img alt="{{ host.fullName }}"
+                                         src="{{ hostPhoto.profileOptimizedImages.optimizedImageUrls[100] ?? hostPhoto.profileOptimizedImages.src() }}"
+                                         width="100"
+                                         height="100"
+                                         layout="responsive">
+                                </amp-img>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            {% endif %}
+            <div class="flex flex-wrap items-center justify-center flex-row-reverse md:flex-row flex-col-reverse">
+                {# -- Host name -- #}
+                <div class=" w-full md:w-2/3 text-left py-2">
+                    <h2 class="font-mono italic font-bold text-devmode-pink text-3xl">{{ host.fullName |typogrify }}</h2>
+                </div>
+                {# -- Host info -- #}
+                <div class="w-full md:w-1/3 text-devmode-pink font-mono text-xs text-left md:text-right uppercase py-2">
+                    <a href="{{ host.profileUrl }}" class="title-link" target="_blank" rel="noopener">
+                        {{ host.profileCompany |typogrify }}
+                    </a>
+                </div>
+            </div>
+            {# -- Host bio -- #}
+            <div class="text-devmode-pink font-sans text-xl py-2 leading-normal">
+                {{ host.profileBio |truncateOnWord(400) |typogrify }}
+            </div>
+            {# -- Host tags -- #}
+            <div class="text-devmode-pink font-sans text-xl py-2">
+                <ul class="list-reset inline">
+                    {% if host.profileTwitterUrl |length %}
+                    <li class="inline">
+                            <a class="tags-link align-middle whitespace-no-wrap" href="{{ host.profileTwitterUrl }}" target="_blank" rel="noopener nofollow"><i class="icon-twitter"></i> Twitter</a>
+                        <span> </span>
+                    </li>
+                    {% endif %}
+                    {% if host.profileGithubUrl |length %}
+                        <li class="inline">
+                            <a class="tags-link align-middle whitespace-no-wrap" href="{{ host.profileGithubUrl }}" target="_blank" rel="noopener nofollow"><i class="icon-github-circled"></i> GitHub</a>
+                            <span> </span>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
