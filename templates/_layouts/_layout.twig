@@ -23,11 +23,8 @@
         {% import "_partials/_macros.twig" as macro %}
         {% include "_partials/_global_header.twig" %}
     
-        {% do seomatic.config.separatorChar('//') %}
         {% do seomatic.meta.seoImage(showInfo.showImage.one().getUrl()) %}
-        {% do seomatic.site.twitterHandle('devmodefm') %}
-        {% do seomatic.site.facebookProfileId('554989811519723') %}
-        {% do seomatic.site.googleSiteVerification('z4PCW2St_q-MrBx9BNNQvdMIcX0_ihrlM2di__Bs5Gc') %}
+        {% do seomatic.meta.seoImageDescription(showInfo.showImage.one().title) %}
 
         {# -- ServiceWorker, loadjs, and tiny-cookie -- #}
         <script>
