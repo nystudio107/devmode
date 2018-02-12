@@ -1352,16 +1352,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.57",
+            "version": "v1.2.58",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "2f1502a434baad1da0fa43c3f3e2b09504fa6b81"
+                "reference": "7d5346fefb34033f7c08019dc57ceaa5d7a68dc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/2f1502a434baad1da0fa43c3f3e2b09504fa6b81",
-                "reference": "2f1502a434baad1da0fa43c3f3e2b09504fa6b81",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/7d5346fefb34033f7c08019dc57ceaa5d7a68dc0",
+                "reference": "7d5346fefb34033f7c08019dc57ceaa5d7a68dc0",
                 "shasum": ""
             },
             "require": {
@@ -1397,7 +1397,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-02-03T12:01:03+00:00"
+            "time": "2018-02-09T16:24:01+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2333,16 +2333,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.13",
+            "version": "1.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "691b0fb543570572a3d13a68b387d523c0dc742d"
+                "reference": "0210131bf8831e7234211fdd201a9ae2ed4a5f88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/691b0fb543570572a3d13a68b387d523c0dc742d",
-                "reference": "691b0fb543570572a3d13a68b387d523c0dc742d",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/0210131bf8831e7234211fdd201a9ae2ed4a5f88",
+                "reference": "0210131bf8831e7234211fdd201a9ae2ed4a5f88",
                 "shasum": ""
             },
             "require": {
@@ -2396,7 +2396,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-02-05T14:04:23+00:00"
+            "time": "2018-02-10T04:32:15+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2617,12 +2617,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "b8c6524c7fa5268cb7750d919b2ee747e12c57d7"
+                "reference": "ce3b0a94f454aed2dac97a45c08f48fcc97e1eca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/b8c6524c7fa5268cb7750d919b2ee747e12c57d7",
-                "reference": "b8c6524c7fa5268cb7750d919b2ee747e12c57d7",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/ce3b0a94f454aed2dac97a45c08f48fcc97e1eca",
+                "reference": "ce3b0a94f454aed2dac97a45c08f48fcc97e1eca",
                 "shasum": ""
             },
             "require": {
@@ -2635,7 +2635,6 @@
             "extra": {
                 "name": "SEOmatic",
                 "handle": "seomatic",
-                "schemaVersion": "3.0.0",
                 "hasCpSettings": true,
                 "hasCpSection": true,
                 "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-seomatic/v3/CHANGELOG.md",
@@ -2680,7 +2679,7 @@
                 "issues": "https://github.com/nystudio107/craft-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
             },
-            "time": "2018-02-08T04:10:23+00:00"
+            "time": "2018-02-12T14:34:15+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
