@@ -41,7 +41,8 @@
     "nystudio107/craft-disqus": "^1.0",
     "nystudio107/craft-routemap": "^1.0",
     "nystudio107/craft-similar": "^1.0.0",
-    "nystudio107/craft-instantanalytics": "^1.0.4"
+    "nystudio107/craft-instantanalytics": "^1.0.4",
+    "ostark/craft-async-queue": "dev-master"
   },
   "autoload": {
     "psr-4": {
