@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a321fbf22318a2963a115d99b4d1615c",
+    "content-hash": "1c73420be3cffc8a57ace58000e8ddb6",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2889,6 +2889,56 @@
             "time": "2018-01-25T22:00:35+00:00"
         },
         {
+            "name": "ostark/craft-async-queue",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ostark/craft-async-queue.git",
+                "reference": "c61cac7d6aa85ecfabc5aa434bfac86044cb1e99"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ostark/craft-async-queue/zipball/c61cac7d6aa85ecfabc5aa434bfac86044cb1e99",
+                "reference": "c61cac7d6aa85ecfabc5aa434bfac86044cb1e99",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0-RC1"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "AsyncQueue",
+                "handle": "async-queue",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/ostark/craft-async-queue/master/CHANGELOG.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "ostark\\AsyncQueue\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oliver Stark",
+                    "homepage": "https://www.fortrabbit.com"
+                }
+            ],
+            "description": "A queue handler that moves queue execution to a non-blocking background process",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "queue"
+            ],
+            "time": "2017-12-05T18:46:11+00:00"
+        },
+        {
             "name": "paragonie/random_compat",
             "version": "v2.0.11",
             "source": {
@@ -4565,7 +4615,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "nystudio107/craft-seomatic": 20
+        "nystudio107/craft-seomatic": 20,
+        "ostark/craft-async-queue": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
