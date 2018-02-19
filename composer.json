@@ -26,10 +26,8 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "php": ">=7.0.0",
     "craftcms/cms": "^3.0.0-RC7",
     "vlucas/phpdotenv": "^2.4.0",
-    "roave/security-advisories": "dev-master",
     "yiisoft/yii2-redis": "^2.0.6",
     "nystudio107/craft-seomatic": "dev-develop@dev",
     "nystudio107/craft-imageoptimize": "^1.0.0",
@@ -51,7 +49,10 @@
     }
   },
   "config": {
-    "optimize-autoloader": true
+    "optimize-autoloader": true,
+    "platform": {
+      "php": "7.0"
+    }
   },
   "scripts": {
     "post-root-package-install": [
