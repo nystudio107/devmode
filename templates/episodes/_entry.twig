@@ -2,7 +2,7 @@
 {% extends "_layouts/_layout.twig" %}
 
 {% block _head_links %}
-    <link rel="amphtml" href="{{ siteUrl(craft.app.request.url ~ '/amp') }}">
+    <link rel="amphtml" href="{{ siteUrl(craft.app.request.pathInfo ~ '/amp') }}">
 {% endblock %}
 
 {% block _inline_css %}
