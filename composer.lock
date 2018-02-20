@@ -2333,16 +2333,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.17",
+            "version": "1.4.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "b445aebea0c4963a8bae6fcf0df1d58f47f6073c"
+                "reference": "016fe29eccf494e58930ac259f23973efaac6163"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/b445aebea0c4963a8bae6fcf0df1d58f47f6073c",
-                "reference": "b445aebea0c4963a8bae6fcf0df1d58f47f6073c",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/016fe29eccf494e58930ac259f23973efaac6163",
+                "reference": "016fe29eccf494e58930ac259f23973efaac6163",
                 "shasum": ""
             },
             "require": {
@@ -2396,7 +2396,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-02-18T03:35:59+00:00"
+            "time": "2018-02-19T19:40:29+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2514,16 +2514,16 @@
         },
         {
             "name": "nystudio107/craft-routemap",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-routemap.git",
-                "reference": "b4e0cc94e11d50c27eb7fa638f321449630a2cd0"
+                "reference": "e124167596896eb875ab351c8c49d260f2d3b870"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-routemap/zipball/b4e0cc94e11d50c27eb7fa638f321449630a2cd0",
-                "reference": "b4e0cc94e11d50c27eb7fa638f321449630a2cd0",
+                "url": "https://api.github.com/repos/nystudio107/craft-routemap/zipball/e124167596896eb875ab351c8c49d260f2d3b870",
+                "reference": "e124167596896eb875ab351c8c49d260f2d3b870",
                 "shasum": ""
             },
             "require": {
@@ -2536,7 +2536,7 @@
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": false,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-routemap/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-routemap/v1/CHANGELOG.md",
                 "components": {
                     "routes": "nystudio107\\routemap\\services\\Routes"
                 },
@@ -2569,7 +2569,7 @@
                 "serviceworker",
                 "vue"
             ],
-            "time": "2018-02-02T05:08:59+00:00"
+            "time": "2018-02-20T16:35:03+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
@@ -2894,12 +2894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ostark/craft-async-queue.git",
-                "reference": "c61cac7d6aa85ecfabc5aa434bfac86044cb1e99"
+                "reference": "0ac4391f7bb50c9319ac36f5e99ba6e8aa170f02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ostark/craft-async-queue/zipball/c61cac7d6aa85ecfabc5aa434bfac86044cb1e99",
-                "reference": "c61cac7d6aa85ecfabc5aa434bfac86044cb1e99",
+                "url": "https://api.github.com/repos/ostark/craft-async-queue/zipball/0ac4391f7bb50c9319ac36f5e99ba6e8aa170f02",
+                "reference": "0ac4391f7bb50c9319ac36f5e99ba6e8aa170f02",
                 "shasum": ""
             },
             "require": {
@@ -2936,7 +2936,7 @@
                 "craftcms",
                 "queue"
             ],
-            "time": "2017-12-05T18:46:11+00:00"
+            "time": "2018-02-20T08:37:24+00:00"
         },
         {
             "name": "paragonie/random_compat",
