@@ -98,7 +98,7 @@
                   "request": "pageview",
                   "vars": {
                     "title": "{{ seomatic.meta.seoTitle }}",
-                    "ampdocUrl": "{{ craft.request.url }}"
+                    "ampdocUrl": "{{ siteUrl(craft.app.request.pathInfo) }}"
                   }
                 }
               }
