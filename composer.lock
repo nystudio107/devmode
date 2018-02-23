@@ -407,16 +407,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC10.1",
+            "version": "3.0.0-RC12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "3c24705f0ae2ac22c1702aefd87debaa9e373731"
+                "reference": "a6b33ecbdda3f9e38087bc94c49424c4b48bc2c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/3c24705f0ae2ac22c1702aefd87debaa9e373731",
-                "reference": "3c24705f0ae2ac22c1702aefd87debaa9e373731",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/a6b33ecbdda3f9e38087bc94c49424c4b48bc2c0",
+                "reference": "a6b33ecbdda3f9e38087bc94c49424c4b48bc2c0",
                 "shasum": ""
             },
             "require": {
@@ -444,7 +444,7 @@
                 "pixelandtonic/imagine": "~0.7.1.2",
                 "seld/cli-prompt": "~1.0.3",
                 "twig/twig": "~2.4.4",
-                "yiisoft/yii2": "~2.0.13.0",
+                "yiisoft/yii2": "~2.0.14.0",
                 "yiisoft/yii2-debug": "~2.0.10",
                 "yiisoft/yii2-queue": "~2.0.1",
                 "yiisoft/yii2-swiftmailer": "~2.1.0",
@@ -485,7 +485,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-02-14T14:33:08+00:00"
+            "time": "2018-02-22T21:34:48+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1352,16 +1352,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.58",
+            "version": "v1.2.59",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "7d5346fefb34033f7c08019dc57ceaa5d7a68dc0"
+                "reference": "8b371ed0fc16a3b13ebd5f00fd4a3ffb5420262e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/7d5346fefb34033f7c08019dc57ceaa5d7a68dc0",
-                "reference": "7d5346fefb34033f7c08019dc57ceaa5d7a68dc0",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/8b371ed0fc16a3b13ebd5f00fd4a3ffb5420262e",
+                "reference": "8b371ed0fc16a3b13ebd5f00fd4a3ffb5420262e",
                 "shasum": ""
             },
             "require": {
@@ -1397,7 +1397,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-02-09T16:24:01+00:00"
+            "time": "2018-02-22T19:04:46+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2894,12 +2894,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ostark/craft-async-queue.git",
-                "reference": "0ac4391f7bb50c9319ac36f5e99ba6e8aa170f02"
+                "reference": "cc31366248b55badc6c5616f2fb1ebb8aacc49a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ostark/craft-async-queue/zipball/0ac4391f7bb50c9319ac36f5e99ba6e8aa170f02",
-                "reference": "0ac4391f7bb50c9319ac36f5e99ba6e8aa170f02",
+                "url": "https://api.github.com/repos/ostark/craft-async-queue/zipball/cc31366248b55badc6c5616f2fb1ebb8aacc49a2",
+                "reference": "cc31366248b55badc6c5616f2fb1ebb8aacc49a2",
                 "shasum": ""
             },
             "require": {
@@ -2936,7 +2936,7 @@
                 "craftcms",
                 "queue"
             ],
-            "time": "2018-02-20T08:37:24+00:00"
+            "time": "2018-02-22T13:47:38+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -4027,16 +4027,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.13.1",
+            "version": "2.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf"
+                "reference": "1c9cf916b1394681c7d043e79e1522c33e5bc6c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf",
-                "reference": "7af96d8da5ea3e9a5dd05d0e734b21c5726a6ddf",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/1c9cf916b1394681c7d043e79e1522c33e5bc6c1",
+                "reference": "1c9cf916b1394681c7d043e79e1522c33e5bc6c1",
                 "shasum": ""
             },
             "require": {
@@ -4123,7 +4123,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2017-11-14T11:08:21+00:00"
+            "time": "2018-02-18T22:52:12+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
