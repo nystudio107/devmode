@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c73420be3cffc8a57ace58000e8ddb6",
+    "content-hash": "8583a1ff765ec6f88de3c62f63c445b0",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2890,7 +2890,7 @@
         },
         {
             "name": "ostark/craft-async-queue",
-            "version": "dev-master",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ostark/craft-async-queue.git",
@@ -4615,8 +4615,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "nystudio107/craft-seomatic": 20,
-        "ostark/craft-async-queue": 20
+        "nystudio107/craft-seomatic": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
