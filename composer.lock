@@ -407,16 +407,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC12",
+            "version": "3.0.0-RC13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "a6b33ecbdda3f9e38087bc94c49424c4b48bc2c0"
+                "reference": "39b6e1e84285ed9eb8917630c93d04622f1322df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/a6b33ecbdda3f9e38087bc94c49424c4b48bc2c0",
-                "reference": "a6b33ecbdda3f9e38087bc94c49424c4b48bc2c0",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/39b6e1e84285ed9eb8917630c93d04622f1322df",
+                "reference": "39b6e1e84285ed9eb8917630c93d04622f1322df",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +485,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-02-22T21:34:48+00:00"
+            "time": "2018-02-27T19:49:36+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2103,16 +2103,16 @@
         },
         {
             "name": "mundschenk-at/php-typography",
-            "version": "v6.1.1",
+            "version": "v6.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mundschenk-at/php-typography.git",
-                "reference": "cacc8c0d25de78b9ca3b718ed58faac76834f725"
+                "reference": "d0e653125c3527947d12679becace2d7e101e20a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/cacc8c0d25de78b9ca3b718ed58faac76834f725",
-                "reference": "cacc8c0d25de78b9ca3b718ed58faac76834f725",
+                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/d0e653125c3527947d12679becace2d7e101e20a",
+                "reference": "d0e653125c3527947d12679becace2d7e101e20a",
                 "shasum": ""
             },
             "require": {
@@ -2161,7 +2161,7 @@
                 }
             ],
             "description": "A PHP library for improving your web typography",
-            "time": "2018-02-04T19:22:19+00:00"
+            "time": "2018-02-25T20:27:51+00:00"
         },
         {
             "name": "nystudio107/craft-disqus",
@@ -2333,21 +2333,21 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.19",
+            "version": "1.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "ee875132dbe009063134c94c6f6ca0664c2fe35b"
+                "reference": "3528652b6e78ee10ddb4824624bd14e8fc511dc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/ee875132dbe009063134c94c6f6ca0664c2fe35b",
-                "reference": "ee875132dbe009063134c94c6f6ca0664c2fe35b",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/3528652b6e78ee10ddb4824624bd14e8fc511dc6",
+                "reference": "3528652b6e78ee10ddb4824624bd14e8fc511dc6",
                 "shasum": ""
             },
             "require": {
                 "cloudinary/cloudinary_php": "^1.8.0",
-                "craftcms/cms": "^3.0.0-RC7",
+                "craftcms/cms": "^3.0.0-RC12",
                 "imageoptim/imageoptim": "^1.0.0",
                 "imgix/imgix-php": "^1.1.0",
                 "kraken-io/kraken-php": "^1.2",
@@ -2396,7 +2396,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-02-23T15:32:21+00:00"
+            "time": "2018-02-27T18:49:28+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2617,16 +2617,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "508e4a4148635131cc8ba70c1335f2ae0a74e73a"
+                "reference": "1a71b38562640fe51c1a03cd3c312c43feb1772d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/508e4a4148635131cc8ba70c1335f2ae0a74e73a",
-                "reference": "508e4a4148635131cc8ba70c1335f2ae0a74e73a",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/1a71b38562640fe51c1a03cd3c312c43feb1772d",
+                "reference": "1a71b38562640fe51c1a03cd3c312c43feb1772d",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC1",
+                "craftcms/cms": "^3.0.0-RC12",
                 "craftcms/vue-asset": "^1.0",
                 "davechild/textstatistics": "^1.0.1",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
@@ -2679,7 +2679,7 @@
                 "issues": "https://github.com/nystudio107/craft-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
             },
-            "time": "2018-02-23T02:46:18+00:00"
+            "time": "2018-02-28T05:30:43+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -4027,16 +4027,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.14",
+            "version": "2.0.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "1c9cf916b1394681c7d043e79e1522c33e5bc6c1"
+                "reference": "d99969394c66dc3606134af092b8ec561ea5d7c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/1c9cf916b1394681c7d043e79e1522c33e5bc6c1",
-                "reference": "1c9cf916b1394681c7d043e79e1522c33e5bc6c1",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/d99969394c66dc3606134af092b8ec561ea5d7c6",
+                "reference": "d99969394c66dc3606134af092b8ec561ea5d7c6",
                 "shasum": ""
             },
             "require": {
@@ -4123,7 +4123,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2018-02-18T22:52:12+00:00"
+            "time": "2018-02-24T20:23:06+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
