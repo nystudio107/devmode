@@ -1557,16 +1557,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.42",
+            "version": "1.0.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "09eabc54e199950041aef258a85847676496fe8e"
+                "reference": "1ce7cc142d906ba58dc54c82915d355a9191c8a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/09eabc54e199950041aef258a85847676496fe8e",
-                "reference": "09eabc54e199950041aef258a85847676496fe8e",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/1ce7cc142d906ba58dc54c82915d355a9191c8a8",
+                "reference": "1ce7cc142d906ba58dc54c82915d355a9191c8a8",
                 "shasum": ""
             },
             "require": {
@@ -1637,7 +1637,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2018-01-27T16:03:56+00:00"
+            "time": "2018-03-01T10:27:04+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -2103,16 +2103,16 @@
         },
         {
             "name": "mundschenk-at/php-typography",
-            "version": "v6.1.2",
+            "version": "v6.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mundschenk-at/php-typography.git",
-                "reference": "d0e653125c3527947d12679becace2d7e101e20a"
+                "reference": "380eef4adc49efcf2368405e4a22f52d64ed24b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/d0e653125c3527947d12679becace2d7e101e20a",
-                "reference": "d0e653125c3527947d12679becace2d7e101e20a",
+                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/380eef4adc49efcf2368405e4a22f52d64ed24b1",
+                "reference": "380eef4adc49efcf2368405e4a22f52d64ed24b1",
                 "shasum": ""
             },
             "require": {
@@ -2161,7 +2161,7 @@
                 }
             ],
             "description": "A PHP library for improving your web typography",
-            "time": "2018-02-25T20:27:51+00:00"
+            "time": "2018-03-02T17:13:33+00:00"
         },
         {
             "name": "nystudio107/craft-disqus",
@@ -2220,16 +2220,16 @@
         },
         {
             "name": "nystudio107/craft-eagerbeaver",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-eagerbeaver.git",
-                "reference": "9c82150f36cb863f80f596ae9e598a73f349a083"
+                "reference": "6178b4fc1feb5e5d4bc12ea1f0cf2a312dabb436"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-eagerbeaver/zipball/9c82150f36cb863f80f596ae9e598a73f349a083",
-                "reference": "9c82150f36cb863f80f596ae9e598a73f349a083",
+                "url": "https://api.github.com/repos/nystudio107/craft-eagerbeaver/zipball/6178b4fc1feb5e5d4bc12ea1f0cf2a312dabb436",
+                "reference": "6178b4fc1feb5e5d4bc12ea1f0cf2a312dabb436",
                 "shasum": ""
             },
             "require": {
@@ -2242,7 +2242,7 @@
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": false,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-eagerbeaver/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-eagerbeaver/v1/CHANGELOG.md",
                 "components": {
                     "eagerBeaverService": "nystudio107\\eagerbeaver\\services\\EagerBeaverService"
                 },
@@ -2274,20 +2274,20 @@
                 "eager loeading",
                 "loading"
             ],
-            "time": "2018-02-01T23:03:53+00:00"
+            "time": "2018-03-02T15:46:15+00:00"
         },
         {
             "name": "nystudio107/craft-fastcgicachebust",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-fastcgicachebust.git",
-                "reference": "eeddaefa0be954f0ec5f9c240de751771b55bada"
+                "reference": "df4a6eea65e45e3eac9a4f6f0d1cbf3b06c47b89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-fastcgicachebust/zipball/eeddaefa0be954f0ec5f9c240de751771b55bada",
-                "reference": "eeddaefa0be954f0ec5f9c240de751771b55bada",
+                "url": "https://api.github.com/repos/nystudio107/craft-fastcgicachebust/zipball/df4a6eea65e45e3eac9a4f6f0d1cbf3b06c47b89",
+                "reference": "df4a6eea65e45e3eac9a4f6f0d1cbf3b06c47b89",
                 "shasum": ""
             },
             "require": {
@@ -2300,7 +2300,7 @@
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": true,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-fastcgicachebust/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-fastcgicachebust/v1/CHANGELOG.md",
                 "components": {
                     "cache": "nystudio107\\fastcgicachebust\\services\\Cache"
                 },
@@ -2329,20 +2329,20 @@
                 "craftcms",
                 "fastcgi cache bust"
             ],
-            "time": "2018-02-01T23:47:32+00:00"
+            "time": "2018-03-02T16:04:00+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.21",
+            "version": "1.4.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "3528652b6e78ee10ddb4824624bd14e8fc511dc6"
+                "reference": "8be45b6e764dd316730bb3a5ff767dffb657dd4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/3528652b6e78ee10ddb4824624bd14e8fc511dc6",
-                "reference": "3528652b6e78ee10ddb4824624bd14e8fc511dc6",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/8be45b6e764dd316730bb3a5ff767dffb657dd4d",
+                "reference": "8be45b6e764dd316730bb3a5ff767dffb657dd4d",
                 "shasum": ""
             },
             "require": {
@@ -2396,7 +2396,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-02-27T18:49:28+00:00"
+            "time": "2018-03-02T16:44:07+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2458,16 +2458,16 @@
         },
         {
             "name": "nystudio107/craft-minify",
-            "version": "1.2.7",
+            "version": "1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-minify.git",
-                "reference": "42445dbed41f614d91b3dfe6190d389969b9636b"
+                "reference": "754012efc4c75aaff81282447573a2b28f01a246"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-minify/zipball/42445dbed41f614d91b3dfe6190d389969b9636b",
-                "reference": "42445dbed41f614d91b3dfe6190d389969b9636b",
+                "url": "https://api.github.com/repos/nystudio107/craft-minify/zipball/754012efc4c75aaff81282447573a2b28f01a246",
+                "reference": "754012efc4c75aaff81282447573a2b28f01a246",
                 "shasum": ""
             },
             "require": {
@@ -2481,7 +2481,7 @@
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": false,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-minify/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-minify/v1/CHANGELOG.md",
                 "class": "nystudio107\\minify\\Minify",
                 "components": {
                     "minify": "nystudio107\\minify\\services\\MinifyService"
@@ -2510,20 +2510,20 @@
                 "craftcms",
                 "minify"
             ],
-            "time": "2018-02-02T02:21:45+00:00"
+            "time": "2018-03-02T15:33:06+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-routemap.git",
-                "reference": "e124167596896eb875ab351c8c49d260f2d3b870"
+                "reference": "db6f9edbc0bd9f49f3beaf13c61974c06d8068a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-routemap/zipball/e124167596896eb875ab351c8c49d260f2d3b870",
-                "reference": "e124167596896eb875ab351c8c49d260f2d3b870",
+                "url": "https://api.github.com/repos/nystudio107/craft-routemap/zipball/db6f9edbc0bd9f49f3beaf13c61974c06d8068a2",
+                "reference": "db6f9edbc0bd9f49f3beaf13c61974c06d8068a2",
                 "shasum": ""
             },
             "require": {
@@ -2569,7 +2569,7 @@
                 "serviceworker",
                 "vue"
             ],
-            "time": "2018-02-20T16:35:03+00:00"
+            "time": "2018-03-02T16:14:51+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
@@ -2617,12 +2617,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "76b847aa1f970b9d43b830d997fe74ceb844296a"
+                "reference": "b2583f6bbba4951f78cafc05153692dbc80c23c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/76b847aa1f970b9d43b830d997fe74ceb844296a",
-                "reference": "76b847aa1f970b9d43b830d997fe74ceb844296a",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/b2583f6bbba4951f78cafc05153692dbc80c23c4",
+                "reference": "b2583f6bbba4951f78cafc05153692dbc80c23c4",
                 "shasum": ""
             },
             "require": {
@@ -2679,7 +2679,7 @@
                 "issues": "https://github.com/nystudio107/craft-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
             },
-            "time": "2018-02-28T23:11:47+00:00"
+            "time": "2018-03-02T23:32:31+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2740,16 +2740,16 @@
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "1.1.2",
+            "version": "1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "5983a370a6c2dae8e8c68a77dd4085a6bcd0a321"
+                "reference": "fabe4a7aa8b4d1c98df0f52efff96a29d08490bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/5983a370a6c2dae8e8c68a77dd4085a6bcd0a321",
-                "reference": "5983a370a6c2dae8e8c68a77dd4085a6bcd0a321",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/fabe4a7aa8b4d1c98df0f52efff96a29d08490bf",
+                "reference": "fabe4a7aa8b4d1c98df0f52efff96a29d08490bf",
                 "shasum": ""
             },
             "require": {
@@ -2792,7 +2792,7 @@
                 "craftcms",
                 "transcoder"
             ],
-            "time": "2018-02-07T04:34:56+00:00"
+            "time": "2018-03-02T15:54:13+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
