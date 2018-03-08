@@ -11,9 +11,7 @@
     }).one() %}
 {% endif %}
 
-{% do seomatic.meta.seoTitle(entry.title) %}
-{% do seomatic.meta.seoDescription(showInfo.showDescription) %}
-{% do seomatic.meta.canonicalUrl(entry.url) %}
+{% do seomatic.helper.loadMetadataForUri(entry.uri) %}
 
 {% block content %}
     
