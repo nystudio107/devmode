@@ -22,10 +22,7 @@
         
         {% import "_partials/_macros.twig" as macro %}
         {% include "_partials/_global_header.twig" %}
-    
-        {% do seomatic.meta.seoImage(showInfo.showImage.one().getUrl()) %}
-        {% do seomatic.meta.seoImageDescription(showInfo.showImage.one().title) %}
-
+        
         {# -- ServiceWorker, loadjs, and tiny-cookie -- #}
         <script>
             {% if craft.app.config.general.isSystemOn %}
@@ -54,13 +51,6 @@
         </script>
 <!--# endif -->
         {%- minify -%}
-            {% if not craft.app.config.general.devMode %}
-                {# -- Google Analytics -- #}
-                <script>
-                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','{{ baseUrl }}js/analytics.{{staticAssetsVersion}}.js','ga');ga('create','UA-69117511-5','auto');ga('require','displayfeatures');ga('send','pageview');
-                </script>
-            {% endif %}
-        
             {# -- PictureFill polyfill -- #}
             <script>
                 var testImg = document.createElement("img");
