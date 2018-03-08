@@ -96,7 +96,7 @@
                                 <source type="audio/mpeg" src="{{ ('https://devmode.fm' ~ transAudioUrl) }}">
                             </amp-audio>
                             {% else %}
-                            <amp-audio src="{{ alias('@baseUrl' ~ transAudioUrl) }}">
+                            <amp-audio src="{{ transAudioUrl }}">
                                 width="250"
                                 height="30"
                                 title="{{ episode.title }}"
