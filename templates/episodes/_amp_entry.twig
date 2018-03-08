@@ -13,9 +13,7 @@
     {{ source ("episodes/_amp_entry_critical.min.css", ignore_missing = true) }}
 {% endblock %}
 
-{% do seomatic.meta.seoTitle(entry.title) %}
-{% do seomatic.meta.seoDescription(entry.episodeSummary) %}
-{% do seomatic.meta.canonicalUrl(entry.url) %}
+{% do seomatic.helper.loadMetadataForUri(entry.uri) %}
 
 {% block content %}
     <section>
