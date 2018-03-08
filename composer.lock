@@ -407,16 +407,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC13",
+            "version": "3.0.0-RC14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "39b6e1e84285ed9eb8917630c93d04622f1322df"
+                "reference": "fb4faffb435e41756750144c0ed3724d2f52a86f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/39b6e1e84285ed9eb8917630c93d04622f1322df",
-                "reference": "39b6e1e84285ed9eb8917630c93d04622f1322df",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/fb4faffb435e41756750144c0ed3724d2f52a86f",
+                "reference": "fb4faffb435e41756750144c0ed3724d2f52a86f",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +485,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-02-27T19:49:36+00:00"
+            "time": "2018-03-06T19:06:32+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1352,16 +1352,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.59",
+            "version": "v1.2.60",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "8b371ed0fc16a3b13ebd5f00fd4a3ffb5420262e"
+                "reference": "6e9abfe7100f1c8febfa600b3568192989f10c2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/8b371ed0fc16a3b13ebd5f00fd4a3ffb5420262e",
-                "reference": "8b371ed0fc16a3b13ebd5f00fd4a3ffb5420262e",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/6e9abfe7100f1c8febfa600b3568192989f10c2e",
+                "reference": "6e9abfe7100f1c8febfa600b3568192989f10c2e",
                 "shasum": ""
             },
             "require": {
@@ -1397,7 +1397,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-02-22T19:04:46+00:00"
+            "time": "2018-03-05T20:50:06+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2333,16 +2333,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.22",
+            "version": "1.4.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "8be45b6e764dd316730bb3a5ff767dffb657dd4d"
+                "reference": "95784f02e17e10e83c1881f4f983d952ad738629"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/8be45b6e764dd316730bb3a5ff767dffb657dd4d",
-                "reference": "8be45b6e764dd316730bb3a5ff767dffb657dd4d",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/95784f02e17e10e83c1881f4f983d952ad738629",
+                "reference": "95784f02e17e10e83c1881f4f983d952ad738629",
                 "shasum": ""
             },
             "require": {
@@ -2396,7 +2396,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-03-02T16:44:07+00:00"
+            "time": "2018-03-03T19:00:08+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2617,18 +2617,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "b2583f6bbba4951f78cafc05153692dbc80c23c4"
+                "reference": "b15dcfc9ba3da2798c0173655a0457dbd4922813"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/b2583f6bbba4951f78cafc05153692dbc80c23c4",
-                "reference": "b2583f6bbba4951f78cafc05153692dbc80c23c4",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/b15dcfc9ba3da2798c0173655a0457dbd4922813",
+                "reference": "b15dcfc9ba3da2798c0173655a0457dbd4922813",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0-RC12",
                 "craftcms/vue-asset": "^1.0",
                 "davechild/textstatistics": "^1.0.1",
+                "php-science/textrank": "^1.0.3",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
             },
             "type": "craft-plugin",
@@ -2641,13 +2642,15 @@
                 "class": "nystudio107\\seomatic\\Seomatic",
                 "components": {
                     "frontendTemplates": "nystudio107\\seomatic\\services\\FrontendTemplates",
+                    "helper": "nystudio107\\seomatic\\services\\Helper",
                     "jsonLd": "nystudio107\\seomatic\\services\\JsonLd",
                     "link": "nystudio107\\seomatic\\services\\Link",
-                    "metaContainers": "nystudio107\\seomatic\\services\\MetaContainers",
                     "metaBundles": "nystudio107\\seomatic\\services\\MetaBundles",
+                    "metaContainers": "nystudio107\\seomatic\\services\\MetaContainers",
                     "redirects": "nystudio107\\seomatic\\services\\Redirects",
                     "script": "nystudio107\\seomatic\\services\\Script",
                     "sitemaps": "nystudio107\\seomatic\\services\\Sitemaps",
+                    "template": "nystudio107\\seomatic\\services\\Template",
                     "tag": "nystudio107\\seomatic\\services\\Tag",
                     "title": "nystudio107\\seomatic\\services\\Title"
                 }
@@ -2679,7 +2682,7 @@
                 "issues": "https://github.com/nystudio107/craft-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
             },
-            "time": "2018-03-02T23:32:31+00:00"
+            "time": "2018-03-08T16:07:09+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2985,6 +2988,57 @@
                 "random"
             ],
             "time": "2017-09-27T21:40:39+00:00"
+        },
+        {
+            "name": "php-science/textrank",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DavidBelicza/PHP-Science-TextRank.git",
+                "reference": "927344fe91206ecf9615d801031a1915cf53605c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DavidBelicza/PHP-Science-TextRank/zipball/927344fe91206ecf9615d801031a1915cf53605c",
+                "reference": "927344fe91206ecf9615d801031a1915cf53605c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "7.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpScience\\TextRank\\": [
+                        "src/",
+                        "tests/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Belicza",
+                    "email": "87.bdavid@gmail.com"
+                }
+            ],
+            "description": "TextRank (automatic text summarization) for PHP7 and HHVM.",
+            "keywords": [
+                "PHP7",
+                "automatic",
+                "hhvm",
+                "science",
+                "strict",
+                "summarization",
+                "textrank"
+            ],
+            "time": "2017-12-18T20:08:03+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -3911,16 +3965,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.4.4",
+            "version": "v2.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb"
+                "reference": "d2117ec118c1ff3d28ccddca8212d82787a4809f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/eddb97148ad779f27e670e1e3f19fb323aedafeb",
-                "reference": "eddb97148ad779f27e670e1e3f19fb323aedafeb",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/d2117ec118c1ff3d28ccddca8212d82787a4809f",
+                "reference": "d2117ec118c1ff3d28ccddca8212d82787a4809f",
                 "shasum": ""
             },
             "require": {
@@ -3973,7 +4027,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2017-09-27T18:10:31+00:00"
+            "time": "2018-03-03T16:23:01+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
