@@ -20,6 +20,8 @@ server {
     charset utf-8;
     ssi on;
 
+    client_max_body_size 100M;
+    
         # Ban certain bots from crawling the site
     if ($limit_bots = 1) {
         return 403;
@@ -122,15 +124,21 @@ server {
     location ^~ /cpresources {
         try_files $uri $uri/ /index.php?$query_string;
     }
-
     # Pass our ElementAPI requests through
     location ^~ /api {
         try_files $uri $uri/ /index.php?$query_string;
     }
-
     # Pass our ServiceWorker through Craft so it can work as a template
     location ^~ /sw.js {
         try_files $uri $uri/ /index.php?$query_string;
+    }
+    # Pass our RSS through
+    location ^~ /rss {
+        try_files $uri $uri/ @phpfpm_nocache;
+    }
+    # Pass instantanalytics through
+    location ^~ /instantanalytics {
+        try_files $uri $uri/ @phpfpm_nocache;
     }
 
     # php-fpm configuration
@@ -167,7 +175,7 @@ server {
         fastcgi_connect_timeout 300;
         fastcgi_send_timeout 300;
         fastcgi_read_timeout 300;
-
+        
         # FastCGI Cache settings
         fastcgi_ignore_headers Cache-Control Expires Set-Cookie;
         fastcgi_cache DEVMODE;
