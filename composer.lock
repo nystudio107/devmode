@@ -407,16 +407,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC14",
+            "version": "3.0.0-RC15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "fb4faffb435e41756750144c0ed3724d2f52a86f"
+                "reference": "2c92030aa91e5ed655dd7896f7739737d8b8ea29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/fb4faffb435e41756750144c0ed3724d2f52a86f",
-                "reference": "fb4faffb435e41756750144c0ed3724d2f52a86f",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/2c92030aa91e5ed655dd7896f7739737d8b8ea29",
+                "reference": "2c92030aa91e5ed655dd7896f7739737d8b8ea29",
                 "shasum": ""
             },
             "require": {
@@ -444,7 +444,7 @@
                 "pixelandtonic/imagine": "~0.7.1.2",
                 "seld/cli-prompt": "~1.0.3",
                 "twig/twig": "~2.4.4",
-                "yiisoft/yii2": "~2.0.14.0",
+                "yiisoft/yii2": "~2.0.14.2",
                 "yiisoft/yii2-debug": "~2.0.10",
                 "yiisoft/yii2-queue": "~2.0.1",
                 "yiisoft/yii2-swiftmailer": "~2.1.0",
@@ -485,7 +485,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-03-06T19:06:32+00:00"
+            "time": "2018-03-13T20:20:40+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2613,16 +2613,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0-beta.1",
+            "version": "3.0.0-beta.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "5b100b273845948fcdfdf0f696998680b344b2aa"
+                "reference": "ce9caec287c05bb47a78cc43e8844a631d121837"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/5b100b273845948fcdfdf0f696998680b344b2aa",
-                "reference": "5b100b273845948fcdfdf0f696998680b344b2aa",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/ce9caec287c05bb47a78cc43e8844a631d121837",
+                "reference": "ce9caec287c05bb47a78cc43e8844a631d121837",
                 "shasum": ""
             },
             "require": {
@@ -2669,7 +2669,7 @@
                     "homepage": "https://nystudio107.com"
                 }
             ],
-            "description": "A turnkey SEO implementation for Craft CMS that is comprehensive, powerful, and flexible",
+            "description": "SEOmatic facilitates modern SEO best practices & implementation for Craft CMS 3. It is a turnkey SEO system that is comprehensive, powerful, and flexible.",
             "keywords": [
                 "Craft",
                 "cms",
@@ -2677,7 +2677,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-03-13T16:30:55+00:00"
+            "time": "2018-03-13T18:57:10+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
