@@ -17,7 +17,6 @@
     "source": "https://github.com/nystudio107/craft",
     "docs": "https://github.com/nystudio107/craft"
   },
-  "minimum-stability": "beta",
   "prefer-stable": true,
   "require": {
     "craftcms/cms": "^3.0.0-RC7",
@@ -36,7 +35,7 @@
     "nystudio107/craft-similar": "^1.0.0",
     "nystudio107/craft-instantanalytics": "^1.0.4",
     "ostark/craft-async-queue": "^1.3.0",
-    "nystudio107/craft-seomatic": "^3.0@beta"
+    "nystudio107/craft-seomatic": "^3.0.0-beta.1"
   },
   "autoload": {
     "psr-4": {

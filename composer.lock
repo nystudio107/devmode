@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "63f54c74c12a25c24508c6b621841347",
+    "content-hash": "5c06c10cd2b5a942c77310cdea57ca28",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -4662,8 +4662,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "stability-flags": {
+        "craftcms/cms": 5,
         "nystudio107/craft-seomatic": 10
     },
     "prefer-stable": true,
