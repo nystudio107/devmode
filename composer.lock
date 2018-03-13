@@ -68,16 +68,16 @@
         },
         {
             "name": "cloudinary/cloudinary_php",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cloudinary/cloudinary_php.git",
-                "reference": "641b0901ca616c540b773abb802987a502aa8b89"
+                "reference": "3f76261e342de120c20355df9e61370a1434cdfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/641b0901ca616c540b773abb802987a502aa8b89",
-                "reference": "641b0901ca616c540b773abb802987a502aa8b89",
+                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/3f76261e342de120c20355df9e61370a1434cdfd",
+                "reference": "3f76261e342de120c20355df9e61370a1434cdfd",
                 "shasum": ""
             },
             "require": {
@@ -86,7 +86,7 @@
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "5.7.*"
+                "phpunit/phpunit": "4.8.*"
             },
             "type": "library",
             "autoload": {
@@ -116,7 +116,7 @@
                 "image management",
                 "sdk"
             ],
-            "time": "2017-05-03T14:29:33+00:00"
+            "time": "2018-03-12T15:33:59+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -2617,12 +2617,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "35d30e888b2121f17f60a1f70e2a7d4090c68d66"
+                "reference": "e7d0dbde92074f343758689b45396af84eafda19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/35d30e888b2121f17f60a1f70e2a7d4090c68d66",
-                "reference": "35d30e888b2121f17f60a1f70e2a7d4090c68d66",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/e7d0dbde92074f343758689b45396af84eafda19",
+                "reference": "e7d0dbde92074f343758689b45396af84eafda19",
                 "shasum": ""
             },
             "require": {
@@ -2650,7 +2650,6 @@
                     "redirects": "nystudio107\\seomatic\\services\\Redirects",
                     "script": "nystudio107\\seomatic\\services\\Script",
                     "sitemaps": "nystudio107\\seomatic\\services\\Sitemaps",
-                    "template": "nystudio107\\seomatic\\services\\Template",
                     "tag": "nystudio107\\seomatic\\services\\Tag",
                     "title": "nystudio107\\seomatic\\services\\Title"
                 }
@@ -2682,7 +2681,7 @@
                 "issues": "https://github.com/nystudio107/craft-seomatic/issues",
                 "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
             },
-            "time": "2018-03-08T18:42:15+00:00"
+            "time": "2018-03-13T15:00:00+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2799,16 +2798,16 @@
         },
         {
             "name": "nystudio107/craft-typogrify",
-            "version": "1.1.7",
+            "version": "1.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-typogrify.git",
-                "reference": "e86a58415bf2d2f6ac7b78933a596b35bf9410d0"
+                "reference": "ebc4ea55050d88021d72c78eaae31a6448243e34"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/e86a58415bf2d2f6ac7b78933a596b35bf9410d0",
-                "reference": "e86a58415bf2d2f6ac7b78933a596b35bf9410d0",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/ebc4ea55050d88021d72c78eaae31a6448243e34",
+                "reference": "ebc4ea55050d88021d72c78eaae31a6448243e34",
                 "shasum": ""
             },
             "require": {
@@ -2823,7 +2822,7 @@
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": false,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-typogrify/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-typogrify/v1/CHANGELOG.md",
                 "components": {
                     "typogrify": "nystudio107\\typogrify\\services\\TypogrifyService"
                 },
@@ -2852,7 +2851,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2018-02-02T05:46:03+00:00"
+            "time": "2018-03-12T14:39:09+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
@@ -4081,16 +4080,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.14.1",
+            "version": "2.0.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "d99969394c66dc3606134af092b8ec561ea5d7c6"
+                "reference": "ef74f3783e964cea477f06e6d6ce209df1f37881"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/d99969394c66dc3606134af092b8ec561ea5d7c6",
-                "reference": "d99969394c66dc3606134af092b8ec561ea5d7c6",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ef74f3783e964cea477f06e6d6ce209df1f37881",
+                "reference": "ef74f3783e964cea477f06e6d6ce209df1f37881",
                 "shasum": ""
             },
             "require": {
@@ -4177,7 +4176,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2018-02-24T20:23:06+00:00"
+            "time": "2018-03-13T14:15:01+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
