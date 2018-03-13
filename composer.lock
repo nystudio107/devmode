@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8583a1ff765ec6f88de3c62f63c445b0",
+    "content-hash": "63f54c74c12a25c24508c6b621841347",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2613,16 +2613,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "dev-develop",
+            "version": "3.0.0-beta.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "e7d0dbde92074f343758689b45396af84eafda19"
+                "reference": "5b100b273845948fcdfdf0f696998680b344b2aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/e7d0dbde92074f343758689b45396af84eafda19",
-                "reference": "e7d0dbde92074f343758689b45396af84eafda19",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/5b100b273845948fcdfdf0f696998680b344b2aa",
+                "reference": "5b100b273845948fcdfdf0f696998680b344b2aa",
                 "shasum": ""
             },
             "require": {
@@ -2659,6 +2659,7 @@
                     "nystudio107\\seomatic\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "proprietary"
             ],
@@ -2670,18 +2671,13 @@
             ],
             "description": "A turnkey SEO implementation for Craft CMS that is comprehensive, powerful, and flexible",
             "keywords": [
+                "Craft",
                 "cms",
-                "craft",
                 "craft-plugin",
                 "craftcms",
                 "seomatic"
             ],
-            "support": {
-                "docs": "https://github.com/nystudio107/craft-seomatic/blob/v3/README.md",
-                "issues": "https://github.com/nystudio107/craft-seomatic/issues",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/develop"
-            },
-            "time": "2018-03-13T15:00:00+00:00"
+            "time": "2018-03-13T16:30:55+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -4666,9 +4662,9 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "stability-flags": {
-        "nystudio107/craft-seomatic": 20
+        "nystudio107/craft-seomatic": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
