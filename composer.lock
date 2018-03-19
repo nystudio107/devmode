@@ -1352,16 +1352,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.60",
+            "version": "v1.2.61",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "6e9abfe7100f1c8febfa600b3568192989f10c2e"
+                "reference": "9f22764fa72f6a30211fe16cf28a1f43642136de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/6e9abfe7100f1c8febfa600b3568192989f10c2e",
-                "reference": "6e9abfe7100f1c8febfa600b3568192989f10c2e",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/9f22764fa72f6a30211fe16cf28a1f43642136de",
+                "reference": "9f22764fa72f6a30211fe16cf28a1f43642136de",
                 "shasum": ""
             },
             "require": {
@@ -1397,7 +1397,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-03-05T20:50:06+00:00"
+            "time": "2018-03-19T20:27:17+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2333,16 +2333,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.23",
+            "version": "1.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "95784f02e17e10e83c1881f4f983d952ad738629"
+                "reference": "1b853f12043c285b58fd41ef73f82bb2d6715546"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/95784f02e17e10e83c1881f4f983d952ad738629",
-                "reference": "95784f02e17e10e83c1881f4f983d952ad738629",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/1b853f12043c285b58fd41ef73f82bb2d6715546",
+                "reference": "1b853f12043c285b58fd41ef73f82bb2d6715546",
                 "shasum": ""
             },
             "require": {
@@ -2396,7 +2396,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-03-03T19:00:08+00:00"
+            "time": "2018-03-19T22:45:14+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2613,16 +2613,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0-beta.7",
+            "version": "3.0.0-beta.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "a0f106558ac24b1446125432dcf63577b1a3df1e"
+                "reference": "5a9b631f78e205e24642afe7393b1656fd98a962"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/a0f106558ac24b1446125432dcf63577b1a3df1e",
-                "reference": "a0f106558ac24b1446125432dcf63577b1a3df1e",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/5a9b631f78e205e24642afe7393b1656fd98a962",
+                "reference": "5a9b631f78e205e24642afe7393b1656fd98a962",
                 "shasum": ""
             },
             "require": {
@@ -2677,7 +2677,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-03-16T13:58:37+00:00"
+            "time": "2018-03-19T20:28:11+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
