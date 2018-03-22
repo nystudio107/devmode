@@ -2278,16 +2278,16 @@
         },
         {
             "name": "nystudio107/craft-fastcgicachebust",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-fastcgicachebust.git",
-                "reference": "df4a6eea65e45e3eac9a4f6f0d1cbf3b06c47b89"
+                "reference": "800730cd146a8453a0c6fcbe8772c14c7f30c1e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-fastcgicachebust/zipball/df4a6eea65e45e3eac9a4f6f0d1cbf3b06c47b89",
-                "reference": "df4a6eea65e45e3eac9a4f6f0d1cbf3b06c47b89",
+                "url": "https://api.github.com/repos/nystudio107/craft-fastcgicachebust/zipball/800730cd146a8453a0c6fcbe8772c14c7f30c1e2",
+                "reference": "800730cd146a8453a0c6fcbe8772c14c7f30c1e2",
                 "shasum": ""
             },
             "require": {
@@ -2329,7 +2329,7 @@
                 "craftcms",
                 "fastcgi cache bust"
             ],
-            "time": "2018-03-02T16:04:00+00:00"
+            "time": "2018-03-20T21:04:28+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize",
@@ -2400,16 +2400,16 @@
         },
         {
             "name": "nystudio107/craft-instantanalytics",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-instantanalytics.git",
-                "reference": "d3f6aac669230f4a768155eaaf2003933d8e5e19"
+                "reference": "95405ebdd3f7926cc217c3192e7b7f4a92fcb68e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/d3f6aac669230f4a768155eaaf2003933d8e5e19",
-                "reference": "d3f6aac669230f4a768155eaaf2003933d8e5e19",
+                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/95405ebdd3f7926cc217c3192e7b7f4a92fcb68e",
+                "reference": "95405ebdd3f7926cc217c3192e7b7f4a92fcb68e",
                 "shasum": ""
             },
             "require": {
@@ -2424,7 +2424,7 @@
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": true,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-instantanalytics/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-instantanalytics/v1/CHANGELOG.md",
                 "components": {
                     "ia": "nystudio107\\instantanalytics\\services\\IA",
                     "commerce": "nystudio107\\instantanalytics\\services\\Commerce"
@@ -2454,7 +2454,7 @@
                 "craftcms",
                 "instant analytics"
             ],
-            "time": "2018-02-02T00:14:53+00:00"
+            "time": "2018-03-22T17:37:38+00:00"
         },
         {
             "name": "nystudio107/craft-minify",
@@ -2613,16 +2613,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0-beta.11",
+            "version": "3.0.0-beta.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "5a9b631f78e205e24642afe7393b1656fd98a962"
+                "reference": "95ed14e80c8394b86db6338eedb7f0a93eacef82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/5a9b631f78e205e24642afe7393b1656fd98a962",
-                "reference": "5a9b631f78e205e24642afe7393b1656fd98a962",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/95ed14e80c8394b86db6338eedb7f0a93eacef82",
+                "reference": "95ed14e80c8394b86db6338eedb7f0a93eacef82",
                 "shasum": ""
             },
             "require": {
@@ -2677,7 +2677,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-03-19T20:28:11+00:00"
+            "time": "2018-03-22T14:29:47+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2794,16 +2794,16 @@
         },
         {
             "name": "nystudio107/craft-typogrify",
-            "version": "1.1.8",
+            "version": "1.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-typogrify.git",
-                "reference": "ebc4ea55050d88021d72c78eaae31a6448243e34"
+                "reference": "26ade78f72a67dcff0d65493545bbbd85999926b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/ebc4ea55050d88021d72c78eaae31a6448243e34",
-                "reference": "ebc4ea55050d88021d72c78eaae31a6448243e34",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/26ade78f72a67dcff0d65493545bbbd85999926b",
+                "reference": "26ade78f72a67dcff0d65493545bbbd85999926b",
                 "shasum": ""
             },
             "require": {
@@ -2847,7 +2847,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2018-03-12T14:39:09+00:00"
+            "time": "2018-03-20T23:05:07+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
@@ -3960,16 +3960,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.4.6",
+            "version": "v2.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "d2117ec118c1ff3d28ccddca8212d82787a4809f"
+                "reference": "69aacd44dbbaa3199d5afb68605c996d577896fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/d2117ec118c1ff3d28ccddca8212d82787a4809f",
-                "reference": "d2117ec118c1ff3d28ccddca8212d82787a4809f",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/69aacd44dbbaa3199d5afb68605c996d577896fc",
+                "reference": "69aacd44dbbaa3199d5afb68605c996d577896fc",
                 "shasum": ""
             },
             "require": {
@@ -3978,8 +3978,8 @@
             },
             "require-dev": {
                 "psr/container": "^1.0",
-                "symfony/debug": "~2.7",
-                "symfony/phpunit-bridge": "~3.3@dev"
+                "symfony/debug": "^2.7",
+                "symfony/phpunit-bridge": "^3.3"
             },
             "type": "library",
             "extra": {
@@ -4022,7 +4022,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2018-03-03T16:23:01+00:00"
+            "time": "2018-03-20T04:31:17+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -4236,16 +4236,16 @@
         },
         {
             "name": "yiisoft/yii2-composer",
-            "version": "2.0.5",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2"
+                "reference": "163419f1f197e02f015713b0d4f85598d8f8aa80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2",
-                "reference": "3f4923c2bde6caf3f5b88cc22fdd5770f52f8df2",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/163419f1f197e02f015713b0d4f85598d8f8aa80",
+                "reference": "163419f1f197e02f015713b0d4f85598d8f8aa80",
                 "shasum": ""
             },
             "require": {
@@ -4274,6 +4274,10 @@
                 {
                     "name": "Qiang Xue",
                     "email": "qiang.xue@gmail.com"
+                },
+                {
+                    "name": "Carsten Brandt",
+                    "email": "mail@cebe.cc"
                 }
             ],
             "description": "The composer plugin for Yii extension installer",
@@ -4282,7 +4286,7 @@
                 "extension installer",
                 "yii2"
             ],
-            "time": "2016-12-20T13:26:02+00:00"
+            "time": "2018-03-21T16:15:55+00:00"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -4413,20 +4417,23 @@
         },
         {
             "name": "yiisoft/yii2-redis",
-            "version": "2.0.7",
+            "version": "2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-redis.git",
-                "reference": "3891bb19f3ddc7ad744b439fe1d656ebb5b60a99"
+                "reference": "ffe6bff8dc6be4bb84c9495cd3ef7ef1161c1314"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-redis/zipball/3891bb19f3ddc7ad744b439fe1d656ebb5b60a99",
-                "reference": "3891bb19f3ddc7ad744b439fe1d656ebb5b60a99",
+                "url": "https://api.github.com/repos/yiisoft/yii2-redis/zipball/ffe6bff8dc6be4bb84c9495cd3ef7ef1161c1314",
+                "reference": "ffe6bff8dc6be4bb84c9495cd3ef7ef1161c1314",
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii2": "~2.0.13"
+                "yiisoft/yii2": "~2.0.14"
+            },
+            "require-dev": {
+                "yiisoft/yii2-dev": "~2.0.14"
             },
             "type": "yii2-extension",
             "extra": {
@@ -4436,7 +4443,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "yii\\redis\\": ""
+                    "yii\\redis\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4457,7 +4464,7 @@
                 "session",
                 "yii2"
             ],
-            "time": "2017-12-11T21:17:34+00:00"
+            "time": "2018-03-20T11:01:04+00:00"
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
