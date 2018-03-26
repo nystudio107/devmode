@@ -407,16 +407,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC15",
+            "version": "3.0.0-RC16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "2c92030aa91e5ed655dd7896f7739737d8b8ea29"
+                "reference": "44fff955bb76c383c582bcd6e5ded80ac69a2dec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/2c92030aa91e5ed655dd7896f7739737d8b8ea29",
-                "reference": "2c92030aa91e5ed655dd7896f7739737d8b8ea29",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/44fff955bb76c383c582bcd6e5ded80ac69a2dec",
+                "reference": "44fff955bb76c383c582bcd6e5ded80ac69a2dec",
                 "shasum": ""
             },
             "require": {
@@ -444,7 +444,7 @@
                 "pixelandtonic/imagine": "~0.7.1.2",
                 "seld/cli-prompt": "~1.0.3",
                 "twig/twig": "~2.4.4",
-                "yiisoft/yii2": "~2.0.14.2",
+                "yiisoft/yii2": "~2.0.15.1",
                 "yiisoft/yii2-debug": "~2.0.10",
                 "yiisoft/yii2-queue": "~2.0.1",
                 "yiisoft/yii2-swiftmailer": "~2.1.0",
@@ -485,7 +485,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-03-13T20:20:40+00:00"
+            "time": "2018-03-25T23:47:20+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1038,16 +1038,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.3.0",
+            "version": "6.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699"
+                "reference": "49e42e6539f775e80c74086a710a882e1d5a8111"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f4db5a78a5ea468d4831de7f0bf9d9415e348699",
-                "reference": "f4db5a78a5ea468d4831de7f0bf9d9415e348699",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/49e42e6539f775e80c74086a710a882e1d5a8111",
+                "reference": "49e42e6539f775e80c74086a710a882e1d5a8111",
                 "shasum": ""
             },
             "require": {
@@ -1057,7 +1057,7 @@
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "^4.0 || ^5.0",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4",
                 "psr/log": "^1.0"
             },
             "suggest": {
@@ -1066,7 +1066,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.2-dev"
+                    "dev-master": "6.3-dev"
                 }
             },
             "autoload": {
@@ -1099,7 +1099,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2017-06-22T18:50:49+00:00"
+            "time": "2018-03-26T12:06:26+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2613,16 +2613,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0-beta.13",
+            "version": "3.0.0-beta.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "95ed14e80c8394b86db6338eedb7f0a93eacef82"
+                "reference": "010360151cf792f90e2579cf89eecc6e123b4f33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/95ed14e80c8394b86db6338eedb7f0a93eacef82",
-                "reference": "95ed14e80c8394b86db6338eedb7f0a93eacef82",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/010360151cf792f90e2579cf89eecc6e123b4f33",
+                "reference": "010360151cf792f90e2579cf89eecc6e123b4f33",
                 "shasum": ""
             },
             "require": {
@@ -2677,7 +2677,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-03-22T14:29:47+00:00"
+            "time": "2018-03-26T03:01:02+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -4076,16 +4076,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.14.2",
+            "version": "2.0.15.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "ef74f3783e964cea477f06e6d6ce209df1f37881"
+                "reference": "ed3a9e1c4abe206e1c3ce48a6b3624119b79850d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ef74f3783e964cea477f06e6d6ce209df1f37881",
-                "reference": "ef74f3783e964cea477f06e6d6ce209df1f37881",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/ed3a9e1c4abe206e1c3ce48a6b3624119b79850d",
+                "reference": "ed3a9e1c4abe206e1c3ce48a6b3624119b79850d",
                 "shasum": ""
             },
             "require": {
@@ -4172,7 +4172,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2018-03-13T14:15:01+00:00"
+            "time": "2018-03-21T18:36:53+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
