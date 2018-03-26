@@ -1038,16 +1038,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.3.1",
+            "version": "6.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "49e42e6539f775e80c74086a710a882e1d5a8111"
+                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/49e42e6539f775e80c74086a710a882e1d5a8111",
-                "reference": "49e42e6539f775e80c74086a710a882e1d5a8111",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/68d0ea14d5a3f42a20e87632a5f84931e2709c90",
+                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90",
                 "shasum": ""
             },
             "require": {
@@ -1099,7 +1099,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-03-26T12:06:26+00:00"
+            "time": "2018-03-26T16:33:04+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2613,16 +2613,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0-beta.16",
+            "version": "3.0.0-beta.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "010360151cf792f90e2579cf89eecc6e123b4f33"
+                "reference": "74e32c9c0fddbe9e0c20f96e595ada464df6adde"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/010360151cf792f90e2579cf89eecc6e123b4f33",
-                "reference": "010360151cf792f90e2579cf89eecc6e123b4f33",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/74e32c9c0fddbe9e0c20f96e595ada464df6adde",
+                "reference": "74e32c9c0fddbe9e0c20f96e595ada464df6adde",
                 "shasum": ""
             },
             "require": {
@@ -2677,7 +2677,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-03-26T03:01:02+00:00"
+            "time": "2018-03-26T23:50:07+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
