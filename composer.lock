@@ -67,69 +67,17 @@
             "time": "2017-07-16T21:13:23+00:00"
         },
         {
-            "name": "cloudinary/cloudinary_php",
-            "version": "1.9.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cloudinary/cloudinary_php.git",
-                "reference": "3f76261e342de120c20355df9e61370a1434cdfd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/3f76261e342de120c20355df9e61370a1434cdfd",
-                "reference": "3f76261e342de120c20355df9e61370a1434cdfd",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "4.8.*"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src"
-                ],
-                "files": [
-                    "src/Helpers.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Cloudinary",
-                    "homepage": "https://github.com/cloudinary/cloudinary_php/graphs/contributors"
-                }
-            ],
-            "description": "Cloudinary PHP SDK",
-            "homepage": "https://github.com/cloudinary/cloudinary_php",
-            "keywords": [
-                "cdn",
-                "cloud",
-                "cloudinary",
-                "image management",
-                "sdk"
-            ],
-            "time": "2018-03-12T15:33:59+00:00"
-        },
-        {
             "name": "composer/ca-bundle",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "943b2c4fcad1ef178d16a713c2468bf7e579c288"
+                "reference": "d2c0a83b7533d6912e8d516756ebd34f893e9169"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/943b2c4fcad1ef178d16a713c2468bf7e579c288",
-                "reference": "943b2c4fcad1ef178d16a713c2468bf7e579c288",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/d2c0a83b7533d6912e8d516756ebd34f893e9169",
+                "reference": "d2c0a83b7533d6912e8d516756ebd34f893e9169",
                 "shasum": ""
             },
             "require": {
@@ -138,7 +86,7 @@
                 "php": "^5.3.2 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5",
                 "psr/log": "^1.0",
                 "symfony/process": "^2.5 || ^3.0 || ^4.0"
             },
@@ -172,7 +120,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2017-11-29T09:37:33+00:00"
+            "time": "2018-03-29T19:57:20+00:00"
         },
         {
             "name": "composer/composer",
@@ -407,16 +355,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.0-RC16.1",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "44fff955bb76c383c582bcd6e5ded80ac69a2dec"
+                "reference": "03289e4369d732093751f34484f3852885769808"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/44fff955bb76c383c582bcd6e5ded80ac69a2dec",
-                "reference": "44fff955bb76c383c582bcd6e5ded80ac69a2dec",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/03289e4369d732093751f34484f3852885769808",
+                "reference": "03289e4369d732093751f34484f3852885769808",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +433,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-03-25T23:47:20+00:00"
+            "time": "2018-04-04T23:55:39+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1218,53 +1166,6 @@
             "time": "2017-03-20T17:10:46+00:00"
         },
         {
-            "name": "imageoptim/imageoptim",
-            "version": "1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ImageOptim/php-imageoptim-api.git",
-                "reference": "b73eb5d6747fc181de86b2de50fb158dff463618"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ImageOptim/php-imageoptim-api/zipball/b73eb5d6747fc181de86b2de50fb158dff463618",
-                "reference": "b73eb5d6747fc181de86b2de50fb158dff463618",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.4 || ^7.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "ImageOptim\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-2-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Kornel",
-                    "email": "kornel@imageoptim.com"
-                }
-            ],
-            "description": "ImageOptim API for PHP",
-            "homepage": "https://imageoptim.com/api",
-            "keywords": [
-                "image",
-                "optimize",
-                "performance",
-                "resize",
-                "scale"
-            ],
-            "time": "2017-01-09T23:58:20+00:00"
-        },
-        {
             "name": "imgix/imgix-php",
             "version": "1.2.1",
             "source": {
@@ -1352,16 +1253,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.61",
+            "version": "v1.2.62",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "9f22764fa72f6a30211fe16cf28a1f43642136de"
+                "reference": "f9767578e00f87a081835b49adc7c71074a5b46c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/9f22764fa72f6a30211fe16cf28a1f43642136de",
-                "reference": "9f22764fa72f6a30211fe16cf28a1f43642136de",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/f9767578e00f87a081835b49adc7c71074a5b46c",
+                "reference": "f9767578e00f87a081835b49adc7c71074a5b46c",
                 "shasum": ""
             },
             "require": {
@@ -1397,7 +1298,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-03-19T20:27:17+00:00"
+            "time": "2018-03-27T18:25:43+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1464,43 +1365,6 @@
                 "schema"
             ],
             "time": "2018-02-14T22:26:30+00:00"
-        },
-        {
-            "name": "kraken-io/kraken-php",
-            "version": "1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kraken-io/kraken-php.git",
-                "reference": "56563df1b9a7829f7039cc6e712cf89fab655e26"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kraken-io/kraken-php/zipball/56563df1b9a7829f7039cc6e712cf89fab655e26",
-                "reference": "56563df1b9a7829f7039cc6e712cf89fab655e26",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "ext-json": "*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Kraken": "lib"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Kraken Image Optimizer",
-                    "email": "support@kraken.io"
-                }
-            ],
-            "description": "Official Kraken.io SDK",
-            "time": "2016-07-26T08:03:24+00:00"
         },
         {
             "name": "ksubileau/color-thief-php",
@@ -2333,24 +2197,21 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.24",
+            "version": "1.4.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "1b853f12043c285b58fd41ef73f82bb2d6715546"
+                "reference": "88d326896b803ad97ce8adc3b69c1e522e22ab46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/1b853f12043c285b58fd41ef73f82bb2d6715546",
-                "reference": "1b853f12043c285b58fd41ef73f82bb2d6715546",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/88d326896b803ad97ce8adc3b69c1e522e22ab46",
+                "reference": "88d326896b803ad97ce8adc3b69c1e522e22ab46",
                 "shasum": ""
             },
             "require": {
-                "cloudinary/cloudinary_php": "^1.8.0",
                 "craftcms/cms": "^3.0.0-RC12",
-                "imageoptim/imageoptim": "^1.0.0",
                 "imgix/imgix-php": "^1.1.0",
-                "kraken-io/kraken-php": "^1.2",
                 "ksubileau/color-thief-php": "^1.3",
                 "mikehaertl/php-shellcommand": "~1.2"
             },
@@ -2396,7 +2257,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-03-19T22:45:14+00:00"
+            "time": "2018-04-03T02:29:18+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2613,16 +2474,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0-beta.18",
+            "version": "3.0.0-beta.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "03c874c04bfcae22db9d7d3797c48b163fcdfc66"
+                "reference": "19c5265ae7cc0942efc15d56236d844c7fbfb60f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/03c874c04bfcae22db9d7d3797c48b163fcdfc66",
-                "reference": "03c874c04bfcae22db9d7d3797c48b163fcdfc66",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/19c5265ae7cc0942efc15d56236d844c7fbfb60f",
+                "reference": "19c5265ae7cc0942efc15d56236d844c7fbfb60f",
                 "shasum": ""
             },
             "require": {
@@ -2677,7 +2538,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-03-27T00:01:42+00:00"
+            "time": "2018-04-02T14:56:26+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2938,16 +2799,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.11",
+            "version": "v2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "5da4d3c796c275c55f057af5a643ae297d96b4d8"
+                "reference": "258c89a6b97de7dfaf5b8c7607d0478e236b04fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/5da4d3c796c275c55f057af5a643ae297d96b4d8",
-                "reference": "5da4d3c796c275c55f057af5a643ae297d96b4d8",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/258c89a6b97de7dfaf5b8c7607d0478e236b04fb",
+                "reference": "258c89a6b97de7dfaf5b8c7607d0478e236b04fb",
                 "shasum": ""
             },
             "require": {
@@ -2982,7 +2843,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2017-09-27T21:40:39+00:00"
+            "time": "2018-04-04T21:24:14+00:00"
         },
         {
             "name": "php-science/textrank",
@@ -3960,16 +3821,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.4.7",
+            "version": "v2.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "69aacd44dbbaa3199d5afb68605c996d577896fc"
+                "reference": "7b604c89da162034bdf4bb66310f358d313dd16d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/69aacd44dbbaa3199d5afb68605c996d577896fc",
-                "reference": "69aacd44dbbaa3199d5afb68605c996d577896fc",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7b604c89da162034bdf4bb66310f358d313dd16d",
+                "reference": "7b604c89da162034bdf4bb66310f358d313dd16d",
                 "shasum": ""
             },
             "require": {
@@ -4022,7 +3883,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2018-03-20T04:31:17+00:00"
+            "time": "2018-04-02T09:24:19+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
