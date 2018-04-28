@@ -226,7 +226,7 @@ return [
     "set_min_after_hyphenation" => 2,
 
     // allows/disallows hyphenation of title/heading text
-    "set_hyphenate_headings" => true,
+    "set_hyphenate_headings" => false,
 
     // allows hyphenation of strings of all capital characters
     "set_hyphenate_all_caps" => true,
