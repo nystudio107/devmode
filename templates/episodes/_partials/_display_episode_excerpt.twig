@@ -7,7 +7,7 @@
                 <div class=" w-full md:w-2/3 text-left py-2">
                     <h2 class="font-mono italic text-devmode-pink text-3xl">
                         <a href="{{ episode.url }}" class="title-link" @mouseover="prerenderLink">
-                        {{ episode.title |typogrify }}
+                        {{ episode.title |typogrify(true) }}
                         </a>
                     </h2>
                 </div>
