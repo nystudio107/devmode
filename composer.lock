@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "5c06c10cd2b5a942c77310cdea57ca28",
@@ -355,16 +355,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.3",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "baeca872d525008c3e1a73cad27b32196888a760"
+                "reference": "d8420fe5c5a61887063fb49a3663c8649161b1b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/baeca872d525008c3e1a73cad27b32196888a760",
-                "reference": "baeca872d525008c3e1a73cad27b32196888a760",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/d8420fe5c5a61887063fb49a3663c8649161b1b7",
+                "reference": "d8420fe5c5a61887063fb49a3663c8649161b1b7",
                 "shasum": ""
             },
             "require": {
@@ -433,7 +433,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-04-17T19:02:57+00:00"
+            "time": "2018-04-24T18:12:44+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -986,16 +986,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.3.2",
+            "version": "6.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90"
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/68d0ea14d5a3f42a20e87632a5f84931e2709c90",
-                "reference": "68d0ea14d5a3f42a20e87632a5f84931e2709c90",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/407b0cb880ace85c9b63c5f9551db498cb2d50ba",
+                "reference": "407b0cb880ace85c9b63c5f9551db498cb2d50ba",
                 "shasum": ""
             },
             "require": {
@@ -1005,7 +1005,7 @@
             },
             "require-dev": {
                 "ext-curl": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.4 || ^7.0",
                 "psr/log": "^1.0"
             },
             "suggest": {
@@ -1047,7 +1047,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2018-03-26T16:33:04+00:00"
+            "time": "2018-04-22T15:46:56+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -2197,16 +2197,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.30",
+            "version": "1.4.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "37555313a35057459fd2c55de66ea706e06e75b0"
+                "reference": "b6e1556d1fb61f93869474a3af86e7e346590c45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/37555313a35057459fd2c55de66ea706e06e75b0",
-                "reference": "37555313a35057459fd2c55de66ea706e06e75b0",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/b6e1556d1fb61f93869474a3af86e7e346590c45",
+                "reference": "b6e1556d1fb61f93869474a3af86e7e346590c45",
                 "shasum": ""
             },
             "require": {
@@ -2257,7 +2257,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-04-09T16:06:39+00:00"
+            "time": "2018-04-22T22:17:53+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2474,16 +2474,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.0",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "6fb1a5abaabca14814077528909b8e64cfaaea16"
+                "reference": "61ebf2d81c01e9311dadfce495c8849b3608f163"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/6fb1a5abaabca14814077528909b8e64cfaaea16",
-                "reference": "6fb1a5abaabca14814077528909b8e64cfaaea16",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/61ebf2d81c01e9311dadfce495c8849b3608f163",
+                "reference": "61ebf2d81c01e9311dadfce495c8849b3608f163",
                 "shasum": ""
             },
             "require": {
@@ -2538,7 +2538,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-04-17T18:07:31+00:00"
+            "time": "2018-04-27T21:16:19+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2655,16 +2655,16 @@
         },
         {
             "name": "nystudio107/craft-typogrify",
-            "version": "1.1.9",
+            "version": "1.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-typogrify.git",
-                "reference": "26ade78f72a67dcff0d65493545bbbd85999926b"
+                "reference": "ac69b6b2db40958ce2679f2154be12438b746117"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/26ade78f72a67dcff0d65493545bbbd85999926b",
-                "reference": "26ade78f72a67dcff0d65493545bbbd85999926b",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/ac69b6b2db40958ce2679f2154be12438b746117",
+                "reference": "ac69b6b2db40958ce2679f2154be12438b746117",
                 "shasum": ""
             },
             "require": {
@@ -2708,7 +2708,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2018-03-20T23:05:07+00:00"
+            "time": "2018-04-25T19:29:06+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
@@ -2850,16 +2850,16 @@
         },
         {
             "name": "php-science/textrank",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DavidBelicza/PHP-Science-TextRank.git",
-                "reference": "927344fe91206ecf9615d801031a1915cf53605c"
+                "reference": "88c83817acd61289ec18c6fc3d0013bb156a5c30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DavidBelicza/PHP-Science-TextRank/zipball/927344fe91206ecf9615d801031a1915cf53605c",
-                "reference": "927344fe91206ecf9615d801031a1915cf53605c",
+                "url": "https://api.github.com/repos/DavidBelicza/PHP-Science-TextRank/zipball/88c83817acd61289ec18c6fc3d0013bb156a5c30",
+                "reference": "88c83817acd61289ec18c6fc3d0013bb156a5c30",
                 "shasum": ""
             },
             "require": {
@@ -2897,7 +2897,7 @@
                 "summarization",
                 "textrank"
             ],
-            "time": "2017-12-18T20:08:03+00:00"
+            "time": "2018-04-18T17:50:44+00:00"
         },
         {
             "name": "pimple/pimple",
@@ -4332,16 +4332,16 @@
         },
         {
             "name": "yiisoft/yii2-swiftmailer",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-swiftmailer.git",
-                "reference": "563570c9aa19ca47c1b22e3032983229378e9274"
+                "reference": "fd917fbe63b7ea796c52902143b83b98e65bfb73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/563570c9aa19ca47c1b22e3032983229378e9274",
-                "reference": "563570c9aa19ca47c1b22e3032983229378e9274",
+                "url": "https://api.github.com/repos/yiisoft/yii2-swiftmailer/zipball/fd917fbe63b7ea796c52902143b83b98e65bfb73",
+                "reference": "fd917fbe63b7ea796c52902143b83b98e65bfb73",
                 "shasum": ""
             },
             "require": {
@@ -4351,12 +4351,12 @@
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "yii\\swiftmailer\\": ""
+                    "yii\\swiftmailer\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4378,34 +4378,34 @@
                 "swiftmailer",
                 "yii2"
             ],
-            "time": "2017-08-04T10:48:17+00:00"
+            "time": "2018-04-24T23:17:42+00:00"
         },
         {
             "name": "zendframework/zend-escaper",
-            "version": "2.5.2",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-escaper.git",
-                "reference": "2dcd14b61a72d8b8e27d579c6344e12c26141d4e"
+                "reference": "31d8aafae982f9568287cb4dce987e6aff8fd074"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-escaper/zipball/2dcd14b61a72d8b8e27d579c6344e12c26141d4e",
-                "reference": "2dcd14b61a72d8b8e27d579c6344e12c26141d4e",
+                "url": "https://api.github.com/repos/zendframework/zend-escaper/zipball/31d8aafae982f9568287cb4dce987e6aff8fd074",
+                "reference": "31d8aafae982f9568287cb4dce987e6aff8fd074",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5"
+                "php": "^5.6 || ^7.0"
             },
             "require-dev": {
-                "fabpot/php-cs-fixer": "1.7.*",
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "^5.7.27 || ^6.5.8 || ^7.1.2",
+                "zendframework/zend-coding-standard": "~1.0.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev",
-                    "dev-develop": "2.6-dev"
+                    "dev-master": "2.6.x-dev",
+                    "dev-develop": "2.7.x-dev"
                 }
             },
             "autoload": {
@@ -4417,12 +4417,13 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "homepage": "https://github.com/zendframework/zend-escaper",
+            "description": "Securely and safely escape HTML, HTML attributes, JavaScript, CSS, and URLs",
             "keywords": [
+                "ZendFramework",
                 "escaper",
-                "zf2"
+                "zf"
             ],
-            "time": "2016-06-30T19:48:38+00:00"
+            "time": "2018-04-25T15:48:53+00:00"
         },
         {
             "name": "zendframework/zend-feed",
