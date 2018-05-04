@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "5c06c10cd2b5a942c77310cdea57ca28",
@@ -2474,16 +2474,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.10",
+            "version": "3.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "9734dde85ff627e7e9567a52ff94d763ffade72a"
+                "reference": "bb4eac5837b12cb5815b439592ca7ab20e75461a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/9734dde85ff627e7e9567a52ff94d763ffade72a",
-                "reference": "9734dde85ff627e7e9567a52ff94d763ffade72a",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/bb4eac5837b12cb5815b439592ca7ab20e75461a",
+                "reference": "bb4eac5837b12cb5815b439592ca7ab20e75461a",
                 "shasum": ""
             },
             "require": {
@@ -2538,7 +2538,7 @@
                 "craftcms",
                 "seomatic"
             ],
-            "time": "2018-05-02T21:59:55+00:00"
+            "time": "2018-05-04T02:24:55+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
