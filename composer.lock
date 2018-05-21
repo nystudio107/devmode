@@ -2474,16 +2474,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.13",
+            "version": "3.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "dd4db3e1a66a8941637fa73a1412b9faba3897c8"
+                "reference": "276b37eb18bc1bf1702bf1b0f57795215e2e0273"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/dd4db3e1a66a8941637fa73a1412b9faba3897c8",
-                "reference": "dd4db3e1a66a8941637fa73a1412b9faba3897c8",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/276b37eb18bc1bf1702bf1b0f57795215e2e0273",
+                "reference": "276b37eb18bc1bf1702bf1b0f57795215e2e0273",
                 "shasum": ""
             },
             "require": {
@@ -2545,7 +2545,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2018-05-16T04:12:07+00:00"
+            "time": "2018-05-21T03:11:50+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
