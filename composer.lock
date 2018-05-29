@@ -355,16 +355,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.8",
+            "version": "3.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "d443e51ce496620abd56a711f7484da7ce366422"
+                "reference": "c9798817ac3cb39e53df1d69ec2c2c495f562a02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d443e51ce496620abd56a711f7484da7ce366422",
-                "reference": "d443e51ce496620abd56a711f7484da7ce366422",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/c9798817ac3cb39e53df1d69ec2c2c495f562a02",
+                "reference": "c9798817ac3cb39e53df1d69ec2c2c495f562a02",
                 "shasum": ""
             },
             "require": {
@@ -406,7 +406,7 @@
                 "bower-asset/yii2-pjax": "~2.0.1"
             },
             "require-dev": {
-                "codeception/codeception": "~2.3.3",
+                "codeception/codeception": "^2.4",
                 "codeception/mockery-module": "~0.2.2",
                 "codeception/specify": "~0.4.6",
                 "codeception/verify": "~0.3.3"
@@ -433,7 +433,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-05-15T23:56:55+00:00"
+            "time": "2018-05-22T19:15:42+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -864,16 +864,16 @@
         },
         {
             "name": "elvanto/litemoji",
-            "version": "1.3.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elvanto/litemoji.git",
-                "reference": "fc1d2b8b3d174ee9425ac506430377dc3b50cdfb"
+                "reference": "7c0276dd0e5004bc78b7865e12030f3d2b6b8d0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elvanto/litemoji/zipball/fc1d2b8b3d174ee9425ac506430377dc3b50cdfb",
-                "reference": "fc1d2b8b3d174ee9425ac506430377dc3b50cdfb",
+                "url": "https://api.github.com/repos/elvanto/litemoji/zipball/7c0276dd0e5004bc78b7865e12030f3d2b6b8d0e",
+                "reference": "7c0276dd0e5004bc78b7865e12030f3d2b6b8d0e",
                 "shasum": ""
             },
             "require": {
@@ -898,7 +898,7 @@
                 "emoji",
                 "php-emoji"
             ],
-            "time": "2017-10-09T01:54:36+00:00"
+            "time": "2018-05-25T04:37:05+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
@@ -1253,23 +1253,23 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.62",
+            "version": "v1.2.63",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "f9767578e00f87a081835b49adc7c71074a5b46c"
+                "reference": "3566bc69d0839ab2dfd739a660b00f25a6f02031"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/f9767578e00f87a081835b49adc7c71074a5b46c",
-                "reference": "f9767578e00f87a081835b49adc7c71074a5b46c",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/3566bc69d0839ab2dfd739a660b00f25a6f02031",
+                "reference": "3566bc69d0839ab2dfd739a660b00f25a6f02031",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.8.*",
+                "phpunit/phpunit": "^4.8|^5.5|^6.5",
                 "satooshi/php-coveralls": "1.*"
             },
             "type": "library",
@@ -1298,7 +1298,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-03-27T18:25:43+00:00"
+            "time": "2018-05-21T19:56:44+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2197,16 +2197,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.32",
+            "version": "1.4.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "68c45bd4de004dc943a2b0312a2445f005a8bb2a"
+                "reference": "16bd3098f4eaefb4bb3e750cbda23ff1a6ba9178"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/68c45bd4de004dc943a2b0312a2445f005a8bb2a",
-                "reference": "68c45bd4de004dc943a2b0312a2445f005a8bb2a",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/16bd3098f4eaefb4bb3e750cbda23ff1a6ba9178",
+                "reference": "16bd3098f4eaefb4bb3e750cbda23ff1a6ba9178",
                 "shasum": ""
             },
             "require": {
@@ -2257,7 +2257,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-05-09T22:51:27+00:00"
+            "time": "2018-05-24T22:56:06+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2434,16 +2434,16 @@
         },
         {
             "name": "nystudio107/craft-scripts",
-            "version": "1.2.6",
+            "version": "1.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-scripts.git",
-                "reference": "ab6a008e6c4065170aad472308992a6aa977c5c1"
+                "reference": "c67d320a98fdc26d2693a0796d562c370cc96a9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-scripts/zipball/ab6a008e6c4065170aad472308992a6aa977c5c1",
-                "reference": "ab6a008e6c4065170aad472308992a6aa977c5c1",
+                "url": "https://api.github.com/repos/nystudio107/craft-scripts/zipball/c67d320a98fdc26d2693a0796d562c370cc96a9e",
+                "reference": "c67d320a98fdc26d2693a0796d562c370cc96a9e",
                 "shasum": ""
             },
             "type": "library",
@@ -2470,7 +2470,7 @@
                 "set-permissions",
                 "shell"
             ],
-            "time": "2018-01-17T21:02:54+00:00"
+            "time": "2018-05-22T14:30:05+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
