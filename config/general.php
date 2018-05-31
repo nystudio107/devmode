@@ -56,7 +56,7 @@ return [
         // Craft defined config settings
         'allowUpdates' => false,
         'backupOnUpdate' => false,
-        'devMode' => true,
+        'devMode' => false,
         'enableTemplateCaching' => true,
         'isSystemOn' => true,
         // Custom site-specific config settings
