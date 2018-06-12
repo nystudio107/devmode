@@ -355,16 +355,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.9",
+            "version": "3.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "c9798817ac3cb39e53df1d69ec2c2c495f562a02"
+                "reference": "8cb1ec0f12691683bcba7d94003065c7d7a2693c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c9798817ac3cb39e53df1d69ec2c2c495f562a02",
-                "reference": "c9798817ac3cb39e53df1d69ec2c2c495f562a02",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/8cb1ec0f12691683bcba7d94003065c7d7a2693c",
+                "reference": "8cb1ec0f12691683bcba7d94003065c7d7a2693c",
                 "shasum": ""
             },
             "require": {
@@ -433,7 +433,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-05-22T19:15:42+00:00"
+            "time": "2018-06-12T16:58:59+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2474,16 +2474,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.20",
+            "version": "3.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "ef6867bde31d01f5e7a3f6fe27327f99c980c5ac"
+                "reference": "adc6eef9653c583b01176166ec8d42cb0d9953a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/ef6867bde31d01f5e7a3f6fe27327f99c980c5ac",
-                "reference": "ef6867bde31d01f5e7a3f6fe27327f99c980c5ac",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/adc6eef9653c583b01176166ec8d42cb0d9953a0",
+                "reference": "adc6eef9653c583b01176166ec8d42cb0d9953a0",
                 "shasum": ""
             },
             "require": {
@@ -2545,7 +2545,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2018-05-31T16:45:02+00:00"
+            "time": "2018-06-12T23:30:53+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2809,16 +2809,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.12",
+            "version": "v2.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "258c89a6b97de7dfaf5b8c7607d0478e236b04fb"
+                "reference": "10bcb46e8f3d365170f6de9d05245aa066b81f09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/258c89a6b97de7dfaf5b8c7607d0478e236b04fb",
-                "reference": "258c89a6b97de7dfaf5b8c7607d0478e236b04fb",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/10bcb46e8f3d365170f6de9d05245aa066b81f09",
+                "reference": "10bcb46e8f3d365170f6de9d05245aa066b81f09",
                 "shasum": ""
             },
             "require": {
@@ -2850,10 +2850,11 @@
             "description": "PHP 5.x polyfill for random_bytes() and random_int() from PHP 7",
             "keywords": [
                 "csprng",
+                "polyfill",
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-04-04T21:24:14+00:00"
+            "time": "2018-06-08T15:26:40+00:00"
         },
         {
             "name": "php-science/textrank",
