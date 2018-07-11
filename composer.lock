@@ -355,16 +355,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.14",
+            "version": "3.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "56a91951c79bce33f784a8b1674a87037a5fb950"
+                "reference": "9f31ce73985cc88f5f8a684bb32da7a56a1cfc77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/56a91951c79bce33f784a8b1674a87037a5fb950",
-                "reference": "56a91951c79bce33f784a8b1674a87037a5fb950",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/9f31ce73985cc88f5f8a684bb32da7a56a1cfc77",
+                "reference": "9f31ce73985cc88f5f8a684bb32da7a56a1cfc77",
                 "shasum": ""
             },
             "require": {
@@ -433,7 +433,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-07-03T23:13:18+00:00"
+            "time": "2018-07-09T14:37:11+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2477,16 +2477,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.0.25",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "38cbb3f414b56ba0f8331b74950778f595383fa1"
+                "reference": "274e43cb403d45e7b4cd836f6abaeb2947030877"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/38cbb3f414b56ba0f8331b74950778f595383fa1",
-                "reference": "38cbb3f414b56ba0f8331b74950778f595383fa1",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/274e43cb403d45e7b4cd836f6abaeb2947030877",
+                "reference": "274e43cb403d45e7b4cd836f6abaeb2947030877",
                 "shasum": ""
             },
             "require": {
@@ -2548,7 +2548,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2018-07-03T19:15:04+00:00"
+            "time": "2018-07-11T20:53:48+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
