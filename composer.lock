@@ -2323,16 +2323,16 @@
         },
         {
             "name": "nystudio107/craft-minify",
-            "version": "1.2.8",
+            "version": "1.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-minify.git",
-                "reference": "754012efc4c75aaff81282447573a2b28f01a246"
+                "reference": "3bb2a6f160658bcfeeab9fa390cf28fba38fbd26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-minify/zipball/754012efc4c75aaff81282447573a2b28f01a246",
-                "reference": "754012efc4c75aaff81282447573a2b28f01a246",
+                "url": "https://api.github.com/repos/nystudio107/craft-minify/zipball/3bb2a6f160658bcfeeab9fa390cf28fba38fbd26",
+                "reference": "3bb2a6f160658bcfeeab9fa390cf28fba38fbd26",
                 "shasum": ""
             },
             "require": {
@@ -2375,7 +2375,7 @@
                 "craftcms",
                 "minify"
             ],
-            "time": "2018-03-02T15:33:06+00:00"
+            "time": "2018-07-21T15:09:55+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
@@ -2553,16 +2553,16 @@
         },
         {
             "name": "nystudio107/craft-similar",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-similar.git",
-                "reference": "fb15598acf67aa2fbfe0195ccf1cb29b7bd4d33b"
+                "reference": "1a72e50340c520b62a42acdada508c4fded69cd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-similar/zipball/fb15598acf67aa2fbfe0195ccf1cb29b7bd4d33b",
-                "reference": "fb15598acf67aa2fbfe0195ccf1cb29b7bd4d33b",
+                "url": "https://api.github.com/repos/nystudio107/craft-similar/zipball/1a72e50340c520b62a42acdada508c4fded69cd4",
+                "reference": "1a72e50340c520b62a42acdada508c4fded69cd4",
                 "shasum": ""
             },
             "require": {
@@ -2575,7 +2575,7 @@
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": false,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-similar/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-similar/v1/CHANGELOG.md",
                 "components": {
                     "similar": "nystudio107\\similar\\services\\Similar"
                 },
@@ -2606,7 +2606,7 @@
                 "relations",
                 "similar"
             ],
-            "time": "2018-01-16T19:42:45+00:00"
+            "time": "2018-07-22T03:31:09+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
