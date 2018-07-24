@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "5c06c10cd2b5a942c77310cdea57ca28",
@@ -355,16 +355,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.16.1",
+            "version": "3.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "aef7f8472169bf412448dcf9a3238f23e661146e"
+                "reference": "c187abe1d9898bd24d90aff523e8fde6a9413e10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/aef7f8472169bf412448dcf9a3238f23e661146e",
-                "reference": "aef7f8472169bf412448dcf9a3238f23e661146e",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/c187abe1d9898bd24d90aff523e8fde6a9413e10",
+                "reference": "c187abe1d9898bd24d90aff523e8fde6a9413e10",
                 "shasum": ""
             },
             "require": {
@@ -434,7 +434,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-07-18T22:38:28+00:00"
+            "time": "2018-07-24T17:30:08+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -865,23 +865,23 @@
         },
         {
             "name": "elvanto/litemoji",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elvanto/litemoji.git",
-                "reference": "7c0276dd0e5004bc78b7865e12030f3d2b6b8d0e"
+                "reference": "b30d679cad29531ec16ca1afadebc78c4495fa10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elvanto/litemoji/zipball/7c0276dd0e5004bc78b7865e12030f3d2b6b8d0e",
-                "reference": "7c0276dd0e5004bc78b7865e12030f3d2b6b8d0e",
+                "url": "https://api.github.com/repos/elvanto/litemoji/zipball/b30d679cad29531ec16ca1afadebc78c4495fa10",
+                "reference": "b30d679cad29531ec16ca1afadebc78c4495fa10",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4"
             },
             "require-dev": {
-                "milesj/emojibase": "*",
+                "milesj/emojibase": "2.0.0",
                 "phpunit/phpunit": "^5.0"
             },
             "type": "library",
@@ -899,7 +899,7 @@
                 "emoji",
                 "php-emoji"
             ],
-            "time": "2018-05-25T04:37:05+00:00"
+            "time": "2018-07-24T06:21:15+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
@@ -2478,16 +2478,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.4",
+            "version": "3.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "8689e12017ee8dc488780bc918d4b17ecb77c569"
+                "reference": "eba38d1a281f23478c06a9b1994e2e3efb4fc8a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8689e12017ee8dc488780bc918d4b17ecb77c569",
-                "reference": "8689e12017ee8dc488780bc918d4b17ecb77c569",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/eba38d1a281f23478c06a9b1994e2e3efb4fc8a2",
+                "reference": "eba38d1a281f23478c06a9b1994e2e3efb4fc8a2",
                 "shasum": ""
             },
             "require": {
@@ -2549,7 +2549,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2018-07-23T22:21:42+00:00"
+            "time": "2018-07-24T19:50:41+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
