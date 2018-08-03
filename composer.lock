@@ -355,16 +355,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.17",
+            "version": "3.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "c187abe1d9898bd24d90aff523e8fde6a9413e10"
+                "reference": "d547e55fb9022bfa08e92cf6b194589c7fa101a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/c187abe1d9898bd24d90aff523e8fde6a9413e10",
-                "reference": "c187abe1d9898bd24d90aff523e8fde6a9413e10",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/d547e55fb9022bfa08e92cf6b194589c7fa101a4",
+                "reference": "d547e55fb9022bfa08e92cf6b194589c7fa101a4",
                 "shasum": ""
             },
             "require": {
@@ -375,7 +375,7 @@
                 "creocoder/yii2-nested-sets": "~0.9.0",
                 "danielstjules/stringy": "^3.1.0",
                 "elvanto/litemoji": "^1.3.1",
-                "enshrined/svg-sanitize": "~0.8.2",
+                "enshrined/svg-sanitize": "~0.9.0",
                 "ext-curl": "*",
                 "ext-dom": "*",
                 "ext-json": "*",
@@ -434,7 +434,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-07-24T17:30:08+00:00"
+            "time": "2018-07-31T18:57:08+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -530,16 +530,16 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "85a1052f9501357edf6cb1aea12f526f27ac7683"
+                "reference": "5d6a2c6033db666fd775c301b6c92b9a86487ace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/85a1052f9501357edf6cb1aea12f526f27ac7683",
-                "reference": "85a1052f9501357edf6cb1aea12f526f27ac7683",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/5d6a2c6033db666fd775c301b6c92b9a86487ace",
+                "reference": "5d6a2c6033db666fd775c301b6c92b9a86487ace",
                 "shasum": ""
             },
             "type": "library",
@@ -560,7 +560,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2018-07-18T23:31:44+00:00"
+            "time": "2018-07-25T19:16:43+00:00"
         },
         {
             "name": "craftcms/vue-asset",
@@ -865,16 +865,16 @@
         },
         {
             "name": "elvanto/litemoji",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/elvanto/litemoji.git",
-                "reference": "b30d679cad29531ec16ca1afadebc78c4495fa10"
+                "reference": "af94de6becfbc2f4d9c52e1142183146fd087f36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/elvanto/litemoji/zipball/b30d679cad29531ec16ca1afadebc78c4495fa10",
-                "reference": "b30d679cad29531ec16ca1afadebc78c4495fa10",
+                "url": "https://api.github.com/repos/elvanto/litemoji/zipball/af94de6becfbc2f4d9c52e1142183146fd087f36",
+                "reference": "af94de6becfbc2f4d9c52e1142183146fd087f36",
                 "shasum": ""
             },
             "require": {
@@ -899,20 +899,20 @@
                 "emoji",
                 "php-emoji"
             ],
-            "time": "2018-07-24T06:21:15+00:00"
+            "time": "2018-08-02T03:48:08+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.8.2",
+            "version": "0.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "432fc4fc7e95b8a866790ba27e35076b9dd96ebe"
+                "reference": "509455b32ddfcb6db993ed3564f0670166c6c4c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/432fc4fc7e95b8a866790ba27e35076b9dd96ebe",
-                "reference": "432fc4fc7e95b8a866790ba27e35076b9dd96ebe",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/509455b32ddfcb6db993ed3564f0670166c6c4c7",
+                "reference": "509455b32ddfcb6db993ed3564f0670166c6c4c7",
                 "shasum": ""
             },
             "require-dev": {
@@ -936,7 +936,7 @@
                 }
             ],
             "description": "An SVG sanitizer for PHP",
-            "time": "2017-12-06T15:31:26+00:00"
+            "time": "2018-07-19T17:21:27+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1254,16 +1254,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.64",
+            "version": "v1.2.66",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "f62200a42fdc5ea53c873f38c123a8e6b54ca0de"
+                "reference": "55ad4b140d821c19dbaf1a6ea9d9e5ca6444ecc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/f62200a42fdc5ea53c873f38c123a8e6b54ca0de",
-                "reference": "f62200a42fdc5ea53c873f38c123a8e6b54ca0de",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/55ad4b140d821c19dbaf1a6ea9d9e5ca6444ecc1",
+                "reference": "55ad4b140d821c19dbaf1a6ea9d9e5ca6444ecc1",
                 "shasum": ""
             },
             "require": {
@@ -1299,7 +1299,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-06-22T20:32:56+00:00"
+            "time": "2018-07-30T20:23:10+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2088,20 +2088,20 @@
         },
         {
             "name": "nystudio107/craft-eagerbeaver",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-eagerbeaver.git",
-                "reference": "6178b4fc1feb5e5d4bc12ea1f0cf2a312dabb436"
+                "reference": "e3b2d3e1847bfca022812a2a2aba2481636a85ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-eagerbeaver/zipball/6178b4fc1feb5e5d4bc12ea1f0cf2a312dabb436",
-                "reference": "6178b4fc1feb5e5d4bc12ea1f0cf2a312dabb436",
+                "url": "https://api.github.com/repos/nystudio107/craft-eagerbeaver/zipball/e3b2d3e1847bfca022812a2a2aba2481636a85ea",
+                "reference": "e3b2d3e1847bfca022812a2a2aba2481636a85ea",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC1"
+                "craftcms/cms": "^3.0.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2139,10 +2139,10 @@
                 "craftcms",
                 "eager",
                 "eager beaver",
-                "eager loeading",
+                "eager loading",
                 "loading"
             ],
-            "time": "2018-03-02T15:46:15+00:00"
+            "time": "2018-07-30T05:25:22+00:00"
         },
         {
             "name": "nystudio107/craft-fastcgicachebust",
@@ -2478,16 +2478,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.5",
+            "version": "3.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "eba38d1a281f23478c06a9b1994e2e3efb4fc8a2"
+                "reference": "2dab50b4c3d5223ce4aa0ae42f83e4a305b77818"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/eba38d1a281f23478c06a9b1994e2e3efb4fc8a2",
-                "reference": "eba38d1a281f23478c06a9b1994e2e3efb4fc8a2",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/2dab50b4c3d5223ce4aa0ae42f83e4a305b77818",
+                "reference": "2dab50b4c3d5223ce4aa0ae42f83e4a305b77818",
                 "shasum": ""
             },
             "require": {
@@ -2549,7 +2549,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2018-07-24T19:50:41+00:00"
+            "time": "2018-08-03T16:10:47+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -4008,16 +4008,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.5.0",
+            "version": "v2.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "6ae3e2e6494bb5e58c2decadafc3de7f1453f70a"
+                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/6ae3e2e6494bb5e58c2decadafc3de7f1453f70a",
-                "reference": "6ae3e2e6494bb5e58c2decadafc3de7f1453f70a",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
                 "shasum": ""
             },
             "require": {
@@ -4054,7 +4054,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-07-01T10:25:50+00:00"
+            "time": "2018-07-29T20:33:41+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -4549,16 +4549,16 @@
         },
         {
             "name": "zendframework/zend-feed",
-            "version": "2.10.2",
+            "version": "2.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-feed.git",
-                "reference": "5253f949f4ad999086ab9b408908b6c6776f24db"
+                "reference": "6641f4cf3f4586c63f83fd70b6d19966025c8888"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-feed/zipball/5253f949f4ad999086ab9b408908b6c6776f24db",
-                "reference": "5253f949f4ad999086ab9b408908b6c6776f24db",
+                "url": "https://api.github.com/repos/zendframework/zend-feed/zipball/6641f4cf3f4586c63f83fd70b6d19966025c8888",
+                "reference": "6641f4cf3f4586c63f83fd70b6d19966025c8888",
                 "shasum": ""
             },
             "require": {
@@ -4606,7 +4606,7 @@
                 "feed",
                 "zf"
             ],
-            "time": "2018-06-18T20:14:01+00:00"
+            "time": "2018-08-01T13:53:20+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
