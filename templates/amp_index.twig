@@ -12,6 +12,7 @@
 {% endif %}
 
 {% do seomatic.helper.loadMetadataForUri(entry.uri) %}
+{% do seomatic.script.get('googleAnalytics').include(false) %}
 
 {% block content %}
     <section>
