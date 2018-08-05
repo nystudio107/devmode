@@ -14,9 +14,9 @@
 {% endblock %}
 
 {% do seomatic.helper.loadMetadataForUri(entry.uri) %}
-{% do seomatic.script.get('googleAnalytics').include(false) %}
 
 {% block content %}
+    {% do seomatic.script.get('googleAnalytics').include(false) %}
     <section>
         <div>
             <div class="flex flex-wrap">
