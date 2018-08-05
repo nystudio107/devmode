@@ -12,7 +12,7 @@
 {% endif %}
 
 {% do seomatic.helper.loadMetadataForUri(entry.uri) %}
-{% do seomatic.script.get('googleAnalytics').include(false) %}
+{% do seomatic.script.container().include(false) %}
 
 {% block content %}
     
