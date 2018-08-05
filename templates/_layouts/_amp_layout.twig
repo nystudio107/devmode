@@ -5,6 +5,7 @@
 {% set backgroundUrl = "#{baseUrl}img/site/devmode-fm-light-bg-opaque.svg" %}
 {% set footerBackgroundUrl = "#{baseUrl}img/site/devmode-fm-dark-bg.svg" %}
 {% header "Link: <#{baseUrl}>; rel=dns-prefetch;,<#{baseUrl}>; rel=preconnect; crossorigin;" %}
+{% do seomatic.script.get('googleAnalytics').include(false) %}
 <!DOCTYPE html>
 <html ⚡ lang="{{ craft.app.language |slice(0,2) }}" class="fonts-loaded">
     <head>
