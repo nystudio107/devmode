@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "5c06c10cd2b5a942c77310cdea57ca28",
@@ -2478,16 +2478,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.8",
+            "version": "3.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "2dab50b4c3d5223ce4aa0ae42f83e4a305b77818"
+                "reference": "f0c4d5a1a92b9589c507f227eb9abac732eaf04e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/2dab50b4c3d5223ce4aa0ae42f83e4a305b77818",
-                "reference": "2dab50b4c3d5223ce4aa0ae42f83e4a305b77818",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/f0c4d5a1a92b9589c507f227eb9abac732eaf04e",
+                "reference": "f0c4d5a1a92b9589c507f227eb9abac732eaf04e",
                 "shasum": ""
             },
             "require": {
@@ -2549,24 +2549,24 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2018-08-03T16:10:47+00:00"
+            "time": "2018-08-05T00:42:46+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-similar.git",
-                "reference": "1a72e50340c520b62a42acdada508c4fded69cd4"
+                "reference": "92dfb33f8a0f64b04ca24a200d5928c1daaaf46f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-similar/zipball/1a72e50340c520b62a42acdada508c4fded69cd4",
-                "reference": "1a72e50340c520b62a42acdada508c4fded69cd4",
+                "url": "https://api.github.com/repos/nystudio107/craft-similar/zipball/92dfb33f8a0f64b04ca24a200d5928c1daaaf46f",
+                "reference": "92dfb33f8a0f64b04ca24a200d5928c1daaaf46f",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC1"
+                "craftcms/cms": "^3.0.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2606,7 +2606,7 @@
                 "relations",
                 "similar"
             ],
-            "time": "2018-07-22T03:31:09+00:00"
+            "time": "2018-08-05T00:34:05+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
