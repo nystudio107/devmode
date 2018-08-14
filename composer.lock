@@ -68,16 +68,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "d2c0a83b7533d6912e8d516756ebd34f893e9169"
+                "reference": "46afded9720f40b9dc63542af4e3e43a1177acb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/d2c0a83b7533d6912e8d516756ebd34f893e9169",
-                "reference": "d2c0a83b7533d6912e8d516756ebd34f893e9169",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/46afded9720f40b9dc63542af4e3e43a1177acb0",
+                "reference": "46afded9720f40b9dc63542af4e3e43a1177acb0",
                 "shasum": ""
             },
             "require": {
@@ -120,7 +120,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2018-03-29T19:57:20+00:00"
+            "time": "2018-08-08T08:57:40+00:00"
         },
         {
             "name": "composer/composer",
@@ -355,16 +355,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.19",
+            "version": "3.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "24ce69a3150fcbed51cd71e13db754fe169423c2"
+                "reference": "def373ae3e0f1b8b469efd8399d71f87301c6a0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/24ce69a3150fcbed51cd71e13db754fe169423c2",
-                "reference": "24ce69a3150fcbed51cd71e13db754fe169423c2",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/def373ae3e0f1b8b469efd8399d71f87301c6a0e",
+                "reference": "def373ae3e0f1b8b469efd8399d71f87301c6a0e",
                 "shasum": ""
             },
             "require": {
@@ -434,7 +434,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-08-07T18:08:50+00:00"
+            "time": "2018-08-14T17:37:50+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -530,16 +530,16 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "5d6a2c6033db666fd775c301b6c92b9a86487ace"
+                "reference": "e3955dcfe0ee3c9886b415c2c912e232594cefaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/5d6a2c6033db666fd775c301b6c92b9a86487ace",
-                "reference": "5d6a2c6033db666fd775c301b6c92b9a86487ace",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/e3955dcfe0ee3c9886b415c2c912e232594cefaf",
+                "reference": "e3955dcfe0ee3c9886b415c2c912e232594cefaf",
                 "shasum": ""
             },
             "type": "library",
@@ -560,7 +560,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2018-07-25T19:16:43+00:00"
+            "time": "2018-08-14T18:02:05+00:00"
         },
         {
             "name": "craftcms/vue-asset",
@@ -2201,16 +2201,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.36",
+            "version": "1.4.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "c41c3d1ffe9d63354080485008089ae2d4f8148d"
+                "reference": "1fc7efa04bf8c844b4f11834bbcf7fae4e661e37"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/c41c3d1ffe9d63354080485008089ae2d4f8148d",
-                "reference": "c41c3d1ffe9d63354080485008089ae2d4f8148d",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/1fc7efa04bf8c844b4f11834bbcf7fae4e661e37",
+                "reference": "1fc7efa04bf8c844b4f11834bbcf7fae4e661e37",
                 "shasum": ""
             },
             "require": {
@@ -2261,7 +2261,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-08-06T20:32:09+00:00"
+            "time": "2018-08-09T19:52:45+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2478,20 +2478,20 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.13.1",
+            "version": "3.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "9a0af099e84271b94424c17f87f17b3987b3018a"
+                "reference": "d3c60e33db740d76f0b62ee3a6061c502da71bfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/9a0af099e84271b94424c17f87f17b3987b3018a",
-                "reference": "9a0af099e84271b94424c17f87f17b3987b3018a",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d3c60e33db740d76f0b62ee3a6061c502da71bfb",
+                "reference": "d3c60e33db740d76f0b62ee3a6061c502da71bfb",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.2",
+                "craftcms/cms": "^3.0.20",
                 "craftcms/vue-asset": "^1.0",
                 "davechild/textstatistics": "^1.0.1",
                 "php-science/textrank": "^1.0.3",
@@ -2549,7 +2549,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2018-08-07T18:54:26+00:00"
+            "time": "2018-08-14T22:35:33+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
