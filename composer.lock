@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "5c06c10cd2b5a942c77310cdea57ca28",
@@ -355,16 +355,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.20",
+            "version": "3.0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "def373ae3e0f1b8b469efd8399d71f87301c6a0e"
+                "reference": "51e34f3d68c93e8b9bc3350cd9e19d2e21b5b517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/def373ae3e0f1b8b469efd8399d71f87301c6a0e",
-                "reference": "def373ae3e0f1b8b469efd8399d71f87301c6a0e",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/51e34f3d68c93e8b9bc3350cd9e19d2e21b5b517",
+                "reference": "51e34f3d68c93e8b9bc3350cd9e19d2e21b5b517",
                 "shasum": ""
             },
             "require": {
@@ -434,7 +434,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-08-14T17:37:50+00:00"
+            "time": "2018-08-21T17:33:23+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -530,16 +530,16 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "e3955dcfe0ee3c9886b415c2c912e232594cefaf"
+                "reference": "309d2952842c7f96b36dea00c0944a606624feaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/e3955dcfe0ee3c9886b415c2c912e232594cefaf",
-                "reference": "e3955dcfe0ee3c9886b415c2c912e232594cefaf",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/309d2952842c7f96b36dea00c0944a606624feaf",
+                "reference": "309d2952842c7f96b36dea00c0944a606624feaf",
                 "shasum": ""
             },
             "type": "library",
@@ -560,7 +560,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2018-08-14T18:02:05+00:00"
+            "time": "2018-08-17T23:47:59+00:00"
         },
         {
             "name": "craftcms/vue-asset",
@@ -703,16 +703,16 @@
         },
         {
             "name": "davechild/textstatistics",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DaveChild/Text-Statistics.git",
-                "reference": "6196462b4fe730a8ff0019036baf362295c161b3"
+                "reference": "dd16252a5c78fad6f8ea4fcd7e55d14fd07b1382"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DaveChild/Text-Statistics/zipball/6196462b4fe730a8ff0019036baf362295c161b3",
-                "reference": "6196462b4fe730a8ff0019036baf362295c161b3",
+                "url": "https://api.github.com/repos/DaveChild/Text-Statistics/zipball/dd16252a5c78fad6f8ea4fcd7e55d14fd07b1382",
+                "reference": "dd16252a5c78fad6f8ea4fcd7e55d14fd07b1382",
                 "shasum": ""
             },
             "require": {
@@ -750,7 +750,7 @@
             ],
             "description": "PHP package to measure the readability of text according to various algorithms.",
             "homepage": "https://github.com/DaveChild/Text-Statistics",
-            "time": "2015-04-22T14:55:55+00:00"
+            "time": "2018-06-19T09:25:42+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -808,16 +808,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "8790f594151ca6a2010c6218e09d96df67173ad3"
+                "reference": "54859fabea8b3beecbb1a282888d5c990036b9e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/8790f594151ca6a2010c6218e09d96df67173ad3",
-                "reference": "8790f594151ca6a2010c6218e09d96df67173ad3",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/54859fabea8b3beecbb1a282888d5c990036b9e3",
+                "reference": "54859fabea8b3beecbb1a282888d5c990036b9e3",
                 "shasum": ""
             },
             "require": {
@@ -861,7 +861,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-04-10T10:11:19+00:00"
+            "time": "2018-08-16T20:49:45+00:00"
         },
         {
             "name": "elvanto/litemoji",
@@ -1168,16 +1168,16 @@
         },
         {
             "name": "imgix/imgix-php",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/imgix/imgix-php.git",
-                "reference": "48135b04ec02f504904d69a3af1435414f60750c"
+                "reference": "2acbceb98931253b4c672e7f2001cbebd2854b91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/48135b04ec02f504904d69a3af1435414f60750c",
-                "reference": "48135b04ec02f504904d69a3af1435414f60750c",
+                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/2acbceb98931253b4c672e7f2001cbebd2854b91",
+                "reference": "2acbceb98931253b4c672e7f2001cbebd2854b91",
                 "shasum": ""
             },
             "require": {
@@ -1193,11 +1193,14 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
             "description": "A PHP client library for generating URLs with imgix.",
             "keywords": [
                 "imgix"
             ],
-            "time": "2018-03-13T17:09:56+00:00"
+            "time": "2018-08-16T23:08:36+00:00"
         },
         {
             "name": "intervention/httpauth",
@@ -2201,16 +2204,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.37",
+            "version": "1.4.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "1fc7efa04bf8c844b4f11834bbcf7fae4e661e37"
+                "reference": "b1dea42fb1d0e5c4472a9ece0566ca633fe2a8c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/1fc7efa04bf8c844b4f11834bbcf7fae4e661e37",
-                "reference": "1fc7efa04bf8c844b4f11834bbcf7fae4e661e37",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/b1dea42fb1d0e5c4472a9ece0566ca633fe2a8c9",
+                "reference": "b1dea42fb1d0e5c4472a9ece0566ca633fe2a8c9",
                 "shasum": ""
             },
             "require": {
@@ -2261,7 +2264,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-08-09T19:52:45+00:00"
+            "time": "2018-08-20T16:44:11+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2438,16 +2441,16 @@
         },
         {
             "name": "nystudio107/craft-scripts",
-            "version": "1.2.7",
+            "version": "1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-scripts.git",
-                "reference": "c67d320a98fdc26d2693a0796d562c370cc96a9e"
+                "reference": "a2b4ab5000dbb5dc5d37a8a3f07e9d1e30d53545"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-scripts/zipball/c67d320a98fdc26d2693a0796d562c370cc96a9e",
-                "reference": "c67d320a98fdc26d2693a0796d562c370cc96a9e",
+                "url": "https://api.github.com/repos/nystudio107/craft-scripts/zipball/a2b4ab5000dbb5dc5d37a8a3f07e9d1e30d53545",
+                "reference": "a2b4ab5000dbb5dc5d37a8a3f07e9d1e30d53545",
                 "shasum": ""
             },
             "type": "library",
@@ -2474,7 +2477,7 @@
                 "set-permissions",
                 "shell"
             ],
-            "time": "2018-05-22T14:30:05+00:00"
+            "time": "2018-08-20T17:49:22+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
@@ -2862,19 +2865,21 @@
         },
         {
             "name": "php-science/textrank",
-            "version": "1.0.4",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/DavidBelicza/PHP-Science-TextRank.git",
-                "reference": "88c83817acd61289ec18c6fc3d0013bb156a5c30"
+                "reference": "756da9c34ff113ac7aca1be69f2b920b4371ef8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DavidBelicza/PHP-Science-TextRank/zipball/88c83817acd61289ec18c6fc3d0013bb156a5c30",
-                "reference": "88c83817acd61289ec18c6fc3d0013bb156a5c30",
+                "url": "https://api.github.com/repos/DavidBelicza/PHP-Science-TextRank/zipball/756da9c34ff113ac7aca1be69f2b920b4371ef8e",
+                "reference": "756da9c34ff113ac7aca1be69f2b920b4371ef8e",
                 "shasum": ""
             },
             "require": {
+                "ext-ctype": "*",
+                "ext-mbstring": "*",
                 "php": "7.*"
             },
             "require-dev": {
@@ -2909,7 +2914,7 @@
                 "summarization",
                 "textrank"
             ],
-            "time": "2018-04-18T17:50:44+00:00"
+            "time": "2018-08-21T11:27:07+00:00"
         },
         {
             "name": "pimple/pimple",
