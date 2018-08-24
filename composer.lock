@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "5c06c10cd2b5a942c77310cdea57ca28",
@@ -1425,16 +1425,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.45",
+            "version": "1.0.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "a99f94e63b512d75f851b181afcdf0ee9ebef7e6"
+                "reference": "f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/a99f94e63b512d75f851b181afcdf0ee9ebef7e6",
-                "reference": "a99f94e63b512d75f851b181afcdf0ee9ebef7e6",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2",
+                "reference": "f3e0d925c18b92cf3ce84ea5cc58d62a1762a2b2",
                 "shasum": ""
             },
             "require": {
@@ -1446,7 +1446,7 @@
             "require-dev": {
                 "ext-fileinfo": "*",
                 "phpspec/phpspec": "^3.4",
-                "phpunit/phpunit": "^5.7"
+                "phpunit/phpunit": "^5.7.10"
             },
             "suggest": {
                 "ext-fileinfo": "Required for MimeType",
@@ -1505,7 +1505,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2018-05-07T08:44:23+00:00"
+            "time": "2018-08-22T07:45:22+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -2268,20 +2268,20 @@
         },
         {
             "name": "nystudio107/craft-instantanalytics",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-instantanalytics.git",
-                "reference": "95405ebdd3f7926cc217c3192e7b7f4a92fcb68e"
+                "reference": "9db74ce00190c10a6b857e661a5c227fad7c5db8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/95405ebdd3f7926cc217c3192e7b7f4a92fcb68e",
-                "reference": "95405ebdd3f7926cc217c3192e7b7f4a92fcb68e",
+                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/9db74ce00190c10a6b857e661a5c227fad7c5db8",
+                "reference": "9db74ce00190c10a6b857e661a5c227fad7c5db8",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC1",
+                "craftcms/cms": "^3.0.0",
                 "jaybizzle/crawler-detect": "^1.2.37",
                 "theiconic/php-ga-measurement-protocol": "^2.5.1"
             },
@@ -2306,7 +2306,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "proprietary"
             ],
             "authors": [
                 {
@@ -2317,12 +2317,16 @@
             "description": "Instant Analytics brings full Google Analytics support to your Twig templates and automatic Craft Commerce integration with Google Enhanced Ecommerce",
             "keywords": [
                 "Craft",
+                "analytics",
                 "cms",
                 "craft-plugin",
                 "craftcms",
-                "instant analytics"
+                "google",
+                "instant analytics",
+                "measurement",
+                "protocol"
             ],
-            "time": "2018-03-22T17:37:38+00:00"
+            "time": "2018-08-24T21:04:35+00:00"
         },
         {
             "name": "nystudio107/craft-minify",
@@ -2481,16 +2485,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.14",
+            "version": "3.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "d3c60e33db740d76f0b62ee3a6061c502da71bfb"
+                "reference": "e050c28dc5d51213028c7a962f20c2868eb0a612"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d3c60e33db740d76f0b62ee3a6061c502da71bfb",
-                "reference": "d3c60e33db740d76f0b62ee3a6061c502da71bfb",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/e050c28dc5d51213028c7a962f20c2868eb0a612",
+                "reference": "e050c28dc5d51213028c7a962f20c2868eb0a612",
                 "shasum": ""
             },
             "require": {
@@ -2552,7 +2556,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2018-08-14T22:35:33+00:00"
+            "time": "2018-08-23T16:42:25+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2613,20 +2617,20 @@
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "1.1.3",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "fabe4a7aa8b4d1c98df0f52efff96a29d08490bf"
+                "reference": "9d6af61426373cbb8e46f4231161c14826b11a01"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/fabe4a7aa8b4d1c98df0f52efff96a29d08490bf",
-                "reference": "fabe4a7aa8b4d1c98df0f52efff96a29d08490bf",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/9d6af61426373cbb8e46f4231161c14826b11a01",
+                "reference": "9d6af61426373cbb8e46f4231161c14826b11a01",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC9",
+                "craftcms/cms": "^3.0.0",
                 "mikehaertl/php-shellcommand": "~1.2"
             },
             "type": "craft-plugin",
@@ -2660,12 +2664,18 @@
             "description": "Transcode video & audio files to various formats, and provide video thumbnails",
             "keywords": [
                 "Craft",
+                "audio",
                 "cms",
+                "convert",
                 "craft-plugin",
                 "craftcms",
-                "transcoder"
+                "format",
+                "gif",
+                "transcode",
+                "transcoder",
+                "video"
             ],
-            "time": "2018-03-02T15:54:13+00:00"
+            "time": "2018-08-24T04:41:30+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
