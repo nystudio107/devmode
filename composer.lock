@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5873d2364c6cba4594362bbc0b2caac5",
+    "content-hash": "0e7521932a0ad0731590fbcf4eb77ba1",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2268,16 +2268,16 @@
         },
         {
             "name": "nystudio107/craft-instantanalytics",
-            "version": "dev-develop",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-instantanalytics.git",
-                "reference": "70a25abf31635d179b933ee5aebd5ba09ead8043"
+                "reference": "4b28a73f259d180f6070e4b12758a3ccd3df51aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/70a25abf31635d179b933ee5aebd5ba09ead8043",
-                "reference": "70a25abf31635d179b933ee5aebd5ba09ead8043",
+                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/4b28a73f259d180f6070e4b12758a3ccd3df51aa",
+                "reference": "4b28a73f259d180f6070e4b12758a3ccd3df51aa",
                 "shasum": ""
             },
             "require": {
@@ -2326,7 +2326,7 @@
                 "measurement",
                 "protocol"
             ],
-            "time": "2018-08-25T18:10:13+00:00"
+            "time": "2018-08-25T21:37:45+00:00"
         },
         {
             "name": "nystudio107/craft-minify",
@@ -4678,7 +4678,6 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "craftcms/cms": 5,
-        "nystudio107/craft-instantanalytics": 20,
         "nystudio107/craft-seomatic": 10
     },
     "prefer-stable": true,
