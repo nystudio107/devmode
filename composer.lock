@@ -2268,16 +2268,16 @@
         },
         {
             "name": "nystudio107/craft-instantanalytics",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-instantanalytics.git",
-                "reference": "785a53de584cdf00444528dcdf747e4a5bc17f10"
+                "reference": "c15027165e341611bf320f52499b06461df1c295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/785a53de584cdf00444528dcdf747e4a5bc17f10",
-                "reference": "785a53de584cdf00444528dcdf747e4a5bc17f10",
+                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/c15027165e341611bf320f52499b06461df1c295",
+                "reference": "c15027165e341611bf320f52499b06461df1c295",
                 "shasum": ""
             },
             "require": {
@@ -2326,7 +2326,7 @@
                 "measurement",
                 "protocol"
             ],
-            "time": "2018-08-25T00:30:02+00:00"
+            "time": "2018-08-25T18:10:13+00:00"
         },
         {
             "name": "nystudio107/craft-minify",
