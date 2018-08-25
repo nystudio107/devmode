@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "5c06c10cd2b5a942c77310cdea57ca28",
@@ -2268,16 +2268,16 @@
         },
         {
             "name": "nystudio107/craft-instantanalytics",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-instantanalytics.git",
-                "reference": "9db74ce00190c10a6b857e661a5c227fad7c5db8"
+                "reference": "785a53de584cdf00444528dcdf747e4a5bc17f10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/9db74ce00190c10a6b857e661a5c227fad7c5db8",
-                "reference": "9db74ce00190c10a6b857e661a5c227fad7c5db8",
+                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/785a53de584cdf00444528dcdf747e4a5bc17f10",
+                "reference": "785a53de584cdf00444528dcdf747e4a5bc17f10",
                 "shasum": ""
             },
             "require": {
@@ -2326,7 +2326,7 @@
                 "measurement",
                 "protocol"
             ],
-            "time": "2018-08-24T21:04:35+00:00"
+            "time": "2018-08-25T00:30:02+00:00"
         },
         {
             "name": "nystudio107/craft-minify",
