@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5c06c10cd2b5a942c77310cdea57ca28",
+    "content-hash": "5873d2364c6cba4594362bbc0b2caac5",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2268,16 +2268,16 @@
         },
         {
             "name": "nystudio107/craft-instantanalytics",
-            "version": "1.0.9",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-instantanalytics.git",
-                "reference": "c15027165e341611bf320f52499b06461df1c295"
+                "reference": "70a25abf31635d179b933ee5aebd5ba09ead8043"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/c15027165e341611bf320f52499b06461df1c295",
-                "reference": "c15027165e341611bf320f52499b06461df1c295",
+                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/70a25abf31635d179b933ee5aebd5ba09ead8043",
+                "reference": "70a25abf31635d179b933ee5aebd5ba09ead8043",
                 "shasum": ""
             },
             "require": {
@@ -4678,6 +4678,7 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "craftcms/cms": 5,
+        "nystudio107/craft-instantanalytics": 20,
         "nystudio107/craft-seomatic": 10
     },
     "prefer-stable": true,
