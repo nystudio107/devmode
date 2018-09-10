@@ -17,6 +17,7 @@
     "source": "https://github.com/nystudio107/craft",
     "docs": "https://github.com/nystudio107/craft"
   },
+  "minimum-stability": "beta",
   "prefer-stable": true,
   "require": {
     "craftcms/cms": "^3.0.0-RC7",
@@ -31,6 +32,7 @@
     "nystudio107/craft-typogrify": "^1.1.4",
     "nystudio107/craft-transcoder": "^1.0.9",
     "nystudio107/craft-disqus": "^1.0",
+    "nystudio107/craft-retour": "^3.0.0-beta.1",
     "nystudio107/craft-routemap": "^1.0",
     "nystudio107/craft-similar": "^1.0.0",
     "nystudio107/craft-instantanalytics": "^1.0.10",
