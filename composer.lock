@@ -2443,16 +2443,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.0.0-beta.1",
+            "version": "3.0.0-beta.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "5e93991490ec676a0f78bf52e0d1b4f0cf51d7ea"
+                "reference": "3f56430a0798fd2ea93786cfca29925bdb5c98ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/5e93991490ec676a0f78bf52e0d1b4f0cf51d7ea",
-                "reference": "5e93991490ec676a0f78bf52e0d1b4f0cf51d7ea",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/3f56430a0798fd2ea93786cfca29925bdb5c98ee",
+                "reference": "3f56430a0798fd2ea93786cfca29925bdb5c98ee",
                 "shasum": ""
             },
             "require": {
@@ -2489,14 +2489,14 @@
             ],
             "description": "Retour allows you to intelligently redirect legacy URLs, so that you don't lose SEO value when rebuilding & restructuring a website",
             "keywords": [
-                "Craft",
-                "cms",
+                "404",
                 "craft-plugin",
                 "craftcms",
                 "redirect",
-                "retour"
+                "retour",
+                "statistics"
             ],
-            "time": "2018-09-10T03:22:17+00:00"
+            "time": "2018-09-10T15:56:22+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
