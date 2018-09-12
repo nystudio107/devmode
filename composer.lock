@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "ac9c71dd88879619f2fea1cfb928d778",
@@ -355,16 +355,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.23.1",
+            "version": "3.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "cc01e227395a251258552760ccbd9ee68218d4c0"
+                "reference": "c107ad908a987faba50f72831df4bdc9df775f2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/cc01e227395a251258552760ccbd9ee68218d4c0",
-                "reference": "cc01e227395a251258552760ccbd9ee68218d4c0",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/c107ad908a987faba50f72831df4bdc9df775f2e",
+                "reference": "c107ad908a987faba50f72831df4bdc9df775f2e",
                 "shasum": ""
             },
             "require": {
@@ -434,7 +434,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-09-05T04:36:33+00:00"
+            "time": "2018-09-11T17:17:27+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2443,16 +2443,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.0.0-beta.2",
+            "version": "3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "3f56430a0798fd2ea93786cfca29925bdb5c98ee"
+                "reference": "ab6d52e01b78fe3242702247d7b9990a9a83abd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/3f56430a0798fd2ea93786cfca29925bdb5c98ee",
-                "reference": "3f56430a0798fd2ea93786cfca29925bdb5c98ee",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/ab6d52e01b78fe3242702247d7b9990a9a83abd4",
+                "reference": "ab6d52e01b78fe3242702247d7b9990a9a83abd4",
                 "shasum": ""
             },
             "require": {
@@ -2496,7 +2496,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2018-09-10T15:56:22+00:00"
+            "time": "2018-09-12T21:22:38+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
@@ -2599,16 +2599,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.19",
+            "version": "3.1.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "869aaec457ddf705b2d8bd2033e6445ddf37cdc8"
+                "reference": "ed20075a5dac4410e734c96dbde3a1c153e846c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/869aaec457ddf705b2d8bd2033e6445ddf37cdc8",
-                "reference": "869aaec457ddf705b2d8bd2033e6445ddf37cdc8",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/ed20075a5dac4410e734c96dbde3a1c153e846c8",
+                "reference": "ed20075a5dac4410e734c96dbde3a1c153e846c8",
                 "shasum": ""
             },
             "require": {
@@ -2670,7 +2670,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2018-09-05T03:07:29+00:00"
+            "time": "2018-09-12T17:23:59+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -3485,16 +3485,16 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.1.2",
+            "version": "v6.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "7d760881d266d63c5e7a1155cbcf2ac656a31ca8"
+                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/7d760881d266d63c5e7a1155cbcf2ac656a31ca8",
-                "reference": "7d760881d266d63c5e7a1155cbcf2ac656a31ca8",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/8ddcb66ac10c392d3beb54829eef8ac1438595f4",
+                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4",
                 "shasum": ""
             },
             "require": {
@@ -3540,7 +3540,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2018-07-13T07:04:35+00:00"
+            "time": "2018-09-11T07:12:52+00:00"
         },
         {
             "name": "symfony/console",
