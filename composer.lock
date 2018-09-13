@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "ac9c71dd88879619f2fea1cfb928d778",
@@ -2443,16 +2443,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.0.1",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "ab6d52e01b78fe3242702247d7b9990a9a83abd4"
+                "reference": "dccb0aaa8746bbfb5d5ac869e2e9ac2065e3ee2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/ab6d52e01b78fe3242702247d7b9990a9a83abd4",
-                "reference": "ab6d52e01b78fe3242702247d7b9990a9a83abd4",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/dccb0aaa8746bbfb5d5ac869e2e9ac2065e3ee2f",
+                "reference": "dccb0aaa8746bbfb5d5ac869e2e9ac2065e3ee2f",
                 "shasum": ""
             },
             "require": {
@@ -2496,7 +2496,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2018-09-12T21:22:38+00:00"
+            "time": "2018-09-13T21:11:16+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
