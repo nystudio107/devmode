@@ -2447,12 +2447,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "a9c0ce8e1756c86d6511609ae6bba74ea448b2bf"
+                "reference": "3bea4538ef59fae06dc905c0220cd6be0a5de45f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/a9c0ce8e1756c86d6511609ae6bba74ea448b2bf",
-                "reference": "a9c0ce8e1756c86d6511609ae6bba74ea448b2bf",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/3bea4538ef59fae06dc905c0220cd6be0a5de45f",
+                "reference": "3bea4538ef59fae06dc905c0220cd6be0a5de45f",
                 "shasum": ""
             },
             "require": {
@@ -2496,7 +2496,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2018-10-14T21:29:54+00:00"
+            "time": "2018-10-14T22:24:29+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
