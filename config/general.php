@@ -33,7 +33,7 @@ return [
         ),
         'enableCsrfProtection' => true,
         'generateTransformsBeforePageLoad' => true,
-        'maxUploadFileSize' => 104857600,
+        'maxUploadFileSize' => 209715200,
         'omitScriptNameInUrls' => true,
         'securityKey' => getenv('CRAFTENV_SECURITY_KEY'),
         'siteUrl' => getenv('CRAFTENV_SITE_URL'),
