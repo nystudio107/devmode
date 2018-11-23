@@ -398,16 +398,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.31",
+            "version": "3.0.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "8491fa871a7f58bd1023f3882acf4865b5601143"
+                "reference": "0bc53c9d10478acb32ba4d3af0c3d4e949dee920"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/8491fa871a7f58bd1023f3882acf4865b5601143",
-                "reference": "8491fa871a7f58bd1023f3882acf4865b5601143",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/0bc53c9d10478acb32ba4d3af0c3d4e949dee920",
+                "reference": "0bc53c9d10478acb32ba4d3af0c3d4e949dee920",
                 "shasum": ""
             },
             "require": {
@@ -477,7 +477,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-11-13T17:44:42+00:00"
+            "time": "2018-11-20T18:44:56+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1300,16 +1300,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.73",
+            "version": "v1.2.74",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "3783b88b686dfd8f0c752f829caaf1bcace581ef"
+                "reference": "e5fbc685383a4b8f49183b3a646b193491cc14c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/3783b88b686dfd8f0c752f829caaf1bcace581ef",
-                "reference": "3783b88b686dfd8f0c752f829caaf1bcace581ef",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/e5fbc685383a4b8f49183b3a646b193491cc14c5",
+                "reference": "e5fbc685383a4b8f49183b3a646b193491cc14c5",
                 "shasum": ""
             },
             "require": {
@@ -1345,7 +1345,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-10-31T13:15:59+00:00"
+            "time": "2018-11-21T20:56:45+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1609,21 +1609,21 @@
         },
         {
             "name": "league/oauth2-client",
-            "version": "2.3.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/oauth2-client.git",
-                "reference": "aa2e3df188f0bfd87f7880cc880e906e99923580"
+                "reference": "cc114abc622a53af969e8664722e84ca36257530"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/oauth2-client/zipball/aa2e3df188f0bfd87f7880cc880e906e99923580",
-                "reference": "aa2e3df188f0bfd87f7880cc880e906e99923580",
+                "url": "https://api.github.com/repos/thephpleague/oauth2-client/zipball/cc114abc622a53af969e8664722e84ca36257530",
+                "reference": "cc114abc622a53af969e8664722e84ca36257530",
                 "shasum": ""
             },
             "require": {
                 "guzzlehttp/guzzle": "^6.0",
-                "paragonie/random_compat": "^1|^2",
+                "paragonie/random_compat": "^1|^2|^9.99",
                 "php": "^5.6|^7.0"
             },
             "require-dev": {
@@ -1672,23 +1672,25 @@
                 "oauth2",
                 "single sign on"
             ],
-            "time": "2018-01-13T05:27:58+00:00"
+            "time": "2018-11-22T18:33:57+00:00"
         },
         {
             "name": "masterminds/html5",
-            "version": "2.3.1",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "33f8d475d28741398be26cdff7a10a63003324a3"
+                "reference": "cadcfaaa13153e0e8eb92c49a53e140cf1a85dea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/33f8d475d28741398be26cdff7a10a63003324a3",
-                "reference": "33f8d475d28741398be26cdff7a10a63003324a3",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/cadcfaaa13153e0e8eb92c49a53e140cf1a85dea",
+                "reference": "cadcfaaa13153e0e8eb92c49a53e140cf1a85dea",
                 "shasum": ""
             },
             "require": {
+                "ext-ctype": "*",
+                "ext-dom": "*",
                 "ext-libxml": "*",
                 "php": ">=5.3.0"
             },
@@ -1737,7 +1739,7 @@
                 "serializer",
                 "xml"
             ],
-            "time": "2018-10-22T16:58:34+00:00"
+            "time": "2018-11-17T20:24:36+00:00"
         },
         {
             "name": "michelf/php-smartypants",
@@ -2304,16 +2306,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.43",
+            "version": "1.4.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "5eb62184eab2b364301a090ba7893165427bbac4"
+                "reference": "c358bf9fb80f99214d2441749d0c11bbeb4c4c98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/5eb62184eab2b364301a090ba7893165427bbac4",
-                "reference": "5eb62184eab2b364301a090ba7893165427bbac4",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/c358bf9fb80f99214d2441749d0c11bbeb4c4c98",
+                "reference": "c358bf9fb80f99214d2441749d0c11bbeb4c4c98",
                 "shasum": ""
             },
             "require": {
@@ -2365,20 +2367,20 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-11-06T04:36:59+00:00"
+            "time": "2018-11-19T05:05:24+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
-            "version": "1.0.11",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-instantanalytics.git",
-                "reference": "025709b15ba47a8b2a952db55f38e72c372593b2"
+                "reference": "08e5df90d48975073887c52980c0f9507a525fb2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/025709b15ba47a8b2a952db55f38e72c372593b2",
-                "reference": "025709b15ba47a8b2a952db55f38e72c372593b2",
+                "url": "https://api.github.com/repos/nystudio107/craft-instantanalytics/zipball/08e5df90d48975073887c52980c0f9507a525fb2",
+                "reference": "08e5df90d48975073887c52980c0f9507a525fb2",
                 "shasum": ""
             },
             "require": {
@@ -2427,7 +2429,7 @@
                 "measurement",
                 "protocol"
             ],
-            "time": "2018-10-05T16:04:27+00:00"
+            "time": "2018-11-19T20:07:30+00:00"
         },
         {
             "name": "nystudio107/craft-minify",
@@ -2487,16 +2489,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.0.17",
+            "version": "3.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "40c84cfbdaeb10866c3655f805bb96f5d8d1ef41"
+                "reference": "9411b88c592fb3b4dc6a5c76abecb4cec6781e4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/40c84cfbdaeb10866c3655f805bb96f5d8d1ef41",
-                "reference": "40c84cfbdaeb10866c3655f805bb96f5d8d1ef41",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/9411b88c592fb3b4dc6a5c76abecb4cec6781e4f",
+                "reference": "9411b88c592fb3b4dc6a5c76abecb4cec6781e4f",
                 "shasum": ""
             },
             "require": {
@@ -2540,7 +2542,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2018-11-06T04:25:53+00:00"
+            "time": "2018-11-23T17:18:40+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
@@ -2643,16 +2645,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.30",
+            "version": "3.1.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "901f4425605ecddeb725128a6d96939ed483b028"
+                "reference": "66bb72dab898263210960de09c844701a68eceef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/901f4425605ecddeb725128a6d96939ed483b028",
-                "reference": "901f4425605ecddeb725128a6d96939ed483b028",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/66bb72dab898263210960de09c844701a68eceef",
+                "reference": "66bb72dab898263210960de09c844701a68eceef",
                 "shasum": ""
             },
             "require": {
@@ -2713,7 +2715,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2018-11-13T23:08:27+00:00"
+            "time": "2018-11-22T18:49:04+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2983,33 +2985,29 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.17",
+            "version": "v9.99.99",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d"
+                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/29af24f25bab834fcbb38ad2a69fa93b867e070d",
-                "reference": "29af24f25bab834fcbb38ad2a69fa93b867e070d",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
+                "reference": "84b4dfb120c6f9b4ff7b3685f9b8f1aa365a0c95",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.2.0"
+                "php": "^7"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*|5.*"
+                "phpunit/phpunit": "4.*|5.*",
+                "vimeo/psalm": "^1"
             },
             "suggest": {
                 "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
-            "autoload": {
-                "files": [
-                    "lib/random.php"
-                ]
-            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
@@ -3028,7 +3026,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2018-07-04T16:31:37+00:00"
+            "time": "2018-07-02T15:55:56+00:00"
         },
         {
             "name": "php-science/textrank",
@@ -3292,16 +3290,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
                 "shasum": ""
             },
             "require": {
@@ -3335,7 +3333,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2018-11-20T15:27:04+00:00"
         },
         {
             "name": "seld/cli-prompt",
