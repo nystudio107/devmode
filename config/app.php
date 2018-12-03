@@ -44,19 +44,12 @@ return [
                     'database' => 3,
                 ],
             ],
-            'session' => function () {
-                $stateKeyPrefix = md5('Craft.' . craft\web\Session::class . '.' . Craft::$app->id);
-                /** @var yii\redis\Session $session */
-                $session = Craft::createObject([
-                    'class'        => yii\redis\Session::class,
-                    'flashParam'   => $stateKeyPrefix . '__flash',
-                    'name'         => Craft::$app->getConfig()->getGeneral()->phpSessionName,
-                    'cookieParams' => Craft::cookieConfig(),
-                ]);
-                $session->attachBehaviors([craft\behaviors\SessionBehavior::class]);
-
-                return $session;
-            },
+            'session' => [
+                'class' => \yii\redis\Session::class,
+                'as session' => [
+                    'class' => \craft\behaviors\SessionBehavior::class,
+                ],
+            ],
         ],
     ],
 
@@ -79,19 +72,12 @@ return [
                     'database' => 4,
                 ],
             ],
-            'session' => function () {
-                $stateKeyPrefix = md5('Craft.' . craft\web\Session::class . '.' . Craft::$app->id);
-                /** @var yii\redis\Session $session */
-                $session = Craft::createObject([
-                    'class'        => yii\redis\Session::class,
-                    'flashParam'   => $stateKeyPrefix . '__flash',
-                    'name'         => Craft::$app->getConfig()->getGeneral()->phpSessionName,
-                    'cookieParams' => Craft::cookieConfig(),
-                ]);
-                $session->attachBehaviors([craft\behaviors\SessionBehavior::class]);
-
-                return $session;
-            },
+            'session' => [
+                'class' => \yii\redis\Session::class,
+                'as session' => [
+                    'class' => \craft\behaviors\SessionBehavior::class,
+                ],
+            ],
         ],
     ],
 
