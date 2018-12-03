@@ -59,10 +59,12 @@
       "@php nys-setup welcome"
     ],
     "post-update-cmd": [
-      "@php nys-setup update"
+      "@php nys-setup update",
+      "./craft migrate/all"
     ],
     "post-install-cmd": [
-      "@php nys-setup update"
+      "@php nys-setup update",
+      "./craft migrate/all"
     ]
   }
 }
