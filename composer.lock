@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "ac9c71dd88879619f2fea1cfb928d778",
@@ -398,16 +398,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.34",
+            "version": "3.0.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "6607823af6ccdb336daf24b1c8da587a7b5c8cb1"
+                "reference": "620afa6ed9d036ee1910480e8d01789d623a6ff7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/6607823af6ccdb336daf24b1c8da587a7b5c8cb1",
-                "reference": "6607823af6ccdb336daf24b1c8da587a7b5c8cb1",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/620afa6ed9d036ee1910480e8d01789d623a6ff7",
+                "reference": "620afa6ed9d036ee1910480e8d01789d623a6ff7",
                 "shasum": ""
             },
             "require": {
@@ -480,7 +480,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-12-04T23:45:37+00:00"
+            "time": "2018-12-11T18:12:34+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
