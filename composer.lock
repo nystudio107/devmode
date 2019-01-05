@@ -398,16 +398,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.35",
+            "version": "3.0.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "620afa6ed9d036ee1910480e8d01789d623a6ff7"
+                "reference": "76b9d7b854a725771028d3bee928b56e6039325c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/620afa6ed9d036ee1910480e8d01789d623a6ff7",
-                "reference": "620afa6ed9d036ee1910480e8d01789d623a6ff7",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/76b9d7b854a725771028d3bee928b56e6039325c",
+                "reference": "76b9d7b854a725771028d3bee928b56e6039325c",
                 "shasum": ""
             },
             "require": {
@@ -480,7 +480,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-12-11T18:12:34+00:00"
+            "time": "2018-12-18T20:33:23+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1262,16 +1262,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.75",
+            "version": "v1.2.76",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "50e06c81bea8a9c443708be496868ccb55bdd396"
+                "reference": "728dd7f210819ccafbf008a6ef7956f4f3c3571c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/50e06c81bea8a9c443708be496868ccb55bdd396",
-                "reference": "50e06c81bea8a9c443708be496868ccb55bdd396",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/728dd7f210819ccafbf008a6ef7956f4f3c3571c",
+                "reference": "728dd7f210819ccafbf008a6ef7956f4f3c3571c",
                 "shasum": ""
             },
             "require": {
@@ -1307,7 +1307,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-12-10T19:38:45+00:00"
+            "time": "2018-12-18T08:52:44+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -1638,16 +1638,16 @@
         },
         {
             "name": "masterminds/html5",
-            "version": "2.4.0",
+            "version": "2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "cadcfaaa13153e0e8eb92c49a53e140cf1a85dea"
+                "reference": "b5d892a4bd058d61f736935d32a9c248f11ccc93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/cadcfaaa13153e0e8eb92c49a53e140cf1a85dea",
-                "reference": "cadcfaaa13153e0e8eb92c49a53e140cf1a85dea",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/b5d892a4bd058d61f736935d32a9c248f11ccc93",
+                "reference": "b5d892a4bd058d61f736935d32a9c248f11ccc93",
                 "shasum": ""
             },
             "require": {
@@ -1657,14 +1657,14 @@
                 "php": ">=5.3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "4.*",
+                "phpunit/phpunit": "^4.8.35",
                 "sami/sami": "~2.0",
                 "satooshi/php-coveralls": "1.0.*"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.2-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -1701,7 +1701,7 @@
                 "serializer",
                 "xml"
             ],
-            "time": "2018-11-17T20:24:36+00:00"
+            "time": "2018-12-27T22:03:43+00:00"
         },
         {
             "name": "michelf/php-smartypants",
@@ -2100,16 +2100,16 @@
         },
         {
             "name": "nystudio107/craft-disqus",
-            "version": "1.0.7",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-disqus.git",
-                "reference": "d4ce2982bbffdadc1b5ba4e5f3b2b7520b244720"
+                "reference": "acf49e976053c552081af5c533b85f8cea7f33d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-disqus/zipball/d4ce2982bbffdadc1b5ba4e5f3b2b7520b244720",
-                "reference": "d4ce2982bbffdadc1b5ba4e5f3b2b7520b244720",
+                "url": "https://api.github.com/repos/nystudio107/craft-disqus/zipball/acf49e976053c552081af5c533b85f8cea7f33d4",
+                "reference": "acf49e976053c552081af5c533b85f8cea7f33d4",
                 "shasum": ""
             },
             "require": {
@@ -2122,7 +2122,7 @@
                 "schemaVersion": "1.0.0",
                 "hasCpSettings": true,
                 "hasCpSection": false,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-disqus/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-disqus/v1/CHANGELOG.md",
                 "components": {
                     "disqusService": "nystudio107\\disqus\\services\\DisqusService"
                 },
@@ -2151,7 +2151,7 @@
                 "craftcms",
                 "disqus"
             ],
-            "time": "2018-02-01T22:43:19+00:00"
+            "time": "2019-01-05T02:50:16+00:00"
         },
         {
             "name": "nystudio107/craft-eagerbeaver",
@@ -2268,24 +2268,24 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.4.44",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "c358bf9fb80f99214d2441749d0c11bbeb4c4c98"
+                "reference": "40928d22d96602fb1b39419b17208e273fcc99bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/c358bf9fb80f99214d2441749d0c11bbeb4c4c98",
-                "reference": "c358bf9fb80f99214d2441749d0c11bbeb4c4c98",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/40928d22d96602fb1b39419b17208e273fcc99bd",
+                "reference": "40928d22d96602fb1b39419b17208e273fcc99bd",
                 "shasum": ""
             },
             "require": {
-                "99designs/phumbor": "^1.2",
                 "craftcms/cms": "^3.0.0",
-                "imgix/imgix-php": "^2.1.0",
                 "ksubileau/color-thief-php": "^1.3",
-                "mikehaertl/php-shellcommand": "~1.2"
+                "mikehaertl/php-shellcommand": "~1.2",
+                "nystudio107/craft-imageoptimize-imgix": "^1.0.0",
+                "nystudio107/craft-imageoptimize-thumbor": "^1.0.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2329,7 +2329,94 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-11-19T05:05:24+00:00"
+            "time": "2018-12-28T20:00:40+00:00"
+        },
+        {
+            "name": "nystudio107/craft-imageoptimize-imgix",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-imageoptimize-imgix.git",
+                "reference": "66478c607853a7c6c00c6e41d6d033aebb2bbb58"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/66478c607853a7c6c00c6e41d6d033aebb2bbb58",
+                "reference": "66478c607853a7c6c00c6e41d6d033aebb2bbb58",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "imgix/imgix-php": "^2.1.0"
+            },
+            "type": "image-transform",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\imageoptimizeimgix\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Provides an Imgix image transform type for the ImageOptimize plugin.",
+            "keywords": [
+                "craftcms",
+                "image-optimize",
+                "image-transform",
+                "imgix"
+            ],
+            "time": "2018-12-28T16:13:05+00:00"
+        },
+        {
+            "name": "nystudio107/craft-imageoptimize-thumbor",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-imageoptimize-thumbor.git",
+                "reference": "23f84f7bf7f9c22afb58f2d0e0144323b67fe4e7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-thumbor/zipball/23f84f7bf7f9c22afb58f2d0e0144323b67fe4e7",
+                "reference": "23f84f7bf7f9c22afb58f2d0e0144323b67fe4e7",
+                "shasum": ""
+            },
+            "require": {
+                "99designs/phumbor": "^1.2",
+                "craftcms/cms": "^3.0.0",
+                "nystudio107/craft-imageoptimize": "^1.5.1"
+            },
+            "type": "image-transform",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\imageoptimizethumbor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Provides an Thumbor image transform type for the ImageOptimize plugin.",
+            "keywords": [
+                "craftcms",
+                "image-optimize",
+                "image-transform",
+                "thumbor"
+            ],
+            "time": "2018-12-28T18:12:12+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2451,16 +2538,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.0.18",
+            "version": "3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "9411b88c592fb3b4dc6a5c76abecb4cec6781e4f"
+                "reference": "ad0e0e6deb11905e49a6d72d6b8b9e99ae382142"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/9411b88c592fb3b4dc6a5c76abecb4cec6781e4f",
-                "reference": "9411b88c592fb3b4dc6a5c76abecb4cec6781e4f",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/ad0e0e6deb11905e49a6d72d6b8b9e99ae382142",
+                "reference": "ad0e0e6deb11905e49a6d72d6b8b9e99ae382142",
                 "shasum": ""
             },
             "require": {
@@ -2504,7 +2591,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2018-11-23T17:18:40+00:00"
+            "time": "2019-01-04T00:29:09+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
@@ -2607,16 +2694,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.36",
+            "version": "3.1.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "d71b37a05229f63c78b11fc954a846303a0a19ef"
+                "reference": "4050e0b6bbf00ee7f6ca2b2c1da1b7115b48cd58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d71b37a05229f63c78b11fc954a846303a0a19ef",
-                "reference": "d71b37a05229f63c78b11fc954a846303a0a19ef",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/4050e0b6bbf00ee7f6ca2b2c1da1b7115b48cd58",
+                "reference": "4050e0b6bbf00ee7f6ca2b2c1da1b7115b48cd58",
                 "shasum": ""
             },
             "require": {
@@ -2676,7 +2763,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2018-12-10T22:38:00+00:00"
+            "time": "2019-01-03T23:26:07+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -4182,16 +4269,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.5.1",
+            "version": "v2.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e"
+                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
-                "reference": "8abb4f9aa89ddea9d52112c65bbe8d0125e2fa8e",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/cfd5dc225767ca154853752abc93aeec040fcf36",
+                "reference": "cfd5dc225767ca154853752abc93aeec040fcf36",
                 "shasum": ""
             },
             "require": {
@@ -4228,7 +4315,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2018-07-29T20:33:41+00:00"
+            "time": "2018-10-30T17:29:25+00:00"
         },
         {
             "name": "yiisoft/yii2",
