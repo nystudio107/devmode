@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ac9c71dd88879619f2fea1cfb928d778",
+    "content-hash": "0e8be79dd73cb040402f7703252a82bc",
     "packages": [
         {
             "name": "99designs/phumbor",
@@ -398,16 +398,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.36",
+            "version": "3.0.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "76b9d7b854a725771028d3bee928b56e6039325c"
+                "reference": "b5dc2de8360ed87ba7ca79de3f43b31aebd7ff4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/76b9d7b854a725771028d3bee928b56e6039325c",
-                "reference": "76b9d7b854a725771028d3bee928b56e6039325c",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/b5dc2de8360ed87ba7ca79de3f43b31aebd7ff4d",
+                "reference": "b5dc2de8360ed87ba7ca79de3f43b31aebd7ff4d",
                 "shasum": ""
             },
             "require": {
@@ -480,7 +480,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2018-12-18T20:33:23+00:00"
+            "time": "2019-01-08T18:52:46+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2767,16 +2767,16 @@
         },
         {
             "name": "nystudio107/craft-similar",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-similar.git",
-                "reference": "f463c19fa7029a007812627dc59691a7243baf14"
+                "reference": "1953cfab558372ecd854847e4590d33b5270553d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-similar/zipball/f463c19fa7029a007812627dc59691a7243baf14",
-                "reference": "f463c19fa7029a007812627dc59691a7243baf14",
+                "url": "https://api.github.com/repos/nystudio107/craft-similar/zipball/1953cfab558372ecd854847e4590d33b5270553d",
+                "reference": "1953cfab558372ecd854847e4590d33b5270553d",
                 "shasum": ""
             },
             "require": {
@@ -2820,7 +2820,7 @@
                 "relations",
                 "similar"
             ],
-            "time": "2018-10-08T14:41:02+00:00"
+            "time": "2019-01-05T17:38:32+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -2940,6 +2940,63 @@
                 "typogrify"
             ],
             "time": "2018-11-08T20:45:54+00:00"
+        },
+        {
+            "name": "nystudio107/craft-webperf",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-webperf.git",
+                "reference": "5fad69e058bfe63adcebd012cdbee0ae46f9025d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/5fad69e058bfe63adcebd012cdbee0ae46f9025d",
+                "reference": "5fad69e058bfe63adcebd012cdbee0ae46f9025d",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "jaybizzle/crawler-detect": "^1.2.37",
+                "whichbrowser/parser": "^2.0.37"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Webperf",
+                "handle": "webperf",
+                "hasCpSettings": true,
+                "hasCpSection": true,
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-webperf/master/CHANGELOG.md",
+                "components": {
+                    "dataSamples": "nystudio107\\webperf\\services\\DataSamples",
+                    "beacons": "nystudio107\\webperf\\services\\Beacons"
+                },
+                "class": "nystudio107\\webperf\\Webperf"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\webperf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Monitor the performance of your webpages through real-world user timing data",
+            "keywords": [
+                "Craft",
+                "cms",
+                "craft-plugin",
+                "craftcms",
+                "webperf"
+            ],
+            "time": "2019-01-09T16:49:26+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
@@ -3236,6 +3293,52 @@
                 "image processing"
             ],
             "time": "2017-10-26T13:18:33+00:00"
+        },
+        {
+            "name": "psr/cache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/cache.git",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/cache/zipball/d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "reference": "d11b50ad223250cf17b86e38383413f5a6764bf8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Cache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for caching libraries",
+            "keywords": [
+                "cache",
+                "psr",
+                "psr-6"
+            ],
+            "time": "2016-08-06T20:24:11+00:00"
         },
         {
             "name": "psr/container",
@@ -4318,6 +4421,65 @@
             "time": "2018-10-30T17:29:25+00:00"
         },
         {
+            "name": "whichbrowser/parser",
+            "version": "v2.0.37",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WhichBrowser/Parser-PHP.git",
+                "reference": "9c6ad8eadc23294b1c66d92876c11f13c5d4cf48"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WhichBrowser/Parser-PHP/zipball/9c6ad8eadc23294b1c66d92876c11f13c5d4cf48",
+                "reference": "9c6ad8eadc23294b1c66d92876c11f13c5d4cf48",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/cache": "^1.0"
+            },
+            "require-dev": {
+                "icomefromthenet/reverse-regex": "0.0.6.3",
+                "phpunit/php-code-coverage": "^2.2|^3.0",
+                "phpunit/phpunit": "^4.0|^5.0",
+                "satooshi/php-coveralls": "^1.0",
+                "squizlabs/php_codesniffer": "2.5.*",
+                "symfony/yaml": ">=2.8"
+            },
+            "suggest": {
+                "cache/array-adapter": "Allows testing of the caching functionality"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "WhichBrowser\\": [
+                        "src/",
+                        "tests/src/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Niels Leenheer",
+                    "email": "niels@leenheer.nl",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Useragent sniffing library for PHP",
+            "homepage": "http://whichbrowser.net",
+            "keywords": [
+                "browser",
+                "sniffing",
+                "ua",
+                "useragent"
+            ],
+            "time": "2018-10-02T09:26:41+00:00"
+        },
+        {
             "name": "yiisoft/yii2",
             "version": "2.0.15.1",
             "source": {
@@ -4920,8 +5082,7 @@
     "aliases": [],
     "minimum-stability": "beta",
     "stability-flags": {
-        "nystudio107/craft-retour": 10,
-        "nystudio107/craft-seomatic": 10
+        "nystudio107/craft-webperf": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
