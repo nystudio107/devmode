@@ -2538,16 +2538,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.2",
+            "version": "3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "ad0e0e6deb11905e49a6d72d6b8b9e99ae382142"
+                "reference": "bec2887b1e4490919ed23a0183d33b839ec9c420"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/ad0e0e6deb11905e49a6d72d6b8b9e99ae382142",
-                "reference": "ad0e0e6deb11905e49a6d72d6b8b9e99ae382142",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/bec2887b1e4490919ed23a0183d33b839ec9c420",
+                "reference": "bec2887b1e4490919ed23a0183d33b839ec9c420",
                 "shasum": ""
             },
             "require": {
@@ -2591,7 +2591,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2019-01-04T00:29:09+00:00"
+            "time": "2019-01-10T21:54:46+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
@@ -2947,12 +2947,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "5fad69e058bfe63adcebd012cdbee0ae46f9025d"
+                "reference": "d910cdc84a6a38a235536564bc95bed46aa4489f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/5fad69e058bfe63adcebd012cdbee0ae46f9025d",
-                "reference": "5fad69e058bfe63adcebd012cdbee0ae46f9025d",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/d910cdc84a6a38a235536564bc95bed46aa4489f",
+                "reference": "d910cdc84a6a38a235536564bc95bed46aa4489f",
                 "shasum": ""
             },
             "require": {
@@ -2996,7 +2996,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-01-09T16:49:26+00:00"
+            "time": "2019-01-11T05:15:36+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
