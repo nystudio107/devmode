@@ -1262,16 +1262,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.76",
+            "version": "v1.2.77",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "728dd7f210819ccafbf008a6ef7956f4f3c3571c"
+                "reference": "28b16dd80c5a690dd8d05aa2602b16815f6eff6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/728dd7f210819ccafbf008a6ef7956f4f3c3571c",
-                "reference": "728dd7f210819ccafbf008a6ef7956f4f3c3571c",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/28b16dd80c5a690dd8d05aa2602b16815f6eff6d",
+                "reference": "28b16dd80c5a690dd8d05aa2602b16815f6eff6d",
                 "shasum": ""
             },
             "require": {
@@ -1307,7 +1307,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-12-18T08:52:44+00:00"
+            "time": "2019-01-12T17:16:15+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2947,12 +2947,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "d910cdc84a6a38a235536564bc95bed46aa4489f"
+                "reference": "7780c4ee8b7b8e70acb7a078b05b503cd6a5a223"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/d910cdc84a6a38a235536564bc95bed46aa4489f",
-                "reference": "d910cdc84a6a38a235536564bc95bed46aa4489f",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/7780c4ee8b7b8e70acb7a078b05b503cd6a5a223",
+                "reference": "7780c4ee8b7b8e70acb7a078b05b503cd6a5a223",
                 "shasum": ""
             },
             "require": {
@@ -2996,7 +2996,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-01-11T05:15:36+00:00"
+            "time": "2019-01-14T05:36:39+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
