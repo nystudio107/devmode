@@ -1311,23 +1311,23 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.7",
+            "version": "5.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "8560d4314577199ba51bf2032f02cd1315587c23"
+                "reference": "dcb6e1006bb5fd1e392b4daa68932880f37550d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/8560d4314577199ba51bf2032f02cd1315587c23",
-                "reference": "8560d4314577199ba51bf2032f02cd1315587c23",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/dcb6e1006bb5fd1e392b4daa68932880f37550d4",
+                "reference": "dcb6e1006bb5fd1e392b4daa68932880f37550d4",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.1",
+                "friendsofphp/php-cs-fixer": "~2.2.20",
                 "json-schema/json-schema-test-suite": "1.2.0",
                 "phpunit/phpunit": "^4.8.35"
             },
@@ -1373,7 +1373,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2018-02-14T22:26:30+00:00"
+            "time": "2019-01-14T23:55:14+00:00"
         },
         {
             "name": "ksubileau/color-thief-php",
@@ -2947,12 +2947,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "7780c4ee8b7b8e70acb7a078b05b503cd6a5a223"
+                "reference": "8c4450df2218442a9223b329b0054cdf67a345a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/7780c4ee8b7b8e70acb7a078b05b503cd6a5a223",
-                "reference": "7780c4ee8b7b8e70acb7a078b05b503cd6a5a223",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/8c4450df2218442a9223b329b0054cdf67a345a1",
+                "reference": "8c4450df2218442a9223b329b0054cdf67a345a1",
                 "shasum": ""
             },
             "require": {
@@ -2996,7 +2996,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-01-14T05:36:39+00:00"
+            "time": "2019-01-14T23:43:31+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
@@ -4305,16 +4305,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.6.0",
+            "version": "v2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "a11dd39f5b6589e14f0ff3b36675d06047c589b1"
+                "reference": "7d7342c8a4059fefb9b8d07db0cc14007021f9b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/a11dd39f5b6589e14f0ff3b36675d06047c589b1",
-                "reference": "a11dd39f5b6589e14f0ff3b36675d06047c589b1",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7d7342c8a4059fefb9b8d07db0cc14007021f9b7",
+                "reference": "7d7342c8a4059fefb9b8d07db0cc14007021f9b7",
                 "shasum": ""
             },
             "require": {
@@ -4368,7 +4368,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2018-12-16T10:36:48+00:00"
+            "time": "2019-01-14T15:00:48+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
