@@ -20,7 +20,7 @@
   "minimum-stability": "beta",
   "prefer-stable": true,
   "require": {
-    "craftcms/cms": "^3.0.0",
+    "craftcms/cms": "~3.0.0",
     "vlucas/phpdotenv": "^2.4.0",
     "yiisoft/yii2-redis": "^2.0.6",
     "nystudio107/craft-imageoptimize": "^1.0.0",
