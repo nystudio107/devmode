@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0e8be79dd73cb040402f7703252a82bc",
+    "content-hash": "459dd8d963383d7e0a24e9edf354d335",
     "packages": [
         {
             "name": "99designs/phumbor",
@@ -1262,16 +1262,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.77",
+            "version": "v1.2.78",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "28b16dd80c5a690dd8d05aa2602b16815f6eff6d"
+                "reference": "0f91f34d375ddd5d7034b9eaf6b74acd0b2a0ed6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/28b16dd80c5a690dd8d05aa2602b16815f6eff6d",
-                "reference": "28b16dd80c5a690dd8d05aa2602b16815f6eff6d",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/0f91f34d375ddd5d7034b9eaf6b74acd0b2a0ed6",
+                "reference": "0f91f34d375ddd5d7034b9eaf6b74acd0b2a0ed6",
                 "shasum": ""
             },
             "require": {
@@ -1307,7 +1307,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2019-01-12T17:16:15+00:00"
+            "time": "2019-01-15T21:21:27+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2947,12 +2947,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "8c4450df2218442a9223b329b0054cdf67a345a1"
+                "reference": "f9e0b8331c803afe5956e83a5562229ea25bc4b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/8c4450df2218442a9223b329b0054cdf67a345a1",
-                "reference": "8c4450df2218442a9223b329b0054cdf67a345a1",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/f9e0b8331c803afe5956e83a5562229ea25bc4b2",
+                "reference": "f9e0b8331c803afe5956e83a5562229ea25bc4b2",
                 "shasum": ""
             },
             "require": {
@@ -2996,7 +2996,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-01-14T23:43:31+00:00"
+            "time": "2019-01-15T23:32:47+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
