@@ -58,7 +58,7 @@ return [
         'backupOnUpdate' => false,
         'devMode' => false,
         'enableTemplateCaching' => true,
-        'isSystemOn' => true,
+        'isSystemLive' => true,
         // Custom site-specific config settings
         'custom' => [
         ]
@@ -71,7 +71,7 @@ return [
         'backupOnUpdate' => false,
         'devMode' => false,
         'enableTemplateCaching' => true,
-        'isSystemOn' => false,
+        'isSystemLive' => false,
         // Custom site-specific config settings
         'custom' => [
         ]
@@ -84,7 +84,7 @@ return [
         'backupOnUpdate' => true,
         'devMode' => true,
         'enableTemplateCaching' => false,
-        'isSystemOn' => true,
+        'isSystemLive' => true,
         // Custom site-specific config settings
         'custom' => [
             'staticAssetsVersion' => time(),
