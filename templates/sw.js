@@ -52,8 +52,10 @@ const staticAssets = [
 ];
 
 function stashInCache(cacheName, request, response) {
-    caches.open(cacheName)
-        .then( cache => cache.put(request, response) );
+    if (request.url.indexOf('http') === 0) {
+        caches.open(cacheName)
+            .then( cache => cache.put(request, response) );
+    }
 }
 
 function updateStaticCache() {
