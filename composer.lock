@@ -398,16 +398,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.0.39",
+            "version": "3.0.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "0edaeef5bd6e8fffd199a263886c4ca737848727"
+                "reference": "39fe83ff5324c2a890b1fa667604c0888d070773"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/0edaeef5bd6e8fffd199a263886c4ca737848727",
-                "reference": "0edaeef5bd6e8fffd199a263886c4ca737848727",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/39fe83ff5324c2a890b1fa667604c0888d070773",
+                "reference": "39fe83ff5324c2a890b1fa667604c0888d070773",
                 "shasum": ""
             },
             "require": {
@@ -480,7 +480,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-01-29T20:06:24+00:00"
+            "time": "2019-01-31T20:11:05+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -576,16 +576,16 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "1.1.6",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "309d2952842c7f96b36dea00c0944a606624feaf"
+                "reference": "b379bbcdd32f2db78d204bc4d6f3f97e63fa8e04"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/309d2952842c7f96b36dea00c0944a606624feaf",
-                "reference": "309d2952842c7f96b36dea00c0944a606624feaf",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/b379bbcdd32f2db78d204bc4d6f3f97e63fa8e04",
+                "reference": "b379bbcdd32f2db78d204bc4d6f3f97e63fa8e04",
                 "shasum": ""
             },
             "type": "library",
@@ -606,7 +606,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2018-08-17T23:47:59+00:00"
+            "time": "2019-01-31T19:59:15+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -2694,16 +2694,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.39",
+            "version": "3.1.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "8caf690f5790d89708cddc486d89eaee54111970"
+                "reference": "fcf29f417c089586bd9557e328712dfb343c67d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8caf690f5790d89708cddc486d89eaee54111970",
-                "reference": "8caf690f5790d89708cddc486d89eaee54111970",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/fcf29f417c089586bd9557e328712dfb343c67d0",
+                "reference": "fcf29f417c089586bd9557e328712dfb343c67d0",
                 "shasum": ""
             },
             "require": {
@@ -2763,7 +2763,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-01-24T17:28:17+00:00"
+            "time": "2019-01-30T19:12:35+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2947,12 +2947,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "0f87a264df17140be44cfff3a7e76148e09142ee"
+                "reference": "543469d89edd769579563f227a2d660a2eb13f86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/0f87a264df17140be44cfff3a7e76148e09142ee",
-                "reference": "0f87a264df17140be44cfff3a7e76148e09142ee",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/543469d89edd769579563f227a2d660a2eb13f86",
+                "reference": "543469d89edd769579563f227a2d660a2eb13f86",
                 "shasum": ""
             },
             "require": {
@@ -2971,6 +2971,7 @@
                 "components": {
                     "recommendations": "nystudio107\\webperf\\services\\Recommendations",
                     "dataSamples": "nystudio107\\webperf\\services\\DataSamples",
+                    "errorSamples": "nystudio107\\webperf\\services\\ErrorSamples",
                     "beacons": "nystudio107\\webperf\\services\\Beacons"
                 },
                 "class": "nystudio107\\webperf\\Webperf"
@@ -2998,7 +2999,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-01-30T05:18:22+00:00"
+            "time": "2019-02-01T02:34:43+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
