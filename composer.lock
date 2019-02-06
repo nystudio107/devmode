@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "459dd8d963383d7e0a24e9edf354d335",
@@ -2947,12 +2947,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "ce78b2d5f4174758559732e7cb225e7f1980593e"
+                "reference": "c4ac61daad3e1644562ecd7aad526be88691a167"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/ce78b2d5f4174758559732e7cb225e7f1980593e",
-                "reference": "ce78b2d5f4174758559732e7cb225e7f1980593e",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/c4ac61daad3e1644562ecd7aad526be88691a167",
+                "reference": "c4ac61daad3e1644562ecd7aad526be88691a167",
                 "shasum": ""
             },
             "require": {
@@ -2999,7 +2999,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-02-04T23:48:51+00:00"
+            "time": "2019-02-06T02:45:34+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
@@ -4045,7 +4045,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "backendtea@gmail.com"
+                    "email": "BackEndTea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
