@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "459dd8d963383d7e0a24e9edf354d335",
@@ -2268,24 +2268,24 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.5.1",
+            "version": "1.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "40928d22d96602fb1b39419b17208e273fcc99bd"
+                "reference": "72a7cff3ab64ac0ebe3fb76e1d1267fb0e77c64b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/40928d22d96602fb1b39419b17208e273fcc99bd",
-                "reference": "40928d22d96602fb1b39419b17208e273fcc99bd",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/72a7cff3ab64ac0ebe3fb76e1d1267fb0e77c64b",
+                "reference": "72a7cff3ab64ac0ebe3fb76e1d1267fb0e77c64b",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
                 "ksubileau/color-thief-php": "^1.3",
                 "mikehaertl/php-shellcommand": "~1.2",
-                "nystudio107/craft-imageoptimize-imgix": "^1.0.0",
-                "nystudio107/craft-imageoptimize-thumbor": "^1.0.0"
+                "nystudio107/craft-imageoptimize-imgix": "^1.0.2",
+                "nystudio107/craft-imageoptimize-thumbor": "^1.1.2"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2329,25 +2329,26 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2018-12-28T20:00:40+00:00"
+            "time": "2019-02-08T01:05:01+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize-imgix.git",
-                "reference": "66478c607853a7c6c00c6e41d6d033aebb2bbb58"
+                "reference": "4ad70967b6a81067fc54def51469fddd13de1305"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/66478c607853a7c6c00c6e41d6d033aebb2bbb58",
-                "reference": "66478c607853a7c6c00c6e41d6d033aebb2bbb58",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/4ad70967b6a81067fc54def51469fddd13de1305",
+                "reference": "4ad70967b6a81067fc54def51469fddd13de1305",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
-                "imgix/imgix-php": "^2.1.0"
+                "imgix/imgix-php": "^2.1.0",
+                "nystudio107/craft-imageoptimize": "^1.5.2"
             },
             "type": "image-transform",
             "autoload": {
@@ -2372,26 +2373,26 @@
                 "image-transform",
                 "imgix"
             ],
-            "time": "2018-12-28T16:13:05+00:00"
+            "time": "2019-02-08T01:05:49+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-thumbor",
-            "version": "1.1.0",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize-thumbor.git",
-                "reference": "23f84f7bf7f9c22afb58f2d0e0144323b67fe4e7"
+                "reference": "a63d192893f69490def882fe23576fb141b29e78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-thumbor/zipball/23f84f7bf7f9c22afb58f2d0e0144323b67fe4e7",
-                "reference": "23f84f7bf7f9c22afb58f2d0e0144323b67fe4e7",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-thumbor/zipball/a63d192893f69490def882fe23576fb141b29e78",
+                "reference": "a63d192893f69490def882fe23576fb141b29e78",
                 "shasum": ""
             },
             "require": {
                 "99designs/phumbor": "^1.2",
                 "craftcms/cms": "^3.0.0",
-                "nystudio107/craft-imageoptimize": "^1.5.1"
+                "nystudio107/craft-imageoptimize": "^1.5.2"
             },
             "type": "image-transform",
             "autoload": {
@@ -2416,7 +2417,7 @@
                 "image-transform",
                 "thumbor"
             ],
-            "time": "2018-12-28T18:12:12+00:00"
+            "time": "2019-02-08T01:06:56+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2694,16 +2695,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.40",
+            "version": "3.1.42",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "fcf29f417c089586bd9557e328712dfb343c67d0"
+                "reference": "5ec448f70e6b54b7e409c813f09f8906cd8a1ef2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/fcf29f417c089586bd9557e328712dfb343c67d0",
-                "reference": "fcf29f417c089586bd9557e328712dfb343c67d0",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/5ec448f70e6b54b7e409c813f09f8906cd8a1ef2",
+                "reference": "5ec448f70e6b54b7e409c813f09f8906cd8a1ef2",
                 "shasum": ""
             },
             "require": {
@@ -2763,7 +2764,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-01-30T19:12:35+00:00"
+            "time": "2019-02-08T01:17:45+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -2947,12 +2948,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "c4ac61daad3e1644562ecd7aad526be88691a167"
+                "reference": "fd0e2d4594fcf0b8579d3bc5a8e637ff87704148"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/c4ac61daad3e1644562ecd7aad526be88691a167",
-                "reference": "c4ac61daad3e1644562ecd7aad526be88691a167",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/fd0e2d4594fcf0b8579d3bc5a8e637ff87704148",
+                "reference": "fd0e2d4594fcf0b8579d3bc5a8e637ff87704148",
                 "shasum": ""
             },
             "require": {
@@ -2999,7 +3000,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-02-06T02:45:34+00:00"
+            "time": "2019-02-09T04:35:42+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
