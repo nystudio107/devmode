@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "459dd8d963383d7e0a24e9edf354d335",
+    "content-hash": "76d45a2402c1183f81f51b4c87e6f3ef",
     "packages": [
         {
             "name": "99designs/phumbor",
@@ -2944,16 +2944,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "dev-develop",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "fd0e2d4594fcf0b8579d3bc5a8e637ff87704148"
+                "reference": "3b389ce25daf77534e027e3caff380a28edb2d27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/fd0e2d4594fcf0b8579d3bc5a8e637ff87704148",
-                "reference": "fd0e2d4594fcf0b8579d3bc5a8e637ff87704148",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/3b389ce25daf77534e027e3caff380a28edb2d27",
+                "reference": "3b389ce25daf77534e027e3caff380a28edb2d27",
                 "shasum": ""
             },
             "require": {
@@ -2992,7 +2992,7 @@
                     "homepage": "https://nystudio107.com"
                 }
             ],
-            "description": "Monitor the performance of your webpages through real-world user timing data",
+            "description": "Webperf helps you build & maintain high quality websites through Real User Measurement of your website's performance",
             "keywords": [
                 "Craft",
                 "cms",
@@ -3000,7 +3000,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-02-09T04:35:42+00:00"
+            "time": "2019-02-12T04:20:04+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
@@ -5088,9 +5088,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "beta",
-    "stability-flags": {
-        "nystudio107/craft-webperf": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
