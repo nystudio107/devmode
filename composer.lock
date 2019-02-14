@@ -398,16 +398,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.9",
+            "version": "3.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "0d1e98ee3e39198431ca682969a2f436fc01e821"
+                "reference": "30aca24eff4624546e29ccc3ccea6f9717e30804"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/0d1e98ee3e39198431ca682969a2f436fc01e821",
-                "reference": "0d1e98ee3e39198431ca682969a2f436fc01e821",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/30aca24eff4624546e29ccc3ccea6f9717e30804",
+                "reference": "30aca24eff4624546e29ccc3ccea6f9717e30804",
                 "shasum": ""
             },
             "require": {
@@ -482,7 +482,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-02-12T23:04:54+00:00"
+            "time": "2019-02-13T21:49:45+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2946,16 +2946,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "3b389ce25daf77534e027e3caff380a28edb2d27"
+                "reference": "c01b49df61637c0cf85fa5573f905be96c38de4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/3b389ce25daf77534e027e3caff380a28edb2d27",
-                "reference": "3b389ce25daf77534e027e3caff380a28edb2d27",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/c01b49df61637c0cf85fa5573f905be96c38de4c",
+                "reference": "c01b49df61637c0cf85fa5573f905be96c38de4c",
                 "shasum": ""
             },
             "require": {
@@ -2970,7 +2970,7 @@
                 "handle": "webperf",
                 "hasCpSettings": true,
                 "hasCpSection": true,
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-webperf/master/CHANGELOG.md",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-webperf/v1/CHANGELOG.md",
                 "components": {
                     "recommendations": "nystudio107\\webperf\\services\\Recommendations",
                     "dataSamples": "nystudio107\\webperf\\services\\DataSamples",
@@ -3002,7 +3002,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-02-12T04:20:04+00:00"
+            "time": "2019-02-13T03:56:03+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
