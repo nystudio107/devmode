@@ -81,6 +81,11 @@
                     "audioChannels": 1
                 }) %}
                 {% if transAudioUrl |length %}
+                    {% if not craft.app.config.general.devMode %}
+                        {% set transAudioUrl = transAudioUrl | replace('/^(http|https)/', '') %}
+                        {% set transAudioUrl = transAudioUrl | replace('://', '') %}
+                        {% set transAudioUrl = "https://dts.podtrac.com/redirect.mp3/#{transAudioUrl}" %}
+                    {% endif %}
                     {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
 
                     <enclosure url="{{ url(transAudioUrl, null, "http") |raw }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
