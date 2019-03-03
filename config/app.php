@@ -14,74 +14,42 @@
  */
 
 return [
-
     // All environments
-    '*'       => [
+    '*' => [
         'modules'   => [
             'site-module' => [
                 'class' => \modules\sitemodule\SiteModule::class,
             ],
         ],
         'bootstrap' => ['site-module'],
+        'components' => [
+            'redis' => [
+                'class' => yii\redis\Connection::class,
+                'hostname' => getenv('REDIS_HOSTNAME'),
+                'port' => getenv('REDIS_PORT'),
+                'database' => getenv('REDIS_DEFAULT_DB'),
+            ],
+            'cache' => [
+                'class' => yii\redis\Cache::class,
+                'redis' => [
+                    'database' => getenv('REDIS_CRAFT_DB'),
+                ],
+            ],
+            'session' => [
+                'class' => \yii\redis\Session::class,
+                'as session' => [
+                    'class' => \craft\behaviors\SessionBehavior::class,
+                ],
+            ],
+        ],
     ],
-
     // Live (production) environment
-    'live'    => [
-        'components' => [
-            // Default to database 0, so PHP sessions are in a separate database
-            'redis'   => [
-                'class'    => yii\redis\Connection::class,
-                'hostname' => 'localhost',
-                'port'     => 6379,
-                'database' => 0,
-            ],
-            'cache'   => [
-                // Use database 3 for live production
-                'class' => yii\redis\Cache::class,
-                'redis' => [
-                    'hostname' => 'localhost',
-                    'port'     => 6379,
-                    'database' => 3,
-                ],
-            ],
-            'session' => [
-                'class' => \yii\redis\Session::class,
-                'as session' => [
-                    'class' => \craft\behaviors\SessionBehavior::class,
-                ],
-            ],
-        ],
+    'live'  => [
     ],
-
     // Staging (pre-production) environment
-    'staging' => [
-        // Default to database 0, so PHP sessions are in a separate database
-        'components' => [
-            'redis'   => [
-                'class'    => yii\redis\Connection::class,
-                'hostname' => 'localhost',
-                'port'     => 6379,
-                'database' => 0,
-            ],
-            // Use database 4 for staging
-            'cache'   => [
-                'class' => yii\redis\Cache::class,
-                'redis' => [
-                    'hostname' => 'localhost',
-                    'port'     => 6379,
-                    'database' => 4,
-                ],
-            ],
-            'session' => [
-                'class' => \yii\redis\Session::class,
-                'as session' => [
-                    'class' => \craft\behaviors\SessionBehavior::class,
-                ],
-            ],
-        ],
+    'staging'  => [
     ],
-
     // Local (development) environment
-    'local'   => [
+    'local'  => [
     ],
 ];

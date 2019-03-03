@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a9e72e66a540b04a8482a5c5fb66394a",
+    "content-hash": "7474f8ef18a17b8e3623b32989181609",
     "packages": [
         {
             "name": "99designs/phumbor",
@@ -2888,6 +2888,62 @@
             "time": "2018-10-05T16:11:02+00:00"
         },
         {
+            "name": "nystudio107/craft-twigpack",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-twigpack.git",
+                "reference": "223e57fd27b89ebdb2d28397276a77aae1b0464a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/223e57fd27b89ebdb2d28397276a77aae1b0464a",
+                "reference": "223e57fd27b89ebdb2d28397276a77aae1b0464a",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Twigpack",
+                "handle": "twigpack",
+                "hasCpSettings": false,
+                "hasCpSection": false,
+                "changelogUrl": "https://raw.githubusercontent.com/craft-nystudio107/twigpack/v1/CHANGELOG.md",
+                "components": {
+                    "manifest": "nystudio107\\twigpack\\services\\Manifest"
+                },
+                "class": "nystudio107\\twigpack\\Twigpack"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\twigpack\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com/"
+                }
+            ],
+            "description": "Twigpack is a bridge between Twig and webpack, with manifest.json & webpack-dev-server HMR support",
+            "keywords": [
+                "craft-plugin",
+                "craftcms",
+                "hmr-support",
+                "manifest-json",
+                "twig",
+                "webpack",
+                "webpack-dev-server"
+            ],
+            "time": "2019-01-23T01:36:40+00:00"
+        },
+        {
             "name": "nystudio107/craft-typogrify",
             "version": "1.1.16",
             "source": {
@@ -2946,16 +3002,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "1.0.4",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "6104d3defefd2ec1e5b4654ca6e76c759a825395"
+                "reference": "a623fc3da2f51dc3aa1905df998dcda9d81ccfa4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/6104d3defefd2ec1e5b4654ca6e76c759a825395",
-                "reference": "6104d3defefd2ec1e5b4654ca6e76c759a825395",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/a623fc3da2f51dc3aa1905df998dcda9d81ccfa4",
+                "reference": "a623fc3da2f51dc3aa1905df998dcda9d81ccfa4",
                 "shasum": ""
             },
             "require": {
@@ -3002,7 +3058,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-02-27T03:43:04+00:00"
+            "time": "2019-02-28T16:00:43+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
@@ -3040,6 +3096,54 @@
                 "multi-environment"
             ],
             "time": "2018-01-25T22:00:35+00:00"
+        },
+        {
+            "name": "nystudio107/dotenvy",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/dotenvy.git",
+                "reference": "e4c59b3cd6664a7cbfe27565736a4e717fa0a168"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/dotenvy/zipball/e4c59b3cd6664a7cbfe27565736a4e717fa0a168",
+                "reference": "e4c59b3cd6664a7cbfe27565736a4e717fa0a168",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0",
+                "vlucas/phpdotenv": "^2.4.0"
+            },
+            "bin": [
+                "src/dotenvy"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\dotenvy\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Speed up your production sites by ditching .env for key/value variable pairs as Apache, Nginx, and shell equivalents.",
+            "keywords": [
+                "apache",
+                "bash",
+                "dotenv",
+                "env",
+                "environment",
+                "nginx"
+            ],
+            "time": "2019-02-18T02:03:24+00:00"
         },
         {
             "name": "ostark/craft-async-queue",
@@ -4593,16 +4697,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.16",
+            "version": "2.0.16.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "789de9783d41e6ca10fffc3644a43a764f79b399"
+                "reference": "089198cced57c4b8c9545ddc56001a1bd114b2dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/789de9783d41e6ca10fffc3644a43a764f79b399",
-                "reference": "789de9783d41e6ca10fffc3644a43a764f79b399",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/089198cced57c4b8c9545ddc56001a1bd114b2dd",
+                "reference": "089198cced57c4b8c9545ddc56001a1bd114b2dd",
                 "shasum": ""
             },
             "require": {
@@ -4689,7 +4793,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-01-30T23:54:16+00:00"
+            "time": "2019-02-28T07:03:06+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
