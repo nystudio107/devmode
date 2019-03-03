@@ -1,5 +1,20 @@
 import styles from '../css/app.pcss';
 
+import FontelloEot from '../fonts/fontello.eot';
+import FontelloTtf from '../fonts/fontello.ttf';
+import FontelloWoff from '../fonts/fontello.woff';
+import FontelloWoff2 from '../fonts/fontello.woff2';
+
+import OperatorMonoSSmBookEot from '../fonts/OperatorMonoSSm-Book.eot';
+import OperatorMonoSSmBookTtf from '../fonts/OperatorMonoSSm-Book.ttf';
+import OperatorMonoSSmBookWoff from '../fonts/OperatorMonoSSm-Book.woff';
+import OperatorMonoSSmBookWoff2 from '../fonts/OperatorMonoSSm-Book.woff2';
+
+import OperatorMonoSSmBookItalicEot from '../fonts/OperatorMonoSSm-BookItalic.eot';
+import OperatorMonoSSmBookItalicTtf from '../fonts/OperatorMonoSSm-BookItalic.ttf';
+import OperatorMonoSSmBookItalicWoff from '../fonts/OperatorMonoSSm-BookItalic.woff';
+import OperatorMonoSSmBookItalicWoff2 from '../fonts/OperatorMonoSSm-BookItalic.woff2';
+
 // App main
 const main = async() => {
     // Async load the vue module
@@ -7,6 +22,9 @@ const main = async() => {
     // Async load the vue module
     const VueClickaway = await import(/* webpackChunkName: "vueclickaway" */ 'vue-clickaway');
     const VueTyper = await import(/* webpackChunkName: "vuetyper" */ 'vue-typer');
+    const LazySizes = await import(/* webpackChunkName: "lazysizes" */ 'lazysizes');
+    const LazySizesBgSet = await import(/* webpackChunkName: "lazysizes" */ 'lazysizes/plugins/bgset/ls.bgset.js');
+    LazySizes.init();
     VueESM.default.use(VueTyper.default);
     // Create our vue instance
     const vm = new VueESM.default({

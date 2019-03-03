@@ -19,7 +19,7 @@
  */
 
 return [
-    'episodes/<slug:[^/]+>/amp' => ['template' => 'episodes/_amp_entry'],
-    'about/amp' => ['template' => 'about/amp_index'],
-    'amp' => ['template' => 'amp_index'],
+    'episodes/<slug:[^/]+>/amp' => ['template' => 'episodes/_amp-entry'],
+    'about/amp' => ['template' => 'about/amp-index'],
+    'amp' => ['template' => 'amp-index'],
 ];

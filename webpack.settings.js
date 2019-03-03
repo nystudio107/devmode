@@ -53,11 +53,47 @@ module.exports = {
         ampCriticalHeight: 19200,
         ampCriticalWidth: 600,
         pages: [
-            {
-                url: "",
-                template: "index"
-            }
-        ]
+                {
+                    url: "",
+                    template: "index"
+                },
+                {
+                    url: "",
+                    template: "amp_index"
+                },
+                {
+                    url: "about",
+                    template: "about/index"
+                },
+                {
+                    url: "about",
+                    template: "about/amp_index"
+                },
+                {
+                    url: "episodes/talking-craft-cms-rc1",
+                    template: "episodes/_entry"
+                },
+                {
+                    url: "episodes/talking-craft-cms-rc1",
+                    template: "episodes/_amp_entry"
+                },
+                {
+                    url: "offline",
+                    template: "offline"
+                },
+                {
+                    url: "error",
+                    template: "error"
+                },
+                {
+                    url: "503",
+                    template: "503"
+                },
+                {
+                    url: "404",
+                    template: "404"
+                }
+            ]
     },
     devServerConfig: {
         public: () => process.env.DEVSERVER_PUBLIC || "http://localhost:8080",
@@ -75,7 +111,7 @@ module.exports = {
             "./src/vue/**/*.{vue,html}"
         ],
         whitelist: [
-            "./src/css/components/**/*.{css,pcss}"
+            "./src/css/components/**/*.{css}"
         ],
         whitelistPatterns: [],
         extensions: [
