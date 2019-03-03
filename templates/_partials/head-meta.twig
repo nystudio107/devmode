@@ -1,0 +1,39 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{# -- Basic meta tags -- #}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+
+{# -- Prefetch & preconnect headers and links -- #}
+{% set prefetchUrls = [
+    alias("@baseUrl"),
+] %}
+{% set headerLink = "Link: " %}
+{% for url in prefetchUrls %}
+    {% set headerLink = headerLink ~ "<#{url}>; rel=dns-prefetch;," %}
+    {% set headerLink = headerLink ~ "<#{url}>; rel=preconnect; crossorigin;" %}
+    {% if not loop.last %}
+        {% set headerLink = headerLink ~ "," %}
+    {% endif %}
+    <link rel="dns-prefetch" href="{{ url }}">
+    <link rel="preconnect" href="{{ url }}" crossorigin>
+{% endfor %}
+{% header headerLink %}
+
+{# -- Favicons, webapp manifests, etc. -- #}
+{{ craft.twigpack.includeFileFromManifest("webapp.html") }}
+
+{# -- Polyfills detected by User-Agent as per: https://polyfill.io/v2/docs/examples#feature-detection -- #}
+<script src="https://cdn.polyfill.io/v2/polyfill.min.js?callback=polyfillsAreLoaded" defer async></script>
+
+{# -- Register our Service Worker -- #}
+{# @TODO disable Service Worker for now to simplify testing
+{% if not craft.app.config.general.devMode %}
+    {% include "_partials/register-service-worker.twig" %}
+{% endif %}
+#}
+
+{# -- Handle tabs gracefully as per https://hackernoon.com/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2 -- #}
+{% include "_partials/tab-handler.twig" %}
+
+{# -- Tiny Cookie JavaScript -- #}
+{# @TODO: Add the inline JavaScript for Tiny Cookie #}

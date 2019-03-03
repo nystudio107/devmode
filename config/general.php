@@ -1,93 +1,81 @@
 <?php
 /**
- * Craft 3 Multi-Environment
- * Efficient and flexible multi-environment config for Craft 3 CMS
- *
- * $_ENV constants are loaded by craft3-multi-environment from .env.php via
- * ./web/index.php for web requests, and ./craft for console requests
- *
- * @author    nystudio107
- * @copyright Copyright (c) 2017 nystudio107
- * @link      https://nystudio107.com/
- * @package   craft3-multi-environment
- * @since     1.0.5
- * @license   MIT
- */
-
-/**
  * General Configuration
  *
- * All of your system's general configuration settings go in here.
- * You can see a list of the default settings in src/config/GeneralConfig.php
+ * All of your system's general configuration settings go in here. You can see a
+ * list of the available settings in vendor/craftcms/cms/src/config/GeneralConfig.php.
+ *
+ * @see craft\config\GeneralConfig
  */
 
 return [
-
-    // All environments
+    // Global settings
     '*' => [
-        // Craft defined config settings
-        'cacheDuration' => false,
-        'defaultSearchTermOptions' => array(
-            'subLeft' => true,
-            'subRight' => true,
-        ),
-        'enableCsrfProtection' => true,
-        'generateTransformsBeforePageLoad' => true,
-        'maxUploadFileSize' => 209715200,
-        'omitScriptNameInUrls' => true,
-        'securityKey' => getenv('CRAFTENV_SECURITY_KEY'),
-        'siteUrl' => getenv('CRAFTENV_SITE_URL'),
-        'useEmailAsUsername' => true,
-        'usePathInfo' => true,
         // Aliases parsed in sites’ settings, volumes’ settings, and Local volumes’ settings
         'aliases' => [
-            '@basePath' => getenv('CRAFTENV_BASE_PATH'),
-            '@baseUrl' => getenv('CRAFTENV_BASE_URL'),
+            '@basePath' => getenv('BASE_PATH'),
+            '@baseUrl' => getenv('BASE_URL'),
         ],
-        // Custom site-specific config settings
-        'custom' => [
-            'craftEnv' => CRAFT_ENVIRONMENT,
-            'staticAssetsVersion' => 46,
-        ]
+        // Craft defined config settings
+        'cacheDuration' => false,
+        'defaultSearchTermOptions' => [
+            'subLeft' => true,
+            'subRight' => true,
+        ],
+        'enableCsrfProtection' => true,
+        'errorTemplatePrefix' => 'errors/',
+        'generateTransformsBeforePageLoad' => true,
+        'maxCachedCloudImageSize' => 3000,
+        'omitScriptNameInUrls' => true,
+        'resourceBasePath' => dirname(__DIR__) . '/web/cpresources',
+        'securityKey' => getenv('SECURITY_KEY'),
+        'siteUrl' => getenv('SITE_URL'),
+        'useEmailAsUsername' => true,
+        'usePathInfo' => true,
+        'useProjectConfigFile' => false,
     ],
-
     // Live (production) environment
     'live' => [
         // Craft defined config settings
         'allowUpdates' => false,
+        'allowAdminChanges' => true,
         'backupOnUpdate' => false,
         'devMode' => false,
         'enableTemplateCaching' => true,
         'isSystemLive' => true,
         // Custom site-specific config settings
         'custom' => [
-        ]
+            'environment' => getenv('ENVIRONMENT'),
+        ],
     ],
 
     // Staging (pre-production) environment
     'staging' => [
         // Craft defined config settings
         'allowUpdates' => false,
+        'allowAdminChanges' => true,
         'backupOnUpdate' => false,
         'devMode' => false,
         'enableTemplateCaching' => true,
-        'isSystemLive' => false,
+        'isSystemLive' => true,
         // Custom site-specific config settings
         'custom' => [
-        ]
+            'environment' => getenv('ENVIRONMENT'),
+        ],
     ],
 
     // Local (development) environment
     'local' => [
         // Craft defined config settings
         'allowUpdates' => true,
+        'allowAdminChanges' => true,
         'backupOnUpdate' => true,
         'devMode' => true,
         'enableTemplateCaching' => false,
         'isSystemLive' => true,
         // Custom site-specific config settings
         'custom' => [
-            'staticAssetsVersion' => time(),
-        ]
+            'environment' => getenv('ENVIRONMENT'),
+        ],
     ],
 ];
