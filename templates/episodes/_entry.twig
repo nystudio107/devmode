@@ -1,18 +1,12 @@
 {# @var craft \craft\web\twig\variables\CraftVariable #}
-{% extends "_layouts/_layout.twig" %}
+{% extends "_layouts/layout.twig" %}
 
-{% block _head_links %}
+{% block headLinks %}
     <link rel="amphtml" href="{{ siteUrl(craft.app.request.pathInfo ~ '/amp') }}">
-{% endblock %}
-
-{% block _inline_css %}
-    <style>
-        {{ source ("episodes/_entry_critical.min.css", ignore_missing = true) }}
-    </style>
-{% endblock %}
+{% endblock headLinks %}
 
 {% block content %}
-    
+
     <section>
         <div>
             <div class="flex flex-wrap">
@@ -37,11 +31,13 @@
             </div>
         </div>
     </section>
-    
+
     {% include "episodes/_partials/_display_recent_episodes.twig" with {
         "showInfo": showInfo,
     } only %}
 {% endblock %}
 
-{% block _inline_js %}
-{% endblock %}
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ craft.twigpack.includeJsModule("player.js", true) }}
+{% endblock bodyJs %}

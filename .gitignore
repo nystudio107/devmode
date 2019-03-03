@@ -13,9 +13,7 @@
 # Craft 3 CMS project root directory
 
 # CRAFT ENVIRONMENT
-.env.php
-.env.sh
-.env
+.env*
 
 # COMPOSER
 /vendor
