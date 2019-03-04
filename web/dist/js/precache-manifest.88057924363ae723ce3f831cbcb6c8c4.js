@@ -6,7 +6,7 @@ self.__precacheManifest = [
     "url": "/dist/js/amplitudeplayer.debc37972540c1ea9531.js"
   },
   {
-    "url": "/dist/js/app.0f0cc15776b9564ae707.js"
+    "url": "/dist/js/app.590d922604db053fa068.js"
   },
   {
     "url": "/dist/js/lazysizes.9a7ef3cc171e266c2d77.js"
