@@ -120,8 +120,10 @@
         "picturefill": "^3.0.2",
         "tailwindcss": "^0.7.0",
         "tiny-cookie": "^1.0.1",
+        "vue": "^2.5.17",
+        "vuetable-2": "^1.7.5",
         "vue-clickaway": "^2.1.0",
-        "vue-typer": "^1.2.0",
-        "vue": "^2.5.17"
+        "vue-events": "^3.1.0",
+        "vue-typer": "^1.2.0"
     }
 }

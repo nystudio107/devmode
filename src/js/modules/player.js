@@ -1,9 +1,9 @@
 // App main
-const main = async () => {
+const main = async() => {
     // Async load the vue module
-    const Vue = await import(/* webpackChunkName: "vue" */ 'vue');
+    const VueESM = await import(/* webpackChunkName: "vue" */ 'vue');
     // Create our vue instance
-    const vm = new Vue.default({
+    const vm = new VueESM.default({
         el: "#amplitude-player",
         components: {
             'amplitude-player': () => import(/* webpackChunkName: "amplitudeplayer" */ '../../vue/amplitude-player.vue'),

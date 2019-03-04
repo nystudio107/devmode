@@ -9,6 +9,11 @@
                 </div>
             </div>
         </div>
+        <div id="episodes-table">
+            <episodes-table>
+            </episodes-table>
+        </div>
+
         {% for episode in craft.entries.section("episodes").limit(null).all() %}
             <div class="container mx-auto py-8">
                 <div class="flex flex-wrap {% if loop.last %} pb-8{% endif %}">
