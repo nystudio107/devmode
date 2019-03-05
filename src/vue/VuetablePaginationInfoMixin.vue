@@ -5,7 +5,7 @@ export default {
       type: Object,
       default() {
         return {
-          infoClass: 'left floated left py-5 text-grey-dark'
+          infoClass: 'float-left py-5 text-grey-lighter'
         }
       }
     },
@@ -18,7 +18,7 @@ export default {
     noDataTemplate: {
       type: String,
       default() {
-        return 'No relevant data'
+        return ''
       }
     },
   },

@@ -2,9 +2,9 @@
 const main = async() => {
     // Async load the vue module
     const VueESM = await import(/* webpackChunkName: "vue" */ 'vue');
-    const VueEvents = await import(/* webpackChunkName: "vueevents" */ 'vue-events');
+    const VueEventsESM = await import(/* webpackChunkName: "vueevents" */ 'vue-events');
 
-    VueESM.default.use(VueEvents);
+    VueESM.default.use(VueEventsESM.default);
 // Create our vue instance
     const vm = new VueESM.default({
         el: "#episodes-table",
@@ -18,7 +18,7 @@ const main = async() => {
             }
         },
         mounted() {
-            //this.$events.$on('refresh-table', eventData => this.onTableRefresh(eventData));
+            this.$events.$on('refresh-table', eventData => this.onTableRefresh(eventData));
         },
     });
 };

@@ -109,7 +109,8 @@ module.exports = {
     purgeCssConfig: {
         paths: [
             "./templates/**/*.{twig,html}",
-            "./src/vue/**/*.{vue,html}"
+            "./src/vue/**/*.{vue,html}",
+            "./node_modules/vuetable-2/src/components/**/*.{vue,html}",
         ],
         whitelist: [
             "./src/css/components/**/*.{css}"
