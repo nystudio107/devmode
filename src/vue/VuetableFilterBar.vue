@@ -1,10 +1,14 @@
 <template>
     <div class="filter-bar">
-        <div class="ui form">
-            <div class="inline field">
-                <label class="text-grey-dark">Search for:</label>
-                <input type="text" v-model="filterText" class="text nicetext" @keyup="doFilter" placeholder="">
-                <button class="btn delete icon" @click="resetFilter">Reset</button>
+        <div class="pb-4">
+            <div class="text-center">
+                <input type="text"
+                       v-model="filterText"
+                       class="text-xl rounded-full p-2 text-center"
+                       @keyup="doFilter"
+                       placeholder="search"
+                >
+                <button class="btn delete icon hidden" @click="resetFilter">Reset</button>
             </div>
         </div>
     </div>

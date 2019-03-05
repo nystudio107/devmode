@@ -6,18 +6,18 @@ export default [
         title: 'Episode',
         titleClass: 'center pageListingDisplay',
         dataClass: 'center',
-        width: '80%',
+        width: '100%',
     },
     {
         name: 'summary',
         visible: false,
     },
     {
+        name: 'episodeNumber',
+        visible: false,
+    },
+    {
         name: 'postDate',
-        sortField: 'craftDbCnt',
-        title: 'Date',
-        titleClass: 'text-right',
-        dataClass: 'text-right',
-        width: '9%',
+        visible: false,
     },
 ];

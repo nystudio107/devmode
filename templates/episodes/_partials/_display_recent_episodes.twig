@@ -1,5 +1,5 @@
 <section>
-    <div class="bg-devmode-aqua">
+    <div class="bg-devmode-aqua pb-8">
         <div class="pt-8">
             <div class="w-full bg-transparent">
                 <div class="pt-8 mb-8">
@@ -13,7 +13,7 @@
             <episodes-table>
             </episodes-table>
         </div>
-
+{#
         {% for episode in craft.entries.section("episodes").limit(null).all() %}
             <div class="container mx-auto py-8">
                 <div class="flex flex-wrap {% if loop.last %} pb-8{% endif %}">
@@ -24,5 +24,6 @@
                 </div>
             </div>
         {% endfor %}
+#}
     </div>
 </section>

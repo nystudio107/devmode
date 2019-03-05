@@ -81,7 +81,8 @@ class SiteController extends Controller
                 $stat = [];
                 $stat['title'] = $episode->title;
                 $stat['url'] = $episode->url;
-                $stat['postDate'] = $episode->postDate->format('Y-m-d H:i:s');
+                $stat['episodeNumber'] = $episode->episodeNumber;
+                $stat['postDate'] = $episode->postDate->format('Y-m-d');
                 $summary = $episode->episodeSummary;
                 $summary = (string)Stringy::create($summary)->safeTruncate(
                     200,
