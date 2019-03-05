@@ -36,7 +36,7 @@ module.exports = {
     },
     entries: {
         "app": "app.js",
-        "episodes": "modules/episodes.js",
+//        "episodes": "modules/episodes.js",
         "player": "modules/player.js"
     },
     copyWebpackConfig: [
