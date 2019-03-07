@@ -11,6 +11,7 @@ const path = require('path');
 const webpack = require('webpack');
 
 // webpack plugins
+const BrotliGzipPlugin = require('brotli-gzip-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CreateSymlinkPlugin = require('create-symlink-webpack-plugin');
@@ -57,6 +58,18 @@ const configureBanner = () => {
             ''
         ].join('\n'),
         raw: true
+    };
+};
+
+// Configure Html webpack
+const configureBrotli = () => {
+    return {
+        asset: '[path].br[query]',
+        algorithm: 'brotli',
+        test: /\.(js|css|html|svg)$/,
+        threshold: 10240,
+        minRatio: 0.8,
+        quality: 11
     };
 };
 
@@ -343,6 +356,9 @@ module.exports = [
                 new WebappWebpackPlugin(
                     configureWebapp()
                 ),
+                new BrotliGzipPlugin(
+                    configureBrotli()
+                ),
                 new CreateSymlinkPlugin(
                     settings.createSymlinkConfig,
                     true
@@ -381,6 +397,9 @@ module.exports = [
                 new ImageminWebpWebpackPlugin(),
                 new WorkboxPlugin.GenerateSW(
                     configureWorkbox()
+                ),
+                new BrotliGzipPlugin(
+                    configureBrotli()
                 ),
                 new BundleAnalyzerPlugin(
                     configureBundleAnalyzer(MODERN_CONFIG),
