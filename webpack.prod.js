@@ -11,9 +11,9 @@ const path = require('path');
 const webpack = require('webpack');
 
 // webpack plugins
-const BrotliGzipPlugin = require('brotli-gzip-webpack-plugin');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CompressionPlugin = require('compression-webpack-plugin');
 const CreateSymlinkPlugin = require('create-symlink-webpack-plugin');
 const CriticalCssPlugin = require('critical-css-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -61,15 +61,16 @@ const configureBanner = () => {
     };
 };
 
-// Configure Html webpack
-const configureBrotli = () => {
+// Configure Compression webpack plugin
+const configureCompression = () => {
     return {
-        asset: '[path].br[query]',
-        algorithm: 'brotli',
+        filename: '[path].gz[query]',
+        algorithm: 'gzip',
         test: /\.(js|css|html|svg)$/,
+        compressionOptions: { level: 9 },
         threshold: 10240,
         minRatio: 0.8,
-        quality: 11
+        deleteOriginalAssets: false
     };
 };
 
@@ -356,8 +357,8 @@ module.exports = [
                 new WebappWebpackPlugin(
                     configureWebapp()
                 ),
-                new BrotliGzipPlugin(
-                    configureBrotli()
+                new CompressionPlugin(
+                    configureCompression()
                 ),
                 new CreateSymlinkPlugin(
                     settings.createSymlinkConfig,
@@ -398,8 +399,8 @@ module.exports = [
                 new WorkboxPlugin.GenerateSW(
                     configureWorkbox()
                 ),
-                new BrotliGzipPlugin(
-                    configureBrotli()
+                new CompressionPlugin(
+                    configureCompression()
                 ),
                 new BundleAnalyzerPlugin(
                     configureBundleAnalyzer(MODERN_CONFIG),
