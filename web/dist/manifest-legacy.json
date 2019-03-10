@@ -24,6 +24,7 @@
   "vueevents.js.map": "/dist/js/vueevents-legacy.2e23688810bebd4e91b3.js.map",
   "vuetyper.js": "/dist/js/vuetyper-legacy.c75dac5b101f4c8101da.js",
   "vuetyper.js.map": "/dist/js/vuetyper-legacy.c75dac5b101f4c8101da.js.map",
+  "css/styles.519238b6f69a0d35845f.css.gz": "/dist/css/styles.519238b6f69a0d35845f.css.gz",
   "css/styles.519238b6f69a0d35845f.css.map": "/dist/css/styles.519238b6f69a0d35845f.css.map",
   "fonts/OperatorMonoSSm-Book.eot": "/dist/fonts/OperatorMonoSSm-Book.eot",
   "fonts/OperatorMonoSSm-Book.ttf": "/dist/fonts/OperatorMonoSSm-Book.ttf",
@@ -87,6 +88,14 @@
   "img/favicons/yandex-browser-50x50.png": "/dist/img/favicons/yandex-browser-50x50.png",
   "img/favicons/yandex-browser-manifest.json": "/dist/img/favicons/yandex-browser-manifest.json",
   "js/analytics.js": "/dist/js/analytics.0ea40a4cb2873a89cbe597eaea860826.js",
+  "js/app-legacy.167c65f454a89cc5cfd2.js.gz": "/dist/js/app-legacy.167c65f454a89cc5cfd2.js.gz",
+  "js/episodes-legacy.8b0ce6ee3d0eb8a86706.js.gz": "/dist/js/episodes-legacy.8b0ce6ee3d0eb8a86706.js.gz",
+  "js/player-legacy.2d20576657208abcf627.js.gz": "/dist/js/player-legacy.2d20576657208abcf627.js.gz",
+  "js/styles-legacy.519238b6f69a0d35845f.js.gz": "/dist/js/styles-legacy.519238b6f69a0d35845f.js.gz",
+  "js/vendors~amplitudeplayer-legacy.f7ccaf4fbddf0c9f1ac9.js.gz": "/dist/js/vendors~amplitudeplayer-legacy.f7ccaf4fbddf0c9f1ac9.js.gz",
+  "js/vendors~vuetable-legacy.acf1deb097ec189f80eb.js.gz": "/dist/js/vendors~vuetable-legacy.acf1deb097ec189f80eb.js.gz",
+  "js/vendors~vue~vueclickaway-legacy.8ce113e29f675900963a.js.gz": "/dist/js/vendors~vue~vueclickaway-legacy.8ce113e29f675900963a.js.gz",
+  "js/vuetyper-legacy.c75dac5b101f4c8101da.js.gz": "/dist/js/vuetyper-legacy.c75dac5b101f4c8101da.js.gz",
   "js/workbox-catch-handler.js": "/dist/js/workbox-catch-handler.js",
   "webapp.html": "/dist/webapp.html"
 }
