@@ -46,5 +46,10 @@
   "fonts/fontello.ttf": "/dist/fonts/fontello.ttf",
   "fonts/fontello.woff": "/dist/fonts/fontello.woff",
   "fonts/fontello.woff2": "/dist/fonts/fontello.woff2",
-  "js/precache-manifest.js": "/dist/js/precache-manifest.a959a6b83023029a8901603088d6f977.js"
+  "js/precache-manifest.js": "/dist/js/precache-manifest.a959a6b83023029a8901603088d6f977.js",
+  "js/vendors~amplitudeplayer.161a2c2f6376e617a7f5.js.gz": "/dist/js/vendors~amplitudeplayer.161a2c2f6376e617a7f5.js.gz",
+  "js/vendors~vuetable.64419ea49293de11cc61.js.gz": "/dist/js/vendors~vuetable.64419ea49293de11cc61.js.gz",
+  "js/vendors~vue~vueclickaway.6fb24bd01d62bc0ff86c.js.gz": "/dist/js/vendors~vue~vueclickaway.6fb24bd01d62bc0ff86c.js.gz",
+  "js/vuetable.a224502a6e40f1df331f.js.gz": "/dist/js/vuetable.a224502a6e40f1df331f.js.gz",
+  "js/vuetyper.a056bc3e4381affe5e7f.js.gz": "/dist/js/vuetyper.a056bc3e4381affe5e7f.js.gz"
 }

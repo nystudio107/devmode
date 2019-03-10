@@ -26,6 +26,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const WebappWebpackPlugin = require('webapp-webpack-plugin');
 const WhitelisterPlugin = require('purgecss-whitelister');
 const WorkboxPlugin = require('workbox-webpack-plugin');
+const zopfli = require('@gfx/zopfli');
 
 // config files
 const common = require('./webpack.common.js');
@@ -65,12 +66,17 @@ const configureBanner = () => {
 const configureCompression = () => {
     return {
         filename: '[path].gz[query]',
-        algorithm: 'gzip',
         test: /\.(js|css|html|svg)$/,
-        compressionOptions: { level: 9 },
         threshold: 10240,
         minRatio: 0.8,
-        deleteOriginalAssets: false
+        deleteOriginalAssets: false,
+        compressionOptions: {
+            numiterations: 15,
+            level: 9
+        },
+        algorithm(input, compressionOptions, callback) {
+            return zopfli.gzip(input, compressionOptions, callback);
+        }
     };
 };
 
