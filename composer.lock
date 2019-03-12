@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "7474f8ef18a17b8e3623b32989181609",
@@ -398,16 +398,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.15",
+            "version": "3.1.17.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "81e712ccf8f1a9b0a65426c70769229f20dc6b26"
+                "reference": "600ae6aaab1b8b686a3e6eca4cb27ddf74289052"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/81e712ccf8f1a9b0a65426c70769229f20dc6b26",
-                "reference": "81e712ccf8f1a9b0a65426c70769229f20dc6b26",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/600ae6aaab1b8b686a3e6eca4cb27ddf74289052",
+                "reference": "600ae6aaab1b8b686a3e6eca4cb27ddf74289052",
                 "shasum": ""
             },
             "require": {
@@ -436,9 +436,9 @@
                 "seld/cli-prompt": "^1.0.3",
                 "symfony/yaml": "^3.2|^4.0",
                 "true/punycode": "^2.1.0",
-                "twig/twig": "^2.5.0",
+                "twig/twig": "~2.6.2",
                 "yii2tech/ar-softdelete": "^1.0.2",
-                "yiisoft/yii2": "~2.0.16.0",
+                "yiisoft/yii2": "~2.0.16.1",
                 "yiisoft/yii2-debug": "^2.0.10",
                 "yiisoft/yii2-queue": "2.1.0",
                 "yiisoft/yii2-swiftmailer": "^2.1.0",
@@ -482,7 +482,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-02-26T20:13:43+00:00"
+            "time": "2019-03-12T15:10:31+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1264,16 +1264,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.78",
+            "version": "v1.2.79",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "0f91f34d375ddd5d7034b9eaf6b74acd0b2a0ed6"
+                "reference": "e6ce66e9c892c42898cf84a35ecbfec5b4ab481c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/0f91f34d375ddd5d7034b9eaf6b74acd0b2a0ed6",
-                "reference": "0f91f34d375ddd5d7034b9eaf6b74acd0b2a0ed6",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/e6ce66e9c892c42898cf84a35ecbfec5b4ab481c",
+                "reference": "e6ce66e9c892c42898cf84a35ecbfec5b4ab481c",
                 "shasum": ""
             },
             "require": {
@@ -1309,7 +1309,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2019-01-15T21:21:27+00:00"
+            "time": "2019-03-04T19:10:41+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2379,16 +2379,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize-thumbor",
-            "version": "1.1.2",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize-thumbor.git",
-                "reference": "a63d192893f69490def882fe23576fb141b29e78"
+                "reference": "5a9e385fd4e122b84703c0d57b811ccb9af4ff6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-thumbor/zipball/a63d192893f69490def882fe23576fb141b29e78",
-                "reference": "a63d192893f69490def882fe23576fb141b29e78",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-thumbor/zipball/5a9e385fd4e122b84703c0d57b811ccb9af4ff6a",
+                "reference": "5a9e385fd4e122b84703c0d57b811ccb9af4ff6a",
                 "shasum": ""
             },
             "require": {
@@ -2419,7 +2419,7 @@
                 "image-transform",
                 "thumbor"
             ],
-            "time": "2019-02-08T01:06:56+00:00"
+            "time": "2019-03-11T12:43:56+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
@@ -2697,16 +2697,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.44",
+            "version": "3.1.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "d5552c7fee40af79429307f9f7ba289195f16e6c"
+                "reference": "f85f33787e39c5eb90de6136537b1916f534f11c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d5552c7fee40af79429307f9f7ba289195f16e6c",
-                "reference": "d5552c7fee40af79429307f9f7ba289195f16e6c",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/f85f33787e39c5eb90de6136537b1916f534f11c",
+                "reference": "f85f33787e39c5eb90de6136537b1916f534f11c",
                 "shasum": ""
             },
             "require": {
@@ -2766,7 +2766,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-02-19T00:18:28+00:00"
+            "time": "2019-03-04T19:59:19+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -3827,25 +3827,28 @@
         },
         {
             "name": "swiftmailer/swiftmailer",
-            "version": "v6.1.3",
+            "version": "v6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/swiftmailer/swiftmailer.git",
-                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4"
+                "reference": "6fa3232ff9d3f8237c0fae4b7ff05e1baa4cd707"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/8ddcb66ac10c392d3beb54829eef8ac1438595f4",
-                "reference": "8ddcb66ac10c392d3beb54829eef8ac1438595f4",
+                "url": "https://api.github.com/repos/swiftmailer/swiftmailer/zipball/6fa3232ff9d3f8237c0fae4b7ff05e1baa4cd707",
+                "reference": "6fa3232ff9d3f8237c0fae4b7ff05e1baa4cd707",
                 "shasum": ""
             },
             "require": {
                 "egulias/email-validator": "~2.0",
-                "php": ">=7.0.0"
+                "php": ">=7.0.0",
+                "symfony/polyfill-iconv": "^1.0",
+                "symfony/polyfill-intl-idn": "^1.10",
+                "symfony/polyfill-mbstring": "^1.0"
             },
             "require-dev": {
                 "mockery/mockery": "~0.9.1",
-                "symfony/phpunit-bridge": "~3.3@dev"
+                "symfony/phpunit-bridge": "^3.4.19|^4.1.8"
             },
             "suggest": {
                 "ext-intl": "Needed to support internationalized email addresses",
@@ -3854,7 +3857,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.1-dev"
+                    "dev-master": "6.2-dev"
                 }
             },
             "autoload": {
@@ -3882,7 +3885,7 @@
                 "mail",
                 "mailer"
             ],
-            "time": "2018-09-11T07:12:52+00:00"
+            "time": "2019-03-10T07:52:41+00:00"
         },
         {
             "name": "symfony/console",
@@ -4152,7 +4155,7 @@
                 },
                 {
                     "name": "Gert de Pagter",
-                    "email": "BackEndTea@gmail.com"
+                    "email": "backendtea@gmail.com"
                 }
             ],
             "description": "Symfony polyfill for ctype functions",
@@ -4164,6 +4167,127 @@
                 "portable"
             ],
             "time": "2018-08-06T14:22:27+00:00"
+        },
+        {
+            "name": "symfony/polyfill-iconv",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-iconv.git",
+                "reference": "97001cfc283484c9691769f51cdf25259037eba2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-iconv/zipball/97001cfc283484c9691769f51cdf25259037eba2",
+                "reference": "97001cfc283484c9691769f51cdf25259037eba2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-iconv": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Iconv\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for the Iconv extension",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "iconv",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2018-09-21T06:26:08+00:00"
+        },
+        {
+            "name": "symfony/polyfill-intl-idn",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-intl-idn.git",
+                "reference": "89de1d44f2c059b266f22c9cc9124ddc4cd0987a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/89de1d44f2c059b266f22c9cc9124ddc4cd0987a",
+                "reference": "89de1d44f2c059b266f22c9cc9124ddc4cd0987a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/polyfill-mbstring": "^1.3",
+                "symfony/polyfill-php72": "^1.9"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                },
+                {
+                    "name": "Laurent Bassin",
+                    "email": "laurent@bassin.info"
+                }
+            ],
+            "description": "Symfony polyfill for intl's idn_to_ascii and idn_to_utf8 functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "idn",
+                "intl",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2018-09-30T16:36:12+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -4218,6 +4342,61 @@
             "keywords": [
                 "compatibility",
                 "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2018-09-21T13:07:52+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php72",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php72.git",
+                "reference": "9050816e2ca34a8e916c3a0ae8b9c2fccf68b631"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/9050816e2ca34a8e916c3a0ae8b9c2fccf68b631",
+                "reference": "9050816e2ca34a8e916c3a0ae8b9c2fccf68b631",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php72\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
                 "polyfill",
                 "portable",
                 "shim"
@@ -5188,16 +5367,16 @@
         },
         {
             "name": "zendframework/zend-feed",
-            "version": "2.11.0",
+            "version": "2.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-feed.git",
-                "reference": "5248e9fffa760e5c36092aeff02c3797e4a8a690"
+                "reference": "d926c5af34b93a0121d5e2641af34ddb1533d733"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-feed/zipball/5248e9fffa760e5c36092aeff02c3797e4a8a690",
-                "reference": "5248e9fffa760e5c36092aeff02c3797e4a8a690",
+                "url": "https://api.github.com/repos/zendframework/zend-feed/zipball/d926c5af34b93a0121d5e2641af34ddb1533d733",
+                "reference": "d926c5af34b93a0121d5e2641af34ddb1533d733",
                 "shasum": ""
             },
             "require": {
@@ -5228,8 +5407,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.11.x-dev",
-                    "dev-develop": "2.12.x-dev"
+                    "dev-master": "2.12.x-dev",
+                    "dev-develop": "2.13.x-dev"
                 }
             },
             "autoload": {
@@ -5247,7 +5426,7 @@
                 "feed",
                 "zf"
             ],
-            "time": "2019-01-29T21:37:15+00:00"
+            "time": "2019-03-05T20:08:49+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
