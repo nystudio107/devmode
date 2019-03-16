@@ -26,6 +26,7 @@ return [
         'errorTemplatePrefix' => 'errors/',
         'generateTransformsBeforePageLoad' => true,
         'maxCachedCloudImageSize' => 3000,
+        'maxUploadFileSize' => 209715200,
         'omitScriptNameInUrls' => true,
         'resourceBasePath' => dirname(__DIR__) . '/web/cpresources',
         'securityKey' => getenv('SECURITY_KEY'),
