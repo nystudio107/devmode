@@ -32,21 +32,32 @@ namespace nystudio107\craft;
  * that reflect things that are added to the Craft Variable dynamically by
  * plugins or modules.
  *
+ * @property \craft\web\twig\variables\Cp $cp
+ * @property \craft\web\twig\variables\Io $io
+ * @property \craft\web\twig\variables\Routes $routes
+ * @property \craft\web\twig\variables\CategoryGroups $categoryGroups
+ * @property \craft\web\twig\variables\Config $config
+ * @property \craft\web\twig\variables\Deprecator $deprecator
+ * @property \craft\web\twig\variables\ElementIndexes $elementIndexes
+ * @property \craft\web\twig\variables\EntryRevisions $entryRevisions
+ * @property \craft\web\twig\variables\Feeds $feeds
+ * @property \craft\web\twig\variables\Fields $fields
+ * @property \craft\web\twig\variables\Globals $globals
+ * @property \craft\web\twig\variables\I18N $i18n
+ * @property \craft\web\twig\variables\Request $request
+ * @property \craft\web\twig\variables\Sections $sections
+ * @property \craft\web\twig\variables\SystemSettings $systemSettings
+ * @property \craft\web\twig\variables\UserSession $session
+ * @property \craft\commerce\web\twig\CraftVariableBehavior $commerce
+ * @property \putyourlightson\blitz\variables\BlitzVariable $blitz
+ * @property \nystudio107\twigpack\variables\ManifestVariable $twigpack
+ *
  * @author    nystudio107
  * @package   nystudio107\craft
  * @since     1.0.0
  */
 class FauxCraftVariable extends \craft\web\twig\variables\CraftVariable
 {
-    /**
-     * @var \putyourlightson\blitz\variables\BlitzVariable
-     */
-    public $blitz;
-
-    /**
-     * @var \nystudio107\twigpack\variables\ManifestVariable
-     */
-    public $twigpack;
 }
 
 /**
@@ -68,9 +79,24 @@ class FauxTwigExtension extends \Twig\Extension\AbstractExtension implements \Tw
             'asset' => new \craft\elements\Asset(),
             'category' => new \craft\elements\Category(),
             'entry' => new \craft\elements\Entry(),
+            // Craft "Constants"
+            'SORT_ASC' => 4,
+            'SORT_DESC' => 3,
+            'SORT_REGULAR' => 0,
+            'SORT_NUMERIC' => 1,
+            'SORT_STRING' => 2,
+            'SORT_LOCALE_STRING' => 5,
+            'SORT_NATURAL' => 6,
+            'SORT_FLAG_CASE' => 8,
+            'POS_HEAD' => 1,
+            'POS_BEGIN' => 2,
+            'POS_END' => 3,
+            'POS_READY' => 4,
+            'POS_LOAD' => 5,
             // Misc. Craft globals
             'currentUser' => new \craft\elements\User(),
             'currentSite' => new \craft\models\Site(),
+            'now' => new DateTime(),
             // Commerce Elements
             'lineItem' => new \craft\commerce\models\LineItem(),
             'order' => new \craft\commerce\elements\Order(),
