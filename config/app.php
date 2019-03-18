@@ -14,42 +14,33 @@
  */
 
 return [
-    // All environments
-    '*' => [
-        'modules'   => [
-            'site-module' => [
-                'class' => \modules\sitemodule\SiteModule::class,
-            ],
+    'modules' => [
+        'site-module' => [
+            'class' => \modules\sitemodule\SiteModule::class,
         ],
-        'bootstrap' => ['site-module'],
-        'components' => [
+    ],
+    'bootstrap' => ['site-module'],
+    'components' => [
+        'deprecator' => [
+            'throwExceptions' => true,
+        ],
+        'redis' => [
+            'class' => yii\redis\Connection::class,
+            'hostname' => getenv('REDIS_HOSTNAME'),
+            'port' => getenv('REDIS_PORT'),
+            'database' => getenv('REDIS_DEFAULT_DB'),
+        ],
+        'cache' => [
+            'class' => yii\redis\Cache::class,
             'redis' => [
-                'class' => yii\redis\Connection::class,
-                'hostname' => getenv('REDIS_HOSTNAME'),
-                'port' => getenv('REDIS_PORT'),
-                'database' => getenv('REDIS_DEFAULT_DB'),
-            ],
-            'cache' => [
-                'class' => yii\redis\Cache::class,
-                'redis' => [
-                    'database' => getenv('REDIS_CRAFT_DB'),
-                ],
-            ],
-            'session' => [
-                'class' => \yii\redis\Session::class,
-                'as session' => [
-                    'class' => \craft\behaviors\SessionBehavior::class,
-                ],
+                'database' => getenv('REDIS_CRAFT_DB'),
             ],
         ],
-    ],
-    // Live (production) environment
-    'live'  => [
-    ],
-    // Staging (pre-production) environment
-    'staging'  => [
-    ],
-    // Local (development) environment
-    'local'  => [
+        'session' => [
+            'class' => \yii\redis\Session::class,
+            'as session' => [
+                'class' => \craft\behaviors\SessionBehavior::class,
+            ],
+        ],
     ],
 ];
