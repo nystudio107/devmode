@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7474f8ef18a17b8e3623b32989181609",
+    "content-hash": "73da35e31df35f6ecf7f31e3ce2db574",
     "packages": [
         {
             "name": "99designs/phumbor",
@@ -398,16 +398,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.17.2",
+            "version": "3.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "600ae6aaab1b8b686a3e6eca4cb27ddf74289052"
+                "reference": "93f27e19df0aebaa151094d525a365aa14139414"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/600ae6aaab1b8b686a3e6eca4cb27ddf74289052",
-                "reference": "600ae6aaab1b8b686a3e6eca4cb27ddf74289052",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/93f27e19df0aebaa151094d525a365aa14139414",
+                "reference": "93f27e19df0aebaa151094d525a365aa14139414",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +436,7 @@
                 "seld/cli-prompt": "^1.0.3",
                 "symfony/yaml": "^3.2|^4.0",
                 "true/punycode": "^2.1.0",
-                "twig/twig": "~2.6.2",
+                "twig/twig": "^2.7.2",
                 "yii2tech/ar-softdelete": "^1.0.2",
                 "yiisoft/yii2": "~2.0.16.1",
                 "yiisoft/yii2-debug": "^2.0.10",
@@ -482,7 +482,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-03-12T15:10:31+00:00"
+            "time": "2019-03-14T18:15:54+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1640,16 +1640,16 @@
         },
         {
             "name": "masterminds/html5",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "b5d892a4bd058d61f736935d32a9c248f11ccc93"
+                "reference": "c961ca6a0a81dc6b55b6859b3f9ea7f402edf9ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/b5d892a4bd058d61f736935d32a9c248f11ccc93",
-                "reference": "b5d892a4bd058d61f736935d32a9c248f11ccc93",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/c961ca6a0a81dc6b55b6859b3f9ea7f402edf9ad",
+                "reference": "c961ca6a0a81dc6b55b6859b3f9ea7f402edf9ad",
                 "shasum": ""
             },
             "require": {
@@ -1666,7 +1666,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -1703,7 +1703,7 @@
                 "serializer",
                 "xml"
             ],
-            "time": "2018-12-27T22:03:43+00:00"
+            "time": "2019-03-10T11:41:28+00:00"
         },
         {
             "name": "michelf/php-smartypants",
@@ -2598,16 +2598,16 @@
         },
         {
             "name": "nystudio107/craft-routemap",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-routemap.git",
-                "reference": "0a645420f4a5b25039c685017a9f1b3a98066ec4"
+                "reference": "f177bf5a651e4ba9538bffc3f0d46bc8f3f32031"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-routemap/zipball/0a645420f4a5b25039c685017a9f1b3a98066ec4",
-                "reference": "0a645420f4a5b25039c685017a9f1b3a98066ec4",
+                "url": "https://api.github.com/repos/nystudio107/craft-routemap/zipball/f177bf5a651e4ba9538bffc3f0d46bc8f3f32031",
+                "reference": "f177bf5a651e4ba9538bffc3f0d46bc8f3f32031",
                 "shasum": ""
             },
             "require": {
@@ -2653,7 +2653,7 @@
                 "serviceworker",
                 "vue"
             ],
-            "time": "2018-11-29T01:40:14+00:00"
+            "time": "2019-03-13T18:38:40+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
@@ -2697,16 +2697,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.45",
+            "version": "3.1.46",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "f85f33787e39c5eb90de6136537b1916f534f11c"
+                "reference": "cc66f24f5eecd221e862fb7713f784d60f236abc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/f85f33787e39c5eb90de6136537b1916f534f11c",
-                "reference": "f85f33787e39c5eb90de6136537b1916f534f11c",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/cc66f24f5eecd221e862fb7713f784d60f236abc",
+                "reference": "cc66f24f5eecd221e862fb7713f784d60f236abc",
                 "shasum": ""
             },
             "require": {
@@ -2766,7 +2766,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-03-04T19:59:19+00:00"
+            "time": "2019-03-15T15:06:11+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -3002,16 +3002,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "a623fc3da2f51dc3aa1905df998dcda9d81ccfa4"
+                "reference": "76f4e4a3a35fe788620a0812c51ad7987efa4ebe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/a623fc3da2f51dc3aa1905df998dcda9d81ccfa4",
-                "reference": "a623fc3da2f51dc3aa1905df998dcda9d81ccfa4",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/76f4e4a3a35fe788620a0812c51ad7987efa4ebe",
+                "reference": "76f4e4a3a35fe788620a0812c51ad7987efa4ebe",
                 "shasum": ""
             },
             "require": {
@@ -3058,7 +3058,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-02-28T16:00:43+00:00"
+            "time": "2019-03-15T21:49:42+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
@@ -4649,16 +4649,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.6.2",
+            "version": "v2.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "7d7342c8a4059fefb9b8d07db0cc14007021f9b7"
+                "reference": "70c59531da43afe598c66135e39cac39475a2f51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/7d7342c8a4059fefb9b8d07db0cc14007021f9b7",
-                "reference": "7d7342c8a4059fefb9b8d07db0cc14007021f9b7",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/70c59531da43afe598c66135e39cac39475a2f51",
+                "reference": "70c59531da43afe598c66135e39cac39475a2f51",
                 "shasum": ""
             },
             "require": {
@@ -4674,7 +4674,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
@@ -4712,7 +4712,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-01-14T15:00:48+00:00"
+            "time": "2019-03-12T18:48:26+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -4975,66 +4975,6 @@
             "time": "2019-02-28T07:03:06+00:00"
         },
         {
-            "name": "yiisoft/yii2-bootstrap",
-            "version": "2.0.9",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "4677951dda712dd99d5bf2a127eaee118dfea860"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/4677951dda712dd99d5bf2a127eaee118dfea860",
-                "reference": "4677951dda712dd99d5bf2a127eaee118dfea860",
-                "shasum": ""
-            },
-            "require": {
-                "bower-asset/bootstrap": "3.4.* | 3.3.* | 3.2.* | 3.1.*",
-                "yiisoft/yii2": "~2.0.6"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "yii\\bootstrap\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Paul Klimov",
-                    "email": "klimov.paul@gmail.com"
-                },
-                {
-                    "name": "Alexander Makarov",
-                    "email": "sam@rmcreative.ru",
-                    "homepage": "http://rmcreative.ru/"
-                },
-                {
-                    "name": "Antonio Ramirez",
-                    "email": "amigo.cobos@gmail.com"
-                },
-                {
-                    "name": "Qiang Xue",
-                    "email": "qiang.xue@gmail.com",
-                    "homepage": "http://www.yiiframework.com/"
-                }
-            ],
-            "description": "The Twitter Bootstrap extension for the Yii framework",
-            "keywords": [
-                "bootstrap",
-                "yii2"
-            ],
-            "time": "2019-01-29T21:39:45+00:00"
-        },
-        {
             "name": "yiisoft/yii2-composer",
             "version": "2.0.7",
             "source": {
@@ -5090,21 +5030,27 @@
         },
         {
             "name": "yiisoft/yii2-debug",
-            "version": "2.0.14",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "dc5a4a8529de1a41dbb037dbabf1f3f93002f21d"
+                "reference": "426bafcdb0328de66202ae53da1fbe24660d010f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/dc5a4a8529de1a41dbb037dbabf1f3f93002f21d",
-                "reference": "dc5a4a8529de1a41dbb037dbabf1f3f93002f21d",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/426bafcdb0328de66202ae53da1fbe24660d010f",
+                "reference": "426bafcdb0328de66202ae53da1fbe24660d010f",
                 "shasum": ""
             },
             "require": {
-                "yiisoft/yii2": "~2.0.13",
-                "yiisoft/yii2-bootstrap": "~2.0.0"
+                "ext-mbstring": "*",
+                "php": ">=5.4",
+                "yiisoft/yii2": "~2.0.13"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "<7",
+                "yiisoft/yii2-coding-standards": "~2.0",
+                "yiisoft/yii2-swiftmailer": "*"
             },
             "type": "yii2-extension",
             "extra": {
@@ -5125,6 +5071,10 @@
                 {
                     "name": "Qiang Xue",
                     "email": "qiang.xue@gmail.com"
+                },
+                {
+                    "name": "Simon Karlen",
+                    "email": "simi.albi@outlook.com"
                 }
             ],
             "description": "The debugger extension for the Yii framework",
@@ -5133,7 +5083,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2018-09-23T21:41:04+00:00"
+            "time": "2019-03-17T17:47:00+00:00"
         },
         {
             "name": "yiisoft/yii2-queue",
