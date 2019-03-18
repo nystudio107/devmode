@@ -79,6 +79,7 @@ class FauxTwigExtension extends \Twig\Extension\AbstractExtension implements \Tw
             'asset' => new \craft\elements\Asset(),
             'category' => new \craft\elements\Category(),
             'entry' => new \craft\elements\Entry(),
+            'tag' => new \craft\elements\Tag(),
             // Craft "Constants"
             'SORT_ASC' => 4,
             'SORT_DESC' => 3,
