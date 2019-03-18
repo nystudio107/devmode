@@ -54,7 +54,7 @@ namespace nystudio107\craft;
  *
  * @author    nystudio107
  * @package   nystudio107\craft
- * @since     1.0.0
+ * @since     1.0.1
  */
 class FauxCraftVariable extends \craft\web\twig\variables\CraftVariable
 {
@@ -66,7 +66,7 @@ class FauxCraftVariable extends \craft\web\twig\variables\CraftVariable
  *
  * @author    nystudio107
  * @package   nystudio107\craft
- * @since     1.0.0
+ * @since     1.0.1
  */
 class FauxTwigExtension extends \Twig\Extension\AbstractExtension implements \Twig\Extension\GlobalsInterface
 {
