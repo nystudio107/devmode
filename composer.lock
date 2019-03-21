@@ -244,16 +244,16 @@
         },
         {
             "name": "composer/semver",
-            "version": "1.4.2",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573"
+                "reference": "46d9139568ccb8d9e7cdd4539cab7347568a5e2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/c7cb9a2095a074d131b65a8a0cd294479d785573",
-                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573",
+                "url": "https://api.github.com/repos/composer/semver/zipball/46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
+                "reference": "46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
                 "shasum": ""
             },
             "require": {
@@ -302,7 +302,7 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2016-08-30T16:08:34+00:00"
+            "time": "2019-03-19T17:25:45+00:00"
         },
         {
             "name": "composer/spdx-licenses",
@@ -398,16 +398,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.18",
+            "version": "3.1.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "93f27e19df0aebaa151094d525a365aa14139414"
+                "reference": "dde6eabb1f11e93fe06b7f6a2e9298b490a87f3d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/93f27e19df0aebaa151094d525a365aa14139414",
-                "reference": "93f27e19df0aebaa151094d525a365aa14139414",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/dde6eabb1f11e93fe06b7f6a2e9298b490a87f3d",
+                "reference": "dde6eabb1f11e93fe06b7f6a2e9298b490a87f3d",
                 "shasum": ""
             },
             "require": {
@@ -482,7 +482,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-03-14T18:15:54+00:00"
+            "time": "2019-03-19T18:24:57+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2541,16 +2541,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "b759e61ef3b78bbdb597065c34209b3fcb287c35"
+                "reference": "d5472816a3a2c860bdaf60ce9ba8ce69e40138ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/b759e61ef3b78bbdb597065c34209b3fcb287c35",
-                "reference": "b759e61ef3b78bbdb597065c34209b3fcb287c35",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/d5472816a3a2c860bdaf60ce9ba8ce69e40138ea",
+                "reference": "d5472816a3a2c860bdaf60ce9ba8ce69e40138ea",
                 "shasum": ""
             },
             "require": {
@@ -2594,7 +2594,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2019-02-04T06:50:43+00:00"
+            "time": "2019-03-20T15:26:48+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
@@ -2827,16 +2827,16 @@
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "1.2.2",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "e7160023ade6190ec09cc022c25d502179af7e18"
+                "reference": "3d3d51e8a194dcf0069e7f1dd48d3edeaeea1f77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/e7160023ade6190ec09cc022c25d502179af7e18",
-                "reference": "e7160023ade6190ec09cc022c25d502179af7e18",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/3d3d51e8a194dcf0069e7f1dd48d3edeaeea1f77",
+                "reference": "3d3d51e8a194dcf0069e7f1dd48d3edeaeea1f77",
                 "shasum": ""
             },
             "require": {
@@ -2885,7 +2885,7 @@
                 "transcoder",
                 "video"
             ],
-            "time": "2018-10-05T16:11:02+00:00"
+            "time": "2019-03-20T14:27:33+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
@@ -2945,16 +2945,16 @@
         },
         {
             "name": "nystudio107/craft-typogrify",
-            "version": "1.1.16",
+            "version": "1.1.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-typogrify.git",
-                "reference": "ceb8aab343b3b8e32c0a1f6e469b992c95fc1337"
+                "reference": "4106b4469057508061f751c6b7b4460f12c6a1b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/ceb8aab343b3b8e32c0a1f6e469b992c95fc1337",
-                "reference": "ceb8aab343b3b8e32c0a1f6e469b992c95fc1337",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/4106b4469057508061f751c6b7b4460f12c6a1b1",
+                "reference": "4106b4469057508061f751c6b7b4460f12c6a1b1",
                 "shasum": ""
             },
             "require": {
@@ -2998,7 +2998,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2018-11-08T20:45:54+00:00"
+            "time": "2019-03-20T20:31:43+00:00"
         },
         {
             "name": "nystudio107/craft-webperf",
