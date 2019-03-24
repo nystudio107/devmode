@@ -27,7 +27,7 @@ class SiteController extends Controller
     // Protected Properties
     // =========================================================================
 
-    protected $allowAnonymous = ['episodes'];
+    protected $allowAnonymous = ['episodes', 'get-csrf'];
 
     // Public Methods
     // =========================================================================
@@ -119,5 +119,16 @@ class SiteController extends Controller
         }
 
         return $this->asJson($data);
+    }
+
+    /**
+     * @return Response
+     */
+    public function actionGetCsrf(): Response
+    {
+        return $this->asJson([
+            'name' => Craft::$app->getConfig()->getGeneral()->csrfTokenName,
+            'value' => Craft::$app->getRequest()->getCsrfToken(),
+        ]);
     }
 }
