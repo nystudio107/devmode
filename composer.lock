@@ -397,16 +397,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.20.1",
+            "version": "3.1.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "07dcd7f593c2faf56303f3348c061204270ae32d"
+                "reference": "38c1dbc42fa1ead35b18872adf8d5339894fc3d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/07dcd7f593c2faf56303f3348c061204270ae32d",
-                "reference": "07dcd7f593c2faf56303f3348c061204270ae32d",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/38c1dbc42fa1ead35b18872adf8d5339894fc3d6",
+                "reference": "38c1dbc42fa1ead35b18872adf8d5339894fc3d6",
                 "shasum": ""
             },
             "require": {
@@ -437,7 +437,7 @@
                 "true/punycode": "^2.1.0",
                 "twig/twig": "^2.7.2",
                 "yii2tech/ar-softdelete": "^1.0.2",
-                "yiisoft/yii2": "~2.0.16.1",
+                "yiisoft/yii2": "~2.0.17.0",
                 "yiisoft/yii2-debug": "^2.0.10",
                 "yiisoft/yii2-queue": "2.1.0",
                 "yiisoft/yii2-swiftmailer": "^2.1.0",
@@ -481,7 +481,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-03-27T22:26:46+00:00"
+            "time": "2019-04-03T17:44:20+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -4875,16 +4875,16 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.16.1",
+            "version": "2.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "089198cced57c4b8c9545ddc56001a1bd114b2dd"
+                "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/089198cced57c4b8c9545ddc56001a1bd114b2dd",
-                "reference": "089198cced57c4b8c9545ddc56001a1bd114b2dd",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b56159228c3b4990e38cf41ddd69af27ab015bea",
+                "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea",
                 "shasum": ""
             },
             "require": {
@@ -4971,7 +4971,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-02-28T07:03:06+00:00"
+            "time": "2019-03-22T21:26:26+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
