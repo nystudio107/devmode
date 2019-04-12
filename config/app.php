@@ -22,7 +22,7 @@ return [
     'bootstrap' => ['site-module'],
     'components' => [
         'deprecator' => [
-            'throwExceptions' => true,
+            'throwExceptions' => YII_DEBUG,
         ],
         'redis' => [
             'class' => yii\redis\Connection::class,
