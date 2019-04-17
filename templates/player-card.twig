@@ -1,0 +1,32 @@
+{% extends "_layouts/player-layout.twig" %}
+
+{% if entry is not defined %}
+    {% set entrySlug = craft.app.request.getSegment(2) %}
+    {% set entry = craft.entries({
+        "section": "episodes",
+        "slug": entrySlug,
+    }).one() %}
+{% endif %}
+
+{% block headLinks %}
+{% endblock headLinks %}
+
+{% block content %}
+
+    <section>
+        <div>
+            <div class="flex flex-wrap">
+                {% include "episodes/_partials/_display_player.twig" with {
+                    "episode": entry,
+                    "showInfo": showInfo,
+                } only %}
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ craft.twigpack.includeJsModule("player.js", true) }}
+{% endblock bodyJs %}

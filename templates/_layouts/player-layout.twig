@@ -1,0 +1,60 @@
+{%- minify -%}
+{% set baseUrl = alias('@baseUrl') ~ '/' %}
+{% set backgroundUrl = "#{baseUrl}img/site/devmode-fm-light-bg-opaque.svg" %}
+<!DOCTYPE html>
+<html class="fonts-loaded" lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+
+    {# -- Any <link> tags that should be included in the <head> #}
+    {% block headLinks %}
+    {% endblock headLinks %}
+
+    {# -- Any JavaScript that should be included before </head> -- #}
+    {# -- Polyfills detected by User-Agent as per: https://polyfill.io/v2/docs/examples#feature-detection -- #}
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?callback=polyfillsAreLoaded" defer async></script>
+    {% block headJs %}
+    {% endblock headJs %}
+
+    <style>
+        {% include "_inline-css/site-fonts.css" %}
+        [v-cloak] {display: none !important;}
+    </style>
+    {{ craft.twigpack.includeCssModule("styles.css", false) }}
+
+    {# -- Any CSS that should be included before </head> -- #}
+    {% block headCss %}
+    {% endblock headCss %}
+
+</head>
+
+    {# -- HTML Body -- #}
+    <body>
+        <div id="page-container" class="overflow-hidden">
+
+            <div id="content-container" class="bg-repeat header-background" style="background-image: url('{{ backgroundUrl }}');">
+
+                <main>
+                    <div class="container mx-auto pb-8">
+                        {# -- Primary content block -- #}
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </main>
+            </div>
+
+            {# -- Content that appears below the primary content block -- #}
+            {% block subcontent %}
+            {% endblock %}
+
+        </div>
+
+        {{ craft.twigpack.includeSafariNomoduleFix() }}
+        {{ craft.twigpack.includeJsModule("styles.js", true) }}
+        {{ craft.twigpack.includeJsModule("app.js", true) }}
+
+        {# -- Any JavaScript that should be included before </body> -- #}
+        {% block bodyJs %}
+        {% endblock bodyJs %}
+    </body>
+</html>
+{%- endminify -%}
