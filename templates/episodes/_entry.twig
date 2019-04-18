@@ -6,7 +6,10 @@
 {% endblock headLinks %}
 
 {% block content %}
-
+    {% include "episodes/_partials/_meta-player-card.twig" with {
+        "episode": entry,
+        "showInfo": showInfo,
+    } only %}
     <section>
         <div>
             <div class="flex flex-wrap">
