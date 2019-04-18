@@ -1,0 +1,33 @@
+{% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
+    "audioBitRate": "64k",
+    "audioSampleRate": 22050,
+    "audioChannels": 1
+}) %}
+{% if transAudioUrl |length %}
+    {% if not craft.app.config.general.devMode %}
+        {% set transAudioUrl = transAudioUrl | replace('/^(http|https):/', '') %}
+        {% set transAudioUrl = transAudioUrl | replace('//', '') %}
+        {% set transAudioUrl = "https://dts.podtrac.com/redirect.mp3/#{transAudioUrl}" %}
+    {% endif %}
+    {% do seomatic.meta.twitterCard('player') %}
+    {% do seomatic.tag.create({
+        'name': 'twitter:player',
+        'content': siteUrl("/player-card/#{episode.slug}")
+    }) %}
+    {% do seomatic.tag.create({
+        'name': 'twitter:player:width',
+        'content': '300'
+    }) %}
+    {% do seomatic.tag.create({
+        'name': 'twitter:player:height',
+        'content': '105'
+    }) %}
+    {% do seomatic.tag.create({
+        'name': 'twitter:player:stream',
+        'content': transAudioUrl
+    }) %}
+    {% do seomatic.tag.create({
+        'name': 'twitter:player:stream:content_type',
+        'content': 'audio/mpeg'
+    }) %}
+{% endif %}
