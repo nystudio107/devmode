@@ -68,7 +68,7 @@
         mounted: function() {
             const self = this;
             Amplitude.init({
-                "preload": "metadata",
+                "preload": "auto",
                 "songs": [
                     {
                         "name": this.title,
@@ -81,6 +81,7 @@
                     39: 'next',
                     32: 'play_pause'
                 },
+                "autoplay": true,
                 "callbacks": {
                     'after_play': function() {
                         const audio = Amplitude.audio();
