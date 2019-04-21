@@ -87,13 +87,13 @@
                     'after_play': function() {
                         const audio = Amplitude.audio();
                         self.paused = audio.paused;
-                        const hitObj = {
-                            hitType: 'event',
-                            eventCategory: 'podcast',
-                            eventAction: 'play',
-                            eventLabel: self.title,
-                        };
-                        window.ga('send', hitObj);
+                        // const hitObj = {
+                        //     hitType: 'event',
+                        //     eventCategory: 'podcast',
+                        //     eventAction: 'play',
+                        //     eventLabel: self.title,
+                        // };
+                        // window.ga('send', hitObj);
                     },
                     'after_pause': function() {
                         const audio = Amplitude.audio();
@@ -101,10 +101,6 @@
                     }
                 }
             });
-            // We're handling spacebar keypresses
-            window.onkeydown = function(e) {
-                return !(e.keyCode === 32);
-            };
         },
     }
 </script>
