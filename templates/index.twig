@@ -18,6 +18,8 @@
                     {% include "episodes/_partials/_display_episode.twig" with {
                         "episode": episode,
                         "showInfo": showInfo,
+                        "includeAudioMeta": includeAudioMeta,
+                        "autoPlay": false,
                     } only %}
                 </div>
             {% endfor %}

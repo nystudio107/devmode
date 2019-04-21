@@ -21,11 +21,17 @@
                     "audioUrl": transAudioUrl,
                 } only %}
             {% endif %}
+            {% set autoPlay = autoPlay ?? false %}
             <div id="amplitude-player">
                 <amplitude-player
                         title="{{ episode.title }}"
                         artist="{{ showInfo.showTitle }}"
                         url="{{ transAudioUrl }}"
+                        {% if autoPlay %}
+                            auto-play
+                        {% else %}
+                            :auto-play="false"
+                        {% endif %}
                 >
                 </amplitude-player>
             </div>
