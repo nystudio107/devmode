@@ -22,6 +22,8 @@
                 {% include "episodes/_partials/_display_player.twig" with {
                     "episode": entry,
                     "showInfo": showInfo,
+                    "includeAudioMeta": includeAudioMeta,
+                    "autoPlay": true,
                 } only %}
             </div>
         </div>

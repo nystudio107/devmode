@@ -44,6 +44,7 @@
             title: String,
             artist: String,
             url: String,
+            autoPlay: Boolean,
         },
         data: function() {
             return {
@@ -81,7 +82,7 @@
                     39: 'next',
                     32: 'play_pause'
                 },
-                "autoplay": true,
+                "autoplay": this.autoPlay,
                 "callbacks": {
                     'after_play': function() {
                         const audio = Amplitude.audio();
