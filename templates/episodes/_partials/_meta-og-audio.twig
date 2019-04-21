@@ -1,0 +1,32 @@
+{#
+ # Add og:audio tags for the this episode as per:
+ # http://ogp.me/#structured
+ #
+ # @param  episode   the episode Entry for the current page
+ # @param  fileInfo  summary of the episode media file info as per:
+ #                   https://github.com/nystudio107/craft-transcoder#getting-information-about-a-videoaudio-file
+ # @param  showInfo  the showInfo Global for the show
+ # @param  audioUrl  the URL to the audio for this episode, wrapped in the
+ #                   PodTrac.com tracking redirect
+ #}
+
+{% do seomatic.tag.create({
+    'name': 'og:audio',
+    'content': audioUrl
+}) %}
+{% do seomatic.tag.create({
+    'name': 'og:audio:type',
+    'content': 'audio/mpeg'
+}) %}
+{% do seomatic.tag.create({
+    'name': 'og:audio:title',
+    'content': episode.title
+}) %}
+{% do seomatic.tag.create({
+    'name': 'og:audio:artist',
+    'content': showInfo.showTitle
+}) %}
+{% do seomatic.tag.create({
+    'name': 'og:audio:album',
+    'content': showInfo.showTitle
+}) %}

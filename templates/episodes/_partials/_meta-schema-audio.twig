@@ -1,0 +1,77 @@
+{#
+ # Add audio schema for the this episode as per:
+ # https://schema.org/RadioEpisode
+ #
+ # @param  episode   the episode Entry for the current page
+ # @param  fileInfo  summary of the episode media file info as per:
+ #                   https://github.com/nystudio107/craft-transcoder#getting-information-about-a-videoaudio-file
+ # @param  showInfo  the showInfo Global for the show
+ # @param  audioUrl  the URL to the audio for this episode, wrapped in the
+ #                   PodTrac.com tracking redirect
+ #}
+
+{% from "_partials/macros.twig" import addPersonArray %}
+
+{# RadioSeries for the episode to belong to #}
+{% set showImage = showInfo.showImage.one() %}
+{% set radioSeries = seomatic.jsonLd.create({
+    'type': 'RadioSeries',
+    'id': '{seomatic.site.identity.genericUrl}#radio-series',
+    'name': showInfo.showTitle,
+    'description': showInfo.showDescription,
+    'url': showInfo.showUrl,
+    'mainEntityOfPage': siteUrl,
+    'inLanguage': '{seomatic.meta.language}',
+    'copyrightHolder': {
+        'id': '{seomatic.site.identity.genericUrl}#identity',
+    },
+    'author': {
+        'id': '{seomatic.site.identity.genericUrl}#identity',
+    },
+    'creator': {
+        'id': '{seomatic.site.creator.genericUrl}#creator',
+    },
+    'image': {
+        'type': 'ImageObject',
+        'url': showImage.url,
+        'width': showImage.width,
+        'height': showImage.height,
+    },
+}) %}
+{# Person array of the episode hosts #}
+{% do addPersonArray(radioSeries, 'actor', craft.users.group("hosts").all()) %}
+{# Person array of the episode directors #}
+{% do addPersonArray(radioSeries, 'director', craft.users.group("owners").all()) %}
+
+{# AudioObject for the episide #}
+{% set audio = seomatic.jsonLd.create({
+    'type': 'AudioObject',
+    'bitrate': '64k',
+    'contentSize': fileInfo.size,
+    'contentUrl': audioUrl,
+    'duration': fileInfo.duration,
+    'embedUrl': siteUrl("/player-card/#{episode.slug}"),
+    'encodingFormat': 'audio/mpeg',
+    'partOfSeries': {
+        'id': '{seomatic.site.identity.genericUrl}#radio-series',
+    },
+    'productionCompany': {
+        'id': '{seomatic.site.creator.genericUrl}#creator',
+    },
+    'uploadDate': episode.postDate | rss,
+}, false) %}
+
+{# Merge in the additional properties to the RadioEpisode mainEntityOfPage #}
+{% set mainEntity = seomatic.jsonLd.get('mainEntityOfPage') %}
+{% do mainEntity.setAttributes({
+    'audio': audio,
+    'episodeNumber': episode.episodeNumber,
+    'genre': showInfo.showGenre,
+    'productionCompany': {
+        'id': '{seomatic.site.creator.genericUrl}#creator',
+    },
+}) %}
+{# Person array of the episode hosts #}
+{% do addPersonArray(mainEntity, 'actor', episode.episodeHosts.all()) %}
+{# Person array of the episode directors #}
+{% do addPersonArray(mainEntity, 'director', craft.users.group("owners").all()) %}

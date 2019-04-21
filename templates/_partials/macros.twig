@@ -1,4 +1,4 @@
-
+{# Display lines of code#}
 {% macro displayCodeLines(lineStartNum, lineEndNum, codeLines) %}
     <div class="absolute pin-l">
         <div class="inline-block pl-2">
@@ -15,3 +15,27 @@
         </div>
     </div>
 {% endmacro displayCodeLines %}
+
+{# Add a Person array from `users` to the `property` of `jsonLd` #}
+{% macro addPersonArray(jsonLd, property, users) %}
+    {% set usersArray = [] %}
+    {% for user in users %}
+        {% set usersArray = usersArray | merge([seomatic.jsonLd.create({
+            'type': 'Person',
+            'affiliation': user.profileCompany,
+            'description': user.profileBio,
+            'jobTitle': user.profileTitle,
+            'familyName': user.lastName,
+            'givenName': user.firstName,
+            'name': user.fullName,
+            'sameAs': [
+                user.profileTwitterUrl,
+                user.profileGithubUrl,
+            ],
+            'url': user.profileUrl,
+        }, false)]) %}
+    {% endfor %}
+    {% do jsonLd.setAttributes({
+        (property): usersArray
+    }) %}
+{% endmacro addPersonArray %}
