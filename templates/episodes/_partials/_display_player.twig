@@ -12,6 +12,15 @@
                 {% set transAudioUrl = transAudioUrl | replace('//', '') %}
                 {% set transAudioUrl = "https://dts.podtrac.com/redirect.mp3/#{transAudioUrl}" %}
             {% endif %}
+            {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
+            {% if includeAudioMeta is defined and includeAudioMeta %}
+                {% include "episodes/_partials/_meta-episode-custom.twig" with {
+                    "episode": episode,
+                    "fileInfo": fileInfo,
+                    "showInfo": showInfo,
+                    "audioUrl": transAudioUrl,
+                } only %}
+            {% endif %}
             <div id="amplitude-player">
                 <amplitude-player
                         title="{{ episode.title }}"

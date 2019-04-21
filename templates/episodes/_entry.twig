@@ -1,21 +1,20 @@
 
 {% extends "_layouts/layout.twig" %}
 
+{% set includeAudioMeta = true %}
+
 {% block headLinks %}
     <link rel="amphtml" href="{{ siteUrl(craft.app.request.pathInfo ~ '/amp') }}">
 {% endblock headLinks %}
 
 {% block content %}
-    {% include "episodes/_partials/_meta-player-card.twig" with {
-        "episode": entry,
-        "showInfo": showInfo,
-    } only %}
     <section>
         <div>
             <div class="flex flex-wrap">
                 {% include "episodes/_partials/_display_episode.twig" with {
                     "episode": entry,
                     "showInfo": showInfo,
+                    "includeAudioMeta": includeAudioMeta,
                 } only %}
             </div>
         </div>

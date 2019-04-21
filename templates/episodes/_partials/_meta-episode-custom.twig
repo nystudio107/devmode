@@ -1,0 +1,31 @@
+{#
+ # Add custom meta information for the episode
+ #
+ # @param  episode   the episode Entry for the current page
+ # @param  fileInfo  summary of the episode media file info as per:
+ #                   https://github.com/nystudio107/craft-transcoder#getting-information-about-a-videoaudio-file
+ # @param  showInfo  the showInfo Global for the show
+ # @param  audioUrl  the URL to the audio for this episode, wrapped in the
+ #                   PodTrac.com tracking redirect
+ #}
+
+{% include "episodes/_partials/_meta-og-audio.twig" with {
+    "episode": episode,
+    "fileInfo": fileInfo,
+    "showInfo": showInfo,
+    "audioUrl": audioUrl,
+} only %}
+
+{% include "episodes/_partials/_meta-schema-audio.twig" with {
+    "episode": episode,
+    "fileInfo": fileInfo,
+    "showInfo": showInfo,
+    "audioUrl": audioUrl,
+} only %}
+
+{% include "episodes/_partials/_meta-twitter-player-card.twig" with {
+    "episode": episode,
+    "fileInfo": fileInfo,
+    "showInfo": showInfo,
+    "audioUrl": audioUrl,
+} only %}

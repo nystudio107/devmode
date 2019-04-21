@@ -1,0 +1,22 @@
+{#
+ # Add audio schema for the this episode as per:
+ # https://schema.org/RadioSeries
+ #
+ # @param  showInfo  the showInfo Global for the show
+ #}
+
+{% from "_partials/macros.twig" import addPersonArray %}
+
+{# Merge in the additional properties to the RadioSeries mainEntityOfPage #}
+{% set mainEntity = seomatic.jsonLd.get('mainEntityOfPage') %}
+{% do mainEntity.setAttributes({
+    'genre': showInfo.showGenre,
+    'productionCompany': {
+        'id': '{seomatic.site.creator.genericUrl}#creator',
+    },
+}) %}
+
+{# Person array of the episode hosts #}
+{% do addPersonArray(mainEntity, 'actor', craft.users.group("hosts").all()) %}
+{# Person array of the episode directors #}
+{% do addPersonArray(mainEntity, 'director', craft.users.group("owners").all()) %}

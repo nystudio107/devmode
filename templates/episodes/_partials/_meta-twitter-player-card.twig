@@ -1,0 +1,33 @@
+{#
+ # Add twitter:player cards for this episode as per:
+ # https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/player-card.html
+ #
+ # @param  episode   the episode Entry for the current page
+ # @param  fileInfo  summary of the episode media file info as per:
+ #                   https://github.com/nystudio107/craft-transcoder#getting-information-about-a-videoaudio-file
+ # @param  showInfo  the showInfo Global for the show
+ # @param  audioUrl  the URL to the audio for this episode, wrapped in the
+ #                   PodTrac.com tracking redirect
+ #}
+
+{% do seomatic.meta.twitterCard('player') %}
+{% do seomatic.tag.create({
+    'name': 'twitter:player',
+    'content': siteUrl("/player-card/#{episode.slug}")
+}) %}
+{% do seomatic.tag.create({
+    'name': 'twitter:player:width',
+    'content': '300'
+}) %}
+{% do seomatic.tag.create({
+    'name': 'twitter:player:height',
+    'content': '105'
+}) %}
+{% do seomatic.tag.create({
+    'name': 'twitter:player:stream',
+    'content': audioUrl
+}) %}
+{% do seomatic.tag.create({
+    'name': 'twitter:player:stream:content_type',
+    'content': 'audio/mpeg'
+}) %}

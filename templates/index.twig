@@ -1,11 +1,16 @@
 
 {% extends "_layouts/layout.twig" %}
 
+{% set includeAudioMeta = false %}
+
 {% block headLinks %}
     <link rel="amphtml" href="{{ siteUrl('/amp') }}">
 {% endblock headLinks %}
 
 {% block content %}
+    {% include "_partials/_meta-schema-radio-series.twig" with {
+        "showInfo": showInfo,
+    } only %}
     <section>
         <div>
             {% for episode in craft.entries.section("episodes").limit(1).all() %}
