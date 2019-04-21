@@ -11,22 +11,22 @@
  #}
 
 {% do seomatic.tag.create({
-    'name': 'og:audio',
+    'property': 'og:audio',
     'content': audioUrl
 }) %}
 {% do seomatic.tag.create({
-    'name': 'og:audio:type',
+    'property': 'og:audio:type',
     'content': 'audio/mpeg'
 }) %}
 {% do seomatic.tag.create({
-    'name': 'og:audio:title',
+    'property': 'og:audio:title',
     'content': episode.title
 }) %}
 {% do seomatic.tag.create({
-    'name': 'og:audio:artist',
+    'property': 'og:audio:artist',
     'content': showInfo.showTitle
 }) %}
 {% do seomatic.tag.create({
-    'name': 'og:audio:album',
+    'property': 'og:audio:album',
     'content': showInfo.showTitle
 }) %}
