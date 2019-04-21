@@ -78,9 +78,9 @@
                     },
                 ],
                 "bindings": {
-                    37: 'prev',
-                    39: 'next',
-                    32: 'play_pause'
+                    // 37: 'prev',
+                    // 39: 'next',
+                    // 32: 'play_pause'
                 },
                 "autoplay": this.autoPlay,
                 "callbacks": {
