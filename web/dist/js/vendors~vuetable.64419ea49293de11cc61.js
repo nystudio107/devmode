@@ -2,8 +2,8 @@
  * @project        Example Project
  * @name           vendors~vuetable.64419ea49293de11cc61.js
  * @author         Andrew Welch
- * @build          Sun, Apr 21, 2019 9:26 PM ET
- * @release        00023868af0b6503d0a0e3c1239cb5190cb6b054 [develop]
+ * @build          Sun, Apr 21, 2019 9:33 PM ET
+ * @release        1b35405cc690047ad442c504f6ee8b29203ded59 [develop]
  * @copyright      Copyright (c) 2019 Example Company, Inc.
  *
  */
