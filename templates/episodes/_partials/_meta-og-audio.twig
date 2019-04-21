@@ -10,6 +10,7 @@
  #                   PodTrac.com tracking redirect
  #}
 
+{% do seomatic.meta.ogType('music.song') %}
 {% do seomatic.tag.create({
     'property': 'og:audio',
     'content': audioUrl
