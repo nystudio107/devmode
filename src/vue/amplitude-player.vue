@@ -70,7 +70,7 @@
         mounted: function() {
             const self = this;
             Amplitude.init({
-                "preload": "none",
+                "preload": "auto",
                 "songs": [
                     {
                         "name": this.title,
