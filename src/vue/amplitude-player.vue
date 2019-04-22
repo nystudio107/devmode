@@ -2,7 +2,7 @@
     <div id="single-song-player">
         <div class="bottom-container flex items-center">
             <div class="control-container flex-shrink">
-                <div class="amplitude-play-pause" amplitude-main-play-pause="true" id="play-pause">
+                <div class="amplitude-play-pause" data-amplitude-main-play-pause="true" id="play-pause">
                     <div class="text-devmode-pink text-4xl cursor-pointer">
                         <i class="icon-play" v-show="paused"></i>
                         <i class="icon-pause" v-show="!paused"></i>
@@ -12,13 +12,13 @@
 
             <div class="hidden sm:block time-container flex-shrink pr-3 pl-1">
                             <span class="current-time text-devmode-pink font-mono text-xs text-left">
-                                <span class="amplitude-current-hours" amplitude-main-current-hours="true"></span>:<span class="amplitude-current-minutes" amplitude-main-current-minutes="true"></span>:<span class="amplitude-current-seconds" amplitude-main-current-seconds="true"></span>
+                                <span class="amplitude-current-hours" data-amplitude-main-current-hours="true"></span>:<span class="amplitude-current-minutes" data-amplitude-main-current-minutes="true"></span>:<span class="amplitude-current-seconds" data-amplitude-main-current-seconds="true"></span>
                             </span>
             </div>
 
             <div class="flex-grow px-1 pt-0">
                 <progress class="amplitude-song-played-progress w-full h-3 rounded"
-                          amplitude-main-song-played-progress="true"
+                          data-amplitude-main-song-played-progress="true"
                           id="song-played-progress"
                           @click="seek"
                           :value="progress">
@@ -27,7 +27,7 @@
 
             <div class="time-container flex-shrink pl-3 pr-1">
                             <span class="duration text-devmode-pink font-mono text-xs text-left">
-                                <span class="amplitude-duration-hours" amplitude-main-duration-hours="true"></span>:<span class="amplitude-duration-minutes" amplitude-main-duration-minutes="true"></span>:<span class="amplitude-duration-seconds" amplitude-main-duration-seconds="true"></span>
+                                <span class="amplitude-duration-hours" data-amplitude-main-duration-hours="true"></span>:<span class="amplitude-duration-minutes" data-amplitude-main-duration-minutes="true"></span>:<span class="amplitude-duration-seconds" data-amplitude-main-duration-seconds="true"></span>
                             </span>
             </div>
 
@@ -37,6 +37,7 @@
 
 <script>
     import Amplitude from 'amplitudejs';
+    window.Amplitude = Amplitude;
     // Our component exports
     export default {
         components: {},
@@ -77,27 +78,19 @@
                         "url": this.url
                     },
                 ],
-                "bindings": {
-                    // 37: 'prev',
-                    // 39: 'next',
-                    // 32: 'play_pause'
-                },
-                "autoplay": this.autoPlay,
+                "start_song": 0,
                 "callbacks": {
-                    'after_play': function() {
-                        const audio = Amplitude.audio();
-                        self.paused = audio.paused;
-                        // const hitObj = {
-                        //     hitType: 'event',
-                        //     eventCategory: 'podcast',
-                        //     eventAction: 'play',
-                        //     eventLabel: self.title,
-                        // };
-                        // window.ga('send', hitObj);
-                    },
-                    'after_pause': function() {
-                        const audio = Amplitude.audio();
-                        self.paused = audio.paused;
+                    'initialized': function() {
+                        const audio = Amplitude.getAudio();
+                        audio.addEventListener("play", function() {
+                            self.paused = audio.paused;
+                        });
+                        audio.addEventListener("pause", function() {
+                            self.paused = audio.paused;
+                        });
+                        if (self.autoPlay) {
+                            audio.setAttribute("autoplay", "");
+                        }
                     }
                 }
             });
