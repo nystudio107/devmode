@@ -37,7 +37,6 @@
 
 <script>
     import Amplitude from 'amplitudejs';
-    window.Amplitude = Amplitude;
     // Our component exports
     export default {
         components: {},
