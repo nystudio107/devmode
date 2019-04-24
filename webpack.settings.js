@@ -71,6 +71,14 @@ module.exports = {
                     template: "about/amp_index"
                 },
                 {
+                    url: "calendar",
+                    template: "calendar/index"
+                },
+                {
+                    url: "calendar",
+                    template: "calendar/amp_index"
+                },
+                {
                     url: "episodes/talking-craft-cms-rc1",
                     template: "episodes/_entry"
                 },

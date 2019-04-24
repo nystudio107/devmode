@@ -10,7 +10,10 @@
 
 namespace modules\sitemodule;
 
+use craft\web\twig\variables\CraftVariable;
 use modules\sitemodule\assetbundles\sitemodule\SiteModuleAsset;
+use modules\sitemodule\services\Calendar;
+use modules\sitemodule\variables\SiteVariable;
 
 use Craft;
 use craft\events\RegisterTemplateRootsEvent;
@@ -29,6 +32,7 @@ use yii\base\Module;
  * @package   SiteModule
  * @since     1.0.0
  *
+ * @property Calendar calendar
  */
 class SiteModule extends Module
 {
@@ -85,6 +89,26 @@ class SiteModule extends Module
         parent::init();
         self::$instance = $this;
 
+        // Register our components
+        $this->setComponents([
+            'calendar' => [
+                'class' => Calendar::class,
+            ]
+        ]);
+        $this->calendar->getICal();
+
+        // Register our variables
+        Event::on(
+            CraftVariable::class,
+            CraftVariable::EVENT_INIT,
+            function (Event $event) {
+                /** @var CraftVariable $variable */
+                $variable = $event->sender;
+                $variable->set('site', SiteVariable::class);
+            }
+        );
+
+        // Register our Asset bundle for CP requests
         if (Craft::$app->getRequest()->getIsCpRequest()) {
             Event::on(
                 View::class,

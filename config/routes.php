@@ -22,5 +22,6 @@ return [
     'episodes/<slug:[^/]+>/amp' => ['template' => 'episodes/_amp-entry'],
     'player-card/<slug:[^/]+>' => ['template' => 'player-card'],
     'about/amp' => ['template' => 'about/amp-index'],
+    'calendar/amp' => ['template' => 'calendar/amp-index'],
     'amp' => ['template' => 'amp-index'],
 ];
