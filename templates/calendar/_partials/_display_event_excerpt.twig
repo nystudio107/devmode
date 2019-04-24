@@ -1,0 +1,33 @@
+{% set summary = create(
+    "Stringy\\Stringy",
+    [event.summary]
+) %}
+{% set description = create(
+    "Stringy\\Stringy",
+    [event.description]
+) %}
+
+{% set episodeNumber = summary.regexReplace('(^#\\d+\\s+)(.*)', '\\1') %}
+{% set episodeTitle = summary.regexReplace('^#\\d+\\s+', '').regexReplace('\\[.*\\]', '') %}
+<div class="w-full mb-8 max-w-lg mx-auto">
+    <div class="w-full bg-grey-lightest">
+        <div class="p-8">
+            <div class="flex flex-wrap items-center justify-center flex-row-reverse md:flex-row flex-col-reverse">
+                {# -- Episode title -- #}
+                <div class=" w-full md:w-2/3 text-left py-2">
+                    <h2 class="font-mono italic text-devmode-pink text-3xl">
+                        {{ episodeTitle | typogrify(true) }}
+                    </h2>
+                </div>
+                {# -- Episode number and date -- #}
+                <div class="w-full md:w-1/3 text-devmode-pink font-mono text-xs text-left md:text-right uppercase py-2">
+                    {{ "Episode " ~ episodeNumber }} / {{ event.dtstart | date("Y.m.d") }}
+                </div>
+            </div>
+            {# -- Episode summary -- #}
+            <div class="text-devmode-pink font-sans text-xl py-2 leading-normal">
+                 {{ description.lines()[0] |truncateOnWord(400) | typogrify }}
+            </div>
+        </div>
+    </div>
+</div>

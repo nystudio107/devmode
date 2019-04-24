@@ -1,0 +1,94 @@
+{% extends "_layouts/amp-layout.twig" %}
+
+{% if entry is not defined %}
+    {% set entry = craft.entries({
+        "uri": "calendar",
+    }).one() %}
+{% endif %}
+
+{% do seomatic.helper.loadMetadataForUri(entry.uri) %}
+{% do seomatic.script.container().include(false) %}
+
+{% block headCss %}
+    {{ craft.twigpack.includeFile("@webroot/dist/criticalcss/calendar/amp_index_critical.min.css") }}
+{% endblock headCss %}
+
+{% block content %}
+    <section>
+        <div class="py-8 w-full">
+            <div class="w-full max-w-lg mx-auto">
+                {# -- Intro -- #}
+                <div>
+                    <div class="inline-block text-devmode-pink bg-grey-lightest font-mono text-xs text-left p-8">
+                        {{ "Check out" |typogrify }}
+                    </div>
+                </div>
+                {# -- Show title -- #}
+                <div>
+                    <div class="inline-block bg-grey-lightest p-8">
+                        <strong>
+                            <h1 class="text-devmode-pink font-mono italic text-bold text-4xl sm:text-5xl">
+                                <a href="/" class="title-link" @mouseover="prerenderLink" rel="noopener">
+                                    {{ "What's coming up!" | typogrify }}
+                                </a>
+                            </h1>
+                        </strong>
+                    </div>
+                </div>
+
+                {# -- Show summary -- #}
+                <div>
+                    <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-xl p-8 leading-normal">
+                        {{ "Scroll down to check out the upcoming shows we have scheduled, or subscribe to our .ics calendar feed with the link below:" |typogrify }}
+                        <br />
+                        <br />
+                        <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-2xl p-8">
+                            <i class="icon-info-circled align-middle"></i>
+                            <ul class="list-reset inline">
+                                <li class="inline">
+                                    <a href="{{ craft.site.calendarFeedUrl() }}" class="tags-link align-middle whitespace-no-wrap" title="Show Calendar feed" target="_blank" rel="nofollow noopener">{{ "Show Calendar feed" | typogrify }}</a>
+                                    <span> </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+
+{% block subcontent %}
+    <section>
+        <div class="bg-devmode-aqua">
+            <div class="pt-8">
+                <div class="w-full bg-transparent">
+                    <div class="pt-8 mb-8">
+                        <h3 class="text-white text-center">
+                            Upcoming shows
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            {% set cal = craft.site.getICal() %}
+            {% if cal %}
+                {% for event in cal.eventsFromRange(now | date | atom) %}
+                    <div class="container mx-auto py-8">
+                        <div class="flex flex-wrap {% if loop.last %} pb-8{% endif %}">
+                            {% include "calendar/_partials/_display_event_excerpt.twig" with {
+                                "event": event,
+                                "showInfo": showInfo,
+                            } only %}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </section>
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+{% endblock bodyJs %}
