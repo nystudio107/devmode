@@ -15,7 +15,9 @@
 {% endblock headCss %}
 
 {% block content %}
-
+    {% include "_partials/_meta-schema-radio-series.twig" with {
+        "showInfo": showInfo,
+    } only %}
     <section>
         <div class="py-8 w-full">
             <div class="w-full max-w-lg mx-auto">
