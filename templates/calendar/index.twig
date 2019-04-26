@@ -64,7 +64,9 @@
                     </div>
                 </div>
             </div>
-            {% set cal = craft.site.getICal() %}
+            {% set cal = parseIcs(craft.site.calendarFeedUrl(), {
+                "defaultTimeZone": "America/New_York",
+            }) %}
             {% if cal %}
                 {% for event in cal.eventsFromRange(now | date | atom) %}
                     <div class="container mx-auto py-8">
