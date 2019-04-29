@@ -2,8 +2,8 @@
  * @project        Example Project
  * @name           lazysizes.f493cf021a0199f72716.js
  * @author         Andrew Welch
- * @build          Wed, Apr 24, 2019 7:36 PM ET
- * @release        8e3347300a5ced4e88d97056f3c4a754d52205a2 [develop]
+ * @build          Mon, Apr 29, 2019 6:10 PM ET
+ * @release        0baf6a6d764373d4e82a04364c8dfb122c7cbd66 [develop]
  * @copyright      Copyright (c) 2019 Example Company, Inc.
  *
  */
