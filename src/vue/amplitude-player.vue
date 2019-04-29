@@ -24,7 +24,6 @@
                           max="100"
                 >
                 </progress>
-                {{ percentComplete }}
             </div>
 
             <div class="time-container flex-shrink pl-3 pr-1">
@@ -34,7 +33,7 @@
             </div>
 
         </div>
-        <audio :loop="innerLoop" ref="audiofile" :src="url" preload="auto" style="display: none;" autoplay></audio>
+        <audio :loop="innerLoop" ref="audiofile" :src="url" preload="auto" style="display: none;" :autoplay="autoplay"></audio>
     </div>
 </template>
 
