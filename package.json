@@ -116,7 +116,6 @@
     "dependencies": {
         "@babel/polyfill": "^7.0.0",
         "axios": "^0.18.0",
-        "amplitudejs": "^4.1.0",
         "fontfaceobserver": "^2.0.5",
         "lazysizes": "^2.0.6",
         "picturefill": "^3.0.2",
