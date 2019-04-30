@@ -10,12 +10,7 @@
 
 namespace modules\sitemodule\services;
 
-use Craft;
 use craft\base\Component;
-
-use GuzzleHttp\Exception\GuzzleException;
-
-use ICal\ICal;
 
 /**
  * @author    nystudio107
@@ -40,33 +35,5 @@ class Calendar extends Component
     public function getCalendarFeedUrl(): string
     {
         return self::SHOW_ICS_FEED_URL;
-    }
-
-    /**
-     * Return the ICal object (or null) for the events feed
-     *
-     * @return null|ICal
-     */
-    public function getICal()
-    {
-        $cal = null;
-        $client = Craft::createGuzzleClient();
-
-        $url = $this->getCalendarFeedUrl();
-        $options = [];
-        $response = null;
-        try {
-            $response = $client->request('GET', $url, $options);
-        } catch (GuzzleException $e) {
-            Craft::error($e->getMessage(), __METHOD__);
-        }
-        if ($response) {
-            $calData = $response->getBody()->getContents();
-            $cal = new ICal($calData, [
-                'defaultTimeZone' => 'EST',
-            ]);
-        }
-
-        return $cal;
     }
 }

@@ -95,7 +95,6 @@ class SiteModule extends Module
                 'class' => Calendar::class,
             ]
         ]);
-        $this->calendar->getICal();
 
         // Register our variables
         Event::on(
