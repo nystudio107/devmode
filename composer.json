@@ -41,8 +41,7 @@
     "nystudio107/craft-seomatic": "^3.0.0",
     "nystudio107/craft-webperf": "^1.0.0",
     "nystudio107/dotenvy": "^1.0.0",
-    "nystudio107/craft-twigpack": "^1.1.0",
-    "johngrogg/ics-parser": "^2.1"
+    "nystudio107/craft-twigpack": "^1.1.0"
   },
   "autoload": {
     "psr-4": {

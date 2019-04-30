@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bc9954cc0bb1266a000100b1c60e6a6",
+    "content-hash": "70d022ac506a3abfadc1b3e09f42a646",
     "packages": [
         {
             "name": "99designs/phumbor",
@@ -397,16 +397,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.24",
+            "version": "3.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "aa862bd7f2ee3a81c692f0b6c4d0aa9f20e85373"
+                "reference": "d63676d829074e257492f010fdcd7ccc7fe895a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/aa862bd7f2ee3a81c692f0b6c4d0aa9f20e85373",
-                "reference": "aa862bd7f2ee3a81c692f0b6c4d0aa9f20e85373",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/d63676d829074e257492f010fdcd7ccc7fe895a9",
+                "reference": "d63676d829074e257492f010fdcd7ccc7fe895a9",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +481,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-04-23T17:11:18+00:00"
+            "time": "2019-04-30T18:40:25+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2869,16 +2869,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.1.49",
+            "version": "3.1.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "f6432ec96659a760ab8b628fcb025714cb4805f3"
+                "reference": "91152ac7d58edfda21398c7d7751fefb878dce51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/f6432ec96659a760ab8b628fcb025714cb4805f3",
-                "reference": "f6432ec96659a760ab8b628fcb025714cb4805f3",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/91152ac7d58edfda21398c7d7751fefb878dce51",
+                "reference": "91152ac7d58edfda21398c7d7751fefb878dce51",
                 "shasum": ""
             },
             "require": {
@@ -2909,6 +2909,9 @@
                 }
             },
             "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                },
                 "psr-4": {
                     "nystudio107\\seomatic\\": "src/"
                 }
@@ -2938,7 +2941,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-04-23T03:23:57+00:00"
+            "time": "2019-04-30T21:42:09+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -3117,16 +3120,16 @@
         },
         {
             "name": "nystudio107/craft-typogrify",
-            "version": "1.1.17",
+            "version": "1.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-typogrify.git",
-                "reference": "4106b4469057508061f751c6b7b4460f12c6a1b1"
+                "reference": "28896d37f184cef87d2bbd84833565d0d732e331"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/4106b4469057508061f751c6b7b4460f12c6a1b1",
-                "reference": "4106b4469057508061f751c6b7b4460f12c6a1b1",
+                "url": "https://api.github.com/repos/nystudio107/craft-typogrify/zipball/28896d37f184cef87d2bbd84833565d0d732e331",
+                "reference": "28896d37f184cef87d2bbd84833565d0d732e331",
                 "shasum": ""
             },
             "require": {
@@ -3170,7 +3173,7 @@
                 "craftcms",
                 "typogrify"
             ],
-            "time": "2019-03-20T20:31:43+00:00"
+            "time": "2019-04-30T21:24:04+00:00"
         },
         {
             "name": "nystudio107/craft-webperf",
@@ -5267,16 +5270,16 @@
         },
         {
             "name": "yiisoft/yii2-debug",
-            "version": "2.1.2",
+            "version": "2.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "ad90eeea4312daa5d02d9ca043743fca03571874"
+                "reference": "27e36a045069e6e195a28cd4314b6e125ddcc0f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/ad90eeea4312daa5d02d9ca043743fca03571874",
-                "reference": "ad90eeea4312daa5d02d9ca043743fca03571874",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/27e36a045069e6e195a28cd4314b6e125ddcc0f9",
+                "reference": "27e36a045069e6e195a28cd4314b6e125ddcc0f9",
                 "shasum": ""
             },
             "require": {
@@ -5320,7 +5323,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2019-04-23T13:17:21+00:00"
+            "time": "2019-04-30T15:21:32+00:00"
         },
         {
             "name": "yiisoft/yii2-queue",
