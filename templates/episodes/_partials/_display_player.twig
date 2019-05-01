@@ -7,7 +7,7 @@
             "audioChannels": 1
         }) %}
         {% if transAudioUrl |length %}
-            {% if not craft.app.config.general.devMode and false %}
+            {% if not craft.app.config.general.devMode %}
                 {% set transAudioUrl = transAudioUrl | replace('/^(http|https):/', '') %}
                 {% set transAudioUrl = transAudioUrl | replace('//', '') %}
                 {% set transAudioUrl = "https://dts.podtrac.com/redirect.mp3/#{transAudioUrl}" %}
