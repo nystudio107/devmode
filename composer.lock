@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "70d022ac506a3abfadc1b3e09f42a646",
@@ -2713,16 +2713,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.12",
+            "version": "3.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "9ccbe9552d3018a5adbe35b41a45ed8f4822fcbc"
+                "reference": "159c0d44095cdee65010530c297af387557a710b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/9ccbe9552d3018a5adbe35b41a45ed8f4822fcbc",
-                "reference": "9ccbe9552d3018a5adbe35b41a45ed8f4822fcbc",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/159c0d44095cdee65010530c297af387557a710b",
+                "reference": "159c0d44095cdee65010530c297af387557a710b",
                 "shasum": ""
             },
             "require": {
@@ -2766,7 +2766,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2019-04-25T17:01:43+00:00"
+            "time": "2019-05-02T10:34:10+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
@@ -3177,16 +3177,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "83a102d02e86d0a078760a1f69e547159f7450b6"
+                "reference": "fe175771ea610f23fa2a37e7ea9632e3bd2058db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/83a102d02e86d0a078760a1f69e547159f7450b6",
-                "reference": "83a102d02e86d0a078760a1f69e547159f7450b6",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/fe175771ea610f23fa2a37e7ea9632e3bd2058db",
+                "reference": "fe175771ea610f23fa2a37e7ea9632e3bd2058db",
                 "shasum": ""
             },
             "require": {
@@ -3233,7 +3233,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-04-19T19:22:13+00:00"
+            "time": "2019-05-01T23:11:44+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
