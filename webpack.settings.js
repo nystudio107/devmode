@@ -39,6 +39,9 @@ module.exports = {
         "episodes": "modules/episodes.js",
         "player": "modules/player.js"
     },
+    babelLoaderConfig: {
+        exclude: '',
+    },
     copyWebpackConfig: [
         {
             from: "./src/js/workbox-catch-handler.js",
