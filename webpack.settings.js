@@ -41,7 +41,6 @@ module.exports = {
     },
     babelLoaderConfig: {
         exclude: [
-            /node_modules/
         ],
     },
     copyWebpackConfig: [
