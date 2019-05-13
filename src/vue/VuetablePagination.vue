@@ -8,7 +8,7 @@
     <a @click="loadPage('prev')"
       :class="['btn-nav', css.linkClass, isOnFirstPage ? css.disabledClass : '']">
         <i v-if="css.icons.next != ''" :class="[css.icons.prev]"></i>
-        <span v-else>&nbsp;&lsaquo;</span>
+        <span v-else>&lsaquo;</span>
     </a>
     <template v-if="notEnoughPages">
       <template v-for="n in totalPage">
@@ -29,7 +29,7 @@
     <a @click="loadPage('next')"
       :class="['btn-nav', css.linkClass, isOnLastPage ? css.disabledClass : '']">
       <i v-if="css.icons.next != ''" :class="[css.icons.next]"></i>
-      <span v-else>&rsaquo;&nbsp;</span>
+      <span v-else>&rsaquo;</span>
     </a>
     <a @click="loadPage(totalPage)"
       :class="['btn-nav', css.linkClass, isOnLastPage ? css.disabledClass : '']">
