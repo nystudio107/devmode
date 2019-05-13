@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "70d022ac506a3abfadc1b3e09f42a646",
@@ -397,16 +397,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.25",
+            "version": "3.1.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "d63676d829074e257492f010fdcd7ccc7fe895a9"
+                "reference": "64297dc7367bd6faf2ec8139096344f66b219bb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d63676d829074e257492f010fdcd7ccc7fe895a9",
-                "reference": "d63676d829074e257492f010fdcd7ccc7fe895a9",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/64297dc7367bd6faf2ec8139096344f66b219bb1",
+                "reference": "64297dc7367bd6faf2ec8139096344f66b219bb1",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +481,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-04-30T18:40:25+00:00"
+            "time": "2019-05-08T17:55:55+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1174,16 +1174,16 @@
         },
         {
             "name": "imgix/imgix-php",
-            "version": "2.2.0",
+            "version": "2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/imgix/imgix-php.git",
-                "reference": "8decfc829a96a20b7a51f40fc7781d9929d08d9f"
+                "reference": "081c80c26d34e37d287f10fb6de620b495d11dee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/8decfc829a96a20b7a51f40fc7781d9929d08d9f",
-                "reference": "8decfc829a96a20b7a51f40fc7781d9929d08d9f",
+                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/081c80c26d34e37d287f10fb6de620b495d11dee",
+                "reference": "081c80c26d34e37d287f10fb6de620b495d11dee",
                 "shasum": ""
             },
             "require": {
@@ -1206,7 +1206,7 @@
             "keywords": [
                 "imgix"
             ],
-            "time": "2019-04-08T20:48:07+00:00"
+            "time": "2019-05-07T00:02:57+00:00"
         },
         {
             "name": "intervention/httpauth",
@@ -2160,16 +2160,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "1.36.2",
+            "version": "1.37.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "cd324b98bc30290f233dd0e75e6ce49f7ab2a6c9"
+                "reference": "5be4fdf97076a685b23efdedfc2b73ad0c5eab70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/cd324b98bc30290f233dd0e75e6ce49f7ab2a6c9",
-                "reference": "cd324b98bc30290f233dd0e75e6ce49f7ab2a6c9",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/5be4fdf97076a685b23efdedfc2b73ad0c5eab70",
+                "reference": "5be4fdf97076a685b23efdedfc2b73ad0c5eab70",
                 "shasum": ""
             },
             "require": {
@@ -2214,7 +2214,7 @@
                 "datetime",
                 "time"
             ],
-            "time": "2018-12-28T10:07:33+00:00"
+            "time": "2019-04-19T10:27:42+00:00"
         },
         {
             "name": "nystudio107/craft-disqus",
@@ -3064,16 +3064,16 @@
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "1bf0aa6b6c0787347259be0b96b1553ac5d5375e"
+                "reference": "4c5a1f6ace6c89b6a17026ee21ab5f04940f05de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/1bf0aa6b6c0787347259be0b96b1553ac5d5375e",
-                "reference": "1bf0aa6b6c0787347259be0b96b1553ac5d5375e",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/4c5a1f6ace6c89b6a17026ee21ab5f04940f05de",
+                "reference": "4c5a1f6ace6c89b6a17026ee21ab5f04940f05de",
                 "shasum": ""
             },
             "require": {
@@ -3116,7 +3116,7 @@
                 "webpack",
                 "webpack-dev-server"
             ],
-            "time": "2019-03-24T19:12:29+00:00"
+            "time": "2019-05-06T14:24:28+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
