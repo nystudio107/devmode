@@ -40,7 +40,9 @@ module.exports = {
         "player": "modules/player.js"
     },
     babelLoaderConfig: {
-        exclude: '',
+        exclude: [
+            /node_modules/
+        ],
     },
     copyWebpackConfig: [
         {
