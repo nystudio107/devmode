@@ -31,3 +31,12 @@
     'name': 'twitter:player:stream:content_type',
     'content': 'audio/mpeg'
 }) %}
+
+{% set playerImage = showInfo.showImage.one().getUrl({
+    width: 400,
+    height: 150
+}) %}
+{% do seomatic.meta.twitterImage(playerImage) %}
+
+{% do seomatic.meta.twitterImageWidth(400) %}
+{% do seomatic.meta.twitterImageHeight(150) %}
