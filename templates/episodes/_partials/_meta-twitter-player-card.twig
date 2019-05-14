@@ -11,17 +11,32 @@
  #}
 
 {% do seomatic.meta.twitterCard('player') %}
+
+{# Create a scaled down image to match the width of the player#}
+{% set playerWidth = 400 %}
+{% set playerHeight = 150 %}
+{% set playerImage = showInfo.showImage.one().getUrl({
+    'width': playerWidth,
+    'height': playerHeight,
+}) %}
+{% do seomatic.meta.setAttributes({
+    'twitterImage': 'playerImage',
+    'twitterImageWidth': playerWidth,
+    'twitterImageHeight': playerHeight,
+}) %}
+
+{# Add in the twitter:player specific tags #}
 {% do seomatic.tag.create({
     'name': 'twitter:player',
     'content': siteUrl("/player-card/#{episode.slug}")
 }) %}
 {% do seomatic.tag.create({
     'name': 'twitter:player:width',
-    'content': '300'
+    'content': playerWidth
 }) %}
 {% do seomatic.tag.create({
     'name': 'twitter:player:height',
-    'content': '105'
+    'content': playerHeight
 }) %}
 {% do seomatic.tag.create({
     'name': 'twitter:player:stream',
@@ -31,12 +46,3 @@
     'name': 'twitter:player:stream:content_type',
     'content': 'audio/mpeg'
 }) %}
-
-{% set playerImage = showInfo.showImage.one().getUrl({
-    width: 400,
-    height: 150
-}) %}
-{% do seomatic.meta.twitterImage(playerImage) %}
-
-{% do seomatic.meta.twitterImageWidth(400) %}
-{% do seomatic.meta.twitterImageHeight(150) %}
