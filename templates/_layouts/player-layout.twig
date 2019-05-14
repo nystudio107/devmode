@@ -1,9 +1,15 @@
 {%- minify -%}
 {% set baseUrl = alias('@baseUrl') ~ '/' %}
 {% set backgroundUrl = "#{baseUrl}img/site/devmode-fm-light-bg-opaque.svg" %}
+{% do seomatic.config.renderEnabled(false) %}
+{% do craft.webperf.includeBeacon(false) %}
+{% do craft.webperf.includeCraftBeacon(false) %}
 <!DOCTYPE html>
 <html class="fonts-loaded" lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
 <head>
+    {# -- Basic meta tags -- #}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
 
     {# -- Any <link> tags that should be included in the <head> #}
     {% block headLinks %}
