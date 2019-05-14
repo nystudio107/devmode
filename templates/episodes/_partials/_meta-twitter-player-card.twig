@@ -12,7 +12,7 @@
 
 {% do seomatic.meta.twitterCard('player') %}
 
-{# Create a scaled down image to match the width of the player#}
+{# Create a scaled down image to match the width of the player #}
 {% set playerWidth = 400 %}
 {% set playerHeight = 150 %}
 {% set playerImage = showInfo.showImage.one().getUrl({
@@ -20,7 +20,7 @@
     'height': playerHeight,
 }) %}
 {% do seomatic.meta.setAttributes({
-    'twitterImage': 'playerImage',
+    'twitterImage': playerImage,
     'twitterImageWidth': playerWidth,
     'twitterImageHeight': playerHeight,
 }) %}
