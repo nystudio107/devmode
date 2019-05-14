@@ -33,7 +33,7 @@
             </div>
 
         </div>
-        <audio :loop="innerLoop" ref="audiofile" :src="url" preload="auto" style="display: none;" :autoplay="autoplay"></audio>
+        <audio :loop="innerLoop" ref="audiofile" :src="url" preload="auto" style="display: none;" :autoplay="autoPlay"></audio>
     </div>
 </template>
 
@@ -97,7 +97,7 @@
                 if (this.audio.readyState >= 2) {
                     this.loaded = true;
                     this.durationSeconds = parseInt(this.audio.duration);
-                    return this.playing = this.autoPlay;
+                    return this.playing = !this.audio.paused;
                 }
 
                 throw new Error('Failed to load sound file.');

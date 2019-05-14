@@ -1,7 +1,6 @@
 {% extends "_layouts/player-layout.twig" %}
 
 {% set includeAudioMeta = false %}
-{% do seomatic.config.renderEnabled(false) %}
 
 {% if entry is not defined %}
     {% set entrySlug = craft.app.request.getSegment(2) %}
