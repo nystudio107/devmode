@@ -11,6 +11,7 @@
  #}
 
 {% from "_partials/macros.twig" import addPersonArray %}
+{% from "_partials/macros.twig" import addMentionsArray %}
 
 {# RadioSeries for the episode to belong to #}
 {% set showImage = showInfo.showImage.one() %}
@@ -38,6 +39,7 @@
         'height': showImage.height,
     },
 }) %}
+
 {# Person array of the episode hosts #}
 {% do addPersonArray(radioSeries, 'actor', craft.users.group("hosts").all()) %}
 {# Person array of the episode directors #}
@@ -67,11 +69,15 @@
     'audio': audio,
     'episodeNumber': episode.episodeNumber,
     'genre': showInfo.showGenre,
+    'isAccessibleForFree': true,
     'productionCompany': {
         'id': '{seomatic.site.creator.genericUrl}#creator',
     },
 }) %}
+
 {# Person array of the episode hosts #}
 {% do addPersonArray(mainEntity, 'actor', episode.episodeHosts.all()) %}
 {# Person array of the episode directors #}
 {% do addPersonArray(mainEntity, 'director', craft.users.group("owners").all()) %}
+{# Thing array of the episode mentions #}
+{% do addMentionsArray(mainEntity, 'mentions', episode.episodeReferenceLinks) %}
