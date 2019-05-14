@@ -39,3 +39,18 @@
         (property): usersArray
     }) %}
 {% endmacro addPersonArray %}
+
+{# Add a Thing array from `mentions` to the `property` of `jsonLd` #}
+{% macro addMentionsArray(jsonLd, property, mentions) %}
+    {% set mentionsArray = [] %}
+    {% for mention in mentions %}
+        {% set mentionsArray = mentionsArray | merge([seomatic.jsonLd.create({
+            'type': 'Thing',
+            'name': mention.linkName,
+            'url': mention.linkUrl,
+        }, false)]) %}
+    {% endfor %}
+    {% do jsonLd.setAttributes({
+        (property): mentionsArray
+    }) %}
+{% endmacro addMentionsArray %}
