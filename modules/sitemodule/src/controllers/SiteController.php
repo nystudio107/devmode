@@ -49,7 +49,7 @@ class SiteController extends Controller
         $filter = ''
     ): Response {
         $data = [];
-        $sortField = 'pageLoad';
+        $sortField = 'postDate';
         $sortType = 'DESC';
         // Figure out the sorting type
         if ($sort !== '') {
