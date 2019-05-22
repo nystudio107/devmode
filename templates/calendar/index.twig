@@ -31,14 +31,18 @@
                 {# -- Show summary -- #}
                 <div>
                     <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-xl p-8 leading-normal">
-                        {{ "Pulled straight from our Trello cards, check out the upcoming shows we have scheduled, or subscribe to our .ics calendar feed with the link below:" |typogrify }}
+                        {{ "Pulled straight from our Trello cards, check out the upcoming shows we have scheduled, or subscribe to our .ics calendar feed with the link below, or view the public Google Calendar:" |typogrify }}
                         <br />
                         <br />
                         <div class="inline-block text-devmode-pink bg-grey-lightest font-sans text-2xl p-8">
                             <i class="icon-info-circled align-middle"></i>
                             <ul class="list-reset inline">
                                 <li class="inline">
-                                    <a href="{{ craft.site.calendarFeedUrl() }}" class="tags-link align-middle whitespace-no-wrap" title="Show Calendar feed" target="_blank" rel="nofollow noopener">{{ "Show Calendar feed" | typogrify }}</a>
+                                    <a href="{{ craft.site.calendarFeedUrl() }}" class="tags-link align-middle whitespace-no-wrap" title="Show Calendar feed" target="_blank" rel="nofollow noopener">{{ "Show Calendar .ics feed" | typogrify }}</a>
+                                    <span> </span>
+                                </li>
+                                <li class="inline">
+                                    <a href="https://calendar.google.com/calendar/embed?src=uiv8dsrg58ii87gu16rcji845qfcpgrv%40import.calendar.google.com&ctz=America%2FNew_York" class="tags-link align-middle whitespace-no-wrap" title="Show Calendar feed" target="_blank" rel="nofollow noopener">{{ "Public Google Calendar" | typogrify }}</a>
                                     <span> </span>
                                 </li>
                             </ul>
