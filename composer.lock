@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "70d022ac506a3abfadc1b3e09f42a646",
@@ -397,16 +397,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.1.27",
+            "version": "3.1.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "d5b2aa25fa2e7bb7527fca807b5229e99ea42218"
+                "reference": "310a7d295eabe7b3691cb328efd9099d5dca29f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/d5b2aa25fa2e7bb7527fca807b5229e99ea42218",
-                "reference": "d5b2aa25fa2e7bb7527fca807b5229e99ea42218",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/310a7d295eabe7b3691cb328efd9099d5dca29f5",
+                "reference": "310a7d295eabe7b3691cb328efd9099d5dca29f5",
                 "shasum": ""
             },
             "require": {
@@ -437,7 +437,7 @@
                 "true/punycode": "^2.1.0",
                 "twig/twig": "~2.8.1",
                 "yii2tech/ar-softdelete": "^1.0.2",
-                "yiisoft/yii2": "~2.0.17.0",
+                "yiisoft/yii2": "~2.0.19.0",
                 "yiisoft/yii2-debug": "^2.0.10",
                 "yiisoft/yii2-queue": "2.1.0",
                 "yiisoft/yii2-swiftmailer": "^2.1.0",
@@ -481,7 +481,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-05-14T18:43:31+00:00"
+            "time": "2019-05-21T19:09:25+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -536,16 +536,16 @@
         },
         {
             "name": "craftcms/plugin-installer",
-            "version": "1.5.2",
+            "version": "1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/plugin-installer.git",
-                "reference": "2b75646ce7091d24ef053e8d0b45f89cab04b16f"
+                "reference": "4989a9d57babdf53da0bd70cf6a3145635d653e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/2b75646ce7091d24ef053e8d0b45f89cab04b16f",
-                "reference": "2b75646ce7091d24ef053e8d0b45f89cab04b16f",
+                "url": "https://api.github.com/repos/craftcms/plugin-installer/zipball/4989a9d57babdf53da0bd70cf6a3145635d653e8",
+                "reference": "4989a9d57babdf53da0bd70cf6a3145635d653e8",
                 "shasum": ""
             },
             "require": {
@@ -573,7 +573,7 @@
                 "installer",
                 "plugin"
             ],
-            "time": "2017-07-25T13:26:24+00:00"
+            "time": "2019-05-23T13:16:39+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -812,16 +812,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.7",
+            "version": "2.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e"
+                "reference": "c26463ff9241f27907112fbcd0c86fa670cfef98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/709f21f92707308cdf8f9bcfa1af4cb26586521e",
-                "reference": "709f21f92707308cdf8f9bcfa1af4cb26586521e",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c26463ff9241f27907112fbcd0c86fa670cfef98",
+                "reference": "c26463ff9241f27907112fbcd0c86fa670cfef98",
                 "shasum": ""
             },
             "require": {
@@ -865,7 +865,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2018-12-04T22:38:24+00:00"
+            "time": "2019-05-16T22:02:54+00:00"
         },
         {
             "name": "elvanto/litemoji",
@@ -1266,16 +1266,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.81",
+            "version": "v1.2.82",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "ffb1880f8e9610569d3bc70dc90bf07db311471d"
+                "reference": "48522d4b3495ac8eef2a7298f128f35d7ea3f49b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/ffb1880f8e9610569d3bc70dc90bf07db311471d",
-                "reference": "ffb1880f8e9610569d3bc70dc90bf07db311471d",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/48522d4b3495ac8eef2a7298f128f35d7ea3f49b",
+                "reference": "48522d4b3495ac8eef2a7298f128f35d7ea3f49b",
                 "shasum": ""
             },
             "require": {
@@ -1311,7 +1311,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2019-04-23T20:02:21+00:00"
+            "time": "2019-05-21T20:51:49+00:00"
         },
         {
             "name": "johngrogg/ics-parser",
@@ -1547,16 +1547,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.51",
+            "version": "1.0.52",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "755ba7bf3fb9031e6581d091db84d78275874396"
+                "reference": "c5a5097156387970e6f0ccfcdf03f752856f3391"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/755ba7bf3fb9031e6581d091db84d78275874396",
-                "reference": "755ba7bf3fb9031e6581d091db84d78275874396",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/c5a5097156387970e6f0ccfcdf03f752856f3391",
+                "reference": "c5a5097156387970e6f0ccfcdf03f752856f3391",
                 "shasum": ""
             },
             "require": {
@@ -1627,7 +1627,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-03-30T13:22:34+00:00"
+            "time": "2019-05-20T20:21:14+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -2442,16 +2442,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.5.5",
+            "version": "1.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "6a90a61847e66daef745eab25dc7a6a901ceafe3"
+                "reference": "0196fc0437e35e0cfc7960555999752d5e4e00ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/6a90a61847e66daef745eab25dc7a6a901ceafe3",
-                "reference": "6a90a61847e66daef745eab25dc7a6a901ceafe3",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/0196fc0437e35e0cfc7960555999752d5e4e00ed",
+                "reference": "0196fc0437e35e0cfc7960555999752d5e4e00ed",
                 "shasum": ""
             },
             "require": {
@@ -2503,7 +2503,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2019-04-22T17:11:44+00:00"
+            "time": "2019-05-21T16:49:21+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -2713,16 +2713,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.14",
+            "version": "3.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "159c0d44095cdee65010530c297af387557a710b"
+                "reference": "c1f1d2796b0c949e80111087cdd806d57efa9eec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/159c0d44095cdee65010530c297af387557a710b",
-                "reference": "159c0d44095cdee65010530c297af387557a710b",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/c1f1d2796b0c949e80111087cdd806d57efa9eec",
+                "reference": "c1f1d2796b0c949e80111087cdd806d57efa9eec",
                 "shasum": ""
             },
             "require": {
@@ -2766,7 +2766,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2019-05-02T10:34:10+00:00"
+            "time": "2019-05-21T23:44:42+00:00"
         },
         {
             "name": "nystudio107/craft-routemap",
@@ -2869,16 +2869,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.0",
+            "version": "3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "5d327cc6c347dbb0978fd2765346d1d6c917422b"
+                "reference": "d10d28ad08373f10fa684d5cf579df52c585316d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/5d327cc6c347dbb0978fd2765346d1d6c917422b",
-                "reference": "5d327cc6c347dbb0978fd2765346d1d6c917422b",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d10d28ad08373f10fa684d5cf579df52c585316d",
+                "reference": "d10d28ad08373f10fa684d5cf579df52c585316d",
                 "shasum": ""
             },
             "require": {
@@ -2910,9 +2910,6 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Twig_": "lib/"
-                },
                 "psr-4": {
                     "nystudio107\\seomatic\\": "src/"
                 }
@@ -2942,7 +2939,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-05-20T17:22:58+00:00"
+            "time": "2019-05-25T03:10:00+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
@@ -3003,16 +3000,16 @@
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "1.2.3",
+            "version": "1.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "3d3d51e8a194dcf0069e7f1dd48d3edeaeea1f77"
+                "reference": "b69a204d8aa99bd536b2eed141ed6da781713d21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/3d3d51e8a194dcf0069e7f1dd48d3edeaeea1f77",
-                "reference": "3d3d51e8a194dcf0069e7f1dd48d3edeaeea1f77",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/b69a204d8aa99bd536b2eed141ed6da781713d21",
+                "reference": "b69a204d8aa99bd536b2eed141ed6da781713d21",
                 "shasum": ""
             },
             "require": {
@@ -3061,7 +3058,7 @@
                 "transcoder",
                 "video"
             ],
-            "time": "2019-03-20T14:27:33+00:00"
+            "time": "2019-05-25T02:54:54+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
@@ -3178,16 +3175,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "1.0.9",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "fe175771ea610f23fa2a37e7ea9632e3bd2058db"
+                "reference": "af3333eb8df241071039abd42b1c1095fe15d133"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/fe175771ea610f23fa2a37e7ea9632e3bd2058db",
-                "reference": "fe175771ea610f23fa2a37e7ea9632e3bd2058db",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/af3333eb8df241071039abd42b1c1095fe15d133",
+                "reference": "af3333eb8df241071039abd42b1c1095fe15d133",
                 "shasum": ""
             },
             "require": {
@@ -3234,7 +3231,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-05-01T23:11:44+00:00"
+            "time": "2019-05-21T15:07:37+00:00"
         },
         {
             "name": "nystudio107/craft3-multi-environment",
@@ -5117,21 +5114,21 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.17",
+            "version": "2.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea"
+                "reference": "3e74c7338dd83cea6ffc6f5c25202b9f2f271f89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b56159228c3b4990e38cf41ddd69af27ab015bea",
-                "reference": "b56159228c3b4990e38cf41ddd69af27ab015bea",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/3e74c7338dd83cea6ffc6f5c25202b9f2f271f89",
+                "reference": "3e74c7338dd83cea6ffc6f5c25202b9f2f271f89",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
-                "bower-asset/jquery": "3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+                "bower-asset/jquery": "3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": "~2.0.1",
                 "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
@@ -5213,7 +5210,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2019-03-22T21:26:26+00:00"
+            "time": "2019-05-21T16:01:16+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
