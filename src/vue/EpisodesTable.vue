@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full mb-8 max-w-lg mx-auto">
+    <div class="w-full mb-8 max-w-4xl mx-auto">
         <div class="w-full bg-transparent">
             <vuetable-filter-bar></vuetable-filter-bar>
             <div class="vuetable-pagination clearfix px-2 md:px-0">

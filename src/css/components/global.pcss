@@ -23,13 +23,13 @@ html {
 }
 
 .navbar-link {
-  color: config('colors.devmode-pink');
+  color: theme('colors.devmode-pink');
   @apply .font-sans .text-lg .no-underline .px-2 .py-1 .m-1;
 }
 
 .navbar-link:hover {
-  color: config('colors.devmode-yellow');
-  background-color: config('colors.devmode-pink');
+  color: theme('colors.devmode-yellow');
+  background-color: theme('colors.devmode-pink');
 }
 
 .title-link {
@@ -37,11 +37,11 @@ html {
 }
 
 .title-link:hover {
-  @apply .text-pink-light;
+  @apply .text-pink-300;
 }
 
 .header-link {
-  @apply .text-grey-lightest .no-underline;
+  @apply .text-gray-100 .no-underline;
 }
 
 .header-link:hover {
@@ -67,8 +67,8 @@ html {
 }
 
 .hamburger-menu:hover {
-  color: config('colors.devmode-yellow');
-  background-color: config('colors.devmode-pink');
+  color: theme('colors.devmode-yellow');
+  background-color: theme('colors.devmode-pink');
 }
 
 /* -- CSS variables */
@@ -200,12 +200,12 @@ img.circle-image {
 /* Progress element nonsense */
 
 div#single-song-player div.bottom-container progress.amplitude-song-played-progress:not([value]) {
-  background-color: config('colors.devmode-yellow');
+  background-color: theme('colors.devmode-yellow');
   border-radius: 10px;
 }
 
 div#single-song-player div.bottom-container progress.amplitude-song-played-progress {
-  background-color: config('colors.devmode-yellow');
+  background-color: theme('colors.devmode-yellow');
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
@@ -216,16 +216,16 @@ div#single-song-player div.bottom-container progress.amplitude-song-played-progr
 }
 
 div#single-song-player div.bottom-container progress[value]::-webkit-progress-bar {
-  background-color: config('colors.devmode-yellow');
+  background-color: theme('colors.devmode-yellow');
   border-radius: 10px;
 }
 
 div#single-song-player div.bottom-container progress[value]::-moz-progress-bar {
-  background-color: config('colors.devmode-pink');
+  background-color: theme('colors.devmode-pink');
   border-radius: 10px;
 }
 
 div#single-song-player div.bottom-container progress[value]::-webkit-progress-value {
-  background-color: config('colors.devmode-pink');
+  background-color: theme('colors.devmode-pink');
   border-radius: 10px;
 }

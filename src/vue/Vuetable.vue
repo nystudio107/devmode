@@ -452,7 +452,7 @@
                         descendingClass: 'sorted-desc',
                         sortableIcon: '',
                         detailRowClass: 'vuetable-detail-row',
-                        handleIcon: 'grey sidebar icon',
+                        handleIcon: 'gray-500 sidebar icon',
                         tableBodyClass: 'vuetable-semantic-no-top vuetable-fixed-layout',
                         tableHeaderClass: 'vuetable-fixed-layout'
                     }

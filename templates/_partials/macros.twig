@@ -1,10 +1,10 @@
 {# Display lines of code#}
 {% macro displayCodeLines(lineStartNum, lineEndNum, codeLines) %}
-    <div class="absolute pin-l">
+    <div class="absolute left-0">
         <div class="inline-block pl-2">
             <p class="font-mono text-left whitespace-no-wrap">
                 {% for i in lineStartNum..lineEndNum %}
-                    <span class="text-grey-darker pr-2 border-r-2 border-grey-darker border-solid">{% if i < 10 %}&nbsp;{% endif %}{{ i }}</span>
+                    <span class="text-gray-600 pr-2 border-r-2 border-gray-600 border-solid">{% if i < 10 %}&nbsp;{% endif %}{{ i }}</span>
                     {% set line = "line" ~ i %}
                     {% if codeLines[line] is defined and codeLines[line] |length %}
                         {{ codeLines[line] }}
