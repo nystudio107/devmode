@@ -9,13 +9,13 @@
 
 {% set episodeNumber = summary.regexReplace('(^#\\d+\\s+)(.*)', '\\1') %}
 {% set episodeTitle = summary.regexReplace('^#\\d+\\s+', '').regexReplace('\\[.*\\]', '') %}
-<div class="w-full mb-8 max-w-lg mx-auto">
-    <div class="w-full bg-grey-lightest">
+<div class="w-full mb-8 max-w-4xl mx-auto">
+    <div class="w-full bg-gray-100">
         <div class="p-8">
             <div class="flex flex-wrap items-center justify-center flex-row-reverse md:flex-row flex-col-reverse">
                 {# -- Episode title -- #}
                 <div class=" w-full md:w-2/3 text-left py-2">
-                    <h2 class="font-mono italic text-devmode-pink text-3xl">
+                    <h2 class="font-mono italic text-devmode-pink font-bold text-3xl">
                         {{ episodeTitle | typogrify(true) }}
                     </h2>
                 </div>
