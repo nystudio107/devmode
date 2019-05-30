@@ -1,5 +1,5 @@
-<div class="w-full mb-8 max-w-lg mx-auto">
-    <div class="w-full bg-grey-lightest">
+<div class="w-full mb-8 max-w-4xl mx-auto">
+    <div class="w-full bg-gray-100">
         <div class="p-8">
             <div class="flex flex-wrap items-center justify-center flex-row-reverse md:flex-row flex-col-reverse">
                 {# -- Episode title -- #}
@@ -20,7 +20,7 @@
                 {{ episode.episodeSummary |truncateOnWord(400) |typogrify }}
             </div>
             {# -- Episode tags -- #}
-            <div class="text-grey-dark py-2">
+            <div class="text-gray-500 py-2">
                 {% for tag in episode.episodeTags.all() %}
                     <span class="font-mono italic font-bold text-xs bg-devmode-yellow text-devmode-pink px-2 py-1 m-1">
                         #{{ tag.title }}
