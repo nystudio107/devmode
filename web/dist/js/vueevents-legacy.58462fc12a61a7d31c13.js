@@ -2,8 +2,8 @@
  * @project        Example Project
  * @name           vueevents-legacy.58462fc12a61a7d31c13.js
  * @author         Andrew Welch
- * @build          Thu, May 30, 2019 10:57 PM ET
- * @release        392ad9b4bf84b40aa31c4043edc64f159d31a50e [develop]
+ * @build          Fri, May 31, 2019 1:44 PM ET
+ * @release        f44d32d088d111caa4b8f3113c981806f02d1705 [develop]
  * @copyright      Copyright (c) 2019 Example Company, Inc.
  *
  */
