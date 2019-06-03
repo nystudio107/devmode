@@ -38,7 +38,7 @@ self.__precacheManifest = [
     "url": "/dist/js/lazysizes.36b0b58f3355b10367ec.js"
   },
   {
-    "url": "/dist/js/player.47bda0675522333c5598.js"
+    "url": "/dist/js/player.85476c012f83376927b2.js"
   },
   {
     "revision": "c625b2346404c0346825436d45792164",
@@ -51,7 +51,7 @@ self.__precacheManifest = [
     "url": "/dist/js/episodestable.62eb90d0d10ead3eeba0.js"
   },
   {
-    "url": "/dist/js/episodes.5abab12fbf800b97b89b.js"
+    "url": "/dist/js/episodes.9f8ef19d8a0123d60258.js"
   },
   {
     "revision": "360955dfdf0c99da5b839025abf83dfe",
@@ -62,7 +62,7 @@ self.__precacheManifest = [
     "url": "/dist/fonts/fontello.ttf"
   },
   {
-    "url": "/dist/js/app.bdabf7b1d2dc0c59de58.js"
+    "url": "/dist/js/app.01982b9603e67574f2e9.js"
   },
   {
     "url": "/dist/js/amplitudeplayer.9d37682b23ce614ab128.js"
