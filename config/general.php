@@ -22,6 +22,7 @@ return [
             'subLeft' => true,
             'subRight' => true,
         ],
+        'defaultTokenDuration' => 'P1W',
         'enableCsrfProtection' => true,
         'errorTemplatePrefix' => 'errors/',
         'generateTransformsBeforePageLoad' => true,
