@@ -18,18 +18,18 @@ import OperatorMonoSSmBookItalicWoff2 from '../fonts/OperatorMonoSSm-BookItalic.
 // App main
 const main = async() => {
     // Async load the vue module
-    const VueESM = await import(/* webpackChunkName: "vue" */ 'vue');
+    const { default: Vue } = await import(/* webpackChunkName: "vue" */ 'vue');
     // Async load the vue module
-    const VueClickaway = await import(/* webpackChunkName: "vueclickaway" */ 'vue-clickaway');
-    const VueTyper = await import(/* webpackChunkName: "vuetyper" */ 'vue-typer');
+    const { mixin: VueClickaway } = await import(/* webpackChunkName: "vueclickaway" */ 'vue-clickaway');
+    const { default: VueTyper } = await import(/* webpackChunkName: "vuetyper" */ 'vue-typer');
     const LazySizes = await import(/* webpackChunkName: "lazysizes" */ 'lazysizes');
     const LazySizesBgSet = await import(/* webpackChunkName: "lazysizes" */ 'lazysizes/plugins/bgset/ls.bgset.js');
     LazySizes.init();
-    VueESM.default.use(VueTyper.default);
+    Vue.use(VueTyper);
     // Create our vue instance
-    const vm = new VueESM.default({
+    const vm = new Vue({
         el: '#page-header',
-        mixins: [VueClickaway.mixin],
+        mixins: [VueClickaway],
         components: {
         },
         delimiters: ['${', '}'],

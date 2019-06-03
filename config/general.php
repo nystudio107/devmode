@@ -22,6 +22,7 @@ return [
             'subLeft' => true,
             'subRight' => true,
         ],
+        'defaultTokenDuration' => 'P1W',
         'enableCsrfProtection' => true,
         'errorTemplatePrefix' => 'errors/',
         'generateTransformsBeforePageLoad' => true,
@@ -49,7 +50,6 @@ return [
             'environment' => getenv('ENVIRONMENT'),
         ],
     ],
-
     // Staging (pre-production) environment
     'staging' => [
         // Craft defined config settings
@@ -64,7 +64,6 @@ return [
             'environment' => getenv('ENVIRONMENT'),
         ],
     ],
-
     // Local (development) environment
     'local' => [
         // Craft defined config settings
