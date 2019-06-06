@@ -1,31 +1,4 @@
 
 {% set entry = craft.entries.section("siteOffline").limit(1).one() %}
-{% extends "_layouts/layout.twig" %}
 
-{% block content %}
-{% endblock %}
-
-{% block subcontent %}
-    <section>
-        <div class="bg-gray-100">
-            <div class="container mx-auto py-8">
-                <div class="text-center p-8 mb-8">
-                    <h1 class="text-devmode-pink font-mono italic font-bold text-5xl pt-4">
-                        {{ entry.errorHeadline }}
-                    </h1>
-                    <p class="text-devmode-pink font-sans text-xl pt-4">
-                        {{ entry.errorText |nl2br }}
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    {% include "episodes/_partials/_display_recent_episodes.twig" with {
-        "showInfo": showInfo,
-    } only %}
-{% endblock %}
-
-{# -- Any JavaScript that should be included before </body> -- #}
-{% block bodyJs %}
-{% endblock bodyJs %}
+{% extends "_layouts/error-page-layout.twig" %}
