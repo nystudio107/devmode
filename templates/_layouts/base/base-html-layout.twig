@@ -1,0 +1,56 @@
+{# -- Base HTML layout template that all web requests inherit from -- #}
+{% extends craft.app.request.isAjax() and not craft.app.request.isLivePreview()
+    ? "_layouts/base/base-ajax-layout.twig"
+    : "_layouts/base/base-web-layout.twig"
+%}
+
+{% block htmlPage %}
+    {{ parent() }}
+    <html class="fonts-loaded" lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+    </html>
+{% endblock htmlPage %}
+
+{# -- Page content that should be included in the <head> -- #}
+{% block headContent %}
+    {# -- Any <meta> tags that should be included in the <head> #}
+    {% block headMeta %}
+    {% endblock headMeta %}
+
+    {# -- Any <link> tags that should be included in the <head> #}
+    {% block headLinks %}
+    {% endblock headLinks %}
+
+    {# -- Inline and critical CSS #}
+    <style>
+        {% include "_inline-css/site-fonts.css" %}
+        [v-cloak] {display: none !important;}
+    </style>
+    {% include "_partials/critical-css.twig" %}
+
+    {# -- Any CSS that should be included before </head> -- #}
+    {% block headCss %}
+    {% endblock headCss %}
+
+    {# -- Inline and polyfill JS #}
+    {% include "_partials/head-js.twig" %}
+
+    {# -- Any JavaScript that should be included before </head> -- #}
+    {% block headJs %}
+    {% endblock headJs %}
+{% endblock headContent %}
+
+{# -- Page content that should be included in the <body> -- #}
+{% block bodyContent %}
+    {# -- Page content that should be included in the <body> -- #}
+    {% block body %}
+    {% endblock body %}
+    
+    {#-- Site-wide JavaScript --#}
+    {{ craft.twigpack.includeSafariNomoduleFix() }}
+    {{ craft.twigpack.includeJsModule("app.js", true) }}
+    {{ craft.twigpack.includeJsModule("styles.js", true) }}
+    
+    {# -- Any JavaScript that should be included before </body> -- #}
+    {% block bodyJs %}
+    {% endblock bodyJs %}
+{% endblock bodyContent %}
