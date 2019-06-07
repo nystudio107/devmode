@@ -4,34 +4,35 @@
     : "_layouts/base/base-web-layout.twig"
 %}
 
-{% block htmlPage %}
-    {{ parent() }}
+{% do seomatic.script.container().include(false) %}
+{% do craft.webperf.includeBeacon(false) %}
+
+{% block htmlTag %}
     <html ⚡ lang="{{ craft.app.language |slice(0,2) }}" class="fonts-loaded">
-    </html>
-{% endblock htmlPage %}
+{% endblock htmlTag %}
 
 {# -- Page content that should be included in the <head> -- #}
 {% block headContent %}
-    <script async custom-element="amp-analytics"
-            src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-    <script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
-    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
-    
+    {% include "_partials/amp-head-scripts.twig" %}
+
     {# -- Any <meta> tags that should be included in the <head> #}
     {% block headMeta %}
     {% endblock headMeta %}
-    
+
     {# -- Any <link> tags that should be included in the <head> #}
     {% block headLinks %}
     {% endblock headLinks %}
-    
-    {# -- Inline and critical CSS #}
-    
+
+    {# -- Boilerplate & custom AMP CSS #}
+    {% include "_partials/amp-boilerplate-css.twig" %}
+    <style amp-custom>
     {# -- Any CSS that should be included before </head> -- #}
     {% block headCss %}
     {% endblock headCss %}
-    
+    {% include "_partials/amp-inline-css.css" %}
+    {% include "_inline-css/site-fonts.css" %}
+    </style>
+
     {# -- Any JavaScript that should be included before </head> -- #}
     {% block headJs %}
     {% endblock headJs %}
@@ -42,7 +43,10 @@
     {# -- Page content that should be included in the <body> -- #}
     {% block body %}
     {% endblock body %}
-    
+
+    {# -- AMP Analytics --#}
+    {% include "_partials/amp-analytics.twig" %}
+
     {# -- Any JavaScript that should be included before </body> -- #}
     {% block bodyJs %}
     {% endblock bodyJs %}
