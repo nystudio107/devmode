@@ -3,6 +3,9 @@
 
 {% block htmlPage %}
 <!DOCTYPE html>
+{% block htmlTag %}
+    <html>
+{% endblock htmlTag %}
     {% block headTag %}
         <head>
             {% include "_partials/head-meta.twig" %}
@@ -11,7 +14,7 @@
             {% endblock headContent %}
         </head>
     {% endblock headTag %}
-    
+
     {% block bodyTag %}
         <body>
         {# -- Page content that should be included in the <body> -- #}
@@ -19,4 +22,5 @@
         {% endblock bodyContent %}
         </body>
     {% endblock bodyTag %}
+    </html>
 {% endblock htmlPage %}

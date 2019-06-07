@@ -4,11 +4,9 @@
     : "_layouts/base/base-web-layout.twig"
 %}
 
-{% block htmlPage %}
-    {{ parent() }}
+{% block htmlTag %}
     <html class="fonts-loaded" lang="{{ craft.app.language |slice(0,2) }}" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-    </html>
-{% endblock htmlPage %}
+{% endblock htmlTag %}
 
 {# -- Page content that should be included in the <head> -- #}
 {% block headContent %}
@@ -44,12 +42,12 @@
     {# -- Page content that should be included in the <body> -- #}
     {% block body %}
     {% endblock body %}
-    
+
     {#-- Site-wide JavaScript --#}
     {{ craft.twigpack.includeSafariNomoduleFix() }}
     {{ craft.twigpack.includeJsModule("app.js", true) }}
     {{ craft.twigpack.includeJsModule("styles.js", true) }}
-    
+
     {# -- Any JavaScript that should be included before </body> -- #}
     {% block bodyJs %}
     {% endblock bodyJs %}
