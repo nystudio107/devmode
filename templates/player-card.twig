@@ -1,4 +1,4 @@
-{% extends "_layouts/player-layout.twig" %}
+{% extends "_layouts/player-page-layout.twig" %}
 
 {% set includeAudioMeta = false %}
 
@@ -10,11 +10,7 @@
     }).one() %}
 {% endif %}
 
-{% block headLinks %}
-{% endblock headLinks %}
-
 {% block content %}
-
     <section>
         <div>
             <div class="flex flex-wrap">
@@ -27,7 +23,6 @@
             </div>
         </div>
     </section>
-
 {% endblock %}
 
 {# -- Any JavaScript that should be included before </body> -- #}

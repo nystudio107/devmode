@@ -1,0 +1,16 @@
+{# -- Root global variables that all templates inherit from -- #}
+{# -- This allows for defining site-wide Twig variables as needed -- #}
+
+{# -- Prefetch & preconnect headers and links -- #}
+{% set prefetchUrls = [
+    alias("@baseUrl"),
+] %}
+{# -- General global variables -- #}
+{% set baseUrl = alias('@baseUrl') ~ '/' %}
+{% set backgroundUrl = "#{baseUrl}img/site/devmode-fm-light-bg-opaque.svg" %}
+{% set footerBackgroundUrl = "#{baseUrl}img/site/devmode-fm-dark-bg.svg" %}
+{% set gaTrackingId = "UA-69117511-5" %}
+
+{# -- Twig output from the render; this must be in a block -- #}
+{% block htmlPage %}
+{% endblock %}

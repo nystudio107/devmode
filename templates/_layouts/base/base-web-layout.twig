@@ -1,0 +1,26 @@
+{# -- Base web layout template that all web requests inherit from -- #}
+{% extends "_layouts/global-variables.twig" %}
+
+{% block htmlPage %}
+<!DOCTYPE html>
+    {% block htmlTag %}
+        <html lang="{{ craft.app.language |slice(0,2) }}">
+    {% endblock htmlTag %}
+    {% block headTag %}
+        <head>
+    {% endblock headTag %}
+        {% include "_partials/head-meta.twig" %}
+        {# -- Page content that should be included in the <head> -- #}
+        {% block headContent %}
+        {% endblock headContent %}
+        </head>
+
+        {% block bodyTag %}
+        <body>
+        {% endblock bodyTag %}
+            {# -- Page content that should be included in the <body> -- #}
+            {% block bodyContent %}
+            {% endblock bodyContent %}
+        </body>
+    </html>
+{% endblock htmlPage %}

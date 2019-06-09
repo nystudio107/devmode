@@ -4,13 +4,13 @@
     <div class="w-full max-w-4xl mx-auto">
         {# -- Episode number and date -- #}
         <div>
-            <div class="inline-block text-devmode-pink bg-gray-100 font-mono text-xs text-left uppercase p-8">
+            <div class="inline-block text-devmode-pink devmode-container font-mono text-xs text-left uppercase p-8">
                 {{ "Episode " ~ episode.episodeNumber }} / {{ episode.postDate |date('Y.m.d') }}
             </div>
         </div>
         {# -- Episode title -- #}
         <div>
-            <div class="inline-block bg-gray-100 p-8">
+            <div class="inline-block devmode-container p-8">
                 <strong>
                     <h1 class="text-devmode-pink font-mono italic font-bold text-4xl sm:text-5xl">
                         <a href="{{ episode.url }}" class="title-link">
@@ -22,13 +22,13 @@
         </div>
         {# -- Episode hosts -- #}
         <div>
-            <div class="inline-block text-devmode-pink bg-gray-100 font-mono text-xs text-left p-8">
+            <div class="inline-block text-devmode-pink devmode-container font-mono text-xs text-left p-8">
                 {% for host in episode.episodeHosts.all() %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}
             </div>
         </div>
         {# -- Episode tags -- #}
         <div>
-            <div class="inline-block bg-gray-100 p-8">
+            <div class="inline-block devmode-container p-8">
                 {% for tag in episode.episodeTags.all() %}
                     <span class="devmode-tags">
                         #{{ tag.title }}
@@ -38,14 +38,14 @@
         </div>
         {# -- Episode summary -- #}
         <div>
-            <div class="inline-block text-devmode-pink bg-gray-100 font-sans text-xl p-8 leading-normal">
+            <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 leading-normal">
                 {{ episode.episodeSummary |md |nl2br |typogrify }}
             </div>
         </div>
         {# -- Reference links -- #}
         {% if  episode.episodeReferenceLinks |length %}
             <div>
-                <div class="inline-block text-devmode-pink bg-gray-100 font-sans text-2xl p-8">
+                <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8">
                     <i class="icon-info-circled align-middle"></i>
                     <ul class="list-reset inline">
                         {% for link in episode.episodeReferenceLinks %}
@@ -60,10 +60,10 @@
         {% endif %}
         {# -- Comments -- #}
         {% set commentsCount = disqusCount(episode.slug) %}
-        <div class="inline-block text-devmode-pink bg-gray-100 font-sans text-2xl p-8">
+        <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8">
             <a class="title-link" href="{{ episode.url ~ "#comments" }}">
                 <i class="icon-comment align-middle"></i>
-                <span class="text-devmode-pink bg-gray-100 font-sans text-xl leading-normal align-middle">
+                <span class="text-devmode-pink devmode-container font-sans text-xl leading-normal align-middle">
                     {{ commentsCount }} {{ "comment" | pluralize(commentsCount, 1) }}
                 </span>
             </a>
