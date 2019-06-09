@@ -60,8 +60,7 @@ td.text-right {
 
 .btn:not(.submit) {
   color: #eb5286;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fafafa));
-  background-image: linear-gradient(#fff, #fafafa);
+  background-image: none;
 }
 
 .btn:not(.submit):active, .btn:not(.submit).active {

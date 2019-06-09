@@ -4,7 +4,7 @@
             <div class="text-center">
                 <input type="text"
                        v-model="filterText"
-                       class="text-xl rounded-full p-2 text-center"
+                       class="text-xl rounded-full p-2 text-center text-devmode-pink devmode-container"
                        @keyup="doFilter"
                        placeholder="search"
                 >

@@ -22,13 +22,13 @@
             <div class="w-full max-w-4xl mx-auto">
                 {# -- Intro -- #}
                 <div>
-                    <div class="inline-block text-devmode-pink bg-gray-100 font-mono text-xs text-left p-8">
+                    <div class="inline-block text-devmode-pink devmode-container font-mono text-xs text-left p-8">
                         {{ "Check out" |typogrify }}
                     </div>
                 </div>
                 {# -- Show title -- #}
                 <div>
-                    <div class="inline-block bg-gray-100 p-8">
+                    <div class="inline-block devmode-container p-8">
                         <strong>
                             <h1 class="text-devmode-pink font-mono italic font-bold text-4xl sm:text-5xl">
                                 {{ "What's coming up!" | typogrify }}
@@ -39,11 +39,11 @@
 
                 {# -- Show summary -- #}
                 <div>
-                    <div class="inline-block text-devmode-pink bg-gray-100 font-sans text-xl p-8 leading-normal">
+                    <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 leading-normal">
                         {{ "Pulled straight from our Trello cards, check out the upcoming shows we have scheduled, or subscribe to our .ics calendar feed with the link below:" |typogrify }}
                         <br />
                         <br />
-                        <div class="inline-block text-devmode-pink bg-gray-100 font-sans text-2xl p-8">
+                        <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8">
                             <i class="icon-info-circled align-middle"></i>
                             <ul class="list-reset inline">
                                 <li class="inline">
@@ -63,11 +63,11 @@
 
 {% block subcontent %}
     <section>
-        <div class="bg-devmode-aqua">
+        <div class="devmode-aqua-background">
             <div class="pt-8">
                 <div class="w-full bg-transparent">
                     <div class="pt-8 mb-8">
-                        <h3 class="text-white text-center">
+                        <h3 class="devmode-header-text text-center">
                             Upcoming shows
                         </h3>
                     </div>
