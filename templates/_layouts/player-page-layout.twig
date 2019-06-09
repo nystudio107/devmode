@@ -1,0 +1,17 @@
+{# -- Layout template for HTML pages -- #}
+{% extends "_layouts/base/base-html-layout.twig" %}
+
+{# -- Page body -- #}
+{% block bodyHtml %}
+    <div id="page-container" class="overflow-hidden leading-tight">
+        <div id="content-container" class="bg-repeat header-background" style="background-image: url('{{ backgroundUrl }}');">
+            <main>
+                <div class="container mx-auto pb-8">
+                    {# -- Primary content block -- #}
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </main>
+        </div>
+    </div>
+{% endblock bodyHtml %}

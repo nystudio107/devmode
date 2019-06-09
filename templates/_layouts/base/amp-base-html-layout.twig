@@ -1,0 +1,53 @@
+{# -- Base HTML layout template that all web requests inherit from -- #}
+{% extends craft.app.request.isAjax() and not craft.app.request.isLivePreview()
+    ? "_layouts/base/base-ajax-layout.twig"
+    : "_layouts/base/base-web-layout.twig"
+%}
+
+{% do seomatic.script.container().include(false) %}
+{% do craft.webperf.includeBeacon(false) %}
+
+{% block htmlTag %}
+    <html ⚡ lang="{{ craft.app.language |slice(0,2) }}" class="fonts-loaded">
+{% endblock htmlTag %}
+
+{# -- Page content that should be included in the <head> -- #}
+{% block headContent %}
+    {% include "_partials/amp-head-scripts.twig" %}
+
+    {# -- Any <meta> tags that should be included in the <head> #}
+    {% block headMeta %}
+    {% endblock headMeta %}
+
+    {# -- Any <link> tags that should be included in the <head> #}
+    {% block headLinks %}
+    {% endblock headLinks %}
+
+    {# -- Boilerplate & custom AMP CSS #}
+    {% include "_partials/amp-boilerplate-css.twig" %}
+    <style amp-custom>
+    {# -- Any CSS that should be included before </head> -- #}
+    {% block headCss %}
+    {% endblock headCss %}
+    {% include "_partials/amp-inline-css.css" %}
+    {% include "_inline-css/site-fonts.css" %}
+    </style>
+
+    {# -- Any JavaScript that should be included before </head> -- #}
+    {% block headJs %}
+    {% endblock headJs %}
+{% endblock headContent %}
+
+{# -- Page content that should be included in the <body> -- #}
+{% block bodyContent %}
+    {# -- Page content that should be included in the <body> -- #}
+    {% block bodyHtml %}
+    {% endblock bodyHtml %}
+
+    {# -- AMP Analytics --#}
+    {% include "_partials/amp-analytics.twig" %}
+
+    {# -- Any JavaScript that should be included before </body> -- #}
+    {% block bodyJs %}
+    {% endblock bodyJs %}
+{% endblock bodyContent %}

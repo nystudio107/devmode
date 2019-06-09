@@ -2,11 +2,10 @@
 {# -- Basic meta tags -- #}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1">
+<link rel="alternate" type="application/rss+xml" href="{{ siteUrl("/rss") }}" />
+<meta name="apple-itunes-app" content="app-id=1323364824" />
 
 {# -- Prefetch & preconnect headers and links -- #}
-{% set prefetchUrls = [
-    alias("@baseUrl"),
-] %}
 {% set headerLink = "Link: " %}
 {% for url in prefetchUrls %}
     {% set headerLink = headerLink ~ "<#{url}>; rel=dns-prefetch;," %}

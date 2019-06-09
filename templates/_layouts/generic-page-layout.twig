@@ -1,0 +1,31 @@
+{# -- Layout template for HTML pages -- #}
+{% extends "_layouts/base/base-html-layout.twig" %}
+
+{# -- Page body -- #}
+{% block bodyHtml %}
+    <div id="page-container" class="overflow-hidden leading-tight">
+        <div id="content-container" class="bg-repeat header-background devmode-background">
+
+            {# -- Info header, including _navbar.twig -- #}
+            {% include "_partials/info-header.twig" %}
+
+            <main>
+                <div class="container mx-auto pb-8">
+                    {# -- Primary content block -- #}
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </main>
+        </div>
+
+        {# -- Content that appears below the primary content block -- #}
+        {% block subcontent %}
+        {% endblock %}
+
+        {# -- Info footer -- #}
+        {% include "_partials/info-footer.twig" %}
+
+        {# -- HTML Footer -- #}
+        {% include "_partials/global-footer.twig" %}
+    </div>
+{% endblock bodyHtml %}
