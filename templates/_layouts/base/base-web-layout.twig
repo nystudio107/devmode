@@ -3,24 +3,24 @@
 
 {% block htmlPage %}
 <!DOCTYPE html>
-{% block htmlTag %}
-    <html>
-{% endblock htmlTag %}
+    {% block htmlTag %}
+        <html lang="{{ craft.app.language |slice(0,2) }}">
+    {% endblock htmlTag %}
     {% block headTag %}
         <head>
-            {% include "_partials/head-meta.twig" %}
-            {# -- Page content that should be included in the <head> -- #}
-            {% block headContent %}
-            {% endblock headContent %}
-        </head>
     {% endblock headTag %}
+        {% include "_partials/head-meta.twig" %}
+        {# -- Page content that should be included in the <head> -- #}
+        {% block headContent %}
+        {% endblock headContent %}
+        </head>
 
-    {% block bodyTag %}
+        {% block bodyTag %}
         <body>
-        {# -- Page content that should be included in the <body> -- #}
-        {% block bodyContent %}
-        {% endblock bodyContent %}
+        {% endblock bodyTag %}
+            {# -- Page content that should be included in the <body> -- #}
+            {% block bodyContent %}
+            {% endblock bodyContent %}
         </body>
-    {% endblock bodyTag %}
     </html>
 {% endblock htmlPage %}
