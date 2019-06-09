@@ -1,5 +1,5 @@
 <template>
-    <div class="my-8 p-8 bg-gray-100">
+    <div class="my-8 p-8 devmode-container">
         <div class="flex flex-wrap items-center justify-center flex-row-reverse md:flex-row flex-col-reverse">
             <div class=" w-full md:w-2/3 text-left py-2">
                 <h2 class="font-mono italic font-bold text-devmode-pink text-3xl">

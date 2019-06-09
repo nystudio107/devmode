@@ -22,6 +22,43 @@ html {
   appearance: none;
 }
 
+.devmode-container {
+  background-color: #f7fafc;
+}
+
+.devmode-header-text {
+  color: #f7fafc;
+}
+
+.devmode-background {
+  background-image: url('/img/site/devmode-fm-light-bg-opaque.svg');
+}
+
+.devmode-aqua-background {
+  background-color: #00b2c2;
+}
+
+@media (prefers-color-scheme: dark) {
+  .devmode-aqua-background {
+    background-color: #3B6471;
+  }
+  .devmode-container {
+    background-color: #22223A;
+  }
+  .devmode-background {
+    background-image: url('/img/site/devmode-fm-dark-bg.svg');
+  }
+  .devmode-header-text {
+    opacity: .50;
+  }
+  img {
+    opacity: .75;
+  }
+  img:hover {
+    opacity: 1;
+  }
+}
+
 .navbar-link {
   color: theme('colors.devmode-pink');
   @apply .font-sans .text-lg .no-underline .px-2 .py-1 .m-1;
