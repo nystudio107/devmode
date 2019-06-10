@@ -1,0 +1,29 @@
+{# -- Webmentions facepile -- #}
+{% if entry is defined and entry | length %}
+    <aside>
+        <div>
+            <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 leading-normal">
+                {% from "_partials/macros.twig" import webmentions %}
+                <div class="container flex justify-center py-4">
+                    <div class="w-full px-4">
+                        <div class="webmentions" id="webmentions">
+                            {% set showUrl = "https://devmode.fm/" ~ entry.uri %}
+                            {{ webmentions("retweets", {
+                                "target": showUrl,
+                                "wm-property": "repost-of",
+                            }) }}
+                            {{ webmentions("likes", {
+                                "target": showUrl,
+                                "wm-property[]": "like-of",
+                            }) }}
+                            {{ webmentions("mentions", {
+                                "target": showUrl,
+                                "wm-property": ["in-reply-to", "mention-of"],
+                            }) }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+{% endif %}
