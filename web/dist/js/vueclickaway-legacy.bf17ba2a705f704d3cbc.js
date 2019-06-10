@@ -2,8 +2,8 @@
  * @project        Example Project
  * @name           vueclickaway-legacy.bf17ba2a705f704d3cbc.js
  * @author         Andrew Welch
- * @build          Sun, Jun 9, 2019 3:10 AM ET
- * @release        e1711dfa0acd5381bf73acb8bd02bf0fe2098fe8 [develop]
+ * @build          Mon, Jun 10, 2019 8:28 PM ET
+ * @release        9865498fe83085dee388be1391fd9be46ecfb564 [develop]
  * @copyright      Copyright (c) 2019 Example Company, Inc.
  *
  */
