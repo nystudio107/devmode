@@ -84,11 +84,11 @@ module.exports = {
                     template: "calendar/amp_index"
                 },
                 {
-                    url: "episodes/talking-craft-cms-rc1",
+                    url: "episodes/webpack-inside-out-with-sean-larkin",
                     template: "episodes/_entry"
                 },
                 {
-                    url: "episodes/talking-craft-cms-rc1",
+                    url: "episodes/webpack-inside-out-with-sean-larkin",
                     template: "episodes/_amp_entry"
                 },
                 {
