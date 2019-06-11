@@ -11,15 +11,15 @@
                             {{ webmentions("retweets", {
                                 "target": showUrl,
                                 "wm-property": "repost-of",
-                            }, false) }}
+                            }, true) }}
                             {{ webmentions("likes", {
                                 "target": showUrl,
                                 "wm-property[]": "like-of",
-                            }, false) }}
+                            }, true) }}
                             {{ webmentions("mentions", {
                                 "target": showUrl,
                                 "wm-property": ["in-reply-to", "mention-of"],
-                            }, false) }}
+                            }, true) }}
                         </div>
                     </div>
                 </div>
