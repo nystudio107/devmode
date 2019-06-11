@@ -2,8 +2,8 @@
  * @project        Example Project
  * @name           episodestable.62eb90d0d10ead3eeba0.js
  * @author         Andrew Welch
- * @build          Mon, Jun 10, 2019 8:28 PM ET
- * @release        9865498fe83085dee388be1391fd9be46ecfb564 [develop]
+ * @build          Tue, Jun 11, 2019 2:03 PM ET
+ * @release        107fd637c9feba53aa161c46f37cd2869c64fc45 [develop]
  * @copyright      Copyright (c) 2019 Example Company, Inc.
  *
  */
