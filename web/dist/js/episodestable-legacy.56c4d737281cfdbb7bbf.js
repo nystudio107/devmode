@@ -2,8 +2,8 @@
  * @project        Example Project
  * @name           episodestable-legacy.56c4d737281cfdbb7bbf.js
  * @author         Andrew Welch
- * @build          Tue, Jun 11, 2019 2:03 PM ET
- * @release        107fd637c9feba53aa161c46f37cd2869c64fc45 [develop]
+ * @build          Tue, Jun 11, 2019 2:08 PM ET
+ * @release        a4cd4a04c0ca6e96e8594dbd2660a0841839db48 [develop]
  * @copyright      Copyright (c) 2019 Example Company, Inc.
  *
  */
