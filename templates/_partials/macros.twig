@@ -4,7 +4,7 @@
  # @param     []  params
  # @param string  label
  #}
-{% macro webmentions(label, params) %}
+{% macro webmentions(label, params, amp = false) %}
     {% set webmentionApiUrl = "https://webmention.io/api/mentions.jf2" %}
     {% set webmentionApiToken = "yZ0xAVxFigzp1RiwI1-Uow" %}
     {% set webmentionQueryParams = {
@@ -16,14 +16,28 @@
     {%- set webmentionResponse = craft.app.api.client.get(webmentionQuery).getBody().__toString() | json_decode -%}
     {% if webmentionResponse and webmentionResponse.children and webmentionResponse.children is iterable %}
         <div class="webmentions__facepile">
-            <h3 class="font-mono italic text-devmode-pink font-bold text-3xl inline-block">{{ webmentionResponse.children | length  }} {{ label }}</h3>
+            <h3 class="font-mono italic text-devmode-pink font-bold text-3xl inline-block">
+                {{ webmentionResponse.children | length  }} {{ label }}
+            </h3>
             {% for webmention in webmentionResponse.children %}
-                <a class="" href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
-                    <img src="{{ craft.imageOptimize.placeholderBox(48, 48) }}"
-                         data-src="{{ webmention.author.photo }}"
-                         alt="{{ webmention.author.name }}"
-                         class="webmentions__face lazyload"
-                    />
+                <a href="{{ webmention.url }}" target="_blank" rel="noopener noreferrer">
+                    {% if amp %}
+                    <amp-img
+                            class="inline-block webmentions__face"
+                            src="{{ webmention.author.photo }}"
+                            alt="{{ webmention.author.name }}"
+                            width="48"
+                            height="48"
+                    >
+                    </amp-img>
+                    {% else %}
+                        <img
+                             src="{{ craft.imageOptimize.placeholderBox(48, 48) }}"
+                             data-src="{{ webmention.author.photo }}"
+                             alt="{{ webmention.author.name }}"
+                             class="webmentions__face lazyload"
+                        />
+                    {% endif %}
                 </a>
             {% endfor %}
         </div>
