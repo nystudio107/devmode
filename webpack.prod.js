@@ -12,7 +12,7 @@ const webpack = require('webpack');
 
 // webpack plugins
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
-const CleanWebpackPlugin = require('clean-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CompressionPlugin = require('compression-webpack-plugin');
 const CreateSymlinkPlugin = require('create-symlink-webpack-plugin');
 const CriticalCssPlugin = require('critical-css-webpack-plugin');
