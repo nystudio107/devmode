@@ -126,7 +126,7 @@ const configureCriticalCss = () => {
 // Configure Clean webpack
 const configureCleanWebpack = () => {
     return {
-        root: path.resolve(__dirname, settings.paths.dist.base),
+        cleanOnceBeforeBuildPatterns: settings.paths.dist.clean,
         verbose: true,
         dry: false
     };
@@ -344,7 +344,7 @@ module.exports = [
                 ],
             },
             plugins: [
-                new CleanWebpackPlugin(settings.paths.dist.clean,
+                new CleanWebpackPlugin(
                     configureCleanWebpack()
                 ),
                 new MiniCssExtractPlugin({
