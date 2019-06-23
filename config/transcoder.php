@@ -57,6 +57,10 @@ return [
 
         // Use a md5 hash for the filenames instead of parameterized naming
         'useHashedNames' => false,
+        // if a upload location has a subfolder defined, add this to the transcoder paths too
+        'createSubfolders' => true,
+        // Add the Clear Caches utility to the CP?
+        'clearCaches' => false,
 
         // Preset video encoders
         'videoEncoders' => [
