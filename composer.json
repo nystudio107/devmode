@@ -66,21 +66,13 @@
       "@php nys-setup update",
       "@php craft migrate/all",
       "@php craft project-config/sync",
-      "@php craft clear-caches/compiled-templates",
-      "@php craft clear-caches/cp-resources",
-      "@php craft clear-caches/data",
-      "@php craft clear-caches/fastcgi-cache-bust",
-      "@php craft clear-caches/temp-files"
+      "@php craft clear-caches/all"
     ],
     "post-install-cmd": [
       "@php nys-setup update",
       "@php craft migrate/all",
       "@php craft project-config/sync",
-      "@php craft clear-caches/compiled-templates",
-      "@php craft clear-caches/cp-resources",
-      "@php craft clear-caches/data",
-      "@php craft clear-caches/fastcgi-cache-bust",
-      "@php craft clear-caches/temp-files"
+      "@php craft clear-caches/all"
     ]
   }
 }
