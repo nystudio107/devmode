@@ -13,7 +13,7 @@
     } | merge(params) %}
     {% set webmentionQuery = url(webmentionApiUrl, webmentionQueryParams) %}
     {% set webmentionQuery = webmentionQuery | replace('/%5B[0-9]+%5D/', '[]') %}
-    {%- set webmentionResponse = craft.app.api.client.get(webmentionQuery).getBody().__toString() | json_decode -%}
+    {%- set webmentionResponse = craft.site.webmentions(webmentionQuery) -%}
     {% if webmentionResponse and webmentionResponse.children and webmentionResponse.children is iterable %}
         <div class="webmentions__facepile">
             <h3 class="font-mono italic text-devmode-pink font-bold text-3xl inline-block">
