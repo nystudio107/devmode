@@ -10,7 +10,7 @@
             {% if not craft.app.config.general.devMode %}
                 {% set transAudioUrl = transAudioUrl | replace('/^(http|https):/', '') %}
                 {% set transAudioUrl = transAudioUrl | replace('//', '') %}
-                {% set transAudioUrl = "https://dts.podtrac.com/redirect.mp3/#{transAudioUrl}" %}
+                {% set transAudioUrl = "https://chtbl.com/track/81493/#{transAudioUrl}" %}
             {% endif %}
             {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
             {% include "episodes/_partials/_meta-episode-custom.twig" with {
