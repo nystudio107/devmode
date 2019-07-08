@@ -1,10 +1,6 @@
 {% header "Content-Type: application/rss+xml" %}
 {% set hosts = craft.users.group("owners").all() %}
 {% set baseUrl = alias('@baseUrl') ~ '/' %}
-{% set myAnalytics = eventAnalytics("podcast", "access", "Podcast RSS Feed", 1) %}
-{% if myAnalytics |length %}
-    {% do myAnalytics.sendEvent() %}
-{% endif %}
 {% do craft.webperf.includeBeacon(false) %}
 {% do seomatic.config.renderEnabled(false) %}
 <?xml version="1.0" encoding="UTF-8"?>
