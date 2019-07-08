@@ -68,7 +68,6 @@
                 </description>
                 <content:encoded>
                     <![CDATA[
-                    {% minify %}
                     <p>{{ episode.episodeSummary |typogrifyFeed |nl2br |raw }}</p>
                     <ul>
                         {% for link in episode.episodeReferenceLinks %}
@@ -77,7 +76,6 @@
                             </li>
                         {% endfor %}
                     </ul>
-                    {% endminify %}
                     ]]>
                 </content:encoded>
     
