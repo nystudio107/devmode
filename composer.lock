@@ -1290,17 +1290,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/u01jmg3/ics-parser.git",
-                "reference": "3bbd83235a126e9eba627eef0b462f798c274780"
+                "reference": "e9d8d4dd9929cd60524c8856f8373a05b57012a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/3bbd83235a126e9eba627eef0b462f798c274780",
-                "reference": "3bbd83235a126e9eba627eef0b462f798c274780",
+                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/e9d8d4dd9929cd60524c8856f8373a05b57012a3",
+                "reference": "e9d8d4dd9929cd60524c8856f8373a05b57012a3",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
-                "nesbot/carbon": "^1.38.4 || ^2.0",
+                "nesbot/carbon": "^1.39.0 || ^2.0",
                 "php": ">=5.3.9"
             },
             "require-dev": {
@@ -1338,7 +1338,7 @@
                 "ics-parser",
                 "ifb"
             ],
-            "time": "2019-07-10T13:00:53+00:00"
+            "time": "2019-07-11T10:32:51+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3053,16 +3053,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.12",
+            "version": "3.2.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "a187164e5aac343ed5b2897de22c45853bfab46c"
+                "reference": "001013ad6927baeb3b4693bea85f9ef95434d54d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/a187164e5aac343ed5b2897de22c45853bfab46c",
-                "reference": "a187164e5aac343ed5b2897de22c45853bfab46c",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/001013ad6927baeb3b4693bea85f9ef95434d54d",
+                "reference": "001013ad6927baeb3b4693bea85f9ef95434d54d",
                 "shasum": ""
             },
             "require": {
@@ -3123,7 +3123,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-07-10T16:05:56+00:00"
+            "time": "2019-07-11T13:11:30+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
