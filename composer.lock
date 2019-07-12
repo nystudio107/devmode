@@ -2626,24 +2626,25 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.5.7",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "2a9b385fb2ba38a601b4a04d21f62a62d8594396"
+                "reference": "a39fa9ca772a36244ff2c720f3c1b130dab78b29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/2a9b385fb2ba38a601b4a04d21f62a62d8594396",
-                "reference": "2a9b385fb2ba38a601b4a04d21f62a62d8594396",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/a39fa9ca772a36244ff2c720f3c1b130dab78b29",
+                "reference": "a39fa9ca772a36244ff2c720f3c1b130dab78b29",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
                 "ksubileau/color-thief-php": "^1.3",
                 "mikehaertl/php-shellcommand": "~1.2",
-                "nystudio107/craft-imageoptimize-imgix": "^1.0.3",
-                "nystudio107/craft-imageoptimize-thumbor": "^1.1.2"
+                "nystudio107/craft-imageoptimize-imgix": "^1.1.0",
+                "nystudio107/craft-imageoptimize-sharp": "^1.0.0",
+                "nystudio107/craft-imageoptimize-thumbor": "^1.3.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2687,26 +2688,26 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2019-06-13T16:45:22+00:00"
+            "time": "2019-07-05T15:38:32+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
-            "version": "1.0.3",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize-imgix.git",
-                "reference": "54d30be25179955ed61cd5cea9797b05c6442811"
+                "reference": "0cb74df46130b006dbf40f45d3f14b2f185a2497"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/54d30be25179955ed61cd5cea9797b05c6442811",
-                "reference": "54d30be25179955ed61cd5cea9797b05c6442811",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/0cb74df46130b006dbf40f45d3f14b2f185a2497",
+                "reference": "0cb74df46130b006dbf40f45d3f14b2f185a2497",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
                 "imgix/imgix-php": "^2.1.0",
-                "nystudio107/craft-imageoptimize": "^1.5.2"
+                "nystudio107/craft-imageoptimize": "^1.6.0"
             },
             "type": "image-transform",
             "autoload": {
@@ -2731,25 +2732,68 @@
                 "image-transform",
                 "imgix"
             ],
-            "time": "2019-02-23T03:24:51+00:00"
+            "time": "2019-07-05T15:20:05+00:00"
         },
         {
-            "name": "nystudio107/craft-imageoptimize-thumbor",
-            "version": "1.2.2",
+            "name": "nystudio107/craft-imageoptimize-sharp",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nystudio107/craft-imageoptimize-thumbor.git",
-                "reference": "f9622ef2cd86a0483ee1f9eac7221ffd606b468b"
+                "url": "https://github.com/nystudio107/craft-imageoptimize-sharp.git",
+                "reference": "95c444c29607a9943f1624739a81f00fca3ead8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-thumbor/zipball/f9622ef2cd86a0483ee1f9eac7221ffd606b468b",
-                "reference": "f9622ef2cd86a0483ee1f9eac7221ffd606b468b",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-sharp/zipball/95c444c29607a9943f1624739a81f00fca3ead8f",
+                "reference": "95c444c29607a9943f1624739a81f00fca3ead8f",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
-                "nystudio107/craft-imageoptimize": "^1.5.2",
+                "nystudio107/craft-imageoptimize": "^1.6.0"
+            },
+            "type": "image-transform",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\imageoptimizesharp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Provides an Sharp image transform type for the ImageOptimize plugin.",
+            "keywords": [
+                "craftcms",
+                "image-optimize",
+                "image-transform",
+                "sharp"
+            ],
+            "time": "2019-07-06T21:16:17+00:00"
+        },
+        {
+            "name": "nystudio107/craft-imageoptimize-thumbor",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-imageoptimize-thumbor.git",
+                "reference": "223314a17a455656243034bcdb058b5bb1b8dcd4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-thumbor/zipball/223314a17a455656243034bcdb058b5bb1b8dcd4",
+                "reference": "223314a17a455656243034bcdb058b5bb1b8dcd4",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0",
+                "nystudio107/craft-imageoptimize": "^1.6.0",
                 "webfactory/phumbor": "^1.2"
             },
             "type": "image-transform",
@@ -2775,7 +2819,7 @@
                 "image-transform",
                 "thumbor"
             ],
-            "time": "2019-06-05T20:17:50+00:00"
+            "time": "2019-07-05T15:23:47+00:00"
         },
         {
             "name": "nystudio107/craft-instantanalytics",
