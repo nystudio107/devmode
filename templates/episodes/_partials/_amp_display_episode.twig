@@ -59,7 +59,7 @@
             </div>
         {% endif %}
         {# -- Comments -- #}
-        {% set commentsCount = disqusCount(episode.slug) %}
+        {% set commentsCount = disqusCount(episode.slug) | default(0) %}
         <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8">
             <a class="title-link" href="{{ episode.url ~ "#comments" }}">
                 <i class="icon-comment align-middle"></i>
