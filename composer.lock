@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "61c0dc53de542044d3049e5f2d10f01a",
@@ -354,16 +354,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.2.6",
+            "version": "3.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "02739d27edfc4eea0749ee2c3aedbc91745f998c"
+                "reference": "510b08602f51e95cdeffae05b14406ca8a4e7936"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/02739d27edfc4eea0749ee2c3aedbc91745f998c",
-                "reference": "02739d27edfc4eea0749ee2c3aedbc91745f998c",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/510b08602f51e95cdeffae05b14406ca8a4e7936",
+                "reference": "510b08602f51e95cdeffae05b14406ca8a4e7936",
                 "shasum": ""
             },
             "require": {
@@ -441,7 +441,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-07-23T14:51:47+00:00"
+            "time": "2019-07-25T18:54:29+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1320,8 +1320,8 @@
             "authors": [
                 {
                     "name": "John Grogg",
-                    "email": "john.grogg@gmail.com",
-                    "role": "Developer/Prior Owner"
+                    "role": "Developer/Prior Owner",
+                    "email": "john.grogg@gmail.com"
                 },
                 {
                     "name": "Jonathan Goode",
@@ -1714,16 +1714,16 @@
         },
         {
             "name": "masterminds/html5",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "c961ca6a0a81dc6b55b6859b3f9ea7f402edf9ad"
+                "reference": "104443ad663d15981225f99532ba73c2f1d6b6f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/c961ca6a0a81dc6b55b6859b3f9ea7f402edf9ad",
-                "reference": "c961ca6a0a81dc6b55b6859b3f9ea7f402edf9ad",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/104443ad663d15981225f99532ba73c2f1d6b6f2",
+                "reference": "104443ad663d15981225f99532ba73c2f1d6b6f2",
                 "shasum": ""
             },
             "require": {
@@ -1740,7 +1740,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.6-dev"
+                    "dev-master": "2.7-dev"
                 }
             },
             "autoload": {
@@ -1758,12 +1758,12 @@
                     "email": "technosophos@gmail.com"
                 },
                 {
-                    "name": "Asmir Mustafic",
-                    "email": "goetas@gmail.com"
-                },
-                {
                     "name": "Matt Farina",
                     "email": "matt@mattfarina.com"
+                },
+                {
+                    "name": "Asmir Mustafic",
+                    "email": "goetas@gmail.com"
                 }
             ],
             "description": "An HTML5 parser and serializer.",
@@ -1777,7 +1777,7 @@
                 "serializer",
                 "xml"
             ],
-            "time": "2019-03-10T11:41:28+00:00"
+            "time": "2019-07-25T07:03:26+00:00"
         },
         {
             "name": "michelf/php-smartypants",
@@ -2932,16 +2932,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.16",
+            "version": "3.2.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "bd0cd19b967298c3454f0d2be1a8d06e5cc4e6ef"
+                "reference": "d49e4d4da49ca9202fa6ec82272d679e598f10fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/bd0cd19b967298c3454f0d2be1a8d06e5cc4e6ef",
-                "reference": "bd0cd19b967298c3454f0d2be1a8d06e5cc4e6ef",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/d49e4d4da49ca9202fa6ec82272d679e598f10fa",
+                "reference": "d49e4d4da49ca9202fa6ec82272d679e598f10fa",
                 "shasum": ""
             },
             "require": {
@@ -3002,7 +3002,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-07-18T16:37:42+00:00"
+            "time": "2019-07-25T16:13:50+00:00"
         },
         {
             "name": "nystudio107/craft-similar",
