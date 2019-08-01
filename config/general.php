@@ -45,6 +45,7 @@ return [
         'devMode' => false,
         'enableTemplateCaching' => true,
         'isSystemLive' => true,
+        'runQueueAutomatically' => false,
         // Custom site-specific config settings
         'custom' => [
             'environment' => getenv('ENVIRONMENT'),
