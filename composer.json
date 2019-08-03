@@ -55,6 +55,13 @@
     }
   },
   "scripts": {
+    "craft-update": [
+      "/bin/bash .env_cli.txt",
+      "@php nys-setup update",
+      "@php craft migrate/all",
+      "@php craft project-config/sync",
+      "@php craft clear-caches/all"
+    ],
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
@@ -62,17 +69,7 @@
       "@php craft setup/welcome",
       "@php nys-setup welcome"
     ],
-    "post-update-cmd": [
-      "@php nys-setup update",
-      "@php craft migrate/all",
-      "@php craft project-config/sync",
-      "@php craft clear-caches/all"
-    ],
-    "post-install-cmd": [
-      "@php nys-setup update",
-      "@php craft migrate/all",
-      "@php craft project-config/sync",
-      "@php craft clear-caches/all"
-    ]
+    "post-update-cmd": "@craft-update",
+    "post-install-cmd": "@craft-update"
   }
 }
