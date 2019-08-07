@@ -56,7 +56,7 @@
   },
   "scripts": {
     "craft-update": [
-      "/bin/bash .env_cli.txt",
+      "/bin/bash ./.env_cli.txt",
       "@php nys-setup update",
       "@php craft migrate/all",
       "@php craft project-config/sync",
