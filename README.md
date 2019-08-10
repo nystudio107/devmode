@@ -1,62 +1,39 @@
-<p align="center"><a href="https://craftcms.com/" target="_blank"><img width="300" height="300" src="https://nystudio107.com/img/site/nystudio107_submark.svg" alt="nystudio107"></a></p>
+<p align="center"><a href="https://devMode.fm/" target="_blank"><img width="300" height="300" src="https://devmode.fm/dist/img/favicons/android-chrome-384x384.png" alt="devMode.fm"></a></p>
 
-## About nystudio107/craft
+## About nystudio107/devmode
 
-This is an alternate scaffolding package for Craft 3 CMS projects to Pixel & Tonic's canonical [craftcms/craft](https://github.com/craftcms/craft) package.
+This is the source code to the [devMode.fm](https://devMode.fm/) website, which is the home for the devMode.fm podcast. It's MIT licensed, so you can do what you like with it, providing the copyright notice & license stay intact.
 
-In addition to setting up a new Craft 3 CMS project, this project sets up:
+Pull Requests are welcome, and Issues are welcome as well.
+
+The project is based on [Craft CMS](https://CraftCMS.com) and implements a number of technologies/techniques:
  
-* [Craft 3 Multi-Environment](https://github.com/nystudio107/craft3-multi-environment) as described in the [Multi-Environment Config for Craft CMS](https://nystudio107.com/blog/multi-environment-config-for-craft-cms) article
+* [webpack](https://webpack.js.org/) is used for the build system as per [An Annotated webpack 4 Config for Frontend Web Development](https://nystudio107.com/blog/an-annotated-webpack-4-config-for-frontend-web-development)
+* [VueJS](https://vuejs.org/) is used for some of the interactive bits on the website as per 
+* [Tailwind CSS](https://tailwindcss.com/) for the site-wide CSS
+* JSON-LD structured data as per [Annotated JSON-LD Structured Data Examples](https://nystudio107.com/blog/annotated-json-ld-structured-data-examples)
+* Critical CSS as per [Implementing Critical CSS on your website](https://nystudio107.com/blog/implementing-critical-css)
+* Frontend error handling as per [Handling Errors Gracefully in Craft CMS](https://nystudio107.com/blog/handling-errors-gracefully-in-craft-cms)
+* A custom site module as per [Enhancing a Craft CMS 3 Website with a Custom Module](https://nystudio107.com/blog/enhancing-a-craft-cms-3-website-with-a-custom-module)
+* CLI-based queue as per [Robust queue job handling in Craft CMS](https://nystudio107.com/blog/robust-queue-job-handling-in-craft-cms)
+* FastCGI Static Cache as per [Static Page Caching with Craft CMS](https://nystudio107.com/blog/static-caching-with-craft-cms)
 * [Craft-Scripts](https://github.com/nystudio107/craft-scripts) as described in the [Database & Asset Syncing Between Environments in Craft CMS](https://nystudio107.com/blog/database-asset-syncing-between-environments-in-craft-cms), [Mitigating Disaster via Website Backups](https://nystudio107.com/blog/mitigating-disaster-via-website-backups) & [Hardening Craft CMS Permissions](https://nystudio107.com/blog/hardening-craft-cms-permissions) articles
-  
-...and sets up some other base scaffolding as described to the following articles:
 
-* [A Better package.json for the Frontend](https://nystudio107.com/blog/a-better-package-json-for-the-frontend)
-* [A Gulp Workflow for Frontend Development Automation](https://nystudio107.com/blog/a-gulp-workflow-for-frontend-development-automation)
-* [Implementing Critical CSS on your website](https://nystudio107.com/blog/implementing-critical-css)
-* [Simple Static Asset Versioning in Craft CMS](https://nystudio107.com/blog/simple-static-asset-versioning)
+...and probably a bunch of other stuff too.
 
-It also installs a few base plugins that I use on every project. You can read more about it in the [Setting up a New Craft 3 CMS Project](https://nystudio107.com/blog/setting-up-a-craft-cms-3-project) article.
+The following Craft CMS plugins are used on this site:
+* [Disqus](https://nystudio107.com/plugins/disqus) - for the Disqus comment handling, async loaded
+* [FastCGI Cache Bust](https://nystudio107.com/plugins/fastcgi-cache-bust) - to bust the FastCGI cache whenever entries are modified
+* [iCalendar](https://nystudio107.com/plugins/icalendar) - for parsing the ICS calendar feed from Trello
+* [ImageOptimize](https://nystudio107.com/plugins/imageoptimize) - for the optimized images and `srcset`s used on the site
+* [Minify](https://nystudio107.com/plugins/minify) - to minify the HTML and inline JS/CSS
+* [Retour](https://nystudio107.com/plugins/retour) - for setting up 404 redirects
+* [SEOmatic](https://nystudio107.com/plugins/seomatic) - for handling site-side SEO
+* [Transcoder](https://nystudio107.com/plugins/transcoder) - for transcoding the uploaded podcast audio into a format that's optimized for size & quality
+* [Twigpack](https://nystudio107.com/plugins/twigpack) - for loading webpack-generated `manifest.json` resources in a modern way
+* [Webperf](https://nystudio107.com/plugins/webperf) - for monitoring web performance
 
-## Assumptions Made
-
-Since this is boilerplate that nystudio107 uses for projects, it is by definition opinionated, and has a number of assumptions:
-
-* Gulp is used as a the frontend workflow automation tool
-* [Tailwind CSS](https://tailwindcss.com/docs/what-is-tailwind) is used as the utility-first CSS framework
-* Nginx with `ssi on;` is used as the web server
-* Redis is used as the PHP Session and Craft data caching method
-* Critical CSS is used site-wide
-* FontFaceObserver is used for font loading
-* Craft-Scripts are used for db/asset synching
-* Craft 3 Multi-Environment is used for the Craft 3 multi-environment setup
-
-Obviously you're free to remove whatever components you don't need/want to use.
-
-## Using nystudio107/craft
-
-This project package works exactly the way Pixel & Tonic's [craftcms/craft](https://github.com/craftcms/craft) package works; you create a new project by first creating & installing the project:
-
-    composer create-project nystudio107/craft PATH -s RC
-
-Make sure that `PATH` is the path to your project, including the name you want for the project, e.g.:
-
-    composer create-project nystudio107/craft craft3 -s RC
-
-Then `cd` to your new project directory, and run Craft's `setup` console command to create your `.env` environments and optionally install:
-
-    cd PATH
-    ./craft setup
-
-Finally, run the `nys-setup` command to configure Craft-Scripts & Craft 3 Multi-Environment based on your newly created `.env` settings:
-
-    ./nys-setup
-
-That's it, enjoy!
-
-Below is the entire intact, unmodified `README.md` from Pixel & Tonic's [craftcms/craft](https://github.com/craftcms/craft):
-
-.....
+You can read more about it in the [Setting up a New Craft 3 CMS Project](https://nystudio107.com/blog/setting-up-a-craft-cms-3-project) article.
 
 ## About Craft CMS
 
@@ -64,22 +41,9 @@ Craft is a content-first CMS that aims to make life enjoyable for developers and
 
 Learn more about Craft at [craftcms.com](https://craftcms.com).
 
-## How to Install Craft 3 Beta
+## Roadmap
 
-Installation instructions can be found in the [Craft 3 documentation](https://github.com/craftcms/docs/blob/master/en/installation.md).
+* Enable Project Config's `project.yaml` file
+* Move to containerized builds in buddy.works & atomic deployments
+* Convert local development over to Docker
 
-## Resources
-
-#### Official Resources
-- [Craft 3 Documentation](https://github.com/craftcms/docs)
-- [Craft 3 Plugins](https://github.com/craftcms/plugins)
-- [Demo site](https://demo.craftcms.com/)
-- [Craft Slack](https://craftcms.com/community#slack)
-- [Craft CMS Stack Exchange](http://craftcms.stackexchange.com/)
-
-#### Community Resources
-- [Mijingo](https://mijingo.com/craft) – Video courses and other learning resources
-- [Envato Tuts+](https://webdesign.tutsplus.com/categories/craft-cms/courses) – Video courses
-- [Straight Up Craft](http://straightupcraft.com/) – Articles, tutorials, and more
-- [Craft Cookbook](https://craftcookbook.net/) – Quick answers for common tasks
-- [pluginfactory.io](https://pluginfactory.io/) – Craft plugin scaffold generator
