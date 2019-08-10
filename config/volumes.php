@@ -31,16 +31,16 @@ return [
     // All environments
     '*' => [
         'site' => [
-            'path' => '@basePath/assets/site',
-            'url' => '@baseUrl/assets/site',
+            'path' => '@webroot/assets/site',
+            'url' => '@assetsUrl/assets/site',
         ],
         'users' => [
-            'path' => '@basePath/assets/users',
-            'url' => '@baseUrl/assets/users',
+            'path' => '@webroot/assets/users',
+            'url' => '@assetsUrl/assets/users',
         ],
         'episodes' => [
-            'path' => '@basePath/assets/episodes',
-            'url' => '@baseUrl/assets/episodes',
+            'path' => '@webroot/assets/episodes',
+            'url' => '@assetsUrl/assets/episodes',
         ],
     ],
 
