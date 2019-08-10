@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4e0c504963b6137785156d0be45e55d",
+    "content-hash": "1fbe8af77d29c72bfda7ea34633c52a0",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -2238,16 +2238,16 @@
         },
         {
             "name": "nystudio107/craft-disqus",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-disqus.git",
-                "reference": "acf49e976053c552081af5c533b85f8cea7f33d4"
+                "reference": "86fb24a670563cf53123da3d57a475b3b4e54dbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-disqus/zipball/acf49e976053c552081af5c533b85f8cea7f33d4",
-                "reference": "acf49e976053c552081af5c533b85f8cea7f33d4",
+                "url": "https://api.github.com/repos/nystudio107/craft-disqus/zipball/86fb24a670563cf53123da3d57a475b3b4e54dbc",
+                "reference": "86fb24a670563cf53123da3d57a475b3b4e54dbc",
                 "shasum": ""
             },
             "require": {
@@ -2289,7 +2289,7 @@
                 "craftcms",
                 "disqus"
             ],
-            "time": "2019-01-05T02:50:16+00:00"
+            "time": "2019-08-10T19:49:27+00:00"
         },
         {
             "name": "nystudio107/craft-fastcgicachebust",
