@@ -20,8 +20,10 @@ server {
     charset utf-8;
     ssi on;
 
+    gzip_static on;
+
     client_max_body_size 100M;
-    
+
         # Ban certain bots from crawling the site
     if ($limit_bots = 1) {
         return 403;
@@ -43,13 +45,13 @@ server {
     }
 
     # For WordPress bots/users
-    location ~ ^/(wp-login|wp-admin|wp-config|wp-content|wp-includes|(.*)\.exe) {
+    location ~ ^/(wp-login|wp-admin|wp-config|wp-content|wp-includes|xmlrpc|(.*)\.exe) {
         return 301 https://wordpress.com/wp-login.php;
     }
 
     #Cache everything by default
     fastcgi_cache_key "$scheme$request_method$host$request_uri";
-    add_header X-Cache $upstream_cache_status;
+    add_header X-Cache-Status $upstream_cache_status;
     set $no_cache 0;
     if ($request_method = POST)
     {
@@ -124,6 +126,9 @@ server {
     location ^~ /cpresources {
         try_files $uri $uri/ /index.php?$query_string;
     }
+    location ^~ /actions {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
     # Pass our ElementAPI requests through
     location ^~ /api {
         try_files $uri $uri/ /index.php?$query_string;
@@ -132,12 +137,21 @@ server {
     location ^~ /sw.js {
         try_files $uri $uri/ /index.php?$query_string;
     }
-    # Pass our RSS through
+    # Pass our ElementAPI requests through
     location ^~ /rss {
-        try_files $uri $uri/ @phpfpm_nocache;
+        try_files $uri $uri/ /index.php?$query_string;
     }
     # Pass instantanalytics through
     location ^~ /instantanalytics {
+        try_files $uri $uri/ @phpfpm_nocache;
+    }
+    # Pass Retour through
+    location ^~ /retour {
+        try_files $uri $uri/ @phpfpm_nocache;
+    }
+
+    # Pass Webperf through
+    location ^~ /webperf {
         try_files $uri $uri/ @phpfpm_nocache;
     }
 
@@ -153,20 +167,17 @@ server {
         fastcgi_param PATH_INFO $fastcgi_path_info;
         fastcgi_param HTTP_PROXY "";
 
-        # See https://github.com/nystudio107/craft-multi-environment or https://github.com/nystudio107/craft3-multi-environment
-        fastcgi_param CRAFTENV_CRAFT_ENVIRONMENT "live";
-        fastcgi_param CRAFTENV_DB_DRIVER "pgsql";
-        fastcgi_param CRAFTENV_DB_SERVER "localhost";
-        fastcgi_param CRAFTENV_DB_USER "devmode";
-        fastcgi_param CRAFTENV_DB_PASSWORD "d3vm0d3";
-        fastcgi_param CRAFTENV_DB_DATABASE "devmode";
-        fastcgi_param CRAFTENV_DB_SCHEMA "public";
-        fastcgi_param CRAFTENV_DB_TABLE_PREFIX "";
-        fastcgi_param CRAFTENV_DB_PORT "5432";
-        fastcgi_param CRAFTENV_SECURITY_KEY "FnKtqveecwgMavLwQnX2I-dqYjpwZMR6";
-        fastcgi_param CRAFTENV_SITE_URL "https://devmode.fm/";
-        fastcgi_param CRAFTENV_BASE_URL "https://devmode.fm/";
-        fastcgi_param CRAFTENV_BASE_PATH "/home/forge/devmode.fm/web/";
+        # Use Dotenvy to generate the .env variables as per: https://github.com/nystudio107/dotenvy
+        # and then uncomment this line to include them:
+        include /home/forge/devmode.fm/.env_nginx.txt;
+
+        # Don't allow browser caching of dynamically generated content
+        add_header X-Cache-Status $upstream_cache_status;
+        add_header Last-Modified $date_gmt;
+        add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0';
+        if_modified_since off;
+        expires off;
+        etag off;
 
         # shared php-fpm configuration
         fastcgi_intercept_errors off;
@@ -175,7 +186,7 @@ server {
         fastcgi_connect_timeout 300;
         fastcgi_send_timeout 300;
         fastcgi_read_timeout 300;
-        
+
         # FastCGI Cache settings
         fastcgi_ignore_headers Cache-Control Expires Set-Cookie;
         fastcgi_cache DEVMODE;
@@ -196,20 +207,17 @@ server {
         fastcgi_param PATH_INFO $query_string;
         fastcgi_param HTTP_PROXY "";
 
-        # See https://github.com/nystudio107/craft-multi-environment or https://github.com/nystudio107/craft3-multi-environment
-        fastcgi_param CRAFTENV_CRAFT_ENVIRONMENT "live";
-        fastcgi_param CRAFTENV_DB_DRIVER "pgsql";
-        fastcgi_param CRAFTENV_DB_SERVER "localhost";
-        fastcgi_param CRAFTENV_DB_USER "devmode";
-        fastcgi_param CRAFTENV_DB_PASSWORD "d3vm0d3";
-        fastcgi_param CRAFTENV_DB_DATABASE "devmode";
-        fastcgi_param CRAFTENV_DB_SCHEMA "public";
-        fastcgi_param CRAFTENV_DB_TABLE_PREFIX "";
-        fastcgi_param CRAFTENV_DB_PORT "5432";
-        fastcgi_param CRAFTENV_SECURITY_KEY "FnKtqveecwgMavLwQnX2I-dqYjpwZMR6";
-        fastcgi_param CRAFTENV_SITE_URL "https://devmode.fm/";
-        fastcgi_param CRAFTENV_BASE_URL "https://devmode.fm/";
-        fastcgi_param CRAFTENV_BASE_PATH "/home/forge/devmode.fm/web/";
+        # Use Dotenvy to generate the .env variables as per: https://github.com/nystudio107/dotenvy
+        # and then uncomment this line to include them:
+        include /home/forge/devmode.fm/.env_nginx.txt;
+
+        # Don't allow browser caching of dynamically generated content
+        add_header X-Cache-Status $upstream_cache_status;
+        add_header Last-Modified $date_gmt;
+        add_header Cache-Control 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0';
+        if_modified_since off;
+        expires off;
+        etag off;
 
         # shared php-fpm configuration
         fastcgi_intercept_errors off;
