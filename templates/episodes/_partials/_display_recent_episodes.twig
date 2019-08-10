@@ -13,17 +13,5 @@
             <episodes-table>
             </episodes-table>
         </div>
-{#
-        {% for episode in craft.entries.section("episodes").limit(null).all() %}
-            <div class="container mx-auto py-8">
-                <div class="flex flex-wrap {% if loop.last %} pb-8{% endif %}">
-                    {% include "episodes/_partials/_display_episode_excerpt.twig" with {
-                        "episode": episode,
-                        "showInfo": showInfo,
-                    } only %}
-                </div>
-            </div>
-        {% endfor %}
-#}
     </div>
 </section>
