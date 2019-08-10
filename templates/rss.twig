@@ -1,6 +1,6 @@
 {% header "Content-Type: application/rss+xml" %}
 {% set hosts = craft.users.group("owners").all() %}
-{% set baseUrl = alias('@baseUrl') ~ '/' %}
+{% set baseUrl = alias('@assetsUrl') ~ '/' %}
 {% do craft.webperf.includeBeacon(false) %}
 {% do seomatic.config.renderEnabled(false) %}
 <?xml version="1.0" encoding="UTF-8"?>
@@ -52,7 +52,7 @@
                 <link>{{ episode.url }}</link>
 
                 <itunes:author>{% for host in episode.episodeHosts.all() %}{{ host.fullName |typogrifyFeed }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
-    
+
                 <itunes:summary>
                     {{ summaryText }}
                 </itunes:summary>
@@ -74,9 +74,9 @@
                     </ul>
                     ]]>
                 </content:encoded>
-    
+
                 <itunes:keywords>{{ seomatic.helper.extractKeywords(episode.episodeSummary) }}</itunes:keywords>
-    
+
                 <itunes:image href="{{ url(showInfo.showImage.one().getUrl(), null, "http") | raw }}" />
 
                 <itunes:explicit>false</itunes:explicit>

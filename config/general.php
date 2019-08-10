@@ -9,74 +9,35 @@
  */
 
 return [
-    // Global settings
-    '*' => [
-        // Aliases parsed in sites’ settings, volumes’ settings, and Local volumes’ settings
-        'aliases' => [
-            '@basePath' => getenv('BASE_PATH'),
-            '@baseUrl' => getenv('BASE_URL'),
-        ],
-        // Craft defined config settings
-        'cacheDuration' => false,
-        'defaultSearchTermOptions' => [
-            'subLeft' => true,
-            'subRight' => true,
-        ],
-        'defaultTokenDuration' => 'P1W',
-        'enableCsrfProtection' => true,
-        'errorTemplatePrefix' => 'errors/',
-        'generateTransformsBeforePageLoad' => true,
-        'maxCachedCloudImageSize' => 3000,
-        'maxUploadFileSize' => '100M',
-        'omitScriptNameInUrls' => true,
-        'resourceBasePath' => dirname(__DIR__) . '/web/cpresources',
-        'securityKey' => getenv('SECURITY_KEY'),
-        'siteUrl' => getenv('SITE_URL'),
-        'useEmailAsUsername' => true,
-        'usePathInfo' => true,
-        'useProjectConfigFile' => false,
+    // Craft config settings from .env variables
+    'aliases' => [
+        '@assetsUrl' => getenv('ASSETS_URL'),
+        '@cloudfrontUrl' => getenv('CLOUDFRONT_URL'),
+        '@web' => getenv('SITE_URL'),
+        '@webroot' => getenv('WEB_ROOT_PATH'),
     ],
-    // Live (production) environment
-    'live' => [
-        // Craft defined config settings
-        'allowUpdates' => false,
-        'allowAdminChanges' => true,
-        'backupOnUpdate' => false,
-        'devMode' => false,
-        'enableTemplateCaching' => true,
-        'isSystemLive' => true,
-        'runQueueAutomatically' => false,
-        // Custom site-specific config settings
-        'custom' => [
-            'environment' => getenv('ENVIRONMENT'),
-        ],
+    'allowUpdates' => (bool)getenv('ALLOW_UPDATES'),
+    'allowAdminChanges' => (bool)getenv('ALLOW_ADMIN_CHANGES'),
+    'backupOnUpdate' => (bool)getenv('BACKUP_ON_UPDATE'),
+    'devMode' => (bool)getenv('DEV_MODE'),
+    'enableTemplateCaching' => (bool)getenv('ENABLE_TEMPLATE_CACHING'),
+    'isSystemLive' => (bool)getenv('IS_SYSTEM_LIVE'),
+    'resourceBasePath' => getenv('WEB_ROOT_PATH').'/cpresources',
+    'runQueueAutomatically' => (bool)getenv('RUN_QUEUE_AUTOMATICALLY'),
+    'securityKey' => getenv('SECURITY_KEY'),
+    'siteUrl' => getenv('SITE_URL'),
+    // Craft config settings from constants
+    'cacheDuration' => false,
+    'defaultSearchTermOptions' => [
+        'subLeft' => true,
+        'subRight' => true,
     ],
-    // Staging (pre-production) environment
-    'staging' => [
-        // Craft defined config settings
-        'allowUpdates' => false,
-        'allowAdminChanges' => true,
-        'backupOnUpdate' => false,
-        'devMode' => false,
-        'enableTemplateCaching' => true,
-        'isSystemLive' => true,
-        // Custom site-specific config settings
-        'custom' => [
-            'environment' => getenv('ENVIRONMENT'),
-        ],
-    ],
-    // Local (development) environment
-    'local' => [
-        // Craft defined config settings
-        'allowUpdates' => true,
-        'allowAdminChanges' => true,
-        'backupOnUpdate' => true,
-        'devMode' => true,
-        'enableTemplateCaching' => false,
-        'isSystemLive' => true,
-        // Custom site-specific config settings
-        'custom' => [
-            'environment' => getenv('ENVIRONMENT'),
-        ],
-    ],
+    'enableCsrfProtection' => true,
+    'errorTemplatePrefix' => 'errors/',
+    'generateTransformsBeforePageLoad' => true,
+    'maxCachedCloudImageSize' => 3000,
+    'omitScriptNameInUrls' => true,
+    'useEmailAsUsername' => true,
+    'usePathInfo' => true,
+    'useProjectConfigFile' => false,
 ];
