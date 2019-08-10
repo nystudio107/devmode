@@ -1,6 +1,6 @@
 {
-  "name": "nystudio107/craft",
-  "description": "nystudio107 Craft 3 CMS scaffolding project",
+  "name": "nystudio107/devMode",
+  "description": "Website for the devMode.fm podcast",
   "version": "1.1.0",
   "keywords": [
     "craft",
@@ -9,13 +9,13 @@
     "project"
   ],
   "license": "MIT",
-  "homepage": "https://craftcms.com/",
+  "homepage": "https://devMode.fm/",
   "type": "project",
   "support": {
     "email": "info@nystudio107.com",
-    "issues": "https://github.com/nystudio107/craft/issues",
-    "source": "https://github.com/nystudio107/craft",
-    "docs": "https://github.com/nystudio107/craft"
+    "issues": "https://github.com/nystudio107/devmode/issues",
+    "source": "https://github.com/nystudio107/devmode",
+    "docs": "https://github.com/nystudio107/devmode"
   },
   "minimum-stability": "beta",
   "prefer-stable": true,
@@ -24,7 +24,6 @@
     "vlucas/phpdotenv": "^2.4.0",
     "yiisoft/yii2-redis": "^2.0.6",
     "nystudio107/craft-imageoptimize": "^1.0.0",
-    "nystudio107/craft-scripts": "^1.2.4",
     "nystudio107/craft-fastcgicachebust": "^1.0.0",
     "nystudio107/craft-icalendar": "^1.1.0",
     "nystudio107/craft-minify": "^1.2.5",
@@ -32,12 +31,11 @@
     "nystudio107/craft-transcoder": "^1.0.9",
     "nystudio107/craft-disqus": "^1.0",
     "nystudio107/craft-retour": "^3.0.0",
-    "nystudio107/craft-routemap": "^1.0",
-    "nystudio107/craft-similar": "^1.0.0",
     "nystudio107/craft-seomatic": "^3.2.0",
+    "nystudio107/craft-scripts": "^1.2.4",
     "nystudio107/craft-webperf": "^1.0.0",
-    "nystudio107/dotenvy": "^1.0.0",
-    "nystudio107/craft-twigpack": "^1.1.0"
+    "nystudio107/craft-twigpack": "^1.1.0",
+    "nystudio107/dotenvy": "^1.0.0"
   },
   "autoload": {
     "psr-4": {
@@ -52,7 +50,6 @@
   },
   "scripts": {
     "craft-update": [
-      "/bin/bash .env_cli.txt",
       "@php nys-setup update",
       "@php craft migrate/all",
       "@php craft project-config/sync",
