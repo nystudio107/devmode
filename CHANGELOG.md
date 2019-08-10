@@ -1,5 +1,9 @@
 # nystudio107/craft Change Log
 
+## 1.1.1 - 2019.08.10
+### Changed
+* Converted over to using Project Config's `project.yaml` and disabled `allowAdminChanges` in production
+
 ## 1.1.0 - 2019.08.10
 ### Added
 * Open sourced it all
