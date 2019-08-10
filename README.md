@@ -31,6 +31,7 @@ The following Craft CMS plugins are used on this site:
 * [SEOmatic](https://nystudio107.com/plugins/seomatic) - for handling site-side SEO
 * [Transcoder](https://nystudio107.com/plugins/transcoder) - for transcoding the uploaded podcast audio into a format that's optimized for size & quality
 * [Twigpack](https://nystudio107.com/plugins/twigpack) - for loading webpack-generated `manifest.json` resources in a modern way
+* [Typogrify](https://nystudio107.com/plugins/typogrify) - for smart quotes and other typographic ligatures
 * [Webperf](https://nystudio107.com/plugins/webperf) - for monitoring web performance
 
 You can read more about it in the [Setting up a New Craft 3 CMS Project](https://nystudio107.com/blog/setting-up-a-craft-cms-3-project) article.
