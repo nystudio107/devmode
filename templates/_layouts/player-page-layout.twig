@@ -1,5 +1,10 @@
 {# -- Layout template for HTML pages -- #}
-{% extends "_layouts/base/base-html-layout.twig" %}
+{% extends "_boilerplate/_layouts/base-html-layout.twig" %}
+
+{# -- Any CSS that should be included before </head> -- #}
+{% block headCss %}
+    {% include "_inline-css/site-fonts.css" %}
+{% endblock headCss %}
 
 {# -- Page body -- #}
 {% block bodyHtml %}

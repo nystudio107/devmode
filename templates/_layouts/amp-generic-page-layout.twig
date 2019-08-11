@@ -1,5 +1,23 @@
 {# -- Layout template for HTML pages -- #}
-{% extends "_layouts/base/amp-base-html-layout.twig" %}
+{% extends "_boilerplate/_layouts/amp-base-html-layout.twig" %}
+
+{# -- Any <meta> tags that should be included in the <head> #}
+{% block headMeta %}
+    <meta name="apple-itunes-app" content="app-id=1323364824" />
+{% endblock headMeta %}
+
+{# -- Any <link> tags that should be included in the <head> #}
+{% block headLinks %}
+    <link rel="alternate" type="application/rss+xml" href="{{ siteUrl("/rss") }}" />
+    <link rel="webmention" href="https://webmention.io/devmode.fm/webmention" />
+    <link rel="pingback" href="https://webmention.io/devmode.fm/xmlrpc" />
+{% endblock headLinks %}
+
+{# -- Any CSS that should be included before </head> -- #}
+{% block headCss %}
+    {% include "_partials/amp-inline-css.css" %}
+    {% include "_inline-css/site-fonts.css" %}
+{% endblock %}
 
 {# -- Page body -- #}
 {% block bodyHtml %}

@@ -28,8 +28,8 @@
 └─────────────────────────────────────────────────────────────────────────────┘
 #}
 {% extends craft.app.request.isAjax() and not craft.app.request.isLivePreview()
-    ? "_layouts/base/base-ajax-layout.twig"
-    : "_layouts/base/base-web-layout.twig"
+    ? "_boilerplate/_layouts/base-ajax-layout.twig"
+    : "_boilerplate/_layouts/base-web-layout.twig"
 %}
 
 {% block htmlTag %}
@@ -47,7 +47,7 @@
     {% endblock headLinks %}
 
     {# -- Inline and polyfill JS #}
-    {% include "_partials/head-js.twig" %}
+    {% include "_boilerplate/_partials/head-js.twig" %}
 
     {# -- Any JavaScript that should be included before </head> -- #}
     {% block headJs %}
@@ -55,14 +55,13 @@
 
     {# -- Inline and critical CSS #}
     <style>
-        {% include "_inline-css/site-fonts.css" %}
         [v-cloak] {display: none !important;}
+        {# -- Any CSS that should be included before </head> -- #}
+        {% block headCss %}
+        {% endblock headCss %}
     </style>
-    {% include "_partials/critical-css.twig" %}
+    {% include "_boilerplate/_partials/critical-css.twig" %}
 
-    {# -- Any CSS that should be included before </head> -- #}
-    {% block headCss %}
-    {% endblock headCss %}
 {% endblock headContent %}
 
 {# -- Page content that should be included in the <body> -- #}
