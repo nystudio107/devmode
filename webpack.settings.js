@@ -156,6 +156,7 @@ module.exports = {
             "/dist/workbox-catch-handler.js"
         ],
         exclude: [
+            /\/admin.*$/,
             /\.(png|jpe?g|gif|svg|webp)$/i,
             /\.map$/,
             /^manifest.*\\.js(?:on)?$/,
