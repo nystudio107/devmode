@@ -8,10 +8,10 @@
 │ │                                headLinks                                │ │
 │ └─────────────────────────────────────────────────────────────────────────┘ │
 │ ┌─────────────────────────────────────────────────────────────────────────┐ │
-│ │                                 headCss                                 │ │
+│ │                                 headJs                                  │ │
 │ └─────────────────────────────────────────────────────────────────────────┘ │
 │ ┌─────────────────────────────────────────────────────────────────────────┐ │
-│ │                                 headJs                                  │ │
+│ │                                 headCss                                 │ │
 │ └─────────────────────────────────────────────────────────────────────────┘ │
 │                                                                             │
 │                                 headContent                                 │
@@ -51,6 +51,10 @@
     {% block headLinks %}
     {% endblock headLinks %}
 
+    {# -- Any JavaScript that should be included before </head> -- #}
+    {% block headJs %}
+    {% endblock headJs %}
+
     {# -- Boilerplate & custom AMP CSS #}
     {% include "_partials/amp-boilerplate-css.twig" %}
     <style amp-custom>
@@ -60,10 +64,6 @@
     {% include "_partials/amp-inline-css.css" %}
     {% include "_inline-css/site-fonts.css" %}
     </style>
-
-    {# -- Any JavaScript that should be included before </head> -- #}
-    {% block headJs %}
-    {% endblock headJs %}
 {% endblock headContent %}
 
 {# -- Page content that should be included in the <body> -- #}
