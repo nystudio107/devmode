@@ -41,8 +41,6 @@
 
 {# -- Page content that should be included in the <head> -- #}
 {% block headContent %}
-    {% include "_boilerplate/_partials/amp-head-scripts.twig" %}
-
     {# -- Any <meta> tags that should be included in the <head> #}
     {% block headMeta %}
     {% endblock headMeta %}
@@ -50,6 +48,9 @@
     {# -- Any <link> tags that should be included in the <head> #}
     {% block headLinks %}
     {% endblock headLinks %}
+
+    {# -- Google AMP JavaScripts #}
+    {% include "_boilerplate/_partials/amp-head-js.twig" %}
 
     {# -- Any JavaScript that should be included before </head> -- #}
     {% block headJs %}

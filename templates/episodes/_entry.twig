@@ -4,6 +4,7 @@
 {% set includeAudioMeta = true %}
 
 {% block headLinks %}
+    {{ parent() }}
     <link rel="amphtml" href="{{ siteUrl(craft.app.request.pathInfo ~ '/amp') }}">
 {% endblock headLinks %}
 

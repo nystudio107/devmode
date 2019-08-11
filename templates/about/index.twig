@@ -1,6 +1,7 @@
 {% extends "_layouts/generic-page-layout.twig" %}
 
 {% block headLinks %}
+    {{ parent() }}
     <link rel="amphtml" href="{{ siteUrl('/about/amp') }}">
 {% endblock headLinks %}
 
