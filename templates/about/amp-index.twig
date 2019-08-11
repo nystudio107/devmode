@@ -47,7 +47,7 @@
                 {# -- Recent tags -- #}
                 <div>
                     <div class="inline-block devmode-container p-8">
-                        {% for tag in craft.tags.group('episodes').limit(5).all() %}
+                        {% for tag in craft.tags.group('episodes').limit(5).orderBy('dateCreated ASC').all() %}
                             <span class="devmode-tags">
                                 #{{ tag.title }}
                             </span>
@@ -70,9 +70,8 @@
                             <i class="icon-info-circled align-middle"></i>
                             <ul class="list-reset inline">
                                 {% for link in showInfo.showTechnologiesLinks %}
-                                    <li class="inline">
+                                    <li class="inline-block pr-1">
                                         <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkName }}" target="_blank" rel="nofollow noopener">{{ link.linkName }}</a>
-                                        <span> </span>
                                     </li>
                                 {% endfor %}
                             </ul>
@@ -87,9 +86,8 @@
                             <i class="icon-plug align-middle"></i>
                             <ul class="list-reset inline">
                                 {% for plugin in plugins %}
-                                    <li class="inline">
+                                    <li class="inline-block pr-1">
                                         <a href="{{ "https://github.com/#{plugin.packageName}" }}" class="tags-link align-middle whitespace-no-wrap" title="{{ plugin.name }}" rel="noopener nofollow" target="_blank">{{ plugin.name }}</a>
-                                        <span> </span>
                                     </li>
                                 {% endfor %}
                             </ul>
