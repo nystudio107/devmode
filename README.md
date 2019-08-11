@@ -13,6 +13,7 @@ The project is based on [Craft CMS](https://CraftCMS.com) and implements a numbe
 * [Tailwind CSS](https://tailwindcss.com/) for the site-wide CSS
 * JSON-LD structured data as per [Annotated JSON-LD Structured Data Examples](https://nystudio107.com/blog/annotated-json-ld-structured-data-examples
 * [Google AMP](https://developers.google.com/amp/) versions of the podcast episode and other pages
+* Implements a Service Worker via Google's [Workbox](https://developers.google.com/web/tools/workbox/) as per [Service Workers and Offline Browsing](https://nystudio107.com/blog/service-workers-and-offline-browsing)
 * Critical CSS as per [Implementing Critical CSS on your website](https://nystudio107.com/blog/implementing-critical-css)
 * Frontend error handling as per [Handling Errors Gracefully in Craft CMS](https://nystudio107.com/blog/handling-errors-gracefully-in-craft-cms)
 * A custom site module as per [Enhancing a Craft CMS 3 Website with a Custom Module](https://nystudio107.com/blog/enhancing-a-craft-cms-3-website-with-a-custom-module)
@@ -45,7 +46,6 @@ Learn more about Craft at [craftcms.com](https://craftcms.com).
 
 ## Roadmap
 
-* Re-implement the Service Worker, with exclusions for the CP
 * Move to containerized builds in buddy.works & atomic deployments
 * Move to Amazon S3 for assets, and utilize Cloudfront as well
 * Convert local development over to Docker
