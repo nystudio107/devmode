@@ -8,10 +8,10 @@
 │ │                                headLinks                                │ │
 │ └─────────────────────────────────────────────────────────────────────────┘ │
 │ ┌─────────────────────────────────────────────────────────────────────────┐ │
-│ │                                 headCss                                 │ │
+│ │                                 headJs                                  │ │
 │ └─────────────────────────────────────────────────────────────────────────┘ │
 │ ┌─────────────────────────────────────────────────────────────────────────┐ │
-│ │                                 headJs                                  │ │
+│ │                                 headCss                                 │ │
 │ └─────────────────────────────────────────────────────────────────────────┘ │
 │                                                                             │
 │                                 headContent                                 │
@@ -46,6 +46,13 @@
     {% block headLinks %}
     {% endblock headLinks %}
 
+    {# -- Inline and polyfill JS #}
+    {% include "_partials/head-js.twig" %}
+
+    {# -- Any JavaScript that should be included before </head> -- #}
+    {% block headJs %}
+    {% endblock headJs %}
+
     {# -- Inline and critical CSS #}
     <style>
         {% include "_inline-css/site-fonts.css" %}
@@ -56,13 +63,6 @@
     {# -- Any CSS that should be included before </head> -- #}
     {% block headCss %}
     {% endblock headCss %}
-
-    {# -- Inline and polyfill JS #}
-    {% include "_partials/head-js.twig" %}
-
-    {# -- Any JavaScript that should be included before </head> -- #}
-    {% block headJs %}
-    {% endblock headJs %}
 {% endblock headContent %}
 
 {# -- Page content that should be included in the <body> -- #}
