@@ -3,6 +3,7 @@
 {% set includeAudioMeta = false %}
 
 {% block headLinks %}
+    {{ parent() }}
     <link rel="amphtml" href="{{ siteUrl('/amp') }}">
 {% endblock headLinks %}
 
