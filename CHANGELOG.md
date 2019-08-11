@@ -1,5 +1,11 @@
 # nystudio107/craft Change Log
 
+## 1.1.2 - 2019.08.10
+### Changed
+* Moved the `license.key` over to `LICENSE_KEY` environmental variables
+* Moved the plugin license over to environmental variables
+* Re-enabled the Service Worker
+
 ## 1.1.1 - 2019.08.10
 ### Changed
 * Converted over to using Project Config's `project.yaml` and disabled `allowAdminChanges` in production
