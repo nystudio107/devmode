@@ -28,8 +28,8 @@
 └─────────────────────────────────────────────────────────────────────────────┘
 #}
 {% extends craft.app.request.isAjax() and not craft.app.request.isLivePreview()
-    ? "_layouts/base/base-ajax-layout.twig"
-    : "_layouts/base/base-web-layout.twig"
+    ? "_boilerplate/_layouts/base-ajax-layout.twig"
+    : "_boilerplate/_layouts/base-web-layout.twig"
 %}
 
 {% do seomatic.script.container().include(false) %}
@@ -41,7 +41,7 @@
 
 {# -- Page content that should be included in the <head> -- #}
 {% block headContent %}
-    {% include "_partials/amp-head-scripts.twig" %}
+    {% include "_boilerplate/_partials/amp-head-scripts.twig" %}
 
     {# -- Any <meta> tags that should be included in the <head> #}
     {% block headMeta %}
@@ -56,13 +56,11 @@
     {% endblock headJs %}
 
     {# -- Boilerplate & custom AMP CSS #}
-    {% include "_partials/amp-boilerplate-css.twig" %}
+    {% include "_boilerplate/_partials/amp-boilerplate-css.twig" %}
     <style amp-custom>
     {# -- Any CSS that should be included before </head> -- #}
     {% block headCss %}
     {% endblock headCss %}
-    {% include "_partials/amp-inline-css.css" %}
-    {% include "_inline-css/site-fonts.css" %}
     </style>
 {% endblock headContent %}
 
@@ -73,7 +71,7 @@
     {% endblock bodyHtml %}
 
     {# -- AMP Analytics --#}
-    {% include "_partials/amp-analytics.twig" %}
+    {% include "_boilerplate/_partials/amp-analytics.twig" %}
 
     {# -- Any JavaScript that should be included before </body> -- #}
     {% block bodyJs %}
