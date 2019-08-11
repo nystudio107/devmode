@@ -89,20 +89,20 @@ module.exports = {
                     template: "episodes/_amp_entry"
                 },
                 {
-                    url: "offline",
-                    template: "offline"
+                    url: "errors/offline",
+                    template: "errors/offline"
                 },
                 {
-                    url: "error",
-                    template: "error"
+                    url: "errors/error",
+                    template: "errors/error"
                 },
                 {
-                    url: "503",
-                    template: "503"
+                    url: "errors/503",
+                    template: "errors/503"
                 },
                 {
-                    url: "404",
-                    template: "404"
+                    url: "errors/404",
+                    template: "errors/404"
                 }
             ]
     },
