@@ -2,8 +2,8 @@
  * @project        Example Project
  * @name           vuetablefilterbar.e5fb1c4da41f910a0f13.js
  * @author         Andrew Welch
- * @build          Sat, Aug 10, 2019 11:36 PM ET
- * @release        5cd3cd44c269147ff6a556f4a5e9ee068d77384b [develop]
+ * @build          Sun, Aug 11, 2019 1:19 AM ET
+ * @release        a6e8d488d2daf018a955adca4398b0976cb40f84 [develop]
  * @copyright      Copyright (c) 2019 Example Company, Inc.
  *
  */
