@@ -1,5 +1,6 @@
 {# -- Root global variables that all templates inherit from -- #}
 {# -- This allows for defining site-wide Twig variables as needed -- #}
+{% spaceless %}
 
 {# -- Prefetch & preconnect headers and links -- #}
 {% set prefetchUrls = [
@@ -14,3 +15,5 @@
 {# -- Twig output from the render; this must be in a block -- #}
 {% block htmlPage %}
 {% endblock %}
+
+{% endspaceless %}
