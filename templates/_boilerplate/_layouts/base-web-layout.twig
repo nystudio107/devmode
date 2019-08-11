@@ -32,7 +32,7 @@
 #}
 {% extends "_layouts/global-variables.twig" %}
 
-{% block htmlPage %}
+{%- block htmlPage -%}
     {% minify %}
     <!DOCTYPE html>
         {% block htmlTag %}
@@ -56,4 +56,4 @@
             </body>
         </html>
     {% endminify %}
-{% endblock htmlPage %}
+{%- endblock htmlPage -%}
