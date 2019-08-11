@@ -38,6 +38,15 @@ The following Craft CMS plugins are used on this site:
 
 You can read more about it in the [Setting up a New Craft 3 CMS Project](https://nystudio107.com/blog/setting-up-a-craft-cms-3-project) article.
 
+## Deployment
+
+```
+cd /home/forge/devmode.fm
+git pull origin master
+composer install --no-interaction --prefer-dist --optimize-autoloader
+echo "" | sudo -S service php7.1-fpm reload
+```
+
 ## About Craft CMS
 
 Craft is a content-first CMS that aims to make life enjoyable for developers and content managers alike. It is optimized for bespoke web and application development, offering developers a clean slate to build out exactly what they want, rather than wrestling with a theme.
