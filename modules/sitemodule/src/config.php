@@ -16,8 +16,7 @@
  *
  * This file is multi-environment aware as
  * well, so you can have different settings groups for each environment, just
- * as
- * you do for 'general.php'
+ * as you do for 'general.php'
  */
 return [
 ];
