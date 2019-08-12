@@ -6,7 +6,9 @@ This is the source code to the [devMode.fm](https://devMode.fm/) website, which 
 
 Pull Requests are welcome, and Issues are welcome as well.
 
-The project is based on [Craft CMS](https://CraftCMS.com) and implements a number of technologies/techniques:
+[Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fdevmode.fm%2F&tab=mobile)
+
+The project is based on [Craft CMS](https://CraftCMS.com) using a unique `templates/_boilerplate` system for web/AJAX/AMP pages, and implements a number of technologies/techniques:
  
 * [webpack](https://webpack.js.org/) is used for the build system as per [An Annotated webpack 4 Config for Frontend Web Development](https://nystudio107.com/blog/an-annotated-webpack-4-config-for-frontend-web-development)
 * [VueJS](https://vuejs.org/) is used for some of the interactive bits on the website as per 
