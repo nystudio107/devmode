@@ -2,9 +2,9 @@
 /**
  * Site module for Craft CMS 3.x
  *
- * An example module for Craft CMS 3 that lets you enhance your websites with a custom site module
+ * Custom site module for the devMode.fm website
  *
- * @link      https://nystudio107.com/
+ * @link      https://nystudio107.com
  * @copyright Copyright (c) 2018 nystudio107
  */
 
