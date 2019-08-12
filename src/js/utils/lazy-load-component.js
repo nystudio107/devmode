@@ -1,4 +1,4 @@
-// src/utils/lazy-load-component.js
+// from: https://markus.oberlehner.net/blog/lazy-load-vue-components-when-they-become-visible/
 export default function lazyLoadComponent({
       componentFactory,
       loading,
