@@ -18,11 +18,11 @@ export default {
       type: Number,
     },
     height: {
-      default: `100em`,
+      default: `1em`,
       type: String,
     },
     width: {
-      default: `100%`,
+      default: null,
       type: String,
     },
   },

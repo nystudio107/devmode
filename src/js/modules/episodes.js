@@ -1,5 +1,5 @@
 import lazyLoadComponent from '../utils/lazy-load-component';
-import EpisodesSkeletonBox from '../../vue/EpisodesSkeletonBox.vue';
+import SkeletonBox from '../../vue/SkeletonBox.vue';
 
 // App main
 const main = async() => {
@@ -14,7 +14,8 @@ const main = async() => {
         components: {
             'episodes-table': lazyLoadComponent({
                 componentFactory: () => import(/* webpackChunkName: "episodestable" */ '../../vue/EpisodesTable.vue'),
-                loading: EpisodesSkeletonBox,
+                loading: SkeletonBox,
+                loadingData: { height: `100vh`, width: `100%` },
             }),
         },
         data: {},

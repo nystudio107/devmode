@@ -1,5 +1,5 @@
 import lazyLoadComponent from '../utils/lazy-load-component';
-import PlayerSkeletonBox from '../../vue/PlayerSkeletonBox.vue';
+import SkeletonBox from '../../vue/SkeletonBox.vue';
 
 // App main
 const main = async() => {
@@ -11,7 +11,8 @@ const main = async() => {
         components: {
             'amplitude-player': lazyLoadComponent({
                 componentFactory: () => import(/* webpackChunkName: "amplitudeplayer" */ '../../vue/amplitude-player.vue'),
-                loading: PlayerSkeletonBox,
+                loading: SkeletonBox,
+                loadingData: { height: `109px`, width: `100%` }
             }),
         },
         data: {
