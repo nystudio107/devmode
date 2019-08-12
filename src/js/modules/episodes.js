@@ -1,3 +1,6 @@
+import lazyLoadComponent from '../utils/lazy-load-component';
+import EpisodesSkeletonBox from '../../vue/EpisodesSkeletonBox.vue';
+
 // App main
 const main = async() => {
     // Async load the vue module
@@ -9,7 +12,10 @@ const main = async() => {
     const vm = new Vue({
         el: "#episodes-table",
         components: {
-            'episodes-table': () => import(/* webpackChunkName: "episodestable" */ '../../vue/EpisodesTable.vue'),
+            'episodes-table': lazyLoadComponent({
+                componentFactory: () => import(/* webpackChunkName: "episodestable" */ '../../vue/EpisodesTable.vue'),
+                loading: EpisodesSkeletonBox,
+            }),
         },
         data: {},
         methods: {
@@ -24,5 +30,5 @@ const main = async() => {
 };
 
 // Execute async function
-main().then((value) => {
+main().then(() => {
 });

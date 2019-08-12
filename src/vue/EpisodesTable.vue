@@ -1,46 +1,44 @@
 <template>
-    <div class="w-full mb-8 max-w-4xl mx-auto">
-        <div class="w-full bg-transparent">
-            <vuetable-filter-bar></vuetable-filter-bar>
-            <div class="vuetable-pagination clearfix px-2 md:px-0">
-                <vuetable-pagination-info ref="paginationInfoTop"
-                                          infoTemplate="Displaying {from} to {to} of {total} episodes"
-                ></vuetable-pagination-info>
-                <vuetable-pagination ref="paginationTop"
-                                     @vuetable-pagination:change-page="onChangePage"
-                ></vuetable-pagination>
-            </div>
-            <div class="overflow-x-auto overflow-y-hidden">
-                <vuetable ref="vuetable"
-                          api-url="/actions/site-module/site/episodes"
-                          :per-page="10"
-                          :fields="fields"
-                          :css="css"
-                          :sort-order="sortOrder"
-                          :append-params="moreParams"
-                          @vuetable:pagination-data="onPaginationData"
-                          @vuetable:row-clicked="onRowClicked"
-                          @vuetable:loaded="onLoaded"
-                >
-                    <template slot="episode-display" slot-scope="props">
-                        <episode-cell :title="props.rowData.title"
-                                      :url="props.rowData.url"
-                                      :post-date="props.rowData.postDate"
-                                      :episode-number="props.rowData.episodeNumber"
-                                      :summary="props.rowData.summary"
-                        >
-                        </episode-cell>
-                    </template>
-                </vuetable>
-            </div>
-            <div class="vuetable-pagination clearfix px-2 md:px-0">
-                <vuetable-pagination-info ref="paginationInfo"
-                                          infoTemplate="Displaying {from} to {to} of {total} episodes"
-                ></vuetable-pagination-info>
-                <vuetable-pagination ref="pagination"
-                                     @vuetable-pagination:change-page="onChangePage"
-                ></vuetable-pagination>
-            </div>
+    <div class="w-full bg-transparent">
+        <vuetable-filter-bar></vuetable-filter-bar>
+        <div class="vuetable-pagination clearfix px-2 md:px-0">
+            <vuetable-pagination-info ref="paginationInfoTop"
+                                      infoTemplate="Displaying {from} to {to} of {total} episodes"
+            ></vuetable-pagination-info>
+            <vuetable-pagination ref="paginationTop"
+                                 @vuetable-pagination:change-page="onChangePage"
+            ></vuetable-pagination>
+        </div>
+        <div class="overflow-x-auto overflow-y-hidden">
+            <vuetable ref="vuetable"
+                      api-url="/actions/site-module/site/episodes"
+                      :per-page="10"
+                      :fields="fields"
+                      :css="css"
+                      :sort-order="sortOrder"
+                      :append-params="moreParams"
+                      @vuetable:pagination-data="onPaginationData"
+                      @vuetable:row-clicked="onRowClicked"
+                      @vuetable:loaded="onLoaded"
+            >
+                <template slot="episode-display" slot-scope="props">
+                    <episode-cell :title="props.rowData.title"
+                                  :url="props.rowData.url"
+                                  :post-date="props.rowData.postDate"
+                                  :episode-number="props.rowData.episodeNumber"
+                                  :summary="props.rowData.summary"
+                    >
+                    </episode-cell>
+                </template>
+            </vuetable>
+        </div>
+        <div class="vuetable-pagination clearfix px-2 md:px-0">
+            <vuetable-pagination-info ref="paginationInfo"
+                                      infoTemplate="Displaying {from} to {to} of {total} episodes"
+            ></vuetable-pagination-info>
+            <vuetable-pagination ref="pagination"
+                                 @vuetable-pagination:change-page="onChangePage"
+            ></vuetable-pagination>
         </div>
     </div>
 </template>
