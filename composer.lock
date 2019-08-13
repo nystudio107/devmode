@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1fbe8af77d29c72bfda7ea34633c52a0",
+    "content-hash": "2942468d1595963104232340774368cf",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -354,16 +354,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.2.9",
+            "version": "3.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "678ec9a876561152a74e5b3e07ebe0d2ca989c22"
+                "reference": "620fa9e16ae1d6d205868754959c459f55128da2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/678ec9a876561152a74e5b3e07ebe0d2ca989c22",
-                "reference": "678ec9a876561152a74e5b3e07ebe0d2ca989c22",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/620fa9e16ae1d6d205868754959c459f55128da2",
+                "reference": "620fa9e16ae1d6d205868754959c459f55128da2",
                 "shasum": ""
             },
             "require": {
@@ -442,7 +442,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-08-06T17:08:35+00:00"
+            "time": "2019-08-13T15:50:41+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -708,9 +708,9 @@
             "authors": [
                 {
                     "name": "Dave Child",
+                    "role": "Developer",
                     "email": "dave@addedbytes.com",
-                    "homepage": "https://www.addedbytes.com/",
-                    "role": "Developer"
+                    "homepage": "https://www.addedbytes.com/"
                 }
             ],
             "description": "PHP package to measure the readability of text according to various algorithms.",
@@ -779,16 +779,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.10",
+            "version": "2.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec"
+                "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec",
-                "reference": "a6c8d7101b19a451c1707b1b79bbbc56e4bdb7ec",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/92dd169c32f6f55ba570c309d83f5209cefb5e23",
+                "reference": "92dd169c32f6f55ba570c309d83f5209cefb5e23",
                 "shasum": ""
             },
             "require": {
@@ -807,7 +807,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.1.x-dev"
                 }
             },
             "autoload": {
@@ -833,7 +833,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-07-19T20:52:08+00:00"
+            "time": "2019-08-13T17:33:27+00:00"
         },
         {
             "name": "elvanto/litemoji",
@@ -2404,16 +2404,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "a39fa9ca772a36244ff2c720f3c1b130dab78b29"
+                "reference": "93d8dc7d0541d6148562aa0152841f9bad786289"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/a39fa9ca772a36244ff2c720f3c1b130dab78b29",
-                "reference": "a39fa9ca772a36244ff2c720f3c1b130dab78b29",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/93d8dc7d0541d6148562aa0152841f9bad786289",
+                "reference": "93d8dc7d0541d6148562aa0152841f9bad786289",
                 "shasum": ""
             },
             "require": {
@@ -2466,7 +2466,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2019-07-05T15:38:32+00:00"
+            "time": "2019-08-13T15:43:37+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -2514,16 +2514,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize-sharp",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize-sharp.git",
-                "reference": "95c444c29607a9943f1624739a81f00fca3ead8f"
+                "reference": "a6eda72ebbf4eeb3f36c84d2ab8c533e3b334938"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-sharp/zipball/95c444c29607a9943f1624739a81f00fca3ead8f",
-                "reference": "95c444c29607a9943f1624739a81f00fca3ead8f",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-sharp/zipball/a6eda72ebbf4eeb3f36c84d2ab8c533e3b334938",
+                "reference": "a6eda72ebbf4eeb3f36c84d2ab8c533e3b334938",
                 "shasum": ""
             },
             "require": {
@@ -2553,7 +2553,7 @@
                 "image-transform",
                 "sharp"
             ],
-            "time": "2019-07-06T21:16:17+00:00"
+            "time": "2019-08-13T15:41:30+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-thumbor",
