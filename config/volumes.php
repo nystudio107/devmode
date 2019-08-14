@@ -1,20 +1,5 @@
 <?php
 /**
- * Craft 3 Multi-Environment
- * Efficient and flexible multi-environment config for Craft 3 CMS
- *
- * $_ENV constants are loaded by craft3-multi-environment from .env.php via
- * ./web/index.php for web requests, and ./craft for console requests
- *
- * @author    nystudio107
- * @copyright Copyright (c) 2017 nystudio107
- * @link      https://nystudio107.com/
- * @package   craft3-multi-environment
- * @since     1.0.5
- * @license   MIT
- */
-
-/**
  * Asset Volume Configuration
  *
  * All of your system's volume configuration settings go in here.
@@ -22,37 +7,21 @@
  * to the asset directory in `ASSET_PATH`. Create an array for each Asset
  * Volume your website uses.
  *
- * You must create each Asset Volume in the AdminCP first, and then override
+ * You must create each Asset Volume in the CP first, and then override
  * the settings here.
  */
 
 return [
-
-    // All environments
-    '*' => [
-        'site' => [
-            'path' => '@webroot/assets/site',
-            'url' => '@assetsUrl/assets/site',
-        ],
-        'users' => [
-            'path' => '@webroot/assets/users',
-            'url' => '@assetsUrl/assets/users',
-        ],
-        'episodes' => [
-            'path' => '@webroot/assets/episodes',
-            'url' => '@assetsUrl/assets/episodes',
-        ],
+    'site' => [
+        'path' => '@webroot/assets/site',
+        'url' => '@assetsUrl/assets/site',
     ],
-
-    // Live (production) environment
-    'live'  => [
+    'users' => [
+        'path' => '@webroot/assets/users',
+        'url' => '@assetsUrl/assets/users',
     ],
-
-    // Staging (pre-production) environment
-    'staging'  => [
-    ],
-
-    // Local (development) environment
-    'local'  => [
+    'episodes' => [
+        'path' => '@webroot/assets/episodes',
+        'url' => '@assetsUrl/assets/episodes',
     ],
 ];
