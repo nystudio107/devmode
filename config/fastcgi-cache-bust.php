@@ -23,27 +23,6 @@
  */
 
 return [
-    // All environments
-    '*' => [
-        // Enter the full absolute path to the FastCGI Cache directory.
-        "cachePath" => '',
-    ],
-
-    // Live (production) environment
-    'live'  => [
-        // Enter the full absolute path to the FastCGI Cache directory.
-        "cachePath" => '/var/run/nginx-cache/devmode',
-    ],
-
-    // Staging (pre-production) environment
-    'staging'  => [
-        // Enter the full absolute path to the FastCGI Cache directory.
-        "cachePath" => '',
-    ],
-
-    // Local (development) environment
-    'local'  => [
-        // Enter the full absolute path to the FastCGI Cache directory.
-        "cachePath" => '',
-    ],
+    // Enter the full absolute path to the FastCGI Cache directory.
+    'cachePath' => getenv('FAST_CGI_CACHE_PATH'),
 ];
