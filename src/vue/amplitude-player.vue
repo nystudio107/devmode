@@ -33,7 +33,7 @@
             </div>
 
         </div>
-        <audio :loop="innerLoop" ref="audiofile" :src="url" preload="auto" style="display: none;" :autoplay="autoPlay"></audio>
+        <audio :loop="innerLoop" ref="audiofile" :src="url" preload="auto" style="display: none;" :autoplay="autoPlay" crossOrigin="anonymous"></audio>
     </div>
 </template>
 

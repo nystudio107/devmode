@@ -177,7 +177,22 @@ module.exports = {
                         maxEntries: 20
                     }
                 }
-            }
+            },
+            {
+                // per: https://developers.google.com/web/tools/workbox/guides/advanced-recipes
+                urlPattern: /\.(?:mp3)$/,
+                handler: "cacheFirst",
+                options: {
+                    cacheName: "audio",
+                    expiration: {
+                        maxEntries: 5
+                    },
+                    plugins: [
+                        new workbox.cacheableResponse.Plugin({statuses: [200]}),
+                        new workbox.rangeRequests.Plugin(),
+                    ],
+                }
+            },
         ]
     }
 };
