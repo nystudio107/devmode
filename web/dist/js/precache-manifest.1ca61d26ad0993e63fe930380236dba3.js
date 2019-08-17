@@ -3,7 +3,7 @@ self.__precacheManifest = [
     "url": "/dist/js/vendors~vue~vueclickaway.d0a9007de8053e15d60b.js"
   },
   {
-    "url": "/dist/js/amplitudeplayer.4e203c9d460885a3a080.js"
+    "url": "/dist/js/amplitudeplayer.193d68379be1422128d0.js"
   },
   {
     "url": "/dist/js/app.c3e9f50ffc201deeae23.js"
@@ -21,7 +21,7 @@ self.__precacheManifest = [
     "url": "/dist/js/lazysizes.d4dffd96ff52be32a076.js"
   },
   {
-    "url": "/dist/js/player.da902860d27d9446e4d9.js"
+    "url": "/dist/js/player.636385f00118c25169b9.js"
   },
   {
     "url": "/dist/js/vendors~vuetable.c005a387ed18e89c4956.js"
