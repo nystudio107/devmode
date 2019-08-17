@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "2942468d1595963104232340774368cf",
@@ -1270,8 +1270,8 @@
             "authors": [
                 {
                     "name": "Mark Beech",
-                    "email": "m@rkbee.ch",
-                    "role": "Developer"
+                    "role": "Developer",
+                    "email": "m@rkbee.ch"
                 }
             ],
             "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
@@ -1832,16 +1832,16 @@
         },
         {
             "name": "mikehaertl/php-shellcommand",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mikehaertl/php-shellcommand.git",
-                "reference": "903ee95d3ee8f65ebbe4c6e17705d1d91760521a"
+                "reference": "290fc6c330bc84a8820350ef68ed975053e0823c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikehaertl/php-shellcommand/zipball/903ee95d3ee8f65ebbe4c6e17705d1d91760521a",
-                "reference": "903ee95d3ee8f65ebbe4c6e17705d1d91760521a",
+                "url": "https://api.github.com/repos/mikehaertl/php-shellcommand/zipball/290fc6c330bc84a8820350ef68ed975053e0823c",
+                "reference": "290fc6c330bc84a8820350ef68ed975053e0823c",
                 "shasum": ""
             },
             "require": {
@@ -1867,7 +1867,7 @@
             "keywords": [
                 "shell"
             ],
-            "time": "2018-07-07T07:35:36+00:00"
+            "time": "2019-08-17T06:39:51+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -2161,15 +2161,15 @@
             "authors": [
                 {
                     "name": "Peter Putzer",
+                    "role": "Developer",
                     "email": "github@mundschenk.at",
-                    "homepage": "https://code.mundschenk.at",
-                    "role": "Developer"
+                    "homepage": "https://code.mundschenk.at"
                 },
                 {
                     "name": "Jeffrey D. King",
+                    "role": "Original author",
                     "email": "jeff.king@weathersource.com",
-                    "homepage": "http://kingdesk.com",
-                    "role": "Original author"
+                    "homepage": "http://kingdesk.com"
                 }
             ],
             "description": "A PHP library for improving your web typography",
@@ -2238,20 +2238,20 @@
         },
         {
             "name": "nystudio107/craft-disqus",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-disqus.git",
-                "reference": "86fb24a670563cf53123da3d57a475b3b4e54dbc"
+                "reference": "838ae075cf66eb101810cf992959fd5b033dccf9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-disqus/zipball/86fb24a670563cf53123da3d57a475b3b4e54dbc",
-                "reference": "86fb24a670563cf53123da3d57a475b3b4e54dbc",
+                "url": "https://api.github.com/repos/nystudio107/craft-disqus/zipball/838ae075cf66eb101810cf992959fd5b033dccf9",
+                "reference": "838ae075cf66eb101810cf992959fd5b033dccf9",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC1"
+                "craftcms/cms": "^3.0.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -2289,7 +2289,7 @@
                 "craftcms",
                 "disqus"
             ],
-            "time": "2019-08-10T19:49:27+00:00"
+            "time": "2019-08-15T14:52:21+00:00"
         },
         {
             "name": "nystudio107/craft-fastcgicachebust",
@@ -2754,16 +2754,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.19",
+            "version": "3.2.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "1fd07a20e08890c4416056d3e2ba0a055544b5f7"
+                "reference": "7a062799926183c41beb61a6f48fe53724070b0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/1fd07a20e08890c4416056d3e2ba0a055544b5f7",
-                "reference": "1fd07a20e08890c4416056d3e2ba0a055544b5f7",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/7a062799926183c41beb61a6f48fe53724070b0b",
+                "reference": "7a062799926183c41beb61a6f48fe53724070b0b",
                 "shasum": ""
             },
             "require": {
@@ -2824,7 +2824,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-08-06T15:37:35+00:00"
+            "time": "2019-08-16T14:36:41+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
