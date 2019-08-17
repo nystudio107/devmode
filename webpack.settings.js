@@ -154,11 +154,11 @@ module.exports = {
         precacheManifestFilename: "js/precache-manifest.[manifestHash].js",
         importScripts: [
             "/dist/js/workbox-catch-handler.js",
-            "/dist/js/workbox-range-download.js",
         ],
         exclude: [
             /\/admin.*$/,
             /\.(png|jpe?g|gif|svg|webp)$/i,
+            /\.(mp3)$/i,
             /\.map$/,
             /^manifest.*\\.js(?:on)?$/,
         ],
