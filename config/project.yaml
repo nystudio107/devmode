@@ -1100,18 +1100,18 @@ volumes:
     handle: episodes
     type: craft\volumes\Local
     hasUrls: true
-    url: 'https://devmode.fm/assets/episodes'
+    url: '@assetsUrl/assets/episodes'
     settings:
-      path: /home/forge/devmode.fm/web/assets/episodes
+      path: '@webroot/assets/episodes'
     sortOrder: 3
   ab5dbb6f-b2fe-4712-9237-d47c3a608050:
     name: Users
     handle: users
     type: craft\volumes\Local
     hasUrls: true
-    url: 'https://devmode.fm/assets/users'
+    url: '@assetsUrl/assets/users'
     settings:
-      path: /home/forge/devmode.fm/web/assets/users
+      path: '@webroot/assets/users'
     sortOrder: 2
     fieldLayouts:
       6da5d8e4-c0df-4a1d-9e1e-b040b8223df1:
@@ -1128,9 +1128,9 @@ volumes:
     handle: site
     type: craft\volumes\Local
     hasUrls: true
-    url: 'https://devmode.fm/assets/site'
+    url: '@assetsUrl/assets/site'
     settings:
-      path: /home/forge/devmode.fm/web/assets/site
+      path: '@webroot/assets/site'
     sortOrder: 1
     fieldLayouts:
       1cc04194-1111-4d46-b8e3-e7e24766f2be:
