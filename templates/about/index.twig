@@ -46,30 +46,40 @@
                         {% endfor %}
                     </div>
                 </div>
+                {% set blocks = entry.faqs.all() %}
+                {% for block in blocks %}
+                    <div>
+                        <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 leading-normal">
+                            <h2 class="font-mono italic font-bold text-devmode-pink text-3xl">{{ block.question |typogrify }}</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 leading-normal">
+                            {{ block.answer |nl2br |typogrify }}
+                        </div>
+                    </div>
+                    {# -- Reference links -- #}
+                    {% if  block.links |length %}
+                        <div>
+                            <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8">
+                                <i class="icon-info-circled align-middle"></i>
+                                <ul class="list-reset inline">
+                                    {% for link in block.links %}
+                                        <li class="inline-block pr-1">
+                                            <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkText }}" target="_blank" rel="nofollow noopener">{{ link.linkText }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
                 {# -- Show summary -- #}
                 <div>
                     <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 leading-normal">
-                        {{ showInfo.showDescription |nl2br |typogrify }}
-                        <br />
-                        <br />
-                        The source code for this website is MIT licensed, and can be found on Github: <a href="https://github.com/nystudio107/devmode" target="_blank" rel="nofollow noopener"><tt>nystudio107/devmode</tt></a>. This website is built with:
+                        The following <a href="https://plugins.craftcms.com/" target="_blank">Craft CMS plugins</a> are used to build the site:
                     </div>
                 </div>
-                {# -- Reference links -- #}
-                {% if  showInfo.showTechnologiesLinks |length %}
-                    <div>
-                        <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8">
-                            <i class="icon-info-circled align-middle"></i>
-                            <ul class="list-reset inline">
-                                {% for link in showInfo.showTechnologiesLinks %}
-                                    <li class="inline-block pr-1">
-                                        <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkName }}" target="_blank" rel="nofollow noopener">{{ link.linkName }}</a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                {% endif %}
                 {% set plugins = craft.app.plugins.allPlugins() %}
                 {# -- Plugins -- #}
                 {% if  plugins |length %}

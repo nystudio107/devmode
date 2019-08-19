@@ -1,4 +1,4 @@
-dateModified: 1566223050
+dateModified: 1566227825
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -586,7 +586,7 @@ matrixBlockTypes:
         translationKeyFormat: null
         type: craft\redactor\Field
         settings:
-          redactorConfig: Simple.json
+          redactorConfig: Standard.json
           purifierConfig: ''
           cleanupHtml: true
           removeInlineStyles: '1'
@@ -621,10 +621,6 @@ matrixBlockTypes:
               handle: linkUrl
               width: ''
               type: singleline
-          defaults:
-            -
-              col1: ''
-              col2: ''
           columnType: text
         contentColumnType: text
         fieldGroup: null
