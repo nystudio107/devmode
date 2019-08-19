@@ -6,7 +6,8 @@
 {% endblock headLinks %}
 
 {% block content %}
-    {% include "_partials/_meta-schema-radio-series.twig" with {
+    {% include "about/_partials/_meta-schema-faqpage.twig" with {
+        "faqs": entry.faqs,
         "showInfo": showInfo,
     } only %}
     <section>
@@ -46,15 +47,16 @@
                         {% endfor %}
                     </div>
                 </div>
+                {# -- FAQ blocks -- #}
                 {% set blocks = entry.faqs.all() %}
                 {% for block in blocks %}
                     <div>
-                        <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 leading-normal">
+                        <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 pb-4 leading-normal">
                             <h2 class="font-mono italic font-bold text-devmode-pink text-3xl">{{ block.question |typogrify }}</h2>
                         </div>
                     </div>
                     <div>
-                        <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 leading-normal">
+                        <div class="inline-block text-devmode-pink devmode-container font-sans text-xl px-8 py-4 leading-normal">
                             {{ block.answer |nl2br |typogrify }}
                         </div>
                     </div>
@@ -76,7 +78,7 @@
                 {% endfor %}
                 {# -- Show summary -- #}
                 <div>
-                    <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 leading-normal">
+                    <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 py-4 leading-normal">
                         The following <a href="https://plugins.craftcms.com/" target="_blank">Craft CMS plugins</a> are used to build the site:
                     </div>
                 </div>
@@ -84,7 +86,7 @@
                 {# -- Plugins -- #}
                 {% if  plugins |length %}
                     <div>
-                        <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8">
+                        <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8 pt-4">
                             <i class="icon-plug align-middle"></i>
                             <ul class="list-reset inline">
                                 {% for plugin in plugins %}
