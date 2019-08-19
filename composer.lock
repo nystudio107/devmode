@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2942468d1595963104232340774368cf",
+    "content-hash": "3a793180977f1030946fb94c5216a744",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -535,6 +535,54 @@
                 "plugin"
             ],
             "time": "2019-05-23T13:16:39+00:00"
+        },
+        {
+            "name": "craftcms/redactor",
+            "version": "2.3.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftcms/redactor.git",
+                "reference": "55ee76494f6332ba5709003d2082e51d56ae8b1a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/55ee76494f6332ba5709003d2082e51d56ae8b1a",
+                "reference": "55ee76494f6332ba5709003d2082e51d56ae8b1a",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.1.0"
+            },
+            "type": "craft-plugin",
+            "extra": {
+                "name": "Redactor",
+                "handle": "redactor",
+                "documentationUrl": "https://github.com/craftcms/redactor/blob/v2/README.md"
+            },
+            "autoload": {
+                "psr-4": {
+                    "craft\\redactor\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
+            "description": "Edit rich text content in Craft CMS using Redactor by Imperavi.",
+            "keywords": [
+                "Redactor",
+                "cms",
+                "craftcms",
+                "html",
+                "yii2"
+            ],
+            "time": "2019-04-29T21:39:05+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -1270,8 +1318,8 @@
             "authors": [
                 {
                     "name": "Mark Beech",
-                    "role": "Developer",
-                    "email": "m@rkbee.ch"
+                    "email": "m@rkbee.ch",
+                    "role": "Developer"
                 }
             ],
             "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
@@ -2161,15 +2209,15 @@
             "authors": [
                 {
                     "name": "Peter Putzer",
-                    "role": "Developer",
                     "email": "github@mundschenk.at",
-                    "homepage": "https://code.mundschenk.at"
+                    "homepage": "https://code.mundschenk.at",
+                    "role": "Developer"
                 },
                 {
                     "name": "Jeffrey D. King",
-                    "role": "Original author",
                     "email": "jeff.king@weathersource.com",
-                    "homepage": "http://kingdesk.com"
+                    "homepage": "http://kingdesk.com",
+                    "role": "Original author"
                 }
             ],
             "description": "A PHP library for improving your web typography",
