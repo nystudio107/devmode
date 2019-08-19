@@ -32,9 +32,10 @@
                     <div class="inline-block devmode-container p-8">
                         <strong>
                             <h1 class="text-devmode-pink font-mono italic font-bold text-4xl sm:text-5xl">
-                                <a href="/" class="title-link" rel="noopener">
-                                {{ showInfo.showTitle }}</h1>
+                                <a href="/" class="title-link" @mouseover="prerenderLink" rel="noopener">
+                                    {{ showInfo.showTitle }}
                                 </a>
+                            </h1>
                         </strong>
                     </div>
                 </div>
@@ -54,35 +55,46 @@
                         {% endfor %}
                     </div>
                 </div>
-                {# -- Show summary -- #}
-                <div>
-                    <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 leading-normal">
-                        {{ showInfo.showDescription |nl2br |typogrify }}
-                        <br />
-                        <br />
-                        This website is built with:
-                    </div>
-                </div>
-                {# -- Reference links -- #}
-                {% if  showInfo.showTechnologiesLinks |length %}
+                {# -- FAQ blocks -- #}
+                {% set blocks = entry.faqs.all() %}
+                {% for block in blocks %}
                     <div>
-                        <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8">
-                            <i class="icon-info-circled align-middle"></i>
-                            <ul class="list-reset inline">
-                                {% for link in showInfo.showTechnologiesLinks %}
-                                    <li class="inline-block pr-1">
-                                        <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkName }}" target="_blank" rel="nofollow noopener">{{ link.linkName }}</a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
+                        <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 pb-4 leading-normal">
+                            <h2 class="font-mono italic font-bold text-devmode-pink text-3xl">{{ block.question |typogrify }}</h2>
                         </div>
                     </div>
-                {% endif %}
+                    <div>
+                        <div class="inline-block text-devmode-pink devmode-container font-sans text-xl px-8 py-4 leading-normal">
+                            {{ block.answer |nl2br |typogrify }}
+                        </div>
+                    </div>
+                    {# -- Reference links -- #}
+                    {% if  block.links |length %}
+                        <div>
+                            <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8">
+                                <i class="icon-info-circled align-middle"></i>
+                                <ul class="list-reset inline">
+                                    {% for link in block.links %}
+                                        <li class="inline-block pr-1">
+                                            <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkText }}" target="_blank" rel="nofollow noopener">{{ link.linkText }}</a>
+                                        </li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+                {# -- Show summary -- #}
+                <div>
+                    <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 py-4 leading-normal">
+                        The following <a href="https://plugins.craftcms.com/" target="_blank">Craft CMS plugins</a> are used to build the site:
+                    </div>
+                </div>
                 {% set plugins = craft.app.plugins.allPlugins() %}
                 {# -- Plugins -- #}
                 {% if  plugins |length %}
                     <div>
-                        <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8">
+                        <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8 pt-4">
                             <i class="icon-plug align-middle"></i>
                             <ul class="list-reset inline">
                                 {% for plugin in plugins %}
@@ -94,7 +106,7 @@
                         </div>
                     </div>
                 {% endif %}
-
+            
             </div>
         </div>
     </section>
