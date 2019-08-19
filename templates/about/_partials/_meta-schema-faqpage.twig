@@ -10,17 +10,17 @@
 {% for faq in faqs.all() %}
     {% set faqLinks = '' %}
     {% for link in faq.links %}
-        {% set linkHtml %}
+        {%- set linkHtml -%}
             <a href="{{ link.linkUrl }}" target="_blank">{{ link.linkText }}</a>
-        {% endset %}
-        {% set faqLinks = faqLinks ~ linkHtml %}
+        {%- endset -%}
+        {% set faqLinks = faqLinks ~ linkHtml ~ (loop.last ? '' : ', ') %}
     {% endfor %}
     {% set faqsArray = faqsArray | merge([seomatic.jsonLd.create({
         'type': 'Question',
         'name': faq.question,
         'acceptedAnswer': {
             'type': 'Answer',
-            'text': faq.answer ~ faqLinks,
+            'text': (faq.answer ~ faqLinks),
         },
     }, false)]) %}
 {% endfor %}
