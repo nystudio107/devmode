@@ -36,15 +36,15 @@
                 "id": "{{ url(episode.episodeNumber) }}",
                 "url": "{{ episode.url }}",
                 "title": "{{ episode.title }}",
-                "content_html": "<p>{{ episode.episodeSummary | typogrifyFeed | nl2br | json_encode }}</p>
+                "content_html": {% filter json_encode | raw %}{% spaceless %}<p>{{ episode.episodeSummary | typogrifyFeed | nl2br  }}</p>
                 <ul>
                 {% for link in episode.episodeReferenceLinks %}
                 <li>
                 <a href='{{ link.linkUrl }}' >{{ link.linkName }}</a>
                 </li>
                 {% endfor %}
-                </ul>",
-                "content_text": "{{ episode.episodeSummary | striptags | typogrifyFeed | nl2br | json_encode }}",
+                </ul>{% endspaceless %}{% endfilter %},
+                "content_text": {% filter json_encode | raw %}{% spaceless %}{{ episode.episodeSummary | striptags | typogrifyFeed | nl2br }}{% endspaceless %}{% endfilter %},
                 "summary": "{{ summaryText }}",
                 "image": "{{ showInfo.showImage.one().getUrl() }}",
                 "date_published": "{{ episode.postDate | atom }}",
