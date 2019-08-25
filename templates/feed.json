@@ -12,13 +12,11 @@
     "icon": "{{ showInfo.showImage.one().getUrl() }}",
     "home_page_url": "{{ showInfo.showUrl }}",
     "feed_url": "{{ siteUrl('/feed.json') }}",
-    "author": [
-        {
-            "name": "{{ host.fullName | typogrifyFeed }}",
-            "url": "{{ host.profileUrl }}",
-            "avatar": "{{ hostPhoto.getUrl() }}"
-        }
-    ],
+    "author": {
+        "name": "{{ host.fullName | typogrifyFeed }}",
+        "url": "{{ host.profileUrl }}",
+        "avatar": "{{ hostPhoto.getUrl() }}"
+    },
     "items": [
         {% spaceless %}
         {% for episode in craft.entries.section("episodes").all() %}
@@ -49,14 +47,14 @@
                 "content_text": "{{ episode.episodeSummary | striptags | typogrifyFeed | nl2br | json_encode }}",
                 "summary": "{{ summaryText }}",
                 "image": "{{ showInfo.showImage.one().getUrl() }}",
-                "date_published": "{{ episode.postDate |rss }}",
-                "date_modified": "{{ episode.postDate |rss }}",
+                "date_published": "{{ episode.postDate | atom }}",
+                "date_modified": "{{ episode.postDate | atom }}",
                 "attachments": [
                         {
                             "url": "{{ transAudioUrl }}",
                             "mime_type": "audio/mpeg",
-                            "size_in_bytes": "{{ fileInfo.size }}",
-                            "duration_in_seconds": "{{ fileInfo.duration | round }}"
+                            "size_in_bytes": {{ fileInfo.size }},
+                            "duration_in_seconds": {{ fileInfo.duration | round }}
                         }
                     ]
                 }{% if not loop.last %},{% endif %}
