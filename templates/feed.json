@@ -1,0 +1,66 @@
+{% header "Content-Type: application/json" %}
+{% set hosts = craft.users.group("owners").all() %}
+{% set baseUrl = alias('@assetsUrl') ~ '/' %}
+{% do craft.webperf.includeBeacon(false) %}
+{% do seomatic.config.renderEnabled(false) %}
+{% set host = hosts[0] %}
+{% set hostPhoto = host.getPhoto() %}
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "{{ showInfo.showTitle | typogrifyFeed }}",
+    "description": "{{ showInfo.showDescription |typogrifyFeed }}",
+    "icon": "{{ showInfo.showImage.one().getUrl() }}",
+    "home_page_url": "{{ showInfo.showUrl }}",
+    "feed_url": "{{ siteUrl('/feed.json') }}",
+    "author": [
+        {
+            "name": "{{ host.fullName | typogrifyFeed }}",
+            "url": "{{ host.profileUrl }}",
+            "avatar": "{{ hostPhoto.getUrl() }}"
+        }
+    ],
+    "items": [
+        {% spaceless %}
+        {% for episode in craft.entries.section("episodes").all() %}
+            {% set summaryText = stringy(episode.episodeSummary).lines()[0] |truncateOnWord(300) |typogrifyFeed %}
+            {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
+                "audioBitRate": "64k",
+                "audioSampleRate": 22050,
+                "audioChannels": 1
+            }) %}
+            {% if not craft.app.config.general.devMode %}
+                {% set transAudioUrl = transAudioUrl | replace('/^(http|https):/', '') %}
+                {% set transAudioUrl = transAudioUrl | replace('//', '') %}
+                {% set transAudioUrl = "https://chtbl.com/track/81493/#{transAudioUrl}" %}
+            {% endif %}
+            {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
+            {
+                "id": "{{ url(episode.episodeNumber) }}",
+                "url": "{{ episode.url }}",
+                "title": "{{ episode.title }}",
+                "content_html": "<p>{{ episode.episodeSummary | typogrifyFeed | nl2br | json_encode }}</p>
+                <ul>
+                {% for link in episode.episodeReferenceLinks %}
+                <li>
+                <a href='{{ link.linkUrl }}' >{{ link.linkName }}</a>
+                </li>
+                {% endfor %}
+                </ul>",
+                "content_text": "{{ episode.episodeSummary | striptags | typogrifyFeed | nl2br | json_encode }}",
+                "summary": "{{ summaryText }}",
+                "image": "{{ showInfo.showImage.one().getUrl() }}",
+                "date_published": "{{ episode.postDate |rss }}",
+                "date_modified": "{{ episode.postDate |rss }}",
+                "attachments": [
+                        {
+                            "url": "{{ transAudioUrl }}",
+                            "mime_type": "audio/mpeg",
+                            "size_in_bytes": "{{ fileInfo.size }}",
+                            "duration_in_seconds": "{{ fileInfo.duration | round }}"
+                        }
+                    ]
+                }{% if not loop.last %},{% endif %}
+        {% endfor %}
+        {% endspaceless %}
+    ]
+}
