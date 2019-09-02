@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "3a793180977f1030946fb94c5216a744",
@@ -68,16 +68,16 @@
         },
         {
             "name": "composer/ca-bundle",
-            "version": "1.2.3",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "f26a67e397be0e5c00d7c52ec7b5010098e15ce5"
+                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/f26a67e397be0e5c00d7c52ec7b5010098e15ce5",
-                "reference": "f26a67e397be0e5c00d7c52ec7b5010098e15ce5",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
+                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
                 "shasum": ""
             },
             "require": {
@@ -120,7 +120,7 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2019-08-02T09:05:43+00:00"
+            "time": "2019-08-30T08:44:50+00:00"
         },
         {
             "name": "composer/composer",
@@ -354,16 +354,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.3.0",
+            "version": "3.3.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "777b2f0154e998dd1c5ebacf3caffe7f02639ec2"
+                "reference": "069f389944401cc8eb9fecddd69e408c5b03a912"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/777b2f0154e998dd1c5ebacf3caffe7f02639ec2",
-                "reference": "777b2f0154e998dd1c5ebacf3caffe7f02639ec2",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/069f389944401cc8eb9fecddd69e408c5b03a912",
+                "reference": "069f389944401cc8eb9fecddd69e408c5b03a912",
                 "shasum": ""
             },
             "require": {
@@ -443,7 +443,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-08-27T18:09:50+00:00"
+            "time": "2019-08-27T22:54:56+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1318,8 +1318,8 @@
                 },
                 {
                     "name": "John Grogg",
-                    "role": "Developer/Prior Owner",
-                    "email": "john.grogg@gmail.com"
+                    "email": "john.grogg@gmail.com",
+                    "role": "Developer/Prior Owner"
                 }
             ],
             "description": "ICS Parser",
@@ -1538,9 +1538,9 @@
             "authors": [
                 {
                     "name": "Ignace Nyamagana Butera",
-                    "role": "Developer",
                     "email": "nyamsprod@gmail.com",
-                    "homepage": "https://github.com/nyamsprod/"
+                    "homepage": "https://github.com/nyamsprod/",
+                    "role": "Developer"
                 }
             ],
             "description": "Csv data manipulation made easy in PHP",
@@ -5125,9 +5125,9 @@
             "authors": [
                 {
                     "name": "Lars Moelleken",
-                    "role": "Maintainer",
                     "email": "lars@moelleken.org",
-                    "homepage": "http://www.moelleken.org/"
+                    "homepage": "http://www.moelleken.org/",
+                    "role": "Maintainer"
                 }
             ],
             "description": "Array manipulation library for PHP, called Arrayy!",
@@ -5629,8 +5629,8 @@
             "authors": [
                 {
                     "name": "Niels Leenheer",
-                    "role": "Developer",
-                    "email": "niels@leenheer.nl"
+                    "email": "niels@leenheer.nl",
+                    "role": "Developer"
                 }
             ],
             "description": "Useragent sniffing library for PHP",
