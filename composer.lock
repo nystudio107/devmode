@@ -354,16 +354,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.3.1",
+            "version": "3.3.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "9b44b081e6782314703bdbadbdf9bc0e5041bf3d"
+                "reference": "a49ccf67359d69e01005cf122b77e54b85e3e2f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/9b44b081e6782314703bdbadbdf9bc0e5041bf3d",
-                "reference": "9b44b081e6782314703bdbadbdf9bc0e5041bf3d",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/a49ccf67359d69e01005cf122b77e54b85e3e2f0",
+                "reference": "a49ccf67359d69e01005cf122b77e54b85e3e2f0",
                 "shasum": ""
             },
             "require": {
@@ -392,7 +392,7 @@
                 "symfony/yaml": "^3.2|^4.0",
                 "true/punycode": "^2.1.0",
                 "twig/twig": "~2.11.0",
-                "voku/stringy": "^5.1.0",
+                "voku/stringy": "~5.1.0",
                 "webonyx/graphql-php": "^0.12.0",
                 "yii2tech/ar-softdelete": "^1.0.2",
                 "yiisoft/yii2": "~2.0.21.0",
@@ -444,7 +444,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-09-06T18:18:00+00:00"
+            "time": "2019-09-08T19:01:19+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2651,16 +2651,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.23",
+            "version": "3.1.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "2be14c5ca6f27a6c58b07b43ca51d22dffe4cbfa"
+                "reference": "e84e5603ca6b42e4360e14200b6843fbefa993c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/2be14c5ca6f27a6c58b07b43ca51d22dffe4cbfa",
-                "reference": "2be14c5ca6f27a6c58b07b43ca51d22dffe4cbfa",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/e84e5603ca6b42e4360e14200b6843fbefa993c1",
+                "reference": "e84e5603ca6b42e4360e14200b6843fbefa993c1",
                 "shasum": ""
             },
             "require": {
@@ -2704,7 +2704,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2019-08-22T00:02:09+00:00"
+            "time": "2019-09-09T16:03:10+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
@@ -2748,16 +2748,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.23",
+            "version": "3.2.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "2d07e94af8896129560616a6dc2df64693b93f06"
+                "reference": "8d152ebb3eb00f838448ead6647078f5530d3068"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/2d07e94af8896129560616a6dc2df64693b93f06",
-                "reference": "2d07e94af8896129560616a6dc2df64693b93f06",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8d152ebb3eb00f838448ead6647078f5530d3068",
+                "reference": "8d152ebb3eb00f838448ead6647078f5530d3068",
                 "shasum": ""
             },
             "require": {
@@ -2818,7 +2818,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-09-06T18:27:36+00:00"
+            "time": "2019-09-09T15:50:47+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -2997,16 +2997,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "1.0.13",
+            "version": "1.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "3e152d621d0704b06ba6b5c34b2023e2ec11149b"
+                "reference": "2cafe2a0ceeb7465739b55ccc07df1e0516f855a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/3e152d621d0704b06ba6b5c34b2023e2ec11149b",
-                "reference": "3e152d621d0704b06ba6b5c34b2023e2ec11149b",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/2cafe2a0ceeb7465739b55ccc07df1e0516f855a",
+                "reference": "2cafe2a0ceeb7465739b55ccc07df1e0516f855a",
                 "shasum": ""
             },
             "require": {
@@ -3053,7 +3053,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-08-07T16:40:42+00:00"
+            "time": "2019-09-09T16:10:13+00:00"
         },
         {
             "name": "nystudio107/dotenvy",
@@ -5198,17 +5198,66 @@
             "time": "2019-01-02T23:08:14+00:00"
         },
         {
-            "name": "voku/portable-utf8",
-            "version": "5.4.18",
+            "name": "voku/portable-ascii",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "dbbea53aa5bd15a5e9a561802de97650780a4366"
+                "url": "https://github.com/voku/portable-ascii.git",
+                "reference": "dffbceda245fe7a07e1948cc79a9ca885b68aa53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/dbbea53aa5bd15a5e9a561802de97650780a4366",
-                "reference": "dbbea53aa5bd15a5e9a561802de97650780a4366",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/dffbceda245fe7a07e1948cc79a9ca885b68aa53",
+                "reference": "dffbceda245fe7a07e1948cc79a9ca885b68aa53",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0 || ~7.0"
+            },
+            "suggest": {
+                "ext-intl": "Use Intl for transliterator_transliterate() support"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "voku\\": "src/voku/",
+                    "voku\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Moelleken",
+                    "homepage": "http://www.moelleken.org/"
+                }
+            ],
+            "description": "Portable ASCII library - performance optimized (ascii) string functions for php.",
+            "homepage": "https://github.com/voku/portable-ascii",
+            "keywords": [
+                "ascii",
+                "clean",
+                "php"
+            ],
+            "time": "2019-09-07T00:53:19+00:00"
+        },
+        {
+            "name": "voku/portable-utf8",
+            "version": "5.4.19",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/voku/portable-utf8.git",
+                "reference": "b73a3a8dbe92588af92552597257fea6850af2c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/b73a3a8dbe92588af92552597257fea6850af2c3",
+                "reference": "b73a3a8dbe92588af92552597257fea6850af2c3",
                 "shasum": ""
             },
             "require": {
@@ -5217,7 +5266,8 @@
                 "symfony/polyfill-intl-grapheme": "~1.0",
                 "symfony/polyfill-intl-normalizer": "~1.0",
                 "symfony/polyfill-mbstring": "~1.0",
-                "symfony/polyfill-php72": "~1.0"
+                "symfony/polyfill-php72": "~1.0",
+                "voku/portable-ascii": "~1.2"
             },
             "require-dev": {
                 "phpunit/phpunit": "~6.0 || ~7.0"
@@ -5268,7 +5318,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2019-08-21T13:10:21+00:00"
+            "time": "2019-09-06T23:26:32+00:00"
         },
         {
             "name": "voku/stop-words",
