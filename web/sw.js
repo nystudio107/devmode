@@ -28,7 +28,7 @@ workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(/\/admin.*$/, workbox.strategies.networkOnly(), 'GET');
-workbox.routing.registerRoute(/\.php$/, workbox.strategies.networkOnly(), 'GET');
+workbox.routing.registerRoute(/\.mp3$/, workbox.strategies.networkOnly(), 'GET');
 workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|svg|webp)$/, workbox.strategies.cacheFirst({ "cacheName":"images", plugins: [new workbox.expiration.Plugin({"maxEntries":20,"purgeOnQuotaError":false})] }), 'GET');
 
 workbox.googleAnalytics.initialize({});

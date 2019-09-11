@@ -173,7 +173,7 @@ module.exports = {
                 handler: "networkOnly"
             },
             {
-                urlPattern: /\.php$/,
+                urlPattern: /\.mp3$/,
                 handler: "networkOnly"
             },
             {
