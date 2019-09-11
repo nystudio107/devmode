@@ -172,6 +172,7 @@ module.exports = {
                 urlPattern: /\/admin.*$/,
                 handler: "networkOnly"
             },
+            // See "Serve cached audio and video" https://developers.google.com/web/tools/workbox/guides/advanced-recipes
             {
                 urlPattern: /\.mp3$/,
                 handler: "networkOnly"
