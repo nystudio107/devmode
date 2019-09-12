@@ -50,9 +50,9 @@
             "authors": [
                 {
                     "name": "Carsten Brandt",
-                    "role": "Creator",
                     "email": "mail@cebe.cc",
-                    "homepage": "http://cebe.cc/"
+                    "homepage": "http://cebe.cc/",
+                    "role": "Creator"
                 }
             ],
             "description": "A super fast, highly extensible markdown parser for PHP",
@@ -354,16 +354,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.3.1.2",
+            "version": "3.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "a49ccf67359d69e01005cf122b77e54b85e3e2f0"
+                "reference": "c175709bb37ca00a25baf8f53ae8524de5f231d7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/a49ccf67359d69e01005cf122b77e54b85e3e2f0",
-                "reference": "a49ccf67359d69e01005cf122b77e54b85e3e2f0",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/c175709bb37ca00a25baf8f53ae8524de5f231d7",
+                "reference": "c175709bb37ca00a25baf8f53ae8524de5f231d7",
                 "shasum": ""
             },
             "require": {
@@ -444,7 +444,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-09-08T19:01:19+00:00"
+            "time": "2019-09-11T16:49:32+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1281,16 +1281,16 @@
         },
         {
             "name": "johngrogg/ics-parser",
-            "version": "v2.1.14",
+            "version": "v2.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/u01jmg3/ics-parser.git",
-                "reference": "183c649b0a47e4342bb51a7618440139951d5867"
+                "reference": "7c6b7056b2ebc4023666c13c60fa1af4f744afe2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/183c649b0a47e4342bb51a7618440139951d5867",
-                "reference": "183c649b0a47e4342bb51a7618440139951d5867",
+                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/7c6b7056b2ebc4023666c13c60fa1af4f744afe2",
+                "reference": "7c6b7056b2ebc4023666c13c60fa1af4f744afe2",
                 "shasum": ""
             },
             "require": {
@@ -1333,7 +1333,7 @@
                 "ics-parser",
                 "ifb"
             ],
-            "time": "2019-08-15T16:42:42+00:00"
+            "time": "2019-09-10T09:48:10+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -5199,16 +5199,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.2.1",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "dffbceda245fe7a07e1948cc79a9ca885b68aa53"
+                "reference": "d29f78e8ead9cfef6a09208c27716737c1ac56be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/dffbceda245fe7a07e1948cc79a9ca885b68aa53",
-                "reference": "dffbceda245fe7a07e1948cc79a9ca885b68aa53",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/d29f78e8ead9cfef6a09208c27716737c1ac56be",
+                "reference": "d29f78e8ead9cfef6a09208c27716737c1ac56be",
                 "shasum": ""
             },
             "require": {
@@ -5244,7 +5244,7 @@
                 "clean",
                 "php"
             ],
-            "time": "2019-09-07T00:53:19+00:00"
+            "time": "2019-09-10T13:53:07+00:00"
         },
         {
             "name": "voku/portable-utf8",
