@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a793180977f1030946fb94c5216a744",
+    "content-hash": "a5daf8d01a15939809aef624ff12ba6f",
     "packages": [
         {
             "name": "cebe/markdown",
@@ -540,20 +540,20 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.3.3.2",
+            "version": "2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/redactor.git",
-                "reference": "55ee76494f6332ba5709003d2082e51d56ae8b1a"
+                "reference": "8fd0daca685309ad8635f28dca8c9ab2b3f228d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/55ee76494f6332ba5709003d2082e51d56ae8b1a",
-                "reference": "55ee76494f6332ba5709003d2082e51d56ae8b1a",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/8fd0daca685309ad8635f28dca8c9ab2b3f228d4",
+                "reference": "8fd0daca685309ad8635f28dca8c9ab2b3f228d4",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.1.0"
+                "craftcms/cms": "^3.2.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -584,7 +584,7 @@
                 "html",
                 "yii2"
             ],
-            "time": "2019-04-29T21:39:05+00:00"
+            "time": "2019-09-13T11:02:32+00:00"
         },
         {
             "name": "craftcms/server-check",
