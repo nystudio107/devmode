@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "name": "devmode",
+  "description": "Website for the devMode.fm podcast",
+  "icons": {
+    "60": "/dist/img/favicons/firefox_app_60x60.png",
+    "128": "/dist/img/favicons/firefox_app_128x128.png",
+    "512": "/dist/img/favicons/firefox_app_512x512.png"
+  },
+  "developer": {
+    "name": "Andrew Welch",
+    "url": "https://nystudio107.com"
+  }
+}
