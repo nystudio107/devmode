@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "3a793180977f1030946fb94c5216a744",
@@ -702,9 +702,9 @@
             "authors": [
                 {
                     "name": "Dave Child",
-                    "role": "Developer",
                     "email": "dave@addedbytes.com",
-                    "homepage": "https://www.addedbytes.com/"
+                    "homepage": "https://www.addedbytes.com/",
+                    "role": "Developer"
                 }
             ],
             "description": "PHP package to measure the readability of text according to various algorithms.",
@@ -2155,15 +2155,15 @@
             "authors": [
                 {
                     "name": "Peter Putzer",
-                    "role": "Developer",
                     "email": "github@mundschenk.at",
-                    "homepage": "https://code.mundschenk.at"
+                    "homepage": "https://code.mundschenk.at",
+                    "role": "Developer"
                 },
                 {
                     "name": "Jeffrey D. King",
-                    "role": "Original author",
                     "email": "jeff.king@weathersource.com",
-                    "homepage": "http://kingdesk.com"
+                    "homepage": "http://kingdesk.com",
+                    "role": "Original author"
                 }
             ],
             "description": "A PHP library for improving your web typography",
@@ -5087,22 +5087,22 @@
         },
         {
             "name": "voku/arrayy",
-            "version": "5.13.2",
+            "version": "5.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/Arrayy.git",
-                "reference": "6aa252eaba0b4fa9ab95463c05c49a51881b1251"
+                "reference": "4690a79b281906c194adc753b5687f33a10d2477"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Arrayy/zipball/6aa252eaba0b4fa9ab95463c05c49a51881b1251",
-                "reference": "6aa252eaba0b4fa9ab95463c05c49a51881b1251",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/4690a79b281906c194adc753b5687f33a10d2477",
+                "reference": "4690a79b281906c194adc753b5687f33a10d2477",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "php": ">=7.0.0",
-                "phpdocumentor/reflection-docblock": "~4.1",
+                "phpdocumentor/reflection-docblock": "~4.3",
                 "symfony/polyfill-mbstring": "~1.0"
             },
             "require-dev": {
@@ -5139,7 +5139,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2019-08-01T12:49:31+00:00"
+            "time": "2019-09-13T11:03:35+00:00"
         },
         {
             "name": "voku/email-check",
