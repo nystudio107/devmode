@@ -373,9 +373,7 @@ module.exports = [
                 new BundleAnalyzerPlugin(
                     configureBundleAnalyzer(LEGACY_CONFIG),
                 ),
-            ].concat(
-                configureCriticalCss()
-            )
+            ]
         }
     ),
     merge(
