@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "a5daf8d01a15939809aef624ff12ba6f",
@@ -354,16 +354,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.3.4.1",
+            "version": "3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "411852758f009292eb203c89e24dc83e0445c44c"
+                "reference": "6c47e2d298f1b7bda1169d84e9f8ee470a3dec6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/411852758f009292eb203c89e24dc83e0445c44c",
-                "reference": "411852758f009292eb203c89e24dc83e0445c44c",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/6c47e2d298f1b7bda1169d84e9f8ee470a3dec6a",
+                "reference": "6c47e2d298f1b7bda1169d84e9f8ee470a3dec6a",
                 "shasum": ""
             },
             "require": {
@@ -444,7 +444,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-09-17T22:35:58+00:00"
+            "time": "2019-09-25T17:43:00+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1264,8 +1264,8 @@
             "authors": [
                 {
                     "name": "Mark Beech",
-                    "role": "Developer",
-                    "email": "m@rkbee.ch"
+                    "email": "m@rkbee.ch",
+                    "role": "Developer"
                 }
             ],
             "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
@@ -2398,16 +2398,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.1",
+            "version": "1.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "93d8dc7d0541d6148562aa0152841f9bad786289"
+                "reference": "380a0b9c32739519707fc3eb02653bf562434508"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/93d8dc7d0541d6148562aa0152841f9bad786289",
-                "reference": "93d8dc7d0541d6148562aa0152841f9bad786289",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/380a0b9c32739519707fc3eb02653bf562434508",
+                "reference": "380a0b9c32739519707fc3eb02653bf562434508",
                 "shasum": ""
             },
             "require": {
@@ -2460,7 +2460,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2019-08-13T15:43:37+00:00"
+            "time": "2019-09-25T19:23:38+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -2748,16 +2748,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.25",
+            "version": "3.2.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "54644a0274745b9ebca34e6aab532de99445732b"
+                "reference": "de11d1f2a45212d16d61009ac1679059c43b81a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/54644a0274745b9ebca34e6aab532de99445732b",
-                "reference": "54644a0274745b9ebca34e6aab532de99445732b",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/de11d1f2a45212d16d61009ac1679059c43b81a7",
+                "reference": "de11d1f2a45212d16d61009ac1679059c43b81a7",
                 "shasum": ""
             },
             "require": {
@@ -2818,7 +2818,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-09-18T20:01:01+00:00"
+            "time": "2019-09-26T19:05:25+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -5030,21 +5030,21 @@
         },
         {
             "name": "voku/anti-xss",
-            "version": "4.1.14",
+            "version": "4.1.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/anti-xss.git",
-                "reference": "53c5da8039cf2ed226e3249b86a2be700c415f88"
+                "reference": "14ff3982d58af104f5f38a438d99b9600705151e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/anti-xss/zipball/53c5da8039cf2ed226e3249b86a2be700c415f88",
-                "reference": "53c5da8039cf2ed226e3249b86a2be700c415f88",
+                "url": "https://api.github.com/repos/voku/anti-xss/zipball/14ff3982d58af104f5f38a438d99b9600705151e",
+                "reference": "14ff3982d58af104f5f38a438d99b9600705151e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0.0",
-                "voku/portable-utf8": "~5.4.1"
+                "voku/portable-utf8": "~5.4.21"
             },
             "require-dev": {
                 "phpunit/phpunit": "~6.0 || ~7.0"
@@ -5083,7 +5083,7 @@
                 "security",
                 "xss"
             ],
-            "time": "2019-06-27T21:40:28+00:00"
+            "time": "2019-09-25T22:40:48+00:00"
         },
         {
             "name": "voku/arrayy",
@@ -5246,16 +5246,16 @@
         },
         {
             "name": "voku/portable-utf8",
-            "version": "5.4.21",
+            "version": "5.4.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "df543931d92b8403e9b5b38e56abdd24851d8cff"
+                "reference": "14681c231df13eb65e34958b8bcb83dd4c1c3c43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/df543931d92b8403e9b5b38e56abdd24851d8cff",
-                "reference": "df543931d92b8403e9b5b38e56abdd24851d8cff",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/14681c231df13eb65e34958b8bcb83dd4c1c3c43",
+                "reference": "14681c231df13eb65e34958b8bcb83dd4c1c3c43",
                 "shasum": ""
             },
             "require": {
@@ -5316,7 +5316,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2019-09-17T14:53:36+00:00"
+            "time": "2019-09-26T11:47:42+00:00"
         },
         {
             "name": "voku/stop-words",
