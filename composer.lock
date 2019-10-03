@@ -354,16 +354,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.3.5",
+            "version": "3.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "6c47e2d298f1b7bda1169d84e9f8ee470a3dec6a"
+                "reference": "24300e95ce3acd47d10557a8bd8b9b9fbc520795"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/6c47e2d298f1b7bda1169d84e9f8ee470a3dec6a",
-                "reference": "6c47e2d298f1b7bda1169d84e9f8ee470a3dec6a",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/24300e95ce3acd47d10557a8bd8b9b9fbc520795",
+                "reference": "24300e95ce3acd47d10557a8bd8b9b9fbc520795",
                 "shasum": ""
             },
             "require": {
@@ -444,7 +444,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-09-25T17:43:00+00:00"
+            "time": "2019-10-03T19:15:33+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1708,6 +1708,58 @@
             "time": "2018-11-22T18:33:57+00:00"
         },
         {
+            "name": "marcusschwarz/lesserphp",
+            "version": "v0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/MarcusSchwarz/lesserphp.git",
+                "reference": "b02ee973ee1fff3237f7feaf44885596fb5ee323"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/MarcusSchwarz/lesserphp/zipball/b02ee973ee1fff3237f7feaf44885596fb5ee323",
+                "reference": "b02ee973ee1fff3237f7feaf44885596fb5ee323",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.3"
+            },
+            "bin": [
+                "plessc"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "lessc.inc.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Leaf Corcoran",
+                    "email": "leafot@gmail.com",
+                    "homepage": "http://leafo.net"
+                },
+                {
+                    "name": "Marcus Schwarz",
+                    "email": "github@maswaba.de",
+                    "homepage": "https://www.maswaba.de"
+                }
+            ],
+            "description": "lesserphp is a compiler for LESS written in PHP based on leafo's lessphp.",
+            "homepage": "http://leafo.net/lessphp/",
+            "time": "2018-05-28T12:54:01+00:00"
+        },
+        {
             "name": "masterminds/html5",
             "version": "2.7.0",
             "source": {
@@ -1804,9 +1856,9 @@
             "authors": [
                 {
                     "name": "Michel Fortin",
-                    "role": "Developer",
                     "email": "michel.fortin@michelf.ca",
-                    "homepage": "https://michelf.ca/"
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
                 },
                 {
                     "name": "John Gruber",
@@ -1995,22 +2047,23 @@
         },
         {
             "name": "mrclay/minify",
-            "version": "3.0.3",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrclay/minify.git",
-                "reference": "404664509c3d2b3a745e091c86c968a13cba3efc"
+                "reference": "266ddd7d541cf20b89ec5d7a0b217b48abc02d82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/minify/zipball/404664509c3d2b3a745e091c86c968a13cba3efc",
-                "reference": "404664509c3d2b3a745e091c86c968a13cba3efc",
+                "url": "https://api.github.com/repos/mrclay/minify/zipball/266ddd7d541cf20b89ec5d7a0b217b48abc02d82",
+                "reference": "266ddd7d541cf20b89ec5d7a0b217b48abc02d82",
                 "shasum": ""
             },
             "require": {
                 "ext-pcre": "*",
                 "intervention/httpauth": "~2.0",
-                "monolog/monolog": "~1.1",
+                "marcusschwarz/lesserphp": "~0.5.1",
+                "monolog/monolog": "~1.1|~2.0",
                 "mrclay/jsmin-php": "~2",
                 "mrclay/props-dic": "^2.2",
                 "php": "^5.3.0 || ^7.0",
@@ -2018,15 +2071,13 @@
             },
             "require-dev": {
                 "firephp/firephp-core": "~0.4.0",
-                "leafo/scssphp": "~0.6.6",
-                "marcusschwarz/lesserphp": "~0.5.1",
+                "leafo/scssphp": "^0.3 || ^0.6 || ^0.7",
                 "meenie/javascript-packer": "~1.1",
-                "phpunit/phpunit": "4.8.*",
+                "phpunit/phpunit": "^4.8.36",
                 "tedivm/jshrink": "~1.1.0"
             },
             "suggest": {
                 "firephp/firephp-core": "Use FirePHP for Log messages",
-                "marcusschwarz/lesserphp": "LESS support",
                 "meenie/javascript-packer": "Keep track of the Packer PHP port using Composer"
             },
             "type": "library",
@@ -2053,7 +2104,7 @@
             ],
             "description": "Minify is a PHP5 app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
             "homepage": "https://github.com/mrclay/minify",
-            "time": "2017-11-03T21:00:15+00:00"
+            "time": "2019-10-01T10:04:39+00:00"
         },
         {
             "name": "mrclay/props-dic",
@@ -2651,16 +2702,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.24",
+            "version": "3.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "e84e5603ca6b42e4360e14200b6843fbefa993c1"
+                "reference": "3d31db63f93f2f1bb4be61d40404ab59d2c8c28c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/e84e5603ca6b42e4360e14200b6843fbefa993c1",
-                "reference": "e84e5603ca6b42e4360e14200b6843fbefa993c1",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/3d31db63f93f2f1bb4be61d40404ab59d2c8c28c",
+                "reference": "3d31db63f93f2f1bb4be61d40404ab59d2c8c28c",
                 "shasum": ""
             },
             "require": {
@@ -2704,7 +2755,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2019-09-09T16:03:10+00:00"
+            "time": "2019-09-27T13:11:08+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
@@ -2748,16 +2799,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.26",
+            "version": "3.2.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "de11d1f2a45212d16d61009ac1679059c43b81a7"
+                "reference": "5fb596b9ca877f527ecc2854b70f75f36b5a992b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/de11d1f2a45212d16d61009ac1679059c43b81a7",
-                "reference": "de11d1f2a45212d16d61009ac1679059c43b81a7",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/5fb596b9ca877f527ecc2854b70f75f36b5a992b",
+                "reference": "5fb596b9ca877f527ecc2854b70f75f36b5a992b",
                 "shasum": ""
             },
             "require": {
@@ -2818,7 +2869,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-09-26T19:05:25+00:00"
+            "time": "2019-10-01T01:00:11+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -2884,16 +2935,16 @@
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "1.1.8",
+            "version": "1.1.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "c9413e4ea3aaf58e383a42ce663cb6d05490d73b"
+                "reference": "722c52a270f8d36460d9cdb5d811d9307b5421d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/c9413e4ea3aaf58e383a42ce663cb6d05490d73b",
-                "reference": "c9413e4ea3aaf58e383a42ce663cb6d05490d73b",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/722c52a270f8d36460d9cdb5d811d9307b5421d4",
+                "reference": "722c52a270f8d36460d9cdb5d811d9307b5421d4",
                 "shasum": ""
             },
             "require": {
@@ -2936,7 +2987,7 @@
                 "webpack",
                 "webpack-dev-server"
             ],
-            "time": "2019-08-06T01:14:07+00:00"
+            "time": "2019-10-03T19:46:13+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -5246,16 +5297,16 @@
         },
         {
             "name": "voku/portable-utf8",
-            "version": "5.4.22",
+            "version": "5.4.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "14681c231df13eb65e34958b8bcb83dd4c1c3c43"
+                "reference": "bbecc90364dc1c7e028e0c0a6bf7c8ebfc119234"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/14681c231df13eb65e34958b8bcb83dd4c1c3c43",
-                "reference": "14681c231df13eb65e34958b8bcb83dd4c1c3c43",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/bbecc90364dc1c7e028e0c0a6bf7c8ebfc119234",
+                "reference": "bbecc90364dc1c7e028e0c0a6bf7c8ebfc119234",
                 "shasum": ""
             },
             "require": {
@@ -5316,7 +5367,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2019-09-26T11:47:42+00:00"
+            "time": "2019-09-27T07:24:07+00:00"
         },
         {
             "name": "voku/stop-words",
