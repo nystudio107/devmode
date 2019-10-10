@@ -354,16 +354,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.3.7",
+            "version": "3.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "24300e95ce3acd47d10557a8bd8b9b9fbc520795"
+                "reference": "026ea62a0a4c156c560c559336f1b6f0bf970b79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/24300e95ce3acd47d10557a8bd8b9b9fbc520795",
-                "reference": "24300e95ce3acd47d10557a8bd8b9b9fbc520795",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/026ea62a0a4c156c560c559336f1b6f0bf970b79",
+                "reference": "026ea62a0a4c156c560c559336f1b6f0bf970b79",
                 "shasum": ""
             },
             "require": {
@@ -391,7 +391,7 @@
                 "seld/cli-prompt": "^1.0.3",
                 "symfony/yaml": "^3.2|^4.0",
                 "true/punycode": "^2.1.0",
-                "twig/twig": "~2.11.0",
+                "twig/twig": "~2.12.0",
                 "voku/stringy": "~5.1.0",
                 "webonyx/graphql-php": "^0.12.0",
                 "yii2tech/ar-softdelete": "^1.0.2",
@@ -444,7 +444,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2019-10-03T19:15:33+00:00"
+            "time": "2019-10-09T17:42:11+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1232,16 +1232,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.84",
+            "version": "v1.2.85",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "b7f35477a56609dd0d753c07ada912b66af3df01"
+                "reference": "185ff3e00a5b7821eadfce8fe767fcd89193f578"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/b7f35477a56609dd0d753c07ada912b66af3df01",
-                "reference": "b7f35477a56609dd0d753c07ada912b66af3df01",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/185ff3e00a5b7821eadfce8fe767fcd89193f578",
+                "reference": "185ff3e00a5b7821eadfce8fe767fcd89193f578",
                 "shasum": ""
             },
             "require": {
@@ -1277,7 +1277,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2019-06-14T21:10:21+00:00"
+            "time": "2019-10-05T13:27:35+00:00"
         },
         {
             "name": "johngrogg/ics-parser",
@@ -2515,16 +2515,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize-imgix.git",
-                "reference": "0cb74df46130b006dbf40f45d3f14b2f185a2497"
+                "reference": "38c45b20e46c5966cf2e7c2870ee40199d6afd74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/0cb74df46130b006dbf40f45d3f14b2f185a2497",
-                "reference": "0cb74df46130b006dbf40f45d3f14b2f185a2497",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/38c45b20e46c5966cf2e7c2870ee40199d6afd74",
+                "reference": "38c45b20e46c5966cf2e7c2870ee40199d6afd74",
                 "shasum": ""
             },
             "require": {
@@ -2555,7 +2555,7 @@
                 "image-transform",
                 "imgix"
             ],
-            "time": "2019-07-05T15:20:05+00:00"
+            "time": "2019-10-04T02:42:44+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-sharp",
@@ -2702,16 +2702,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.25",
+            "version": "3.1.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "3d31db63f93f2f1bb4be61d40404ab59d2c8c28c"
+                "reference": "9e8c740ca18cfeed1a494e192e1e944d4861aec2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/3d31db63f93f2f1bb4be61d40404ab59d2c8c28c",
-                "reference": "3d31db63f93f2f1bb4be61d40404ab59d2c8c28c",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/9e8c740ca18cfeed1a494e192e1e944d4861aec2",
+                "reference": "9e8c740ca18cfeed1a494e192e1e944d4861aec2",
                 "shasum": ""
             },
             "require": {
@@ -2755,7 +2755,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2019-09-27T13:11:08+00:00"
+            "time": "2019-10-07T11:14:44+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
@@ -2799,16 +2799,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.27",
+            "version": "3.2.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "5fb596b9ca877f527ecc2854b70f75f36b5a992b"
+                "reference": "084ffbe06b117d1f91ed06390055733638571797"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/5fb596b9ca877f527ecc2854b70f75f36b5a992b",
-                "reference": "5fb596b9ca877f527ecc2854b70f75f36b5a992b",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/084ffbe06b117d1f91ed06390055733638571797",
+                "reference": "084ffbe06b117d1f91ed06390055733638571797",
                 "shasum": ""
             },
             "require": {
@@ -2869,7 +2869,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-10-01T01:00:11+00:00"
+            "time": "2019-10-08T20:56:57+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -4963,16 +4963,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.11.3",
+            "version": "v2.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "699ed2342557c88789a15402de5eb834dedd6792"
+                "reference": "c7a85fd08348ca04b4d8f234f49583d9910906aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/699ed2342557c88789a15402de5eb834dedd6792",
-                "reference": "699ed2342557c88789a15402de5eb834dedd6792",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/c7a85fd08348ca04b4d8f234f49583d9910906aa",
+                "reference": "c7a85fd08348ca04b4d8f234f49583d9910906aa",
                 "shasum": ""
             },
             "require": {
@@ -4982,13 +4982,13 @@
             },
             "require-dev": {
                 "psr/container": "^1.0",
-                "symfony/debug": "^2.7",
-                "symfony/phpunit-bridge": "^3.4.19|^4.1.8|^5.0"
+                "symfony/debug": "^3.4|^4.2",
+                "symfony/phpunit-bridge": "^4.4@dev|^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.11-dev"
+                    "dev-master": "2.12-dev"
                 }
             },
             "autoload": {
@@ -5011,14 +5011,14 @@
                     "role": "Lead Developer"
                 },
                 {
-                    "name": "Armin Ronacher",
-                    "email": "armin.ronacher@active-4.com",
-                    "role": "Project Founder"
-                },
-                {
                     "name": "Twig Team",
                     "homepage": "https://twig.symfony.com/contributors",
                     "role": "Contributors"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
                 }
             ],
             "description": "Twig, the flexible, fast, and secure template language for PHP",
@@ -5026,7 +5026,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-06-18T15:37:11+00:00"
+            "time": "2019-10-05T16:42:38+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -5138,16 +5138,16 @@
         },
         {
             "name": "voku/arrayy",
-            "version": "5.14.1",
+            "version": "5.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/Arrayy.git",
-                "reference": "2a76c1f5b40ef78d757a137fc7d992a80783d229"
+                "reference": "6fe80d46f515d8d96db244d36e6099ef6659c04a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Arrayy/zipball/2a76c1f5b40ef78d757a137fc7d992a80783d229",
-                "reference": "2a76c1f5b40ef78d757a137fc7d992a80783d229",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/6fe80d46f515d8d96db244d36e6099ef6659c04a",
+                "reference": "6fe80d46f515d8d96db244d36e6099ef6659c04a",
                 "shasum": ""
             },
             "require": {
@@ -5190,7 +5190,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2019-09-16T21:25:09+00:00"
+            "time": "2019-10-06T17:56:40+00:00"
         },
         {
             "name": "voku/email-check",
@@ -5297,16 +5297,16 @@
         },
         {
             "name": "voku/portable-utf8",
-            "version": "5.4.23",
+            "version": "5.4.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "bbecc90364dc1c7e028e0c0a6bf7c8ebfc119234"
+                "reference": "1ff025864df28cdbb946fe96f8343904400f5e2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/bbecc90364dc1c7e028e0c0a6bf7c8ebfc119234",
-                "reference": "bbecc90364dc1c7e028e0c0a6bf7c8ebfc119234",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/1ff025864df28cdbb946fe96f8343904400f5e2a",
+                "reference": "1ff025864df28cdbb946fe96f8343904400f5e2a",
                 "shasum": ""
             },
             "require": {
@@ -5367,7 +5367,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2019-09-27T07:24:07+00:00"
+            "time": "2019-10-06T00:26:19+00:00"
         },
         {
             "name": "voku/stop-words",
