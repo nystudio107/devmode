@@ -157,7 +157,7 @@ module.exports = {
         ],
         exclude: [
             /\.(png|jpe?g|gif|svg|webp)$/i,
-            /\.(mp3)$/i,
+            /\.mp3.*$/i,
             /\.map$/,
             /^manifest.*\\.js(?:on)?$/,
         ],
@@ -169,12 +169,12 @@ module.exports = {
         offlineGoogleAnalytics: true,
         runtimeCaching: [
             {
-                urlPattern: /\/admin.*$/,
+                urlPattern: /\/admin.*$/i,
                 handler: "networkOnly"
             },
             // See "Serve cached audio and video" https://developers.google.com/web/tools/workbox/guides/advanced-recipes
             {
-                urlPattern: /\.mp3$/,
+                urlPattern: /\.mp3.*$/i,
                 handler: "networkOnly"
             },
             {

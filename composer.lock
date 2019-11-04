@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "a5daf8d01a15939809aef624ff12ba6f",
@@ -2449,16 +2449,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.3",
+            "version": "1.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "e00564ecb3dd7bd7ed32c8b18019272db124a357"
+                "reference": "d83c7aeeab812c4131d7619da6b0593ff41598a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/e00564ecb3dd7bd7ed32c8b18019272db124a357",
-                "reference": "e00564ecb3dd7bd7ed32c8b18019272db124a357",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/d83c7aeeab812c4131d7619da6b0593ff41598a6",
+                "reference": "d83c7aeeab812c4131d7619da6b0593ff41598a6",
                 "shasum": ""
             },
             "require": {
@@ -2511,7 +2511,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2019-10-24T15:54:58+00:00"
+            "time": "2019-10-31T19:28:39+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -2799,16 +2799,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.29",
+            "version": "3.2.31",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "fe3a6ac63365ebbdd1d89b675fac0e7c23f82072"
+                "reference": "73b199e50e30b8be06efd626c4cab043843ef84f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/fe3a6ac63365ebbdd1d89b675fac0e7c23f82072",
-                "reference": "fe3a6ac63365ebbdd1d89b675fac0e7c23f82072",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/73b199e50e30b8be06efd626c4cab043843ef84f",
+                "reference": "73b199e50e30b8be06efd626c4cab043843ef84f",
                 "shasum": ""
             },
             "require": {
@@ -2869,7 +2869,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-10-24T15:36:41+00:00"
+            "time": "2019-11-04T16:49:18+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -3718,16 +3718,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2"
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2",
-                "reference": "bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
                 "shasum": ""
             },
             "require": {
@@ -3761,7 +3761,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2019-10-25T08:06:51+00:00"
+            "time": "2019-11-01T11:05:21+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -5081,21 +5081,21 @@
         },
         {
             "name": "voku/anti-xss",
-            "version": "4.1.15",
+            "version": "4.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/anti-xss.git",
-                "reference": "14ff3982d58af104f5f38a438d99b9600705151e"
+                "reference": "a87bdbfad5211e6f35232d1af691dbf1eab0ac47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/anti-xss/zipball/14ff3982d58af104f5f38a438d99b9600705151e",
-                "reference": "14ff3982d58af104f5f38a438d99b9600705151e",
+                "url": "https://api.github.com/repos/voku/anti-xss/zipball/a87bdbfad5211e6f35232d1af691dbf1eab0ac47",
+                "reference": "a87bdbfad5211e6f35232d1af691dbf1eab0ac47",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.0.0",
-                "voku/portable-utf8": "~5.4.21"
+                "voku/portable-utf8": "~5.4.25"
             },
             "require-dev": {
                 "phpunit/phpunit": "~6.0 || ~7.0"
@@ -5134,7 +5134,7 @@
                 "security",
                 "xss"
             ],
-            "time": "2019-09-25T22:40:48+00:00"
+            "time": "2019-11-03T13:38:15+00:00"
         },
         {
             "name": "voku/arrayy",
