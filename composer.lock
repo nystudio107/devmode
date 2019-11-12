@@ -2935,16 +2935,16 @@
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "1.1.11",
+            "version": "1.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "57e41cbcd8339d2871c43736f8932c763bc1d521"
+                "reference": "5cf2416a791adcb5e15d46754f49fe904ae37610"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/57e41cbcd8339d2871c43736f8932c763bc1d521",
-                "reference": "57e41cbcd8339d2871c43736f8932c763bc1d521",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/5cf2416a791adcb5e15d46754f49fe904ae37610",
+                "reference": "5cf2416a791adcb5e15d46754f49fe904ae37610",
                 "shasum": ""
             },
             "require": {
@@ -2987,7 +2987,7 @@
                 "webpack",
                 "webpack-dev-server"
             ],
-            "time": "2019-10-15T15:26:51+00:00"
+            "time": "2019-11-12T15:34:41+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
