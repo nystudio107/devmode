@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
     "content-hash": "a5daf8d01a15939809aef624ff12ba6f",
@@ -2873,16 +2873,16 @@
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "1.2.7",
+            "version": "1.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "3642cf731f2545201a79416774603cd14ad96af3"
+                "reference": "151c609ca6f62ea262907f54cad129c6cdc5be90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/3642cf731f2545201a79416774603cd14ad96af3",
-                "reference": "3642cf731f2545201a79416774603cd14ad96af3",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/151c609ca6f62ea262907f54cad129c6cdc5be90",
+                "reference": "151c609ca6f62ea262907f54cad129c6cdc5be90",
                 "shasum": ""
             },
             "require": {
@@ -2931,7 +2931,7 @@
                 "transcoder",
                 "video"
             ],
-            "time": "2019-11-12T12:50:00+00:00"
+            "time": "2019-11-12T15:18:27+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
