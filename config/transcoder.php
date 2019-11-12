@@ -146,6 +146,8 @@ return [
             'audioBitRate' => '128k',
             'audioSampleRate' => '44100',
             'audioChannels' => '2',
+            'synchronous' => false,
+            'stripMetadata' => false
         ],
     ],
 
