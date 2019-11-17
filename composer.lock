@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "a5daf8d01a15939809aef624ff12ba6f",
@@ -1232,16 +1232,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.88",
+            "version": "v1.2.89",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "4ede3431afaa5b77b6d9414935184edbcfffa822"
+                "reference": "374d699ce4944107015eee0798eab072e3c47df9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/4ede3431afaa5b77b6d9414935184edbcfffa822",
-                "reference": "4ede3431afaa5b77b6d9414935184edbcfffa822",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/374d699ce4944107015eee0798eab072e3c47df9",
+                "reference": "374d699ce4944107015eee0798eab072e3c47df9",
                 "shasum": ""
             },
             "require": {
@@ -1277,7 +1277,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2019-11-07T21:06:22+00:00"
+            "time": "2019-11-16T13:47:52+00:00"
         },
         {
             "name": "johngrogg/ics-parser",
@@ -1917,16 +1917,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.25.1",
+            "version": "1.25.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf"
+                "reference": "d5e2fb341cb44f7e2ab639d12a1e5901091ec287"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
-                "reference": "70e65a5470a42cfec1a7da00d30edb6e617e8dcf",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d5e2fb341cb44f7e2ab639d12a1e5901091ec287",
+                "reference": "d5e2fb341cb44f7e2ab639d12a1e5901091ec287",
                 "shasum": ""
             },
             "require": {
@@ -1991,7 +1991,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2019-09-06T13:49:17+00:00"
+            "time": "2019-11-13T10:00:05+00:00"
         },
         {
             "name": "mrclay/jsmin-php",
@@ -2449,16 +2449,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.4",
+            "version": "1.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "d83c7aeeab812c4131d7619da6b0593ff41598a6"
+                "reference": "f9e26dce57080cd1232d3ad47524f1cb2870c06c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/d83c7aeeab812c4131d7619da6b0593ff41598a6",
-                "reference": "d83c7aeeab812c4131d7619da6b0593ff41598a6",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/f9e26dce57080cd1232d3ad47524f1cb2870c06c",
+                "reference": "f9e26dce57080cd1232d3ad47524f1cb2870c06c",
                 "shasum": ""
             },
             "require": {
@@ -2511,7 +2511,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2019-10-31T19:28:39+00:00"
+            "time": "2019-11-13T16:06:00+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
