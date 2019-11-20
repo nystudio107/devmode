@@ -350,6 +350,7 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
         },
         {
@@ -2449,16 +2450,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.5",
+            "version": "1.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "f9e26dce57080cd1232d3ad47524f1cb2870c06c"
+                "reference": "955bcc259985929c91ae574f2803da8ddd0d9bd6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/f9e26dce57080cd1232d3ad47524f1cb2870c06c",
-                "reference": "f9e26dce57080cd1232d3ad47524f1cb2870c06c",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/955bcc259985929c91ae574f2803da8ddd0d9bd6",
+                "reference": "955bcc259985929c91ae574f2803da8ddd0d9bd6",
                 "shasum": ""
             },
             "require": {
@@ -2511,7 +2512,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2019-11-13T16:06:00+00:00"
+            "time": "2019-11-19T12:10:51+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -2702,16 +2703,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.28",
+            "version": "3.1.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "5261adc1683f92b4768c3d101f82086733f44cf6"
+                "reference": "b2f8a96a42adb06398300e7b7738c0cf9f968a6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/5261adc1683f92b4768c3d101f82086733f44cf6",
-                "reference": "5261adc1683f92b4768c3d101f82086733f44cf6",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/b2f8a96a42adb06398300e7b7738c0cf9f968a6e",
+                "reference": "b2f8a96a42adb06398300e7b7738c0cf9f968a6e",
                 "shasum": ""
             },
             "require": {
@@ -2755,7 +2756,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2019-11-11T23:41:17+00:00"
+            "time": "2019-11-18T23:06:41+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
@@ -2799,16 +2800,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.33",
+            "version": "3.2.34",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "754e0b1ee48fb5381b066a3849c943ffd3d449b5"
+                "reference": "24d5599838c8a561e1966308a39f13e408eb523b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/754e0b1ee48fb5381b066a3849c943ffd3d449b5",
-                "reference": "754e0b1ee48fb5381b066a3849c943ffd3d449b5",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/24d5599838c8a561e1966308a39f13e408eb523b",
+                "reference": "24d5599838c8a561e1966308a39f13e408eb523b",
                 "shasum": ""
             },
             "require": {
@@ -2869,7 +2870,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2019-11-11T23:46:58+00:00"
+            "time": "2019-11-19T12:13:31+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -3048,16 +3049,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "1.0.14",
+            "version": "1.0.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "2cafe2a0ceeb7465739b55ccc07df1e0516f855a"
+                "reference": "a18a11dbfe8768eb3fbb2210970684a435929e13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/2cafe2a0ceeb7465739b55ccc07df1e0516f855a",
-                "reference": "2cafe2a0ceeb7465739b55ccc07df1e0516f855a",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/a18a11dbfe8768eb3fbb2210970684a435929e13",
+                "reference": "a18a11dbfe8768eb3fbb2210970684a435929e13",
                 "shasum": ""
             },
             "require": {
@@ -3104,7 +3105,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-09-09T16:10:13+00:00"
+            "time": "2019-11-19T20:30:26+00:00"
         },
         {
             "name": "nystudio107/dotenvy",
@@ -5138,16 +5139,16 @@
         },
         {
             "name": "voku/arrayy",
-            "version": "5.14.2",
+            "version": "5.15.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/Arrayy.git",
-                "reference": "6fe80d46f515d8d96db244d36e6099ef6659c04a"
+                "reference": "807013ebf923de01689afe516e1301c51818f056"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Arrayy/zipball/6fe80d46f515d8d96db244d36e6099ef6659c04a",
-                "reference": "6fe80d46f515d8d96db244d36e6099ef6659c04a",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/807013ebf923de01689afe516e1301c51818f056",
+                "reference": "807013ebf923de01689afe516e1301c51818f056",
                 "shasum": ""
             },
             "require": {
@@ -5190,7 +5191,7 @@
                 "utility",
                 "utils"
             ],
-            "time": "2019-10-06T17:56:40+00:00"
+            "time": "2019-11-18T00:23:19+00:00"
         },
         {
             "name": "voku/email-check",
@@ -5297,16 +5298,16 @@
         },
         {
             "name": "voku/portable-utf8",
-            "version": "5.4.27",
+            "version": "5.4.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "f0bb213b5d8564c2384647e3ca98bc4a55f14c12"
+                "reference": "f1b08aa203cb4731a5c4c9d9328b6fc329341acf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/f0bb213b5d8564c2384647e3ca98bc4a55f14c12",
-                "reference": "f0bb213b5d8564c2384647e3ca98bc4a55f14c12",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/f1b08aa203cb4731a5c4c9d9328b6fc329341acf",
+                "reference": "f1b08aa203cb4731a5c4c9d9328b6fc329341acf",
                 "shasum": ""
             },
             "require": {
@@ -5367,7 +5368,7 @@
                 "utf-8",
                 "utf8"
             ],
-            "time": "2019-11-11T14:27:45+00:00"
+            "time": "2019-11-17T21:08:41+00:00"
         },
         {
             "name": "voku/stop-words",
@@ -5953,16 +5954,16 @@
         },
         {
             "name": "yiisoft/yii2-debug",
-            "version": "2.1.11",
+            "version": "2.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "72e7c6c454028366f14ccef5a93d6c18fc9dcd63"
+                "reference": "bf9234ba1369116d12ebe266d98006416a5ae304"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/72e7c6c454028366f14ccef5a93d6c18fc9dcd63",
-                "reference": "72e7c6c454028366f14ccef5a93d6c18fc9dcd63",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/bf9234ba1369116d12ebe266d98006416a5ae304",
+                "reference": "bf9234ba1369116d12ebe266d98006416a5ae304",
                 "shasum": ""
             },
             "require": {
@@ -6007,7 +6008,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2019-11-05T13:56:49+00:00"
+            "time": "2019-11-19T20:09:08+00:00"
         },
         {
             "name": "yiisoft/yii2-queue",
