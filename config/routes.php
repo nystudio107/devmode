@@ -19,8 +19,18 @@
  */
 
 return [
-    'episodes/<slug:[^/]+>/amp' => ['template' => 'episodes/_amp-entry'],
+    /**
+     * Handler for URLs of the format https://devMode.fm/<episodeNumber>
+     * which are unfortunately used in the `guid` field in the RSS feed
+     * and so get crawled by Google, yet cannot be changed or RSS readers
+     * will think they are new episodes, and download them.
+     */
+    '<episodeNumber:\d+>' => ['template' => 'episodes/_entry'],
+    '<episodeNumber:\d+>/amp' => ['template' => 'episodes/_amp-entry'],
+    // Player card for Twitter cards handler
     'player-card/<slug:[^/]+>' => ['template' => 'player-card'],
+    // Google AMP handlers
+    'episodes/<slug:[^/]+>/amp' => ['template' => 'episodes/_amp-entry'],
     'about/amp' => ['template' => 'about/amp-index'],
     'calendar/amp' => ['template' => 'calendar/amp-index'],
     'episodes/amp' => ['template' => 'episodes/amp-index'],

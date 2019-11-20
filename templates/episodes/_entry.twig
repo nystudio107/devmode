@@ -1,6 +1,20 @@
 
 {% extends "_layouts/generic-page-layout.twig" %}
 
+{##
+ # Handler for URLs of the format https://devMode.fm/<episodeNumber>
+ # which are unfortunately used in the `guid` field in the RSS feed
+ # and so get crawled by Google, yet cannot be changed or RSS readers
+ # will think they are new episodes, and download them.
+ #}
+{% if episodeNumber is defined %}
+    {% set entry = craft.entries({
+        "section": "episodes",
+        "episodeNumber": episodeNumber,
+    }).one() %}
+    {% do seomatic.helper.loadMetadataForUri(entry.uri) %}
+{% endif %}
+
 {% set includeAudioMeta = true %}
 
 {% block headLinks %}
