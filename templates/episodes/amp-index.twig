@@ -1,0 +1,27 @@
+{% extends "_layouts/amp-generic-page-layout.twig" %}
+
+{% if entry is not defined %}
+    {% set entry = craft.entries({
+        "uri": "episodes",
+    }).one() %}
+{% endif %}
+
+{% do seomatic.helper.loadMetadataForUri(entry.uri) %}
+{% do seomatic.script.container().include(false) %}
+
+{% block headCss %}
+    {{ parent() }}
+    {{ craft.twigpack.includeFile("@webroot/dist/criticalcss/episodes/amp_index_critical.min.css") }}
+{% endblock headCss %}
+
+{% block content %}
+{% endblock %}
+
+{% block subcontent %}
+    {% include "episodes/_partials/_amp_display_recent_episodes.twig" with {
+        "showInfo": showInfo,
+    } only %}
+{% endblock %}
+
+{% block _inline_js %}
+{% endblock %}

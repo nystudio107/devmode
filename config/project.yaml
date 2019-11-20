@@ -1,4 +1,4 @@
-dateModified: 1566936841
+dateModified: 1574263196
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -794,6 +794,26 @@ plugins:
     enabled: true
     schemaVersion: 2.3.0
 sections:
+  1a66bf43-6fcc-4a78-bf36-0f350b930430:
+    name: 'Episodes Index'
+    handle: episodesIndex
+    type: single
+    enableVersioning: false
+    propagationMethod: all
+    siteSettings:
+      2a4761bd-2461-4db9-96a0-4f52b8cef633:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: episodes
+        template: episodes/index
+    entryTypes:
+      50012289-791c-48b2-8df1-31a8f5eb5380:
+        name: 'Episodes Index'
+        handle: episodesIndex
+        hasTitleField: false
+        titleLabel: null
+        titleFormat: '{section.name|raw}'
+        sortOrder: 1
   214e4dc6-a454-4df0-a1f5-cd94ecdab53f:
     name: Guests
     handle: guests
