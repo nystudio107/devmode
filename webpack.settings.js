@@ -81,6 +81,14 @@ module.exports = {
                     template: "calendar/amp_index"
                 },
                 {
+                    url: "episodes",
+                    template: "episodes/index"
+                },
+                {
+                    url: "episodes",
+                    template: "episodes/amp_index"
+                },
+                {
                     url: "episodes/webpack-inside-out-with-sean-larkin",
                     template: "episodes/_entry"
                 },

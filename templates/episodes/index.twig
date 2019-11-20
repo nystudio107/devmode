@@ -1,0 +1,25 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set includeAudioMeta = false %}
+
+{% block headLinks %}
+    {{ parent() }}
+    <link rel="amphtml" href="{{ siteUrl('/episodes/amp') }}">
+{% endblock headLinks %}
+
+{% block content %}
+    {% include "_partials/_meta-schema-radio-series.twig" with {
+        "showInfo": showInfo,
+    } only %}
+{% endblock %}
+
+{% block subcontent %}
+    {% include "episodes/_partials/_display_recent_episodes.twig" with {
+        "showInfo": showInfo,
+    } only %}
+{% endblock %}
+
+{# -- Any JavaScript that should be included before </body> -- #}
+{% block bodyJs %}
+    {{ craft.twigpack.includeJsModule("episodes.js", true) }}
+{% endblock bodyJs %}
