@@ -13,12 +13,14 @@
                 {% set transAudioUrl = "https://chtbl.com/track/81493/#{transAudioUrl}" %}
             {% endif %}
             {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
-            {% include "episodes/_partials/_meta-episode-custom.twig" with {
-                "episode": episode,
-                "fileInfo": fileInfo,
-                "showInfo": showInfo,
-                "audioUrl": transAudioUrl,
-            } only %}
+            {% if fileInfo | length %}
+                {% include "episodes/_partials/_meta-episode-custom.twig" with {
+                    "episode": episode,
+                    "fileInfo": fileInfo,
+                    "showInfo": showInfo,
+                    "audioUrl": transAudioUrl,
+                } only %}
+            {% endif %}
             <div class="">
                 <div id="single-song-player">
                     <div class="bottom-container flex items-center justify-center">

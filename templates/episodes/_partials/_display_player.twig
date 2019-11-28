@@ -13,7 +13,7 @@
                 {% set transAudioUrl = "https://chtbl.com/track/81493/#{transAudioUrl}" %}
             {% endif %}
             {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
-            {% if includeAudioMeta is defined and includeAudioMeta %}
+            {% if includeAudioMeta is defined and includeAudioMeta and fileInfo | length %}
                 {% include "episodes/_partials/_meta-episode-custom.twig" with {
                     "episode": episode,
                     "fileInfo": fileInfo,
