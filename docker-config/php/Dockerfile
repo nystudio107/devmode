@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install -y \
         libpng-dev libbz2-dev \
         libssl-dev autoconf \
         ca-certificates curl g++ libicu-dev \
-        libmagickwand-dev mariadb-client libzip-dev\
+        libmagickwand-dev mariadb-client libzip-dev \
         && \
         pecl install imagick-3.4.3 \
         && \
@@ -20,7 +20,6 @@ RUN apt-get update && apt-get install -y \
         docker-php-ext-enable imagick
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer
-RUN composer global require hirak/prestissimo
 
 ENV PHP_REVALIDATE=0
 
@@ -33,8 +32,8 @@ RUN echo "upload_max_filesize = 10M" > /usr/local/etc/php/php.ini && \
 
 COPY ./docker-config/php/zzz-docker.conf /usr/local/etc/php-fpm.d/zzz-docker.conf
 
-COPY --chown=www-data:www-data ./src /var/www/html
+COPY --chown=www-data:www-data ./cms /var/www/project/cms
 
-RUN composer install -d /var/www/html/ && \
-    chown -R www-data:www-data /var/www/html/vendor && \
-    chown -R www-data:www-data /var/www/html/composer.lock
+RUN composer install -d /var/www/project/cms && \
+    chown -R www-data:www-data /var/www/project/cms/vendor && \
+    chown -R www-data:www-data /var/www/project/cms/composer.lock

@@ -1,4 +1,4 @@
-FROM nginx:1.15
+FROM nginx:1.16
 
 COPY ./docker-config/nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY --chown=www-data:www-data ./src/web /var/www/html/web
+COPY --chown=www-data:www-data ./cms /var/www/project/cms

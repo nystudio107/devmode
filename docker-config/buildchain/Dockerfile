@@ -1,15 +1,15 @@
-FROM node:8.16
+FROM node:11
 
-RUN apt-get update && apt-get install -y apt-transport-https \
-    && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
-    && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
-    && apt-get update \
-    && apt-get install -y yarn
-
-WORKDIR /project
+WORKDIR /var/www/project/
 
 COPY ./docker-config/buildchain/package.json package.json
+COPY ./docker-config/buildchain/postcss.config.js postcss.config.js
+COPY ./docker-config/buildchain/tailwind.config.js tailwind.config.js
+COPY ./docker-config/buildchain/webpack.common.js webpack.common.js
+COPY ./docker-config/buildchain/webpack.dev.js webpack.dev.js
+COPY ./docker-config/buildchain/webpack.prod.js webpack.prod.js
+COPY ./docker-config/buildchain/webpack.settings.js webpack.settings.js
 
-RUN cd /project && yarn install
+RUN cd /var/www/project/ && npm install
 
-CMD yarn run build
+CMD npm debug dev
