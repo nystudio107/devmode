@@ -36,7 +36,8 @@ services:
         SITE_URL: http://localhost
         SECURITY_KEY: AAAAAAAAAAAAAAAAAAAAAAAAAAA
         PHP_REVALIDATE: 1
-
+  redis:
+    image: redis:latest
   database:
       image: mariadb:10.3
       volumes:

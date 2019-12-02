@@ -7,7 +7,11 @@ RUN apt-get update && apt-get install -y \
         ca-certificates curl g++ libicu-dev \
         libmagickwand-dev mariadb-client libzip-dev \
         && \
-        pecl install imagick-3.4.3 \
+        pecl install imagick-3.4.4 \
+        && \
+        pecl install redis && docker-php-ext-enable redis \
+        && \
+        pecl install xdebug-2.8.1 && docker-php-ext-enable xdebug \
         && \
         docker-php-ext-install \
         bcmath bz2 exif \
