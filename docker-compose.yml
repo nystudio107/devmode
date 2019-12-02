@@ -1,11 +1,11 @@
-version: '1'
+version: '2'
 services:
   nginx:
       build:
         context: .
         dockerfile: ./docker-config/nginx/Dockerfile
       ports:
-          - 80:8000
+          - "80:8000"
       volumes:
           - ./cms/web/cpresources:/var/www/project/cms/web/cpresources
           - ./cms/web:/var/www/project/cms/web
@@ -15,7 +15,7 @@ services:
         context: .
         dockerfile: ./docker-config/php/Dockerfile
       expose:
-          - 9000
+          - "9000"
       volumes:
           - cpresources:/var/www/project/cms/web/cpresources
           - ./cms/composer.json:/var/www/project/cms/composer.json
@@ -42,7 +42,7 @@ services:
       volumes:
           - db-data:/var/lib/mysql
       ports:
-          - 3306:3306
+          - "3306:3306"
       environment:
           MYSQL_ROOT_PASSWORD: secret
           MYSQL_DATABASE: project
@@ -54,7 +54,7 @@ services:
         context: .
         dockerfile: ./docker-config/buildchain/Dockerfile
       ports:
-          - 8080:8080
+          - "8080:8080"
       volumes:
           - node-modules:/var/www/project/node_modules
           - ./docker-config/buildchain/package.json:/var/www/project/package.json
