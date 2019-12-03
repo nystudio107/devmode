@@ -1,29 +1,38 @@
 FROM php:7.3-fpm
 
-RUN apt-get update && apt-get install -y \
-        libfreetype6-dev libjpeg62-turbo-dev \
-        libpng-dev libbz2-dev \
-        libssl-dev autoconf \
-        ca-certificates curl g++ libicu-dev \
-        libmagickwand-dev mariadb-client libzip-dev \
-        && \
-        pecl install imagick-3.4.4 \
-        && \
-        pecl install redis && docker-php-ext-enable redis \
-        && \
-        pecl install xdebug-2.8.1 && docker-php-ext-enable xdebug \
-        && \
-        docker-php-ext-install \
-        bcmath bz2 exif \
-        ftp gd gettext mbstring opcache \
-        shmop sockets sysvmsg sysvsem sysvshm \
-        zip iconv pdo_mysql intl \
-        && \
-        docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
-        && \
-        docker-php-ext-enable imagick
-
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer
+# Install packages
+RUN apt-get update \
+    && \
+    # apt Debian packages
+    apt-get install -y \
+    libfreetype6-dev libjpeg62-turbo-dev \
+    libpng-dev libbz2-dev \
+    libssl-dev autoconf \
+    ca-certificates curl g++ libicu-dev \
+    libmagickwand-dev mariadb-client libzip-dev \
+    zip unzip \
+    && \
+    # pecl PHP extensions
+    pecl install \
+    imagick-3.4.4 redis xdebug-2.8.1 \
+    && \
+    # Install PHP extensions
+    docker-php-ext-install \
+    bcmath bz2 exif \
+    ftp gd gettext mbstring opcache \
+    shmop sockets sysvmsg sysvsem sysvshm \
+    zip iconv pdo_mysql intl \
+    && \
+    # Configure PHP extensions
+    docker-php-ext-configure \
+    gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+    && \
+    # Enable PHP extensions
+    docker-php-ext-enable \
+    imagick redis xdebug \
+    && \
+    # Install Composer
+    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer
 
 ENV PHP_REVALIDATE=0
 
