@@ -45,7 +45,8 @@ RUN echo "upload_max_filesize = 10M" > /usr/local/etc/php/php.ini && \
 
 COPY ./docker-config/php/zzz-docker.conf /usr/local/etc/php-fpm.d/zzz-docker.conf
 
-COPY --chown=www-data:www-data ./cms /var/www/project/cms
+COPY --chown=www-data:www-data ./cms/web /var/www/project/cms/web
+COPY --chown=www-data:www-data ./cms/composer.json /var/www/project/cms/composer.json
 
 RUN composer install -d /var/www/project/cms && \
     chown -R www-data:www-data /var/www/project/cms/vendor && \
