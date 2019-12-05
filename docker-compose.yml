@@ -1,66 +1,73 @@
-version: '2'
-services:
-  nginx:
-      build:
-        context: .
-        dockerfile: ./docker-config/nginx/Dockerfile
-      ports:
-          - "80:8000"
-      volumes:
-          - ./cms/web/cpresources:/var/www/project/cms/web/cpresources
-          - ./cms/web:/var/www/project/cms/web
+version: '3.7'
 
+services:
+  # aliases - dummy service to hold YAML aliases
+  aliases:
+    build:
+      context: .
+      dockerfile: ./docker-config/aliases/Dockerfile
+    env_file: &env
+      - ./.env_docker.txt
+  # ffmpeg - video/audio encoding
+  ffmpeg:
+    image: jrottenberg/ffmpeg
+  # nginx - web server
+  nginx:
+    build:
+      context: .
+      dockerfile: ./docker-config/nginx/Dockerfile
+    env_file:
+      *env
+    environment:
+      PHP_REVALIDATE: 1
+    ports:
+      - "80:8000"
+    volumes:
+      - ./cms/web/cpresources:/var/www/project/cms/web/cpresources
+      - ./cms/web:/var/www/project/cms/web
+  # php - personal home page
   php:
-      build:
-        context: .
-        dockerfile: ./docker-config/php/Dockerfile
-      expose:
-          - "9000"
-      volumes:
-          - cpresources:/var/www/project/cms/web/cpresources
-          - ./cms/composer.json:/var/www/project/cms/composer.json
-          - ./cms/composer.lock:/var/www/project/cms/composer.lock
-          - ./cms/config:/var/www/project/cms/config
-          - ./cms/modules:/var/www/project/cms/modules
-          - ./cms/templates:/var/www/project/cms/templates
-          - ./cms/web:/var/www/project/cms/web
-      environment:
-        ENVIRONMENT: dev
-        DB_DRIVER: mysql
-        DB_SERVER: database
-        DB_USER: project
-        DB_PASSWORD: project
-        DB_DATABASE: project
-        DB_SCHEMA: public
-        DB_TABLE_PREFIX: craft_
-        SITE_URL: http://localhost
-        SECURITY_KEY: AAAAAAAAAAAAAAAAAAAAAAAAAAA
-        PHP_REVALIDATE: 1
+    build:
+      context: .
+      dockerfile: ./docker-config/php/Dockerfile
+    environment:
+      *env
+    expose:
+      - "9000"
+    volumes:
+      - cpresources:/var/www/project/cms/web/cpresources
+      - ./cms/composer.json:/var/www/project/cms/composer.json
+      - ./cms/composer.lock:/var/www/project/cms/composer.lock
+      - ./cms/config:/var/www/project/cms/config
+      - ./cms/modules:/var/www/project/cms/modules
+      - ./cms/templates:/var/www/project/cms/templates
+      - ./cms/web:/var/www/project/cms/web
+  # postgres - database
+  postgres:
+    environment:
+      *env
+    image: postgres:12.1
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/usr/local/pgsql/data
+  # redis - key/value database for caching & php sessions
   redis:
     image: redis:latest
-  database:
-      image: mariadb:10.3
-      volumes:
-          - db-data:/var/lib/mysql
-      ports:
-          - "3306:3306"
-      environment:
-          MYSQL_ROOT_PASSWORD: secret
-          MYSQL_DATABASE: project
-          MYSQL_USER: project
-          MYSQL_PASSWORD: project
-
-  buildchain:
-      build:
-        context: .
-        dockerfile: ./docker-config/buildchain/Dockerfile
-      ports:
-          - "8080:8080"
-      volumes:
-          - node-modules:/var/www/project/node_modules
-          - ./docker-config/buildchain/package.json:/var/www/project/package.json
-          - ./src:/project/src
-      command: npm run debug
+  # webpack - frontend build system
+  webpack:
+    build:
+      context: .
+      dockerfile: ./docker-config/webpack/Dockerfile
+    command: npm run debug
+    environment:
+      *env
+    ports:
+      - "8080:8080"
+    volumes:
+      - node-modules:/var/www/project/node_modules
+      - ./docker-config/buildchain/package.json:/var/www/project/package.json
+      - ./src:/project/src
 
 volumes:
   db-data:
