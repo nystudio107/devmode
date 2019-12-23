@@ -35,6 +35,9 @@
 {# -- Any CSS that should be included before </head> -- #}
 {% block headCss %}
     {% include "_inline-css/site-fonts.css" %}
+    .snowf-canvas {
+    pointer-events:none;
+    }
 {% endblock headCss %}
 
 {# -- Page body -- #}

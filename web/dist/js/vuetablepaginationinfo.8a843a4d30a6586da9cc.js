@@ -2,8 +2,8 @@
  * @project        Example Project
  * @name           vuetablepaginationinfo.8a843a4d30a6586da9cc.js
  * @author         Andrew Welch
- * @build          Mon, Dec 23, 2019 9:58 AM ET
- * @release        9cab16bbb6809811b8b7077f20ad657734899eb0 [develop]
+ * @build          Mon, Dec 23, 2019 10:07 AM ET
+ * @release        9fd2850b8f997b81ba48349e3b9790f3aea2235a [develop]
  * @copyright      Copyright (c) 2019 Example Company, Inc.
  *
  */
