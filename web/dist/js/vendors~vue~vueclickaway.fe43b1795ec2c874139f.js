@@ -2,8 +2,8 @@
  * @project        Example Project
  * @name           vendors~vue~vueclickaway.fe43b1795ec2c874139f.js
  * @author         Andrew Welch
- * @build          Mon, Dec 23, 2019 12:49 AM ET
- * @release        36fa16fbd2a833d8b3cadf5ab73555088eca8473 [develop]
+ * @build          Mon, Dec 23, 2019 1:40 AM ET
+ * @release        7b8a93dbeb65daf2733d1b17d70877b28ac0ff04 [develop]
  * @copyright      Copyright (c) 2019 Example Company, Inc.
  *
  */
