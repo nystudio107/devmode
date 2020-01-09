@@ -742,16 +742,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.13",
+            "version": "2.1.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "834593d5900615639208417760ba6a17299e2497"
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/834593d5900615639208417760ba6a17299e2497",
-                "reference": "834593d5900615639208417760ba6a17299e2497",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c4b8d12921999d8a561004371701dbc2e05b5ece",
+                "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece",
                 "shasum": ""
             },
             "require": {
@@ -795,7 +795,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2019-12-30T08:14:25+00:00"
+            "time": "2020-01-05T14:11:20+00:00"
         },
         {
             "name": "elvanto/litemoji",
@@ -2423,16 +2423,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.6",
+            "version": "1.6.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "955bcc259985929c91ae574f2803da8ddd0d9bd6"
+                "reference": "8a2a4d4330add408b5cc1311a602497687b80a8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/955bcc259985929c91ae574f2803da8ddd0d9bd6",
-                "reference": "955bcc259985929c91ae574f2803da8ddd0d9bd6",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/8a2a4d4330add408b5cc1311a602497687b80a8b",
+                "reference": "8a2a4d4330add408b5cc1311a602497687b80a8b",
                 "shasum": ""
             },
             "require": {
@@ -2485,7 +2485,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2019-11-19T12:10:51+00:00"
+            "time": "2020-01-09T03:11:45+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -2676,16 +2676,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.31",
+            "version": "3.1.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "a19b869d14bec88512d69b6224ebd0a695b26706"
+                "reference": "5f75895f57dcdfd3bc0904f3f8f823220ee30d46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/a19b869d14bec88512d69b6224ebd0a695b26706",
-                "reference": "a19b869d14bec88512d69b6224ebd0a695b26706",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/5f75895f57dcdfd3bc0904f3f8f823220ee30d46",
+                "reference": "5f75895f57dcdfd3bc0904f3f8f823220ee30d46",
                 "shasum": ""
             },
             "require": {
@@ -2729,7 +2729,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2019-12-11T19:24:17+00:00"
+            "time": "2020-01-09T17:43:18+00:00"
         },
         {
             "name": "nystudio107/craft-scripts",
