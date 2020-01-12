@@ -1,13 +1,6 @@
 version: '3.7'
 
 services:
-  # aliases - dummy service to hold YAML aliases
-  aliases:
-    build:
-      context: .
-      dockerfile: ./docker-config/aliases/Dockerfile
-    env_file: &env
-      - ./.env_docker.txt
   # ffmpeg - video/audio encoding
   ffmpeg:
     image: jrottenberg/ffmpeg
@@ -16,8 +9,8 @@ services:
     build:
       context: .
       dockerfile: ./docker-config/nginx/Dockerfile
-    env_file:
-      *env
+    env_file: &env
+      - ./.env
     environment:
       PHP_REVALIDATE: 1
     ports:
@@ -30,8 +23,10 @@ services:
     build:
       context: .
       dockerfile: ./docker-config/php/Dockerfile
-    environment:
+    env_file:
       *env
+    environment:
+      PHP_REVALIDATE: 1
     expose:
       - "9000"
     volumes:
@@ -44,9 +39,13 @@ services:
       - ./cms/web:/var/www/project/cms/web
   # postgres - database
   postgres:
-    environment:
+    env_file:
       *env
-    image: postgres:12.1
+    environment:
+      POSTGRES_DB: project
+      POSTGRES_USER: homestead
+      POSTGRES_PASSWORD: secret
+    image: postgres:latest
     ports:
       - "5432:5432"
     volumes:
@@ -60,13 +59,12 @@ services:
       context: .
       dockerfile: ./docker-config/webpack/Dockerfile
     command: npm run debug
-    environment:
+    env_file:
       *env
     ports:
       - "8080:8080"
     volumes:
       - node-modules:/var/www/project/node_modules
-      - ./docker-config/buildchain/package.json:/var/www/project/package.json
       - ./src:/project/src
 
 volumes:
