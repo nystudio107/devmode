@@ -1,10 +1,14 @@
 FROM php:7.3-fpm
 
+# Ensure resolv.conf is world-readable
+RUN chmod a+r /etc/resolv.conf
+
 # Install packages
 RUN apt-get update \
     && \
     # apt Debian packages
     apt-get install -y \
+    apt-utils \
     libfreetype6-dev libjpeg62-turbo-dev \
     libpng-dev libbz2-dev \
     libssl-dev autoconf \
@@ -51,6 +55,8 @@ COPY --chown=www-data:www-data ./cms/nys-setup /var/www/project/cms/nys-setup
 COPY --chown=www-data:www-data ./cms/craft /var/www/project/cms/craft
 COPY --chown=www-data:www-data ./cms/.env.sh /var/www/project/cms/.env.sh
 
-RUN composer install -d /var/www/project/cms && \
+RUN composer install --no-scripts -d /var/www/project/cms && \
     chown -R www-data:www-data /var/www/project/cms/vendor && \
     chown -R www-data:www-data /var/www/project/cms/composer.lock
+
+CMD composer run-script craft-update -d /var/www/project/cms
