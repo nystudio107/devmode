@@ -32,7 +32,6 @@
     "nystudio107/craft-disqus": "^1.1.1",
     "nystudio107/craft-retour": "^3.0.0",
     "nystudio107/craft-seomatic": "^3.2.0",
-    "nystudio107/craft-scripts": "^1.2.4",
     "nystudio107/craft-webperf": "^1.0.0",
     "nystudio107/craft-twigpack": "^1.1.0",
     "nystudio107/dotenvy": "^1.0.0",
@@ -51,7 +50,6 @@
   },
   "scripts": {
     "craft-update": [
-      "@php nys-setup update",
       "@php craft migrate/all",
       "@php craft project-config/sync",
       "@php craft clear-caches/all"
@@ -60,8 +58,7 @@
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
     ],
     "post-create-project-cmd": [
-      "@php craft setup/welcome",
-      "@php nys-setup welcome"
+      "@php craft setup/welcome"
     ],
     "post-update-cmd": "@craft-update",
     "post-install-cmd": "@craft-update"
