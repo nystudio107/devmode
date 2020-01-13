@@ -55,9 +55,7 @@ COPY ./docker-config/php/zzz-docker.conf /usr/local/etc/php-fpm.d/zzz-docker.con
 # Copy over the directories/files php needs access to
 COPY --chown=www-data:www-data ./cms/web /var/www/project/cms/web
 COPY --chown=www-data:www-data ./cms/composer.json /var/www/project/cms/composer.json
-COPY --chown=www-data:www-data ./cms/nys-setup /var/www/project/cms/nys-setup
 COPY --chown=www-data:www-data ./cms/craft /var/www/project/cms/craft
-COPY --chown=www-data:www-data ./cms/.env.sh /var/www/project/cms/.env.sh
 
 # Create the storage directory and make it writeable by PHP
 RUN mkdir -p /var/www/project/cms/storage && \
