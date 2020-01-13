@@ -13,8 +13,10 @@ services:
       - ./.env
     environment:
       PHP_REVALIDATE: 1
+    links:
+      - php
     ports:
-      - "80:8000"
+      - "8000:80"
     volumes:
       - ./cms/web/cpresources:/var/www/project/cms/web/cpresources
       - ./cms/web:/var/www/project/cms/web
@@ -29,6 +31,9 @@ services:
       PHP_REVALIDATE: 1
     expose:
       - "9000"
+    links:
+      - postgres
+      - redis
     volumes:
       - cpresources:/var/www/project/cms/web/cpresources
       - ./cms/composer.json:/var/www/project/cms/composer.json
@@ -43,8 +48,8 @@ services:
       *env
     environment:
       POSTGRES_DB: project
-      POSTGRES_USER: homestead
-      POSTGRES_PASSWORD: secret
+      POSTGRES_USER: project
+      POSTGRES_PASSWORD: project
     image: postgres:latest
     ports:
       - "5432:5432"
@@ -53,6 +58,8 @@ services:
   # redis - key/value database for caching & php sessions
   redis:
     image: redis:latest
+    expose:
+      - "6379"
   # webpack - frontend build system
   webpack:
     build:
@@ -65,7 +72,7 @@ services:
       - "8080:8080"
     volumes:
       - node-modules:/var/www/project/node_modules
-      - ./src:/project/src
+      - ./src:/var/www/project/src
 
 volumes:
   db-data:
