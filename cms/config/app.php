@@ -33,11 +33,18 @@ return [
         'cache' => [
             'class' => yii\redis\Cache::class,
             'redis' => [
+                'hostname' => getenv('REDIS_HOSTNAME'),
+                'port' => getenv('REDIS_PORT'),
                 'database' => getenv('REDIS_CRAFT_DB'),
             ],
         ],
         'session' => [
             'class' => \yii\redis\Session::class,
+            'redis' => [
+                'hostname' => getenv('REDIS_HOSTNAME'),
+                'port' => getenv('REDIS_PORT'),
+                'database' => getenv('REDIS_CRAFT_DB'),
+            ],
             'as session' => [
                 'class' => \craft\behaviors\SessionBehavior::class,
             ],
