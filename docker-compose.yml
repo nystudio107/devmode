@@ -3,7 +3,9 @@ version: '3.7'
 services:
   # ffmpeg - video/audio encoding
   ffmpeg:
-    image: jrottenberg/ffmpeg
+    build:
+      context: .
+      dockerfile: ./docker-config/ffmpeg/Dockerfile
   # nginx - web server
   nginx:
     build:
@@ -25,6 +27,9 @@ services:
     build:
       context: .
       dockerfile: ./docker-config/php/Dockerfile
+    depends_on:
+      - "postgres"
+      - "redis"
     env_file:
       *env
     environment:
@@ -44,20 +49,24 @@ services:
       - ./cms/web:/var/www/project/cms/web
   # postgres - database
   postgres:
+    build:
+      context: .
+      dockerfile: ./docker-config/postgres/Dockerfile
     env_file:
       *env
     environment:
       POSTGRES_DB: project
       POSTGRES_USER: project
       POSTGRES_PASSWORD: project
-    image: postgres:latest
     ports:
       - "5432:5432"
     volumes:
       - db-data:/usr/local/pgsql/data
   # redis - key/value database for caching & php sessions
   redis:
-    image: redis:latest
+    build:
+      context: .
+      dockerfile: ./docker-config/redis/Dockerfile
     expose:
       - "6379"
   # webpack - frontend build system
