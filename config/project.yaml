@@ -1,4 +1,4 @@
-dateModified: 1578610344
+dateModified: 1579818056
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -779,7 +779,7 @@ plugins:
   retour:
     settings: null
     enabled: true
-    schemaVersion: 3.0.8
+    schemaVersion: 3.0.9
     licenseKey: $PLUGIN_RETOUR_LICENSE
   twigpack:
     edition: standard
@@ -793,6 +793,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.2'
 sections:
   1a66bf43-6fcc-4a78-bf36-0f350b930430:
     name: 'Episodes Index'
@@ -1280,3 +1284,23 @@ volumes:
               1be1c156-82fa-4f08-bb63-6d3417da2844:
                 required: false
                 sortOrder: 1
+  e69c8edb-d562-4367-9a05-91a6fd2c7d99:
+    name: 'Devmode Episodes'
+    handle: devmodeEpisodes
+    type: craft\awss3\Volume
+    hasUrls: true
+    url: $CLOUDFRONT_URL
+    settings:
+      subfolder: episodes
+      keyId: $S3_KEY_ID
+      secret: $S3_SECRET
+      bucketSelectionMode: manual
+      bucket: $S3_BUCKET
+      region: $S3_REGION
+      expires: '3 months'
+      makeUploadsPublic: ''
+      storageClass: ''
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: $CLOUDFRONT_PATH_PREFIX
+      autoFocalPoint: ''
+    sortOrder: 4

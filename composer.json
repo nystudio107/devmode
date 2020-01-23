@@ -36,7 +36,8 @@
     "nystudio107/craft-webperf": "^1.0.0",
     "nystudio107/craft-twigpack": "^1.1.0",
     "nystudio107/dotenvy": "^1.0.0",
-    "craftcms/redactor": "^2.3.0"
+    "craftcms/redactor": "^2.3.0",
+    "craftcms/aws-s3": "^1.2"
   },
   "autoload": {
     "psr-4": {
