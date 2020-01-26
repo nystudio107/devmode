@@ -1,4 +1,4 @@
-dateModified: 1580071046
+dateModified: 1580071376
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -1257,6 +1257,16 @@ volumes:
       cfPrefix: $CLOUDFRONT_PATH_PREFIX
       autoFocalPoint: ''
     sortOrder: 5
+    fieldLayouts:
+      a3429f83-028c-4ceb-954f-7cfe44643b98:
+        tabs:
+          -
+            name: Content
+            sortOrder: 1
+            fields:
+              1be1c156-82fa-4f08-bb63-6d3417da2844:
+                required: false
+                sortOrder: 1
   808914da-7ca2-4bb3-89ad-6c46b0369470:
     name: Episodes
     handle: episodes
@@ -1286,6 +1296,16 @@ volumes:
       cfPrefix: $CLOUDFRONT_PATH_PREFIX
       autoFocalPoint: ''
     sortOrder: 6
+    fieldLayouts:
+      20e7215a-39c8-421f-835a-f14244493bd7:
+        tabs:
+          -
+            name: Content
+            sortOrder: 1
+            fields:
+              41fdb4c8-4774-4101-918f-1412190b085b:
+                required: false
+                sortOrder: 1
   ab5dbb6f-b2fe-4712-9237-d47c3a608050:
     name: Users
     handle: users
