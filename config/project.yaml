@@ -1,4 +1,4 @@
-dateModified: 1579818056
+dateModified: 1580071046
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -1237,6 +1237,26 @@ users:
       name: Owners
       handle: owners
 volumes:
+  7540db37-7ec3-4471-9de6-36bde06e949a:
+    name: 'Devmode Site'
+    handle: devmodeSite
+    type: craft\awss3\Volume
+    hasUrls: true
+    url: $CLOUDFRONT_URL
+    settings:
+      subfolder: site
+      keyId: $S3_KEY_ID
+      secret: $S3_SECRET
+      bucketSelectionMode: manual
+      bucket: $S3_BUCKET
+      region: $S3_REGION
+      expires: '3 months'
+      makeUploadsPublic: ''
+      storageClass: ''
+      cfDistributionId: CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: $CLOUDFRONT_PATH_PREFIX
+      autoFocalPoint: ''
+    sortOrder: 5
   808914da-7ca2-4bb3-89ad-6c46b0369470:
     name: Episodes
     handle: episodes
@@ -1246,6 +1266,26 @@ volumes:
     settings:
       path: '@webroot/assets/episodes'
     sortOrder: 3
+  98f56e95-4be6-4238-a110-1f21574fa642:
+    name: 'Devmode Users'
+    handle: devmodeUsers
+    type: craft\awss3\Volume
+    hasUrls: true
+    url: $CLOUDFRONT_URL
+    settings:
+      subfolder: users
+      keyId: $S3_KEY_ID
+      secret: $S3_SECRET
+      bucketSelectionMode: manual
+      bucket: $S3_BUCKET
+      region: $S3_REGION
+      expires: '3 months'
+      makeUploadsPublic: ''
+      storageClass: ''
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: $CLOUDFRONT_PATH_PREFIX
+      autoFocalPoint: ''
+    sortOrder: 6
   ab5dbb6f-b2fe-4712-9237-d47c3a608050:
     name: Users
     handle: users
