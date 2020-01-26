@@ -1,4 +1,4 @@
-dateModified: 1580071376
+dateModified: 1580072849
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -1151,8 +1151,8 @@ tagGroups:
 users:
   requireEmailVerification: true
   allowPublicRegistration: false
-  defaultGroup: null
-  photoVolumeUid: ab5dbb6f-b2fe-4712-9237-d47c3a608050
+  defaultGroup: ''
+  photoVolumeUid: 98f56e95-4be6-4238-a110-1f21574fa642
   photoSubpath: ''
   fieldLayouts:
     414459bf-ed39-4493-916d-6a00213bce60:
