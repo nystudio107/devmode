@@ -1,4 +1,4 @@
-dateModified: 1574263196
+dateModified: 1579999166
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -793,6 +793,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.2'
 sections:
   1a66bf43-6fcc-4a78-bf36-0f350b930430:
     name: 'Episodes Index'
