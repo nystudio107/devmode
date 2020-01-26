@@ -58,5 +58,4 @@ Learn more about Craft at [craftcms.com](https://craftcms.com).
 ## Roadmap
 
 * Move to containerized builds in buddy.works & atomic deployments
-* Move to Amazon S3 for assets, and utilize Cloudfront as well
 * Convert local development over to Docker
