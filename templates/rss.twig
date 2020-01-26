@@ -1,6 +1,6 @@
 {% header "Content-Type: application/rss+xml" %}
 {% set hosts = craft.users.group("owners").all() %}
-{% set baseUrl = alias('@assetsUrl') ~ '/' %}
+{% set baseUrl = alias('@cloudfrontUrl') ~ '/' %}
 {% do craft.webperf.includeBeacon(false) %}
 {% do seomatic.config.renderEnabled(false) %}
 <?xml version="1.0" encoding="UTF-8"?>
