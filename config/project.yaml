@@ -1,4 +1,4 @@
-dateModified: 1580072849
+dateModified: 1580074072
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -35,15 +35,16 @@ fields:
       allowedKinds:
         - audio
       sources:
-        - 'volume:808914da-7ca2-4bb3-89ad-6c46b0369470'
+        - 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99'
       source: null
       targetSiteId: null
       viewMode: list
       limit: '1'
       selectionLabel: ''
       localizeRelations: false
-    fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9
+      validateRelatedElements: ''
     contentColumnType: string
+    fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9
   14605669-4768-4f57-88d6-1f06480a9b80:
     name: 'Show iTunes URL'
     handle: showItunesUrl
@@ -235,15 +236,16 @@ fields:
       allowedKinds:
         - image
       sources:
-        - 'volume:cd231c31-8caf-4b13-995d-2b84f9750c63'
+        - 'volume:7540db37-7ec3-4471-9de6-36bde06e949a'
       source: null
       targetSiteId: null
       viewMode: large
       limit: '1'
       selectionLabel: ''
       localizeRelations: false
-    fieldGroup: 88db3e41-57f4-404d-b3ea-762b09c37afe
+      validateRelatedElements: ''
     contentColumnType: string
+    fieldGroup: 88db3e41-57f4-404d-b3ea-762b09c37afe
   61953a92-8b34-4678-9bae-fd5a45142f26:
     name: 'Episode Tags'
     handle: episodeTags
@@ -445,15 +447,16 @@ fields:
       allowedKinds:
         - image
       sources:
-        - 'volume:cd231c31-8caf-4b13-995d-2b84f9750c63'
+        - 'volume:7540db37-7ec3-4471-9de6-36bde06e949a'
       source: null
       targetSiteId: null
       viewMode: large
       limit: '1'
       selectionLabel: ''
       localizeRelations: false
-    fieldGroup: 0c790066-43c5-4b67-b6d9-8492fa40cf71
+      validateRelatedElements: ''
     contentColumnType: string
+    fieldGroup: 0c790066-43c5-4b67-b6d9-8492fa40cf71
   c05161c0-a294-4d47-8909-1cfc88c2f970:
     name: 'Profile Company'
     handle: profileCompany

@@ -13,11 +13,13 @@
 {# -- Prefetch & preconnect headers and links -- #}
 {% set prefetchUrls = [
     alias("@assetsUrl"),
+    alias("@cloudfrontUrl"),
 ] %}
 {# -- General global variables -- #}
-{% set baseUrl = alias('@assetsUrl') ~ '/' %}
-{% set backgroundUrl = "#{baseUrl}img/site/devmode-fm-light-bg-opaque.svg" %}
-{% set footerBackgroundUrl = "#{baseUrl}img/site/devmode-fm-dark-bg.svg" %}
+{% set baseUrl = alias('@cloudfrontUrl') ~ '/' %}
+{% set assetsUrl = alias('@assetsUrl') ~ '/' %}
+{% set backgroundUrl = "#{baseUrl}site/devmode-fm-light-bg-opaque.svg" %}
+{% set footerBackgroundUrl = "#{baseUrl}site/devmode-fm-dark-bg.svg" %}
 {% set gaTrackingId = getenv('GA_TRACKING_ID') %}
 
 {# -- Twig output from the render; this must be in a block -- #}
