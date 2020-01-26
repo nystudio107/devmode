@@ -1,4 +1,4 @@
-dateModified: 1580074072
+dateModified: 1580081211
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -1270,15 +1270,6 @@ volumes:
               1be1c156-82fa-4f08-bb63-6d3417da2844:
                 required: false
                 sortOrder: 1
-  808914da-7ca2-4bb3-89ad-6c46b0369470:
-    name: Episodes
-    handle: episodes
-    type: craft\volumes\Local
-    hasUrls: true
-    url: '@assetsUrl/assets/episodes'
-    settings:
-      path: '@webroot/assets/episodes'
-    sortOrder: 3
   98f56e95-4be6-4238-a110-1f21574fa642:
     name: 'Devmode Users'
     handle: devmodeUsers
@@ -1307,44 +1298,6 @@ volumes:
             sortOrder: 1
             fields:
               41fdb4c8-4774-4101-918f-1412190b085b:
-                required: false
-                sortOrder: 1
-  ab5dbb6f-b2fe-4712-9237-d47c3a608050:
-    name: Users
-    handle: users
-    type: craft\volumes\Local
-    hasUrls: true
-    url: '@assetsUrl/assets/users'
-    settings:
-      path: '@webroot/assets/users'
-    sortOrder: 2
-    fieldLayouts:
-      6da5d8e4-c0df-4a1d-9e1e-b040b8223df1:
-        tabs:
-          -
-            name: Content
-            sortOrder: 1
-            fields:
-              41fdb4c8-4774-4101-918f-1412190b085b:
-                required: false
-                sortOrder: 1
-  cd231c31-8caf-4b13-995d-2b84f9750c63:
-    name: Site
-    handle: site
-    type: craft\volumes\Local
-    hasUrls: true
-    url: '@assetsUrl/assets/site'
-    settings:
-      path: '@webroot/assets/site'
-    sortOrder: 1
-    fieldLayouts:
-      1cc04194-1111-4d46-b8e3-e7e24766f2be:
-        tabs:
-          -
-            name: Content
-            sortOrder: 1
-            fields:
-              1be1c156-82fa-4f08-bb63-6d3417da2844:
                 required: false
                 sortOrder: 1
   e69c8edb-d562-4367-9a05-91a6fd2c7d99:
