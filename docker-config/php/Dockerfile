@@ -66,4 +66,4 @@ RUN composer install --no-scripts -d /var/www/project/cms && \
     chown -R www-data:www-data /var/www/project/cms/vendor && \
     chown -R www-data:www-data /var/www/project/cms/composer.lock
 
-CMD composer run-script craft-update -d /var/www/project/cms
+# CMD composer run-script craft-update -d /var/www/project/cms
