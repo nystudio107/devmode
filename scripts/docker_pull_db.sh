@@ -63,33 +63,13 @@ function pull_pgsql_ssh() {
     ssh $REMOTE_SSH_LOGIN -p $REMOTE_SSH_PORT "echo ${REMOTE_DB_HOST}:${REMOTE_DB_PORT}:${REMOTE_DB_NAME}:${REMOTE_DB_USER}:${REMOTE_DB_PASSWORD} > '$TMP_DB_DUMP_CREDS_PATH' ; chmod 600 '$TMP_DB_DUMP_CREDS_PATH' ; PGPASSFILE='$TMP_DB_DUMP_CREDS_PATH' $REMOTE_PG_DUMP_CMD $REMOTE_DB_CREDS $REMOTE_IGNORED_DB_TABLES_STRING $PG_DUMP_ARGS --schema='$REMOTE_DB_SCHEMA' --file='$TMP_DB_PATH' ; rm '$TMP_DB_DUMP_CREDS_PATH' ; gzip -f '$TMP_DB_PATH'"
     copy_db_dump_locally
 }
-function backup_local_mysql() {
-    $LOCAL_MYSQLDUMP_CMD $LOCAL_DB_CREDS $MYSQLDUMP_SCHEMA_ARGS > "$BACKUP_DB_PATH"
-    $LOCAL_MYSQLDUMP_CMD $LOCAL_DB_CREDS $LOCAL_IGNORED_DB_TABLES_STRING $MYSQLDUMP_DATA_ARGS >> "$BACKUP_DB_PATH"
-    gzip -f "$BACKUP_DB_PATH"
-    echo "*** Backed up local database to ${BACKUP_DB_PATH}.gz"
-}
-function backup_local_pgsql() {
-    echo ${LOCAL_DB_HOST}:${LOCAL_DB_PORT}:${LOCAL_DB_NAME}:${LOCAL_DB_USER}:${LOCAL_DB_PASSWORD} > "${TMP_DB_DUMP_CREDS_PATH}"
-    chmod 600 "${TMP_DB_DUMP_CREDS_PATH}"
-    PGPASSFILE="${TMP_DB_DUMP_CREDS_PATH}" $LOCAL_PG_DUMP_CMD $LOCAL_DB_CREDS $LOCAL_IGNORED_DB_TABLES_STRING $PG_DUMP_ARGS --schema="${LOCAL_DB_SCHEMA}" --file="${BACKUP_DB_PATH}"
-    rm "${TMP_DB_DUMP_CREDS_PATH}"
-    gzip -f "$BACKUP_DB_PATH"
-    echo "*** Backed up local database to ${BACKUP_DB_PATH}.gz"
-}
 function restore_local_from_remote_mysql() {
-    ${DB_ZCAT_CMD} "${TMP_DB_PATH}.gz" | $LOCAL_MYSQL_CMD $LOCAL_DB_CREDS
-    echo "*** Restored local database from ${TMP_DB_PATH}.gz"
+    ${DB_ZCAT_CMD} "${TMP_DB_PATH}.gz" | docker exec -i devmode_postgres_1 ${LOCAL_MYSQL_CMD} ${LOCAL_DB_CREDS}
+    echo "*** Restored docker MySQL database from ${TMP_DB_PATH}.gz"
 }
 function restore_local_from_remote_pgsql() {
-#    echo ${LOCAL_DB_HOST}:${LOCAL_DB_PORT}:${LOCAL_DB_NAME}:${LOCAL_DB_USER}:${LOCAL_DB_PASSWORD} > "${TMP_DB_DUMP_CREDS_PATH}"
-#    chmod 600 "${TMP_DB_DUMP_CREDS_PATH}"
-#    ${DB_ZCAT_CMD} "${TMP_DB_PATH}.gz" | PGPASSFILE="${TMP_DB_DUMP_CREDS_PATH}" $LOCAL_PSQL_CMD $LOCAL_DB_CREDS --no-password >/dev/null
-#    rm "${TMP_DB_DUMP_CREDS_PATH}"
-#    ${DB_ZCAT_CMD} "${TMP_DB_PATH}.gz" | docker exec -i devmode_postgres_1 "${LOCAL_PSQL_CMD}" "${LOCAL_DB_CREDS}"
-    ${DB_ZCAT_CMD} "${TMP_DB_PATH}.gz" | docker exec -i devmode_postgres_1 "${LOCAL_PSQL_CMD}" -U project -d project
-    echo "*** Restored docker database from ${TMP_DB_PATH}.gz"
-    echo "*** ${LOCAL_PSQL_CMD} ${LOCAL_DB_CREDS}"
+    ${DB_ZCAT_CMD} "${TMP_DB_PATH}.gz" | docker exec -i devmode_postgres_1 ${LOCAL_PSQL_CMD} --output /dev/null --quiet ${LOCAL_DB_CREDS}
+    echo "*** Restored docker Postgres database from ${TMP_DB_PATH}.gz"
 }
 
 # Source the correct file for the database driver
@@ -101,7 +81,6 @@ case "$GLOBAL_DB_DRIVER" in
         else
             pull_mysql_direct
         fi
-        backup_local_mysql
         restore_local_from_remote_mysql
         ;;
     ( 'pgsql' )
