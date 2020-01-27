@@ -2,9 +2,8 @@
  * @project        Example Project
  * @name           vuetyper-legacy.d1d2172d1ffb0d4f0d39.js
  * @author         Andrew Welch
- * @build          Wed, Nov 20, 2019 3:27 PM ET
- * @release        b683044ff8b47be911760828c796ca71b913ef71 [develop]
- * @copyright      Copyright (c) 2019 Example Company, Inc.
+ * @build          Mon, Jan 27, 2020 5:21 AM ET
+ * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */
 (window.webpackJsonp=window.webpackJsonp||[]).push([[12],{125:function(t,e,n){
