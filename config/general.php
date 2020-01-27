@@ -13,6 +13,7 @@ return [
     'aliases' => [
         '@assetsUrl' => getenv('ASSETS_URL'),
         '@cloudfrontUrl' => getenv('CLOUDFRONT_URL'),
+        '@transcodedEpisodes' => 'https://d21kofsrtbjnsd.cloudfront.net/',
         '@web' => getenv('SITE_URL'),
         '@webroot' => getenv('WEB_ROOT_PATH'),
     ],

@@ -48,9 +48,9 @@ return [
         // The URL where the transcoded videos are stored; must have a trailing /
         // Yii2 aliases are supported here
         'transcoderUrls' => [
-            'default' => '@web/transcoder/',
+            'default' => '@transcodedEpisodes/transcoder/',
             'video' => '@web/transcoder/',
-            'audio' => '@web/transcoder/',
+            'audio' => '@transcodedEpisodes/transcoder/',
             'thumbnail' => '@web/transcoder/',
             'gif' => '@web/transcoder/',
         ],
