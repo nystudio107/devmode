@@ -1,0 +1,88 @@
+version: '3.7'
+
+services:
+  # nginx - web server
+  nginx:
+    build:
+      context: .
+      dockerfile: ./docker-config/nginx/Dockerfile
+    env_file: &env
+      - ./.env
+    environment:
+      PHP_REVALIDATE: 1
+    links:
+      - php
+    ports:
+      - "8000:80"
+    volumes:
+      - cpresources:/var/www/project/cms/web/cpresources:delegated
+      - ./cms/web:/var/www/project/cms/web
+  # php - personal home page
+  php:
+    build:
+      context: .
+      dockerfile: ./docker-config/php/Dockerfile
+    depends_on:
+      - "postgres"
+      - "redis"
+    env_file:
+      *env
+    environment:
+      PHP_REVALIDATE: 1
+    expose:
+      - "9000"
+    links:
+      - postgres
+      - redis
+    volumes:
+      - cpresources:/var/www/project/cms/web/cpresources:delegated
+      - vendor:/var/www/project/cms/vendor:delegated
+      - ./cms/composer.json:/var/www/project/cms/composer.json
+      - ./cms/composer.lock:/var/www/project/cms/composer.lock
+      - ./cms:/var/www/project/cms
+      - ./cms/config:/var/www/project/cms/config:cached
+      - ./cms/modules:/var/www/project/cms/modules:cached
+      - ./cms/templates:/var/www/project/cms/templates:cached
+      - ./cms/web:/var/www/project/cms/web
+  # postgres - database
+  postgres:
+    build:
+      context: .
+      dockerfile: ./docker-config/postgres/Dockerfile
+    env_file:
+      *env
+    environment:
+      POSTGRES_DB: project
+      POSTGRES_USER: project
+      POSTGRES_PASSWORD: project
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/usr/local/pgsql/data
+  # redis - key/value database for caching & php sessions
+  redis:
+    build:
+      context: .
+      dockerfile: ./docker-config/redis/Dockerfile
+    expose:
+      - "6379"
+  # webpack - frontend build system
+  webpack:
+    build:
+      context: .
+      dockerfile: ./docker-config/webpack/Dockerfile
+    command: npm run debug
+    env_file:
+      *env
+    ports:
+      - "8080:8080"
+    volumes:
+      - node-modules:/var/www/project/node_modules:delegated
+      - ./src:/var/www/project/src:cached
+      - ./cms/web/dist:/var/www/project/cms/web/dist
+
+volumes:
+  vendor:
+  db-data:
+  cpresources:
+  node-modules:
