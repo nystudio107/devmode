@@ -5,10 +5,8 @@
 # Shared script to set various database-related variables
 #
 # @author    nystudio107
-# @copyright Copyright (c) 2017 nystudio107
+# @copyright Copyright (c) 2020 nystudio107
 # @link      https://nystudio107.com/
-# @package   craft-scripts
-# @since     1.2.0
 # @license   MIT
 
 LOCAL_IGNORED_DB_TABLES_STRING=""

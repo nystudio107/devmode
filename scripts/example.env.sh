@@ -1,26 +1,28 @@
-#@IgnoreInspection BashAddShebang
-# Craft Scripts Defaults
+# Craft 3 Scripts Environment
 #
-# Default settings for Craft scripts
+# Local environmental config for nystudio107 Craft scripts
 #
 # @author    nystudio107
 # @copyright Copyright (c) 2020 nystudio107
 # @link      https://nystudio107.com/
 # @license   MIT
+#
+# This file should be renamed to '.env.sh' and it should reside in the
+# `scripts` directory.  Add '.env.sh' to your .gitignore.
 
 # -- GLOBAL settings --
 
 # The database driver for this Craft install ('mysql' or 'pgsql')
-GLOBAL_DB_DRIVER="mysql"
+GLOBAL_DB_DRIVER="pgsql"
 
 # -- LOCAL settings --
 
 # Local database constants; default port for mysql is 3306, default port for postgres is 5432
-LOCAL_DB_NAME="REPLACE_ME"
-LOCAL_DB_PASSWORD="REPLACE_ME"
-LOCAL_DB_USER="REPLACE_ME"
+LOCAL_DB_NAME="project"
+LOCAL_DB_PASSWORD="project"
+LOCAL_DB_USER="project"
 LOCAL_DB_HOST="localhost"
-LOCAL_DB_PORT="3306"
+LOCAL_DB_PORT="5432"
 LOCAL_DB_SCHEMA="public"
 
 # If you are using mysql 5.6.10 or later and you have `login-path` setup as per:
@@ -39,18 +41,18 @@ LOCAL_PG_DUMP_CMD="pg_dump"
 # -- REMOTE settings --
 
 # Remote ssh credentials, user@domain.com and Remote SSH Port
-REMOTE_SSH_LOGIN="REPLACE_ME"
+REMOTE_SSH_LOGIN="forge@devmode.fm"
 REMOTE_SSH_PORT="22"
 
 # Should we connect to the remote database server via ssh?
 REMOTE_DB_USING_SSH="yes"
 
 # Remote database constants; default port for mysql is 3306, default port for postgres is 5432
-REMOTE_DB_NAME="REPLACE_ME"
+REMOTE_DB_NAME="devmode"
 REMOTE_DB_PASSWORD="REPLACE_ME"
-REMOTE_DB_USER="REPLACE_ME"
+REMOTE_DB_USER="devmode"
 REMOTE_DB_HOST="localhost"
-REMOTE_DB_PORT="3306"
+REMOTE_DB_PORT="5432"
 REMOTE_DB_SCHEMA="public"
 
 # If you are using mysql 5.6.10 or later and you have `login-path` setup as per:
