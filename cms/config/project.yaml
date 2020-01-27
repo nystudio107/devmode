@@ -1,4 +1,4 @@
-dateModified: 1579999166
+dateModified: 1580094412
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -35,13 +35,14 @@ fields:
       allowedKinds:
         - audio
       sources:
-        - 'volume:808914da-7ca2-4bb3-89ad-6c46b0369470'
+        - 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99'
       source: null
       targetSiteId: null
       viewMode: list
       limit: '1'
       selectionLabel: ''
       localizeRelations: false
+      validateRelatedElements: ''
     fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9
     contentColumnType: string
   14605669-4768-4f57-88d6-1f06480a9b80:
@@ -235,13 +236,14 @@ fields:
       allowedKinds:
         - image
       sources:
-        - 'volume:cd231c31-8caf-4b13-995d-2b84f9750c63'
+        - 'volume:7540db37-7ec3-4471-9de6-36bde06e949a'
       source: null
       targetSiteId: null
       viewMode: large
       limit: '1'
       selectionLabel: ''
       localizeRelations: false
+      validateRelatedElements: ''
     fieldGroup: 88db3e41-57f4-404d-b3ea-762b09c37afe
     contentColumnType: string
   61953a92-8b34-4678-9bae-fd5a45142f26:
@@ -425,8 +427,8 @@ fields:
       maxBlocks: ''
       contentTable: '{{%matrixcontent_faqs}}'
       propagationMethod: all
-    contentColumnType: string
     fieldGroup: 49649e9a-033b-4ddf-9f3d-26a480502993
+    contentColumnType: string
   bda219fa-bace-4d8b-ad3a-08243caaf6ca:
     name: 'Show Image'
     handle: showImage
@@ -445,13 +447,14 @@ fields:
       allowedKinds:
         - image
       sources:
-        - 'volume:cd231c31-8caf-4b13-995d-2b84f9750c63'
+        - 'volume:7540db37-7ec3-4471-9de6-36bde06e949a'
       source: null
       targetSiteId: null
       viewMode: large
       limit: '1'
       selectionLabel: ''
       localizeRelations: false
+      validateRelatedElements: ''
     fieldGroup: 0c790066-43c5-4b67-b6d9-8492fa40cf71
     contentColumnType: string
   c05161c0-a294-4d47-8909-1cfc88c2f970:
@@ -572,10 +575,26 @@ globalSets:
                 sortOrder: 10
 matrixBlockTypes:
   a009e969-e0ed-429e-9ab3-98561af05518:
-    field: b5eb01ec-a6ed-4a08-9438-64e7138b08f0
     name: FAQs
     handle: faqs
     sortOrder: 1
+    field: b5eb01ec-a6ed-4a08-9438-64e7138b08f0
+    fieldLayouts:
+      529896ec-dad3-4d01-8366-e2c4f7b33144:
+        tabs:
+          -
+            name: Content
+            sortOrder: 1
+            fields:
+              2bb6f342-1735-446e-b9fe-754f94dac82f:
+                required: false
+                sortOrder: 2
+              98dbc824-8c89-4138-9b0f-011a96875a7a:
+                required: false
+                sortOrder: 3
+              e0264ea5-7834-42de-9f8f-c611149453d0:
+                required: false
+                sortOrder: 1
     fields:
       2bb6f342-1735-446e-b9fe-754f94dac82f:
         name: Answer
@@ -596,8 +615,8 @@ matrixBlockTypes:
           columnType: text
           availableVolumes: '*'
           availableTransforms: '*'
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: text
       98dbc824-8c89-4138-9b0f-011a96875a7a:
         name: Links
         handle: links
@@ -622,8 +641,8 @@ matrixBlockTypes:
               width: ''
               type: singleline
           columnType: text
-        contentColumnType: text
         fieldGroup: null
+        contentColumnType: text
       e0264ea5-7834-42de-9f8f-c611149453d0:
         name: Question
         handle: question
@@ -639,24 +658,8 @@ matrixBlockTypes:
           initialRows: '4'
           charLimit: ''
           columnType: text
-        contentColumnType: text
         fieldGroup: null
-    fieldLayouts:
-      529896ec-dad3-4d01-8366-e2c4f7b33144:
-        tabs:
-          -
-            name: Content
-            sortOrder: 1
-            fields:
-              2bb6f342-1735-446e-b9fe-754f94dac82f:
-                required: false
-                sortOrder: 2
-              98dbc824-8c89-4138-9b0f-011a96875a7a:
-                required: false
-                sortOrder: 3
-              e0264ea5-7834-42de-9f8f-c611149453d0:
-                required: false
-                sortOrder: 1
+        contentColumnType: text
 plugins:
   seomatic:
     settings:
@@ -779,7 +782,7 @@ plugins:
   retour:
     settings: null
     enabled: true
-    schemaVersion: 3.0.7
+    schemaVersion: 3.0.9
     licenseKey: $PLUGIN_RETOUR_LICENSE
   twigpack:
     edition: standard
@@ -804,12 +807,7 @@ sections:
     type: single
     enableVersioning: false
     propagationMethod: all
-    siteSettings:
-      2a4761bd-2461-4db9-96a0-4f52b8cef633:
-        enabledByDefault: true
-        hasUrls: true
-        uriFormat: episodes
-        template: episodes/index
+    previewTargets: null
     entryTypes:
       50012289-791c-48b2-8df1-31a8f5eb5380:
         name: 'Episodes Index'
@@ -818,12 +816,19 @@ sections:
         titleLabel: null
         titleFormat: '{section.name|raw}'
         sortOrder: 1
+    siteSettings:
+      2a4761bd-2461-4db9-96a0-4f52b8cef633:
+        enabledByDefault: true
+        hasUrls: true
+        uriFormat: episodes
+        template: episodes/index
   214e4dc6-a454-4df0-a1f5-cd94ecdab53f:
     name: Guests
     handle: guests
     type: channel
     enableVersioning: true
     propagationMethod: all
+    previewTargets: null
     entryTypes:
       032dc0eb-27cf-4034-ad36-dc8c274a455e:
         name: Guests
@@ -869,6 +874,7 @@ sections:
     type: single
     enableVersioning: false
     propagationMethod: all
+    previewTargets: null
     entryTypes:
       cc4ea2bd-3bde-4bad-8f72-272fcc3c2a19:
         name: About
@@ -899,6 +905,7 @@ sections:
     type: single
     enableVersioning: false
     propagationMethod: all
+    previewTargets: null
     entryTypes:
       e81379aa-e0c7-45c0-b506-c4ab8fce6bce:
         name: 'Generic Error'
@@ -935,6 +942,7 @@ sections:
     type: single
     enableVersioning: false
     propagationMethod: all
+    previewTargets: null
     entryTypes:
       78ad1f1e-5dc5-4cff-b19f-43aa4ec02869:
         name: '404 Not Found'
@@ -971,6 +979,7 @@ sections:
     type: single
     enableVersioning: false
     propagationMethod: all
+    previewTargets: null
     entryTypes:
       a4be3483-f316-4f96-8820-3914ad7b863a:
         name: 'Site Offline'
@@ -1007,6 +1016,7 @@ sections:
     type: single
     enableVersioning: false
     propagationMethod: all
+    previewTargets: null
     entryTypes:
       29da80bf-c705-441b-be33-96df307c84c6:
         name: '503 Service Unavailable'
@@ -1043,6 +1053,7 @@ sections:
     type: single
     enableVersioning: false
     propagationMethod: all
+    previewTargets: null
     entryTypes:
       7f6ad724-41b7-4a93-bef9-7de87d1bb23e:
         name: Calendar
@@ -1063,6 +1074,7 @@ sections:
     type: single
     enableVersioning: false
     propagationMethod: all
+    previewTargets: null
     entryTypes:
       9aae2c4b-7316-4ee9-a2d1-41474766b361:
         name: Homepage
@@ -1083,6 +1095,7 @@ sections:
     type: channel
     enableVersioning: false
     propagationMethod: all
+    previewTargets: null
     entryTypes:
       913ea665-c268-4177-8054-fe76f80101c6:
         name: Episodes
@@ -1151,8 +1164,8 @@ tagGroups:
 users:
   requireEmailVerification: true
   allowPublicRegistration: false
-  defaultGroup: null
-  photoVolumeUid: ab5dbb6f-b2fe-4712-9237-d47c3a608050
+  defaultGroup: ''
+  photoVolumeUid: 98f56e95-4be6-4238-a110-1f21574fa642
   photoSubpath: ''
   fieldLayouts:
     414459bf-ed39-4493-916d-6a00213bce60:
@@ -1237,45 +1250,28 @@ users:
       name: Owners
       handle: owners
 volumes:
-  808914da-7ca2-4bb3-89ad-6c46b0369470:
-    name: Episodes
-    handle: episodes
-    type: craft\volumes\Local
+  7540db37-7ec3-4471-9de6-36bde06e949a:
+    name: 'Devmode Site'
+    handle: devmodeSite
+    type: craft\awss3\Volume
     hasUrls: true
-    url: '@assetsUrl/assets/episodes'
+    url: $CLOUDFRONT_URL
     settings:
-      path: '@webroot/assets/episodes'
-    sortOrder: 3
-  ab5dbb6f-b2fe-4712-9237-d47c3a608050:
-    name: Users
-    handle: users
-    type: craft\volumes\Local
-    hasUrls: true
-    url: '@assetsUrl/assets/users'
-    settings:
-      path: '@webroot/assets/users'
-    sortOrder: 2
+      subfolder: site
+      keyId: $S3_KEY_ID
+      secret: $S3_SECRET
+      bucketSelectionMode: manual
+      bucket: $S3_BUCKET
+      region: $S3_REGION
+      expires: '3 months'
+      makeUploadsPublic: ''
+      storageClass: ''
+      cfDistributionId: CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: $CLOUDFRONT_PATH_PREFIX
+      autoFocalPoint: ''
+    sortOrder: 5
     fieldLayouts:
-      6da5d8e4-c0df-4a1d-9e1e-b040b8223df1:
-        tabs:
-          -
-            name: Content
-            sortOrder: 1
-            fields:
-              41fdb4c8-4774-4101-918f-1412190b085b:
-                required: false
-                sortOrder: 1
-  cd231c31-8caf-4b13-995d-2b84f9750c63:
-    name: Site
-    handle: site
-    type: craft\volumes\Local
-    hasUrls: true
-    url: '@assetsUrl/assets/site'
-    settings:
-      path: '@webroot/assets/site'
-    sortOrder: 1
-    fieldLayouts:
-      1cc04194-1111-4d46-b8e3-e7e24766f2be:
+      a3429f83-028c-4ceb-954f-7cfe44643b98:
         tabs:
           -
             name: Content
@@ -1284,3 +1280,53 @@ volumes:
               1be1c156-82fa-4f08-bb63-6d3417da2844:
                 required: false
                 sortOrder: 1
+  98f56e95-4be6-4238-a110-1f21574fa642:
+    name: 'Devmode Users'
+    handle: devmodeUsers
+    type: craft\awss3\Volume
+    hasUrls: true
+    url: $CLOUDFRONT_URL
+    settings:
+      subfolder: users
+      keyId: $S3_KEY_ID
+      secret: $S3_SECRET
+      bucketSelectionMode: manual
+      bucket: $S3_BUCKET
+      region: $S3_REGION
+      expires: '3 months'
+      makeUploadsPublic: ''
+      storageClass: ''
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: $CLOUDFRONT_PATH_PREFIX
+      autoFocalPoint: ''
+    sortOrder: 6
+    fieldLayouts:
+      20e7215a-39c8-421f-835a-f14244493bd7:
+        tabs:
+          -
+            name: Content
+            sortOrder: 1
+            fields:
+              41fdb4c8-4774-4101-918f-1412190b085b:
+                required: false
+                sortOrder: 1
+  e69c8edb-d562-4367-9a05-91a6fd2c7d99:
+    name: 'Devmode Episodes'
+    handle: devmodeEpisodes
+    type: craft\awss3\Volume
+    hasUrls: true
+    url: $CLOUDFRONT_URL
+    settings:
+      subfolder: episodes
+      keyId: $S3_KEY_ID
+      secret: $S3_SECRET
+      bucketSelectionMode: manual
+      bucket: $S3_BUCKET
+      region: $S3_REGION
+      expires: '3 months'
+      makeUploadsPublic: ''
+      storageClass: ''
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: $CLOUDFRONT_PATH_PREFIX
+      autoFocalPoint: ''
+    sortOrder: 4
