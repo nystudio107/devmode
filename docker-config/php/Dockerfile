@@ -15,6 +15,7 @@ RUN apt-get update \
     ca-certificates curl g++ libicu-dev \
     libmagickwand-dev libzip-dev \
     zip unzip libpq-dev \
+    ffmpeg \
     && \
     # pecl PHP extensions
     pecl install \

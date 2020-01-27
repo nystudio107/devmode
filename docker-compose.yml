@@ -1,11 +1,6 @@
 version: '3.7'
 
 services:
-  # ffmpeg - video/audio encoding
-  ffmpeg:
-    build:
-      context: .
-      dockerfile: ./docker-config/ffmpeg/Dockerfile
   # nginx - web server
   nginx:
     build:
@@ -41,6 +36,7 @@ services:
       - redis
     volumes:
       - cpresources:/var/www/project/cms/web/cpresources:delegated
+      - vendor:/var/www/project/cms/vendor:delegated
       - ./cms/composer.json:/var/www/project/cms/composer.json
       - ./cms/composer.lock:/var/www/project/cms/composer.lock
       - ./cms:/var/www/project/cms
@@ -48,7 +44,6 @@ services:
       - ./cms/modules:/var/www/project/cms/modules:cached
       - ./cms/templates:/var/www/project/cms/templates:cached
       - ./cms/web:/var/www/project/cms/web
-      - vendor:/var/www/project/cms/vendor:delegated
   # postgres - database
   postgres:
     build:
@@ -84,6 +79,7 @@ services:
     volumes:
       - node-modules:/var/www/project/node_modules:delegated
       - ./src:/var/www/project/src:cached
+      - ./cms/web/dist:/var/www/project/cms/web/dist
 
 volumes:
   vendor:
