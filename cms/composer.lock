@@ -971,16 +971,16 @@
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.13.2",
+            "version": "0.13.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "19e85021505b29f3055c1f57a620ee4aa5c24113"
+                "reference": "bc66593f255b7d2613d8f22041180036979b6403"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/19e85021505b29f3055c1f57a620ee4aa5c24113",
-                "reference": "19e85021505b29f3055c1f57a620ee4aa5c24113",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/bc66593f255b7d2613d8f22041180036979b6403",
+                "reference": "bc66593f255b7d2613d8f22041180036979b6403",
                 "shasum": ""
             },
             "require": {
@@ -1008,7 +1008,7 @@
                 }
             ],
             "description": "An SVG sanitizer for PHP",
-            "time": "2019-12-09T09:24:04+00:00"
+            "time": "2020-01-20T01:34:17+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -1389,16 +1389,16 @@
         },
         {
             "name": "johngrogg/ics-parser",
-            "version": "v2.1.16",
+            "version": "v2.1.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/u01jmg3/ics-parser.git",
-                "reference": "b40bf3c05903372d6c42837df29a02d6205f8156"
+                "reference": "2307a0fddd0b11975ce01b5d80c355a28d8654f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/b40bf3c05903372d6c42837df29a02d6205f8156",
-                "reference": "b40bf3c05903372d6c42837df29a02d6205f8156",
+                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/2307a0fddd0b11975ce01b5d80c355a28d8654f1",
+                "reference": "2307a0fddd0b11975ce01b5d80c355a28d8654f1",
                 "shasum": ""
             },
             "require": {
@@ -1441,7 +1441,7 @@
                 "ics-parser",
                 "ifb"
             ],
-            "time": "2019-12-03T19:10:54+00:00"
+            "time": "2020-01-27T16:10:28+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2660,16 +2660,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.7",
+            "version": "1.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "8a2a4d4330add408b5cc1311a602497687b80a8b"
+                "reference": "c5603d75a8b395e6a997cce36235d736e1ec596e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/8a2a4d4330add408b5cc1311a602497687b80a8b",
-                "reference": "8a2a4d4330add408b5cc1311a602497687b80a8b",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/c5603d75a8b395e6a997cce36235d736e1ec596e",
+                "reference": "c5603d75a8b395e6a997cce36235d736e1ec596e",
                 "shasum": ""
             },
             "require": {
@@ -2722,7 +2722,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2020-01-09T03:11:45+00:00"
+            "time": "2020-01-27T18:57:18+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -3044,16 +3044,16 @@
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "1.2.8",
+            "version": "1.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "151c609ca6f62ea262907f54cad129c6cdc5be90"
+                "reference": "28bb9392b62400c6a72fc1f1e965da2e640e6184"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/151c609ca6f62ea262907f54cad129c6cdc5be90",
-                "reference": "151c609ca6f62ea262907f54cad129c6cdc5be90",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/28bb9392b62400c6a72fc1f1e965da2e640e6184",
+                "reference": "28bb9392b62400c6a72fc1f1e965da2e640e6184",
                 "shasum": ""
             },
             "require": {
@@ -3102,7 +3102,7 @@
                 "transcoder",
                 "video"
             ],
-            "time": "2019-11-12T15:18:27+00:00"
+            "time": "2020-01-28T00:46:39+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
@@ -5418,16 +5418,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.4.6",
+            "version": "1.4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "8b23920025c9b040301e3d1443b302547560f48d"
+                "reference": "a691852adbf7518370332fd7921292d8dad34e7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/8b23920025c9b040301e3d1443b302547560f48d",
-                "reference": "8b23920025c9b040301e3d1443b302547560f48d",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/a691852adbf7518370332fd7921292d8dad34e7e",
+                "reference": "a691852adbf7518370332fd7921292d8dad34e7e",
                 "shasum": ""
             },
             "require": {
@@ -5463,7 +5463,7 @@
                 "clean",
                 "php"
             ],
-            "time": "2019-12-23T12:30:26+00:00"
+            "time": "2020-01-27T08:58:33+00:00"
         },
         {
             "name": "voku/portable-utf8",
