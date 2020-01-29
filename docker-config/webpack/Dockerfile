@@ -21,7 +21,6 @@ RUN apt-get update \
 WORKDIR /var/www/project/
 
 COPY ./docker-config/webpack/package.json package.json
-COPY ./docker-config/webpack/package-lock.json package-lock.json
 COPY ./docker-config/webpack/postcss.config.js postcss.config.js
 COPY ./docker-config/webpack/tailwind.config.js tailwind.config.js
 COPY ./docker-config/webpack/webpack.common.js webpack.common.js
@@ -29,6 +28,6 @@ COPY ./docker-config/webpack/webpack.dev.js webpack.dev.js
 COPY ./docker-config/webpack/webpack.prod.js webpack.prod.js
 COPY ./docker-config/webpack/webpack.settings.js webpack.settings.js
 
-RUN cd /var/www/project/ && npm ci
+RUN npm install
 
 CMD npm debug dev
