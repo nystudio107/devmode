@@ -1,4 +1,4 @@
-dateModified: 1580081211
+dateModified: 1580477694
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -27,15 +27,14 @@ fields:
     type: craft\fields\Assets
     settings:
       useSingleFolder: ''
-      defaultUploadLocationSource: 'volume:808914da-7ca2-4bb3-89ad-6c46b0369470'
+      defaultUploadLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99'
       defaultUploadLocationSubpath: ''
-      singleUploadLocationSource: 'volume:cd231c31-8caf-4b13-995d-2b84f9750c63'
+      singleUploadLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99'
       singleUploadLocationSubpath: ''
       restrictFiles: '1'
       allowedKinds:
         - audio
-      sources:
-        - 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99'
+      sources: '*'
       source: null
       targetSiteId: null
       viewMode: list
