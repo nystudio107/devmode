@@ -15,29 +15,6 @@
 # The database driver for this Craft install ('mysql' or 'pgsql')
 GLOBAL_DB_DRIVER="pgsql"
 
-# -- LOCAL settings --
-
-# Local database constants; default port for mysql is 3306, default port for postgres is 5432
-LOCAL_DB_NAME="project"
-LOCAL_DB_PASSWORD="project"
-LOCAL_DB_USER="project"
-LOCAL_DB_HOST="localhost"
-LOCAL_DB_PORT="5432"
-LOCAL_DB_SCHEMA="public"
-
-# If you are using mysql 5.6.10 or later and you have `login-path` setup as per:
-# https://opensourcedbms.com/dbms/passwordless-authentication-using-mysql_config_editor-with-mysql-5-6/
-# you can use it instead of the above LOCAL_DB_* constants; otherwise leave this blank
-LOCAL_DB_LOGIN_PATH=""
-
-# The `mysql` and `mysqldump` commands to run locally
-LOCAL_MYSQL_CMD="mysql"
-LOCAL_MYSQLDUMP_CMD="mysqldump"
-
-# The `psql` and `pg_dump` commands to run locally
-LOCAL_PSQL_CMD="psql"
-LOCAL_PG_DUMP_CMD="pg_dump"
-
 # -- REMOTE settings --
 
 # Remote ssh credentials, user@domain.com and Remote SSH Port
