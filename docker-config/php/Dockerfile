@@ -8,34 +8,60 @@ RUN apt-get update \
     && \
     # apt Debian packages
     apt-get install -y \
-    apt-utils \
-    libfreetype6-dev libjpeg62-turbo-dev \
-    libpng-dev libbz2-dev \
-    libssl-dev autoconf \
-    ca-certificates curl g++ libicu-dev \
-    libmagickwand-dev libzip-dev \
-    zip unzip libpq-dev \
-    ffmpeg \
+        apt-utils \
+        ca-certificates \
+        curl \
+        ffmpeg \
+        g++ \
+        libbz2-dev \
+        libfreetype6-dev \
+        libjpeg62-turbo-dev \
+        libpng-dev \
+        libpq-dev \
+        libssl-dev autoconf \
+        libicu-dev \
+        libmagickwand-dev \
+        libzip-dev \
+        unzip \
+        zip \
     && \
     # pecl PHP extensions
     pecl install \
-    imagick-3.4.4 redis xdebug-2.8.1 \
-    && \
-    # Install PHP extensions
-    docker-php-ext-install \
-    bcmath bz2 exif \
-    ftp gd gettext mbstring opcache \
-    shmop sockets sysvmsg sysvsem sysvshm \
-    zip iconv intl \
-    pgsql pdo pdo_pgsql \
+        imagick-3.4.4 \
+        redis \
+        xdebug-2.8.1 \
     && \
     # Configure PHP extensions
     docker-php-ext-configure \
-    gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+        gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
+    && \
+    # Install PHP extensions
+    docker-php-ext-install \
+        bcmath \
+        bz2 \
+        exif \
+        ftp \
+        gettext \
+        gd \
+        iconv \
+        intl \
+        mbstring \
+        opcache \
+        pdo \
+        pdo_pgsql \
+        pgsql \
+        shmop \
+        sockets \
+        sysvmsg \
+        sysvsem \
+        sysvshm \
+        zip \
     && \
     # Enable PHP extensions
     docker-php-ext-enable \
-    imagick redis xdebug \
+        imagick \
+        redis \
+        xdebug \
     && \
     # Install Composer
     curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer
