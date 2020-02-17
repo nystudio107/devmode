@@ -19,7 +19,7 @@ services:
   php:
     build:
       context: .
-      dockerfile: ./docker-config/php-dev-pgsql-craft/Dockerfile
+      dockerfile: ./docker-config/php-dev-devmode/Dockerfile
     depends_on:
       - "postgres"
       - "redis"
