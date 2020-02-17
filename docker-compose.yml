@@ -8,8 +8,6 @@ services:
       dockerfile: ./docker-config/nginx/Dockerfile
     env_file: &env
       - ./.env
-    environment:
-      PHP_REVALIDATE: 1
     links:
       - php
     ports:
@@ -21,14 +19,12 @@ services:
   php:
     build:
       context: .
-      dockerfile: ./docker-config/php/Dockerfile
+      dockerfile: ./docker-config/php-dev-pgsql-craft/Dockerfile
     depends_on:
       - "postgres"
       - "redis"
     env_file:
       *env
-    environment:
-      PHP_REVALIDATE: 1
     expose:
       - "9000"
     links:
