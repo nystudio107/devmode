@@ -24,6 +24,10 @@ COPY --chown=www-data:www-data ./cms/craft /var/www/project/cms/craft
 RUN mkdir -p /var/www/project/cms/storage && \
     chown -R www-data:www-data /var/www/project/cms/storage
 
+# Create the cpresources directory and make it writeable by PHP
+RUN mkdir -p /var/www/project/cms/web/cpresources && \
+    chown -R www-data:www-data /var/www/project/cms/web/cpresources
+
 # Do a `composer install` without running any Composer scripts
 RUN composer install --no-scripts -d /var/www/project/cms && \
     chown -R www-data:www-data /var/www/project/cms/vendor && \
