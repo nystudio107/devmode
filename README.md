@@ -49,11 +49,13 @@ You can read more about it in the [Setting up a New Craft 3 CMS Project](https:/
 You'll need Docker desktop for your platform installed to run devMode in local development
 
 * Clone the git repo with `git clone https://github.com/nystudio107/devmode.git`
-* Set up a `.env.` file in the project root, based off of the provided `example.env`
-* Set up a .env.sh. file in the `scripts/` dir, based off of the provided `example.env.sh`
-* Fire start up the site with `docker-composer up` (the first build will be somewhat lengthy)
+* Set up a `.env` file in the project root, based off of the provided `example.env`
+* Set up a `.env.sh.` file in the `scripts/` dir, based off of the provided `example.env.sh`
+* Start up the site with `docker-composer up` (the first build will be somewhat lengthy)
 * Import the remote db the first time from the `scripts/` dir with `./docker_pull_db.sh`
 * Navigate to `http://localhost:8000` to use the site; the `webpack-dev-server` runs off of `http://localhost:8080`
+
+**N.B.:** Without authorization & credentials (which are private), the `./docker_pull_db.sh` will not work. It's provided here for instructional purposes, and for devMode.fm hosts
 
 ## Deployment
 
