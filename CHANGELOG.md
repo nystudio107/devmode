@@ -1,5 +1,9 @@
 # nystudio107/craft Change Log
 
+## 1.1.3 - 2020.02.17
+### Changed
+* Containerized the local dev environment via Docker
+
 ## 1.1.2 - 2019.08.10
 ### Changed
 * Moved the `license.key` over to `LICENSE_KEY` environmental variables
