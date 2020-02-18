@@ -8,6 +8,8 @@ Pull Requests are welcome, and Issues are welcome as well.
 
 [Google PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fdevmode.fm%2F&tab=mobile)
 
+## Techniques and Technologies
+
 The project is based on [Craft CMS](https://CraftCMS.com) using a unique `templates/_boilerplate` system for web/AJAX/AMP pages, and implements a number of technologies/techniques:
  
 * [webpack](https://webpack.js.org/) is used for the build system as per [An Annotated webpack 4 Config for Frontend Web Development](https://nystudio107.com/blog/an-annotated-webpack-4-config-for-frontend-web-development)
@@ -15,6 +17,8 @@ The project is based on [Craft CMS](https://CraftCMS.com) using a unique `templa
 * [Tailwind CSS](https://tailwindcss.com/) for the site-wide CSS
 * JSON-LD structured data as per [Annotated JSON-LD Structured Data Examples](https://nystudio107.com/blog/annotated-json-ld-structured-data-examples)
 * [Google AMP](https://developers.google.com/amp/) versions of the podcast episode and other pages
+* Static assets are stored in AWS S3 buckets with CloudFront as the CDN, as per the [Setting Up AWS S3 Buckets + CloudFront CDN for your Assets](https://nystudio107.com/blog/using-aws-s3-buckets-cloudfront-distribution-with-craft-cms) article
+* [Docker](https://www.docker.com/) Docker is used for local development; see **Setting Up Local Dev** below for details
 * Implements a Service Worker via Google's [Workbox](https://developers.google.com/web/tools/workbox/) as per [Service Workers and Offline Browsing](https://nystudio107.com/blog/service-workers-and-offline-browsing)
 * Critical CSS as per [Implementing Critical CSS on your website](https://nystudio107.com/blog/implementing-critical-css)
 * Frontend error handling as per [Handling Errors Gracefully in Craft CMS](https://nystudio107.com/blog/handling-errors-gracefully-in-craft-cms)
@@ -40,11 +44,23 @@ The following Craft CMS plugins are used on this site:
 
 You can read more about it in the [Setting up a New Craft 3 CMS Project](https://nystudio107.com/blog/setting-up-a-craft-cms-3-project) article.
 
+## Setting Local Dev
+
+You'll need Docker desktop for your platform installed to run devMode in local development
+
+* Clone the git repo with `git clone https://github.com/nystudio107/devmode.git`
+* Set up a `.env.` file in the project root, based off of the provided `example.env`
+* Set up a .env.sh. file in the `scripts/` dir, based off of the provided `example.env.sh`
+* Fire start up the site with `docker-composer up` (the first build will be somewhat lengthy)
+* Import the remote db the first time from the `scripts/` dir with `./docker_pull_db.sh`
+* Navigate to `http://localhost:8000` to use the site; the `webpack-dev-server` runs off of `http://localhost:8080`
+
 ## Deployment
 
 ```
 cd /home/forge/devmode.fm
 git pull origin master
+cd /home/forge/devmode.fm/cms
 composer install --no-interaction --prefer-dist --optimize-autoloader
 echo "" | sudo -S service php7.1-fpm reload
 ```
@@ -58,4 +74,3 @@ Learn more about Craft at [craftcms.com](https://craftcms.com).
 ## Roadmap
 
 * Move to containerized builds in buddy.works & atomic deployments
-* Convert local development over to Docker
