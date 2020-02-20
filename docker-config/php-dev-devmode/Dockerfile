@@ -46,4 +46,6 @@ RUN composer install --no-scripts --optimize-autoloader --no-interaction && \
 # Copy the resulting `composer.lock` back into place
 CMD cp /var/www/project/composer.lock /var/www/project/cms/composer.lock \
     && \
+    composer craft-update \
+    && \
     php-fpm
