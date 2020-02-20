@@ -29,6 +29,9 @@ RUN mkdir -p /var/www/project/cms/web/cpresources && \
     chown -R www-data:www-data /var/www/project/cms/web/cpresources
 
 # Do a `composer install` without running any Composer scripts
+# - If `composer.lock` is present, it will install what is in the lock file
+# - If `composer.lock` is missing, it will update to the latest dependencies
+#   and create the `composer.lock` file
 RUN composer install --no-scripts -d /var/www/project/cms && \
     chown -R www-data:www-data /var/www/project/cms/vendor && \
     chown -R www-data:www-data /var/www/project/cms/composer.lock
