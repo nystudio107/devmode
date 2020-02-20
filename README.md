@@ -57,6 +57,18 @@ You'll need Docker desktop for your platform installed to run devMode in local d
 
 **N.B.:** Without authorization & credentials (which are private), the `./docker_pull_db.sh` will not work. It's provided here for instructional purposes, and for devMode.fm hosts
 
+To update to the latest Composer packages (as constrained by the `cms/composer.json` semvers), do:
+```
+rm cms/composer.lock
+docker-compose up --build
+```
+
+To update to the latest npm packages (as constrained by the `docker-config/webpack-dev-devmode/package.json` semvers), do:
+```
+rm docker-config/webpack-dev-devmode/package-lock.json
+docker-compose up --build
+```
+
 ## Deployment
 
 Forge Deploy Script:
