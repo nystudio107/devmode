@@ -13,7 +13,7 @@ services:
     ports:
       - "8000:80"
     volumes:
-      - cpresources:/var/www/project/cms/web/cpresources:delegated
+      - cpresources:/var/www/project/cms/web/cpresources
       - ./cms/web:/var/www/project/cms/web:cached
   # php - personal home page
   php:
@@ -31,9 +31,11 @@ services:
       - postgres
       - redis
     volumes:
-      - cpresources:/var/www/project/cms/web/cpresources:delegated
-      - vendor:/var/www/project/cms/vendor:delegated
+      - cpresources:/var/www/project/cms/web/cpresources
+      - vendor:/var/www/project/cms/vendor
+      - storage:/var/www/project/cms/storage
       - ./cms:/var/www/project/cms:cached
+      - ./cms/storage/logs:/var/www/project/cms/storage/logs:delegated
   # postgres - database
   postgres:
     build:
@@ -66,14 +68,15 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - node-modules:/var/www/project/node_modules:delegated
+      - node-modules:/var/www/project/node_modules
       - ./src:/var/www/project/src:cached
       - ./cms/templates:/var/www/project/cms/templates:cached
       - ./cms/web/dist:/var/www/project/cms/web/dist:delegated
       - ./docker-config/webpack-dev-devmode:/var/www/project/docker-config/webpack-dev-devmode:delegated
 
 volumes:
-  vendor:
   db-data:
   cpresources:
   node-modules:
+  storage:
+  vendor:
