@@ -33,13 +33,7 @@ services:
     volumes:
       - cpresources:/var/www/project/cms/web/cpresources:delegated
       - vendor:/var/www/project/cms/vendor:delegated
-      - ./cms/composer.json:/var/www/project/cms/composer.json
-      - ./cms/composer.lock:/var/www/project/cms/composer.lock
-      - ./cms:/var/www/project/cms
-      - ./cms/config:/var/www/project/cms/config:cached
-      - ./cms/modules:/var/www/project/cms/modules:cached
-      - ./cms/templates:/var/www/project/cms/templates:cached
-      - ./cms/web:/var/www/project/cms/web:cached
+      - ./cms:/var/www/project/cms:cached
   # postgres - database
   postgres:
     build:
