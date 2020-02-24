@@ -32,7 +32,7 @@
 
         <itunes:explicit>clean</itunes:explicit>
 
-        <itunes:image href="{{ url(showInfo.showImage.one().getUrl(), null, "http") }}" />
+        <itunes:image href="{{ url(showInfo.showImage.one().getUrl() | split('?') | first, null, "http") }}" />
 
         <itunes:category text="{{ showInfo.showGenre |typogrifyFeed }}">
             <itunes:category text="Tech News" />
