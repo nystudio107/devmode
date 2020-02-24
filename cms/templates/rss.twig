@@ -54,7 +54,7 @@
                     {{ summaryText }}
                 </itunes:summary>
                 <itunes:subtitle>
-                    {{ summaryText | truncate(255) }}
+                    {{ summaryText | truncate(255) | typogrifyFeed }}
                 </itunes:subtitle>
                 <description>
                     {{ summaryText }}
