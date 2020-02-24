@@ -54,7 +54,7 @@
                     {{ summaryText }}
                 </itunes:summary>
                 <itunes:subtitle>
-                    {{ summaryText }}
+                    {{ summaryText | truncate(255) }}
                 </itunes:subtitle>
                 <description>
                     {{ summaryText }}
@@ -76,8 +76,8 @@
 
                 <itunes:image href="{{ url(showInfo.showImage.one().getUrl() | split('?') | first, null, "http") | raw }}" />
 
-                <itunes:explicit>false</itunes:explicit>
-                <googleplay:explicit>false</googleplay:explicit>
+                <itunes:explicit>no</itunes:explicit>
+                <googleplay:explicit>no</googleplay:explicit>
 
                 <pubDate>{{ episode.postDate |rss }}</pubDate>
 
