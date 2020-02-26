@@ -34,6 +34,7 @@ services:
       - cpresources:/var/www/project/cms/web/cpresources
       - vendor:/var/www/project/cms/vendor
       - storage:/var/www/project/cms/storage
+      - ./cms/storage/project.yaml:/var/www/project/cms/storage/project.yaml:delegated
       - ./cms:/var/www/project/cms:cached
       - ./cms/storage/logs:/var/www/project/cms/storage/logs:delegated
   # postgres - database
