@@ -38,7 +38,6 @@ module.exports = {
     },
     babelLoaderConfig: {
         exclude: [
-            /(node_modules|bower_components)/
         ],
     },
     copyWebpackConfig: [
