@@ -15,7 +15,7 @@ import OperatorMonoSSmBookItalicTtf from '../fonts/OperatorMonoSSm-BookItalic.tt
 import OperatorMonoSSmBookItalicWoff from '../fonts/OperatorMonoSSm-BookItalic.woff';
 import OperatorMonoSSmBookItalicWoff2 from '../fonts/OperatorMonoSSm-BookItalic.woff2';
 
-import Snowf from 'vue-snowf';
+//import Snowf from 'vue-snowf';
 
 // App main
 const main = async() => {
@@ -33,7 +33,7 @@ const main = async() => {
         el: '#page-header',
         mixins: [VueClickaway],
         components: {
-            Snowf,
+//            Snowf,
         },
         delimiters: ['${', '}'],
         data: {
