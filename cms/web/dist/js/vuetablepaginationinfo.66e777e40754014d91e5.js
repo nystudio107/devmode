@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           vuetablepaginationinfo.66e777e40754014d91e5.js
  * @author         Andrew Welch
- * @build          Thu, Feb 27, 2020 4:23 PM ET
+ * @build          Thu, Feb 27, 2020 5:27 PM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */

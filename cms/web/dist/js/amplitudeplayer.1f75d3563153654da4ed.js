@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           amplitudeplayer.1f75d3563153654da4ed.js
  * @author         Andrew Welch
- * @build          Thu, Feb 27, 2020 4:23 PM ET
+ * @build          Thu, Feb 27, 2020 5:27 PM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */

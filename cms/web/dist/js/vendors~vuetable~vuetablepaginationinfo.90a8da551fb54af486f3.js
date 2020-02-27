@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           vendors~vuetable~vuetablepaginationinfo.90a8da551fb54af486f3.js
  * @author         Andrew Welch
- * @build          Thu, Feb 27, 2020 4:23 PM ET
+ * @build          Thu, Feb 27, 2020 5:27 PM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */
