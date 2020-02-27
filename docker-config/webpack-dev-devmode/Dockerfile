@@ -8,7 +8,7 @@ COPY ./docker-config/webpack-dev-devmode/* ./
 # - If `package-lock.json` is present, it will install what is in the lock file
 # - If `package-lock.json` is missing, it will update to the latest dependencies
 #   and create the `package-lock-json` file
-RUN npm install
+RUN npm install --loglevel silent
 
 # Copy the resulting `package-lock.json` back into place
 CMD cp ./package-lock.json ./docker-config/webpack-dev-devmode/package-lock.json \
