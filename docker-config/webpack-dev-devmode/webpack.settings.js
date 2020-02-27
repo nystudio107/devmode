@@ -40,8 +40,6 @@ module.exports = {
         exclude: [
             /(dist|bower_components)/
         ],
-        include: [
-        ],
     },
     copyWebpackConfig: [
         {

@@ -21,7 +21,6 @@ const configureBabelLoader = (browserList, legacy) => {
     return {
         test: /\.js$/,
         exclude: settings.babelLoaderConfig.exclude,
-        include: settings.babelLoaderConfig.include,
         use: {
             loader: 'babel-loader',
             options: {
@@ -35,6 +34,7 @@ const configureBabelLoader = (browserList, legacy) => {
                                 version: 3,
                                 proposals: true
                             },
+                            debug: true,
                             useBuiltIns: 'usage',
                             targets: {
                                 browsers: browserList,
