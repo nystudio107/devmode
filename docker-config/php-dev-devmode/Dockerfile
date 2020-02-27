@@ -24,6 +24,7 @@ COPY --chown=www-data:www-data ./cms/craft /var/www/project/cms/craft
 
 # Create the storage directory and make it writeable by PHP
 RUN mkdir -p /var/www/project/cms/storage && \
+    mkdir -p /var/www/project/cms/storage/runtime && \
     chown -R www-data:www-data /var/www/project/cms/storage
 
 # Create the cpresources directory and make it writeable by PHP
