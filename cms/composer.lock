@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.20",
+            "version": "3.133.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c5f84f9edafb6372dafdbc87cb588772761179ca"
+                "reference": "fd4a74aff537a4f6a7e9ed7efb14693ae5f3013a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c5f84f9edafb6372dafdbc87cb588772761179ca",
-                "reference": "c5f84f9edafb6372dafdbc87cb588772761179ca",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fd4a74aff537a4f6a7e9ed7efb14693ae5f3013a",
+                "reference": "fd4a74aff537a4f6a7e9ed7efb14693ae5f3013a",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-02-21T19:09:49+00:00"
+            "time": "2020-02-26T19:11:26+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -3364,16 +3364,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.43",
+            "version": "3.2.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "21a31ec0499d108c1806dff6fd98da55fe361beb"
+                "reference": "00ccf3f45757bc06a86885663d41eaac85d52ceb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/21a31ec0499d108c1806dff6fd98da55fe361beb",
-                "reference": "21a31ec0499d108c1806dff6fd98da55fe361beb",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/00ccf3f45757bc06a86885663d41eaac85d52ceb",
+                "reference": "00ccf3f45757bc06a86885663d41eaac85d52ceb",
                 "shasum": ""
             },
             "require": {
@@ -3434,20 +3434,20 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-02-14T03:13:53+00:00"
+            "time": "2020-02-24T17:13:59+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "1.2.9",
+            "version": "1.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "28bb9392b62400c6a72fc1f1e965da2e640e6184"
+                "reference": "0c966e392cf10d3d339a8b379bf480d0c61c7bd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/28bb9392b62400c6a72fc1f1e965da2e640e6184",
-                "reference": "28bb9392b62400c6a72fc1f1e965da2e640e6184",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/0c966e392cf10d3d339a8b379bf480d0c61c7bd8",
+                "reference": "0c966e392cf10d3d339a8b379bf480d0c61c7bd8",
                 "shasum": ""
             },
             "require": {
@@ -3496,7 +3496,7 @@
                 "transcoder",
                 "video"
             ],
-            "time": "2020-01-28T00:46:39+00:00"
+            "time": "2020-02-25T12:52:12+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
