@@ -40,7 +40,7 @@ module.exports = {
         exclude: [
             /(dist|bower_components)/
         ],
-    },
+     },
     copyWebpackConfig: [
         {
             from: "./src/js/workbox-catch-handler.js",
