@@ -38,16 +38,10 @@ WORKDIR /var/www/project/cms
 # - If `composer.lock` is missing, it will update to the latest dependencies
 #   and create the `composer.lock` file
 RUN composer install --no-scripts --optimize-autoloader --no-interaction && \
-    chown -R www-data:www-data /var/www/project/cms/vendor && \
-    chown www-data:www-data /var/www/project/cms/composer.lock && \
-    # Stash the potentiallu new `composer.lock` otherwise it will be gone from the
-    # container image when the `./cms:/var/www/project/cms` volume mounts
-    cp ./composer.lock /var/www/project/composer.lock
+    chown -R www-data:www-data /var/www/project/cms/vendor
 
-# Copy the resulting `composer.lock` back into place
-CMD cp /var/www/project/composer.lock /var/www/project/cms/composer.lock \
-    && \
-    chown -R www-data:www-data /var/www/project/cms/storage \
+# Force permissions, update Craft, and start php-fpm
+CMD chown -R www-data:www-data /var/www/project/cms/storage \
     && \
     composer craft-update \
     && \
