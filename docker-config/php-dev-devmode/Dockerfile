@@ -18,9 +18,7 @@ RUN apt-get update \
 WORKDIR /var/www/project
 
 # Copy over the directories/files php needs access to
-COPY --chown=www-data:www-data ./cms/web /var/www/project/cms/web
 COPY --chown=www-data:www-data ./cms/composer.* /var/www/project/cms/
-COPY --chown=www-data:www-data ./cms/craft /var/www/project/cms/craft
 
 # Create the storage directory and make it writeable by PHP
 RUN mkdir -p /var/www/project/cms/storage && \
