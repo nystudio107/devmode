@@ -69,7 +69,7 @@ services:
       - "8080:8080"
     volumes:
       - ./docker-config/webpack-dev-devmode:/var/www/project/docker-config/webpack-dev-devmode:cached
-      - ./docker-config/webpack-dev-devmode/node-modules:/var/www/project/docker-config/webpack-dev-devmode/node-modules:delegated
+      - ./docker-config/webpack-dev-devmode/node_modules:/var/www/project/docker-config/webpack-dev-devmode/node_modules:delegated
       - ./cms/web/dist:/var/www/project/cms/web/dist:delegated
       - ./src:/var/www/project/src:cached
       - ./cms/templates:/var/www/project/cms/templates:cached

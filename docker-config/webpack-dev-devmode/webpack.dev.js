@@ -99,7 +99,10 @@ const configurePostcssLoader = (buildType) => {
                 {
                     loader: 'postcss-loader',
                     options: {
-                        sourceMap: true
+                        sourceMap: true,
+                        config: {
+                            path: path.resolve(__dirname),
+                        }
                     }
                 }
             ]

@@ -37,11 +37,18 @@ WORKDIR /var/www/project/cms
 # - If `composer.lock` is present, it will install what is in the lock file
 # - If `composer.lock` is missing, it will update to the latest dependencies
 #   and create the `composer.lock` file
-RUN composer install --no-scripts --optimize-autoloader --no-interaction && \
-    chown -R www-data:www-data /var/www/project/cms/vendor
-
 # Force permissions, update Craft, and start php-fpm
-CMD chown -R www-data:www-data /var/www/project/cms/storage \
+CMD if [ ! -f "./composer.lock" ]; then \
+        composer install --no-scripts --optimize-autoloader --no-interaction; \
+    fi \
+    && \
+    if [ ! -d "./vendor" ]; then \
+        composer install --no-scripts --optimize-autoloader --no-interaction; \
+    fi \
+    && \
+    chown -R www-data:www-data /var/www/project/cms/vendor \
+    && \
+    chown -R www-data:www-data /var/www/project/cms/storage \
     && \
     composer craft-update \
     && \

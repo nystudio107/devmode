@@ -107,7 +107,10 @@ const baseConfig = {
     resolve: {
         alias: {
             'vue$': 'vue/dist/vue.esm.js'
-        }
+        },
+        modules: [
+            path.resolve(__dirname, 'node_modules'),
+        ],
     },
     module: {
         rules: [

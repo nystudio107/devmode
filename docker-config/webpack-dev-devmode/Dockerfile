@@ -6,7 +6,13 @@ WORKDIR /var/www/project/docker-config/webpack-dev-devmode/
 # - If `package-lock.json` is present, it will install what is in the lock file
 # - If `package-lock.json` is missing, it will update to the latest dependencies
 #   and create the `package-lock-json` file
-RUN npm install
-
 # Run our webpack build in debug mode
-CMD npm run debug
+CMD if [ ! -f  "./package-lock.json" ]; then \
+        npm install; \
+    fi \
+    && \
+    if [ ! -d  "./node_modules" ]; then \
+        npm ci; \
+    fi \
+    && \
+    npm run debug
