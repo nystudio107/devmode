@@ -27,7 +27,7 @@
 /cms/web/cpresources/*
 
 # BUILD FILES
-*/node_modules/*
+node_modules
 yarn-error.log
 npm-debug.log
 
