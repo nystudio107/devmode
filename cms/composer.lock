@@ -3448,20 +3448,20 @@
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "1.2.10",
+            "version": "1.2.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "0c966e392cf10d3d339a8b379bf480d0c61c7bd8"
+                "reference": "4ff48510656b6f60343d5f791bdef666cafe9114"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/0c966e392cf10d3d339a8b379bf480d0c61c7bd8",
-                "reference": "0c966e392cf10d3d339a8b379bf480d0c61c7bd8",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/4ff48510656b6f60343d5f791bdef666cafe9114",
+                "reference": "4ff48510656b6f60343d5f791bdef666cafe9114",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0",
+                "craftcms/cms": "^3.1.0",
                 "mikehaertl/php-shellcommand": "~1.2"
             },
             "type": "craft-plugin",
@@ -3506,7 +3506,7 @@
                 "transcoder",
                 "video"
             ],
-            "time": "2020-02-25T12:52:12+00:00"
+            "time": "2020-03-11T23:20:51+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
@@ -3623,16 +3623,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "1.0.17",
+            "version": "1.0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "2444fdd43bf5e271f02075c29f20d27cf9219407"
+                "reference": "1ea0081f4f15b3adbf4d96d57c81823938ae1236"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/2444fdd43bf5e271f02075c29f20d27cf9219407",
-                "reference": "2444fdd43bf5e271f02075c29f20d27cf9219407",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/1ea0081f4f15b3adbf4d96d57c81823938ae1236",
+                "reference": "1ea0081f4f15b3adbf4d96d57c81823938ae1236",
                 "shasum": ""
             },
             "require": {
@@ -3679,7 +3679,7 @@
                 "craftcms",
                 "webperf"
             ],
-            "time": "2019-12-11T20:17:31+00:00"
+            "time": "2020-03-11T20:12:51+00:00"
         },
         {
             "name": "nystudio107/dotenvy",
