@@ -34,7 +34,7 @@ const configureBabelLoader = (browserList, legacy) => {
                                 version: 3,
                                 proposals: true
                             },
-                            debug: true,
+                            debug: false,
                             useBuiltIns: 'usage',
                             targets: {
                                 browsers: browserList,
