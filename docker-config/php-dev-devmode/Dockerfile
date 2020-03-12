@@ -40,7 +40,7 @@ CMD if [ ! -f "./composer.lock" ]; then \
         composer install --no-scripts --optimize-autoloader --no-interaction; \
     fi \
     && \
-    if [ ! -d "./vendor" ]; then \
+    if [ ! -d ./vendor -o ! "$(ls -A ./vendor)" ]; then \
         composer install --no-scripts --optimize-autoloader --no-interaction; \
     fi \
     && \

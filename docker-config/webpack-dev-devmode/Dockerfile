@@ -11,7 +11,7 @@ CMD if [ ! -f  "./package-lock.json" ]; then \
         npm install; \
     fi \
     && \
-    if [ ! -d  "./node_modules" ]; then \
+    if [ ! -d  "./node_modules" -o ! "$(ls -A ./node_modules)" ]; then \
         npm ci; \
     fi \
     && \
