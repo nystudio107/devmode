@@ -12,7 +12,7 @@ CMD if [ ! -f  "./package-lock.json" ]; then \
     fi \
     && \
     if [ ! -d  "./node_modules" -o ! "$(ls -A ./node_modules)" ]; then \
-        npm ci; \
+        npm install; \
     fi \
     && \
     npm run debug
