@@ -18,9 +18,7 @@ RUN apt-get update \
 WORKDIR /var/www/project
 
 # Copy over the directories/files php needs access to
-COPY --chown=www-data:www-data ./cms/web /var/www/project/cms/web
 COPY --chown=www-data:www-data ./cms/composer.* /var/www/project/cms/
-COPY --chown=www-data:www-data ./cms/craft /var/www/project/cms/craft
 
 # Create the storage directory and make it writeable by PHP
 RUN mkdir -p /var/www/project/cms/storage && \
@@ -37,15 +35,16 @@ WORKDIR /var/www/project/cms
 # - If `composer.lock` is present, it will install what is in the lock file
 # - If `composer.lock` is missing, it will update to the latest dependencies
 #   and create the `composer.lock` file
-RUN composer install --no-scripts --optimize-autoloader --no-interaction && \
-    chown -R www-data:www-data /var/www/project/cms/vendor && \
-    chown www-data:www-data /var/www/project/cms/composer.lock && \
-    # Stash the potentiallu new `composer.lock` otherwise it will be gone from the
-    # container image when the `./cms:/var/www/project/cms` volume mounts
-    cp ./composer.lock /var/www/project/composer.lock
-
-# Copy the resulting `composer.lock` back into place
-CMD cp /var/www/project/composer.lock /var/www/project/cms/composer.lock \
+# Force permissions, update Craft, and start php-fpm
+CMD if [ ! -f "./composer.lock" ]; then \
+        composer install --no-scripts --optimize-autoloader --no-interaction; \
+    fi \
+    && \
+    if [ ! -d ./vendor -o ! "$(ls -A ./vendor)" ]; then \
+        composer install --no-scripts --optimize-autoloader --no-interaction; \
+    fi \
+    && \
+    chown -R www-data:www-data /var/www/project/cms/vendor \
     && \
     chown -R www-data:www-data /var/www/project/cms/storage \
     && \

@@ -34,7 +34,7 @@ const configureBabelLoader = (browserList, legacy) => {
                                 version: 3,
                                 proposals: true
                             },
-                            debug: true,
+                            debug: false,
                             useBuiltIns: 'usage',
                             targets: {
                                 browsers: browserList,
@@ -107,7 +107,10 @@ const baseConfig = {
     resolve: {
         alias: {
             'vue$': 'vue/dist/vue.esm.js'
-        }
+        },
+        modules: [
+            path.resolve(__dirname, 'node_modules'),
+        ],
     },
     module: {
         rules: [
