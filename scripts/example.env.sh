@@ -15,6 +15,10 @@
 # The database driver for this Craft install ('mysql' or 'pgsql')
 GLOBAL_DB_DRIVER="pgsql"
 
+# -- LOCAL settings --
+
+LOCAL_DB_CONTAINER="devmode_postgres_1"
+
 # -- REMOTE settings --
 
 # Remote ssh credentials, user@domain.com and Remote SSH Port
