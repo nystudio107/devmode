@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           vueevents.ab5f07736f1b9891e42b.js
  * @author         Andrew Welch
- * @build          Wed, Mar 18, 2020 12:50 AM ET
+ * @build          Wed, Mar 18, 2020 1:33 AM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */

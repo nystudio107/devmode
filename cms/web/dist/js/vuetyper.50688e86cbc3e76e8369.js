@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           vuetyper.50688e86cbc3e76e8369.js
  * @author         Andrew Welch
- * @build          Wed, Mar 18, 2020 12:50 AM ET
+ * @build          Wed, Mar 18, 2020 1:33 AM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */

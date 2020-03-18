@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           vuetable.1d1a59c6f3bae537b270.js
  * @author         Andrew Welch
- * @build          Wed, Mar 18, 2020 12:50 AM ET
+ * @build          Wed, Mar 18, 2020 1:33 AM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */

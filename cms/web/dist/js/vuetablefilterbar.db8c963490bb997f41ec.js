@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           vuetablefilterbar.db8c963490bb997f41ec.js
  * @author         Andrew Welch
- * @build          Wed, Mar 18, 2020 12:50 AM ET
+ * @build          Wed, Mar 18, 2020 1:33 AM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */
