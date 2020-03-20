@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.38",
+            "version": "3.133.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "5ec9442162d83f94918bc17136a2b674a04784e5"
+                "reference": "f89562eaab7f9e5695b10960abb727b64df3da10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5ec9442162d83f94918bc17136a2b674a04784e5",
-                "reference": "5ec9442162d83f94918bc17136a2b674a04784e5",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f89562eaab7f9e5695b10960abb727b64df3da10",
+                "reference": "f89562eaab7f9e5695b10960abb727b64df3da10",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-03-17T18:16:01+00:00"
+            "time": "2020-03-19T18:10:38+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -456,16 +456,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.4.10",
+            "version": "3.4.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "734435d99b60712241dcfd020a7b22f2c8b73649"
+                "reference": "2613dc758987a2d986ccf0a0c4f59b4c303eef1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/734435d99b60712241dcfd020a7b22f2c8b73649",
-                "reference": "734435d99b60712241dcfd020a7b22f2c8b73649",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/2613dc758987a2d986ccf0a0c4f59b4c303eef1c",
+                "reference": "2613dc758987a2d986ccf0a0c4f59b4c303eef1c",
                 "shasum": ""
             },
             "require": {
@@ -549,7 +549,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2020-03-17T16:41:49+00:00"
+            "time": "2020-03-18T13:20:28+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -645,16 +645,16 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.6.0.1",
+            "version": "2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/redactor.git",
-                "reference": "c8cc5b6bd6ac0258666744a4a530496da8d966c3"
+                "reference": "835eaf0d7442acb1bc716985f9672c7cd4e8531c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/c8cc5b6bd6ac0258666744a4a530496da8d966c3",
-                "reference": "c8cc5b6bd6ac0258666744a4a530496da8d966c3",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/835eaf0d7442acb1bc716985f9672c7cd4e8531c",
+                "reference": "835eaf0d7442acb1bc716985f9672c7cd4e8531c",
                 "shasum": ""
             },
             "require": {
@@ -689,7 +689,7 @@
                 "html",
                 "yii2"
             ],
-            "time": "2020-02-17T15:25:01+00:00"
+            "time": "2020-03-18T14:47:04+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -1513,16 +1513,16 @@
         },
         {
             "name": "johngrogg/ics-parser",
-            "version": "v2.1.17",
+            "version": "v2.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/u01jmg3/ics-parser.git",
-                "reference": "2307a0fddd0b11975ce01b5d80c355a28d8654f1"
+                "reference": "32b3f30f2ed6026d9d11fb6d66c3995d18917156"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/2307a0fddd0b11975ce01b5d80c355a28d8654f1",
-                "reference": "2307a0fddd0b11975ce01b5d80c355a28d8654f1",
+                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/32b3f30f2ed6026d9d11fb6d66c3995d18917156",
+                "reference": "32b3f30f2ed6026d9d11fb6d66c3995d18917156",
                 "shasum": ""
             },
             "require": {
@@ -1565,7 +1565,7 @@
                 "ics-parser",
                 "ifb"
             ],
-            "time": "2020-01-27T16:10:28+00:00"
+            "time": "2020-03-10T10:10:01+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2550,22 +2550,22 @@
         },
         {
             "name": "mrclay/minify",
-            "version": "3.0.7",
+            "version": "3.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrclay/minify.git",
-                "reference": "7378a0efe8e54d9950088422973423846bda5404"
+                "reference": "f0aa0aa7d7fa2215a9ebbbc6498304b6ce2598a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/minify/zipball/7378a0efe8e54d9950088422973423846bda5404",
-                "reference": "7378a0efe8e54d9950088422973423846bda5404",
+                "url": "https://api.github.com/repos/mrclay/minify/zipball/f0aa0aa7d7fa2215a9ebbbc6498304b6ce2598a6",
+                "reference": "f0aa0aa7d7fa2215a9ebbbc6498304b6ce2598a6",
                 "shasum": ""
             },
             "require": {
                 "ext-pcre": "*",
                 "intervention/httpauth": "~2.0",
-                "marcusschwarz/lesserphp": "~0.5.1",
+                "marcusschwarz/lesserphp": "^0.5.1",
                 "monolog/monolog": "~1.1|~2.0",
                 "mrclay/jsmin-php": "~2",
                 "mrclay/props-dic": "^2.2|^3.0",
@@ -2607,7 +2607,7 @@
             ],
             "description": "Minify is a PHP app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
             "homepage": "https://github.com/mrclay/minify",
-            "time": "2019-12-10T06:31:58+00:00"
+            "time": "2020-03-19T16:42:53+00:00"
         },
         {
             "name": "mrclay/props-dic",
@@ -3370,16 +3370,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.47",
+            "version": "3.2.48",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "8d491cab541a944fbae90baed2a5cc7b3a8ce4f6"
+                "reference": "c35aad8da75d6da41b88eb4539c7b1d78eff32ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8d491cab541a944fbae90baed2a5cc7b3a8ce4f6",
-                "reference": "8d491cab541a944fbae90baed2a5cc7b3a8ce4f6",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/c35aad8da75d6da41b88eb4539c7b1d78eff32ba",
+                "reference": "c35aad8da75d6da41b88eb4539c7b1d78eff32ba",
                 "shasum": ""
             },
             "require": {
@@ -3440,7 +3440,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-03-06T00:46:42+00:00"
+            "time": "2020-03-18T13:47:11+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
