@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.40",
+            "version": "3.133.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "f89562eaab7f9e5695b10960abb727b64df3da10"
+                "reference": "9b4a110de75631339329a4ca45ebbaf7ddd1f7f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/f89562eaab7f9e5695b10960abb727b64df3da10",
-                "reference": "f89562eaab7f9e5695b10960abb727b64df3da10",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9b4a110de75631339329a4ca45ebbaf7ddd1f7f9",
+                "reference": "9b4a110de75631339329a4ca45ebbaf7ddd1f7f9",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-03-19T18:10:38+00:00"
+            "time": "2020-03-20T18:10:54+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -3060,16 +3060,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.11",
+            "version": "1.6.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "528e743a4a8a5a79d08309735be5f464643bd9d4"
+                "reference": "34d94821c2108444420202f615b9d13ee31cdd0b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/528e743a4a8a5a79d08309735be5f464643bd9d4",
-                "reference": "528e743a4a8a5a79d08309735be5f464643bd9d4",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/34d94821c2108444420202f615b9d13ee31cdd0b",
+                "reference": "34d94821c2108444420202f615b9d13ee31cdd0b",
                 "shasum": ""
             },
             "require": {
@@ -3122,7 +3122,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2020-02-12T12:15:21+00:00"
+            "time": "2020-03-21T18:21:48+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
