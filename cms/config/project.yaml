@@ -1,4 +1,4 @@
-dateModified: 1583949488
+dateModified: 1584804772
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -840,14 +840,48 @@ plugins:
     licenseKey: $PLUGIN_IMAGEOPTIMIZE_LICENSE
     schemaVersion: 1.0.0
     settings:
-      allowUpScaledImageVariants: ''
-      autoSharpenScaledImages: '1'
-      createColorPalette: '1'
-      createPlaceholderSilhouettes: '1'
-      imgixApiKey: ''
-      imgixDomain: ''
-      lowerQualityRetinaImageVariants: ''
-      transformMethod: craft
+      allowUpScaledImageVariants: false
+      assetVolumeSubFolders: true
+      autoSharpenScaledImages: true
+      createColorPalette: true
+      createPlaceholderSilhouettes: true
+      imageTransformTypeSettings:
+        __assoc__:
+          -
+            - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
+            -
+              __assoc__:
+                -
+                  - domain
+                  - ''
+                -
+                  - apiKey
+                  - ''
+                -
+                  - securityToken
+                  - ''
+          -
+            - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - $SERVERLESS_SHARP_CLOUDFRONT_URL
+          -
+            - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+                -
+                  - securityKey
+                  - ''
+                -
+                  - includeBucketPrefix
+                  - ''
+      lowerQualityRetinaImageVariants: false
+      transformClass: nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
   minify:
     enabled: true
     licenseKey: null
