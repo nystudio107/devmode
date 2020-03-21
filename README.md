@@ -12,6 +12,8 @@ Pull Requests are welcome, and Issues are welcome as well.
 
 The project is based on [Craft CMS](https://CraftCMS.com) using a unique `templates/_boilerplate` system for web/AJAX/AMP pages, and implements a number of technologies/techniques:
  
+* [Docker](https://www.docker.com/) Docker is used for local development; see **Setting Up Local Dev** below for details
+* A base Twig templating setup as described in [An Effective Twig Base Templating Setup](https://nystudio107.com/blog/an-effective-twig-base-templating-setup)
 * [webpack](https://webpack.js.org/) is used for the build system as per [An Annotated webpack 4 Config for Frontend Web Development](https://nystudio107.com/blog/an-annotated-webpack-4-config-for-frontend-web-development)
 * [VueJS](https://vuejs.org/) is used for some of the interactive bits on the website as per 
 * [Tailwind CSS](https://tailwindcss.com/) for the site-wide CSS
@@ -19,7 +21,6 @@ The project is based on [Craft CMS](https://CraftCMS.com) using a unique `templa
 * [Google AMP](https://developers.google.com/amp/) versions of the podcast episode and other pages
 * Static assets are stored in AWS S3 buckets with CloudFront as the CDN, as per the [Setting Up AWS S3 Buckets + CloudFront CDN for your Assets](https://nystudio107.com/blog/using-aws-s3-buckets-cloudfront-distribution-with-craft-cms) article
 * Image transforms are done via a [Serverless Image Handler](https://aws.amazon.com/solutions/serverless-image-handler/) lambda function, as described in the [Setting Up Your Own Image Transform Service](https://nystudio107.com/blog/setting-up-your-own-image-transform-service) article
-* [Docker](https://www.docker.com/) Docker is used for local development; see **Setting Up Local Dev** below for details
 * Implements a Service Worker via Google's [Workbox](https://developers.google.com/web/tools/workbox/) as per [Service Workers and Offline Browsing](https://nystudio107.com/blog/service-workers-and-offline-browsing)
 * Critical CSS as per [Implementing Critical CSS on your website](https://nystudio107.com/blog/implementing-critical-css)
 * Frontend error handling as per [Handling Errors Gracefully in Craft CMS](https://nystudio107.com/blog/handling-errors-gracefully-in-craft-cms)
