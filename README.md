@@ -53,7 +53,7 @@ You'll need Docker desktop for your platform installed to run devMode in local d
 * Clone the git repo with `git clone https://github.com/nystudio107/devmode.git`
 * Set up a `.env` file in the `cms/` directory, based off of the provided `example.env`
 * Set up a `.env.sh.` file in the `scripts/` directory, based off of the provided `example.env.sh`
-* Start up the site with `docker-composer up` (the first build will be somewhat lengthy)
+* Start up the site with `docker-compose up` (the first build will be somewhat lengthy)
 * Import the remote db the first time from the `scripts/` dir with `./docker_pull_db.sh`
 * Navigate to `http://localhost:8000` to use the site; the `webpack-dev-server` runs off of `http://localhost:8080`
 
