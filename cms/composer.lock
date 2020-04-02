@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3a635b8609a9adef0d081526c1a4e959",
+    "content-hash": "5c7f71f5ecce5a1d8e6feeaf51baac2d",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.45",
+            "version": "3.134.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "928a23e2ee7e195a66f93d0758895e26958c3b7d"
+                "reference": "4fe0b03a2eefb677ce4ca47b7e3c3705f04516c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/928a23e2ee7e195a66f93d0758895e26958c3b7d",
-                "reference": "928a23e2ee7e195a66f93d0758895e26958c3b7d",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/4fe0b03a2eefb677ce4ca47b7e3c3705f04516c8",
+                "reference": "4fe0b03a2eefb677ce4ca47b7e3c3705f04516c8",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-03-26T18:12:15+00:00"
+            "time": "2020-04-02T18:13:41+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -456,16 +456,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.4.11",
+            "version": "3.4.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "a028f6003a3c3985cdedfb95407284ca3daf3faa"
+                "reference": "a516349f715bd96681dbe8ff190d970d6acd1773"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/a028f6003a3c3985cdedfb95407284ca3daf3faa",
-                "reference": "a028f6003a3c3985cdedfb95407284ca3daf3faa",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/a516349f715bd96681dbe8ff190d970d6acd1773",
+                "reference": "a516349f715bd96681dbe8ff190d970d6acd1773",
                 "shasum": ""
             },
             "require": {
@@ -549,7 +549,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2020-03-26T23:22:31+00:00"
+            "time": "2020-04-02T13:49:11+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1284,16 +1284,16 @@
         },
         {
             "name": "imgix/imgix-php",
-            "version": "3.1.0",
+            "version": "3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/imgix/imgix-php.git",
-                "reference": "ff013094feb4855c561999f2248f3fafe0a25ec1"
+                "reference": "d95a5937c4a5e1ffc6b2c64e51215a7262d4eb09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/ff013094feb4855c561999f2248f3fafe0a25ec1",
-                "reference": "ff013094feb4855c561999f2248f3fafe0a25ec1",
+                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/d95a5937c4a5e1ffc6b2c64e51215a7262d4eb09",
+                "reference": "d95a5937c4a5e1ffc6b2c64e51215a7262d4eb09",
                 "shasum": ""
             },
             "require": {
@@ -1316,7 +1316,7 @@
             "keywords": [
                 "imgix"
             ],
-            "time": "2019-08-29T23:30:57+00:00"
+            "time": "2020-04-01T22:48:20+00:00"
         },
         {
             "name": "intervention/httpauth",
@@ -1782,16 +1782,16 @@
         },
         {
             "name": "laminas/laminas-feed",
-            "version": "2.12.1",
+            "version": "2.12.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-feed.git",
-                "reference": "c9356994eb80d0f6b46d7e12ba048d450bf0cd72"
+                "reference": "8a193ac96ebcb3e16b6ee754ac2a889eefacb654"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/c9356994eb80d0f6b46d7e12ba048d450bf0cd72",
-                "reference": "c9356994eb80d0f6b46d7e12ba048d450bf0cd72",
+                "url": "https://api.github.com/repos/laminas/laminas-feed/zipball/8a193ac96ebcb3e16b6ee754ac2a889eefacb654",
+                "reference": "8a193ac96ebcb3e16b6ee754ac2a889eefacb654",
                 "shasum": ""
             },
             "require": {
@@ -1803,7 +1803,7 @@
                 "php": "^5.6 || ^7.0"
             },
             "replace": {
-                "zendframework/zend-feed": "self.version"
+                "zendframework/zend-feed": "^2.12.0"
             },
             "require-dev": {
                 "laminas/laminas-cache": "^2.7.2",
@@ -1845,7 +1845,7 @@
                 "feed",
                 "laminas"
             ],
-            "time": "2020-03-23T10:40:31+00:00"
+            "time": "2020-03-29T12:36:29+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
@@ -2550,16 +2550,16 @@
         },
         {
             "name": "mrclay/minify",
-            "version": "3.0.9",
+            "version": "3.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mrclay/minify.git",
-                "reference": "d2a3e8c1d203958b45f56c0a399714ee8b478a12"
+                "reference": "8dba84a2d24ae6382057a1215ad3af25202addb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mrclay/minify/zipball/d2a3e8c1d203958b45f56c0a399714ee8b478a12",
-                "reference": "d2a3e8c1d203958b45f56c0a399714ee8b478a12",
+                "url": "https://api.github.com/repos/mrclay/minify/zipball/8dba84a2d24ae6382057a1215ad3af25202addb9",
+                "reference": "8dba84a2d24ae6382057a1215ad3af25202addb9",
                 "shasum": ""
             },
             "require": {
@@ -2607,7 +2607,7 @@
             ],
             "description": "Minify is a PHP app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
             "homepage": "https://github.com/mrclay/minify",
-            "time": "2020-03-24T19:30:43+00:00"
+            "time": "2020-04-02T19:47:26+00:00"
         },
         {
             "name": "mrclay/props-dic",
@@ -2719,16 +2719,16 @@
         },
         {
             "name": "mundschenk-at/php-typography",
-            "version": "v6.5.2",
+            "version": "v6.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mundschenk-at/php-typography.git",
-                "reference": "ce039dc8826038f898e5338e5df1c4bafddc0c6e"
+                "reference": "897a763afadc0a8c590a22a45b5fd5d17c44d358"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/ce039dc8826038f898e5338e5df1c4bafddc0c6e",
-                "reference": "ce039dc8826038f898e5338e5df1c4bafddc0c6e",
+                "url": "https://api.github.com/repos/mundschenk-at/php-typography/zipball/897a763afadc0a8c590a22a45b5fd5d17c44d358",
+                "reference": "897a763afadc0a8c590a22a45b5fd5d17c44d358",
                 "shasum": ""
             },
             "require": {
@@ -2777,7 +2777,7 @@
                 }
             ],
             "description": "A PHP library for improving your web typography",
-            "time": "2019-12-07T12:39:54+00:00"
+            "time": "2020-03-27T20:58:53+00:00"
         },
         {
             "name": "nesbot/carbon",
@@ -3257,21 +3257,21 @@
         },
         {
             "name": "nystudio107/craft-minify",
-            "version": "1.2.9",
+            "version": "1.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-minify.git",
-                "reference": "3bb2a6f160658bcfeeab9fa390cf28fba38fbd26"
+                "reference": "01d5de3f016c9c4a1e62c17e9f3ed981099c3927"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-minify/zipball/3bb2a6f160658bcfeeab9fa390cf28fba38fbd26",
-                "reference": "3bb2a6f160658bcfeeab9fa390cf28fba38fbd26",
+                "url": "https://api.github.com/repos/nystudio107/craft-minify/zipball/01d5de3f016c9c4a1e62c17e9f3ed981099c3927",
+                "reference": "01d5de3f016c9c4a1e62c17e9f3ed981099c3927",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC1",
-                "mrclay/minify": "^3.0.0"
+                "craftcms/cms": "^3.0.0",
+                "mrclay/minify": "^3.0.10"
             },
             "type": "craft-plugin",
             "extra": {
@@ -3309,20 +3309,20 @@
                 "craftcms",
                 "minify"
             ],
-            "time": "2018-07-21T15:09:55+00:00"
+            "time": "2020-04-02T21:20:01+00:00"
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.36",
+            "version": "3.1.37",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "5e09dc1aae53e1d695ab5396eca28368b48d825d"
+                "reference": "c4f22a871de78fa24f721ba67b39fac58fc7d1f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/5e09dc1aae53e1d695ab5396eca28368b48d825d",
-                "reference": "5e09dc1aae53e1d695ab5396eca28368b48d825d",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/c4f22a871de78fa24f721ba67b39fac58fc7d1f4",
+                "reference": "c4f22a871de78fa24f721ba67b39fac58fc7d1f4",
                 "shasum": ""
             },
             "require": {
@@ -3366,7 +3366,7 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2020-03-25T02:39:46+00:00"
+            "time": "2020-04-02T17:07:34+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
@@ -5840,16 +5840,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.6.1",
+            "version": "v2.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5"
+                "reference": "c4a653ed3f1ff900baa15b4130c8770b57285b62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
-                "reference": "2a7dcf7e3e02dc5e701004e51a6f304b713107d5",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/c4a653ed3f1ff900baa15b4130c8770b57285b62",
+                "reference": "c4a653ed3f1ff900baa15b4130c8770b57285b62",
                 "shasum": ""
             },
             "require": {
@@ -5857,7 +5857,13 @@
                 "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
+                "ext-filter": "*",
+                "ext-pcre": "*",
                 "phpunit/phpunit": "^4.8.35 || ^5.0"
+            },
+            "suggest": {
+                "ext-filter": "Required to use the boolean validator.",
+                "ext-pcre": "Required to use most of the library."
             },
             "type": "library",
             "extra": {
@@ -5887,7 +5893,13 @@
                 "env",
                 "environment"
             ],
-            "time": "2019-01-29T11:11:52+00:00"
+            "funding": [
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-03-27T23:16:19+00:00"
         },
         {
             "name": "voku/anti-xss",
