@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.135.4",
+            "version": "3.135.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "fb6f4a12d9ad1b8fc1481aef61ed1f8a9fe2164b"
+                "reference": "ba5a7fe1f4f7c4c38b5804c4779dad23399fccab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/fb6f4a12d9ad1b8fc1481aef61ed1f8a9fe2164b",
-                "reference": "fb6f4a12d9ad1b8fc1481aef61ed1f8a9fe2164b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ba5a7fe1f4f7c4c38b5804c4779dad23399fccab",
+                "reference": "ba5a7fe1f4f7c4c38b5804c4779dad23399fccab",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -94,7 +94,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-04-24T18:14:04+00:00"
+            "time": "2020-04-28T18:15:08+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -512,12 +512,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "30d971566cd65bcae1b10719eb3958cb4c99fdcd"
+                "reference": "6ede739270561cc417612e0d72ea7d9142c34884"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/30d971566cd65bcae1b10719eb3958cb4c99fdcd",
-                "reference": "30d971566cd65bcae1b10719eb3958cb4c99fdcd",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/6ede739270561cc417612e0d72ea7d9142c34884",
+                "reference": "6ede739270561cc417612e0d72ea7d9142c34884",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3772,16 +3772,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.2.51",
+            "version": "3.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "2d2241bd5b439a84ea58c6cb10dbcab5d32130d2"
+                "reference": "5257a29b70e13e28a0a50f964e561f85895953f1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/2d2241bd5b439a84ea58c6cb10dbcab5d32130d2",
-                "reference": "2d2241bd5b439a84ea58c6cb10dbcab5d32130d2",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/5257a29b70e13e28a0a50f964e561f85895953f1",
+                "reference": "5257a29b70e13e28a0a50f964e561f85895953f1",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3848,7 +3848,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-04-06T12:51:07+00:00"
+            "time": "2020-04-28T18:39:23+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
