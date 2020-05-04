@@ -37,7 +37,7 @@ class SiteVariable
         $client = Craft::$app->api->client;
         $result = null;
         try {
-            $response = $client->get($url);
+            $response = $client->get($url, ['http_errors' => false]);
             $statusCode = $response->getStatusCode();
             if ($statusCode === 200) {
                 $result = $response->getBody()->getContents();
@@ -50,7 +50,7 @@ class SiteVariable
                 }
             } else {
                 $reason = $response->getReasonPhrase();
-                throw new Exception("Invalid response from API: ${reason} -- ${url}", $statusCode);
+                Craft::error("Invalid response from API: ${reason} -- ${url}", __METHOD__);
             }
         } catch (\Exception $e) {
             Craft::error($e->getMessage() . " -- ${url}", 'site-module');
