@@ -74,7 +74,7 @@
 
                 <itunes:keywords>{{ seomatic.helper.extractKeywords(episode.episodeSummary) }}</itunes:keywords>
 
-                <itunes:image href="{{ url(showInfo.showImage.one().getUrl() | split('?') | first, null, "http") | raw }}" />
+                <itunes:image href="{{ url(showInfo.showImage.one().getUrl() | split('?') | first) | raw }}" />
 
                 <itunes:explicit>no</itunes:explicit>
                 <googleplay:explicit>no</googleplay:explicit>
