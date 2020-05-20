@@ -62,13 +62,13 @@ You'll need Docker desktop for your platform installed to run devMode in local d
 To update to the latest Composer packages (as constrained by the `cms/composer.json` semvers), do:
 ```
 rm cms/composer.lock
-docker-compose up --build
+docker-compose up
 ```
 
 To update to the latest npm packages (as constrained by the `docker-config/webpack-dev-devmode/package.json` semvers), do:
 ```
 rm docker-config/webpack-dev-devmode/package-lock.json
-docker-compose up --build
+docker-compose up
 ```
 
 ## Deployment
