@@ -93,18 +93,6 @@ class SiteController extends Controller
             }
             // Format the data for the API
             $data['data'] = $stats;
-            $query = Entry::find()
-                ->section('episodes')
-                ->offset($offset)
-            ;
-            if ($filter !== '') {
-                $query
-                    ->search($filter)
-                ;
-            }
-            $query
-                ->orderBy("{$sortField} {$sortType}")
-            ;
             $count = $query->count();
             $data['links']['pagination'] = [
                 'total' => $count,
