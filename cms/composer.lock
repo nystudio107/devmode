@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.138.7",
+            "version": "3.138.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "6b9f3fcea4dfa6092c628c790ca6d369a75453b7"
+                "reference": "bc3d77e84d1589c9536f94043622bf56d1d68809"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6b9f3fcea4dfa6092c628c790ca6d369a75453b7",
-                "reference": "6b9f3fcea4dfa6092c628c790ca6d369a75453b7",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bc3d77e84d1589c9536f94043622bf56d1d68809",
+                "reference": "bc3d77e84d1589c9536f94043622bf56d1d68809",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -94,7 +94,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-05-22T18:11:09+00:00"
+            "time": "2020-05-26T18:10:59+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -3680,16 +3680,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.4",
+            "version": "3.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "f57b646a54ee768248b7aaad4ffe520c0fce860e"
+                "reference": "568d8eecb91f13adc82219537d0b16a4749606be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/f57b646a54ee768248b7aaad4ffe520c0fce860e",
-                "reference": "f57b646a54ee768248b7aaad4ffe520c0fce860e",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/568d8eecb91f13adc82219537d0b16a4749606be",
+                "reference": "568d8eecb91f13adc82219537d0b16a4749606be",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3756,7 +3756,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-05-19T02:41:02+00:00"
+            "time": "2020-05-26T18:01:28+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -6701,16 +6701,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "2d302cf7dc474d5f7f18b29b03e0e77d408922a4"
+                "reference": "e7f9bd5deff09a57318f9b900ab33a05acfcf4d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/2d302cf7dc474d5f7f18b29b03e0e77d408922a4",
-                "reference": "2d302cf7dc474d5f7f18b29b03e0e77d408922a4",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/e7f9bd5deff09a57318f9b900ab33a05acfcf4d3",
+                "reference": "e7f9bd5deff09a57318f9b900ab33a05acfcf4d3",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6769,20 +6769,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-23T23:15:19+00:00"
+            "time": "2020-05-26T06:40:44+00:00"
         },
         {
             "name": "voku/portable-utf8",
-            "version": "5.4.44",
+            "version": "5.4.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "6eef2006f84fd47fff11173c89af746461728926"
+                "reference": "5445d44086ea7b53dcd6dd1b182ae5bdcb1fbb07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/6eef2006f84fd47fff11173c89af746461728926",
-                "reference": "6eef2006f84fd47fff11173c89af746461728926",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/5445d44086ea7b53dcd6dd1b182ae5bdcb1fbb07",
+                "reference": "5445d44086ea7b53dcd6dd1b182ae5bdcb1fbb07",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6870,7 +6870,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-23T23:50:42+00:00"
+            "time": "2020-05-26T07:35:55+00:00"
         },
         {
             "name": "voku/stop-words",
