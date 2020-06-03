@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.138.8",
+            "version": "3.140.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "bc3d77e84d1589c9536f94043622bf56d1d68809"
+                "reference": "9798418d4f0cdc0cf11dab453eca96e1d072df79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bc3d77e84d1589c9536f94043622bf56d1d68809",
-                "reference": "bc3d77e84d1589c9536f94043622bf56d1d68809",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9798418d4f0cdc0cf11dab453eca96e1d072df79",
+                "reference": "9798418d4f0cdc0cf11dab453eca96e1d072df79",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -94,7 +94,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-05-26T18:10:59+00:00"
+            "time": "2020-06-03T18:12:30+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -508,16 +508,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.4.20",
+            "version": "3.4.22.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "a4e4ae5ce7b067f31d00c27770bc3e7c8434ba91"
+                "reference": "2cf3a90ea6b76d44323c13da0a149e1c6462f387"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/a4e4ae5ce7b067f31d00c27770bc3e7c8434ba91",
-                "reference": "a4e4ae5ce7b067f31d00c27770bc3e7c8434ba91",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/2cf3a90ea6b76d44323c13da0a149e1c6462f387",
+                "reference": "2cf3a90ea6b76d44323c13da0a149e1c6462f387",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -608,7 +608,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2020-05-18T15:31:36+00:00"
+            "time": "2020-05-30T15:10:56+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -773,16 +773,16 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "1.1.8",
+            "version": "1.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "a7b6c172b631ec822fbdccbe011dbcf77395a9ee"
+                "reference": "0f445599b3a2ccbeba4a83cf34a8070f56326909"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/a7b6c172b631ec822fbdccbe011dbcf77395a9ee",
-                "reference": "a7b6c172b631ec822fbdccbe011dbcf77395a9ee",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/0f445599b3a2ccbeba4a83cf34a8070f56326909",
+                "reference": "0f445599b3a2ccbeba4a83cf34a8070f56326909",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -809,7 +809,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2020-01-17T22:23:26+00:00"
+            "time": "2020-05-28T16:57:05+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -1657,16 +1657,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.9",
+            "version": "5.2.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "44c6787311242a979fa15c704327c20e7221a0e4"
+                "reference": "2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/44c6787311242a979fa15c704327c20e7221a0e4",
-                "reference": "44c6787311242a979fa15c704327c20e7221a0e4",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b",
+                "reference": "2ba9c8c862ecd5510ed16c6340aa9f6eadb4f31b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1725,7 +1725,7 @@
                 "json",
                 "schema"
             ],
-            "time": "2019-09-25T14:49:45+00:00"
+            "time": "2020-05-27T16:41:55+00:00"
         },
         {
             "name": "ksubileau/color-thief-php",
@@ -2260,16 +2260,16 @@
         },
         {
             "name": "league/flysystem-aws-s3-v3",
-            "version": "1.0.24",
+            "version": "1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
-                "reference": "4382036bde5dc926f9b8b337e5bdb15e5ec7b570"
+                "reference": "d409b97a50bf85fbde30cbc9fc10237475e696ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/4382036bde5dc926f9b8b337e5bdb15e5ec7b570",
-                "reference": "4382036bde5dc926f9b8b337e5bdb15e5ec7b570",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/d409b97a50bf85fbde30cbc9fc10237475e696ea",
+                "reference": "d409b97a50bf85fbde30cbc9fc10237475e696ea",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2309,7 +2309,7 @@
                 }
             ],
             "description": "Flysystem adapter for the AWS S3 SDK v3.x",
-            "time": "2020-02-23T13:31:58+00:00"
+            "time": "2020-06-02T18:41:58+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -3092,16 +3092,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.4.0",
+            "version": "v4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120"
+                "reference": "53c2753d756f5adb586dca79c2ec0e2654dd9463"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
-                "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/53c2753d756f5adb586dca79c2ec0e2654dd9463",
+                "reference": "53c2753d756f5adb586dca79c2ec0e2654dd9463",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3146,7 +3146,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-04-10T16:34:50+00:00"
+            "time": "2020-06-03T07:24:19+00:00"
         },
         {
             "name": "nystudio107/craft-disqus",
@@ -3680,16 +3680,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.5",
+            "version": "3.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "568d8eecb91f13adc82219537d0b16a4749606be"
+                "reference": "7deb649f73e725cf3f4f2e894c368a29460d77e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/568d8eecb91f13adc82219537d0b16a4749606be",
-                "reference": "568d8eecb91f13adc82219537d0b16a4749606be",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/7deb649f73e725cf3f4f2e894c368a29460d77e7",
+                "reference": "7deb649f73e725cf3f4f2e894c368a29460d77e7",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3756,7 +3756,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-05-26T18:01:28+00:00"
+            "time": "2020-06-03T18:22:33+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
