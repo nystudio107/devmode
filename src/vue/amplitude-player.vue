@@ -8,9 +8,14 @@
                         <i class="icon-pause" v-show="playing"></i>
                     </div>
                 </a>
+                <div class="block sm:hidden text-center time-container pr-3 pl-1">
+                    <span class="current-time text-devmode-pink font-mono text-xs text-left">
+                        &nbsp;
+                    </span>
+                </div>
             </div>
 
-            <div class="block time-container flex-shrink pr-3 pl-1">
+            <div class="hidden sm:block time-container flex-shrink pr-3 pl-1">
                 <span class="current-time text-devmode-pink font-mono text-xs text-left">
                     {{ currentTime }}
                 </span>
@@ -27,9 +32,14 @@
                         id="song-played-progress"
                         :style="rangeStyle"
                 />
+                <div class="block sm:hidden text-center time-container pr-3 pl-1">
+                    <span class="current-time text-devmode-pink font-mono text-xs text-left">
+                        {{ currentTime }} / {{ durationTime }}
+                    </span>
+                </div>
             </div>
 
-            <div class="time-container flex-shrink pl-3 pr-1">
+            <div class="hidden sm:block time-container flex-shrink pl-3 pr-1">
                 <span class="duration text-devmode-pink font-mono text-xs text-left">
                     {{ durationTime }}
                 </span>
