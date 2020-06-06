@@ -10,7 +10,7 @@
                 </a>
             </div>
 
-            <div class="hidden sm:block time-container flex-shrink pr-3 pl-1">
+            <div class="block time-container flex-shrink pr-3 pl-1">
                 <span class="current-time text-devmode-pink font-mono text-xs text-left">
                     {{ currentTime }}
                 </span>
