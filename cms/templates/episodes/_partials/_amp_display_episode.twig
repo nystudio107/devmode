@@ -19,6 +19,10 @@
                 </strong>
             </div>
         </div>
+        {% include "episodes/_partials/_amp_display_player.twig" with {
+            "episode": episode,
+            "showInfo": showInfo,
+        } only %}
         {# -- Episode hosts -- #}
         <div>
             <div class="inline-block text-devmode-pink devmode-container font-mono text-xs text-left p-8">
@@ -68,8 +72,3 @@
         </div>
     </div>
 </div>
-
-{% include "episodes/_partials/_amp_display_player.twig" with {
-    "episode": episode,
-    "showInfo": showInfo,
-} only %}
