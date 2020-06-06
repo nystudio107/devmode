@@ -17,13 +17,16 @@
             </div>
 
             <div class="flex-grow px-1 pt-0">
-                <progress class="amplitude-song-played-progress w-full h-3 rounded"
-                          id="song-played-progress"
-                          @click="seek"
-                          :value="percentComplete"
-                          max="100"
-                >
-                </progress>
+                <input
+                        type="range"
+                        min="0"
+                        :max="durationSeconds"
+                        v-model="currentSeconds"
+                        @input="seek"
+                        class="amplitude-song-played-progress w-full h-3 rounded"
+                        id="song-played-progress"
+                        :style="rangeStyle"
+                />
             </div>
 
             <div class="time-container flex-shrink pl-3 pr-1">
@@ -62,7 +65,7 @@
             playing: false,
             previousVolume: 35,
             showVolume: false,
-            volume: 100
+            volume: 100,
         }),
         computed: {
             currentTime() {
@@ -73,6 +76,11 @@
             },
             percentComplete() {
                 return (this.currentSeconds / this.durationSeconds * 100.0);
+            },
+            rangeStyle() {
+                return {
+                    backgroundImage: `linear-gradient(90deg, #eb5286 ${this.percentComplete}%, #f2d024 ${this.percentComplete}%)`
+                }
             },
             muted() {
                 return this.volume / 100 === 0;
@@ -111,14 +119,7 @@
                 this.volume = 0;
             },
             seek(e) {
-                if (!this.playing || e.target.tagName === 'SPAN') {
-                    return;
-                }
-
-                const el = e.target.getBoundingClientRect();
-                const seekPos = (e.clientX - el.left) / el.width;
-
-                this.audio.currentTime = parseInt(this.audio.duration * seekPos);
+                this.audio.currentTime = this.currentSeconds;
             },
             stop() {
                 this.playing = false;

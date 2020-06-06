@@ -1,0 +1,63 @@
+/* Input Range */
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 10px;
+    height: 12px;
+    background-image: linear-gradient(90deg, theme('colors.devmode-pink') 0%, theme('colors.devmode-yellow') 0%);
+}
+
+input[type="range"]::-moz-range-track {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+input[type="range"]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+
+    /* Hides the slider so custom styles can be added */
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]:focus {
+    outline: none;
+    border: none;
+}
+
+input[type=range]::-moz-focus-outer {
+    outline: none;
+    border: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background-color: theme('colors.devmode-pink');
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+    -moz-appearance: none !important;
+    background-color: theme('colors.devmode-pink');
+    border: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+    -moz-appearance: none !important;
+    background-color: theme('colors.devmode-pink');
+    border: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+}
