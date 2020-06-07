@@ -2,7 +2,7 @@
     <div id="single-song-player" aria-label="Audio Player" role="region">
         <div class="bottom-container flex items-center">
             <div class="control-container flex-shrink">
-                <a
+                <button
                         class="amplitude-play-pause"
                         v-on:click.prevent="playing = !playing"
                         :title="playing == true ? 'Pause' : 'Play'"
@@ -10,12 +10,13 @@
                         href="#"
                         id="play-pause"
                         aria-controls="audiofile"
+                        role="button"
                 >
                     <div class="text-devmode-pink text-4xl cursor-pointer">
                         <i class="icon-play" v-show="!playing"></i>
                         <i class="icon-pause" v-show="playing"></i>
                     </div>
-                </a>
+                </button>
                 <div class="block sm:hidden text-center time-container pr-3 pl-1">
                     <span class="current-time text-devmode-pink font-mono text-xs text-left">
                         &nbsp;
@@ -40,7 +41,8 @@
                         id="song-played-progress"
                         :style="rangeStyle"
                         tabIndex="0"
-                        aria-valuetext="seek audio bar"
+                        title="Audio seek bar"
+                        aria-valuetext="Audio seek bar"
                         :aria-valuemax="durationSeconds"
                         aria-valuemin="0"
                         :aria-valuenow="Math.round(currentSeconds)"
