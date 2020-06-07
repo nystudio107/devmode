@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           lazysizes.260d6bb21cae7b7a0b31.js
  * @author         Andrew Welch
- * @build          Sun, Jun 7, 2020 1:33 AM ET
+ * @build          Sun, Jun 7, 2020 1:54 AM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */
