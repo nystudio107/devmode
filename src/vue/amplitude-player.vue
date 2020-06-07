@@ -1,8 +1,16 @@
 <template>
-    <div id="single-song-player">
+    <div id="single-song-player" aria-label="Audio Player" role="region">
         <div class="bottom-container flex items-center">
             <div class="control-container flex-shrink">
-                <a class="amplitude-play-pause" v-on:click.prevent="playing = !playing" title="Play/Pause" href="#" id="play-pause">
+                <a
+                        class="amplitude-play-pause"
+                        v-on:click.prevent="playing = !playing"
+                        :title="playing == true ? 'Pause' : 'Play'"
+                        :aria-label="playing == true ? 'Pause' : 'Play'"
+                        href="#"
+                        id="play-pause"
+                        aria-controls="audiofile"
+                >
                     <div class="text-devmode-pink text-4xl cursor-pointer">
                         <i class="icon-play" v-show="!playing"></i>
                         <i class="icon-pause" v-show="playing"></i>
@@ -31,6 +39,13 @@
                         class="amplitude-song-played-progress w-full h-3 rounded"
                         id="song-played-progress"
                         :style="rangeStyle"
+                        tabIndex="0"
+                        aria-valuetext="seek audio bar"
+                        :aria-valuemax="durationSeconds"
+                        aria-valuemin="0"
+                        :aria-valuenow="Math.round(currentSeconds)"
+                        aria-controls="audiofile"
+                        role="slider"
                 />
                 <div class="block sm:hidden text-center time-container pr-3 pl-1">
                     <span class="current-time text-devmode-pink font-mono text-xs text-left">
@@ -46,7 +61,16 @@
             </div>
 
         </div>
-        <audio :loop="innerLoop" ref="audiofile" :src="url" preload="auto" style="display: none;" :autoplay="autoPlay"></audio>
+        <audio
+                id="audiofile"
+                :loop="innerLoop"
+                ref="audiofile"
+                :src="url"
+                preload="auto"
+                style="display: none;"
+                :autoplay="autoPlay"
+        >
+        </audio>
     </div>
 </template>
 
