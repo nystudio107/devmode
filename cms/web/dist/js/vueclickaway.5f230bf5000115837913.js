@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           vueclickaway.5f230bf5000115837913.js
  * @author         Andrew Welch
- * @build          Sun, Jun 7, 2020 1:54 AM ET
+ * @build          Sun, Jun 7, 2020 2:27 AM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */
