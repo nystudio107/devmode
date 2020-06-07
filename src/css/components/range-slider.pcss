@@ -23,17 +23,19 @@ input[type="range"]::-ms-track {
     color: transparent;
 }
 
-input[type=range]:focus {
+input[type="range"]:focus {
     outline: none;
     border: none;
+    box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.2);
 }
 
-input[type=range]::-moz-focus-outer {
+input[type="range"]::-moz-focus-outer {
     outline: none;
     border: none;
+    box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.2);
 }
 
-input[type=range]::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none !important;
     background-color: theme('colors.devmode-pink');
     height: 24px;
@@ -43,7 +45,7 @@ input[type=range]::-webkit-slider-thumb {
     cursor: pointer;
 }
 
-input[type=range]::-moz-range-thumb {
+input[type="range"]::-moz-range-thumb {
     -moz-appearance: none !important;
     background-color: theme('colors.devmode-pink');
     border: none;
@@ -54,7 +56,7 @@ input[type=range]::-moz-range-thumb {
     cursor: pointer;
 }
 
-input[type=range]::-ms-thumb {
+input[type="range"]::-ms-thumb {
     -moz-appearance: none !important;
     background-color: theme('colors.devmode-pink');
     border: none;
