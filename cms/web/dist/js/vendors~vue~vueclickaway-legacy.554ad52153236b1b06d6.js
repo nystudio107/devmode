@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           vendors~vue~vueclickaway-legacy.554ad52153236b1b06d6.js
  * @author         Andrew Welch
- * @build          Tue, Jun 16, 2020 5:40 AM ET
+ * @build          Tue, Jun 16, 2020 6:11 AM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */

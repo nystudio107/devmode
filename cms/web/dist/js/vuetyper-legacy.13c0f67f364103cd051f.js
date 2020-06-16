@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           vuetyper-legacy.13c0f67f364103cd051f.js
  * @author         Andrew Welch
- * @build          Tue, Jun 16, 2020 5:40 AM ET
+ * @build          Tue, Jun 16, 2020 6:11 AM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */
