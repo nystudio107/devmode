@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.140.0",
+            "version": "3.142.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "9798418d4f0cdc0cf11dab453eca96e1d072df79"
+                "reference": "92cf325bfabc80d919282729a25063876a73205e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9798418d4f0cdc0cf11dab453eca96e1d072df79",
-                "reference": "9798418d4f0cdc0cf11dab453eca96e1d072df79",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/92cf325bfabc80d919282729a25063876a73205e",
+                "reference": "92cf325bfabc80d919282729a25063876a73205e",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -46,6 +46,7 @@
                 "ext-pcntl": "*",
                 "ext-sockets": "*",
                 "nette/neon": "^2.3",
+                "paragonie/random_compat": ">= 2",
                 "phpunit/phpunit": "^4.8.35|^5.4.3",
                 "psr/cache": "^1.0",
                 "psr/simple-cache": "^1.0",
@@ -94,7 +95,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-06-03T18:12:30+00:00"
+            "time": "2020-06-15T18:17:20+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -508,16 +509,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.4.22.1",
+            "version": "3.4.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "2cf3a90ea6b76d44323c13da0a149e1c6462f387"
+                "reference": "9a16630114780c721a227a5d1f9a07956ee89f5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/2cf3a90ea6b76d44323c13da0a149e1c6462f387",
-                "reference": "2cf3a90ea6b76d44323c13da0a149e1c6462f387",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/9a16630114780c721a227a5d1f9a07956ee89f5e",
+                "reference": "9a16630114780c721a227a5d1f9a07956ee89f5e",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -608,7 +609,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2020-05-30T15:10:56+00:00"
+            "time": "2020-06-09T20:23:40+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1436,16 +1437,16 @@
         },
         {
             "name": "imgix/imgix-php",
-            "version": "3.2.0",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/imgix/imgix-php.git",
-                "reference": "d95a5937c4a5e1ffc6b2c64e51215a7262d4eb09"
+                "reference": "6995ca3440fe442b1175c12dc63b41617568b606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/d95a5937c4a5e1ffc6b2c64e51215a7262d4eb09",
-                "reference": "d95a5937c4a5e1ffc6b2c64e51215a7262d4eb09",
+                "url": "https://api.github.com/repos/imgix/imgix-php/zipball/6995ca3440fe442b1175c12dc63b41617568b606",
+                "reference": "6995ca3440fe442b1175c12dc63b41617568b606",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1474,7 +1475,7 @@
             "keywords": [
                 "imgix"
             ],
-            "time": "2020-04-01T22:48:20+00:00"
+            "time": "2020-06-05T21:57:36+00:00"
         },
         {
             "name": "intervention/httpauth",
@@ -1540,16 +1541,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.95",
+            "version": "v1.2.96",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "a7936c4b60c78f8ae9024eeecf7e8d4cf470b730"
+                "reference": "5a53c78644c54a628c3f5ead915c35b489c92239"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/a7936c4b60c78f8ae9024eeecf7e8d4cf470b730",
-                "reference": "a7936c4b60c78f8ae9024eeecf7e8d4cf470b730",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/5a53c78644c54a628c3f5ead915c35b489c92239",
+                "reference": "5a53c78644c54a628c3f5ead915c35b489c92239",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1591,7 +1592,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2020-04-14T20:42:56+00:00"
+            "time": "2020-06-14T20:37:24+00:00"
         },
         {
             "name": "johngrogg/ics-parser",
@@ -2444,16 +2445,16 @@
         },
         {
             "name": "masterminds/html5",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "104443ad663d15981225f99532ba73c2f1d6b6f2"
+                "reference": "a3edfe52f9e7380e498d33157e1330e85386645d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/104443ad663d15981225f99532ba73c2f1d6b6f2",
-                "reference": "104443ad663d15981225f99532ba73c2f1d6b6f2",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/a3edfe52f9e7380e498d33157e1330e85386645d",
+                "reference": "a3edfe52f9e7380e498d33157e1330e85386645d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2513,7 +2514,7 @@
                 "serializer",
                 "xml"
             ],
-            "time": "2019-07-25T07:03:26+00:00"
+            "time": "2020-02-06T11:39:04+00:00"
         },
         {
             "name": "michelf/php-smartypants",
@@ -3334,16 +3335,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.13",
+            "version": "1.6.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "406c1467767f34d7ec520e32ec87be8bd8ff73f8"
+                "reference": "7859d529ce4a75b5e0e1e5008964fd06ee46ac87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/406c1467767f34d7ec520e32ec87be8bd8ff73f8",
-                "reference": "406c1467767f34d7ec520e32ec87be8bd8ff73f8",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/7859d529ce4a75b5e0e1e5008964fd06ee46ac87",
+                "reference": "7859d529ce4a75b5e0e1e5008964fd06ee46ac87",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3402,7 +3403,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2020-04-16T12:43:55+00:00"
+            "time": "2020-06-08T12:24:17+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -3456,16 +3457,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize-sharp",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize-sharp.git",
-                "reference": "82f30c8183b0eea534e5bcde4001500c197e637c"
+                "reference": "c7ad06c4d8093377e406920b63893af6c81b2393"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-sharp/zipball/82f30c8183b0eea534e5bcde4001500c197e637c",
-                "reference": "82f30c8183b0eea534e5bcde4001500c197e637c",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-sharp/zipball/c7ad06c4d8093377e406920b63893af6c81b2393",
+                "reference": "c7ad06c4d8093377e406920b63893af6c81b2393",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3501,7 +3502,7 @@
                 "image-transform",
                 "sharp"
             ],
-            "time": "2020-03-12T20:51:01+00:00"
+            "time": "2020-06-08T12:36:14+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-thumbor",
@@ -3617,16 +3618,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.37",
+            "version": "3.1.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "c4f22a871de78fa24f721ba67b39fac58fc7d1f4"
+                "reference": "abc1a1dcef798567551c5054e17bcb06c3f2bbb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/c4f22a871de78fa24f721ba67b39fac58fc7d1f4",
-                "reference": "c4f22a871de78fa24f721ba67b39fac58fc7d1f4",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/abc1a1dcef798567551c5054e17bcb06c3f2bbb4",
+                "reference": "abc1a1dcef798567551c5054e17bcb06c3f2bbb4",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3676,20 +3677,20 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2020-04-02T17:07:34+00:00"
+            "time": "2020-06-08T13:48:59+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.6",
+            "version": "3.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "7deb649f73e725cf3f4f2e894c368a29460d77e7"
+                "reference": "0d280c87bba826c3bdffc32c4edd43b273ac2e20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/7deb649f73e725cf3f4f2e894c368a29460d77e7",
-                "reference": "7deb649f73e725cf3f4f2e894c368a29460d77e7",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/0d280c87bba826c3bdffc32c4edd43b273ac2e20",
+                "reference": "0d280c87bba826c3bdffc32c4edd43b273ac2e20",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3756,7 +3757,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-06-03T18:22:33+00:00"
+            "time": "2020-06-05T02:41:22+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -4073,16 +4074,16 @@
         },
         {
             "name": "opis/closure",
-            "version": "3.5.3",
+            "version": "3.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "cac47092144043d5d676e2e7cf8d0d2f83fc89ca"
+                "reference": "1d0deef692f66dae5d70663caee2867d0971306b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/cac47092144043d5d676e2e7cf8d0d2f83fc89ca",
-                "reference": "cac47092144043d5d676e2e7cf8d0d2f83fc89ca",
+                "url": "https://api.github.com/repos/opis/closure/zipball/1d0deef692f66dae5d70663caee2867d0971306b",
+                "reference": "1d0deef692f66dae5d70663caee2867d0971306b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -4136,7 +4137,7 @@
                 "serialization",
                 "serialize"
             ],
-            "time": "2020-05-25T09:32:45+00:00"
+            "time": "2020-06-07T11:41:29+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -6416,16 +6417,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.6.4",
+            "version": "v2.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "67d472b1794c986381a8950e4958e1adb779d561"
+                "reference": "2e977311ffb17b2f82028a9c36824647789c6365"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/67d472b1794c986381a8950e4958e1adb779d561",
-                "reference": "67d472b1794c986381a8950e4958e1adb779d561",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2e977311ffb17b2f82028a9c36824647789c6365",
+                "reference": "2e977311ffb17b2f82028a9c36824647789c6365",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6436,12 +6437,12 @@
             },
             "require": {
                 "php": "^5.3.9 || ^7.0 || ^8.0",
-                "symfony/polyfill-ctype": "^1.9"
+                "symfony/polyfill-ctype": "^1.16"
             },
             "require-dev": {
                 "ext-filter": "*",
                 "ext-pcre": "*",
-                "phpunit/phpunit": "^4.8.35 || ^5.0"
+                "phpunit/phpunit": "^4.8.35 || ^5.7.27"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator.",
@@ -6490,20 +6491,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-02T13:38:00+00:00"
+            "time": "2020-06-02T14:06:52+00:00"
         },
         {
             "name": "voku/anti-xss",
-            "version": "4.1.24",
+            "version": "4.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/anti-xss.git",
-                "reference": "4c032aa1aedbf4934418520c61c00b8fad6ca8d5"
+                "reference": "2b7b0510b5ac5194c467aa5e80a94964896f0672"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/anti-xss/zipball/4c032aa1aedbf4934418520c61c00b8fad6ca8d5",
-                "reference": "4c032aa1aedbf4934418520c61c00b8fad6ca8d5",
+                "url": "https://api.github.com/repos/voku/anti-xss/zipball/2b7b0510b5ac5194c467aa5e80a94964896f0672",
+                "reference": "2b7b0510b5ac5194c467aa5e80a94964896f0672",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6575,7 +6576,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-03-08T00:12:04+00:00"
+            "time": "2020-06-12T00:59:34+00:00"
         },
         {
             "name": "voku/arrayy",
@@ -6701,16 +6702,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.5.1",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "e7f9bd5deff09a57318f9b900ab33a05acfcf4d3"
+                "reference": "618631dc601d8eb6ea0a9fbf654ec82f066c4e97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/e7f9bd5deff09a57318f9b900ab33a05acfcf4d3",
-                "reference": "e7f9bd5deff09a57318f9b900ab33a05acfcf4d3",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/618631dc601d8eb6ea0a9fbf654ec82f066c4e97",
+                "reference": "618631dc601d8eb6ea0a9fbf654ec82f066c4e97",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6769,7 +6770,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-26T06:40:44+00:00"
+            "time": "2020-06-15T23:49:30+00:00"
         },
         {
             "name": "voku/portable-utf8",
