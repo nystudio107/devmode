@@ -154,7 +154,7 @@
                 this.previousVolume = this.volume;
                 this.volume = 0;
             },
-            seek(e) {
+            seek() {
                 this.audio.currentTime = this.currentSeconds;
             },
             stop() {
@@ -163,6 +163,7 @@
             },
             update(e) {
                 this.currentSeconds = parseInt(this.audio.currentTime);
+                window.location.hash = '#' + this.currentSeconds.toString();
             }
         },
         created() {
@@ -174,6 +175,10 @@
             this.audio.addEventListener('loadeddata', this.load);
             this.audio.addEventListener('pause', () => { this.playing = false; });
             this.audio.addEventListener('play', () => { this.playing = true; });
+            if (window.location.hash.length) {
+                this.currentSeconds = parseInt(window.location.hash.slice(1));
+                this.seek();
+            }
         }
     }
 </script>
