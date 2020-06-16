@@ -164,6 +164,11 @@
             update(e) {
                 this.currentSeconds = parseInt(this.audio.currentTime);
                 window.location.hash = '#' + this.currentSeconds.toString();
+            },
+            canplay() {
+                this.currentSeconds = parseInt(window.location.hash.slice(1));
+                this.seek();
+                this.audio.removeEventListener('canplay', this.canplay);
             }
         },
         created() {
@@ -176,8 +181,8 @@
             this.audio.addEventListener('pause', () => { this.playing = false; });
             this.audio.addEventListener('play', () => { this.playing = true; });
             if (window.location.hash.length) {
-                this.currentSeconds = parseInt(window.location.hash.slice(1));
-                this.seek();
+                this.audio.addEventListener('canplay', this.canplay);
+
             }
         }
     }
