@@ -150,7 +150,6 @@
                 if (this.muted) {
                     return this.volume = this.previousVolume;
                 }
-
                 this.previousVolume = this.volume;
                 this.volume = 0;
             },
@@ -168,7 +167,6 @@
             canplay() {
                 this.currentSeconds = parseInt(window.location.hash.slice(1));
                 this.seek();
-                this.audio.removeEventListener('canplay', this.canplay);
             }
         },
         created() {
@@ -181,8 +179,7 @@
             this.audio.addEventListener('pause', () => { this.playing = false; });
             this.audio.addEventListener('play', () => { this.playing = true; });
             if (window.location.hash.length) {
-                this.audio.addEventListener('canplay', this.canplay);
-
+                this.audio.addEventListener('canplay', this.canplay, {once: true});
             }
         }
     }
