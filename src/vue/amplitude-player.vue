@@ -164,10 +164,6 @@
                 this.currentSeconds = parseInt(this.audio.currentTime);
                 window.location.hash = '#' + this.currentSeconds.toString();
             },
-            canplay() {
-                this.currentSeconds = parseInt(window.location.hash.slice(1));
-                this.seek();
-            }
         },
         created() {
             this.innerLoop = this.loop;
@@ -179,7 +175,10 @@
             this.audio.addEventListener('pause', () => { this.playing = false; });
             this.audio.addEventListener('play', () => { this.playing = true; });
             if (window.location.hash.length) {
-                this.audio.addEventListener('canplay', this.canplay, {once: true});
+                this.audio.addEventListener('canplaythrough', (e) => {
+                    this.currentSeconds = parseInt(window.location.hash.slice(1));
+                    this.seek();
+                }, {once: true});
             }
         }
     }
