@@ -2,7 +2,7 @@
  * @project        Example Project
  * @name           vueevents-legacy.ea250f6688987416161b.js
  * @author         Andrew Welch
- * @build          Tue, Jun 16, 2020 4:31 AM ET
+ * @build          Tue, Jun 16, 2020 5:40 AM ET
  * @copyright      Copyright (c) 2020 Example Company, Inc.
  *
  */
