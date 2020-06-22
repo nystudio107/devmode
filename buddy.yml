@@ -54,7 +54,7 @@
       type: "SFTP"
       input_type: "BUILD_ARTIFACTS"
       local_path: "cms/"
-      remote_path: "/home/forge/devmode-atomic/deploy-cache"
+      remote_path: "/home/forge/devmode.fm/deploy-cache"
       login: "${ssh_username}"
       host: "devMode.fm"
       port: "22"
