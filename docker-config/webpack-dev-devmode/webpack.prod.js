@@ -44,7 +44,7 @@ class TailwindExtractor {
 
 // Configure file banner
 const configureBanner = () => {
-    let timestamp = new Date();
+    const timestamp = new Date();
     try {
         return {
             banner: [
