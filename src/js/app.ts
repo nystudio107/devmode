@@ -1,19 +1,19 @@
-import styles from '../css/app.pcss';
+import '../css/app.pcss';
 
-import FontelloEot from '../fonts/fontello.eot';
-import FontelloTtf from '../fonts/fontello.ttf';
-import FontelloWoff from '../fonts/fontello.woff';
-import FontelloWoff2 from '../fonts/fontello.woff2';
+import '../fonts/fontello.eot';
+import '../fonts/fontello.ttf';
+import '../fonts/fontello.woff';
+import '../fonts/fontello.woff2';
 
-import OperatorMonoSSmBookEot from '../fonts/OperatorMonoSSm-Book.eot';
-import OperatorMonoSSmBookTtf from '../fonts/OperatorMonoSSm-Book.ttf';
-import OperatorMonoSSmBookWoff from '../fonts/OperatorMonoSSm-Book.woff';
-import OperatorMonoSSmBookWoff2 from '../fonts/OperatorMonoSSm-Book.woff2';
+import '../fonts/OperatorMonoSSm-Book.eot';
+import '../fonts/OperatorMonoSSm-Book.ttf';
+import '../fonts/OperatorMonoSSm-Book.woff';
+import '../fonts/OperatorMonoSSm-Book.woff2';
 
-import OperatorMonoSSmBookItalicEot from '../fonts/OperatorMonoSSm-BookItalic.eot';
-import OperatorMonoSSmBookItalicTtf from '../fonts/OperatorMonoSSm-BookItalic.ttf';
-import OperatorMonoSSmBookItalicWoff from '../fonts/OperatorMonoSSm-BookItalic.woff';
-import OperatorMonoSSmBookItalicWoff2 from '../fonts/OperatorMonoSSm-BookItalic.woff2';
+import '../fonts/OperatorMonoSSm-BookItalic.eot';
+import '../fonts/OperatorMonoSSm-BookItalic.ttf';
+import '../fonts/OperatorMonoSSm-BookItalic.woff';
+import '../fonts/OperatorMonoSSm-BookItalic.woff2';
 
 //import Snowf from 'vue-snowf';
 
@@ -42,7 +42,7 @@ const main = async() => {
         methods: {
             // Pre-render pages when the user mouses over a link
             // Usage: <a href="" @mouseover="prerenderLink">
-            prerenderLink: function (e) {
+            prerenderLink: function (e : Event) {
                 const head = document.getElementsByTagName("head")[0];
                 const refs = head.childNodes;
                 const ref = refs[refs.length - 1];
@@ -54,10 +54,13 @@ const main = async() => {
                     }
                 });
 
-                const prerenderTag = document.createElement("link");
-                prerenderTag.rel = "prerender";
-                prerenderTag.href = e.currentTarget.href;
-                ref.parentNode.insertBefore(prerenderTag, ref);
+                if (ref.parentNode && e.currentTarget) {
+                    const target : HTMLAnchorElement = <HTMLAnchorElement>e.currentTarget;
+                    const prerenderTag = document.createElement("link");
+                    prerenderTag.rel = "prerender";
+                    prerenderTag.href = target.href;
+                    ref.parentNode.insertBefore(prerenderTag, ref);
+                }
             },
             away: function () {
                 this.menuOpen = false;
