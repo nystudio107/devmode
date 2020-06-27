@@ -36,15 +36,21 @@
         - "/:/buddy/$PROJECT_SHORTNAME"
       trigger_condition: "ALWAYS"
       shell: "BASH"
-    - action: "Upload build files"
-      type: "SFTP"
-      input_type: "BUILD_ARTIFACTS"
+    - action: "Rsync to $REMOTE_SSH_HOST"
+      type: "RSYNC"
       local_path: "cms/"
       remote_path: "$REMOTE_PROJECT_ROOT/deploy-cache"
       login: "$REMOTE_SSH_USER"
       host: "$REMOTE_SSH_HOST"
       port: "22"
-      authentication_mode: "PUBLIC_KEY"
+      authentication_mode: "WORKSPACE_KEY"
+      archive: true
+      delete_extra_files: true
+      recursive: true
+      compress: true
+      deployment_excludes:
+        - "/.git/"
+      trigger_condition: "ALWAYS"
     - action: "Atomic deploy"
       type: "SSH_COMMAND"
       working_directory: "$REMOTE_PROJECT_ROOT"
