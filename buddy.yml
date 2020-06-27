@@ -36,7 +36,7 @@
         - "/:/buddy/$PROJECT_SHORTNAME"
       trigger_condition: "ALWAYS"
       shell: "BASH"
-    - action: "Rsync to $REMOTE_SSH_HOST"
+    - action: "Rsync files to production"
       type: "RSYNC"
       local_path: "cms/"
       remote_path: "$REMOTE_PROJECT_ROOT/deploy-cache"
