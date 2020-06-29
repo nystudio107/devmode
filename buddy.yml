@@ -71,7 +71,8 @@
         - "fi"
         - "echo \"Creating: persistant directories\""
         - "mkdir -p storage"
-        - "echo \"Symlinking: persistant directories\""
+        - "echo \"Symlinking: persistant files & directories\""
+        - "ln -nfs $REMOTE_PROJECT_ROOT/.env $REMOTE_PROJECT_ROOT/releases/$BUDDY_EXECUTION_REVISION"
         - "ln -nfs $REMOTE_PROJECT_ROOT/storage $REMOTE_PROJECT_ROOT/releases/$BUDDY_EXECUTION_REVISION"
         - "ln -nfs $REMOTE_PROJECT_ROOT/transcoder $REMOTE_PROJECT_ROOT/releases/$BUDDY_EXECUTION_REVISION/web"
         - "echo \"Linking current to revision: $BUDDY_EXECUTION_REVISION\""
@@ -90,8 +91,6 @@
       port: "22"
       authentication_mode: "PUBLIC_KEY"
       commands:
-        - "# Copy our .env file into place"
-        - "cp ../../.env ./.env"
         - "# Ensure the craft script is executable"
         - "chmod a+x craft"
         - "# Run pending migrations, sync project config, and clear caches"
