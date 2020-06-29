@@ -16,7 +16,7 @@ The project is based on [Craft CMS](https://CraftCMS.com) using a unique `templa
 * A base Twig templating setup as described in [An Effective Twig Base Templating Setup](https://nystudio107.com/blog/an-effective-twig-base-templating-setup)
 * [webpack](https://webpack.js.org/) is used for the build system as per [An Annotated webpack 4 Config for Frontend Web Development](https://nystudio107.com/blog/an-annotated-webpack-4-config-for-frontend-web-development)
 * [TypeScript](https://www.typescriptlang.org/) for strictly typed JavaScript code
-* [VueJS](https://vuejs.org/) is used for some of the interactive bits on the website as per 
+* [VueJS](https://vuejs.org/) is used for some of the interactive bits on the website
 * [Tailwind CSS](https://tailwindcss.com/) for the site-wide CSS
 * JSON-LD structured data as per [Annotated JSON-LD Structured Data Examples](https://nystudio107.com/blog/annotated-json-ld-structured-data-examples)
 * [Google AMP](https://developers.google.com/amp/) versions of the podcast episode and other pages
