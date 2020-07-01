@@ -95,6 +95,8 @@
         - "chmod a+x craft"
         - "# Restart our long running queue listener process"
         - "echo \"\" | sudo -S supervisorctl restart all"
+        - "# Backup the database just in case any migrations or Project Config changes have issues"
+        - "./craft backup/db"
         - "# Run pending migrations, sync project config, and clear caches"
         - "./craft migrate/all"
         - "./craft project-config/sync"
