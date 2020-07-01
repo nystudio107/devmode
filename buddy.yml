@@ -93,6 +93,8 @@
       commands:
         - "# Ensure the craft script is executable"
         - "chmod a+x craft"
+        - "# Restart our long running queue listener process"
+        - "echo \"\" | sudo -S supervisorctl restart all"
         - "# Run pending migrations, sync project config, and clear caches"
         - "./craft migrate/all"
         - "./craft project-config/sync"
