@@ -509,16 +509,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.4.26",
+            "version": "3.4.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "06416c24cfd4e03c16a1364a6aa9b6073b369d9a"
+                "reference": "68d7e40efc7630fc319a27e0536426028d7baa50"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/06416c24cfd4e03c16a1364a6aa9b6073b369d9a",
-                "reference": "06416c24cfd4e03c16a1364a6aa9b6073b369d9a",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/68d7e40efc7630fc319a27e0536426028d7baa50",
+                "reference": "68d7e40efc7630fc319a27e0536426028d7baa50",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -609,7 +609,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2020-07-01T22:31:18+00:00"
+            "time": "2020-07-03T19:20:14+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -3684,16 +3684,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.8",
+            "version": "3.3.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "0d280c87bba826c3bdffc32c4edd43b273ac2e20"
+                "reference": "8fb72d88ac450c92f36823a36b57c2fedd90e332"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/0d280c87bba826c3bdffc32c4edd43b273ac2e20",
-                "reference": "0d280c87bba826c3bdffc32c4edd43b273ac2e20",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8fb72d88ac450c92f36823a36b57c2fedd90e332",
+                "reference": "8fb72d88ac450c92f36823a36b57c2fedd90e332",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3703,10 +3703,14 @@
                 ]
             },
             "require": {
-                "craftcms/cms": "^3.0.20",
                 "davechild/textstatistics": "1.0.2",
                 "php-science/textrank": "^1.0.3",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
+            },
+            "require-dev": {
+                "codeception/codeception": "^3.0",
+                "craftcms/cms": "^3.2.0",
+                "vlucas/phpdotenv": "^3.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -3760,7 +3764,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-06-05T02:41:22+00:00"
+            "time": "2020-07-03T17:23:24+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
