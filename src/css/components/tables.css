@@ -18,11 +18,11 @@ table.vuetable thead {
  * Column alignment
  */
 td.text-center {
-  text-align: center!important;
+  text-align: center;
 }
 
 td.text-right {
-  text-align: right!important;
+  text-align: right;
 }
 
 .vuetable-empty-result {
