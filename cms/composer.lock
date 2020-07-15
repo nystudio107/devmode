@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.145.0",
+            "version": "3.145.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "df5406b49f4f5774045e51e8fecc75717c4d6454"
+                "reference": "3c5a921f0de917f9fc3d51b2970106d3abfc6b8f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/df5406b49f4f5774045e51e8fecc75717c4d6454",
-                "reference": "df5406b49f4f5774045e51e8fecc75717c4d6454",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3c5a921f0de917f9fc3d51b2970106d3abfc6b8f",
+                "reference": "3c5a921f0de917f9fc3d51b2970106d3abfc6b8f",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -95,7 +95,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-07-02T18:12:35+00:00"
+            "time": "2020-07-09T18:13:42+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -778,12 +778,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "0f445599b3a2ccbeba4a83cf34a8070f56326909"
+                "reference": "579fd9ac93580800330695c5d38ca6decb6601ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/0f445599b3a2ccbeba4a83cf34a8070f56326909",
-                "reference": "0f445599b3a2ccbeba4a83cf34a8070f56326909",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/579fd9ac93580800330695c5d38ca6decb6601ac",
+                "reference": "579fd9ac93580800330695c5d38ca6decb6601ac",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -810,7 +810,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2020-05-28T16:57:05+00:00"
+            "time": "2020-07-14T18:57:12+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -1599,16 +1599,16 @@
         },
         {
             "name": "johngrogg/ics-parser",
-            "version": "v2.1.19",
+            "version": "v2.1.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/u01jmg3/ics-parser.git",
-                "reference": "2fe53ed673c145dcc1838bf0e5b76d4bf565e0ce"
+                "reference": "ccde97a43ada0e3ede84ffc830d70a16b64ae44a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/2fe53ed673c145dcc1838bf0e5b76d4bf565e0ce",
-                "reference": "2fe53ed673c145dcc1838bf0e5b76d4bf565e0ce",
+                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/ccde97a43ada0e3ede84ffc830d70a16b64ae44a",
+                "reference": "ccde97a43ada0e3ede84ffc830d70a16b64ae44a",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1657,7 +1657,13 @@
                 "ics-parser",
                 "ifb"
             ],
-            "time": "2020-05-19T19:58:40+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/u01jmg3",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-07-13T11:20:10+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -2448,16 +2454,16 @@
         },
         {
             "name": "masterminds/html5",
-            "version": "2.7.2",
+            "version": "2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Masterminds/html5-php.git",
-                "reference": "6c5dea561d99641f66caed6a6d3b8827a8052205"
+                "reference": "aad73dbfefd71d46072138109ce1288d96c329cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/6c5dea561d99641f66caed6a6d3b8827a8052205",
-                "reference": "6c5dea561d99641f66caed6a6d3b8827a8052205",
+                "url": "https://api.github.com/repos/Masterminds/html5-php/zipball/aad73dbfefd71d46072138109ce1288d96c329cc",
+                "reference": "aad73dbfefd71d46072138109ce1288d96c329cc",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2517,7 +2523,7 @@
                 "serializer",
                 "xml"
             ],
-            "time": "2020-07-01T09:47:09+00:00"
+            "time": "2020-07-05T07:53:37+00:00"
         },
         {
             "name": "michelf/php-smartypants",
@@ -3621,16 +3627,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.39",
+            "version": "3.1.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "abc1a1dcef798567551c5054e17bcb06c3f2bbb4"
+                "reference": "1b69f1ff241181a110dd805fa56388bf4938e888"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/abc1a1dcef798567551c5054e17bcb06c3f2bbb4",
-                "reference": "abc1a1dcef798567551c5054e17bcb06c3f2bbb4",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/1b69f1ff241181a110dd805fa56388bf4938e888",
+                "reference": "1b69f1ff241181a110dd805fa56388bf4938e888",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3640,8 +3646,12 @@
                 ]
             },
             "require": {
-                "craftcms/cms": "^3.0.0",
                 "league/csv": "^8.2"
+            },
+            "require-dev": {
+                "codeception/codeception": "^3.0",
+                "craftcms/cms": "^3.2.0",
+                "vlucas/phpdotenv": "^3.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -3680,20 +3690,20 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2020-06-08T13:48:59+00:00"
+            "time": "2020-07-05T19:12:10+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.9",
+            "version": "3.3.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "8fb72d88ac450c92f36823a36b57c2fedd90e332"
+                "reference": "e495cacb7af641e9fddc12481f813fbc982c3e11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8fb72d88ac450c92f36823a36b57c2fedd90e332",
-                "reference": "8fb72d88ac450c92f36823a36b57c2fedd90e332",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/e495cacb7af641e9fddc12481f813fbc982c3e11",
+                "reference": "e495cacb7af641e9fddc12481f813fbc982c3e11",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3764,7 +3774,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-07-03T17:23:24+00:00"
+            "time": "2020-07-15T01:10:32+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -5006,16 +5016,16 @@
         },
         {
             "name": "seld/phar-utils",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/phar-utils.git",
-                "reference": "8800503d56b9867d43d9c303b9cbcc26016e82f0"
+                "reference": "8674b1d84ffb47cc59a101f5d5a3b61e87d23796"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/8800503d56b9867d43d9c303b9cbcc26016e82f0",
-                "reference": "8800503d56b9867d43d9c303b9cbcc26016e82f0",
+                "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/8674b1d84ffb47cc59a101f5d5a3b61e87d23796",
+                "reference": "8674b1d84ffb47cc59a101f5d5a3b61e87d23796",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5052,7 +5062,7 @@
             "keywords": [
                 "phar"
             ],
-            "time": "2020-02-14T15:25:33+00:00"
+            "time": "2020-07-07T18:42:57+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
@@ -5930,16 +5940,16 @@
         },
         {
             "name": "symfony/polyfill-php72",
-            "version": "v1.17.0",
+            "version": "v1.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php72.git",
-                "reference": "f048e612a3905f34931127360bdd2def19a5e582"
+                "reference": "3d9c70ff1b9f6bb618f9954b2f7f760220c2b38a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/f048e612a3905f34931127360bdd2def19a5e582",
-                "reference": "f048e612a3905f34931127360bdd2def19a5e582",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/3d9c70ff1b9f6bb618f9954b2f7f760220c2b38a",
+                "reference": "3d9c70ff1b9f6bb618f9954b2f7f760220c2b38a",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -5955,6 +5965,10 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.17-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
@@ -6001,7 +6015,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-12T16:47:27+00:00"
+            "time": "2020-06-06T08:46:27+00:00"
         },
         {
             "name": "symfony/process",
@@ -6448,16 +6462,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.6.5",
+            "version": "v2.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "2e977311ffb17b2f82028a9c36824647789c6365"
+                "reference": "e1d57f62db3db00d9139078cbedf262280701479"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/2e977311ffb17b2f82028a9c36824647789c6365",
-                "reference": "2e977311ffb17b2f82028a9c36824647789c6365",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/e1d57f62db3db00d9139078cbedf262280701479",
+                "reference": "e1d57f62db3db00d9139078cbedf262280701479",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6468,7 +6482,7 @@
             },
             "require": {
                 "php": "^5.3.9 || ^7.0 || ^8.0",
-                "symfony/polyfill-ctype": "^1.16"
+                "symfony/polyfill-ctype": "^1.17"
             },
             "require-dev": {
                 "ext-filter": "*",
@@ -6522,7 +6536,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-02T14:06:52+00:00"
+            "time": "2020-07-14T17:54:18+00:00"
         },
         {
             "name": "voku/anti-xss",
@@ -7150,16 +7164,16 @@
         },
         {
             "name": "webmozart/assert",
-            "version": "1.9.0",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webmozart/assert.git",
-                "reference": "9dc4f203e36f2b486149058bade43c851dd97451"
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/9dc4f203e36f2b486149058bade43c851dd97451",
-                "reference": "9dc4f203e36f2b486149058bade43c851dd97451",
+                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -7169,7 +7183,7 @@
                 ]
             },
             "require": {
-                "php": "^5.3.3 || ^7.0",
+                "php": "^5.3.3 || ^7.0 || ^8.0",
                 "symfony/polyfill-ctype": "^1.8"
             },
             "conflict": {
@@ -7201,7 +7215,7 @@
                 "check",
                 "validate"
             ],
-            "time": "2020-06-16T10:16:42+00:00"
+            "time": "2020-07-08T17:02:28+00:00"
         },
         {
             "name": "webonyx/graphql-php",
