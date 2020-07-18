@@ -31,14 +31,14 @@ const main = async() => {
     // Create our vue instance
     const vm = new Vue({
         el: '#page-header',
-        mixins: [VueClickaway],
+        delimiters: ['${', '}'],
         components: {
 //            Snowf,
         },
-        delimiters: ['${', '}'],
-        data: {
+        mixins: [VueClickaway],
+        data: () => ({
             menuOpen: false,
-        },
+        }),
         methods: {
             // Pre-render pages when the user mouses over a link
             // Usage: <a href="" @mouseover="prerenderLink">
