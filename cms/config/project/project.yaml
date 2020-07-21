@@ -1,0 +1,189 @@
+dateModified: 1595374346
+email:
+  fromEmail: andrew@nystudio107.com
+  fromName: devMode
+  transportType: craft\mail\transportadapters\Sendmail
+graphql:
+  publicToken:
+    enabled: false
+    expiryDate: null
+plugins:
+  aws-s3:
+    edition: standard
+    enabled: true
+    schemaVersion: '1.2'
+  disqus:
+    enabled: true
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings:
+      customLogin: false
+      disqusPublicKey: $DISQUS_PUBLIC_KEY
+      disqusSecretKey: $DISQUS_SECRET_KEY
+      disqusShortname: devmode-fm
+      loginButton: ''
+      loginHeight: 400
+      loginIcon: ''
+      loginLogoutUrl: ''
+      loginName: ''
+      loginUrl: ''
+      loginWidth: 800
+      useSSO: false
+  fastcgi-cache-bust:
+    enabled: true
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings:
+      cachePath: /var/run/nginx-cache/devmode
+  icalendar:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  image-optimize:
+    enabled: true
+    licenseKey: $PLUGIN_IMAGEOPTIMIZE_LICENSE
+    schemaVersion: 1.0.0
+    settings:
+      allowUpScaledImageVariants: false
+      assetVolumeSubFolders: true
+      autoSharpenScaledImages: true
+      createColorPalette: true
+      createPlaceholderSilhouettes: true
+      imageTransformTypeSettings:
+        __assoc__:
+          -
+            - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
+            -
+              __assoc__:
+                -
+                  - domain
+                  - ''
+                -
+                  - apiKey
+                  - ''
+                -
+                  - securityToken
+                  - ''
+          -
+            - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - $SERVERLESS_SHARP_CLOUDFRONT_URL
+          -
+            - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
+            -
+              __assoc__:
+                -
+                  - baseUrl
+                  - ''
+                -
+                  - securityKey
+                  - ''
+                -
+                  - includeBucketPrefix
+                  - ''
+      lowerQualityRetinaImageVariants: false
+      transformClass: nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
+  minify:
+    enabled: true
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  retour:
+    enabled: true
+    licenseKey: $PLUGIN_RETOUR_LICENSE
+    schemaVersion: 3.0.9
+    settings: null
+  seomatic:
+    enabled: true
+    licenseKey: $PLUGIN_SEOMATIC_LICENSE
+    schemaVersion: 3.0.9
+    settings:
+      addHrefLang: true
+      addXDefaultHrefLang: true
+      cpTitlePrefix: '⚙ '
+      devModeCpTitlePrefix: '🚧⚙ '
+      devModeTitlePrefix: '[devMode] '
+      displayAnalysisSidebar: true
+      displayPreviewSidebar: true
+      environment: live
+      generatorEnabled: true
+      headersEnabled: true
+      maxDescriptionLength: 300
+      maxTitleLength: 120
+      pluginName: SEOmatic
+      regenerateSitemapsAutomatically: true
+      renderEnabled: true
+      separatorChar: //
+      sidebarDisplayPreviewTypes:
+        - google
+        - twitter
+        - facebook
+      siteGroupsSeparate: '1'
+      sitemapsEnabled: true
+  transcoder:
+    enabled: true
+    licenseKey: $PLUGIN_TRANSCODER_LICENSE
+    schemaVersion: 1.0.0
+    settings: null
+  twigpack:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  typogrify:
+    enabled: true
+    licenseKey: null
+    schemaVersion: 1.0.0
+    settings: null
+  webperf:
+    enabled: true
+    licenseKey: $PLUGIN_WEBPERF_LICENSE
+    schemaVersion: 1.0.1
+    settings:
+      automaticallyTrimDataSamples: true
+      automaticallyTrimErrorSamples: true
+      connectThreshold: 0.5
+      craftDbMsThreshold: 2
+      craftOtherMsThreshold: 2
+      craftTotalMsThreshold: 2
+      craftTwigMsThreshold: 2
+      dashboardAverageColor: '#ffff00'
+      dashboardFastColor: '#00c800'
+      dashboardSlowColor: '#c80000'
+      dataSamplesStoredLimit: 100000
+      displaySidebar: true
+      dnsThreshold: 0.5
+      domInteractiveThreshold: 5
+      errorSamplesStoredLimit: 1000
+      excludePatterns:
+        -
+          pattern: '/webperf/.*'
+        -
+          pattern: '/cpresources/.*'
+        -
+          pattern: /rss
+      filterBotUserAgents: true
+      firstByteThreshold: 2
+      firstContentfulPaintThreshold: 5
+      firstPaintThreshold: 5
+      includeBeacon: true
+      includeCraftProfiling: true
+      includeCraftWarnings: false
+      pageLoadThreshold: 10
+      pluginName: Webperf
+      rateLimitMs: 500
+      staticCachedSite: false
+      trimOutlierDataSamples: true
+      webpageTestApiKey: ''
+system:
+  edition: pro
+  live: true
+  name: devMode.fm
+  schemaVersion: 3.5.12
+  timeZone: America/New_York

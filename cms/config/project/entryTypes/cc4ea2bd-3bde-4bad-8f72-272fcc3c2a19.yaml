@@ -1,0 +1,21 @@
+fieldLayouts:
+  3e41c36a-b6fb-45a8-bef5-a95b1cb9104b:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: b5eb01ec-a6ed-4a08-9438-64e7138b08f0
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: About
+        sortOrder: 1
+handle: about
+hasTitleField: true
+name: About
+section: 486a0853-47b2-4509-97ad-43fe3ec42074
+sortOrder: 1
+titleFormat: ''

@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: guests
+name: Guests
+propagationMethod: all
+siteSettings:
+  2a4761bd-2461-4db9-96a0-4f52b8cef633:
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+type: channel

@@ -1,0 +1,7 @@
+handle: calendar
+hasTitleField: true
+name: Calendar
+section: a1eaefb7-b32a-436d-a218-3fc7be02c917
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleLabel: Title

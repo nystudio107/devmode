@@ -1,0 +1,36 @@
+contentColumnType: text
+fieldGroup: 12aa936c-807f-4ec3-81dc-69283a344171
+handle: profileOptimizedImages
+instructions: ''
+name: 'Profile Optimized Images'
+searchable: true
+settings:
+  variants:
+    -
+      __assoc__:
+        -
+          - width
+          - '100'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '1'
+        -
+          - aspectRatioY
+          - '1'
+        -
+          - retinaSizes
+          -
+            - '1'
+            - '2'
+        -
+          - quality
+          - '82'
+        -
+          - format
+          - jpg
+translationKeyFormat: null
+translationMethod: none
+type: nystudio107\imageoptimize\fields\OptimizedImages

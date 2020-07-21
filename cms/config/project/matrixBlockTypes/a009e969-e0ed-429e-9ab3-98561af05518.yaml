@@ -1,0 +1,108 @@
+field: b5eb01ec-a6ed-4a08-9438-64e7138b08f0
+fieldLayouts:
+  529896ec-dad3-4d01-8366-e2c4f7b33144:
+    tabs:
+      -
+        fields:
+          2bb6f342-1735-446e-b9fe-754f94dac82f:
+            required: false
+            sortOrder: 2
+          98dbc824-8c89-4138-9b0f-011a96875a7a:
+            required: false
+            sortOrder: 3
+          e0264ea5-7834-42de-9f8f-c611149453d0:
+            required: false
+            sortOrder: 1
+        name: Content
+        sortOrder: 1
+fields:
+  2bb6f342-1735-446e-b9fe-754f94dac82f:
+    contentColumnType: text
+    fieldGroup: null
+    handle: answer
+    instructions: ''
+    name: Answer
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Standard.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  98dbc824-8c89-4138-9b0f-011a96875a7a:
+    contentColumnType: text
+    fieldGroup: null
+    handle: links
+    instructions: ''
+    name: Links
+    searchable: true
+    settings:
+      addRowLabel: 'Add a row'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Link Text'
+                -
+                  - handle
+                  - linkText
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+          -
+            - col2
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Link Url'
+                -
+                  - handle
+                  - linkUrl
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+      maxRows: ''
+      minRows: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+  e0264ea5-7834-42de-9f8f-c611149453d0:
+    contentColumnType: text
+    fieldGroup: null
+    handle: question
+    instructions: ''
+    name: Question
+    searchable: true
+    settings:
+      charLimit: ''
+      code: ''
+      columnType: text
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: faqs
+name: FAQs
+sortOrder: 1

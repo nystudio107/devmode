@@ -1,0 +1,26 @@
+contentColumnType: string
+fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9
+handle: episodeMedia
+instructions: ''
+name: 'Episode Media'
+searchable: true
+settings:
+  allowedKinds:
+    - audio
+  defaultUploadLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: ''
+  singleUploadLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: ''
+  validateRelatedElements: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

@@ -1,0 +1,29 @@
+fieldLayouts:
+  61fc3656-f394-4474-924b-f4335699573c:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: Title
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 18d7721b-780b-4a44-976a-716c3df0bb7a
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: e1087165-5769-428d-bf14-c98e6011cf5e
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 4d90d0e7-b705-4035-b396-2f82ce5bb871
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Errors
+        sortOrder: 1
+handle: genericError
+hasTitleField: true
+name: 'Generic Error'
+section: 519413e8-a432-4cfe-98c5-5f81e9519f2a
+sortOrder: 1
+titleFormat: null

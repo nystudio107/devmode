@@ -1,0 +1,8 @@
+baseUrl: 'https://devmode.fm/'
+handle: default
+hasUrls: true
+language: en-US
+name: devMode
+primary: true
+siteGroup: 34348a98-83b9-4f2d-8e14-0437ec964a15
+sortOrder: 1

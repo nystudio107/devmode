@@ -1,0 +1,107 @@
+contentColumnType: text
+fieldGroup: 19e4e8ba-93c2-4a86-8c57-9b54d46e0981
+handle: optimizedImages
+instructions: ''
+name: 'Optimized Images'
+searchable: true
+settings:
+  variants:
+    -
+      __assoc__:
+        -
+          - width
+          - '1200'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '1'
+        -
+          - aspectRatioY
+          - '1'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '82'
+        -
+          - format
+          - jpg
+    -
+      __assoc__:
+        -
+          - width
+          - '992'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '1'
+        -
+          - aspectRatioY
+          - '1'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '82'
+        -
+          - format
+          - jpg
+    -
+      __assoc__:
+        -
+          - width
+          - '768'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '1'
+        -
+          - aspectRatioY
+          - '1'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '60'
+        -
+          - format
+          - jpg
+    -
+      __assoc__:
+        -
+          - width
+          - '576'
+        -
+          - useAspectRatio
+          - '1'
+        -
+          - aspectRatioX
+          - '1'
+        -
+          - aspectRatioY
+          - '1'
+        -
+          - retinaSizes
+          -
+            - '1'
+        -
+          - quality
+          - '60'
+        -
+          - format
+          - jpg
+translationKeyFormat: null
+translationMethod: none
+type: nystudio107\imageoptimize\fields\OptimizedImages

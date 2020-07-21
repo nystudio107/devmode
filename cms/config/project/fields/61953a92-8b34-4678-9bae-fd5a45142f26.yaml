@@ -1,0 +1,17 @@
+contentColumnType: string
+fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9
+handle: episodeTags
+instructions: ''
+name: 'Episode Tags'
+searchable: true
+settings:
+  limit: null
+  localizeRelations: false
+  selectionLabel: ''
+  source: 'taggroup:fc24a736-c435-4d8a-aeb3-6105afce1d91'
+  sources: '*'
+  targetSiteId: null
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Tags

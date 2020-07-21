@@ -1,0 +1,45 @@
+contentColumnType: text
+fieldGroup: 0c790066-43c5-4b67-b6d9-8492fa40cf71
+handle: showTechnologiesLinks
+instructions: ''
+name: 'Show Technologies Links'
+searchable: true
+settings:
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Link Name'
+            -
+              - handle
+              - linkName
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Link URL'
+            -
+              - handle
+              - linkUrl
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

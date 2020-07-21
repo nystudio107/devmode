@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9
+handle: episodeSummary
+instructions: ''
+name: 'Episode Summary'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '6'
+  multiline: '1'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

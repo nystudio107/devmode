@@ -1,0 +1,17 @@
+contentColumnType: string
+fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9
+handle: episodeHosts
+instructions: ''
+name: 'Episode Hosts'
+searchable: true
+settings:
+  limit: ''
+  localizeRelations: false
+  selectionLabel: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Users

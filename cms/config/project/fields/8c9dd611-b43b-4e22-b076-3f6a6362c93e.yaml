@@ -1,0 +1,45 @@
+contentColumnType: text
+fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9
+handle: episodeReferenceLinks
+instructions: ''
+name: 'Episode Reference Links'
+searchable: true
+settings:
+  columnType: text
+  columns:
+    __assoc__:
+      -
+        - col1
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Link Name'
+            -
+              - handle
+              - linkName
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+      -
+        - col2
+        -
+          __assoc__:
+            -
+              - heading
+              - 'Link URL'
+            -
+              - handle
+              - linkUrl
+            -
+              - width
+              - ''
+            -
+              - type
+              - singleline
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Table

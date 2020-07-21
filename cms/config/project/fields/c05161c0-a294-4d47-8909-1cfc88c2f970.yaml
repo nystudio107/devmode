@@ -1,0 +1,15 @@
+contentColumnType: text
+fieldGroup: 12aa936c-807f-4ec3-81dc-69283a344171
+handle: profileCompany
+instructions: ''
+name: 'Profile Company'
+searchable: true
+settings:
+  charLimit: ''
+  columnType: text
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
