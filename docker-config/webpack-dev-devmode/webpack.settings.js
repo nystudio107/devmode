@@ -34,7 +34,8 @@ module.exports = {
     entries: {
         "app": "app.ts",
         "episodes": "modules/episodes.js",
-        "player": "modules/player.js"
+        "player": "modules/player.js",
+        "lazysizes-wrapper": "utils/lazysizes-wrapper.ts"
     },
     babelLoaderConfig: {
         exclude: [
@@ -145,6 +146,10 @@ module.exports = {
         {
             url: "https://www.google-analytics.com/analytics.js",
             filepath: "js/analytics.js"
+        },
+        {
+            url: "https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js",
+            filepath: "js/lazysizes.js"
         }
     ],
     createSymlinkConfig: [

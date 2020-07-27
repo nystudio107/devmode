@@ -10,12 +10,18 @@
                             <div class="circle-image-cropper">
                                 <picture>
                                     <source data-srcset="{{ hostPhoto.profileOptimizedImages.srcsetWebP() }}"
-                                            data-sizes="100px"
-                                            type="image/webp" />
+                                            sizes="100px"
+                                            type="image/webp"
+                                    />
+                                    <source data-srcset="{{ hostPhoto.profileOptimizedImages.srcset() }}"
+                                            sizes="100px"
+                                    />
                                     <img class="circle-image lazyload"
                                          src="{{ hostPhoto.profileOptimizedImages.placeholderSilhouette() }}"
-                                         data-srcset="{{ hostPhoto.profileOptimizedImages.srcset() }}"
-                                         data-sizes="100px" />
+                                         height="100"
+                                         width="100"
+                                         loading="lazy"
+                                    />
                                 </picture>
                             </div>
                         </div>

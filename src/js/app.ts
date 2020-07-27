@@ -24,9 +24,6 @@ const main = async() => {
     // Async load the vue module
     const { mixin: VueClickaway } = await import(/* webpackChunkName: "vueclickaway" */ 'vue-clickaway');
     const { default: VueTyper } = await import(/* webpackChunkName: "vuetyper" */ 'vue-typer');
-    const LazySizes = await import(/* webpackChunkName: "lazysizes" */ 'lazysizes');
-    const LazySizesBgSet = await import(/* webpackChunkName: "lazysizes" */ 'lazysizes/plugins/bgset/ls.bgset.js');
-    LazySizes.init();
     Vue.use(VueTyper);
     // Create our vue instance
     const vm = new Vue({
