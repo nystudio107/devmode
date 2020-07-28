@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.147.2",
+            "version": "3.147.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c58688f53c730b74cec1b6cfee8d9ed5bb40d946"
+                "reference": "a487671fc722b839c647d7dc4907bfb485f956db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c58688f53c730b74cec1b6cfee8d9ed5bb40d946",
-                "reference": "c58688f53c730b74cec1b6cfee8d9ed5bb40d946",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a487671fc722b839c647d7dc4907bfb485f956db",
+                "reference": "a487671fc722b839c647d7dc4907bfb485f956db",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -95,7 +95,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-07-21T18:11:40+00:00"
+            "time": "2020-07-27T18:13:59+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -544,16 +544,16 @@
         },
         {
             "name": "craftcms/aws-s3",
-            "version": "1.2.8",
+            "version": "1.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/aws-s3.git",
-                "reference": "63f326545ef87ebb4bec3954aec06057500f8933"
+                "reference": "7581c658b17212758089c1e2e6c673936b5b2274"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/aws-s3/zipball/63f326545ef87ebb4bec3954aec06057500f8933",
-                "reference": "63f326545ef87ebb4bec3954aec06057500f8933",
+                "url": "https://api.github.com/repos/craftcms/aws-s3/zipball/7581c658b17212758089c1e2e6c673936b5b2274",
+                "reference": "7581c658b17212758089c1e2e6c673936b5b2274",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -596,20 +596,20 @@
                 "s3",
                 "yii2"
             ],
-            "time": "2020-05-18T07:41:31+00:00"
+            "time": "2020-07-23T07:56:51+00:00"
         },
         {
             "name": "craftcms/cms",
-            "version": "3.5.0-RC1.1",
+            "version": "3.5.0-RC3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "a465272af54b83a88d64d75454d28a1ddb574171"
+                "reference": "040bdf846a6923011671884c8671dbafb021b1f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/a465272af54b83a88d64d75454d28a1ddb574171",
-                "reference": "a465272af54b83a88d64d75454d28a1ddb574171",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/040bdf846a6923011671884c8671dbafb021b1f3",
+                "reference": "040bdf846a6923011671884c8671dbafb021b1f3",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -699,7 +699,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2020-07-21T21:48:18+00:00"
+            "time": "2020-07-24T14:48:57+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2294,16 +2294,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.69",
+            "version": "1.0.70",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "7106f78428a344bc4f643c233a94e48795f10967"
+                "reference": "585824702f534f8d3cf7fab7225e8466cc4b7493"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7106f78428a344bc4f643c233a94e48795f10967",
-                "reference": "7106f78428a344bc4f643c233a94e48795f10967",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/585824702f534f8d3cf7fab7225e8466cc4b7493",
+                "reference": "585824702f534f8d3cf7fab7225e8466cc4b7493",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2320,7 +2320,7 @@
                 "league/flysystem-sftp": "<1.0.6"
             },
             "require-dev": {
-                "phpspec/phpspec": "^3.4",
+                "phpspec/phpspec": "^3.4 || ^4.0 || ^5.0 || ^6.0",
                 "phpunit/phpunit": "^5.7.26"
             },
             "suggest": {
@@ -2386,7 +2386,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2020-05-18T15:13:39+00:00"
+            "time": "2020-07-26T07:20:36+00:00"
         },
         {
             "name": "league/flysystem-aws-s3-v3",
@@ -2748,16 +2748,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.25.4",
+            "version": "1.25.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "3022efff205e2448b560c833c6fbbf91c3139168"
+                "reference": "1817faadd1846cd08be9a49e905dc68823bc38c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/3022efff205e2448b560c833c6fbbf91c3139168",
-                "reference": "3022efff205e2448b560c833c6fbbf91c3139168",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1817faadd1846cd08be9a49e905dc68823bc38c0",
+                "reference": "1817faadd1846cd08be9a49e905dc68823bc38c0",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -2837,7 +2837,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-22T07:31:27+00:00"
+            "time": "2020-07-23T08:35:51+00:00"
         },
         {
             "name": "mrclay/jsmin-php",
@@ -6767,16 +6767,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.5.2",
+            "version": "1.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "618631dc601d8eb6ea0a9fbf654ec82f066c4e97"
+                "reference": "25bcbf01678930251fd572891447d9e318a6e2b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/618631dc601d8eb6ea0a9fbf654ec82f066c4e97",
-                "reference": "618631dc601d8eb6ea0a9fbf654ec82f066c4e97",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/25bcbf01678930251fd572891447d9e318a6e2b8",
+                "reference": "25bcbf01678930251fd572891447d9e318a6e2b8",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6827,6 +6827,10 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://opencollective.com/portable-ascii",
+                    "type": "open_collective"
+                },
+                {
                     "url": "https://www.patreon.com/voku",
                     "type": "patreon"
                 },
@@ -6835,7 +6839,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-15T23:49:30+00:00"
+            "time": "2020-07-22T23:32:04+00:00"
         },
         {
             "name": "voku/portable-utf8",
