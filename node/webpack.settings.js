@@ -10,17 +10,17 @@ module.exports = {
     copyright: "Example Company, Inc.",
     paths: {
         src: {
-            base: "../../src/",
-            css: "../../src/css/",
-            js: "../../src/js/"
+            base: "../src/",
+            css: "../src/css/",
+            js: "../src/js/"
         },
         dist: {
-            base: "../../cms/web/dist/",
+            base: "../cms/web/dist/",
             clean: [
                 '**/*',
             ]
         },
-        templates: "../../cms/templates/"
+        templates: "../cms/templates/"
     },
     urls: {
         live: "https://devMode.fm/",
@@ -44,12 +44,12 @@ module.exports = {
      },
     copyWebpackConfig: [
         {
-            from: "../../src/js/workbox-catch-handler.js",
+            from: "../src/js/workbox-catch-handler.js",
             to: "js/[name].[ext]"
         }
     ],
     criticalCssConfig: {
-        base: "../../cms/web/dist/criticalcss/",
+        base: "../cms/web/dist/criticalcss/",
         suffix: "_critical.min.css",
         criticalHeight: 1200,
         criticalWidth: 1200,
@@ -57,63 +57,63 @@ module.exports = {
         ampCriticalHeight: 19200,
         ampCriticalWidth: 600,
         pages: [
-                {
-                    url: "",
-                    template: "index"
-                },
-                {
-                    url: "",
-                    template: "amp_index"
-                },
-                {
-                    url: "about",
-                    template: "about/index"
-                },
-                {
-                    url: "about",
-                    template: "about/amp_index"
-                },
-                {
-                    url: "calendar",
-                    template: "calendar/index"
-                },
-                {
-                    url: "calendar",
-                    template: "calendar/amp_index"
-                },
-                {
-                    url: "episodes",
-                    template: "episodes/index"
-                },
-                {
-                    url: "episodes",
-                    template: "episodes/amp_index"
-                },
-                {
-                    url: "episodes/webpack-inside-out-with-sean-larkin",
-                    template: "episodes/_entry"
-                },
-                {
-                    url: "episodes/webpack-inside-out-with-sean-larkin",
-                    template: "episodes/_amp_entry"
-                },
-                {
-                    url: "errors/offline",
-                    template: "errors/offline"
-                },
-                {
-                    url: "errors/error",
-                    template: "errors/error"
-                },
-                {
-                    url: "errors/503",
-                    template: "errors/503"
-                },
-                {
-                    url: "errors/404",
-                    template: "errors/404"
-                }
-            ]
+            {
+                url: "",
+                template: "index"
+            },
+            {
+                url: "",
+                template: "amp_index"
+            },
+            {
+                url: "about",
+                template: "about/index"
+            },
+            {
+                url: "about",
+                template: "about/amp_index"
+            },
+            {
+                url: "calendar",
+                template: "calendar/index"
+            },
+            {
+                url: "calendar",
+                template: "calendar/amp_index"
+            },
+            {
+                url: "episodes",
+                template: "episodes/index"
+            },
+            {
+                url: "episodes",
+                template: "episodes/amp_index"
+            },
+            {
+                url: "episodes/webpack-inside-out-with-sean-larkin",
+                template: "episodes/_entry"
+            },
+            {
+                url: "episodes/webpack-inside-out-with-sean-larkin",
+                template: "episodes/_amp_entry"
+            },
+            {
+                url: "errors/offline",
+                template: "errors/offline"
+            },
+            {
+                url: "errors/error",
+                template: "errors/error"
+            },
+            {
+                url: "errors/503",
+                template: "errors/503"
+            },
+            {
+                url: "errors/404",
+                template: "errors/404"
+            }
+        ]
     },
     devServerConfig: {
         public: () => process.env.DEVSERVER_PUBLIC || "http://localhost:8080",
@@ -127,12 +127,12 @@ module.exports = {
     },
     purgeCssConfig: {
         paths: [
-            "../../cms/templates/**/*.{twig,html}",
-            "../../src/vue/**/*.{vue,html}",
+            "../cms/templates/**/*.{twig,html}",
+            "../src/vue/**/*.{vue,html}",
             "./node_modules/vuetable-2/src/components/**/*.{vue,html}",
         ],
         whitelist: [
-            "../../src/css/components/**/*.{css}"
+            "../src/css/components/**/*.{css}"
         ],
         whitelistPatterns: [],
         extensions: [
@@ -160,7 +160,7 @@ module.exports = {
         ],
     },
     webappConfig: {
-        logo: "../../src/img/favicon-src.png",
+        logo: "../src/img/favicon-src.png",
         prefix: "img/favicons/"
     },
     workboxConfig: {
@@ -174,7 +174,7 @@ module.exports = {
             /\.map$/,
             /^manifest.*\\.js(?:on)?$/,
         ],
-        globDirectory: "../../web/",
+        globDirectory: "../web/",
         globPatterns: [
             "offline.html",
             "offline.svg"

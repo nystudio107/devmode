@@ -2,7 +2,7 @@
   "compilerOptions": {
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "docker-config/webpack-dev-devmode/node_modules",
+    "baseUrl": "node/node_modules",
     "declaration": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
@@ -11,10 +11,10 @@
     "moduleResolution": "node",
     "noEmit": true,
     "noImplicitAny": true,
-    "outDir": "./cms/web/dist/",
+    "outDir": "../../cms/web/dist/",
     "paths": {
       "@/*": [
-        "./src/*"
+        "../../src/*"
       ]
     },
     "resolveJsonModule": true,
@@ -26,12 +26,12 @@
     "strictNullChecks": true,
     "target": "esnext",
     "typeRoots": [
-      "docker-config/webpack-dev-devmode/node_modules/@types"
+      "node_modules/@types"
     ]
   },
   "include": [
-    "./src/**/*.ts",
-    "./src/**/*.vue"
+    "../src/**/*.ts",
+    "../src/**/*.vue"
   ],
   "exclude": [
     "node_modules"
