@@ -4,8 +4,8 @@ services:
   # nginx - web server
   nginx:
     build:
-      context: .
-      dockerfile: ./docker-config/nginx/Dockerfile
+      context: ./docker-config/nginx
+      dockerfile: ./Dockerfile
     env_file: &env
       - ./cms/.env
     links:
