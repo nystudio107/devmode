@@ -11,10 +11,10 @@
     "moduleResolution": "node",
     "noEmit": true,
     "noImplicitAny": true,
-    "outDir": "../../cms/web/dist/",
+    "outDir": "./cms/web/dist/",
     "paths": {
       "@/*": [
-        "../../src/*"
+        "./src/*"
       ]
     },
     "resolveJsonModule": true,
@@ -26,14 +26,14 @@
     "strictNullChecks": true,
     "target": "esnext",
     "typeRoots": [
-      "node_modules/@types"
+      "node/node_modules/@types"
     ]
   },
   "include": [
-    "../src/**/*.ts",
-    "../src/**/*.vue"
+    "./src/**/*.ts",
+    "./src/**/*.vue"
   ],
   "exclude": [
-    "node_modules"
+    "./node_modules"
   ]
 }

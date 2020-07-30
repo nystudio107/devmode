@@ -154,7 +154,7 @@ const baseConfig = {
         new VueLoaderPlugin(),
         new ForkTsCheckerWebpackPlugin({
             typescript: {
-                configFile: './tsconfig.json',
+                configFile: '../tsconfig.json',
                 extensions: {
                     vue: true
                 }
