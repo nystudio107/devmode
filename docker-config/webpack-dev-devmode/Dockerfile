@@ -1,6 +1,6 @@
 FROM nystudio107/webpack-dev-base
 
-WORKDIR /var/www/project/node/
+WORKDIR /var/www/project/buildchain/
 
 # Run our webpack build in debug mode
 
