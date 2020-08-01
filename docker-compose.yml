@@ -68,6 +68,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
+      - ./tsconfig.json:/var/www/project/tsconfig.json:cached
       - ./node:/var/www/project/node:cached
       - ./node/node_modules:/var/www/project/node/node_modules:delegated
       - ./cms/web/dist:/var/www/project/cms/web/dist:delegated
