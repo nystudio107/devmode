@@ -1,4 +1,4 @@
-FROM nystudio107/webpack-dev-base
+FROM nystudio107/node-dev-base
 
 WORKDIR /var/www/project/buildchain/
 

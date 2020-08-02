@@ -18,7 +18,7 @@ services:
   # php - personal home page
   php:
     build:
-      context: ./docker-config/php-dev-devmode
+      context: ./docker-config/php-dev-craft
       dockerfile: ./Dockerfile
     depends_on:
       - "postgres"
@@ -61,7 +61,7 @@ services:
   # webpack - frontend build system
   webpack:
     build:
-      context: ./docker-config/webpack-dev-devmode
+      context: ./docker-config/node-dev-webpack
       dockerfile: ./Dockerfile
     env_file:
       *env
