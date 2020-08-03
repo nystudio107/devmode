@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.147.6",
+            "version": "3.147.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a487671fc722b839c647d7dc4907bfb485f956db"
+                "reference": "b259aad35203d262c02be9b6353597fd62484374"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a487671fc722b839c647d7dc4907bfb485f956db",
-                "reference": "a487671fc722b839c647d7dc4907bfb485f956db",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b259aad35203d262c02be9b6353597fd62484374",
+                "reference": "b259aad35203d262c02be9b6353597fd62484374",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -95,7 +95,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-07-27T18:13:59+00:00"
+            "time": "2020-07-31T18:32:20+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -600,16 +600,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.5.0-RC3",
+            "version": "3.5.0-RC6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "040bdf846a6923011671884c8671dbafb021b1f3"
+                "reference": "ee1ba5d2316fc56a356ce54bd80b1d18709ee57c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/040bdf846a6923011671884c8671dbafb021b1f3",
-                "reference": "040bdf846a6923011671884c8671dbafb021b1f3",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/ee1ba5d2316fc56a356ce54bd80b1d18709ee57c",
+                "reference": "ee1ba5d2316fc56a356ce54bd80b1d18709ee57c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -699,7 +699,7 @@
                 "craftcms",
                 "yii2"
             ],
-            "time": "2020-07-24T14:48:57+00:00"
+            "time": "2020-08-02T00:10:54+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -3023,16 +3023,16 @@
         },
         {
             "name": "mtdowling/jmespath.php",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jmespath/jmespath.php.git",
-                "reference": "52168cb9472de06979613d365c7f1ab8798be895"
+                "reference": "42dae2cbd13154083ca6d70099692fef8ca84bfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/52168cb9472de06979613d365c7f1ab8798be895",
-                "reference": "52168cb9472de06979613d365c7f1ab8798be895",
+                "url": "https://api.github.com/repos/jmespath/jmespath.php/zipball/42dae2cbd13154083ca6d70099692fef8ca84bfb",
+                "reference": "42dae2cbd13154083ca6d70099692fef8ca84bfb",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3042,12 +3042,12 @@
                 ]
             },
             "require": {
-                "php": ">=5.4.0",
-                "symfony/polyfill-mbstring": "^1.4"
+                "php": "^5.4 || ^7.0 || ^8.0",
+                "symfony/polyfill-mbstring": "^1.17"
             },
             "require-dev": {
-                "composer/xdebug-handler": "^1.2",
-                "phpunit/phpunit": "^4.8.36|^7.5.15"
+                "composer/xdebug-handler": "^1.4",
+                "phpunit/phpunit": "^4.8.36 || ^7.5.15"
             },
             "bin": [
                 "bin/jp.php"
@@ -3055,7 +3055,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -3082,7 +3082,7 @@
                 "json",
                 "jsonpath"
             ],
-            "time": "2019-12-30T18:03:34+00:00"
+            "time": "2020-07-31T21:01:56+00:00"
         },
         {
             "name": "mundschenk-at/php-typography",
@@ -3689,16 +3689,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.40",
+            "version": "3.1.41",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "1b69f1ff241181a110dd805fa56388bf4938e888"
+                "reference": "307ae917769f2070bf1311ff508525a6efce6fd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/1b69f1ff241181a110dd805fa56388bf4938e888",
-                "reference": "1b69f1ff241181a110dd805fa56388bf4938e888",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/307ae917769f2070bf1311ff508525a6efce6fd2",
+                "reference": "307ae917769f2070bf1311ff508525a6efce6fd2",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3708,11 +3708,11 @@
                 ]
             },
             "require": {
+                "craftcms/cms": "^3.0.0",
                 "league/csv": "^8.2"
             },
             "require-dev": {
                 "codeception/codeception": "^3.0",
-                "craftcms/cms": "^3.2.0",
                 "vlucas/phpdotenv": "^3.0"
             },
             "type": "craft-plugin",
@@ -3752,20 +3752,20 @@
                 "retour",
                 "statistics"
             ],
-            "time": "2020-07-05T19:12:10+00:00"
+            "time": "2020-07-30T15:51:51+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.12",
+            "version": "3.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "c866c8208184f8a60fad2164ba1836c904f15d23"
+                "reference": "e5b186972cf46e00bad5d45722bc28fe07f852e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/c866c8208184f8a60fad2164ba1836c904f15d23",
-                "reference": "c866c8208184f8a60fad2164ba1836c904f15d23",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/e5b186972cf46e00bad5d45722bc28fe07f852e6",
+                "reference": "e5b186972cf46e00bad5d45722bc28fe07f852e6",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3775,13 +3775,13 @@
                 ]
             },
             "require": {
+                "craftcms/cms": "^3.0.0",
                 "davechild/textstatistics": "1.0.2",
                 "php-science/textrank": "^1.0.3",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
             },
             "require-dev": {
                 "codeception/codeception": "^3.0",
-                "craftcms/cms": "^3.2.0",
                 "vlucas/phpdotenv": "^3.0"
             },
             "type": "craft-plugin",
@@ -3836,7 +3836,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-07-21T21:03:42+00:00"
+            "time": "2020-07-30T15:57:19+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -6623,16 +6623,16 @@
         },
         {
             "name": "voku/arrayy",
-            "version": "7.8.1",
+            "version": "7.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/Arrayy.git",
-                "reference": "e9d864492dfd251e7128eaf5df2143508eeffaa8"
+                "reference": "ff32efd0036f776bd7adc3e7e6e3441d5c037c35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Arrayy/zipball/e9d864492dfd251e7128eaf5df2143508eeffaa8",
-                "reference": "e9d864492dfd251e7128eaf5df2143508eeffaa8",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/ff32efd0036f776bd7adc3e7e6e3441d5c037c35",
+                "reference": "ff32efd0036f776bd7adc3e7e6e3441d5c037c35",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6703,7 +6703,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-14T23:36:24+00:00"
+            "time": "2020-07-28T21:43:54+00:00"
         },
         {
             "name": "voku/email-check",
@@ -6843,16 +6843,16 @@
         },
         {
             "name": "voku/portable-utf8",
-            "version": "5.4.46",
+            "version": "5.4.47",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-utf8.git",
-                "reference": "664a710cc07c83c5d023a3ae8be22d69e3622286"
+                "reference": "c92522515a2d5ec9b03fd3c9e231b8b277c65121"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/664a710cc07c83c5d023a3ae8be22d69e3622286",
-                "reference": "664a710cc07c83c5d023a3ae8be22d69e3622286",
+                "url": "https://api.github.com/repos/voku/portable-utf8/zipball/c92522515a2d5ec9b03fd3c9e231b8b277c65121",
+                "reference": "c92522515a2d5ec9b03fd3c9e231b8b277c65121",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -6940,7 +6940,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-18T00:16:14+00:00"
+            "time": "2020-07-26T11:17:51+00:00"
         },
         {
             "name": "voku/stop-words",
