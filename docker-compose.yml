@@ -6,9 +6,9 @@ services:
     build:
       context: ./docker-config/nginx
       dockerfile: ./Dockerfile
-    init: true
     env_file: &env
       - ./cms/.env
+    init: true
     links:
       - php
     ports:
@@ -21,7 +21,6 @@ services:
     build:
       context: ./docker-config/php-dev-craft
       dockerfile: ./Dockerfile
-    init: true
     depends_on:
       - "postgres"
       - "redis"
@@ -29,6 +28,7 @@ services:
       *env
     expose:
       - "9000"
+    init: true
     links:
       - postgres
       - redis
@@ -43,13 +43,13 @@ services:
     build:
       context: ./docker-config/postgres
       dockerfile: ./Dockerfile
-    init: true
     env_file:
       *env
     environment:
       POSTGRES_DB: project
       POSTGRES_USER: project
       POSTGRES_PASSWORD: project
+    init: true
     ports:
       - "5432:5432"
     volumes:
@@ -59,17 +59,17 @@ services:
     build:
       context: ./docker-config/redis
       dockerfile: ./Dockerfile
-    init: true
     expose:
       - "6379"
+    init: true
   # webpack - frontend build system
   webpack:
     build:
       context: ./docker-config/node-dev-webpack
       dockerfile: ./Dockerfile
-    init: true
     env_file:
       *env
+    init: true
     ports:
       - "8080:8080"
     volumes:
