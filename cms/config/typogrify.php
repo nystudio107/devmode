@@ -135,7 +135,7 @@ return [
     "set_smart_fractions" => true,
 
     // wrap numbers in <span class="numbers">
-    "set_smart_ordinal_suffix" => true,
+    "set_smart_ordinal_suffix" => false,
 
     // single character words are forced to next line with insertion of &nbsp;
     "set_single_character_word_spacing" => true,
@@ -193,7 +193,7 @@ return [
     "set_style_initial_quotes" => true,
 
     // wrap numbers in <span class="numbers">
-    "set_style_numbers" => true,
+    "set_style_numbers" => false,
 
     // sets tags where initial quotes and guillemets should be styled
     "set_initial_quote_tags" => [
