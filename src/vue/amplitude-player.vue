@@ -186,7 +186,15 @@
             },
             update(e) {
                 this.currentSeconds = parseInt(this.audio.currentTime);
-                window.location.hash = '#' + this.currentSeconds.toString();
+                const hash = '#' + this.currentSeconds.toString();
+                let href = window.location.href;
+                let oldHash = window.location.hash;
+                    if (oldHash === '') {
+                        oldHash = '#';
+                        href = href + oldHash;
+                }
+                href = href.replace(oldHash, hash);
+                history.replaceState(history.state, '', href);
             },
         }
     }
