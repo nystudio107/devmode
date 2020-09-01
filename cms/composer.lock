@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.151.2",
+            "version": "3.151.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "7191394eb44edee26db739207c432e408cd6a26f"
+                "reference": "6deca431ad8d061face518bdde2072445385f45a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7191394eb44edee26db739207c432e408cd6a26f",
-                "reference": "7191394eb44edee26db739207c432e408cd6a26f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6deca431ad8d061face518bdde2072445385f45a",
+                "reference": "6deca431ad8d061face518bdde2072445385f45a",
                 "shasum": ""
             },
             "require": {
@@ -89,7 +89,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-08-28T18:11:11+00:00"
+            "time": "2020-08-31T18:25:57+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -128,7 +128,7 @@
                     "cebe\\markdown\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -276,7 +276,7 @@
                     "Composer\\": "src/Composer"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -346,7 +346,7 @@
                     "Composer\\Semver\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -407,7 +407,7 @@
                     "Composer\\Spdx\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -684,7 +684,7 @@
                     "craftcms\\oauth2\\client\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -736,7 +736,7 @@
                     "craft\\composer\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -819,7 +819,7 @@
                     "server/requirements"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -856,7 +856,7 @@
                     "creocoder\\nestedsets\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -908,7 +908,7 @@
                     "DaveChild\\TextStatistics": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-2-Clause"
             ],
@@ -956,7 +956,7 @@
                     "Defuse\\Crypto\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -1018,7 +1018,7 @@
                     "Doctrine\\Common\\Lexer\\": "lib/Doctrine/Common/Lexer"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -1132,7 +1132,7 @@
                     "LitEmoji\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -1171,7 +1171,7 @@
                     "enshrined\\svgSanitize\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -1216,7 +1216,7 @@
                     "/library/HTMLPurifier/Language/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "LGPL-2.1-or-later"
             ],
@@ -1277,7 +1277,7 @@
                     "src/functions_include.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -1335,7 +1335,7 @@
                     "src/functions_include.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -1395,7 +1395,7 @@
                     "src/functions_include.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -1449,7 +1449,7 @@
                     "Imgix\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-2-Clause"
             ],
@@ -1495,7 +1495,7 @@
                     "Intervention\\Httpauth\\": "src/Intervention/Httpauth"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -1593,7 +1593,7 @@
                     "ICal": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -1662,7 +1662,7 @@
                     "JsonSchema\\": "src/JsonSchema/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -1724,7 +1724,7 @@
                     "ColorThief\\": "lib/ColorThief"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "CC-BY-2.5"
             ],
@@ -1777,7 +1777,7 @@
                     "UpdateHelper\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -1841,7 +1841,7 @@
                     "Laminas\\Escaper\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -1964,7 +1964,7 @@
                     "Laminas\\Stdlib\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2067,7 +2067,7 @@
                     "League\\Csv\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -2143,7 +2143,7 @@
                     "League\\Flysystem\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -2265,7 +2265,7 @@
                     "League\\OAuth2\\Client\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -2326,7 +2326,7 @@
                     "lessc.inc.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT",
                 "GPL-3.0"
@@ -2383,7 +2383,7 @@
                     "Masterminds\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -2437,7 +2437,7 @@
                     "Michelf": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2563,7 +2563,7 @@
                     "Monolog\\": "src/Monolog"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -2620,7 +2620,7 @@
                     "JSMin\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -2691,7 +2691,7 @@
                     "lib/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -2736,7 +2736,7 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -2796,7 +2796,7 @@
                     "src/JmesPath.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -2856,7 +2856,7 @@
                     "src/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -2918,7 +2918,7 @@
                     "": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -2973,7 +2973,7 @@
                     "nystudio107\\disqus\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -3028,7 +3028,7 @@
                     "nystudio107\\fastcgicachebust\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -3084,7 +3084,7 @@
                     "nystudio107\\icalendar\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -3195,7 +3195,7 @@
                     "nystudio107\\imageoptimizeimgix\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "proprietary"
             ],
@@ -3238,7 +3238,7 @@
                     "nystudio107\\imageoptimizesharp\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "proprietary"
             ],
@@ -3282,7 +3282,7 @@
                     "nystudio107\\imageoptimizethumbor\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "proprietary"
             ],
@@ -3337,7 +3337,7 @@
                     "nystudio107\\minify\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -3397,7 +3397,7 @@
                     "nystudio107\\retour\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "proprietary"
             ],
@@ -3420,16 +3420,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.17",
+            "version": "3.3.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "7b63046e3bd809d7aa8848beb10ad245f774586f"
+                "reference": "2c32a61643c406577a80982c2b9d6d1f975dfd7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/7b63046e3bd809d7aa8848beb10ad245f774586f",
-                "reference": "7b63046e3bd809d7aa8848beb10ad245f774586f",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/2c32a61643c406577a80982c2b9d6d1f975dfd7d",
+                "reference": "2c32a61643c406577a80982c2b9d6d1f975dfd7d",
                 "shasum": ""
             },
             "require": {
@@ -3494,7 +3494,7 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-08-24T18:59:23+00:00"
+            "time": "2020-09-01T03:03:28+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -3532,7 +3532,7 @@
                     "nystudio107\\transcoder\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "proprietary"
             ],
@@ -3651,7 +3651,7 @@
                     "nystudio107\\typogrify\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -3711,7 +3711,7 @@
                     "nystudio107\\webperf\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "proprietary"
             ],
@@ -3758,7 +3758,7 @@
                     "nystudio107\\dotenvy\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -3865,7 +3865,7 @@
                 "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -3916,7 +3916,7 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -3971,7 +3971,7 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4031,7 +4031,7 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4077,7 +4077,7 @@
                     "phpDocumentor\\Reflection\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4121,7 +4121,7 @@
                     "Pimple": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4176,7 +4176,7 @@
                     "Imagine\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4225,7 +4225,7 @@
                     "Psr\\Cache\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4271,7 +4271,7 @@
                     "Psr\\Container\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4320,7 +4320,7 @@
                     "Psr\\Http\\Message\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4370,7 +4370,7 @@
                     "Psr\\Log\\": "Psr/Log/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4416,7 +4416,7 @@
                     "src/getallheaders.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4509,7 +4509,7 @@
                     "Seld\\CliPrompt\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4616,7 +4616,7 @@
                     "Seld\\PharUtils\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4656,7 +4656,7 @@
                     "Sunra\\PhpSimple\\HtmlDomParser": "Src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4720,7 +4720,7 @@
                     "lib/swift_required.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4793,7 +4793,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4849,7 +4849,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4898,7 +4898,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -4947,7 +4947,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5003,7 +5003,7 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5079,7 +5079,7 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5156,7 +5156,7 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5237,7 +5237,7 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5322,7 +5322,7 @@
                     "Resources/stubs"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5400,7 +5400,7 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5478,7 +5478,7 @@
                     "Resources/stubs"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5551,7 +5551,7 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5620,7 +5620,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5685,7 +5685,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5740,7 +5740,7 @@
                     "/Tests/"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5786,7 +5786,7 @@
                     "TrueBV\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -5835,7 +5835,7 @@
                     "tubalmartin\\CssMin\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5894,7 +5894,7 @@
                     "Twig\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -5960,7 +5960,7 @@
                     "Dotenv\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6182,7 +6182,7 @@
                     "voku\\helper\\": "src/voku/helper/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -6234,7 +6234,7 @@
                     "voku\\": "src/voku/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -6318,7 +6318,7 @@
                     "bootstrap.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "(Apache-2.0 or GPL-2.0)"
             ],
@@ -6396,7 +6396,7 @@
                     "voku\\": "src/voku/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -6453,7 +6453,7 @@
                     "src/Create.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -6533,7 +6533,7 @@
                     "voku\\helper\\": "src/voku/helper/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6590,7 +6590,7 @@
                     "Thumbor": "lib"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -6645,7 +6645,7 @@
                     "Webmozart\\Assert\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -6696,7 +6696,7 @@
                     "GraphQL\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -6746,7 +6746,7 @@
                     ]
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "MIT"
             ],
@@ -6798,7 +6798,7 @@
                     "yii2tech\\ar\\softdelete\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6861,7 +6861,7 @@
                     "yii\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -6967,7 +6967,7 @@
                     "yii\\composer\\": ""
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7039,7 +7039,7 @@
                     "yii\\debug\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7123,7 +7123,7 @@
                     "yii\\queue\\stomp\\": "src/drivers/stomp"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7181,7 +7181,7 @@
                     "yii\\redis\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
@@ -7244,7 +7244,7 @@
                     "yii\\swiftmailer\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "notification-url": "https://repo.repman.io/downloads",
             "license": [
                 "BSD-3-Clause"
             ],
