@@ -20,7 +20,7 @@
   "minimum-stability": "beta",
   "prefer-stable": true,
   "require": {
-    "craftcms/cms": "^3.5.0",
+    "craftcms/cms": "^3.5.8",
     "vlucas/phpdotenv": "^2.4.0",
     "yiisoft/yii2-redis": "^2.0.6",
     "nystudio107/craft-imageoptimize": "^1.0.0",
@@ -51,9 +51,17 @@
   },
   "scripts": {
     "craft-update": [
+      "@pre-craft-update",
+      "@post-craft-update"
+    ],
+    "pre-craft-update": [
+      "@php craft off --retry=60"
+    ],
+    "post-craft-update": [
+      "@php craft clear-caches/all",
       "@php craft migrate/all",
       "@php craft project-config/sync",
-      "@php craft clear-caches/all"
+      "@php craft on"
     ],
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
@@ -61,7 +69,9 @@
     "post-create-project-cmd": [
       "@php craft setup/welcome"
     ],
-    "post-update-cmd": "@craft-update",
-    "post-install-cmd": "@craft-update"
+    "pre-update-cmd": "@pre-craft-update",
+    "pre-install-cmd": "@pre-craft-update",
+    "post-update-cmd": "@post-craft-update",
+    "post-install-cmd": "@post-craft-update"
   }
 }
