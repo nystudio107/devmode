@@ -124,8 +124,6 @@ const configureVueLoader = () => {
     };
 };
 
-console.log(process.cwd())
-
 // The base webpack config
 const baseConfig = {
     name: pkg.name,
