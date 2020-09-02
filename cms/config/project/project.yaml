@@ -1,4 +1,4 @@
-dateModified: 1598389707
+dateModified: 1599079424
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -185,5 +185,6 @@ system:
   edition: pro
   live: true
   name: devMode.fm
+  retryDuration: 60
   schemaVersion: 3.5.13
   timeZone: America/New_York
