@@ -134,6 +134,7 @@
             playing(value) {
                 if (value) { return this.audio.play(); }
                 this.audio.pause();
+                this.updateUrlHash();
             },
             volume(value) {
                 this.showVolume = false;
@@ -179,6 +180,7 @@
             },
             seek() {
                 this.audio.currentTime = this.currentSeconds;
+                this.updateUrlHash();
             },
             stop() {
                 this.playing = false;
@@ -186,16 +188,10 @@
             },
             update(e) {
                 this.currentSeconds = parseInt(this.audio.currentTime);
-                const hash = '#' + this.currentSeconds.toString();
-                let href = window.location.href;
-                let oldHash = window.location.hash;
-                    if (oldHash === '') {
-                        oldHash = '#';
-                        href = href + oldHash;
-                }
-                href = href.replace(oldHash, hash);
-                history.replaceState(history.state, '', href);
             },
+            updateUrlHash() {
+              window.location.hash = '#' + this.currentSeconds.toString();
+            }
         }
     }
 </script>
