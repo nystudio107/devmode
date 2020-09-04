@@ -134,6 +134,7 @@
             playing(value) {
                 if (value) { return this.audio.play(); }
                 this.audio.pause();
+                this.updateUrlHash();
             },
             volume(value) {
                 this.showVolume = false;
@@ -179,6 +180,7 @@
             },
             seek() {
                 this.audio.currentTime = this.currentSeconds;
+                this.updateUrlHash();
             },
             stop() {
                 this.playing = false;
@@ -186,8 +188,10 @@
             },
             update(e) {
                 this.currentSeconds = parseInt(this.audio.currentTime);
-                window.location.hash = '#' + this.currentSeconds.toString();
             },
+            updateUrlHash() {
+              window.location.hash = '#' + this.currentSeconds.toString();
+            }
         }
     }
 </script>
