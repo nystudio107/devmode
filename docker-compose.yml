@@ -18,7 +18,7 @@ services:
       - ./cms/web:/var/www/project/cms/web:cached
   # php - personal home page
   php:
-    build:
+    build: &php-build
       context: ./docker-config/php-dev-craft
       dockerfile: ./Dockerfile
     depends_on:
@@ -29,10 +29,10 @@ services:
     expose:
       - "9000"
     init: true
-    links:
+    links: &php-links
       - postgres
       - redis
-    volumes:
+    volumes: &php-volumes
       - cpresources:/var/www/project/cms/web/cpresources
       - storage:/var/www/project/cms/storage
       - ./cms:/var/www/project/cms:cached
@@ -54,6 +54,22 @@ services:
       - "5432:5432"
     volumes:
       - db-data:/usr/local/pgsql/data
+  # queue - runs queue jobs via ./craft queue/listen
+  queue:
+    build:
+      *php-build
+    command: ./craft queue/listen 10
+    depends_on:
+      - "php"
+    env_file:
+      *env
+    expose:
+      - "9001"
+    init: true
+    links:
+      *php-links
+    volumes:
+      *php-volumes
   # redis - key/value database for caching & php sessions
   redis:
     build:
