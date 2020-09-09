@@ -54,8 +54,8 @@ services:
       - "5432:5432"
     volumes:
       - db-data:/usr/local/pgsql/data
-  # queue-runner - run queues via ./craft queue/listen
-  queue-runner:
+  # queue - runs queue jobs via ./craft queue/listen
+  queue:
     build:
       context: ./docker-config/php-dev-craft
       dockerfile: ./Dockerfile
