@@ -54,6 +54,28 @@ services:
       - "5432:5432"
     volumes:
       - db-data:/usr/local/pgsql/data
+  # queue-runner - run queues via ./craft queue/listen
+  queue-runner:
+    build:
+      context: ./docker-config/php-dev-craft
+      dockerfile: ./Dockerfile
+    command: ./craft queue/listen
+    depends_on:
+      - "php"
+    env_file:
+      *env
+    expose:
+      - "9001"
+    init: true
+    links:
+      - postgres
+      - redis
+    volumes:
+      - cpresources:/var/www/project/cms/web/cpresources
+      - storage:/var/www/project/cms/storage
+      - ./cms:/var/www/project/cms:cached
+      - ./cms/vendor:/var/www/project/cms/vendor:delegated
+      - ./cms/storage/logs:/var/www/project/cms/storage/logs:delegated
   # redis - key/value database for caching & php sessions
   redis:
     build:
