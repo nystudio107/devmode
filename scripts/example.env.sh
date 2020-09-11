@@ -18,6 +18,7 @@ GLOBAL_DB_DRIVER="pgsql"
 # -- LOCAL settings --
 
 LOCAL_DB_CONTAINER="devmode_postgres_1"
+LOCAL_BUILDCHAIN_CONTAINER="devmode_webpack_1"
 
 # -- REMOTE settings --
 
