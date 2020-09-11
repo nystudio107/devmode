@@ -24,6 +24,7 @@ return [
             $config = craft\helpers\App::sessionConfig();
             // Override the class to use Redis' session class and our config settings
             $config['class'] = yii\redis\Session::class;
+            $config['keyPrefix'] = App::env('APP_ID') ?: 'CraftCMS';
             $config['redis'] = [
                 'hostname' => App::env('REDIS_HOSTNAME'),
                 'port' => App::env('REDIS_PORT'),
