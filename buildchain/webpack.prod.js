@@ -61,7 +61,7 @@ const configureBanner = () => {
             ].join('\n'),
             raw: true
         };
-    } catch {
+    } catch (e) {
         return {
             banner: [
                 '/*!',
