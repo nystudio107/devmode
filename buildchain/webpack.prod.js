@@ -129,7 +129,7 @@ const configureCriticalCss = () => {
             return new CriticalCssPlugin({
                 base: './',
                 src: criticalSrc,
-                dest: criticalDest,
+                target: criticalDest,
                 extract: false,
                 inline: false,
                 minify: true,
