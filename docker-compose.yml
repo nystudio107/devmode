@@ -32,6 +32,7 @@ services:
     links: &php-links
       - postgres
       - redis
+    user: www-data
     volumes: &php-volumes
       - cpresources:/var/www/project/cms/web/cpresources
       - storage:/var/www/project/cms/storage
@@ -68,6 +69,7 @@ services:
     init: true
     links:
       *php-links
+    user: www-data
     volumes:
       *php-volumes
   # redis - key/value database for caching & php sessions
