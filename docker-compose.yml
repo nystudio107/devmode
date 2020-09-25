@@ -55,6 +55,7 @@ services:
       - "5432:5432"
     volumes:
       - db-data:/usr/local/pgsql/data
+      - ./db-seed/:/docker-entrypoint-initdb.d
   # queue - runs queue jobs via php craft queue/listen
   queue:
     build:
