@@ -66,7 +66,7 @@ const configurePostcssLoader = () => {
                 options: {
                     url: false,
                     importLoaders: 2,
-                    sourceMap: true
+                    sourceMap: false
                 }
             },
             {
@@ -75,7 +75,7 @@ const configurePostcssLoader = () => {
             {
                 loader: 'postcss-loader',
                 options: {
-                    sourceMap: true,
+                    sourceMap: false,
                     config: {
                         path: path.resolve(__dirname),
                     }
@@ -94,7 +94,7 @@ module.exports = merge(
             publicPath: settings.devServerConfig.public() + '/',
         },
         mode: 'development',
-        devtool: 'inline-source-map',
+        devtool: 'eval-cheap-module-source-map',
         devServer: configureDevServer(),
         module: {
             rules: [
