@@ -270,9 +270,6 @@ const configurePostcssLoader = (buildType) => {
                     }
                 },
                 {
-                    loader: 'resolve-url-loader'
-                },
-                {
                     loader: 'postcss-loader',
                     options: {
                         config: {

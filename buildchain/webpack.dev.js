@@ -59,20 +59,6 @@ const configurePostcssLoader = () => {
                 loader: 'style-loader',
             },
             {
-                loader: 'vue-style-loader',
-            },
-            {
-                loader: 'css-loader',
-                options: {
-                    url: false,
-                    importLoaders: 2,
-                    sourceMap: false
-                }
-            },
-            {
-                loader: 'resolve-url-loader'
-            },
-            {
                 loader: 'postcss-loader',
                 options: {
                     sourceMap: false,
