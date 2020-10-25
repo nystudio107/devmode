@@ -13,7 +13,7 @@ RUN apt-get update \
         pgsql \
     && \
     # Install Composer
-    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer \
+    curl -sS https://getcomposer.org/installer | php -- --version=1.10.16 --install-dir=/usr/local/bin/ --filename=composer \
     # Clean apt repo caches that don't need to be part of the image
     && \
     apt-get clean \
