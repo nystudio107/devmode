@@ -13,7 +13,7 @@ RUN apt-get update \
         pgsql \
     && \
     # Install Composer
-    curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin/ --filename=composer \
+    curl -sS https://getcomposer.org/installer | php -- --version=1.10.16 --install-dir=/usr/local/bin/ --filename=composer \
     # Clean apt repo caches that don't need to be part of the image
     && \
     apt-get clean \
@@ -46,7 +46,7 @@ WORKDIR /var/www/project/cms
 # This automatic running adds to the startup overhead of `docker-compose up`
 # but saves far more time in not having to deal with out of sync versions
 # when working with teams or multiple environments
-CMD composer install --no-scripts --optimize-autoloader --no-interaction \
+CMD composer install --verbose --no-progress --no-scripts --optimize-autoloader --no-interaction \
     && \
     chown -R www-data:www-data /var/www/project/cms/vendor \
     && \
