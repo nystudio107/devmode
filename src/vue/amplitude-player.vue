@@ -72,6 +72,29 @@
         </span>
       </div>
     </div>
+    <div class="playback font-mono flex justify-center leading-none">
+      <button
+        id="decrease-playback"
+        class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6"
+        @click.prevent="playbackRateDown"
+        :disabled="playbackRate <= playbackRateMin"
+        :class="{ 'opacity-50 cursor-not-allowed' : playbackRate <= playbackRateMin }"
+        :aria-disabled="playbackRate <= playbackRateMin"
+        aria-label="Decrease playback rate"
+      >-</button>
+
+      <span class="bg-devmode-yellow text-devmode-pink text-xs text-center p-1 w-24">{{playbackRate}}x speed</span>
+
+      <button
+        id="increase-playback"
+        class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6"
+        @click.prevent="playbackRateUp"
+        :disabled="playbackRate >= playbackRateMax"
+        :class="{ 'opacity-50 cursor-not-allowed' : playbackRate >= playbackRateMax }"
+        :aria-disabled="playbackRate >= playbackRateMax"
+        aria-label="Increase playback rate"
+      >+</button>
+    </div>
     <audio
       id="audiofile"
       ref="audiofile"
@@ -110,6 +133,9 @@
             previousVolume: 35,
             showVolume: false,
             volume: 100,
+            playbackRate: 1.0,
+            playbackRateMin: 0.5,
+            playbackRateMax: 2.0,
         }),
         computed: {
             currentTime() {
@@ -139,6 +165,9 @@
             volume(value) {
                 this.showVolume = false;
                 this.audio.volume = this.volume / 100;
+            },
+            playbackRate(value) {
+                this.audio.playbackRate = value
             }
         },
         created() {
@@ -191,6 +220,20 @@
             },
             updateUrlHash() {
               window.location.hash = '#' + this.currentSeconds.toString();
+            },
+
+            playbackRateUp() {
+              const rate = this.playbackRate >= this.playbackRateMax
+                ? this.playbackRateMax
+                : this.playbackRate += 0.1
+              this.playbackRate = parseFloat(rate.toFixed(1))
+            },
+
+            playbackRateDown() {
+              const rate = this.playbackRate <= this.playbackRateMin
+                ? this.playbackRateMin
+                : this.playbackRate -= 0.1
+              this.playbackRate = parseFloat(rate.toFixed(1))
             }
         }
     }
