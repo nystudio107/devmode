@@ -80,7 +80,7 @@
             -
           </button>
 
-          <span class="bg-devmode-yellow text-devmode-pink text-xs text-center p-1 w-24">{{ playbackRate }}x speed</span>
+          <span class="bg-devmode-yellow text-devmode-pink text-xs text-center p-1 sm:w-24">{{ playbackRate }}x<span class="hidden sm:inline"> speed</span></span>
 
           <button
             id="increase-playback"
