@@ -66,6 +66,36 @@
         </div>
       </div>
 
+      <div class=" time-container flex-shrink pl-3 pr-1 pb-5 sm:pb-0">
+        <div class="playback font-mono flex justify-center leading-none">
+          <button
+            id="decrease-playback"
+            class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6"
+            :disabled="playbackRate <= playbackRateMin"
+            :class="{ 'opacity-50 cursor-not-allowed' : playbackRate <= playbackRateMin }"
+            :aria-disabled="playbackRate <= playbackRateMin"
+            aria-label="Decrease playback rate"
+            @click.prevent="playbackRateDown"
+          >
+            -
+          </button>
+
+          <span class="bg-devmode-yellow text-devmode-pink text-xs text-center p-1 w-24">{{ playbackRate }}x speed</span>
+
+          <button
+            id="increase-playback"
+            class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6"
+            :disabled="playbackRate >= playbackRateMax"
+            :class="{ 'opacity-50 cursor-not-allowed' : playbackRate >= playbackRateMax }"
+            :aria-disabled="playbackRate >= playbackRateMax"
+            aria-label="Increase playback rate"
+            @click.prevent="playbackRateUp"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
       <div class="hidden sm:block time-container flex-shrink pl-3 pr-1">
         <span class="duration text-devmode-pink font-mono text-xs text-left">
           {{ durationTime }}
@@ -110,6 +140,9 @@
             previousVolume: 35,
             showVolume: false,
             volume: 100,
+            playbackRate: 1.0,
+            playbackRateMin: 0.5,
+            playbackRateMax: 2.0,
         }),
         computed: {
             currentTime() {
@@ -139,6 +172,9 @@
             volume(value) {
                 this.showVolume = false;
                 this.audio.volume = this.volume / 100;
+            },
+            playbackRate(value) {
+                this.audio.playbackRate = value
             }
         },
         created() {
@@ -191,6 +227,20 @@
             },
             updateUrlHash() {
               window.location.hash = '#' + this.currentSeconds.toString();
+            },
+
+            playbackRateUp() {
+              const rate = this.playbackRate >= this.playbackRateMax
+                ? this.playbackRateMax
+                : this.playbackRate += 0.1
+              this.playbackRate = parseFloat(rate.toFixed(1))
+            },
+
+            playbackRateDown() {
+              const rate = this.playbackRate <= this.playbackRateMin
+                ? this.playbackRateMin
+                : this.playbackRate -= 0.1
+              this.playbackRate = parseFloat(rate.toFixed(1))
             }
         }
     }

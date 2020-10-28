@@ -4,15 +4,17 @@ const main = async() => {
     const { default: Vue } = await import(/* webpackChunkName: "vue" */ 'vue');
     // Create our vue instance
     const vm = new Vue({
-        el: "#amplitude-player",
+        el: "#devmode-player",
         components: {
-            'amplitude-player': () => import(/* webpackChunkName: "amplitudeplayer" */ '../../vue/amplitude-player.vue'),
+            'devmode-player': () => import(/* webpackChunkName: "devmodeplayer" */ '../../vue/DevmodePlayer.vue'),
         },
-        data: {
+        data: function() {
+return {
+        };
+},
+        mounted() {
         },
         methods: {
-        },
-        mounted() {
         },
     });
 };
