@@ -22,8 +22,8 @@
                 } only %}
             {% endif %}
             {% set autoPlay = autoPlay ?? false %}
-            <div id="amplitude-player">
-                <amplitude-player
+            <div id="devmode-player">
+                <devmode-player
                         title="{{ episode.title }}"
                         artist="{{ showInfo.showTitle }}"
                         url="{{ transAudioUrl }}"
@@ -33,7 +33,7 @@
                             :auto-play="false"
                         {% endif %}
                 >
-                </amplitude-player>
+                </devmode-player>
             </div>
         {% endif %}
         {{ craft.twigpack.includeJsModule("player.js", true) }}
