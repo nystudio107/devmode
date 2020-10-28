@@ -66,34 +66,41 @@
         </div>
       </div>
 
+      <div class=" time-container flex-shrink pl-3 pr-1 pb-5 sm:pb-0">
+        <div class="playback font-mono flex justify-center leading-none">
+          <button
+            id="decrease-playback"
+            class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6"
+            :disabled="playbackRate <= playbackRateMin"
+            :class="{ 'opacity-50 cursor-not-allowed' : playbackRate <= playbackRateMin }"
+            :aria-disabled="playbackRate <= playbackRateMin"
+            aria-label="Decrease playback rate"
+            @click.prevent="playbackRateDown"
+          >
+            -
+          </button>
+
+          <span class="bg-devmode-yellow text-devmode-pink text-xs text-center p-1 w-24">{{ playbackRate }}x speed</span>
+
+          <button
+            id="increase-playback"
+            class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6"
+            :disabled="playbackRate >= playbackRateMax"
+            :class="{ 'opacity-50 cursor-not-allowed' : playbackRate >= playbackRateMax }"
+            :aria-disabled="playbackRate >= playbackRateMax"
+            aria-label="Increase playback rate"
+            @click.prevent="playbackRateUp"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
       <div class="hidden sm:block time-container flex-shrink pl-3 pr-1">
         <span class="duration text-devmode-pink font-mono text-xs text-left">
           {{ durationTime }}
         </span>
       </div>
-    </div>
-    <div class="playback font-mono flex justify-center leading-none">
-      <button
-        id="decrease-playback"
-        class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6"
-        @click.prevent="playbackRateDown"
-        :disabled="playbackRate <= playbackRateMin"
-        :class="{ 'opacity-50 cursor-not-allowed' : playbackRate <= playbackRateMin }"
-        :aria-disabled="playbackRate <= playbackRateMin"
-        aria-label="Decrease playback rate"
-      >-</button>
-
-      <span class="bg-devmode-yellow text-devmode-pink text-xs text-center p-1 w-24">{{playbackRate}}x speed</span>
-
-      <button
-        id="increase-playback"
-        class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6"
-        @click.prevent="playbackRateUp"
-        :disabled="playbackRate >= playbackRateMax"
-        :class="{ 'opacity-50 cursor-not-allowed' : playbackRate >= playbackRateMax }"
-        :aria-disabled="playbackRate >= playbackRateMax"
-        aria-label="Increase playback rate"
-      >+</button>
     </div>
     <audio
       id="audiofile"
