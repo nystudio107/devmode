@@ -35,6 +35,13 @@ RUN mkdir -p /var/www/project/cms/storage && \
 RUN mkdir -p /var/www/project/cms/web/cpresources && \
     chown -R www-data:www-data /var/www/project/cms/web/cpresources
 
+# Create the transcoder directory and make it writeable by PHP
+RUN mkdir -p /var/www/project/cms/web/transcoder && \
+    chown -R www-data:www-data /var/www/project/cms/web/transcoder
+
+# Permissions
+chown -R www-data:www-data /var/www/project/cms/web
+
 WORKDIR /var/www/project/cms
 
 # Force permissions, update Craft, and start php-fpm
