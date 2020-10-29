@@ -59,7 +59,7 @@
           role="slider"
           @input="seek"
         >
-        <div class="block sm:hidden text-center time-container pr-3 pl-1">
+        <div class="block sm:hidden text-center time-container pr-1 pl-1 whitespace-no-wrap">
           <span class="current-time text-devmode-pink font-mono text-xs text-left">
             {{ currentTime }} / {{ durationTime }}
           </span>
