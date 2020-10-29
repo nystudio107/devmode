@@ -70,7 +70,7 @@
         <div class="playback font-mono flex justify-center leading-none">
           <button
             id="decrease-playback"
-            class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6"
+            class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6 rounded-l-xl"
             :disabled="playbackRate <= playbackRateMin"
             :class="{ 'opacity-50 cursor-not-allowed' : playbackRate <= playbackRateMin }"
             :aria-disabled="playbackRate <= playbackRateMin"
@@ -84,7 +84,7 @@
 
           <button
             id="increase-playback"
-            class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6"
+            class="bg-devmode-pink text-sm text-white hover:text-black focus:text-black text-center w-6 rounded-r-xl"
             :disabled="playbackRate >= playbackRateMax"
             :class="{ 'opacity-50 cursor-not-allowed' : playbackRate >= playbackRateMax }"
             :aria-disabled="playbackRate >= playbackRateMax"
