@@ -20,7 +20,7 @@ module.exports = (type = 'modern', settings) => {
                             presets: [
                                 [
                                     '@babel/preset-env', {
-                                    modules: type === 'legacy' ? "auto" : false,
+                                    modules: type === 'legacy' ? 'auto' : false,
                                     corejs: {
                                         version: 3,
                                         proposals: true

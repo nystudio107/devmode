@@ -7,8 +7,8 @@ require('dotenv').config();
 module.exports = {
     remoteFiles: [
         {
-            url: "https://www.google-analytics.com/analytics.js",
-            filepath: "js/analytics.js"
+            url: 'https://www.google-analytics.com/analytics.js',
+            filepath: 'js/analytics.js'
         }
     ],
 };
