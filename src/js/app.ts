@@ -1,23 +1,3 @@
-// Import our CSS
-import '../css/app-base.pcss';
-import '../css/app-components.pcss';
-import '../css/app-utilities.pcss';
-
-import '../fonts/fontello.eot';
-import '../fonts/fontello.ttf';
-import '../fonts/fontello.woff';
-import '../fonts/fontello.woff2';
-
-import '../fonts/OperatorMonoSSm-Book.eot';
-import '../fonts/OperatorMonoSSm-Book.ttf';
-import '../fonts/OperatorMonoSSm-Book.woff';
-import '../fonts/OperatorMonoSSm-Book.woff2';
-
-import '../fonts/OperatorMonoSSm-BookItalic.eot';
-import '../fonts/OperatorMonoSSm-BookItalic.ttf';
-import '../fonts/OperatorMonoSSm-BookItalic.woff';
-import '../fonts/OperatorMonoSSm-BookItalic.woff2';
-
 //import Snowf from 'vue-snowf';
 
 // App main

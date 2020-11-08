@@ -38,6 +38,9 @@
     "craftcms/redactor": "^2.3.0",
     "craftcms/aws-s3": "^1.2"
   },
+  "require-dev": {
+    "yiisoft/yii2-shell": "^2.0.3"
+  },
   "autoload": {
     "psr-4": {
       "modules\\sitemodule\\": "modules/sitemodule/src/"
