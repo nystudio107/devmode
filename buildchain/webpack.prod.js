@@ -43,6 +43,7 @@ module.exports = [
     buildWebpackConfigs(
         'build',
         'clean',
+        'copy',
         'favicons',
         'create-symlink',
         'save-remote-file',
