@@ -40,7 +40,7 @@ RUN mkdir -p /var/www/project/cms/web/transcoder && \
     chown -R www-data:www-data /var/www/project/cms/web/transcoder
 
 # Permissions
-chown -R www-data:www-data /var/www/project/cms/web
+RUN chown -R www-data:www-data /var/www/project/cms/web
 
 WORKDIR /var/www/project/cms
 
