@@ -118,17 +118,20 @@
     "webpack-merge": "^5.3.0",
     "workbox-webpack-plugin": "^6.0.0-alpha.3"
   },
-  "homepage": "https://github.com/example-developer/example-project",
+  "homepage": "https://devMode.fm",
   "keywords": [
-    "Example",
-    "Keywords"
+    "devmode",
+    "podcast",
+    "modern",
+    "web",
+    "development"
   ],
   "license": "SEE LICENSE IN LICENSE.md",
-  "name": "example-project",
+  "name": "devmode-fm",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/example-developer/example-project.git"
+    "url": "git+https://github.com/nystudio107/devmode.git"
   },
   "scripts": {
     "build": "webpack --config webpack.prod.js --progress",
