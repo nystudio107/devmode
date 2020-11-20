@@ -38,11 +38,11 @@
                         <div class="inline-block text-devmode-pink devmode-container font-sans text-2xl p-8">
                             <i class="icon-info-circled align-middle"></i>
                             <ul class="list-reset inline">
-                                <li class="inline pr-1">
+                                <li class="inline">
                                     <a href="{{ craft.site.calendarFeedUrl() }}" class="devmode-tags tags-link align-middle whitespace-no-wrap" title="Show Calendar feed" target="_blank" rel="nofollow noopener">{{ "Show Calendar .ics feed" | typogrify }}</a>
                                     <span> </span>
                                 </li>
-                                <li class="inline pr-1">
+                                <li class="inline">
                                     <a href="https://calendar.google.com/calendar/embed?src=uiv8dsrg58ii87gu16rcji845qfcpgrv%40import.calendar.google.com&ctz=America%2FNew_York" class="devmode-tags tags-link align-middle whitespace-no-wrap" title="Show Calendar feed" target="_blank" rel="nofollow noopener">{{ "Public Google Calendar" | typogrify }}</a>
                                     <span> </span>
                                 </li>
@@ -63,26 +63,22 @@
             <div class="pt-8">
                 <div class="w-full bg-transparent">
                     <div class="pt-8 mb-8">
-                        <h3 class="devmode-header-text text-center text-xl font-bold">
+                        <h3 class="devmode-header-text text-center">
                             Upcoming shows
                         </h3>
                     </div>
                 </div>
             </div>
-            {% set upcomingEpisodes = craft.entries({
-                status: null,
-                section: 'episodes',
-                postDate: '>= ' ~ (now | date('Y-m-d')),
-                orderBy: {
-                    'postDate': SORT_ASC,
-                }
-            }).all() %}
-            {% if upcomingEpisodes %}
-                {% for episode in upcomingEpisodes %}
+            {% set cal = parseIcs(craft.site.calendarFeedUrl(), {
+                "defaultTimeZone": "America/New_York",
+            }) %}
+            {% if cal %}
+                {% for event in cal.eventsFromRange(now | date | atom) %}
                     <div class="container mx-auto py-8">
                         <div class="flex flex-wrap {% if loop.last %} pb-8{% endif %}">
                             {% include "calendar/_partials/_display_event_excerpt.twig" with {
-                                "episode": episode,
+                                "event": event,
+                                "showInfo": showInfo,
                             } only %}
                         </div>
                     </div>
