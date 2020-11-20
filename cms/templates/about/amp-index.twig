@@ -76,7 +76,7 @@
                                 <ul class="list-reset inline">
                                     {% for link in block.links %}
                                         <li class="inline-block pr-1">
-                                            <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkText }}" target="_blank" rel="nofollow noopener">{{ link.linkText }}</a>
+                                            <a href="{{ link.linkUrl }}" class="devmode-tags tags-link align-middle whitespace-no-wrap" title="{{ link.linkText }}" target="_blank" rel="nofollow noopener">{{ link.linkText }}</a>
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -99,7 +99,7 @@
                             <ul class="list-reset inline">
                                 {% for plugin in plugins %}
                                     <li class="inline-block pr-1">
-                                        <a href="{{ "https://github.com/#{plugin.packageName}" }}" class="tags-link align-middle whitespace-no-wrap" title="{{ plugin.name }}" rel="noopener nofollow" target="_blank">{{ plugin.name }}</a>
+                                        <a href="{{ "https://github.com/#{plugin.packageName}" }}" class="devmode-tags tags-link align-middle whitespace-no-wrap" title="{{ plugin.name }}" rel="noopener nofollow" target="_blank">{{ plugin.name }}</a>
                                     </li>
                                 {% endfor %}
                             </ul>

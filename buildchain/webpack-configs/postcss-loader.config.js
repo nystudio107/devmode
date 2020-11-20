@@ -72,11 +72,7 @@ module.exports = (type = 'modern', settings) => {
                         MiniCssExtractPlugin.loader
                     ],
                     [
-                        ['postcss-preset-env', {
-                            autoprefixer: { },
-                            features: {
-                                'nesting-rules': true
-                            }
+                        ['autoprefixer', {
                         }]
                     ],
                 ),

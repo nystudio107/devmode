@@ -1,7 +1,7 @@
 <template>
     <div class="w-full bg-transparent">
         <vuetable-filter-bar></vuetable-filter-bar>
-        <div class="vuetable-pagination clearfix px-2 md:px-0">
+        <div class="vuetable-pagination flow-root px-2 md:px-0">
             <vuetable-pagination-info ref="paginationInfoTop"
                                       infoTemplate="Displaying {from} to {to} of {total} episodes"
             ></vuetable-pagination-info>
@@ -32,7 +32,7 @@
                 </template>
             </vuetable>
         </div>
-        <div class="vuetable-pagination clearfix px-2 md:px-0">
+        <div class="vuetable-pagination flow-root px-2 md:px-0">
             <vuetable-pagination-info ref="paginationInfo"
                                       infoTemplate="Displaying {from} to {to} of {total} episodes"
             ></vuetable-pagination-info>
