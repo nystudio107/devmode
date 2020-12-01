@@ -87,10 +87,6 @@ A password-scrubbed seed database will automatically be installed; you can log i
 **User:** `andrew@nystudio107.com` \
 **Password:** `password`
 
-You can also set up the `.env.sh` file in the `scripts/` directory if you want to use the scripts there by running this in your terminal from the project root: `cp scripts/example.env.sh scripts/.env.sh`
-
-**N.B.:** Without authorization & credentials (which are private), the `scripts/docker_pull_db.sh` will not work. It's provided here for instructional purposes, and for devMode.fm hosts
-
 ### Things you can try
 
 With the containers up and running, here are a few things you can try:
@@ -104,7 +100,11 @@ With the containers up and running, here are a few things you can try:
 
 * Edit the `src/vue/DevmodePlayer.vue` vue component, changing the `currentSeconds` [data prop](https://github.com/nystudio107/devmode/blob/master/src/vue/DevmodePlayer.vue#L135) and see your changes instantly via HMR
 
+* Set up the `.env.sh` file in the `scripts/` directory if you want to use the scripts there by running this in your terminal from the project root: `cp scripts/example.env.sh scripts/.env.sh`
+  
 * Build the production assets by typing `cd scripts` and then typing `./docker_prod_build.sh` to build the critical CSS, fonts, and other production assets. They will appear in `cms/web/dist/`
+
+ **N.B.:** Without authorization & credentials (which are private), the `scripts/docker_pull_db.sh` will not work. It's provided here for instructional purposes, and for devMode.fm hosts
 
 ### Other notes
 
