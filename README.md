@@ -50,6 +50,8 @@ You can read more about it in the [Setting up a New Craft 3 CMS Project](https:/
 
 ## Try devMode.fm Yourself!
 
+### Initial setup
+
 You'll need [Docker desktop](https://www.docker.com/products/docker-desktop) for your platform installed to run devMode in local development
 
 * Clone the git repo with `git clone https://github.com/nystudio107/devmode.git`
@@ -88,6 +90,23 @@ A password-scrubbed seed database will automatically be installed; you can log i
 You can also set up the `.env.sh` file in the `scripts/` directory if you want to use the scripts there by running this in your terminal from the project root: `cp scripts/example.env.sh scripts/.env.sh`
 
 **N.B.:** Without authorization & credentials (which are private), the `scripts/docker_pull_db.sh` will not work. It's provided here for instructional purposes, and for devMode.fm hosts
+
+### Things you can try
+
+With the containers up and running, here are a few things you can try:
+
+* Edit a CSS file such as `src/css/components/global.pcss` to add something like this, and change the colors to see the CSS change instantly via HRM:
+```css
+* {
+  border: 3px solid red;
+}
+```
+
+* Edit the `src/vue/DevmodePlayer.vue` vue component, changing the `currentSeconds` [data prop](https://github.com/nystudio107/devmode/blob/master/src/vue/DevmodePlayer.vue#L135) and see your changes instantly via HMR
+
+* Build the production assets by typing `cd scripts` and then typing `./docker_prod_build.sh` to build the critical CSS, fonts, and other production assets. They will appear in `cms/web/dist/`
+
+### Other notes
 
 To update to the latest Composer packages (as constrained by the `cms/composer.json` semvers), do:
 ```
