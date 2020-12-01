@@ -1,11 +1,26 @@
 FROM nystudio107/php-prod-base
 
+# Install postgres repositories
+RUN apt-get update \
+    && \
+    # apt Debian packages
+    apt-get install -y \
+        lsb-release \
+        gnupg \
+        bash-completion \
+        wget \
+    && \
+    wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add - \
+    && \
+    echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" | tee  /etc/apt/sources.list.d/pgdg.list
+
 # Install packages
 RUN apt-get update \
     && \
     # apt Debian packages
     apt-get install -y \
         ffmpeg \
+        postgresql-client-12 \
     && \
     # Install PHP extensions
     docker-php-ext-install \
