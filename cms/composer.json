@@ -58,6 +58,7 @@
       "@post-craft-update"
     ],
     "pre-craft-update": [
+      "@php -r \"file_exists('.env') || copy('example.env', '.env');\""
     ],
     "post-craft-update": [
       "@php craft install/check && php craft clear-caches/all || return 0",
