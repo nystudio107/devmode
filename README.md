@@ -52,6 +52,7 @@ You can read more about it in the [Setting up a New Craft 3 CMS Project](https:/
 You'll need [Docker desktop](https://www.docker.com/products/docker-desktop) for your platform installed to run devMode in local development
 
 * Clone the git repo with `git clone https://github.com/nystudio107/devmode.git`
+* In your terminal, type `cd devmode` then `cp cms/example.env .env` to set up the `.env` file
 * Start up the site with `docker-compose up` (the first build will be somewhat lengthy)
 * Navigate to `http://localhost:8000` to use the site
 
