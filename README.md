@@ -19,6 +19,7 @@ The project is based on [Craft CMS](https://CraftCMS.com) using a unique `templa
 * [VueJS](https://vuejs.org/) is used for some of the interactive bits on the website
 * [Tailwind CSS](https://tailwindcss.com/) for the site-wide CSS
 * JSON-LD structured data as per [Annotated JSON-LD Structured Data Examples](https://nystudio107.com/blog/annotated-json-ld-structured-data-examples)
+* [xdebug via dual containers](https://nystudio107.com/blog/an-annotated-docker-config-for-frontend-web-development#xdebug-performance) for better performance
 * [Google AMP](https://developers.google.com/amp/) versions of the podcast episode and other pages
 * Static assets are stored in AWS S3 buckets with CloudFront as the CDN, as per the [Setting Up AWS S3 Buckets + CloudFront CDN for your Assets](https://nystudio107.com/blog/using-aws-s3-buckets-cloudfront-distribution-with-craft-cms) article
 * Image transforms are done via a [Serverless Image Handler](https://aws.amazon.com/solutions/serverless-image-handler/) lambda function, as described in the [Setting Up Your Own Image Transform Service](https://nystudio107.com/blog/setting-up-your-own-image-transform-service) article
