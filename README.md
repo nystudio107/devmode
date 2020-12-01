@@ -52,7 +52,7 @@ You can read more about it in the [Setting up a New Craft 3 CMS Project](https:/
 You'll need [Docker desktop](https://www.docker.com/products/docker-desktop) for your platform installed to run devMode in local development
 
 * Clone the git repo with `git clone https://github.com/nystudio107/devmode.git`
-* In your terminal, type `cd devmode` then `cp cms/example.env .env` to set up the `.env` file
+* In your terminal, type `cd devmode` then `cp cms/example.env cms/.env` to set up the `.env` file
 * Start up the site with `docker-compose up` (the first build will be somewhat lengthy)
 * Navigate to `http://localhost:8000` to use the site
 
@@ -62,6 +62,8 @@ A password-scrubbed seed database will automatically be installed; you can log i
 
 **User:** `andrew@nystudio107.com` \
 **Password:** `password`
+
+You can also set up the `.env.sh` file in the `scripts/` directory if you want to use the scripts there by running this in your terminal from the project root: `cp scripts/example.env.sh scripts/.env.sh`
 
 **N.B.:** Without authorization & credentials (which are private), the `scripts/docker_pull_db.sh` will not work. It's provided here for instructional purposes, and for devMode.fm hosts
 
