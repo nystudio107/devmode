@@ -71,7 +71,7 @@ php_1         | [01-Dec-2020 18:38:46] NOTICE: fpm is running, pid 22
 php_1         | [01-Dec-2020 18:38:46] NOTICE: ready to handle connections
 ```
 
-...and the following to indicate that the webpack container is read:
+...and the following to indicate that the webpack container is ready:
 ```
 webpack_1     | <i> devmode-fm (webpack 5.9.0) compiled successfully in 12097 ms
 webpack_1     | <i> [webpack-dev-middleware] Child "devmode-fm": Compiled successfully.
@@ -79,7 +79,7 @@ webpack_1     | <i> [webpack-dev-middleware] Child "devmode-fm": Compiled succes
 
 All of the Twig files, JavaScript, Vue components, CSS, and even the webpack config itself will relfect changes immediately Hot Module Replacement and `webpack-dev-server`, so feel free to edit things and play around.
 
-A password-scrubbed seed database will automatically be installed; you can log into the CP via these credentials:
+A password-scrubbed seed database will automatically be installed; you can log into the CP at `http://localhost:8000/admin` via these credentials:
 
 **User:** `andrew@nystudio107.com` \
 **Password:** `password`
