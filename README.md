@@ -47,18 +47,22 @@ The following Craft CMS plugins are used on this site:
 
 You can read more about it in the [Setting up a New Craft 3 CMS Project](https://nystudio107.com/blog/setting-up-a-craft-cms-3-project) article.
 
-## Setting Local Dev
+## Try devMode.fm Yourself!
 
-You'll need Docker desktop for your platform installed to run devMode in local development
+You'll need [Docker desktop](https://www.docker.com/products/docker-desktop) for your platform installed to run devMode in local development
 
 * Clone the git repo with `git clone https://github.com/nystudio107/devmode.git`
-* Set up a `.env` file in the `cms/` directory, based off of the provided `example.env`
-* Set up a `.env.sh.` file in the `scripts/` directory, based off of the provided `example.env.sh`
 * Start up the site with `docker-compose up` (the first build will be somewhat lengthy)
-* Import the remote db the first time from the `scripts/` dir with `./docker_pull_db.sh`
-* Navigate to `http://localhost:8000` to use the site; the `webpack-dev-server` runs off of `http://localhost:8080`
+* Navigate to `http://localhost:8000` to use the site
 
-**N.B.:** Without authorization & credentials (which are private), the `./docker_pull_db.sh` will not work. It's provided here for instructional purposes, and for devMode.fm hosts
+The `webpack-dev-server` runs off of `http://localhost:8080`
+
+A password-scrubbed seed database will automatically be installed; you can log into the CP via these credentials:
+
+**User:** `andrew@nystudio107.com` \
+**Password:** `password`
+
+**N.B.:** Without authorization & credentials (which are private), the `scripts/docker_pull_db.sh` will not work. It's provided here for instructional purposes, and for devMode.fm hosts
 
 To update to the latest Composer packages (as constrained by the `cms/composer.json` semvers), do:
 ```
