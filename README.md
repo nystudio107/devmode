@@ -58,6 +58,27 @@ You'll need [Docker desktop](https://www.docker.com/products/docker-desktop) for
 
 The `webpack-dev-server` runs off of `http://localhost:8080`
 
+The first time you do `docker-compose up` it will be slow, because it has to build all of the Docker images.
+
+Subsequent `docker-compose up` commands will be much faster, but still a little slow because we intentionally do a `composer install` and an `npm install` each time, to keep our dependencies in sync.
+
+Wait until you see the following to indicate that the PHP container is ready:
+
+```
+php_1         | Craft is installed.
+php_1         | Applying changes from your project config files ... done
+php_1         | [01-Dec-2020 18:38:46] NOTICE: fpm is running, pid 22
+php_1         | [01-Dec-2020 18:38:46] NOTICE: ready to handle connections
+```
+
+...and the following to indicate that the webpack container is read:
+```
+webpack_1     | <i> devmode-fm (webpack 5.9.0) compiled successfully in 12097 ms
+webpack_1     | <i> [webpack-dev-middleware] Child "devmode-fm": Compiled successfully.
+```
+
+All of the Twig files, JavaScript, Vue components, CSS, and even the webpack config itself will relfect changes immediately Hot Module Replacement and `webpack-dev-server`, so feel free to edit things and play around.
+
 A password-scrubbed seed database will automatically be installed; you can log into the CP via these credentials:
 
 **User:** `andrew@nystudio107.com` \
