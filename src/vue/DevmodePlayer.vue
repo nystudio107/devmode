@@ -107,7 +107,7 @@
       ref="audiofile"
       :loop="innerLoop"
       :src="url"
-      preload="auto"
+      preload="metadata"
       style="display: none;"
       :autoplay="autoPlay"
     />
