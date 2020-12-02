@@ -38,7 +38,7 @@ return [
     // Public server config
     'server' => [
         'manifestPath' => '@webroot/dist/',
-        'publicPath' => App::env('TWIGPACK_SERVER_PUBLIC_PATH'),
+        'publicPath' => '/',
     ],
     // webpack-dev-server config
     'devServer' => [
