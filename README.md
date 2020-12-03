@@ -100,7 +100,7 @@ With the containers up and running, here are a few things you can try:
 }
 ```
 
-* Edit the `src/vue/DevmodePlayer.vue` vue component, changing the `currentSeconds` [data prop](https://github.com/nystudio107/devmode/blob/master/src/vue/DevmodePlayer.vue#L135) and see your changes instantly via HMR
+* Edit the `src/vue/DevmodePlayer.vue` vue component, changing the `currentSeconds` [data prop](https://github.com/nystudio107/devmode/blob/master/src/vue/DevmodePlayer.vue#L135) from `0` to `1000` and see your changes instantly via HMR (the slider will move)
 
 * Set up the `.env.sh` file in the `scripts/` directory if you want to use the scripts there by running this in your terminal from the project root: `cp scripts/example.env.sh scripts/.env.sh`
   
