@@ -31,7 +31,7 @@ registerRoute(
     new CacheFirst({
         cacheName: 'static-audio',
         plugins: [
-            new CacheableResponsePlugin({statuses: [200,206]}),
+            new CacheableResponsePlugin({statuses: [200]}),
             new RangeRequestsPlugin(),
         ],
     }),
