@@ -1,5 +1,10 @@
 # nystudio107/craft Change Log
 
+## 2.1.11 - 2020.12.03
+### Changed
+* Moved to webpack 5 for the build process
+* Numerous other changes globbed together 
+
 ## 1.1.3 - 2020.02.17
 ### Changed
 * Containerized the local dev environment via Docker
