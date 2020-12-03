@@ -59,7 +59,9 @@ You'll need [Docker desktop](https://www.docker.com/products/docker-desktop) for
 * Start up the site with `docker-compose up` (the first build will be somewhat lengthy)
 * Navigate to `http://localhost:8000` to use the site
 
-The `webpack-dev-server` runs off of `http://localhost:8080`
+The `webpack-dev-server` for Hot Module Replacement (HMR) serving of static resources runs off of `http://localhost:8080`
+
+🎉 You're now up and running Nginx, PHP, Postgres, Redis, xdebug, & ffmpeg without having to do any devops!
 
 The first time you do `docker-compose up` it will be slow, because it has to build all of the Docker images.
 
