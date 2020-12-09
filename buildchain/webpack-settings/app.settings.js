@@ -33,7 +33,7 @@ module.exports = {
         'player': '../src/js/modules/player.js',
     },
     extensions: ['.ts', '.js', '.vue', '.json'],
-    name: 'devMode.fm',
+    name: 'devmode-fm',
     paths: {
         dist: '../../cms/web/dist/',
     },

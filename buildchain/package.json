@@ -48,7 +48,7 @@
     "vue-typer": "^1.2.0",
     "vuetable-2": "^1.7.5"
   },
-  "description": "Example Project brand website",
+  "description": "Website for the devMode.fm podcast",
   "devDependencies": {
     "autoprefixer": "^10.0.0",
     "@babel/core": "^7.12.3",
