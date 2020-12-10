@@ -1,14 +1,3 @@
-{% set summary = create(
-    "Stringy\\Stringy",
-    [event.summary]
-) %}
-{% set description = create(
-    "Stringy\\Stringy",
-    [event.description]
-) %}
-
-{% set episodeNumber = summary.regexReplace('(^#\\d+\\s+)(.*)', '\\1') %}
-{% set episodeTitle = summary.regexReplace('^#\\d+\\s+', '').regexReplace('\\[.*\\]', '') %}
 <div class="w-full mb-8 max-w-4xl mx-auto">
     <div class="w-full devmode-container">
         <div class="p-8">
@@ -16,20 +5,17 @@
                 {# -- Episode title -- #}
                 <div class=" w-full md:w-2/3 text-left py-2">
                     <h2 class="font-mono italic text-devmode-pink font-bold text-3xl">
-                        {{ episodeTitle | typogrify(true) }}
+                        {{ episode.title | typogrify(true) }}
                     </h2>
                 </div>
                 {# -- Episode number and date -- #}
                 <div class="w-full md:w-1/3 text-devmode-pink font-mono text-xs text-left md:text-right uppercase py-2">
-                    {{ "Episode " ~ episodeNumber }} / {{ event.dtstart | date_modify("next Monday") | date_modify("+1 day") | date("Y.m.d") }}
+                    {{ "Episode " ~ episode.episodeNumber }} / {{ episode.postDate | date("Y.m.d") }}
                 </div>
             </div>
             {# -- Episode summary -- #}
             <div class="text-devmode-pink font-sans text-xl py-2 leading-normal">
-                 {{ description.lines()[0] |truncateOnWord(400) | typogrify }}
-            </div>
-            <div class="w-full text-devmode-pink font-mono text-xs text-left uppercase py-2">
-                (Records on {{ event.dtstart | date("Y.m.d") }} )
+                 {{ episode.episodeSummary | truncateOnWord(400) | typogrify }}
             </div>
         </div>
     </div>
