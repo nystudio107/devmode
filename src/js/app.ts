@@ -1,4 +1,4 @@
-//import Snowf from 'vue-snowf';
+import Snowf from 'vue-snowf';
 
 // App main
 const main = async() => {
@@ -13,7 +13,7 @@ const main = async() => {
         el: '#page-header',
         delimiters: ['${', '}'],
         components: {
-//            Snowf,
+            Snowf,
         },
         mixins: [VueClickaway],
         data: () => ({
