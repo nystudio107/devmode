@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.168.1",
+            "version": "3.171.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "d648085cce7bfadc8973a8ded401921583c1e3f9"
+                "reference": "742663a85ec84647f74dea454d2dc45bba180f9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/d648085cce7bfadc8973a8ded401921583c1e3f9",
-                "reference": "d648085cce7bfadc8973a8ded401921583c1e3f9",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/742663a85ec84647f74dea454d2dc45bba180f9d",
+                "reference": "742663a85ec84647f74dea454d2dc45bba180f9d",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.168.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.171.2"
             },
-            "time": "2020-12-09T19:17:01+00:00"
+            "time": "2020-12-18T19:12:13+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -615,16 +615,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.5.16",
+            "version": "3.5.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "1d69bfb0308d3b56990d7b257591071992d7a297"
+                "reference": "c4b999b325736968a05d3bcc1a5a2444dfbe9323"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/1d69bfb0308d3b56990d7b257591071992d7a297",
-                "reference": "1d69bfb0308d3b56990d7b257591071992d7a297",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/c4b999b325736968a05d3bcc1a5a2444dfbe9323",
+                "reference": "c4b999b325736968a05d3bcc1a5a2444dfbe9323",
                 "shasum": ""
             },
             "require": {
@@ -717,7 +717,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2020-11-24T19:40:32+00:00"
+            "time": "2020-12-17T12:04:00+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2668,16 +2668,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.25.5",
+            "version": "1.26.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "1817faadd1846cd08be9a49e905dc68823bc38c0"
+                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1817faadd1846cd08be9a49e905dc68823bc38c0",
-                "reference": "1817faadd1846cd08be9a49e905dc68823bc38c0",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
+                "reference": "2209ddd84e7ef1256b7af205d0717fb62cfc9c33",
                 "shasum": ""
             },
             "require": {
@@ -2693,7 +2693,7 @@
                 "graylog2/gelf-php": "~1.0",
                 "php-amqplib/php-amqplib": "~2.4",
                 "php-console/php-console": "^3.1.3",
-                "php-parallel-lint/php-parallel-lint": "^1.0",
+                "phpstan/phpstan": "^0.12.59",
                 "phpunit/phpunit": "~4.5",
                 "ruflin/elastica": ">=0.90 <3.0",
                 "sentry/sentry": "^0.13",
@@ -2713,11 +2713,6 @@
                 "sentry/sentry": "Allow sending log messages to a Sentry server"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Monolog\\": "src/Monolog"
@@ -2743,7 +2738,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/1.25.5"
+                "source": "https://github.com/Seldaek/monolog/tree/1.26.0"
             },
             "funding": [
                 {
@@ -2755,7 +2750,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-23T08:35:51+00:00"
+            "time": "2020-12-14T12:56:38+00:00"
         },
         {
             "name": "mrclay/jsmin-php",
@@ -3525,16 +3520,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.44",
+            "version": "3.1.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "98589ce7977c1e2898ef9034099c3e90aa33387b"
+                "reference": "9c2e9862ac2a014fcadf666443dcb7a1b19469e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/98589ce7977c1e2898ef9034099c3e90aa33387b",
-                "reference": "98589ce7977c1e2898ef9034099c3e90aa33387b",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/9c2e9862ac2a014fcadf666443dcb7a1b19469e6",
+                "reference": "9c2e9862ac2a014fcadf666443dcb7a1b19469e6",
                 "shasum": ""
             },
             "require": {
@@ -3585,22 +3580,22 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/retour/documentation",
                 "issues": "https://nystudio107.com/plugins/retour/support",
-                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.44"
+                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.45"
             },
-            "time": "2020-12-08T20:35:26+00:00"
+            "time": "2020-12-11T03:18:35+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.26",
+            "version": "3.3.27",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "94080ab57cf0509f22630abe12061ebcffd2ac0f"
+                "reference": "a3db2e1b9441a83a23f20abea407e1dec0758170"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/94080ab57cf0509f22630abe12061ebcffd2ac0f",
-                "reference": "94080ab57cf0509f22630abe12061ebcffd2ac0f",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/a3db2e1b9441a83a23f20abea407e1dec0758170",
+                "reference": "a3db2e1b9441a83a23f20abea407e1dec0758170",
                 "shasum": ""
             },
             "require": {
@@ -3668,9 +3663,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.26"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.27"
             },
-            "time": "2020-12-08T20:42:00+00:00"
+            "time": "2020-12-19T03:45:20+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -3741,16 +3736,16 @@
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "1.2.6",
+            "version": "1.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "dea64efdc57b9f077c3b1e06150334665b5c0a8e"
+                "reference": "17c68e9e2dd7273b7ede435adf60dd08a0c54c3c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/dea64efdc57b9f077c3b1e06150334665b5c0a8e",
-                "reference": "dea64efdc57b9f077c3b1e06150334665b5c0a8e",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/17c68e9e2dd7273b7ede435adf60dd08a0c54c3c",
+                "reference": "17c68e9e2dd7273b7ede435adf60dd08a0c54c3c",
                 "shasum": ""
             },
             "require": {
@@ -3796,9 +3791,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/twigpack/documentation",
                 "issues": "https://nystudio107.com/plugins/twigpack/support",
-                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.6"
+                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.7"
             },
-            "time": "2020-09-16T16:38:29+00:00"
+            "time": "2020-12-11T15:02:20+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -4737,20 +4732,23 @@
         },
         {
             "name": "seld/cli-prompt",
-            "version": "1.0.3",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/cli-prompt.git",
-                "reference": "a19a7376a4689d4d94cab66ab4f3c816019ba8dd"
+                "reference": "b8dfcf02094b8c03b40322c229493bb2884423c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/cli-prompt/zipball/a19a7376a4689d4d94cab66ab4f3c816019ba8dd",
-                "reference": "a19a7376a4689d4d94cab66ab4f3c816019ba8dd",
+                "url": "https://api.github.com/repos/Seldaek/cli-prompt/zipball/b8dfcf02094b8c03b40322c229493bb2884423c5",
+                "reference": "b8dfcf02094b8c03b40322c229493bb2884423c5",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.12.63"
             },
             "type": "library",
             "extra": {
@@ -4783,9 +4781,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/cli-prompt/issues",
-                "source": "https://github.com/Seldaek/cli-prompt/tree/master"
+                "source": "https://github.com/Seldaek/cli-prompt/tree/1.0.4"
             },
-            "time": "2017-03-18T11:32:45+00:00"
+            "time": "2020-12-15T21:32:01+00:00"
         },
         {
             "name": "seld/jsonlint",
@@ -6875,16 +6873,16 @@
         },
         {
             "name": "webfactory/phumbor",
-            "version": "1.2.3",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webfactory/phumbor.git",
-                "reference": "77c2d3a0e6ee6f4a806cc0282bd1ec4b72656933"
+                "reference": "b91be204f7f1aff82ac1b8d89321cdcdb16ba6ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webfactory/phumbor/zipball/77c2d3a0e6ee6f4a806cc0282bd1ec4b72656933",
-                "reference": "77c2d3a0e6ee6f4a806cc0282bd1ec4b72656933",
+                "url": "https://api.github.com/repos/webfactory/phumbor/zipball/b91be204f7f1aff82ac1b8d89321cdcdb16ba6ed",
+                "reference": "b91be204f7f1aff82ac1b8d89321cdcdb16ba6ed",
                 "shasum": ""
             },
             "replace": {
@@ -6922,9 +6920,9 @@
                 "webfactory"
             ],
             "support": {
-                "source": "https://github.com/webfactory/phumbor/tree/1.2.3"
+                "source": "https://github.com/webfactory/phumbor/tree/1.3.0"
             },
-            "time": "2018-12-05T08:28:01+00:00"
+            "time": "2020-12-12T16:12:01+00:00"
         },
         {
             "name": "webmozart/assert",
