@@ -4,7 +4,7 @@ FROM nystudio107/php-prod-base:7.4
 RUN apt-get update \
     && \
     # apt Debian packages
-    apt-get install -y \
+    apt-get install -y --no-install-recommends \
         lsb-release \
         gnupg \
         bash-completion \
@@ -18,7 +18,7 @@ RUN apt-get update \
 RUN apt-get update \
     && \
     # apt Debian packages
-    apt-get install -y \
+    apt-get install -y --no-install-recommends \
         ffmpeg \
         postgresql-client-12 \
     && \
