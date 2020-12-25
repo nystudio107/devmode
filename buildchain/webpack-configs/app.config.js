@@ -13,9 +13,6 @@ module.exports = (type = 'modern', settings) => {
     const common = () => ({
         entry: settings.entry,
         name: pkg.name,
-        output: {
-            path: path.resolve(__dirname, settings.paths.dist),
-        },
         resolve: {
             alias: settings.alias,
             extensions: settings.extensions,
