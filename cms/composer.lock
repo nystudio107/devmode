@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.171.3",
+            "version": "3.171.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "7469c8e7f8db5dec544937677d08d8fff4f2f4e9"
+                "reference": "ba12cbba6b7ae8f2aab741e5ac47e8bb30d3eac7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7469c8e7f8db5dec544937677d08d8fff4f2f4e9",
-                "reference": "7469c8e7f8db5dec544937677d08d8fff4f2f4e9",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ba12cbba6b7ae8f2aab741e5ac47e8bb30d3eac7",
+                "reference": "ba12cbba6b7ae8f2aab741e5ac47e8bb30d3eac7",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.171.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.171.10"
             },
-            "time": "2020-12-21T19:14:02+00:00"
+            "time": "2020-12-31T19:13:37+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -1156,16 +1156,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "2.1.24",
+            "version": "2.1.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "ca90a3291eee1538cd48ff25163240695bd95448"
+                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/ca90a3291eee1538cd48ff25163240695bd95448",
-                "reference": "ca90a3291eee1538cd48ff25163240695bd95448",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/0dbf5d78455d4d6a41d186da50adc1122ec066f4",
+                "reference": "0dbf5d78455d4d6a41d186da50adc1122ec066f4",
                 "shasum": ""
             },
             "require": {
@@ -1212,7 +1212,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/2.1.24"
+                "source": "https://github.com/egulias/EmailValidator/tree/2.1.25"
             },
             "funding": [
                 {
@@ -1220,7 +1220,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-14T15:56:27+00:00"
+            "time": "2020-12-29T14:50:06+00:00"
         },
         {
             "name": "elvanto/litemoji",
@@ -3242,20 +3242,20 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.20",
+            "version": "1.6.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "bd6b351851dda437af6553a4427aaceb12a2a521"
+                "reference": "d8ddb5aae6af29665f401117483c50853189c59b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/bd6b351851dda437af6553a4427aaceb12a2a521",
-                "reference": "bd6b351851dda437af6553a4427aaceb12a2a521",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/d8ddb5aae6af29665f401117483c50853189c59b",
+                "reference": "d8ddb5aae6af29665f401117483c50853189c59b",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0",
+                "craftcms/cms": "^3.1.19",
                 "ksubileau/color-thief-php": "^1.3",
                 "mikehaertl/php-shellcommand": "~1.2",
                 "nystudio107/craft-imageoptimize-imgix": "^1.1.3",
@@ -3307,9 +3307,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/imageoptimize/documentation",
                 "issues": "https://nystudio107.com/plugins/imageoptimize/support",
-                "source": "https://github.com/nystudio107/craft-imageoptimize/tree/1.6.20"
+                "source": "https://github.com/nystudio107/craft-imageoptimize/tree/1.6.21"
             },
-            "time": "2020-12-08T20:28:11+00:00"
+            "time": "2020-12-31T16:00:25+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -3586,20 +3586,20 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.27",
+            "version": "3.3.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "a3db2e1b9441a83a23f20abea407e1dec0758170"
+                "reference": "3b6d92d028144b8e83378a03e16dea1335af8678"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/a3db2e1b9441a83a23f20abea407e1dec0758170",
-                "reference": "a3db2e1b9441a83a23f20abea407e1dec0758170",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/3b6d92d028144b8e83378a03e16dea1335af8678",
+                "reference": "3b6d92d028144b8e83378a03e16dea1335af8678",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0",
+                "craftcms/cms": "^3.1.19",
                 "davechild/textstatistics": "1.0.2",
                 "php-science/textrank": "^1.0.3",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
@@ -3663,9 +3663,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.27"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.29"
             },
-            "time": "2020-12-19T03:45:20+00:00"
+            "time": "2020-12-31T16:07:17+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -7347,16 +7347,16 @@
         },
         {
             "name": "yiisoft/yii2-debug",
-            "version": "2.1.15",
+            "version": "2.1.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "317f85c1ac7a8c0b73eea345a49066b5570aa2c6"
+                "reference": "0d8ce76b2dd036a5fc38b26434e1c672ad8975a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/317f85c1ac7a8c0b73eea345a49066b5570aa2c6",
-                "reference": "317f85c1ac7a8c0b73eea345a49066b5570aa2c6",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/0d8ce76b2dd036a5fc38b26434e1c672ad8975a9",
+                "reference": "0d8ce76b2dd036a5fc38b26434e1c672ad8975a9",
                 "shasum": ""
             },
             "require": {
@@ -7433,25 +7433,25 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-13T10:09:11+00:00"
+            "time": "2020-12-23T16:36:12+00:00"
         },
         {
             "name": "yiisoft/yii2-queue",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-queue.git",
-                "reference": "25c1142558768ec0e835171c972a4edc2fb59cf0"
+                "reference": "a6758a2b9c2d8aca9b949f4faa9e3cca0dfbc8be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/25c1142558768ec0e835171c972a4edc2fb59cf0",
-                "reference": "25c1142558768ec0e835171c972a4edc2fb59cf0",
+                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/a6758a2b9c2d8aca9b949f4faa9e3cca0dfbc8be",
+                "reference": "a6758a2b9c2d8aca9b949f4faa9e3cca0dfbc8be",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.0",
-                "symfony/process": "^3.3||^4.0",
+                "symfony/process": "^3.3||^4.0||^5.0",
                 "yiisoft/yii2": "~2.0.14"
             },
             "require-dev": {
@@ -7525,7 +7525,21 @@
                 "issues": "https://github.com/yiisoft/yii2-queue/issues",
                 "source": "https://github.com/yiisoft/yii2-queue"
             },
-            "time": "2019-06-04T18:58:40+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/yiisoft/yii2-queue",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-12-23T17:04:23+00:00"
         },
         {
             "name": "yiisoft/yii2-redis",
