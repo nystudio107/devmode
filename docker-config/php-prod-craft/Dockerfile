@@ -74,6 +74,8 @@ CMD composer install --verbose --no-progress --no-scripts --optimize-autoloader 
     && \
     chown -R www-data:www-data /var/www/project/cms/storage \
     && \
+    chown -R www-data:www-data /var/www/project/cms/web \
+    && \
     composer craft-update \
     && \
     php-fpm
