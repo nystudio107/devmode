@@ -3669,16 +3669,16 @@
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "1.2.13",
+            "version": "1.2.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "59b7b12e7abe3e536aa5aedb8834ea564373132d"
+                "reference": "e16366bef624c724587be3350181469980db0b6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/59b7b12e7abe3e536aa5aedb8834ea564373132d",
-                "reference": "59b7b12e7abe3e536aa5aedb8834ea564373132d",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/e16366bef624c724587be3350181469980db0b6d",
+                "reference": "e16366bef624c724587be3350181469980db0b6d",
                 "shasum": ""
             },
             "require": {
@@ -3730,9 +3730,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/transcoder/documentation",
                 "issues": "https://nystudio107.com/plugins/transcoder/support",
-                "source": "https://github.com/nystudio107/craft-transcoder/tree/1.2.13"
+                "source": "https://github.com/nystudio107/craft-transcoder/tree/1.2.14"
             },
-            "time": "2020-12-21T20:56:04+00:00"
+            "time": "2021-01-03T19:32:03+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
