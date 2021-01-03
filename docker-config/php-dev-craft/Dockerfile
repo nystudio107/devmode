@@ -23,6 +23,11 @@ RUN set -eux; \
     # Packages to install
     apk add --no-cache \
         ffmpeg \
+        gifsicle \
+        jpegoptim \
+        libwebp-tools \
+        nano \
+        optipng \
         postgresql-client \
         postgresql-dev \
     && \
