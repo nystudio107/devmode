@@ -111,7 +111,7 @@ return [
     "set_smart_ellipses" => true,
 
     // replaces "creme brulee" with "crème brûlée"
-    "set_smart_diacritics" => true,
+    "set_smart_diacritics" => false,
 
     // defines hyphenation language for text
     "set_diacritic_language" => "en-US",
