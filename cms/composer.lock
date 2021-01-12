@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4021501d53f7a7ec9a5e7f562b2680c9",
+    "content-hash": "12f4553aec292c45e9eeab05703443ec",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -3737,16 +3737,16 @@
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "1.2.8",
+            "version": "1.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "f43f2521f9246e54b3f242c595c7afe99acd9370"
+                "reference": "74088cd00df0188f676bae64bd26f54c0ff2b1d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/f43f2521f9246e54b3f242c595c7afe99acd9370",
-                "reference": "f43f2521f9246e54b3f242c595c7afe99acd9370",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/74088cd00df0188f676bae64bd26f54c0ff2b1d9",
+                "reference": "74088cd00df0188f676bae64bd26f54c0ff2b1d9",
                 "shasum": ""
             },
             "require": {
@@ -3792,9 +3792,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/twigpack/documentation",
                 "issues": "https://nystudio107.com/plugins/twigpack/support",
-                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.8"
+                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.9"
             },
-            "time": "2021-01-12T17:51:43+00:00"
+            "time": "2021-01-12T18:52:15+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
