@@ -8,7 +8,7 @@ module.exports = {
     alias: {
         'vue$': 'vue/dist/vue.esm.js'
     },
-    copyright: '©2020 nystudio107.com',
+    copyright: 'nystudio107.com',
     entry: {
         'app': [
             '../src/js/app.ts',
