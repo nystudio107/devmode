@@ -27,7 +27,6 @@ return [
     'resourceBasePath' => App::env('WEB_ROOT_PATH').'/cpresources',
     'runQueueAutomatically' => (bool)App::env('RUN_QUEUE_AUTOMATICALLY'),
     'securityKey' => App::env('SECURITY_KEY'),
-    'siteUrl' => App::env('SITE_URL'),
     // Craft config settings from constants
     'cacheDuration' => false,
     'defaultSearchTermOptions' => [
