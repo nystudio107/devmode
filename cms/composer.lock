@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.173.5",
+            "version": "3.173.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "45a5150c35ab4ee5e4eb05332179a094476d1dd5"
+                "reference": "439a161e46895cd1f7b93b4c0295f95d6a17385e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/45a5150c35ab4ee5e4eb05332179a094476d1dd5",
-                "reference": "45a5150c35ab4ee5e4eb05332179a094476d1dd5",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/439a161e46895cd1f7b93b4c0295f95d6a17385e",
+                "reference": "439a161e46895cd1f7b93b4c0295f95d6a17385e",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.173.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.173.6"
             },
-            "time": "2021-02-08T19:13:12+00:00"
+            "time": "2021-02-09T19:14:22+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -3971,16 +3971,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "1.0.19",
+            "version": "1.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "360f2c2e3864c003a4e51bca719b1468aa00f7b8"
+                "reference": "f5834e150e01eaededf5bf8834ad793c47b166e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/360f2c2e3864c003a4e51bca719b1468aa00f7b8",
-                "reference": "360f2c2e3864c003a4e51bca719b1468aa00f7b8",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/f5834e150e01eaededf5bf8834ad793c47b166e6",
+                "reference": "f5834e150e01eaededf5bf8834ad793c47b166e6",
                 "shasum": ""
             },
             "require": {
@@ -4030,9 +4030,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/webperf/documentation",
                 "issues": "https://nystudio107.com/plugins/webperf/support",
-                "source": "https://github.com/nystudio107/craft-webperf/tree/1.0.19"
+                "source": "https://github.com/nystudio107/craft-webperf/tree/1.0.20"
             },
-            "time": "2020-12-09T14:37:59+00:00"
+            "time": "2021-02-10T00:23:36+00:00"
         },
         {
             "name": "nystudio107/dotenvy",
