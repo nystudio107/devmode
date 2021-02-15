@@ -70,7 +70,7 @@
                 </div>
             </div>
             {% set upcomingEpisodes = craft.entries({
-                status: ['live', 'pending', 'disabled'],
+                status: null,
                 section: 'episodes',
                 postDate: '>= ' ~ (now | date('Y-m-d')),
                 orderBy: {
