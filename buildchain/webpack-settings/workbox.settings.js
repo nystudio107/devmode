@@ -7,7 +7,7 @@ require('dotenv').config();
 module.exports = {
     workbox: {
         swDest: '../sw.js',
-        swSrc: '../src/js/service-worker.ts',
+        swSrc: '@js/service-worker.ts',
         exclude: [
             /\.(png|jpe?g|gif|svg|webp)$/i,
             /\.map$/,

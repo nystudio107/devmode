@@ -7,7 +7,7 @@ require('dotenv').config();
 module.exports = {
     copy: [
         {
-            from: '../src/js/example-file.js',
+            from: '@js/example-file.js',
             to: 'js/[name].[ext]',
             noErrorOnMissing: true,
         }

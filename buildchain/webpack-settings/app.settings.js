@@ -2,35 +2,41 @@
 
 // node modules
 require('dotenv').config();
+const path = require('path');
 
 // settings
 module.exports = {
     alias: {
-        'vue$': 'vue/dist/vue.esm.js'
+        'vue$': 'vue/dist/vue.esm.js',
+        '@css': path.resolve('../src/css'),
+        '@fonts': path.resolve('../src/fonts'),
+        '@img': path.resolve('../src/img'),
+        '@js': path.resolve('../src/js'),
+        '@vue': path.resolve('../src/vue'),
     },
     copyright: 'nystudio107.com',
     entry: {
         'app': [
-            '../src/js/app.ts',
-            '../src/css/app-base.pcss',
-            '../src/css/app-components.pcss',
-            '../src/css/app-utilities.pcss',
-            '../src/fonts/fontello.eot',
-            '../src/fonts/fontello.ttf',
-            '../src/fonts/fontello.woff',
-            '../src/fonts/fontello.woff2',
-            '../src/fonts/OperatorMonoSSm-Book.eot',
-            '../src/fonts/OperatorMonoSSm-Book.ttf',
-            '../src/fonts/OperatorMonoSSm-Book.woff',
-            '../src/fonts/OperatorMonoSSm-Book.woff2',
-            '../src/fonts/OperatorMonoSSm-BookItalic.eot',
-            '../src/fonts/OperatorMonoSSm-BookItalic.ttf',
-            '../src/fonts/OperatorMonoSSm-BookItalic.woff',
-            '../src/fonts/OperatorMonoSSm-BookItalic.woff2',
+            '@js/app.ts',
+            '@css/app-base.pcss',
+            '@css/app-components.pcss',
+            '@css/app-utilities.pcss',
+            '@fonts/fontello.eot',
+            '@fonts/fontello.ttf',
+            '@fonts/fontello.woff',
+            '@fonts/fontello.woff2',
+            '@fonts/OperatorMonoSSm-Book.eot',
+            '@fonts/OperatorMonoSSm-Book.ttf',
+            '@fonts/OperatorMonoSSm-Book.woff',
+            '@fonts/OperatorMonoSSm-Book.woff2',
+            '@fonts/OperatorMonoSSm-BookItalic.eot',
+            '@fonts/OperatorMonoSSm-BookItalic.ttf',
+            '@fonts/OperatorMonoSSm-BookItalic.woff',
+            '@fonts/OperatorMonoSSm-BookItalic.woff2',
         ],
-        'lazysizes-wrapper': '../src/js/utils/lazysizes-wrapper.ts',
-        'episodes': '../src/js/modules/episodes.js',
-        'player': '../src/js/modules/player.js',
+        'lazysizes-wrapper': '@js/utils/lazysizes-wrapper.ts',
+        'episodes': '@js/modules/episodes.js',
+        'player': '@js/modules/player.js',
     },
     extensions: ['.ts', '.js', '.vue', '.json'],
     name: 'devmode-fm',
