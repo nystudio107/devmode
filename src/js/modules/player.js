@@ -6,7 +6,7 @@ const main = async() => {
     const vm = new Vue({
         el: "#devmode-player",
         components: {
-            'devmode-player': () => import(/* webpackChunkName: "devmodeplayer" */ '@vue/DevmodePlayer.vue'),
+            'devmode-player': () => import(/* webpackChunkName: "devmodeplayer" */ '@/vue/DevmodePlayer.vue'),
         },
         data: function() {
 return {

@@ -8,7 +8,8 @@
       />
       <vuetable-pagination
         ref="paginationTop"
-        @vuetable-pagination:change-page="onChangePage"
+        @
+        vuetable-pagination:change-page="onChangePage"
       />
     </div>
     <div class="overflow-x-auto overflow-y-hidden">
@@ -20,9 +21,12 @@
         :css="css"
         :sort-order="sortOrder"
         :append-params="moreParams"
-        @vuetable:pagination-data="onPaginationData"
-        @vuetable:row-clicked="onRowClicked"
-        @vuetable:loaded="onLoaded"
+        @
+        vuetable:pagination-data="onPaginationData"
+        @
+        vuetable:row-clicked="onRowClicked"
+        @
+        vuetable:loaded="onLoaded"
       >
         <template
           slot="episode-display"
@@ -45,23 +49,24 @@
       />
       <vuetable-pagination
         ref="pagination"
-        @vuetable-pagination:change-page="onChangePage"
+        @
+        vuetable-pagination:change-page="onChangePage"
       />
     </div>
   </div>
 </template>
 
 <script>
-    import FieldDefs from '@vue/EpisodesFieldDefs.js';
+    import FieldDefs from '@/vue/EpisodesFieldDefs.js';
 
     // Our component exports
     export default {
         components: {
-            'vuetable': () => import(/* webpackChunkName: "vuetable" */ '@vue/Vuetable.vue'),
-            'vuetable-pagination': () => import(/* webpackChunkName: "vuetablepagination" */ '@vue/VuetablePagination.vue'),
-            'vuetable-pagination-info': () => import(/* webpackChunkName: "vuetablepaginationinfo" */ '@vue/VuetablePaginationInfo.vue'),
-            'vuetable-filter-bar': () => import(/* webpackChunkName: "vuetablefilterbar" */ '@vue/VuetableFilterBar.vue'),
-            'episode-cell': () => import(/* webpackChunkName: "episodecell" */ '@vue/EpisodeCell.vue'),
+            'vuetable': () => import(/* webpackChunkName: "vuetable" */ '@/vue/Vuetable.vue'),
+            'vuetable-pagination': () => import(/* webpackChunkName: "vuetablepagination" */ '@/vue/VuetablePagination.vue'),
+            'vuetable-pagination-info': () => import(/* webpackChunkName: "vuetablepaginationinfo" */ '@/vue/VuetablePaginationInfo.vue'),
+            'vuetable-filter-bar': () => import(/* webpackChunkName: "vuetablefilterbar" */ '@/vue/VuetableFilterBar.vue'),
+            'episode-cell': () => import(/* webpackChunkName: "episodecell" */ '@/vue/EpisodeCell.vue'),
         },
         props: {
         },
