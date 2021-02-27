@@ -3632,21 +3632,21 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.47",
+            "version": "3.1.48",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "456560320c05cd35aed9b0bd502970414107bd6d"
+                "reference": "320aa9ab24afa6c63b99fba972d0f436e3400d1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/456560320c05cd35aed9b0bd502970414107bd6d",
-                "reference": "456560320c05cd35aed9b0bd502970414107bd6d",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/320aa9ab24afa6c63b99fba972d0f436e3400d1f",
+                "reference": "320aa9ab24afa6c63b99fba972d0f436e3400d1f",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
-                "league/csv": "^8.2"
+                "league/csv": "^8.2 || ^9.0"
             },
             "require-dev": {
                 "codeception/codeception": "^3.0",
@@ -3692,9 +3692,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/retour/documentation",
                 "issues": "https://nystudio107.com/plugins/retour/support",
-                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.47"
+                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.48"
             },
-            "time": "2021-02-22T23:53:32+00:00"
+            "time": "2021-02-27T17:05:04+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
@@ -4204,16 +4204,16 @@
         },
         {
             "name": "php-science/textrank",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHP-Science/TextRank.git",
-                "reference": "c20457d51f500512684ff9eb2e1ce3c40f7f8cb9"
+                "reference": "cfa7480c9e136492109602473c242c1788279a4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHP-Science/TextRank/zipball/c20457d51f500512684ff9eb2e1ce3c40f7f8cb9",
-                "reference": "c20457d51f500512684ff9eb2e1ce3c40f7f8cb9",
+                "url": "https://api.github.com/repos/PHP-Science/TextRank/zipball/cfa7480c9e136492109602473c242c1788279a4d",
+                "reference": "cfa7480c9e136492109602473c242c1788279a4d",
                 "shasum": ""
             },
             "require": {
@@ -4255,9 +4255,9 @@
             ],
             "support": {
                 "issues": "https://github.com/PHP-Science/TextRank/issues",
-                "source": "https://github.com/PHP-Science/TextRank/tree/1.2.0"
+                "source": "https://github.com/PHP-Science/TextRank/tree/1.2.1"
             },
-            "time": "2020-11-28T17:25:11+00:00"
+            "time": "2021-02-27T07:54:19+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
