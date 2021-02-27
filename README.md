@@ -19,6 +19,7 @@ The project is based on [Craft CMS](https://CraftCMS.com) using a unique `templa
 * [VueJS](https://vuejs.org/) is used for some of the interactive bits on the website
 * [Tailwind CSS](https://tailwindcss.com/) for the site-wide CSS
 * JSON-LD structured data as per [Annotated JSON-LD Structured Data Examples](https://nystudio107.com/blog/annotated-json-ld-structured-data-examples)
+* [xdebug via dual containers](https://nystudio107.com/blog/an-annotated-docker-config-for-frontend-web-development#xdebug-performance) for better performance
 * [Google AMP](https://developers.google.com/amp/) versions of the podcast episode and other pages
 * Static assets are stored in AWS S3 buckets with CloudFront as the CDN, as per the [Setting Up AWS S3 Buckets + CloudFront CDN for your Assets](https://nystudio107.com/blog/using-aws-s3-buckets-cloudfront-distribution-with-craft-cms) article
 * Image transforms are done via a [Serverless Image Handler](https://aws.amazon.com/solutions/serverless-image-handler/) lambda function, as described in the [Setting Up Your Own Image Transform Service](https://nystudio107.com/blog/setting-up-your-own-image-transform-service) article
@@ -47,18 +48,67 @@ The following Craft CMS plugins are used on this site:
 
 You can read more about it in the [Setting up a New Craft 3 CMS Project](https://nystudio107.com/blog/setting-up-a-craft-cms-3-project) article.
 
-## Setting Local Dev
+## Try devMode.fm Yourself!
 
-You'll need Docker desktop for your platform installed to run devMode in local development
+### Initial setup
+
+You'll need [Docker desktop](https://www.docker.com/products/docker-desktop) for your platform installed to run devMode in local development
 
 * Clone the git repo with `git clone https://github.com/nystudio107/devmode.git`
-* Set up a `.env` file in the `cms/` directory, based off of the provided `example.env`
-* Set up a `.env.sh.` file in the `scripts/` directory, based off of the provided `example.env.sh`
+* In your terminal, type `cd devmode` then `cp cms/example.env cms/.env` to set up the `.env` file
 * Start up the site with `docker-compose up` (the first build will be somewhat lengthy)
-* Import the remote db the first time from the `scripts/` dir with `./docker_pull_db.sh`
-* Navigate to `http://localhost:8000` to use the site; the `webpack-dev-server` runs off of `http://localhost:8080`
+* Navigate to `http://localhost:8000` to use the site
 
-**N.B.:** Without authorization & credentials (which are private), the `./docker_pull_db.sh` will not work. It's provided here for instructional purposes, and for devMode.fm hosts
+The `webpack-dev-server` for Hot Module Replacement (HMR) serving of static resources runs off of `http://localhost:8080`
+
+🎉 You're now up and running Nginx, PHP, Postgres, Redis, xdebug, & ffmpeg without having to do any devops!
+
+The first time you do `docker-compose up` it will be slow, because it has to build all of the Docker images.
+
+Subsequent `docker-compose up` commands will be much faster, but still a little slow because we intentionally do a `composer install` and an `npm install` each time, to keep our dependencies in sync.
+
+Wait until you see the following to indicate that the PHP container is ready:
+
+```
+php_1         | Craft is installed.
+php_1         | Applying changes from your project config files ... done
+php_1         | [01-Dec-2020 18:38:46] NOTICE: fpm is running, pid 22
+php_1         | [01-Dec-2020 18:38:46] NOTICE: ready to handle connections
+```
+
+...and the following to indicate that the webpack container is ready:
+```
+webpack_1     | <i> devmode-fm (webpack 5.9.0) compiled successfully in 12097 ms
+webpack_1     | <i> [webpack-dev-middleware] Child "devmode-fm": Compiled successfully.
+```
+
+All of the Twig files, JavaScript, Vue components, CSS, and even the webpack config itself will relfect changes immediately Hot Module Replacement and `webpack-dev-server`, so feel free to edit things and play around.
+
+A password-scrubbed seed database will automatically be installed; you can log into the CP at `http://localhost:8000/admin` via these credentials:
+
+**User:** `andrew@nystudio107.com` \
+**Password:** `password`
+
+### Things you can try
+
+With the containers up and running, here are a few things you can try:
+
+* Edit a CSS file such as `src/css/components/global.pcss` to add something like this, and change the colors to see the CSS change instantly via HRM:
+```css
+* {
+  border: 3px solid red;
+}
+```
+
+* Edit the `src/vue/DevmodePlayer.vue` vue component, changing the `currentSeconds` [data prop](https://github.com/nystudio107/devmode/blob/master/src/vue/DevmodePlayer.vue#L135) from `0` to `1000` and see your changes instantly via HMR (the slider will move)
+
+* Set up the `.env.sh` file in the `scripts/` directory if you want to use the scripts there by running this in your terminal from the project root: `cp scripts/example.env.sh scripts/.env.sh`
+  
+* Build the production assets by typing `cd scripts` and then typing `./docker_prod_build.sh` to build the critical CSS, fonts, and other production assets. They will appear in `cms/web/dist/` (just double-click on the `report-legacy.html` and `report-modern.html` files to view them)
+
+ **N.B.:** Without authorization & credentials (which are private), the `scripts/docker_pull_db.sh` will not work. It's provided here for instructional purposes, and for devMode.fm hosts
+
+### Other notes
 
 To update to the latest Composer packages (as constrained by the `cms/composer.json` semvers), do:
 ```
@@ -81,7 +131,7 @@ To use Xdebug with VSCode install the [PHP Debug extension](https://marketplace.
             "name": "Listen for Xdebug",
             "type": "php",
             "request": "launch",
-            "port": 9001,
+            "port": 9003,
             "log": true,
             "externalConsole": false,
             "pathMappings": {

@@ -21,6 +21,8 @@ html {
   appearance: none;
 }
 
+/* Disable for always dark mode for snow
+
 .devmode-container {
   background-color: #f7fafc;
 }
@@ -36,7 +38,28 @@ html {
 .devmode-aqua-background {
   background-color: #00b2c2;
 }
+ */
+/* Enable for always dark mode for snow: */
+.devmode-aqua-background {
+  background-color: #3B6471;
+}
+.devmode-container {
+  background-color: #22223A;
+}
+.devmode-background {
+  background-image: url('https://dnzwsrj1eic0g.cloudfront.net/site/devmode-fm-dark-bg.svg');
+}
+.devmode-header-text {
+  opacity: .50;
+}
+img {
+  opacity: .75;
+}
+img:hover {
+  opacity: 1;
+}
 
+/*
 @media (prefers-color-scheme: dark) {
   .devmode-aqua-background {
     background-color: #3B6471;
@@ -57,6 +80,7 @@ html {
     opacity: 1;
   }
 }
+*/
 
 .navbar-link {
   color: theme('colors.devmode-pink');

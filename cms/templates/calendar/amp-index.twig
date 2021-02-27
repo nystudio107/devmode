@@ -9,11 +9,6 @@
 {% do seomatic.helper.loadMetadataForUri(entry.uri) %}
 {% do seomatic.script.container().include(false) %}
 
-{% block headCss %}
-    {{ parent() }}
-    {{ craft.twigpack.includeFile("@webroot/dist/criticalcss/calendar/amp_index_critical.min.css") }}
-{% endblock headCss %}
-
 {% block content %}
     {% include "_partials/_meta-schema-radio-series.twig" with {
         "showInfo": showInfo,
@@ -68,22 +63,25 @@
             <div class="pt-8">
                 <div class="w-full bg-transparent">
                     <div class="pt-8 mb-8">
-                        <h3 class="devmode-header-text text-center">
+                        <h3 class="devmode-header-text text-center text-xl font-bold">
                             Upcoming shows
                         </h3>
                     </div>
                 </div>
             </div>
-            {% set cal = parseIcs(craft.site.calendarFeedUrl(), {
-                "defaultTimeZone": "America/New_York",
-            }) %}
-            {% if cal %}
-                {% for event in cal.eventsFromRange(now | date | atom) %}
+            {% set upcomingEpisodes = craft.entries({
+                status: ['pending'],
+                section: 'episodes',
+                orderBy: {
+                    'postDate': SORT_ASC,
+                }
+            }).all() %}
+            {% if upcomingEpisodes %}
+                {% for episode in upcomingEpisodes %}
                     <div class="container mx-auto py-8">
                         <div class="flex flex-wrap {% if loop.last %} pb-8{% endif %}">
                             {% include "calendar/_partials/_display_event_excerpt.twig" with {
-                                "event": event,
-                                "showInfo": showInfo,
+                                "episode": episode,
                             } only %}
                         </div>
                     </div>

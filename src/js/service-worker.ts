@@ -18,14 +18,18 @@ const FALLBACK_IMAGE_URL = '/offline.svg';
 // eslint-disable-next-line no-restricted-globals,no-underscore-dangle
 precacheAndRoute(self.__WB_MANIFEST || []);
 
+// Ignore /admin requests
+registerRoute(
+    /\/admin/,
+    new NetworkOnly({
+    }),
+);
+
 // Audio
 registerRoute(
     /\.(?:mp3)$/,
     new CacheFirst({
         cacheName: 'static-audio',
-        expiration: {
-            maxEntries: 5
-        },
         plugins: [
             new CacheableResponsePlugin({statuses: [200]}),
             new RangeRequestsPlugin(),

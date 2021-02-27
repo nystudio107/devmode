@@ -13,16 +13,15 @@ module.exports = (type = 'modern', settings) => {
     const common = () => ({
         entry: settings.entry,
         name: pkg.name,
-        output: {
-            path: path.resolve(__dirname, settings.paths.dist),
-            publicPath: settings.urls.publicPath()
-        },
         resolve: {
             alias: settings.alias,
             extensions: settings.extensions,
             modules: [
                 path.resolve(__dirname, '../node_modules'),
             ],
+        },
+        stats: {
+            colors: true,
         },
     });
     // configs

@@ -12,11 +12,6 @@
 {% do seomatic.helper.loadMetadataForUri(entry.uri) %}
 {% do seomatic.script.container().include(false) %}
 
-{% block headCss %}
-    {{ parent() }}
-    {{ craft.twigpack.includeFile("@webroot/dist/criticalcss/episodes/_amp_entry_critical.min.css") }}
-{% endblock headCss %}
-
 {% block content %}
     <section>
         <div>
