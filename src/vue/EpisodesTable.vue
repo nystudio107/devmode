@@ -1,59 +1,66 @@
 <template>
-    <div class="w-full bg-transparent">
-        <vuetable-filter-bar></vuetable-filter-bar>
-        <div class="vuetable-pagination flow-root px-2 md:px-0">
-            <vuetable-pagination-info ref="paginationInfoTop"
-                                      infoTemplate="Displaying {from} to {to} of {total} episodes"
-            ></vuetable-pagination-info>
-            <vuetable-pagination ref="paginationTop"
-                                 @vuetable-pagination:change-page="onChangePage"
-            ></vuetable-pagination>
-        </div>
-        <div class="overflow-x-auto overflow-y-hidden">
-            <vuetable ref="vuetable"
-                      api-url="/actions/site-module/site/episodes"
-                      :per-page="10"
-                      :fields="fields"
-                      :css="css"
-                      :sort-order="sortOrder"
-                      :append-params="moreParams"
-                      @vuetable:pagination-data="onPaginationData"
-                      @vuetable:row-clicked="onRowClicked"
-                      @vuetable:loaded="onLoaded"
-            >
-                <template slot="episode-display" slot-scope="props">
-                    <episode-cell :title="props.rowData.title"
-                                  :url="props.rowData.url"
-                                  :post-date="props.rowData.postDate"
-                                  :episode-number="props.rowData.episodeNumber"
-                                  :summary="props.rowData.summary"
-                    >
-                    </episode-cell>
-                </template>
-            </vuetable>
-        </div>
-        <div class="vuetable-pagination flow-root px-2 md:px-0">
-            <vuetable-pagination-info ref="paginationInfo"
-                                      infoTemplate="Displaying {from} to {to} of {total} episodes"
-            ></vuetable-pagination-info>
-            <vuetable-pagination ref="pagination"
-                                 @vuetable-pagination:change-page="onChangePage"
-            ></vuetable-pagination>
-        </div>
+  <div class="w-full bg-transparent">
+    <vuetable-filter-bar />
+    <div class="vuetable-pagination flow-root px-2 md:px-0">
+      <vuetable-pagination-info
+        ref="paginationInfoTop"
+        info-template="Displaying {from} to {to} of {total} episodes"
+      />
+      <vuetable-pagination
+        ref="paginationTop"
+        @vuetable-pagination:change-page="onChangePage"
+      />
     </div>
+    <div class="overflow-x-auto overflow-y-hidden">
+      <vuetable
+        ref="vuetable"
+        api-url="/actions/site-module/site/episodes"
+        :per-page="10"
+        :fields="fields"
+        :css="css"
+        :sort-order="sortOrder"
+        :append-params="moreParams"
+        @vuetable:pagination-data="onPaginationData"
+        @vuetable:row-clicked="onRowClicked"
+        @vuetable:loaded="onLoaded"
+      >
+        <template
+          #episode-display="props"
+        >
+          <episode-cell
+            :title="props.rowData.title"
+            :url="props.rowData.url"
+            :post-date="props.rowData.postDate"
+            :episode-number="props.rowData.episodeNumber"
+            :summary="props.rowData.summary"
+          />
+        </template>
+      </vuetable>
+    </div>
+    <div class="vuetable-pagination flow-root px-2 md:px-0">
+      <vuetable-pagination-info
+        ref="paginationInfo"
+        info-template="Displaying {from} to {to} of {total} episodes"
+      />
+      <vuetable-pagination
+        ref="pagination"
+        @vuetable-pagination:change-page="onChangePage"
+      />
+    </div>
+  </div>
 </template>
 
 <script>
-    import FieldDefs from './EpisodesFieldDefs.js';
+    import FieldDefs from '@/vue/EpisodesFieldDefs.js';
 
     // Our component exports
     export default {
         components: {
-            'vuetable': () => import(/* webpackChunkName: "vuetable" */ './Vuetable.vue'),
-            'vuetable-pagination': () => import(/* webpackChunkName: "vuetablepagination" */ './VuetablePagination.vue'),
-            'vuetable-pagination-info': () => import(/* webpackChunkName: "vuetablepaginationinfo" */ './VuetablePaginationInfo.vue'),
-            'vuetable-filter-bar': () => import(/* webpackChunkName: "vuetablefilterbar" */ './VuetableFilterBar.vue'),
-            'episode-cell': () => import(/* webpackChunkName: "episodecell" */ './EpisodeCell.vue'),
+            'vuetable': () => import(/* webpackChunkName: "vuetable" */ '@/vue/Vuetable.vue'),
+            'vuetable-pagination': () => import(/* webpackChunkName: "vuetablepagination" */ '@/vue/VuetablePagination.vue'),
+            'vuetable-pagination-info': () => import(/* webpackChunkName: "vuetablepaginationinfo" */ '@/vue/VuetablePaginationInfo.vue'),
+            'vuetable-filter-bar': () => import(/* webpackChunkName: "vuetablefilterbar" */ '@/vue/VuetableFilterBar.vue'),
+            'episode-cell': () => import(/* webpackChunkName: "episodecell" */ '@/vue/EpisodeCell.vue'),
         },
         props: {
         },
