@@ -1,15 +1,14 @@
 <template>
   <div class="w-full bg-transparent">
     <vuetable-filter-bar />
-    <div class="vuetable-pagination clearfix px-2 md:px-0">
+    <div class="vuetable-pagination flow-root px-2 md:px-0">
       <vuetable-pagination-info
         ref="paginationInfoTop"
         info-template="Displaying {from} to {to} of {total} episodes"
       />
       <vuetable-pagination
         ref="paginationTop"
-        @
-        vuetable-pagination:change-page="onChangePage"
+        @vuetable-pagination:change-page="onChangePage"
       />
     </div>
     <div class="overflow-x-auto overflow-y-hidden">
@@ -21,16 +20,12 @@
         :css="css"
         :sort-order="sortOrder"
         :append-params="moreParams"
-        @
-        vuetable:pagination-data="onPaginationData"
-        @
-        vuetable:row-clicked="onRowClicked"
-        @
-        vuetable:loaded="onLoaded"
+        @vuetable:pagination-data="onPaginationData"
+        @vuetable:row-clicked="onRowClicked"
+        @vuetable:loaded="onLoaded"
       >
         <template
-          slot="episode-display"
-          slot-scope="props"
+          #episode-display="props"
         >
           <episode-cell
             :title="props.rowData.title"
@@ -42,15 +37,14 @@
         </template>
       </vuetable>
     </div>
-    <div class="vuetable-pagination clearfix px-2 md:px-0">
+    <div class="vuetable-pagination flow-root px-2 md:px-0">
       <vuetable-pagination-info
         ref="paginationInfo"
         info-template="Displaying {from} to {to} of {total} episodes"
       />
       <vuetable-pagination
         ref="pagination"
-        @
-        vuetable-pagination:change-page="onChangePage"
+        @vuetable-pagination:change-page="onChangePage"
       />
     </div>
   </div>
