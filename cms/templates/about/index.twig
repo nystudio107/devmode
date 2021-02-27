@@ -68,7 +68,7 @@
                                 <ul class="list-reset inline">
                                     {% for link in block.links %}
                                         <li class="inline-block pr-1">
-                                            <a href="{{ link.linkUrl }}" class="tags-link align-middle whitespace-no-wrap" title="{{ link.linkText }}" target="_blank" rel="nofollow noopener">{{ link.linkText }}</a>
+                                            <a href="{{ link.linkUrl }}" class="devmode-tags tags-link align-middle whitespace-no-wrap" title="{{ link.linkText }}" target="_blank" rel="nofollow noopener">{{ link.linkText }}</a>
                                         </li>
                                     {% endfor %}
                                 </ul>
@@ -91,7 +91,7 @@
                             <ul class="list-reset inline">
                                 {% for plugin in plugins %}
                                     <li class="inline-block pr-1">
-                                        <a href="{{ "https://github.com/#{plugin.packageName}" }}" class="tags-link align-middle whitespace-no-wrap" title="{{ plugin.name }}" rel="noopener nofollow" target="_blank">{{ plugin.name }}</a>
+                                        <a href="{{ "https://github.com/#{plugin.packageName}" }}" class="devmode-tags tags-link align-middle whitespace-no-wrap" title="{{ plugin.name }}" rel="noopener nofollow" target="_blank">{{ plugin.name }}</a>
                                     </li>
                                 {% endfor %}
                             </ul>
@@ -106,18 +106,29 @@
 {% endblock %}
 
 {% block subcontent %}
+    {% set regularsDisplayed = false %}
     <section>
         <div class="devmode-aqua-background">
             <div class="pt-8">
                 <div class="w-full bg-transparent">
                     <div class="pt-8 mb-8">
-                        <h3 class="devmode-header-text text-center">
-                            Our Hosts
+                        <h3 class="devmode-header-text text-center text-xl font-bold">
+                            Hosts
                         </h3>
                     </div>
                 </div>
             </div>
             {% for host in craft.users.group("hosts").orderBy("elements.dateCreated ASC").all() %}
+                {% if not regularsDisplayed and not host.isInGroup("owners") %}
+                    {% set regularsDisplayed = true %}
+                    <div class="w-full bg-transparent">
+                        <div class="pt-8 mb-8">
+                            <h3 class="devmode-header-text text-center text-xl font-bold">
+                                Regulars
+                            </h3>
+                        </div>
+                    </div>
+                {% endif %}
                 <div class="container mx-auto py-8">
                     <div class="flex flex-wrap {% if loop.last %} pb-8{% endif %}">
                         {% include "about/_partials/_display_host_excerpt.twig" with {
