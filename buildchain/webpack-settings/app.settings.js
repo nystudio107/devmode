@@ -14,9 +14,7 @@ module.exports = {
     entry: {
         'app': [
             '@/js/app.ts',
-            '@/css/app-base.pcss',
-            '@/css/app-components.pcss',
-            '@/css/app-utilities.pcss',
+            '@/css/app.pcss',
             '@/fonts/fontello.eot',
             '@/fonts/fontello.ttf',
             '@/fonts/fontello.woff',
