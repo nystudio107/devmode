@@ -108,8 +108,10 @@ img:hover {
   @apply text-white;
 }
 
-.devmode-tags {
-  @apply font-mono italic font-bold text-xs bg-devmode-yellow text-devmode-pink px-2 py-1 mx-1 my-2 leading-loose
+@layer components {
+  .devmode-tags {
+    @apply font-mono italic font-bold text-xs bg-devmode-yellow text-devmode-pink px-2 py-1 mx-1 my-2 leading-loose
+  }
 }
 
 .tags-link {
