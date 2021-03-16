@@ -12,39 +12,39 @@ module.exports = {
         criticalWidth: 1200,
         pages: [
             {
-                url: '',
+                uri: '',
                 template: 'index'
             },
             {
-                url: 'about',
+                uri: 'about',
                 template: 'about/index'
             },
             {
-                url: 'calendar',
+                uri: 'calendar',
                 template: 'calendar/index'
             },
             {
-                url: 'episodes',
+                uri: 'episodes',
                 template: 'episodes/index'
             },
             {
-                url: 'episodes/webpack-inside-out-with-sean-larkin',
+                uri: 'episodes/webpack-inside-out-with-sean-larkin',
                 template: 'episodes/_entry'
             },
             {
-                url: 'errors/offline',
+                uri: 'errors/offline',
                 template: 'errors/offline'
             },
             {
-                url: 'errors/error',
+                uri: 'errors/error',
                 template: 'errors/error'
             },
             {
-                url: 'errors/503',
+                uri: 'errors/503',
                 template: 'errors/503'
             },
             {
-                url: 'errors/404',
+                uri: 'errors/404',
                 template: 'errors/404'
             },
         ]
