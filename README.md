@@ -56,16 +56,16 @@ You'll need [Docker desktop](https://www.docker.com/products/docker-desktop) for
 
 * Clone the git repo with `git clone https://github.com/nystudio107/devmode.git`
 * In your terminal, type `cd devmode` then `cp cms/example.env cms/.env` to set up the `.env` file
-* Start up the site with `docker-compose up` (the first build will be somewhat lengthy)
+* Start up the site by typing `make dev` in terminal in the project's root directory (the first build will be somewhat lengthy)
 * Navigate to `http://localhost:8000` to use the site
 
 The `webpack-dev-server` for Hot Module Replacement (HMR) serving of static resources runs off of `http://localhost:8080`
 
 🎉 You're now up and running Nginx, PHP, Postgres, Redis, xdebug, & ffmpeg without having to do any devops!
 
-The first time you do `docker-compose up` it will be slow, because it has to build all of the Docker images.
+The first time you do `make dev` it will be slow, because it has to build all of the Docker images.
 
-Subsequent `docker-compose up` commands will be much faster, but still a little slow because we intentionally do a `composer install` and an `npm install` each time, to keep our dependencies in sync.
+Subsequent `make dev` commands will be much faster, but still a little slow because we intentionally do a `composer install` and an `npm install` each time, to keep our dependencies in sync.
 
 Wait until you see the following to indicate that the PHP container is ready:
 
@@ -104,22 +104,22 @@ With the containers up and running, here are a few things you can try:
 
 * Set up the `.env.sh` file in the `scripts/` directory if you want to use the scripts there by running this in your terminal from the project root: `cp scripts/example.env.sh scripts/.env.sh`
   
-* Build the production assets by typing `cd scripts` and then typing `./docker_prod_build.sh` to build the critical CSS, fonts, and other production assets. They will appear in `cms/web/dist/` (just double-click on the `report-legacy.html` and `report-modern.html` files to view them)
+* Build the production assets by typing `make build` to build the critical CSS, fonts, and other production assets. They will appear in `cms/web/dist/` (just double-click on the `report-legacy.html` and `report-modern.html` files to view them)
 
- **N.B.:** Without authorization & credentials (which are private), the `scripts/docker_pull_db.sh` will not work. It's provided here for instructional purposes, and for devMode.fm hosts
+ **N.B.:** Without authorization & credentials (which are private), the `make pulldb` will not work (it just runs `scripts/docker_pull_db.sh`). It's provided here for instructional purposes, and for devMode.fm hosts
 
 ### Other notes
 
 To update to the latest Composer packages (as constrained by the `cms/composer.json` semvers), do:
 ```
 rm cms/composer.lock
-docker-compose up
+make dev
 ```
 
 To update to the latest npm packages (as constrained by the `docker-config/webpack-dev-devmode/package.json` semvers), do:
 ```
 rm docker-config/webpack-dev-devmode/package-lock.json
-docker-compose up
+make dev
 ```
 
 To use Xdebug with VSCode install the [PHP Debug extension](https://marketplace.visualstudio.com/items?itemName=felixfbecker.php-debug ) and use the following configuration:
