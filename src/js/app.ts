@@ -13,7 +13,9 @@ const main = async() => {
         el: '#page-header',
         delimiters: ['${', '}'],
         components: {
+/*
             Snowf,
+*/
         },
         mixins: [VueClickaway],
         data: () => ({
