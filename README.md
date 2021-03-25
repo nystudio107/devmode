@@ -89,6 +89,18 @@ A password-scrubbed seed database will automatically be installed; you can log i
 **User:** `andrew@nystudio107.com` \
 **Password:** `password`
 
+### Makefile Project Commands
+
+This project uses Docker to shrink-wrap the devops it needs to run around the project.
+
+To make using it easier, we're using a Makefile and the built-in `make` utility to create local aliases. You can run the following from terminal in the project directory:
+
+- `make dev` - starts up the local dev server listening on `http://localhost:8000/`
+- `make build` - builds the static assets via the webpack 5 buildchain, to the `cms/web/dist/` directory; the `scripts/.env.sh` must be set up first
+- `make clean` - shuts down the Docker containers, removes any mounted volumes (including the database), and then rebuilds the containers from scratch
+- `make pulldb` - runs the `scripts/docker_pull_db.sh` script to pull a remote database into the database container; the `scripts/.env.sh` must be set up first
+- `make restoredb xxxx` - runs the `scripts/docker_restore_db.sh` script to restore a local database dump into the database container; the `scripts/.env.sh` must be set up first
+
 ### Things you can try
 
 With the containers up and running, here are a few things you can try:
