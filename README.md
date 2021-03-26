@@ -101,7 +101,7 @@ To make using it easier, we're using a Makefile and the built-in `make` utility 
 - `make composer xxx` - runs the `composer` command passed in, e.g. `make composer install`
 - `make npm xxx` - runs the `npm` command passed in, e.g. `make npm install`
 - `make pulldb` - runs the `scripts/docker_pull_db.sh` script to pull a remote database into the database container; the `scripts/.env.sh` must be set up first
-- `make restoredb xxxx` - runs the `scripts/docker_restore_db.sh` script to restore a local database dump into the database container; the `scripts/.env.sh` must be set up first
+- `make restoredb xxx` - runs the `scripts/docker_restore_db.sh` script to restore a local database dump into the database container; the `scripts/.env.sh` must be set up first
 
 ### Things you can try
 
