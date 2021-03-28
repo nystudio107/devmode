@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.175.0",
+            "version": "3.176.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "31baa9e0c4330f01eb74b8a7ef086e9d34f8391e"
+                "reference": "cfd62d9d159df12e8e1fc3c486e0a010a4c39f80"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/31baa9e0c4330f01eb74b8a7ef086e9d34f8391e",
-                "reference": "31baa9e0c4330f01eb74b8a7ef086e9d34f8391e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cfd62d9d159df12e8e1fc3c486e0a010a4c39f80",
+                "reference": "cfd62d9d159df12e8e1fc3c486e0a010a4c39f80",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.175.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.176.2"
             },
-            "time": "2021-03-19T18:13:22+00:00"
+            "time": "2021-03-26T18:16:22+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -495,16 +495,16 @@
         },
         {
             "name": "composer/xdebug-handler",
-            "version": "1.4.5",
+            "version": "1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/xdebug-handler.git",
-                "reference": "f28d44c286812c714741478d968104c5e604a1d4"
+                "reference": "f27e06cd9675801df441b3656569b328e04aa37c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f28d44c286812c714741478d968104c5e604a1d4",
-                "reference": "f28d44c286812c714741478d968104c5e604a1d4",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/f27e06cd9675801df441b3656569b328e04aa37c",
+                "reference": "f27e06cd9675801df441b3656569b328e04aa37c",
                 "shasum": ""
             },
             "require": {
@@ -512,7 +512,8 @@
                 "psr/log": "^1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
+                "phpstan/phpstan": "^0.12.55",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
             },
             "type": "library",
             "autoload": {
@@ -538,7 +539,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/xdebug-handler/issues",
-                "source": "https://github.com/composer/xdebug-handler/tree/1.4.5"
+                "source": "https://github.com/composer/xdebug-handler/tree/1.4.6"
             },
             "funding": [
                 {
@@ -554,7 +555,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-13T08:04:11+00:00"
+            "time": "2021-03-25T17:01:18+00:00"
         },
         {
             "name": "craftcms/aws-s3",
@@ -615,16 +616,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.6.10",
+            "version": "3.6.11.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "3f88316387ca91ceaf9b63dc9983e17b77b510e2"
+                "reference": "05f280380028c062efa5acfb42d35259804c6240"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/3f88316387ca91ceaf9b63dc9983e17b77b510e2",
-                "reference": "3f88316387ca91ceaf9b63dc9983e17b77b510e2",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/05f280380028c062efa5acfb42d35259804c6240",
+                "reference": "05f280380028c062efa5acfb42d35259804c6240",
                 "shasum": ""
             },
             "require": {
@@ -714,7 +715,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2021-03-09T20:10:02+00:00"
+            "time": "2021-03-24T14:39:20+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -1378,22 +1379,22 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.2.0",
+            "version": "7.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "0aa74dfb41ae110835923ef10a9d803a22d50e79"
+                "reference": "7008573787b430c1c1f650e3722d9bba59967628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/0aa74dfb41ae110835923ef10a9d803a22d50e79",
-                "reference": "0aa74dfb41ae110835923ef10a9d803a22d50e79",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/7008573787b430c1c1f650e3722d9bba59967628",
+                "reference": "7008573787b430c1c1f650e3722d9bba59967628",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.4",
-                "guzzlehttp/psr7": "^1.7",
+                "guzzlehttp/psr7": "^1.7 || ^2.0",
                 "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0"
             },
@@ -1401,6 +1402,7 @@
                 "psr/http-client-implementation": "1.0"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
                 "ext-curl": "*",
                 "php-http/client-integration-tests": "^3.0",
                 "phpunit/phpunit": "^8.5.5 || ^9.3.5",
@@ -1414,7 +1416,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "7.1-dev"
+                    "dev-master": "7.3-dev"
                 }
             },
             "autoload": {
@@ -1456,7 +1458,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.2.0"
+                "source": "https://github.com/guzzle/guzzle/tree/7.3.0"
             },
             "funding": [
                 {
@@ -1476,7 +1478,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-10T11:47:56+00:00"
+            "time": "2021-03-23T11:33:13+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -3678,16 +3680,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.49",
+            "version": "3.1.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "a25f9f22eb18547f7d882b9fb606264a63954907"
+                "reference": "dc9faecadb57ddb0062a5aae58e5c5521bcebf05"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/a25f9f22eb18547f7d882b9fb606264a63954907",
-                "reference": "a25f9f22eb18547f7d882b9fb606264a63954907",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/dc9faecadb57ddb0062a5aae58e5c5521bcebf05",
+                "reference": "dc9faecadb57ddb0062a5aae58e5c5521bcebf05",
                 "shasum": ""
             },
             "require": {
@@ -3703,13 +3705,7 @@
             "extra": {
                 "name": "Retour",
                 "handle": "retour",
-                "hasCpSettings": true,
-                "hasCpSection": true,
                 "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-retour/v3/CHANGELOG.md",
-                "components": {
-                    "redirects": "nystudio107\\retour\\services\\Redirects",
-                    "statistics": "nystudio107\\retour\\services\\Statistics"
-                },
                 "class": "nystudio107\\retour\\Retour"
             },
             "autoload": {
@@ -3739,22 +3735,22 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/retour/documentation",
                 "issues": "https://nystudio107.com/plugins/retour/support",
-                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.49"
+                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.50"
             },
-            "time": "2021-03-03T20:01:12+00:00"
+            "time": "2021-03-28T03:58:05+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.35",
+            "version": "3.3.36",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "c76d832eb8f956b47b0c9176c7d9cfb2381e2174"
+                "reference": "ff34f64c42ede4db095278c154d061e23919a2b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/c76d832eb8f956b47b0c9176c7d9cfb2381e2174",
-                "reference": "c76d832eb8f956b47b0c9176c7d9cfb2381e2174",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/ff34f64c42ede4db095278c154d061e23919a2b9",
+                "reference": "ff34f64c42ede4db095278c154d061e23919a2b9",
                 "shasum": ""
             },
             "require": {
@@ -3772,23 +3768,8 @@
             "extra": {
                 "name": "SEOmatic",
                 "handle": "seomatic",
-                "hasCpSettings": true,
-                "hasCpSection": true,
                 "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-seomatic/v3/CHANGELOG.md",
-                "class": "nystudio107\\seomatic\\Seomatic",
-                "components": {
-                    "frontendTemplates": "nystudio107\\seomatic\\services\\FrontendTemplates",
-                    "helper": "nystudio107\\seomatic\\services\\Helper",
-                    "jsonLd": "nystudio107\\seomatic\\services\\JsonLd",
-                    "link": "nystudio107\\seomatic\\services\\Link",
-                    "metaBundles": "nystudio107\\seomatic\\services\\MetaBundles",
-                    "metaContainers": "nystudio107\\seomatic\\services\\MetaContainers",
-                    "seoElements": "nystudio107\\seomatic\\services\\SeoElements",
-                    "script": "nystudio107\\seomatic\\services\\Script",
-                    "sitemaps": "nystudio107\\seomatic\\services\\Sitemaps",
-                    "tag": "nystudio107\\seomatic\\services\\Tag",
-                    "title": "nystudio107\\seomatic\\services\\Title"
-                }
+                "class": "nystudio107\\seomatic\\Seomatic"
             },
             "autoload": {
                 "psr-4": {
@@ -3823,9 +3804,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.35"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.36"
             },
-            "time": "2021-03-03T22:31:22+00:00"
+            "time": "2021-03-25T19:56:57+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
