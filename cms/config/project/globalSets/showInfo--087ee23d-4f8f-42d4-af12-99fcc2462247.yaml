@@ -3,18 +3,18 @@ fieldLayouts:
     tabs:
       -
         fields:
-          14605669-4768-4f57-88d6-1f06480a9b80:
-            required: false
-            sortOrder: 8
-          2405ed1c-fd52-4264-a96a-f6e6fab437b5:
-            required: false
-            sortOrder: 3
-          428ec106-b2d1-4d48-a5fa-de192155dff5:
-            required: false
-            sortOrder: 6
           6def66f0-2a8f-4b88-9435-7f9cc1ccfe9c:
             required: false
             sortOrder: 2
+          428ec106-b2d1-4d48-a5fa-de192155dff5:
+            required: false
+            sortOrder: 6
+          2405ed1c-fd52-4264-a96a-f6e6fab437b5:
+            required: false
+            sortOrder: 3
+          14605669-4768-4f57-88d6-1f06480a9b80:
+            required: false
+            sortOrder: 8
           86909527-3ec4-4d57-a44c-167649eb86bf:
             required: false
             sortOrder: 4
