@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.176.6",
+            "version": "3.176.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "bd3dc3d86c6c041b7eb843b808b5e7baabd41203"
+                "reference": "734dd0535f8e70ebb59be37f522af4e45d006ace"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/bd3dc3d86c6c041b7eb843b808b5e7baabd41203",
-                "reference": "bd3dc3d86c6c041b7eb843b808b5e7baabd41203",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/734dd0535f8e70ebb59be37f522af4e45d006ace",
+                "reference": "734dd0535f8e70ebb59be37f522af4e45d006ace",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.176.6"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.176.7"
             },
-            "time": "2021-04-01T18:14:21+00:00"
+            "time": "2021-04-02T18:16:40+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -3437,16 +3437,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.29",
+            "version": "1.6.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "678cd0bb42d9ef92ab0d3a42613838f9bf351a2a"
+                "reference": "22cec387df0c4845c229cd85589b8a7913bdb88b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/678cd0bb42d9ef92ab0d3a42613838f9bf351a2a",
-                "reference": "678cd0bb42d9ef92ab0d3a42613838f9bf351a2a",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/22cec387df0c4845c229cd85589b8a7913bdb88b",
+                "reference": "22cec387df0c4845c229cd85589b8a7913bdb88b",
                 "shasum": ""
             },
             "require": {
@@ -3495,9 +3495,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/imageoptimize/documentation",
                 "issues": "https://nystudio107.com/plugins/imageoptimize/support",
-                "source": "https://github.com/nystudio107/craft-imageoptimize/tree/1.6.29"
+                "source": "https://github.com/nystudio107/craft-imageoptimize/tree/1.6.30"
             },
-            "time": "2021-03-31T18:37:43+00:00"
+            "time": "2021-04-04T03:40:50+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -3953,16 +3953,16 @@
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "1.2.11",
+            "version": "1.2.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "2b178f8eef9e9b45c349528cd7029ab249b178b8"
+                "reference": "8e53cf18298c3344041c531abce37c5f14127746"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/2b178f8eef9e9b45c349528cd7029ab249b178b8",
-                "reference": "2b178f8eef9e9b45c349528cd7029ab249b178b8",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/8e53cf18298c3344041c531abce37c5f14127746",
+                "reference": "8e53cf18298c3344041c531abce37c5f14127746",
                 "shasum": ""
             },
             "require": {
@@ -4008,9 +4008,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/twigpack/documentation",
                 "issues": "https://nystudio107.com/plugins/twigpack/support",
-                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.11"
+                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.12"
             },
-            "time": "2021-03-21T18:17:04+00:00"
+            "time": "2021-04-05T15:00:18+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
