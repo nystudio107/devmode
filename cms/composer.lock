@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.176.8",
+            "version": "3.176.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "776b944988167fa3d563d2cbc5fcb6763424a9f0"
+                "reference": "17dc67514b148979994758fbfb54088a8a3393bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/776b944988167fa3d563d2cbc5fcb6763424a9f0",
-                "reference": "776b944988167fa3d563d2cbc5fcb6763424a9f0",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/17dc67514b148979994758fbfb54088a8a3393bf",
+                "reference": "17dc67514b148979994758fbfb54088a8a3393bf",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.176.8"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.176.9"
             },
-            "time": "2021-04-05T18:16:29+00:00"
+            "time": "2021-04-06T18:13:47+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -3754,16 +3754,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.51",
+            "version": "3.1.52",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "ef53265376d95dae03e3b8f1024fd72d79d83918"
+                "reference": "1216c9564ab66a30c36cbd072783d416dee4b1ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/ef53265376d95dae03e3b8f1024fd72d79d83918",
-                "reference": "ef53265376d95dae03e3b8f1024fd72d79d83918",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/1216c9564ab66a30c36cbd072783d416dee4b1ba",
+                "reference": "1216c9564ab66a30c36cbd072783d416dee4b1ba",
                 "shasum": ""
             },
             "require": {
@@ -3810,22 +3810,22 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/retour/documentation",
                 "issues": "https://nystudio107.com/plugins/retour/support",
-                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.51"
+                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.52"
             },
-            "time": "2021-03-29T18:37:02+00:00"
+            "time": "2021-04-06T19:01:29+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.37",
+            "version": "3.3.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "4c12b1d621c189b1a7672cc9b2ce69a9ef0f5e0e"
+                "reference": "58e9bb7558d8b7ce3ad9dc57e112ef06868ec333"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/4c12b1d621c189b1a7672cc9b2ce69a9ef0f5e0e",
-                "reference": "4c12b1d621c189b1a7672cc9b2ce69a9ef0f5e0e",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/58e9bb7558d8b7ce3ad9dc57e112ef06868ec333",
+                "reference": "58e9bb7558d8b7ce3ad9dc57e112ef06868ec333",
                 "shasum": ""
             },
             "require": {
@@ -3879,22 +3879,22 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.37"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.38"
             },
-            "time": "2021-03-31T15:34:47+00:00"
+            "time": "2021-04-06T18:56:21+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "1.2.15",
+            "version": "1.2.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "c4e279b381c9218130ec2d867c27b92d8bd0098d"
+                "reference": "3fd45a9ee6fccacb0f9ee785ce0e158c31f008fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/c4e279b381c9218130ec2d867c27b92d8bd0098d",
-                "reference": "c4e279b381c9218130ec2d867c27b92d8bd0098d",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/3fd45a9ee6fccacb0f9ee785ce0e158c31f008fd",
+                "reference": "3fd45a9ee6fccacb0f9ee785ce0e158c31f008fd",
                 "shasum": ""
             },
             "require": {
@@ -3906,13 +3906,7 @@
             "extra": {
                 "name": "Transcoder",
                 "handle": "transcoder",
-                "schemaVersion": "1.0.0",
-                "hasCpSettings": false,
-                "hasCpSection": false,
                 "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-transcoder/v1/CHANGELOG.md",
-                "components": {
-                    "transcode": "nystudio107\\transcoder\\services\\Transcode"
-                },
                 "class": "nystudio107\\transcoder\\Transcoder"
             },
             "autoload": {
@@ -3947,9 +3941,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/transcoder/documentation",
                 "issues": "https://nystudio107.com/plugins/transcoder/support",
-                "source": "https://github.com/nystudio107/craft-transcoder/tree/1.2.15"
+                "source": "https://github.com/nystudio107/craft-transcoder/tree/1.2.16"
             },
-            "time": "2021-03-03T19:37:18+00:00"
+            "time": "2021-04-06T18:54:16+00:00"
         },
         {
             "name": "nystudio107/craft-twigpack",
@@ -4076,16 +4070,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "1.0.23",
+            "version": "1.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "b5efd177059ae972f80413eaaa64cd288d3da803"
+                "reference": "c3244a9502e748f44df619731a171a8b46b4ef9b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/b5efd177059ae972f80413eaaa64cd288d3da803",
-                "reference": "b5efd177059ae972f80413eaaa64cd288d3da803",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/c3244a9502e748f44df619731a171a8b46b4ef9b",
+                "reference": "c3244a9502e748f44df619731a171a8b46b4ef9b",
                 "shasum": ""
             },
             "require": {
@@ -4128,9 +4122,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/webperf/documentation",
                 "issues": "https://nystudio107.com/plugins/webperf/support",
-                "source": "https://github.com/nystudio107/craft-webperf/tree/1.0.23"
+                "source": "https://github.com/nystudio107/craft-webperf/tree/1.0.24"
             },
-            "time": "2021-04-01T20:18:14+00:00"
+            "time": "2021-04-06T18:51:17+00:00"
         },
         {
             "name": "nystudio107/dotenvy",
