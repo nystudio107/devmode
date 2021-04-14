@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.176.9",
+            "version": "3.178.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "17dc67514b148979994758fbfb54088a8a3393bf"
+                "reference": "cfeed02f14b0fb3cba8bb75f2ae28cb8c9807369"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/17dc67514b148979994758fbfb54088a8a3393bf",
-                "reference": "17dc67514b148979994758fbfb54088a8a3393bf",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cfeed02f14b0fb3cba8bb75f2ae28cb8c9807369",
+                "reference": "cfeed02f14b0fb3cba8bb75f2ae28cb8c9807369",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.176.9"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.178.3"
             },
-            "time": "2021-04-06T18:13:47+00:00"
+            "time": "2021-04-13T18:16:44+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -238,16 +238,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.0.10",
+            "version": "2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "890c79ff096818e762b42c9624ca1df800ab789b"
+                "reference": "6c12ce263da71641903e399c3ce8ecb08fd375fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/890c79ff096818e762b42c9624ca1df800ab789b",
-                "reference": "890c79ff096818e762b42c9624ca1df800ab789b",
+                "url": "https://api.github.com/repos/composer/composer/zipball/6c12ce263da71641903e399c3ce8ecb08fd375fb",
+                "reference": "6c12ce263da71641903e399c3ce8ecb08fd375fb",
                 "shasum": ""
             },
             "require": {
@@ -315,7 +315,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.0.10"
+                "source": "https://github.com/composer/composer/tree/2.0.12"
             },
             "funding": [
                 {
@@ -331,7 +331,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-02-23T15:11:37+00:00"
+            "time": "2021-04-01T08:14:59+00:00"
         },
         {
             "name": "composer/semver",
@@ -616,20 +616,20 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.6.11.2",
+            "version": "3.6.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "3a2ab820b75ef50b78223f1222a5fe534cc60ba2"
+                "reference": "06a2e1d78b8b097f824efede5a6b36807a5bed5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/3a2ab820b75ef50b78223f1222a5fe534cc60ba2",
-                "reference": "3a2ab820b75ef50b78223f1222a5fe534cc60ba2",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/06a2e1d78b8b097f824efede5a6b36807a5bed5a",
+                "reference": "06a2e1d78b8b097f824efede5a6b36807a5bed5a",
                 "shasum": ""
             },
             "require": {
-                "composer/composer": "2.0.10",
+                "composer/composer": "2.0.12",
                 "craftcms/oauth2-craftid": "~1.0.0",
                 "craftcms/plugin-installer": "~1.5.6",
                 "craftcms/server-check": "~1.2.0",
@@ -715,7 +715,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2021-03-29T18:52:48+00:00"
+            "time": "2021-04-13T17:05:18+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -827,16 +827,16 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.8.5",
+            "version": "2.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/redactor.git",
-                "reference": "baa05090b17b9b631ed3eb9f0687f48947d7dbc2"
+                "reference": "db2e4eb27cb2165d3dbd87aa999886012b749117"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/baa05090b17b9b631ed3eb9f0687f48947d7dbc2",
-                "reference": "baa05090b17b9b631ed3eb9f0687f48947d7dbc2",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/db2e4eb27cb2165d3dbd87aa999886012b749117",
+                "reference": "db2e4eb27cb2165d3dbd87aa999886012b749117",
                 "shasum": ""
             },
             "require": {
@@ -878,7 +878,7 @@
                 "rss": "https://github.com/craftcms/redactor/commits/v2.atom",
                 "source": "https://github.com/craftcms/redactor"
             },
-            "time": "2020-12-08T12:55:30+00:00"
+            "time": "2021-04-13T18:15:38+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -1023,26 +1023,25 @@
         },
         {
             "name": "defuse/php-encryption",
-            "version": "v2.2.1",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/defuse/php-encryption.git",
-                "reference": "0f407c43b953d571421e0020ba92082ed5fb7620"
+                "reference": "77880488b9954b7884c25555c2a0ea9e7053f9d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/defuse/php-encryption/zipball/0f407c43b953d571421e0020ba92082ed5fb7620",
-                "reference": "0f407c43b953d571421e0020ba92082ed5fb7620",
+                "url": "https://api.github.com/repos/defuse/php-encryption/zipball/77880488b9954b7884c25555c2a0ea9e7053f9d2",
+                "reference": "77880488b9954b7884c25555c2a0ea9e7053f9d2",
                 "shasum": ""
             },
             "require": {
                 "ext-openssl": "*",
                 "paragonie/random_compat": ">= 2",
-                "php": ">=5.4.0"
+                "php": ">=5.6.0"
             },
             "require-dev": {
-                "nikic/php-parser": "^2.0|^3.0|^4.0",
-                "phpunit/phpunit": "^4|^5"
+                "phpunit/phpunit": "^4|^5|^6|^7|^8|^9"
             },
             "bin": [
                 "bin/generate-defuse-key"
@@ -1084,9 +1083,9 @@
             ],
             "support": {
                 "issues": "https://github.com/defuse/php-encryption/issues",
-                "source": "https://github.com/defuse/php-encryption/tree/master"
+                "source": "https://github.com/defuse/php-encryption/tree/v2.3.1"
             },
-            "time": "2018-07-24T23:27:56+00:00"
+            "time": "2021-04-09T23:57:26+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -3708,16 +3707,16 @@
         },
         {
             "name": "nystudio107/craft-plugin-manifest",
-            "version": "1.0.2",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-manifest.git",
-                "reference": "0651fd915219167de2e0ae61120b50204c3736ca"
+                "reference": "803f69b7d18cad99aca0185a44822ac294462eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/0651fd915219167de2e0ae61120b50204c3736ca",
-                "reference": "0651fd915219167de2e0ae61120b50204c3736ca",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/803f69b7d18cad99aca0185a44822ac294462eba",
+                "reference": "803f69b7d18cad99aca0185a44822ac294462eba",
                 "shasum": ""
             },
             "require": {
@@ -3748,9 +3747,9 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-manifest/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-manifest/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/1.0.2"
+                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/1.0.3"
             },
-            "time": "2021-03-21T18:14:47+00:00"
+            "time": "2021-04-08T03:12:09+00:00"
         },
         {
             "name": "nystudio107/craft-retour",
@@ -3816,16 +3815,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.38",
+            "version": "3.3.39",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "58e9bb7558d8b7ce3ad9dc57e112ef06868ec333"
+                "reference": "917812dd6e7b2b42b85ad3bd44059c1a095e65ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/58e9bb7558d8b7ce3ad9dc57e112ef06868ec333",
-                "reference": "58e9bb7558d8b7ce3ad9dc57e112ef06868ec333",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/917812dd6e7b2b42b85ad3bd44059c1a095e65ec",
+                "reference": "917812dd6e7b2b42b85ad3bd44059c1a095e65ec",
                 "shasum": ""
             },
             "require": {
@@ -3879,9 +3878,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.38"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.39"
             },
-            "time": "2021-04-06T18:56:21+00:00"
+            "time": "2021-04-09T18:47:21+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -3947,16 +3946,16 @@
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "1.2.12",
+            "version": "1.2.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "8e53cf18298c3344041c531abce37c5f14127746"
+                "reference": "8bb90a5d465140b6466c34a3fdcf87352bd2ab77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/8e53cf18298c3344041c531abce37c5f14127746",
-                "reference": "8e53cf18298c3344041c531abce37c5f14127746",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/8bb90a5d465140b6466c34a3fdcf87352bd2ab77",
+                "reference": "8bb90a5d465140b6466c34a3fdcf87352bd2ab77",
                 "shasum": ""
             },
             "require": {
@@ -4002,9 +4001,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/twigpack/documentation",
                 "issues": "https://nystudio107.com/plugins/twigpack/support",
-                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.12"
+                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.13"
             },
-            "time": "2021-04-05T15:00:18+00:00"
+            "time": "2021-04-14T02:08:19+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -4181,16 +4180,16 @@
         },
         {
             "name": "opis/closure",
-            "version": "3.6.1",
+            "version": "3.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opis/closure.git",
-                "reference": "943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5"
+                "reference": "06e2ebd25f2869e54a306dda991f7db58066f7f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opis/closure/zipball/943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5",
-                "reference": "943b5d70cc5ae7483f6aff6ff43d7e34592ca0f5",
+                "url": "https://api.github.com/repos/opis/closure/zipball/06e2ebd25f2869e54a306dda991f7db58066f7f6",
+                "reference": "06e2ebd25f2869e54a306dda991f7db58066f7f6",
                 "shasum": ""
             },
             "require": {
@@ -4240,9 +4239,9 @@
             ],
             "support": {
                 "issues": "https://github.com/opis/closure/issues",
-                "source": "https://github.com/opis/closure/tree/3.6.1"
+                "source": "https://github.com/opis/closure/tree/3.6.2"
             },
-            "time": "2020-11-07T02:01:34+00:00"
+            "time": "2021-04-09T13:42:10+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -7303,16 +7302,16 @@
         },
         {
             "name": "voku/stringy",
-            "version": "6.4.0",
+            "version": "6.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/Stringy.git",
-                "reference": "b534a95b58b020faf3e3b779abc0bc277b5fb83c"
+                "reference": "5b74e0e428e466bda91489b4c6e9ab385aa7c73a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Stringy/zipball/b534a95b58b020faf3e3b779abc0bc277b5fb83c",
-                "reference": "b534a95b58b020faf3e3b779abc0bc277b5fb83c",
+                "url": "https://api.github.com/repos/voku/Stringy/zipball/5b74e0e428e466bda91489b4c6e9ab385aa7c73a",
+                "reference": "5b74e0e428e466bda91489b4c6e9ab385aa7c73a",
                 "shasum": ""
             },
             "require": {
@@ -7320,8 +7319,8 @@
                 "ext-json": "*",
                 "php": ">=7.0.0",
                 "voku/anti-xss": "~4.1",
-                "voku/arrayy": "~7.5",
-                "voku/email-check": "~3.0",
+                "voku/arrayy": "~7.8",
+                "voku/email-check": "~3.1",
                 "voku/portable-ascii": "~1.5",
                 "voku/portable-utf8": "~5.4",
                 "voku/urlify": "~5.0"
@@ -7330,7 +7329,7 @@
                 "danielstjules/stringy": "~3.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~6.0 || ~7.0"
+                "phpunit/phpunit": "~6.0 || ~7.0 || ~9.0"
             },
             "type": "library",
             "autoload": {
@@ -7355,7 +7354,7 @@
                 {
                     "name": "Lars Moelleken",
                     "email": "lars@moelleken.org",
-                    "homepage": "http://www.moelleken.org/",
+                    "homepage": "https://www.moelleken.org/",
                     "role": "Fork-Maintainer"
                 }
             ],
@@ -7394,7 +7393,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-27T21:32:36+00:00"
+            "time": "2021-04-07T09:23:38+00:00"
         },
         {
             "name": "voku/urlify",
@@ -8287,43 +8286,6 @@
     ],
     "packages-dev": [
         {
-            "name": "dnoegel/php-xdg-base-dir",
-            "version": "v0.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dnoegel/php-xdg-base-dir.git",
-                "reference": "8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dnoegel/php-xdg-base-dir/zipball/8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd",
-                "reference": "8f8a6e48c5ecb0f991c2fdcf5f154a47d85f9ffd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~7.0|~6.0|~5.0|~4.8.35"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "XdgBaseDir\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "implementation of xdg base directory specification for php",
-            "support": {
-                "issues": "https://github.com/dnoegel/php-xdg-base-dir/issues",
-                "source": "https://github.com/dnoegel/php-xdg-base-dir/tree/v0.1.1"
-            },
-            "time": "2019-12-04T15:06:13+00:00"
-        },
-        {
             "name": "nikic/php-parser",
             "version": "v4.10.4",
             "source": {
@@ -8381,20 +8343,19 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.7",
+            "version": "v0.10.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "a395af46999a12006213c0c8346c9445eb31640c"
+                "reference": "e4573f47750dd6c92dca5aee543fa77513cbd8d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/a395af46999a12006213c0c8346c9445eb31640c",
-                "reference": "a395af46999a12006213c0c8346c9445eb31640c",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/e4573f47750dd6c92dca5aee543fa77513cbd8d3",
+                "reference": "e4573f47750dd6c92dca5aee543fa77513cbd8d3",
                 "shasum": ""
             },
             "require": {
-                "dnoegel/php-xdg-base-dir": "0.1.*",
                 "ext-json": "*",
                 "ext-tokenizer": "*",
                 "nikic/php-parser": "~4.0|~3.0|~2.0|~1.3",
@@ -8451,9 +8412,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.10.7"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.10.8"
             },
-            "time": "2021-03-14T02:14:56+00:00"
+            "time": "2021-04-10T16:23:39+00:00"
         },
         {
             "name": "symfony/var-dumper",
