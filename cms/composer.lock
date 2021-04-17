@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.178.3",
+            "version": "3.178.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "cfeed02f14b0fb3cba8bb75f2ae28cb8c9807369"
+                "reference": "5a268a20272c0c9171570ed57f68b629e966deab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cfeed02f14b0fb3cba8bb75f2ae28cb8c9807369",
-                "reference": "cfeed02f14b0fb3cba8bb75f2ae28cb8c9807369",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/5a268a20272c0c9171570ed57f68b629e966deab",
+                "reference": "5a268a20272c0c9171570ed57f68b629e966deab",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.178.3"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.178.5"
             },
-            "time": "2021-04-13T18:16:44+00:00"
+            "time": "2021-04-15T18:12:46+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -3436,16 +3436,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.30",
+            "version": "1.6.32",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "22cec387df0c4845c229cd85589b8a7913bdb88b"
+                "reference": "d2313785bd919520e6e3b634c6d7b58a3e372e90"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/22cec387df0c4845c229cd85589b8a7913bdb88b",
-                "reference": "22cec387df0c4845c229cd85589b8a7913bdb88b",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/d2313785bd919520e6e3b634c6d7b58a3e372e90",
+                "reference": "d2313785bd919520e6e3b634c6d7b58a3e372e90",
                 "shasum": ""
             },
             "require": {
@@ -3494,9 +3494,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/imageoptimize/documentation",
                 "issues": "https://nystudio107.com/plugins/imageoptimize/support",
-                "source": "https://github.com/nystudio107/craft-imageoptimize/tree/1.6.30"
+                "source": "https://github.com/nystudio107/craft-imageoptimize/tree/1.6.32"
             },
-            "time": "2021-04-04T03:40:50+00:00"
+            "time": "2021-04-15T14:58:28+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -3815,16 +3815,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.39",
+            "version": "3.3.40",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "917812dd6e7b2b42b85ad3bd44059c1a095e65ec"
+                "reference": "8f52021d9c566a7a7e34ac16e6bf0229d835c36f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/917812dd6e7b2b42b85ad3bd44059c1a095e65ec",
-                "reference": "917812dd6e7b2b42b85ad3bd44059c1a095e65ec",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/8f52021d9c566a7a7e34ac16e6bf0229d835c36f",
+                "reference": "8f52021d9c566a7a7e34ac16e6bf0229d835c36f",
                 "shasum": ""
             },
             "require": {
@@ -3878,9 +3878,9 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.39"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.40"
             },
-            "time": "2021-04-09T18:47:21+00:00"
+            "time": "2021-04-15T15:01:20+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
