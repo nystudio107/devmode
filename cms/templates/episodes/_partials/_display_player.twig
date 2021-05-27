@@ -2,8 +2,8 @@
     <div class="w-full mx-auto">
         {# -- Audio player -- #}
         {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
-            "audioBitRate": "64k",
-            "audioSampleRate": 22050,
+            "audioBitRate": "128k",
+            "audioSampleRate": 44100,
             "audioChannels": 1
         }) %}
         {% if transAudioUrl |length %}

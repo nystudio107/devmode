@@ -22,8 +22,8 @@
         {% for episode in craft.entries.section("episodes").all() %}
             {% set summaryText = stringy(episode.episodeSummary).lines()[0] |truncateOnWord(300) |typogrifyFeed %}
             {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
-                "audioBitRate": "64k",
-                "audioSampleRate": 22050,
+                "audioBitRate": "128k",
+                "audioSampleRate": 44100,
                 "audioChannels": 1
             }) %}
             {% if not craft.app.config.general.devMode %}
