@@ -3,7 +3,7 @@ fieldLayouts:
     tabs:
       -
         fields:
-          41fdb4c8-4774-4101-918f-1412190b085b:
+          41fdb4c8-4774-4101-918f-1412190b085b: # Profile Optimized Images
             required: false
             sortOrder: 1
         name: Content

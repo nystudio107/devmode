@@ -1,22 +1,22 @@
 tabs:
   -
     fields:
-      31b8c511-37f9-4d83-956d-5aa215572122:
+      31b8c511-37f9-4d83-956d-5aa215572122: # Profile URL
         required: false
         sortOrder: 4
-      380e3b7e-07de-4d39-b0e5-360f5e87d00d:
+      380e3b7e-07de-4d39-b0e5-360f5e87d00d: # Profile Title
         required: false
         sortOrder: 2
-      406c20cb-9b86-4b0d-9123-1ce57220e2a8:
+      406c20cb-9b86-4b0d-9123-1ce57220e2a8: # Profile Twitter URL
         required: false
         sortOrder: 5
-      9687721c-33b8-4a40-abb7-5c42e07ce274:
+      9687721c-33b8-4a40-abb7-5c42e07ce274: # Profile Bio
         required: false
         sortOrder: 3
-      c05161c0-a294-4d47-8909-1cfc88c2f970:
+      c05161c0-a294-4d47-8909-1cfc88c2f970: # Profile Company
         required: false
         sortOrder: 1
-      d6df6fe7-14f3-42a3-9949-dcee7c8c26d9:
+      d6df6fe7-14f3-42a3-9949-dcee7c8c26d9: # Profile GitHub URL
         required: false
         sortOrder: 6
     name: Profile

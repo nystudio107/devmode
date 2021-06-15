@@ -3,34 +3,34 @@ fieldLayouts:
     tabs:
       -
         fields:
-          6def66f0-2a8f-4b88-9435-7f9cc1ccfe9c:
+          6def66f0-2a8f-4b88-9435-7f9cc1ccfe9c: # Show Genre
             required: false
             sortOrder: 2
-          428ec106-b2d1-4d48-a5fa-de192155dff5:
+          428ec106-b2d1-4d48-a5fa-de192155dff5: # Show URL
             required: false
             sortOrder: 6
-          2405ed1c-fd52-4264-a96a-f6e6fab437b5:
+          2405ed1c-fd52-4264-a96a-f6e6fab437b5: # Show Sub-Title
             required: false
             sortOrder: 3
-          14605669-4768-4f57-88d6-1f06480a9b80:
+          14605669-4768-4f57-88d6-1f06480a9b80: # Show iTunes URL
             required: false
             sortOrder: 8
-          86909527-3ec4-4d57-a44c-167649eb86bf:
+          86909527-3ec4-4d57-a44c-167649eb86bf: # Show Description
             required: false
             sortOrder: 4
-          a8f2ec1a-a218-451c-a658-e3c600ddb5fa:
+          a8f2ec1a-a218-451c-a658-e3c600ddb5fa: # Show Title
             required: false
             sortOrder: 1
-          ab0ca0e9-1308-472f-92a5-2ab0cbd84943:
+          ab0ca0e9-1308-472f-92a5-2ab0cbd84943: # Show RSS Feed URL
             required: false
             sortOrder: 9
-          bda219fa-bace-4d8b-ad3a-08243caaf6ca:
+          bda219fa-bace-4d8b-ad3a-08243caaf6ca: # Show Image
             required: false
             sortOrder: 5
-          ca279869-925f-4960-865c-96cacd2aa942:
+          ca279869-925f-4960-865c-96cacd2aa942: # Show Email
             required: false
             sortOrder: 7
-          eecc24bf-e253-43b8-b327-632e0dc07fa6:
+          eecc24bf-e253-43b8-b327-632e0dc07fa6: # Show Technologies Links
             required: false
             sortOrder: 10
         name: Show

@@ -1,17 +1,21 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9 # Episodes
-handle: episodeGuests
+handle: relatedEpisodes
 instructions: ''
-name: 'Episode Guests'
-searchable: true
+name: 'Related Episodes'
+searchable: false
 settings:
-  limit: ''
+  allowSelfRelations: false
+  limit: '3'
   localizeRelations: false
   selectionLabel: ''
+  showSiteMenu: false
   source: null
   sources:
-    - 'section:214e4dc6-a454-4df0-a1f5-cd94ecdab53f'
+    - 'section:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
   targetSiteId: null
+  validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site

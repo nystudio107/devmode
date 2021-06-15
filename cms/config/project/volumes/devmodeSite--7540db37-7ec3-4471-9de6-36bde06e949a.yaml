@@ -3,7 +3,7 @@ fieldLayouts:
     tabs:
       -
         fields:
-          1be1c156-82fa-4f08-bb63-6d3417da2844:
+          1be1c156-82fa-4f08-bb63-6d3417da2844: # Optimized Images
             required: false
             sortOrder: 1
         name: Content

@@ -1,5 +1,5 @@
 contentColumnType: text
-fieldGroup: 88db3e41-57f4-404d-b3ea-762b09c37afe
+fieldGroup: 88db3e41-57f4-404d-b3ea-762b09c37afe # Errors
 handle: errorText
 instructions: ''
 name: 'Error Text'

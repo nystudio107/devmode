@@ -8,7 +8,7 @@ fieldLayouts:
             label: Title
             type: craft\fieldlayoutelements\EntryTitleField
           -
-            fieldUid: b5eb01ec-a6ed-4a08-9438-64e7138b08f0
+            fieldUid: b5eb01ec-a6ed-4a08-9438-64e7138b08f0 # FAQs
             required: false
             type: craft\fieldlayoutelements\CustomField
         name: About
