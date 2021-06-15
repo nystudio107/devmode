@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8a49a7d483dcebe11525fbd2d0686ebc",
+    "content-hash": "d385ce349ee2e70a80e7297c1eb28ce3",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.184.1",
+            "version": "3.184.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "2450c0568aae59842b5e4cdf50a12c213ed9640e"
+                "reference": "34e6b2abfb9d9d2f619c7218fb366371099e26b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/2450c0568aae59842b5e4cdf50a12c213ed9640e",
-                "reference": "2450c0568aae59842b5e4cdf50a12c213ed9640e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/34e6b2abfb9d9d2f619c7218fb366371099e26b7",
+                "reference": "34e6b2abfb9d9d2f619c7218fb366371099e26b7",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.184.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.184.4"
             },
-            "time": "2021-06-10T18:19:17+00:00"
+            "time": "2021-06-15T18:14:30+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -686,16 +686,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.6.16",
+            "version": "3.7.0-beta.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "e393adc8419f39c2047b211289eb813b5e1869b3"
+                "reference": "7988b0508ef3b2c34d08a8fdee87a4504928b7e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/e393adc8419f39c2047b211289eb813b5e1869b3",
-                "reference": "e393adc8419f39c2047b211289eb813b5e1869b3",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/7988b0508ef3b2c34d08a8fdee87a4504928b7e3",
+                "reference": "7988b0508ef3b2c34d08a8fdee87a4504928b7e3",
                 "shasum": ""
             },
             "require": {
@@ -770,6 +770,12 @@
             "license": [
                 "proprietary"
             ],
+            "authors": [
+                {
+                    "name": "Pixel & Tonic",
+                    "homepage": "https://pixelandtonic.com/"
+                }
+            ],
             "description": "Craft CMS",
             "homepage": "https://craftcms.com",
             "keywords": [
@@ -785,7 +791,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2021-06-01T18:14:34+00:00"
+            "time": "2021-06-15T16:56:01+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -3863,16 +3869,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.53",
+            "version": "3.1.54",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "102dec69acbca0475f81971b245f1e88e2a55cc2"
+                "reference": "3a057633118afa76e11c0ca669a01f1fa4a8233e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/102dec69acbca0475f81971b245f1e88e2a55cc2",
-                "reference": "102dec69acbca0475f81971b245f1e88e2a55cc2",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/3a057633118afa76e11c0ca669a01f1fa4a8233e",
+                "reference": "3a057633118afa76e11c0ca669a01f1fa4a8233e",
                 "shasum": ""
             },
             "require": {
@@ -3919,9 +3925,15 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/retour/documentation",
                 "issues": "https://nystudio107.com/plugins/retour/support",
-                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.53"
+                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.54"
             },
-            "time": "2021-04-30T17:12:09+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-06-12T22:02:31+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
@@ -8678,7 +8690,9 @@
     ],
     "aliases": [],
     "minimum-stability": "beta",
-    "stability-flags": [],
+    "stability-flags": {
+        "craftcms/cms": 10
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
@@ -8686,5 +8700,5 @@
     "platform-overrides": {
         "php": "7.2.5"
     },
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

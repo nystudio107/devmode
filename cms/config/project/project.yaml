@@ -1,4 +1,4 @@
-dateModified: 1623430452
+dateModified: 1623784122
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -7,6 +7,9 @@ graphql:
   publicToken:
     enabled: false
     expiryDate: null
+meta:
+  __names__:
+    087ee23d-4f8f-42d4-af12-99fcc2462247: 'Show Info' # Show Info
 plugins:
   aws-s3:
     edition: standard
@@ -98,7 +101,7 @@ plugins:
   retour:
     enabled: true
     licenseKey: $PLUGIN_RETOUR_LICENSE
-    schemaVersion: 3.0.9
+    schemaVersion: 3.0.10
     settings: null
   seomatic:
     enabled: true
@@ -186,5 +189,5 @@ system:
   live: true
   name: devMode.fm
   retryDuration: 60
-  schemaVersion: 3.6.8
+  schemaVersion: 3.7.7
   timeZone: America/New_York

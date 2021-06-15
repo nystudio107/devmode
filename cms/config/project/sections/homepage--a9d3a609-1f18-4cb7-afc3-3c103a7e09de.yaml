@@ -7,7 +7,7 @@ previewTargets:
     urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
-  2a4761bd-2461-4db9-96a0-4f52b8cef633: # devMode
+  2a4761bd-2461-4db9-96a0-4f52b8cef633:
     enabledByDefault: true
     hasUrls: true
     template: index.twig

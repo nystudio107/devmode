@@ -37,3 +37,4 @@ fieldLayouts:
         sortOrder: 1
 handle: showInfo
 name: 'Show Info'
+sortOrder: 1
