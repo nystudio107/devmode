@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d385ce349ee2e70a80e7297c1eb28ce3",
+    "content-hash": "0ec6260d5bd56e1b07f04650742a8ea6",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -686,16 +686,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.0-beta.1",
+            "version": "3.7.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "7988b0508ef3b2c34d08a8fdee87a4504928b7e3"
+                "reference": "fe167660bbf188672d443b320c245ac2a67ba3e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/7988b0508ef3b2c34d08a8fdee87a4504928b7e3",
-                "reference": "7988b0508ef3b2c34d08a8fdee87a4504928b7e3",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/fe167660bbf188672d443b320c245ac2a67ba3e1",
+                "reference": "fe167660bbf188672d443b320c245ac2a67ba3e1",
                 "shasum": ""
             },
             "require": {
@@ -791,7 +791,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2021-06-15T16:56:01+00:00"
+            "time": "2021-06-16T06:39:01+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -8688,10 +8688,17 @@
             "time": "2020-05-02T11:43:24+00:00"
         }
     ],
-    "aliases": [],
+    "aliases": [
+        {
+            "package": "craftcms/cms",
+            "version": "3.7.9999999.9999999-dev",
+            "alias": "3.7.0-beta.1",
+            "alias_normalized": "3.7.0.0-beta1"
+        }
+    ],
     "minimum-stability": "beta",
     "stability-flags": {
-        "craftcms/cms": 10
+        "craftcms/cms": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
