@@ -1,5 +1,9 @@
 # nystudio107/craft Change Log
 
+## 2.4.0 - 2021.07.01
+### Changed
+* Updated to Craft CMS 3.7.0-beta.1
+
 ## 2.1.11 - 2020.12.03
 ### Changed
 * Moved to webpack 5 for the build process
