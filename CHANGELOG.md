@@ -1,6 +1,6 @@
 # nystudio107/craft Change Log
 
-## 2.2.0 - 2021.07.01
+## 2.4.0 - 2021.07.01
 ### Changed
 * Updated to Craft CMS 3.7.0-beta.1
 
