@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39b666e90a587107339b5cfe66ccafbe",
+    "content-hash": "e9c9ac08b61e40c6d4abea59c250aff9",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.185.10",
+            "version": "3.185.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "667a83e4a18cb75db3ce74162efc97123da96261"
+                "reference": "65299008b7a04245bf63cd71fca8e6d4ab3728bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/667a83e4a18cb75db3ce74162efc97123da96261",
-                "reference": "667a83e4a18cb75db3ce74162efc97123da96261",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/65299008b7a04245bf63cd71fca8e6d4ab3728bc",
+                "reference": "65299008b7a04245bf63cd71fca8e6d4ab3728bc",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.185.10"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.185.12"
             },
-            "time": "2021-07-09T19:21:22+00:00"
+            "time": "2021-07-13T19:37:41+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -686,16 +686,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.0-beta.6",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "e387e74f860637ca6b8fd82498ce83192dea406f"
+                "reference": "6948a8ab4b64a0224ba69cccb5c5a4deea196b19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/e387e74f860637ca6b8fd82498ce83192dea406f",
-                "reference": "e387e74f860637ca6b8fd82498ce83192dea406f",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/6948a8ab4b64a0224ba69cccb5c5a4deea196b19",
+                "reference": "6948a8ab4b64a0224ba69cccb5c5a4deea196b19",
                 "shasum": ""
             },
             "require": {
@@ -791,7 +791,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2021-07-09T17:24:09+00:00"
+            "time": "2021-07-13T14:30:54+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -3776,16 +3776,16 @@
         },
         {
             "name": "nystudio107/craft-plugin-manifest",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-manifest.git",
-                "reference": "65a5ddb78a6fcaefb85841f82d6196aa93c8f455"
+                "reference": "0c275f7f9633ed27d7acf445ca6ab9dba99d55dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/65a5ddb78a6fcaefb85841f82d6196aa93c8f455",
-                "reference": "65a5ddb78a6fcaefb85841f82d6196aa93c8f455",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/0c275f7f9633ed27d7acf445ca6ab9dba99d55dc",
+                "reference": "0c275f7f9633ed27d7acf445ca6ab9dba99d55dc",
                 "shasum": ""
             },
             "require": {
@@ -3816,9 +3816,15 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-manifest/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-manifest/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/1.0.4"
+                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/1.0.5"
             },
-            "time": "2021-05-07T02:18:23+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-13T16:06:23+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-vite",
@@ -4079,16 +4085,16 @@
         },
         {
             "name": "nystudio107/craft-twigpack",
-            "version": "1.2.14",
+            "version": "1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigpack.git",
-                "reference": "53d8eb90a72c4fa9e7a907a943a15ab0ea6d90cd"
+                "reference": "b6fbb07ab1fb84d7bcc90995275b35e529827426"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/53d8eb90a72c4fa9e7a907a943a15ab0ea6d90cd",
-                "reference": "53d8eb90a72c4fa9e7a907a943a15ab0ea6d90cd",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigpack/zipball/b6fbb07ab1fb84d7bcc90995275b35e529827426",
+                "reference": "b6fbb07ab1fb84d7bcc90995275b35e529827426",
                 "shasum": ""
             },
             "require": {
@@ -4129,9 +4135,15 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/twigpack/documentation",
                 "issues": "https://nystudio107.com/plugins/twigpack/support",
-                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.14"
+                "source": "https://github.com/nystudio107/craft-twigpack/tree/1.2.15"
             },
-            "time": "2021-04-28T21:08:54+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-12T02:46:01+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -8701,9 +8713,7 @@
     ],
     "aliases": [],
     "minimum-stability": "beta",
-    "stability-flags": {
-        "craftcms/cms": 10
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
