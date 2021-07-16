@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.185.12",
+            "version": "3.185.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "65299008b7a04245bf63cd71fca8e6d4ab3728bc"
+                "reference": "9faaa7f7fafe569049bbb615767d8e3fa83d9fb7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/65299008b7a04245bf63cd71fca8e6d4ab3728bc",
-                "reference": "65299008b7a04245bf63cd71fca8e6d4ab3728bc",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9faaa7f7fafe569049bbb615767d8e3fa83d9fb7",
+                "reference": "9faaa7f7fafe569049bbb615767d8e3fa83d9fb7",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.185.12"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.185.14"
             },
-            "time": "2021-07-13T19:37:41+00:00"
+            "time": "2021-07-15T18:15:50+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -686,16 +686,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.0",
+            "version": "3.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "6948a8ab4b64a0224ba69cccb5c5a4deea196b19"
+                "reference": "3785589c7a53dd3fe7a944ab26df36536cc4cd97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/6948a8ab4b64a0224ba69cccb5c5a4deea196b19",
-                "reference": "6948a8ab4b64a0224ba69cccb5c5a4deea196b19",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/3785589c7a53dd3fe7a944ab26df36536cc4cd97",
+                "reference": "3785589c7a53dd3fe7a944ab26df36536cc4cd97",
                 "shasum": ""
             },
             "require": {
@@ -791,7 +791,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2021-07-13T14:30:54+00:00"
+            "time": "2021-07-15T23:18:41+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -2927,16 +2927,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "2.3.0",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "df991fd88693ab703aa403413d83e15f688dae33"
+                "reference": "9738e495f288eec0b187e310b7cdbbb285777dbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/df991fd88693ab703aa403413d83e15f688dae33",
-                "reference": "df991fd88693ab703aa403413d83e15f688dae33",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/9738e495f288eec0b187e310b7cdbbb285777dbe",
+                "reference": "9738e495f288eec0b187e310b7cdbbb285777dbe",
                 "shasum": ""
             },
             "require": {
@@ -3007,7 +3007,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/monolog/issues",
-                "source": "https://github.com/Seldaek/monolog/tree/2.3.0"
+                "source": "https://github.com/Seldaek/monolog/tree/2.3.1"
             },
             "funding": [
                 {
@@ -3019,7 +3019,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-05T11:34:13+00:00"
+            "time": "2021-07-14T11:56:39+00:00"
         },
         {
             "name": "mrclay/jsmin-php",
@@ -3505,16 +3505,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.34",
+            "version": "1.6.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "975146c915f01ddead26034f65ddcfa87d1a093a"
+                "reference": "477f0d2009512b6a75343b7e7f20fce8618078ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/975146c915f01ddead26034f65ddcfa87d1a093a",
-                "reference": "975146c915f01ddead26034f65ddcfa87d1a093a",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/477f0d2009512b6a75343b7e7f20fce8618078ea",
+                "reference": "477f0d2009512b6a75343b7e7f20fce8618078ea",
                 "shasum": ""
             },
             "require": {
@@ -3563,9 +3563,15 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/imageoptimize/documentation",
                 "issues": "https://nystudio107.com/plugins/imageoptimize/support",
-                "source": "https://github.com/nystudio107/craft-imageoptimize/tree/1.6.34"
+                "source": "https://github.com/nystudio107/craft-imageoptimize/tree/1.6.35"
             },
-            "time": "2021-06-10T15:21:35+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-14T16:43:27+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -3828,16 +3834,16 @@
         },
         {
             "name": "nystudio107/craft-plugin-vite",
-            "version": "1.0.8",
+            "version": "1.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-vite.git",
-                "reference": "f5001202d8fe58a9038c76a3322dc74af1bc03b5"
+                "reference": "3bba9f9d9cb4cd81d9d8d80f04a3db08107e9b87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/f5001202d8fe58a9038c76a3322dc74af1bc03b5",
-                "reference": "f5001202d8fe58a9038c76a3322dc74af1bc03b5",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/3bba9f9d9cb4cd81d9d8d80f04a3db08107e9b87",
+                "reference": "3bba9f9d9cb4cd81d9d8d80f04a3db08107e9b87",
                 "shasum": ""
             },
             "require": {
@@ -3868,7 +3874,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-vite/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.8"
+                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.10"
             },
             "funding": [
                 {
@@ -3876,7 +3882,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-06-29T13:49:11+00:00"
+            "time": "2021-07-15T03:47:31+00:00"
         },
         {
             "name": "nystudio107/craft-retour",
