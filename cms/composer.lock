@@ -686,16 +686,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.3",
+            "version": "3.7.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "cb8bf6a101ad87e7b28499c05a0c879f7dc6d9b0"
+                "reference": "0eff1aadb1110f0f35c92b6d8c86a0740c34a5fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/cb8bf6a101ad87e7b28499c05a0c879f7dc6d9b0",
-                "reference": "cb8bf6a101ad87e7b28499c05a0c879f7dc6d9b0",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/0eff1aadb1110f0f35c92b6d8c86a0740c34a5fc",
+                "reference": "0eff1aadb1110f0f35c92b6d8c86a0740c34a5fc",
                 "shasum": ""
             },
             "require": {
@@ -791,7 +791,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2021-07-17T00:41:38+00:00"
+            "time": "2021-07-18T13:21:11+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -4215,16 +4215,16 @@
         },
         {
             "name": "nystudio107/craft-webperf",
-            "version": "1.0.24",
+            "version": "1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-webperf.git",
-                "reference": "c3244a9502e748f44df619731a171a8b46b4ef9b"
+                "reference": "eb0178a3184124a1dadd0a43e4b3c6d4f396462e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/c3244a9502e748f44df619731a171a8b46b4ef9b",
-                "reference": "c3244a9502e748f44df619731a171a8b46b4ef9b",
+                "url": "https://api.github.com/repos/nystudio107/craft-webperf/zipball/eb0178a3184124a1dadd0a43e4b3c6d4f396462e",
+                "reference": "eb0178a3184124a1dadd0a43e4b3c6d4f396462e",
                 "shasum": ""
             },
             "require": {
@@ -4267,9 +4267,15 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/webperf/documentation",
                 "issues": "https://nystudio107.com/plugins/webperf/support",
-                "source": "https://github.com/nystudio107/craft-webperf/tree/1.0.24"
+                "source": "https://github.com/nystudio107/craft-webperf/tree/1.0.25"
             },
-            "time": "2021-04-06T18:51:17+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-07-17T15:18:41+00:00"
         },
         {
             "name": "nystudio107/dotenvy",
