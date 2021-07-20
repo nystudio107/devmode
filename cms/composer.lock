@@ -3954,16 +3954,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.44",
+            "version": "3.3.45",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "29bf7a577b7845cc47b25c91e81dd9a92aae0001"
+                "reference": "b26f8598577a8e06cad1e265e5b5f6f6a20d7477"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/29bf7a577b7845cc47b25c91e81dd9a92aae0001",
-                "reference": "29bf7a577b7845cc47b25c91e81dd9a92aae0001",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/b26f8598577a8e06cad1e265e5b5f6f6a20d7477",
+                "reference": "b26f8598577a8e06cad1e265e5b5f6f6a20d7477",
                 "shasum": ""
             },
             "require": {
@@ -4017,7 +4017,7 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.44"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.45"
             },
             "funding": [
                 {
@@ -4025,7 +4025,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-07-10T02:24:09+00:00"
+            "time": "2021-07-20T22:09:02+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
