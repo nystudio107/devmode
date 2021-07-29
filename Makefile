@@ -37,7 +37,8 @@ update-clean:
 	docker-compose up
 up:
 	if [ ! "$$(docker ps -q -f name=${CONTAINER})" ]; then \
-        docker-compose up; \
+		cp -n cms/example.env cms/.env; \
+		docker-compose up; \
     fi
 %:
 	@:

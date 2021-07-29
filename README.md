@@ -54,10 +54,30 @@ You can read more about it in the [Setting up a New Craft 3 CMS Project](https:/
 
 You'll need [Docker desktop](https://www.docker.com/products/docker-desktop) for your platform installed to run devMode in local development
 
-* Clone the git repo with `git clone https://github.com/nystudio107/devmode.git`
-* In your terminal, type `cd devmode` then `cp cms/example.env cms/.env` to set up the `.env` file
-* Start up the site by typing `make dev` in terminal in the project's root directory (the first build will be somewhat lengthy)
-* Navigate to `http://localhost:8000` to use the site
+Ensure no other local development environments are running that might have port conflicts, then:
+
+1. Clone the git repo with:
+```
+git clone https://github.com/nystudio107/devmode.git
+```
+
+2. Go into the project's directory:
+```
+   cd devmode
+```
+
+3. Start up the site by typing this in the project's root directory:
+```
+make dev
+```
+(the first build will be somewhat lengthy, ignore the warnings from `queue_1`).
+
+If it appears to hang at `Building php_xdebug`, your PhpStorm or other IDE is likely waiting for an Xdebug connection; quit PhpStorm or stop it from listening for Xdebug during the initial build.
+
+4. Once the site is up and running (see below), navigate to:
+```
+http://localhost:8000
+```
 
 The `webpack-dev-server` for Hot Module Replacement (HMR) serving of static resources runs off of `http://localhost:8080`
 
