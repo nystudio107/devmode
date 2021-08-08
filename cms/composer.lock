@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b1d1f79e5363fc3be629672e88f0b112",
+    "content-hash": "5d5895c641fc9666486a2f501f0b1012",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.186.1",
+            "version": "3.188.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "50f1ec9c1afa9c09512e1b0f8e03fcec9ea5e731"
+                "reference": "613cea76913b632d75ed2f6ed5afb11c53762a6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/50f1ec9c1afa9c09512e1b0f8e03fcec9ea5e731",
-                "reference": "50f1ec9c1afa9c09512e1b0f8e03fcec9ea5e731",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/613cea76913b632d75ed2f6ed5afb11c53762a6e",
+                "reference": "613cea76913b632d75ed2f6ed5afb11c53762a6e",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.186.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.188.0"
             },
-            "time": "2021-07-28T18:14:43+00:00"
+            "time": "2021-08-06T18:17:12+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -629,16 +629,16 @@
         },
         {
             "name": "craftcms/aws-s3",
-            "version": "1.2.13",
+            "version": "1.2.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/aws-s3.git",
-                "reference": "f8e8b26a5342930b1d9d9cfcecee58a84d561223"
+                "reference": "2fef9c12bccd8be90a4ae00da0deb350ecce6eae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/aws-s3/zipball/f8e8b26a5342930b1d9d9cfcecee58a84d561223",
-                "reference": "f8e8b26a5342930b1d9d9cfcecee58a84d561223",
+                "url": "https://api.github.com/repos/craftcms/aws-s3/zipball/2fef9c12bccd8be90a4ae00da0deb350ecce6eae",
+                "reference": "2fef9c12bccd8be90a4ae00da0deb350ecce6eae",
                 "shasum": ""
             },
             "require": {
@@ -682,20 +682,20 @@
                 "rss": "https://github.com/craftcms/aws-s3/commits/master.atom",
                 "source": "https://github.com/craftcms/aws-s3"
             },
-            "time": "2021-07-29T15:15:48+00:00"
+            "time": "2021-07-31T00:30:44+00:00"
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.6",
+            "version": "3.7.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "adb3eb97347d8628dbec88a327334b60b223ac5e"
+                "reference": "972d611d3f38d8ee830df485618d3064e3de4f19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/adb3eb97347d8628dbec88a327334b60b223ac5e",
-                "reference": "adb3eb97347d8628dbec88a327334b60b223ac5e",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/972d611d3f38d8ee830df485618d3064e3de4f19",
+                "reference": "972d611d3f38d8ee830df485618d3064e3de4f19",
                 "shasum": ""
             },
             "require": {
@@ -791,7 +791,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2021-07-27T14:45:51+00:00"
+            "time": "2021-08-07T00:17:03+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -903,16 +903,16 @@
         },
         {
             "name": "craftcms/redactor",
-            "version": "2.8.7",
+            "version": "2.8.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/redactor.git",
-                "reference": "dd70560df56ec7aef87fe52115fa571d13468714"
+                "reference": "c0272678a9d9bdc3990b36079e42667acdcd7016"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/redactor/zipball/dd70560df56ec7aef87fe52115fa571d13468714",
-                "reference": "dd70560df56ec7aef87fe52115fa571d13468714",
+                "url": "https://api.github.com/repos/craftcms/redactor/zipball/c0272678a9d9bdc3990b36079e42667acdcd7016",
+                "reference": "c0272678a9d9bdc3990b36079e42667acdcd7016",
                 "shasum": ""
             },
             "require": {
@@ -954,7 +954,7 @@
                 "rss": "https://github.com/craftcms/redactor/commits/v2.atom",
                 "source": "https://github.com/craftcms/redactor"
             },
-            "time": "2021-05-01T18:13:34+00:00"
+            "time": "2021-08-02T08:18:53+00:00"
         },
         {
             "name": "craftcms/server-check",
@@ -3329,6 +3329,70 @@
             "time": "2020-04-05T12:14:12+00:00"
         },
         {
+            "name": "nystudio107/craft-autocomplete",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-autocomplete.git",
+                "reference": "cc71f3455a3658994116af31ce0ad346c3aebfec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-autocomplete/zipball/cc71f3455a3658994116af31ce0ad346c3aebfec",
+                "reference": "cc71f3455a3658994116af31ce0ad346c3aebfec",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "nystudio107\\autocomplete\\Autocomplete"
+            },
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\autocomplete\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                },
+                {
+                    "name": "PutYourLightsOn",
+                    "homepage": "https://putyourlightson.com"
+                }
+            ],
+            "description": "Provides Twig template IDE autocomplete of Craft CMS & plugin variables",
+            "keywords": [
+                "Craft",
+                "auto",
+                "autocomplete",
+                "cms",
+                "complete",
+                "craftcms",
+                "symfony",
+                "twig"
+            ],
+            "support": {
+                "docs": "https://github.com/nystudio107/craft-autocomplete/blob/master/README.md",
+                "issues": "https://github.com/nystudio107/craft-autocomplete/issues",
+                "source": "https://github.com/nystudio107/craft-autocomplete/tree/1.0.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-08-08T02:43:46+00:00"
+        },
+        {
             "name": "nystudio107/craft-disqus",
             "version": "1.1.3",
             "source": {
@@ -3886,16 +3950,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.57",
+            "version": "3.1.58",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "3884f18df0032263ffb67a9a8f402f26dcad7ea4"
+                "reference": "052a65f2f1ad7b510ba96868cf04088fa74468cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/3884f18df0032263ffb67a9a8f402f26dcad7ea4",
-                "reference": "3884f18df0032263ffb67a9a8f402f26dcad7ea4",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/052a65f2f1ad7b510ba96868cf04088fa74468cf",
+                "reference": "052a65f2f1ad7b510ba96868cf04088fa74468cf",
                 "shasum": ""
             },
             "require": {
@@ -3942,7 +4006,7 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/retour/documentation",
                 "issues": "https://nystudio107.com/plugins/retour/support",
-                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.57"
+                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.58"
             },
             "funding": [
                 {
@@ -3950,7 +4014,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-07-08T17:31:21+00:00"
+            "time": "2021-08-04T16:13:35+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
@@ -5025,47 +5089,6 @@
                 "source": "https://github.com/php-fig/log/tree/1.1.4"
             },
             "time": "2021-05-03T11:20:27+00:00"
-        },
-        {
-            "name": "putyourlightson/craft-autocomplete",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/putyourlightson/craft-autocomplete.git",
-                "reference": "086574d4997f32482f281ff94aa00b0ccc2e63bd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/putyourlightson/craft-autocomplete/zipball/086574d4997f32482f281ff94aa00b0ccc2e63bd",
-                "reference": "086574d4997f32482f281ff94aa00b0ccc2e63bd",
-                "shasum": ""
-            },
-            "require": {
-                "craftcms/cms": "^3.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "name": "Autocomplete",
-                "developer": "PutYourLightsOn",
-                "developerUrl": "https://putyourlightson.com/"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Provides autocompletion for Craft and plugins in Twig templates.",
-            "keywords": [
-                "Craft",
-                "autocomplete",
-                "cms",
-                "twig"
-            ],
-            "support": {
-                "docs": "https://github.com/putyourlightson/craft-autocomplete",
-                "issues": "https://github.com/putyourlightson/craft-autocomplete/issues",
-                "source": "https://github.com/putyourlightson/craft-autocomplete/tree/1.0.1"
-            },
-            "time": "2021-07-23T11:47:55+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -7120,16 +7143,16 @@
         },
         {
             "name": "voku/arrayy",
-            "version": "7.8.10",
+            "version": "7.8.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/Arrayy.git",
-                "reference": "d9b0b1b398f1b19c3c8d72386f5df3764b877052"
+                "reference": "b5429f652bd9b9658528ffd052debe3637a3effe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Arrayy/zipball/d9b0b1b398f1b19c3c8d72386f5df3764b877052",
-                "reference": "d9b0b1b398f1b19c3c8d72386f5df3764b877052",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/b5429f652bd9b9658528ffd052debe3637a3effe",
+                "reference": "b5429f652bd9b9658528ffd052debe3637a3effe",
                 "shasum": ""
             },
             "require": {
@@ -7199,7 +7222,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-18T23:23:37+00:00"
+            "time": "2021-08-08T00:35:01+00:00"
         },
         {
             "name": "voku/email-check",
