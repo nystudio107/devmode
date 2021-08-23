@@ -1,4 +1,4 @@
-dateModified: 1623786955
+dateModified: 1629735913
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -145,7 +145,7 @@ plugins:
   seomatic:
     enabled: true
     licenseKey: $PLUGIN_SEOMATIC_LICENSE
-    schemaVersion: 3.0.10
+    schemaVersion: 3.0.11
     settings:
       addHrefLang: true
       addXDefaultHrefLang: true

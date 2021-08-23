@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.188.0",
+            "version": "3.191.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "613cea76913b632d75ed2f6ed5afb11c53762a6e"
+                "reference": "221eb3790a2f5cc73067ec1c13d4c788a0296351"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/613cea76913b632d75ed2f6ed5afb11c53762a6e",
-                "reference": "613cea76913b632d75ed2f6ed5afb11c53762a6e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/221eb3790a2f5cc73067ec1c13d4c788a0296351",
+                "reference": "221eb3790a2f5cc73067ec1c13d4c788a0296351",
                 "shasum": ""
             },
             "require": {
@@ -92,9 +92,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.188.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.191.1"
             },
-            "time": "2021-08-06T18:17:12+00:00"
+            "time": "2021-08-20T18:43:14+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -686,16 +686,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.8",
+            "version": "3.7.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "972d611d3f38d8ee830df485618d3064e3de4f19"
+                "reference": "6e40946712ac8a28030485156f645903471957bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/972d611d3f38d8ee830df485618d3064e3de4f19",
-                "reference": "972d611d3f38d8ee830df485618d3064e3de4f19",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/6e40946712ac8a28030485156f645903471957bc",
+                "reference": "6e40946712ac8a28030485156f645903471957bc",
                 "shasum": ""
             },
             "require": {
@@ -729,7 +729,7 @@
                 "voku/stringy": "^6.4.0",
                 "webonyx/graphql-php": "~14.4.1",
                 "yii2tech/ar-softdelete": "^1.0.4",
-                "yiisoft/yii2": "~2.0.42.1",
+                "yiisoft/yii2": "~2.0.43",
                 "yiisoft/yii2-debug": "^2.1.16",
                 "yiisoft/yii2-queue": "~2.3.2",
                 "yiisoft/yii2-swiftmailer": "^2.1.2"
@@ -791,7 +791,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2021-08-07T00:17:03+00:00"
+            "time": "2021-08-19T16:47:46+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -958,16 +958,16 @@
         },
         {
             "name": "craftcms/server-check",
-            "version": "1.2.1",
+            "version": "1.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/server-check.git",
-                "reference": "a14f73e95a98809739d62831a2cd39f123d197f9"
+                "reference": "9d8345bc7920b6657bd3fac396efee6bf8609ed6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/server-check/zipball/a14f73e95a98809739d62831a2cd39f123d197f9",
-                "reference": "a14f73e95a98809739d62831a2cd39f123d197f9",
+                "url": "https://api.github.com/repos/craftcms/server-check/zipball/9d8345bc7920b6657bd3fac396efee6bf8609ed6",
+                "reference": "9d8345bc7920b6657bd3fac396efee6bf8609ed6",
                 "shasum": ""
             },
             "type": "library",
@@ -996,7 +996,7 @@
                 "rss": "https://github.com/craftcms/server-check/releases.atom",
                 "source": "https://github.com/craftcms/server-check"
             },
-            "time": "2021-05-25T21:54:30+00:00"
+            "time": "2021-08-18T14:46:23+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -1355,25 +1355,26 @@
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.14.0",
+            "version": "0.14.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "beff89576a72540ee99476aeb9cfe98222e76fb8"
+                "reference": "307b42066fb0b76b5119f5e1f0826e18fefabe95"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/beff89576a72540ee99476aeb9cfe98222e76fb8",
-                "reference": "beff89576a72540ee99476aeb9cfe98222e76fb8",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/307b42066fb0b76b5119f5e1f0826e18fefabe95",
+                "reference": "307b42066fb0b76b5119f5e1f0826e18fefabe95",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
-                "ext-libxml": "*"
+                "ext-libxml": "*",
+                "php": "^7.0 || ^8.0"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "^0.1.2",
-                "phpunit/phpunit": "^6"
+                "phpunit/phpunit": "^6.5 || ^8.5"
             },
             "type": "library",
             "autoload": {
@@ -1394,9 +1395,9 @@
             "description": "An SVG sanitizer for PHP",
             "support": {
                 "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
-                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.14.0"
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.14.1"
             },
-            "time": "2021-01-21T10:13:20+00:00"
+            "time": "2021-08-09T23:46:54+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -2431,16 +2432,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.1.4",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "f3ad69181b8afed2c9edf7be5a2918144ff4ea32"
+                "reference": "18634df356bfd4119fe3d6156bdb990c414c14ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f3ad69181b8afed2c9edf7be5a2918144ff4ea32",
-                "reference": "f3ad69181b8afed2c9edf7be5a2918144ff4ea32",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/18634df356bfd4119fe3d6156bdb990c414c14ea",
+                "reference": "18634df356bfd4119fe3d6156bdb990c414c14ea",
                 "shasum": ""
             },
             "require": {
@@ -2513,7 +2514,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/1.1.4"
+                "source": "https://github.com/thephpleague/flysystem/tree/1.1.5"
             },
             "funding": [
                 {
@@ -2521,7 +2522,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2021-06-23T21:56:05+00:00"
+            "time": "2021-08-17T13:49:42+00:00"
         },
         {
             "name": "league/flysystem-aws-s3-v3",
@@ -3330,16 +3331,16 @@
         },
         {
             "name": "nystudio107/craft-autocomplete",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-autocomplete.git",
-                "reference": "cc71f3455a3658994116af31ce0ad346c3aebfec"
+                "reference": "a589a63440181a9bc180413ea7987c7f0944c261"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-autocomplete/zipball/cc71f3455a3658994116af31ce0ad346c3aebfec",
-                "reference": "cc71f3455a3658994116af31ce0ad346c3aebfec",
+                "url": "https://api.github.com/repos/nystudio107/craft-autocomplete/zipball/a589a63440181a9bc180413ea7987c7f0944c261",
+                "reference": "a589a63440181a9bc180413ea7987c7f0944c261",
                 "shasum": ""
             },
             "require": {
@@ -3382,7 +3383,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-autocomplete/blob/master/README.md",
                 "issues": "https://github.com/nystudio107/craft-autocomplete/issues",
-                "source": "https://github.com/nystudio107/craft-autocomplete/tree/1.0.0"
+                "source": "https://github.com/nystudio107/craft-autocomplete/tree/1.0.1"
             },
             "funding": [
                 {
@@ -3390,7 +3391,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-08T02:43:46+00:00"
+            "time": "2021-08-09T16:50:23+00:00"
         },
         {
             "name": "nystudio107/craft-disqus",
@@ -3846,16 +3847,16 @@
         },
         {
             "name": "nystudio107/craft-plugin-manifest",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-manifest.git",
-                "reference": "0c275f7f9633ed27d7acf445ca6ab9dba99d55dc"
+                "reference": "d5c5b7c7b01e26eb6c8aabcaee27c6763cd6282b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/0c275f7f9633ed27d7acf445ca6ab9dba99d55dc",
-                "reference": "0c275f7f9633ed27d7acf445ca6ab9dba99d55dc",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/d5c5b7c7b01e26eb6c8aabcaee27c6763cd6282b",
+                "reference": "d5c5b7c7b01e26eb6c8aabcaee27c6763cd6282b",
                 "shasum": ""
             },
             "require": {
@@ -3886,7 +3887,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-manifest/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-manifest/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/1.0.5"
+                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/1.0.6"
             },
             "funding": [
                 {
@@ -3894,20 +3895,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-07-13T16:06:23+00:00"
+            "time": "2021-08-19T23:35:26+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-vite",
-            "version": "1.0.10",
+            "version": "1.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-vite.git",
-                "reference": "3bba9f9d9cb4cd81d9d8d80f04a3db08107e9b87"
+                "reference": "c3d8d59543a20d9540f53c2111e35bb69dc70cbb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/3bba9f9d9cb4cd81d9d8d80f04a3db08107e9b87",
-                "reference": "3bba9f9d9cb4cd81d9d8d80f04a3db08107e9b87",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/c3d8d59543a20d9540f53c2111e35bb69dc70cbb",
+                "reference": "c3d8d59543a20d9540f53c2111e35bb69dc70cbb",
                 "shasum": ""
             },
             "require": {
@@ -3938,7 +3939,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-vite/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.10"
+                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.12"
             },
             "funding": [
                 {
@@ -3946,20 +3947,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-07-15T03:47:31+00:00"
+            "time": "2021-08-19T23:44:48+00:00"
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.58",
+            "version": "3.1.61",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "052a65f2f1ad7b510ba96868cf04088fa74468cf"
+                "reference": "ba665f06e702df11634b94171598fab6e83aca97"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/052a65f2f1ad7b510ba96868cf04088fa74468cf",
-                "reference": "052a65f2f1ad7b510ba96868cf04088fa74468cf",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/ba665f06e702df11634b94171598fab6e83aca97",
+                "reference": "ba665f06e702df11634b94171598fab6e83aca97",
                 "shasum": ""
             },
             "require": {
@@ -4006,7 +4007,7 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/retour/documentation",
                 "issues": "https://nystudio107.com/plugins/retour/support",
-                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.58"
+                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.61"
             },
             "funding": [
                 {
@@ -4014,20 +4015,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-04T16:13:35+00:00"
+            "time": "2021-08-20T16:53:28+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.3.46",
+            "version": "3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "01a338d7bd5486088a3611900f57bfcd94617f03"
+                "reference": "166f7cac4417576cb8bdcd0b1a77995c60ed5839"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/01a338d7bd5486088a3611900f57bfcd94617f03",
-                "reference": "01a338d7bd5486088a3611900f57bfcd94617f03",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/166f7cac4417576cb8bdcd0b1a77995c60ed5839",
+                "reference": "166f7cac4417576cb8bdcd0b1a77995c60ed5839",
                 "shasum": ""
             },
             "require": {
@@ -4081,7 +4082,7 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.3.46"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.4.2"
             },
             "funding": [
                 {
@@ -4089,7 +4090,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-07-27T15:06:08+00:00"
+            "time": "2021-08-20T14:24:39+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -5304,16 +5305,16 @@
         },
         {
             "name": "seld/phar-utils",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/phar-utils.git",
-                "reference": "8674b1d84ffb47cc59a101f5d5a3b61e87d23796"
+                "reference": "749042a2315705d2dfbbc59234dd9ceb22bf3ff0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/8674b1d84ffb47cc59a101f5d5a3b61e87d23796",
-                "reference": "8674b1d84ffb47cc59a101f5d5a3b61e87d23796",
+                "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/749042a2315705d2dfbbc59234dd9ceb22bf3ff0",
+                "reference": "749042a2315705d2dfbbc59234dd9ceb22bf3ff0",
                 "shasum": ""
             },
             "require": {
@@ -5346,9 +5347,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/phar-utils/issues",
-                "source": "https://github.com/Seldaek/phar-utils/tree/master"
+                "source": "https://github.com/Seldaek/phar-utils/tree/1.1.2"
             },
-            "time": "2020-07-07T18:42:57+00:00"
+            "time": "2021-08-19T21:01:38+00:00"
         },
         {
             "name": "sunra/php-simple-html-dom-parser",
@@ -7981,21 +7982,21 @@
         },
         {
             "name": "yiisoft/yii2",
-            "version": "2.0.42.1",
+            "version": "2.0.43",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "976e2e892af4df933831b5e0a05d0acf4b173d98"
+                "reference": "f370955faa3067d9b27879aaf14b0978a805cd59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/976e2e892af4df933831b5e0a05d0acf4b173d98",
-                "reference": "976e2e892af4df933831b5e0a05d0acf4b173d98",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/f370955faa3067d9b27879aaf14b0978a805cd59",
+                "reference": "f370955faa3067d9b27879aaf14b0978a805cd59",
                 "shasum": ""
             },
             "require": {
                 "bower-asset/inputmask": "~3.2.2 | ~3.3.5",
-                "bower-asset/jquery": "3.5.*@stable | 3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
+                "bower-asset/jquery": "3.6.*@stable | 3.5.*@stable | 3.4.*@stable | 3.3.*@stable | 3.2.*@stable | 3.1.*@stable | 2.2.*@stable | 2.1.*@stable | 1.11.*@stable | 1.12.*@stable",
                 "bower-asset/punycode": "1.3.*",
                 "bower-asset/yii2-pjax": "~2.0.1",
                 "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
@@ -8003,6 +8004,7 @@
                 "ext-mbstring": "*",
                 "ezyang/htmlpurifier": "~4.6",
                 "lib-pcre": "*",
+                "paragonie/random_compat": ">=1",
                 "php": ">=5.4.0",
                 "yiisoft/yii2-composer": "~2.0.4"
             },
@@ -8028,13 +8030,13 @@
                 {
                     "name": "Qiang Xue",
                     "email": "qiang.xue@gmail.com",
-                    "homepage": "http://www.yiiframework.com/",
+                    "homepage": "https://www.yiiframework.com/",
                     "role": "Founder and project lead"
                 },
                 {
                     "name": "Alexander Makarov",
                     "email": "sam@rmcreative.ru",
-                    "homepage": "http://rmcreative.ru/",
+                    "homepage": "https://rmcreative.ru/",
                     "role": "Core framework development"
                 },
                 {
@@ -8045,7 +8047,7 @@
                 {
                     "name": "Carsten Brandt",
                     "email": "mail@cebe.cc",
-                    "homepage": "http://cebe.cc/",
+                    "homepage": "https://cebe.cc/",
                     "role": "Core framework development"
                 },
                 {
@@ -8072,14 +8074,14 @@
                 }
             ],
             "description": "Yii PHP Framework Version 2",
-            "homepage": "http://www.yiiframework.com/",
+            "homepage": "https://www.yiiframework.com/",
             "keywords": [
                 "framework",
                 "yii2"
             ],
             "support": {
                 "forum": "http://www.yiiframework.com/forum/",
-                "irc": "irc://irc.freenode.net/yii",
+                "irc": "irc://irc.libera.chat:6697/yii",
                 "issues": "https://github.com/yiisoft/yii2/issues?state=open",
                 "source": "https://github.com/yiisoft/yii2",
                 "wiki": "http://www.yiiframework.com/wiki/"
@@ -8098,7 +8100,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-06T11:44:35+00:00"
+            "time": "2021-08-09T17:38:43+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -8178,16 +8180,16 @@
         },
         {
             "name": "yiisoft/yii2-debug",
-            "version": "2.1.17",
+            "version": "2.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "21a259c27dacedf19ac1e00d4a7180e3043d7859"
+                "reference": "45bc5d2ef4e3b0ef6f638190d42f04a77ab1df6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/21a259c27dacedf19ac1e00d4a7180e3043d7859",
-                "reference": "21a259c27dacedf19ac1e00d4a7180e3043d7859",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/45bc5d2ef4e3b0ef6f638190d42f04a77ab1df6c",
+                "reference": "45bc5d2ef4e3b0ef6f638190d42f04a77ab1df6c",
                 "shasum": ""
             },
             "require": {
@@ -8264,7 +8266,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-05T22:02:36+00:00"
+            "time": "2021-08-09T20:57:58+00:00"
         },
         {
             "name": "yiisoft/yii2-queue",
