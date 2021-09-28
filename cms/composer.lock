@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.194.1",
+            "version": "3.195.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "67bdee05acef9e8ad60098090996690b49babd09"
+                "reference": "e2ce251ca94661ee3d4b0b5e8cc67e964b2e5f8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/67bdee05acef9e8ad60098090996690b49babd09",
-                "reference": "67bdee05acef9e8ad60098090996690b49babd09",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e2ce251ca94661ee3d4b0b5e8cc67e964b2e5f8e",
+                "reference": "e2ce251ca94661ee3d4b0b5e8cc67e964b2e5f8e",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.194.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.195.0"
             },
-            "time": "2021-09-17T18:15:42+00:00"
+            "time": "2021-09-27T18:14:14+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -2628,16 +2628,16 @@
         },
         {
             "name": "league/mime-type-detection",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/mime-type-detection.git",
-                "reference": "3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3"
+                "reference": "b38b25d7b372e9fddb00335400467b223349fd7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3",
-                "reference": "3b9dff8aaf7323590c1d2e443db701eb1f9aa0d3",
+                "url": "https://api.github.com/repos/thephpleague/mime-type-detection/zipball/b38b25d7b372e9fddb00335400467b223349fd7e",
+                "reference": "b38b25d7b372e9fddb00335400467b223349fd7e",
                 "shasum": ""
             },
             "require": {
@@ -2668,7 +2668,7 @@
             "description": "Mime-type detection for Flysystem",
             "support": {
                 "issues": "https://github.com/thephpleague/mime-type-detection/issues",
-                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.7.0"
+                "source": "https://github.com/thephpleague/mime-type-detection/tree/1.8.0"
             },
             "funding": [
                 {
@@ -2680,7 +2680,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-18T20:58:21+00:00"
+            "time": "2021-09-25T08:23:19+00:00"
         },
         {
             "name": "league/oauth2-client",
@@ -3389,12 +3389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-autocomplete.git",
-                "reference": "7ee5b95a51896d2c32d3c113893b6615ff43c3b0"
+                "reference": "e18b22b4e96e5a21f01c648284517310f6475763"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-autocomplete/zipball/7ee5b95a51896d2c32d3c113893b6615ff43c3b0",
-                "reference": "7ee5b95a51896d2c32d3c113893b6615ff43c3b0",
+                "url": "https://api.github.com/repos/nystudio107/craft-autocomplete/zipball/e18b22b4e96e5a21f01c648284517310f6475763",
+                "reference": "e18b22b4e96e5a21f01c648284517310f6475763",
                 "shasum": ""
             },
             "require": {
@@ -3445,7 +3445,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-09-14T13:16:59+00:00"
+            "time": "2021-09-22T22:19:22+00:00"
         },
         {
             "name": "nystudio107/craft-disqus",
@@ -3913,16 +3913,16 @@
         },
         {
             "name": "nystudio107/craft-plugin-manifest",
-            "version": "1.0.6",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-manifest.git",
-                "reference": "d5c5b7c7b01e26eb6c8aabcaee27c6763cd6282b"
+                "reference": "62a55e7a98df464fa1df493b6088c60804e77b23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/d5c5b7c7b01e26eb6c8aabcaee27c6763cd6282b",
-                "reference": "d5c5b7c7b01e26eb6c8aabcaee27c6763cd6282b",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/62a55e7a98df464fa1df493b6088c60804e77b23",
+                "reference": "62a55e7a98df464fa1df493b6088c60804e77b23",
                 "shasum": ""
             },
             "require": {
@@ -3953,7 +3953,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-manifest/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-manifest/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/1.0.6"
+                "source": "https://github.com/nystudio107/craft-plugin-manifest/tree/1.0.7"
             },
             "funding": [
                 {
@@ -3961,7 +3961,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-08-19T23:35:26+00:00"
+            "time": "2021-09-22T19:52:28+00:00"
         },
         {
             "name": "nystudio107/craft-plugin-vite",
@@ -4085,16 +4085,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.4.10",
+            "version": "3.4.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "21fd6077413ce82fcd0971a7524e027a7bb51e73"
+                "reference": "e366641ea0c1f76447dcfe9452bbd4042d67cf94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/21fd6077413ce82fcd0971a7524e027a7bb51e73",
-                "reference": "21fd6077413ce82fcd0971a7524e027a7bb51e73",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/e366641ea0c1f76447dcfe9452bbd4042d67cf94",
+                "reference": "e366641ea0c1f76447dcfe9452bbd4042d67cf94",
                 "shasum": ""
             },
             "require": {
@@ -4148,7 +4148,7 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.4.10"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.4.14"
             },
             "funding": [
                 {
@@ -4156,7 +4156,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-09-16T03:00:40+00:00"
+            "time": "2021-09-27T22:11:30+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
