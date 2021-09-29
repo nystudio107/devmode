@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.195.0",
+            "version": "3.195.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "e2ce251ca94661ee3d4b0b5e8cc67e964b2e5f8e"
+                "reference": "7df429b9cae05b52991ae266e0f7f6756a9e7b4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/e2ce251ca94661ee3d4b0b5e8cc67e964b2e5f8e",
-                "reference": "e2ce251ca94661ee3d4b0b5e8cc67e964b2e5f8e",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/7df429b9cae05b52991ae266e0f7f6756a9e7b4d",
+                "reference": "7df429b9cae05b52991ae266e0f7f6756a9e7b4d",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.195.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.195.1"
             },
-            "time": "2021-09-27T18:14:14+00:00"
+            "time": "2021-09-28T18:16:45+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -737,16 +737,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "3.7.13",
+            "version": "3.7.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "2c1ab17e7e41194b2f5b040944c93aab08fee15b"
+                "reference": "b585c8006d649fc94e12bb6dcf321979d3390086"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/2c1ab17e7e41194b2f5b040944c93aab08fee15b",
-                "reference": "2c1ab17e7e41194b2f5b040944c93aab08fee15b",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/b585c8006d649fc94e12bb6dcf321979d3390086",
+                "reference": "b585c8006d649fc94e12bb6dcf321979d3390086",
                 "shasum": ""
             },
             "require": {
@@ -842,7 +842,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2021-09-14T22:02:00+00:00"
+            "time": "2021-09-28T18:29:52+00:00"
         },
         {
             "name": "craftcms/oauth2-craftid",
@@ -4085,16 +4085,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.4.14",
+            "version": "3.4.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "e366641ea0c1f76447dcfe9452bbd4042d67cf94"
+                "reference": "83357b635b53f848a31b0d51230feadc1491c731"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/e366641ea0c1f76447dcfe9452bbd4042d67cf94",
-                "reference": "e366641ea0c1f76447dcfe9452bbd4042d67cf94",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/83357b635b53f848a31b0d51230feadc1491c731",
+                "reference": "83357b635b53f848a31b0d51230feadc1491c731",
                 "shasum": ""
             },
             "require": {
@@ -4148,7 +4148,7 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.4.14"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.4.15"
             },
             "funding": [
                 {
@@ -4156,7 +4156,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-09-27T22:11:30+00:00"
+            "time": "2021-09-28T16:15:24+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -8707,16 +8707,16 @@
         },
         {
             "name": "symfony/var-dumper",
-            "version": "v5.3.7",
+            "version": "v5.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "3ad5af4aed07d0a0201bbcfc42658fe6c5b2fb8f"
+                "reference": "eaaea4098be1c90c8285543e1356a09c8aa5c8da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/3ad5af4aed07d0a0201bbcfc42658fe6c5b2fb8f",
-                "reference": "3ad5af4aed07d0a0201bbcfc42658fe6c5b2fb8f",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/eaaea4098be1c90c8285543e1356a09c8aa5c8da",
+                "reference": "eaaea4098be1c90c8285543e1356a09c8aa5c8da",
                 "shasum": ""
             },
             "require": {
@@ -8775,7 +8775,7 @@
                 "dump"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-dumper/tree/v5.3.7"
+                "source": "https://github.com/symfony/var-dumper/tree/v5.3.8"
             },
             "funding": [
                 {
@@ -8791,7 +8791,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-04T23:19:25+00:00"
+            "time": "2021-09-24T15:59:58+00:00"
         },
         {
             "name": "yiisoft/yii2-shell",
