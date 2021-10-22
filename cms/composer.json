@@ -23,7 +23,6 @@
     "craftcms/cms": "^3.7.0",
     "vlucas/phpdotenv": "^2.4.0",
     "yiisoft/yii2-redis": "^2.0.6",
-    "nystudio107/craft-autocomplete": "^1.0.0",
     "nystudio107/craft-imageoptimize": "^1.0.0",
     "nystudio107/craft-fastcgicachebust": "^1.0.0",
     "nystudio107/craft-icalendar": "^1.1.0",
@@ -40,6 +39,7 @@
     "craftcms/aws-s3": "^1.2"
   },
   "require-dev": {
+    "nystudio107/craft-autocomplete": "^1.0.0",
     "yiisoft/yii2-shell": "^2.0.3"
   },
   "autoload": {
