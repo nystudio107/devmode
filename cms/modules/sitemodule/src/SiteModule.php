@@ -13,6 +13,8 @@ namespace modules\sitemodule;
 use craft\web\twig\variables\CraftVariable;
 use modules\sitemodule\assetbundles\sitemodule\SiteModuleAsset;
 use modules\sitemodule\services\Calendar;
+use modules\sitemodule\services\RemoteFile;
+use modules\sitemodule\services\Transcript;
 use modules\sitemodule\variables\SiteVariable;
 
 use Craft;
@@ -32,7 +34,9 @@ use yii\base\Module;
  * @package   SiteModule
  * @since     1.0.0
  *
- * @property Calendar calendar
+ * @property Calendar $calendar
+ * @property RemoteFile $remoteFile
+ * @property Transcript $transcript
  */
 class SiteModule extends Module
 {
@@ -93,6 +97,12 @@ class SiteModule extends Module
         $this->setComponents([
             'calendar' => [
                 'class' => Calendar::class,
+            ],
+            'remoteFile' => [
+                'class' => RemoteFile::class,
+            ],
+            'transcript' => [
+                'class' => Transcript::class,
             ]
         ]);
 

@@ -36,6 +36,12 @@ return [
     'defaultTokenDuration' => 'P2W',
     'enableCsrfProtection' => true,
     'errorTemplatePrefix' => 'errors/',
+    'extraFileKinds' => [
+        // merge .csv into list of text file kinds
+        'text' => [
+            'extensions' => ['csv'],
+        ],
+    ],
     'generateTransformsBeforePageLoad' => true,
     'maxCachedCloudImageSize' => 3000,
     'maxUploadFileSize' => '100M',

@@ -1,0 +1,52 @@
+fieldLayouts:
+  3eb40d2e-5571-4c14-a5df-2a714e403859:
+    tabs:
+      -
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\AssetTitleField
+            warning: null
+            width: 100
+        name: Content
+        sortOrder: 1
+handle: devmodeTranscripts
+hasUrls: true
+name: 'Devmode Transcripts'
+settings:
+  addSubfolderToRootUrl: '1'
+  autoFocalPoint: ''
+  bucket: $S3_BUCKET
+  bucketSelectionMode: manual
+  cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+  cfPrefix: $CLOUDFRONT_PATH_PREFIX
+  expires: '3 months'
+  keyId: $S3_KEY_ID
+  makeUploadsPublic: ''
+  region: $S3_REGION
+  secret: $S3_SECRET
+  storageClass: ''
+  subfolder: transcripts
+sortOrder: 7
+titleTranslationKeyFormat: null
+titleTranslationMethod: null
+type: craft\awss3\Volume
+url: $CLOUDFRONT_URL

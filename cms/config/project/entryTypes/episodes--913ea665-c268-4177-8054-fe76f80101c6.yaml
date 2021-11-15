@@ -81,6 +81,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: 523395ea-5738-4ca5-a119-f32221ea5ca8 # Episode Transcript
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: 07f04bdf-277d-4010-9fbe-497cd9593324 # Related Episodes
             instructions: null
             label: null

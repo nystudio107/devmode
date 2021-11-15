@@ -34,6 +34,20 @@
             </div>
         </div>
     </section>
+    {# -- Transcript -- #}
+    {% set transcript = entry.episodeTranscript.one() %}
+    {% if transcript %}
+    <section>
+        <div>
+            <div class="flex flex-wrap">
+                {% include "episodes/_partials/_display_transcript.twig" with {
+                    "episode": entry,
+                    "transcript": transcript,
+                } only %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
     {# -- Webmentions facepile -- #}
     <section>
         <div class="my-8 w-full">

@@ -1,0 +1,40 @@
+{# @var \craft\elements\Asset transcript #}
+{# @var \craft\elements\User host #}
+
+<div class="w-full">
+    <div class="w-full max-w-4xl mx-auto">
+        {# -- Episode transcript -- #}
+        <div>
+            <div class="inline-block text-devmode-pink devmode-container font-sans text-xl p-8 leading-normal">
+                <button id="transcriptButton">
+                Read Episode Transcript &rarr;
+                </button>
+                <div id="episodeTranscript" class="hidden">
+                {% set transcriptRows = craft.site.transcript(transcript.url) %}
+                {% set lastSpeakerName = '' %}
+                {% if transcriptRows %}
+                    {% for transcriptRow in transcriptRows %}
+                        {% set speakerName = transcriptRow[1] %}
+                        {% if speakerName == 'devmodefm' %}
+                            {% set speakerName = 'Andrew' %}
+                        {% endif %}
+                        <div class="{% if speakerName != lastSpeakerName %}pt-4{% endif %}">
+                            {% set lastSpeakerName = speakerName %}
+                            <span><b>{{ speakerName }}</b>: </span>
+                            <span>{{ transcriptRow[2] }}</span>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var buttonElement = document.getElementById("transcriptButton");
+    buttonElement.onclick = function() {
+        var episodeTranscript = document.getElementById("episodeTranscript");
+        episodeTranscript.classList.toggle("hidden");
+    };
+</script>

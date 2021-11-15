@@ -34,29 +34,30 @@ class SiteVariable
      */
     public function webmentions(string $url)
     {
-        $client = Craft::$app->api->client;
-        $result = null;
-        try {
-            $response = $client->get($url, ['http_errors' => false]);
-            $statusCode = $response->getStatusCode();
-            if ($statusCode === 200) {
-                $result = $response->getBody()->getContents();
-                if ($result) {
-                    $result = Json::decodeIfJson($result);
-                }
-                // Return null if the JSON decode fails
-                if (\is_string($result)) {
-                    $result = null;
-                }
-            } else {
-                $reason = $response->getReasonPhrase();
-                Craft::error("Invalid response from API: ${reason} -- ${url}", __METHOD__);
-            }
-        } catch (\Exception $e) {
-            Craft::error($e->getMessage() . " -- ${url}", 'site-module');
+        $remoteFile = SiteModule::$instance->remoteFile;
+        $result = $remoteFile->fetch($url);
+        if ($result) {
+            $result = Json::decodeIfJson($result);
+        }
+        // Return null if the JSON decode fails
+        if (\is_string($result)) {
+            $result = null;
         }
 
         return $result;
+    }
+
+    /**
+     * Return an array of transcript lines from the remote file URL
+     *
+     * @param string $url
+     * @return array|null
+     */
+    public function getTranscript(string $url): ?array
+    {
+        $transcript = SiteModule::$instance->transcript;
+
+        return $transcript->fetch($url);
     }
 
     /**
@@ -66,6 +67,8 @@ class SiteVariable
      */
     public function getCalendarFeedUrl(): string
     {
-        return SiteModule::$instance->calendar->getCalendarFeedUrl();
+        $calendar = SiteModule::$instance->calendar;
+
+        return $calendar->getCalendarFeedUrl();
     }
 }

@@ -1,4 +1,4 @@
-dateModified: 1631129297
+dateModified: 1636939686
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -34,6 +34,7 @@ meta:
     34348a98-83b9-4f2d-8e14-0437ec964a15: devMode # devMode
     49649e9a-033b-4ddf-9f3d-26a480502993: About # About
     61953a92-8b34-4678-9bae-fd5a45142f26: 'Episode Tags' # Episode Tags
+    523395ea-5738-4ca5-a119-f32221ea5ca8: 'Episode Transcript' # Episode Transcript
     8011817c-9518-4a31-9aa8-cad6d4a08b81: 'Episode Summary' # Episode Summary
     9687721c-33b8-4a40-abb7-5c42e07ce274: 'Profile Bio' # Profile Bio
     14605669-4768-4f57-88d6-1f06480a9b80: 'Show iTunes URL' # Show iTunes URL
@@ -42,6 +43,7 @@ meta:
     a8f2ec1a-a218-451c-a658-e3c600ddb5fa: 'Show Title' # Show Title
     ab0ca0e9-1308-472f-92a5-2ab0cbd84943: 'Show RSS Feed URL' # Show RSS Feed URL
     b5eb01ec-a6ed-4a08-9438-64e7138b08f0: FAQs # FAQs
+    bd8ef0d7-f73b-4138-ac52-c14d11dd780e: 'Devmode Transcripts' # Devmode Transcripts
     bda219fa-bace-4d8b-ad3a-08243caaf6ca: 'Show Image' # Show Image
     bfbd2913-36d8-4e54-9f9c-644e793f0ae9: Episodes # Episodes
     c05161c0-a294-4d47-8909-1cfc88c2f970: 'Profile Company' # Profile Company
