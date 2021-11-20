@@ -27,6 +27,7 @@ services:
     expose:
       - "9000"
     init: true
+    tty: true
     volumes: &php-volumes
       - cpresources:/var/www/project/cms/web/cpresources:delegated
       - storage:/var/www/project/cms/storage:delegated
@@ -48,6 +49,7 @@ services:
     expose:
       - "9000"
     init: true
+    tty: true
     volumes:
       *php-volumes
   # postgres - database
@@ -77,6 +79,7 @@ services:
     env_file:
       *env
     init: true
+    tty: true
     volumes:
       *php-volumes
   # redis - key/value database for caching & php sessions
@@ -97,6 +100,7 @@ services:
     init: true
     ports:
       - "8080:8080"
+    tty: true
     volumes:
       - ./tsconfig.json:/var/www/project/tsconfig.json:cached
       - ./buildchain:/var/www/project/buildchain:cached
