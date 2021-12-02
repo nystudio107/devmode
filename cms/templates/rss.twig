@@ -87,11 +87,13 @@
                     "audioChannels": 1
                 }) %}
                 {% if transAudioUrl |length %}
+{# Disable Chartable tracking; it gets flagged by some ad blockers
                     {% if not craft.app.config.general.devMode %}
                         {% set transAudioUrl = transAudioUrl | replace('/^(http|https):/', '') %}
                         {% set transAudioUrl = transAudioUrl | replace('//', '') %}
                         {% set transAudioUrl = "https://chtbl.com/track/81493/#{transAudioUrl}" %}
                     {% endif %}
+#}
                     {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
 
                     {% if fileInfo | length %}
