@@ -1,4 +1,4 @@
-dateModified: 1636939686
+dateModified: 1639543798
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -176,15 +176,15 @@ plugins:
     licenseKey: $PLUGIN_TRANSCODER_LICENSE
     schemaVersion: 1.0.0
     settings: null
-  twigpack:
-    edition: standard
-    enabled: true
-    schemaVersion: 1.0.0
   typogrify:
     enabled: true
     licenseKey: null
     schemaVersion: 1.0.0
     settings: null
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   webperf:
     enabled: true
     licenseKey: $PLUGIN_WEBPERF_LICENSE

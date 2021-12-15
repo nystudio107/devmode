@@ -21,5 +21,5 @@
 
 {# -- Any JavaScript that should be included before </body> -- #}
 {% block bodyJs %}
-    {{ craft.twigpack.includeJsModule("episodes.js", true) }}
+    {{ craft.vite.script("src/js/modules/episodes.js") }}
 {% endblock bodyJs %}

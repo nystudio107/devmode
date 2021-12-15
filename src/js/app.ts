@@ -1,4 +1,5 @@
 import Snowf from 'vue-snowf';
+import '@/css/app.pcss';
 
 // App main
 const main = async() => {
@@ -56,8 +57,3 @@ const main = async() => {
 // Execute async function
 main().then((value) => {
 });
-
-// Accept HMR as per: https://webpack.js.org/api/hot-module-replacement#accept
-if (module.hot) {
-    module.hot.accept();
-}

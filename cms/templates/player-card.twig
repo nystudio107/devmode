@@ -27,5 +27,5 @@
 
 {# -- Any JavaScript that should be included before </body> -- #}
 {% block bodyJs %}
-    {{ craft.twigpack.includeJsModule("player.js", true) }}
+    {{ craft.vite.script("src/js/modules/player.js") }}
 {% endblock bodyJs %}
