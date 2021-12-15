@@ -27,7 +27,7 @@ export default ({ command }) => ({
   },
   plugins: [
     critical({
-      criticalUrl: 'https://devmode.fm',
+      criticalUrl: 'https://devmode.fm/',
       criticalBase: '../cms/web/dist/criticalcss/',
       criticalPages: [
         { uri: '/', template: 'index' },
