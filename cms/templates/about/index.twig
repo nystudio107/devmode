@@ -106,7 +106,6 @@
 {% endblock %}
 
 {% block subcontent %}
-    {% set regularsDisplayed = false %}
     <section>
         <div class="devmode-aqua-background">
             <div class="pt-8">
@@ -118,25 +117,35 @@
                     </div>
                 </div>
             </div>
-            {% for host in craft.users.group("hosts").orderBy("elements.dateCreated ASC").all() %}
-                {% if not regularsDisplayed and not host.isInGroup("owners") %}
-                    {% set regularsDisplayed = true %}
-                    <div class="w-full bg-transparent">
-                        <div class="pt-8 mb-8">
-                            <h3 class="devmode-header-text text-center text-xl font-bold">
-                                Regulars
-                            </h3>
-                        </div>
-                    </div>
-                {% endif %}
+            {% for owners in craft.users.group("owners").orderBy("elements.dateCreated ASC").all() %}
                 <div class="container mx-auto py-8">
                     <div class="flex flex-wrap {% if loop.last %} pb-8{% endif %}">
                         {% include "about/_partials/_display_host_excerpt.twig" with {
-                            "host": host,
+                            "host": owners,
                             "showInfo": showInfo,
                         } only %}
                     </div>
                 </div>
+            {% endfor %}
+
+            <div class="w-full bg-transparent">
+                <div class="pt-8 mb-8">
+                    <h3 class="devmode-header-text text-center text-xl font-bold">
+                        Regulars
+                    </h3>
+                </div>
+            </div>
+            {% for host in craft.users.group("hosts").orderBy("elements.dateCreated ASC").all() %}
+                {% if not host.isInGroup("owners") %}
+                    <div class="container mx-auto py-8">
+                        <div class="flex flex-wrap {% if loop.last %} pb-8{% endif %}">
+                            {% include "about/_partials/_display_host_excerpt.twig" with {
+                                "host": host,
+                                "showInfo": showInfo,
+                            } only %}
+                        </div>
+                    </div>
+                {% endif %}
             {% endfor %}
         </div>
     </section>
