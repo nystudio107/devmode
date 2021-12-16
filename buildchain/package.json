@@ -29,7 +29,6 @@
     "core-js": "^3.0.0",
     "lazysizes": "^5.2.2",
     "picturefill": "^3.0.2",
-    "tailwindcss": "^2.1.0",
     "tiny-cookie": "^1.0.1",
     "vue": "^2.5.17",
     "vue-clickaway": "^2.1.0",
