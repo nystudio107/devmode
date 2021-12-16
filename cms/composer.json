@@ -35,7 +35,7 @@
     "nystudio107/craft-retour": "^3.0.0",
     "nystudio107/craft-seomatic": "^3.2.0",
     "nystudio107/craft-webperf": "^1.0.0",
-    "nystudio107/craft-vite": "^1.0.0",
+    "nystudio107/craft-vite": "^1.0.19",
     "nystudio107/dotenvy": "^1.0.0",
     "vlucas/phpdotenv": "^2.4.0",
     "yiisoft/yii2-redis": "^2.0.6"
