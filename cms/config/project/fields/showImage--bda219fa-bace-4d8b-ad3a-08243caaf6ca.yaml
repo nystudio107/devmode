@@ -1,3 +1,4 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 0c790066-43c5-4b67-b6d9-8492fa40cf71 # Show
 handle: showImage
@@ -5,22 +6,28 @@ instructions: ''
 name: 'Show Image'
 searchable: true
 settings:
+  allowSelfRelations: false
+  allowUploads: true
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:cd231c31-8caf-4b13-995d-2b84f9750c63'
+  defaultUploadLocationSource: 'volume:7540db37-7ec3-4471-9de6-36bde06e949a'
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
+  previewMode: full
   restrictFiles: '1'
   selectionLabel: ''
-  singleUploadLocationSource: 'volume:cd231c31-8caf-4b13-995d-2b84f9750c63'
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
+  singleUploadLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99'
   singleUploadLocationSubpath: ''
   source: null
   sources:
     - 'volume:7540db37-7ec3-4471-9de6-36bde06e949a'
   targetSiteId: null
-  useSingleFolder: ''
-  validateRelatedElements: ''
+  useSingleFolder: false
+  validateRelatedElements: false
   viewMode: large
 translationKeyFormat: null
 translationMethod: site
