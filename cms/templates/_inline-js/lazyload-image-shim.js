@@ -13,6 +13,7 @@ if ('loading' in HTMLImageElement.prototype) {
 } else {
    // Dynamically import the LazySizes library
     const script = document.createElement('script');
+    script.type = 'module';
     script.src =
         '{{ craft.vite.entry("src/js/utils/lazysizes-wrapper.ts") }}';
     document.body.appendChild(script);
