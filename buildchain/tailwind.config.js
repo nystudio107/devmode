@@ -1,24 +1,11 @@
 // module exports
 module.exports = {
-  mode: 'jit',
-  purge: {
-    content: [
-      '../cms/templates/**/*.{twig,html}',
-      '../src/vue/**/*.{vue,html}',
-      "./node_modules/vuetable-2/src/components/**/*.{vue,html}",
-    ],
-    layers: [
-      'base',
-      'components',
-      'utilities',
-    ],
-    mode: 'layers',
-    options: {
-      whitelist: [
-        '../src/css/components/**/*.{css}',
-      ],
-    }
-  },
+  content: [
+    '../cms/templates/**/*.{twig,html}',
+    '../src/vue/**/*.{vue,html}',
+    '../src/css/components/**/*.{css}',
+    './node_modules/vuetable-2/src/components/**/*.{vue,html}',
+  ],
   theme: {
     // Extend the default Tailwind config
     extend: {
@@ -40,6 +27,5 @@ module.exports = {
       xl: '1200px',
     },
   },
-  corePlugins: {},
   plugins: [],
 };
