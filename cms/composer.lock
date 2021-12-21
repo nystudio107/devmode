@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.208.5",
+            "version": "3.208.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "58fa9d8b522b0afa260299179ff950c783ff0ee1"
+                "reference": "6154edd0a34db103c69ec15e258ea73e4e45d471"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/58fa9d8b522b0afa260299179ff950c783ff0ee1",
-                "reference": "58fa9d8b522b0afa260299179ff950c783ff0ee1",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6154edd0a34db103c69ec15e258ea73e4e45d471",
+                "reference": "6154edd0a34db103c69ec15e258ea73e4e45d471",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.208.5"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.208.6"
             },
-            "time": "2021-12-13T20:17:56+00:00"
+            "time": "2021-12-20T19:17:52+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -4073,16 +4073,16 @@
         },
         {
             "name": "nystudio107/craft-plugin-vite",
-            "version": "1.0.18",
+            "version": "1.0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-vite.git",
-                "reference": "b42adfc94b27d92dfdd8429f6da4903ce0edbfe3"
+                "reference": "db53fdb759dd8f7b5716f809997630bce30719c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/b42adfc94b27d92dfdd8429f6da4903ce0edbfe3",
-                "reference": "b42adfc94b27d92dfdd8429f6da4903ce0edbfe3",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/db53fdb759dd8f7b5716f809997630bce30719c1",
+                "reference": "db53fdb759dd8f7b5716f809997630bce30719c1",
                 "shasum": ""
             },
             "require": {
@@ -4113,7 +4113,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-vite/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.18"
+                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.19"
             },
             "funding": [
                 {
@@ -4121,7 +4121,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-16T02:48:07+00:00"
+            "time": "2021-12-16T20:28:56+00:00"
         },
         {
             "name": "nystudio107/craft-retour",
@@ -4392,21 +4392,21 @@
         },
         {
             "name": "nystudio107/craft-vite",
-            "version": "1.0.19",
+            "version": "1.0.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-vite.git",
-                "reference": "6c594aa358b8932051760ce40df815e95cba6b1a"
+                "reference": "b0e6c60f4d24909547b8572ddf44ab2598ce7a41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/6c594aa358b8932051760ce40df815e95cba6b1a",
-                "reference": "6c594aa358b8932051760ce40df815e95cba6b1a",
+                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/b0e6c60f4d24909547b8572ddf44ab2598ce7a41",
+                "reference": "b0e6c60f4d24909547b8572ddf44ab2598ce7a41",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
-                "nystudio107/craft-plugin-vite": "^1.0.18"
+                "nystudio107/craft-plugin-vite": "^1.0.19"
             },
             "type": "craft-plugin",
             "extra": {
@@ -4444,7 +4444,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-vite/blob/master/README.md",
                 "issues": "https://github.com/nystudio107/craft-vite/issues",
-                "source": "https://github.com/nystudio107/craft-vite/tree/1.0.19"
+                "source": "https://github.com/nystudio107/craft-vite/tree/1.0.20"
             },
             "funding": [
                 {
@@ -4452,7 +4452,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-12-16T02:50:59+00:00"
+            "time": "2021-12-16T20:30:21+00:00"
         },
         {
             "name": "nystudio107/craft-webperf",
@@ -7766,16 +7766,16 @@
         },
         {
             "name": "voku/stringy",
-            "version": "6.4.3",
+            "version": "6.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/Stringy.git",
-                "reference": "24e607918c3d42ef53010b38259b334969d139da"
+                "reference": "b8b2ac807e99209b499a8f9b88eed7aea9649da8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Stringy/zipball/24e607918c3d42ef53010b38259b334969d139da",
-                "reference": "24e607918c3d42ef53010b38259b334969d139da",
+                "url": "https://api.github.com/repos/voku/Stringy/zipball/b8b2ac807e99209b499a8f9b88eed7aea9649da8",
+                "reference": "b8b2ac807e99209b499a8f9b88eed7aea9649da8",
                 "shasum": ""
             },
             "require": {
@@ -7857,7 +7857,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-15T10:42:02+00:00"
+            "time": "2021-12-21T05:57:02+00:00"
         },
         {
             "name": "voku/urlify",
