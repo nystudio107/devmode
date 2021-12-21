@@ -208,5 +208,4 @@ Learn more about Craft at [craftcms.com](https://craftcms.com).
 
 ## Roadmap
 
-* Update to Tailwind CSS `^3.0.0`
 * Update to Vue.js `^3.0.0`
