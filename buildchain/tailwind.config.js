@@ -3,7 +3,7 @@ module.exports = {
   content: [
     '../cms/templates/**/*.{twig,html}',
     '../src/vue/**/*.{vue,html}',
-    '../src/css/components/**/*.{css}',
+    '../src/css/components/**/*.css',
     './node_modules/vuetable-2/src/components/**/*.{vue,html}',
   ],
   theme: {
