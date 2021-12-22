@@ -20,7 +20,7 @@
   "minimum-stability": "beta",
   "prefer-stable": true,
   "require": {
-    "craftcms/cms": "^3.7.0",
+    "craftcms/cms": "^3.7.26",
     "craftcms/aws-s3": "^1.2",
     "craftcms/redactor": "^2.3.0",
     "jean85/pretty-package-versions": "^1.5 || ^2.0",
@@ -36,8 +36,7 @@
     "nystudio107/craft-seomatic": "^3.2.0",
     "nystudio107/craft-webperf": "^1.0.0",
     "nystudio107/craft-vite": "^1.0.19",
-    "nystudio107/dotenvy": "^1.0.0",
-    "vlucas/phpdotenv": "^2.4.0",
+    "vlucas/phpdotenv": "^5.4.0",
     "yiisoft/yii2-redis": "^2.0.6"
   },
   "require-dev": {
