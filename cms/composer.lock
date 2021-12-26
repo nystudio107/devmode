@@ -1528,23 +1528,20 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.13.0",
+            "version": "v4.14.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "08e27c97e4c6ed02f37c5b2b20488046c8d90d75"
+                "reference": "12ab42bd6e742c70c0a52f7b82477fcd44e64b75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
-                "reference": "08e27c97e4c6ed02f37c5b2b20488046c8d90d75",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/12ab42bd6e742c70c0a52f7b82477fcd44e64b75",
+                "reference": "12ab42bd6e742c70c0a52f7b82477fcd44e64b75",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2"
-            },
-            "require-dev": {
-                "simpletest/simpletest": "dev-master#72de02a7b80c6bb8864ef9bf66d41d2f58f826bd"
             },
             "type": "library",
             "autoload": {
@@ -1576,9 +1573,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/master"
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.14.0"
             },
-            "time": "2020-06-29T00:56:53+00:00"
+            "time": "2021-12-25T01:21:49+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -4187,23 +4184,23 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "3.1.67",
+            "version": "3.1.68",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "69a4535997fa7e4321d8570d5a21a9fba07d6a62"
+                "reference": "e860f3e291844f48efeb8867872124a419fd6b12"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/69a4535997fa7e4321d8570d5a21a9fba07d6a62",
-                "reference": "69a4535997fa7e4321d8570d5a21a9fba07d6a62",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/e860f3e291844f48efeb8867872124a419fd6b12",
+                "reference": "e860f3e291844f48efeb8867872124a419fd6b12",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
                 "jean85/pretty-package-versions": "^1.5 || ^2.0",
                 "league/csv": "^8.2 || ^9.0",
-                "nystudio107/craft-plugin-manifest": "^1.0.0"
+                "nystudio107/craft-plugin-vite": "^1.0.0"
             },
             "require-dev": {
                 "codeception/codeception": "^3.0",
@@ -4243,7 +4240,7 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/retour/documentation",
                 "issues": "https://nystudio107.com/plugins/retour/support",
-                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.67"
+                "source": "https://github.com/nystudio107/craft-retour/tree/3.1.68"
             },
             "funding": [
                 {
@@ -4251,7 +4248,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-16T18:49:22+00:00"
+            "time": "2021-12-26T22:02:34+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
@@ -8910,16 +8907,16 @@
         },
         {
             "name": "nystudio107/craft-autocomplete",
-            "version": "1.0.7",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-autocomplete.git",
-                "reference": "fd69ffeeb99075d73f16f3838384d047599a6ca8"
+                "reference": "147b6efe72107da6126af219dc3fdb8f657c86d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-autocomplete/zipball/fd69ffeeb99075d73f16f3838384d047599a6ca8",
-                "reference": "fd69ffeeb99075d73f16f3838384d047599a6ca8",
+                "url": "https://api.github.com/repos/nystudio107/craft-autocomplete/zipball/147b6efe72107da6126af219dc3fdb8f657c86d3",
+                "reference": "147b6efe72107da6126af219dc3fdb8f657c86d3",
                 "shasum": ""
             },
             "require": {
@@ -8962,7 +8959,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-autocomplete/blob/master/README.md",
                 "issues": "https://github.com/nystudio107/craft-autocomplete/issues",
-                "source": "https://github.com/nystudio107/craft-autocomplete/tree/1.0.7"
+                "source": "https://github.com/nystudio107/craft-autocomplete/tree/1.0.9"
             },
             "funding": [
                 {
@@ -8970,7 +8967,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-11-18T22:25:40+00:00"
+            "time": "2021-12-23T12:30:25+00:00"
         },
         {
             "name": "psy/psysh",
