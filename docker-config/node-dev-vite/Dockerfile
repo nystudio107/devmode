@@ -2,12 +2,6 @@ FROM nystudio107/node-dev-base:16-alpine
 
 WORKDIR /var/www/project/buildchain/
 
-# Install packages
-RUN set -eux; \
-    # Packages to install
-    apk add --no-cache \
-        su-exec
-
 # Run our webpack build in debug mode
 
 # We'd normally use `npm ci` here, but by using `install`:
@@ -17,6 +11,6 @@ RUN set -eux; \
 # This automatic running adds to the startup overhead of `docker-compose up`
 # but saves far more time in not having to deal with out of sync versions
 # when working with teams or multiple environments
-CMD su-exec www-data npm install \
+CMD npm install \
     && \
-    su-exec www-data npm run dev
+    npm run dev
