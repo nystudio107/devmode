@@ -15,10 +15,10 @@ export default ({ command }) => ({
     outDir: '../cms/web/dist',
     rollupOptions: {
       input: {
-        app: './src/js/app.ts',
-        'lazysizes-wrapper': './src/js/utils/lazysizes-wrapper.ts',
-        episodes: './src/js/modules/episodes.js',
-        player: './src/js/modules/player.js',
+        app: 'src/js/app.ts',
+        'lazysizes-wrapper': 'src/js/utils/lazysizes-wrapper.ts',
+        episodes: 'src/js/modules/episodes.js',
+        player: 'src/js/modules/player.js',
       },
       output: {
         sourcemap: true
