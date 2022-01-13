@@ -1,13 +1,16 @@
-import { createVuePlugin } from 'vite-plugin-vue2'
+import {createVuePlugin} from 'vite-plugin-vue2'
 import legacy from '@vitejs/plugin-legacy'
 import ViteRestart from 'vite-plugin-restart';
-import { nodeResolve } from '@rollup/plugin-node-resolve';
+import viteCompression from 'vite-plugin-compression';
+import {visualizer} from 'rollup-plugin-visualizer';
+import eslintPlugin from 'vite-plugin-eslint';
+import {nodeResolve} from '@rollup/plugin-node-resolve';
 import critical from 'rollup-plugin-critical';
-import { ViteFaviconsPlugin } from "vite-plugin-favicon2";
+import {ViteFaviconsPlugin} from "vite-plugin-favicon2";
 import path from 'path';
 
 // https://vitejs.dev/config/
-export default ({ command }) => ({
+export default ({command}) => ({
   base: command === 'serve' ? '' : '/dist/',
   build: {
     emptyOutDir: true,
@@ -30,18 +33,17 @@ export default ({ command }) => ({
       criticalUrl: 'https://devmode.fm/',
       criticalBase: '../cms/web/dist/criticalcss/',
       criticalPages: [
-        { uri: '/', template: 'index' },
-        { uri: 'about', template: 'about/index' },
-        { uri: 'calendar',  template: 'calendar/index' },
-        { uri: 'episodes',  template: 'episodes/index' },
-        { uri: 'episodes/webpack-inside-out-with-sean-larkin',  template: 'episodes/_entry' },
-        { uri: 'errors/offline',  template: 'errors/offline' },
-        { uri: 'errors/error',  template: 'errors/error' },
-        { uri: 'errors/503',  template: 'errors/503' },
-        { uri: 'errors/404',  template: 'errors/404' },
+        {uri: '/', template: 'index'},
+        {uri: 'about', template: 'about/index'},
+        {uri: 'calendar', template: 'calendar/index'},
+        {uri: 'episodes', template: 'episodes/index'},
+        {uri: 'episodes/webpack-inside-out-with-sean-larkin', template: 'episodes/_entry'},
+        {uri: 'errors/offline', template: 'errors/offline'},
+        {uri: 'errors/error', template: 'errors/error'},
+        {uri: 'errors/503', template: 'errors/503'},
+        {uri: 'errors/404', template: 'errors/404'},
       ],
-      criticalConfig: {
-      }
+      criticalConfig: {}
     }),
     legacy({
       targets: ['defaults', 'not IE 11']
@@ -62,6 +64,17 @@ export default ({ command }) => ({
       ],
     }),
     createVuePlugin(),
+    viteCompression({
+      filter: /\.(js|mjs|json|css|map)$/i
+    }),
+    visualizer({
+      filename: '../cms/web/dist/stats.html',
+      template: 'treemap',
+      sourcemap: true,
+    }),
+    eslintPlugin({
+      cache: false,
+    }),
   ],
   publicDir: './src/public',
   resolve: {

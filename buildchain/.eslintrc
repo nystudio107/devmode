@@ -7,7 +7,7 @@
     "sourceType": "module"
   },
   "rules": {
-    "@typescript-eslint/no-var-requires": 0
+    "no-undef": "off"
   },
   "env": {
     "browser": true,
@@ -20,6 +20,6 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:vue/vue3-recommended"
+    "plugin:vue/recommended"
   ]
 }
