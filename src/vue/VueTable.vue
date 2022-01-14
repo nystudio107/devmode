@@ -1,3 +1,4 @@
+<!-- eslint-disable -->
 <template>
   <div v-if="isFixedHeader">
     <div class="vuetable-head-wrapper">
@@ -439,6 +440,7 @@
 </template>
 
 <script>
+/* eslint-disable */
 import axios from 'axios'
 
 export default {
@@ -1443,7 +1445,7 @@ export default {
 
 .vuetable-actions {
   width: 15%;
-  padding: 12px 0px;
+  padding: 12px 0;
   text-align: center;
 }
 

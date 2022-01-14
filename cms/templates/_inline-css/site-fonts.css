@@ -3,42 +3,45 @@
 /* -- Fontello normal */
 
 @font-face {
-    font-family: 'fontello';
-    font-display: swap;
-    src: url('{{ assetsUrl }}dist/fonts/fontello.eot');
-    src: url('{{ assetsUrl }}dist/fonts/fontello.eot?#iefix') format('embedded-opentype'),
-    url('{{ assetsUrl }}dist/fonts/fontello.woff2') format('woff2'),
-    url('{{ assetsUrl }}dist/fonts/fontello.woff') format('woff'),
-    url('{{ assetsUrl }}dist/fonts/fontello.ttf') format('truetype'),
-    url('{{ assetsUrl }}dist/fonts/fontello.svg#fontello') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "fontello";
+  font-display: swap;
+  src: url("{{ assetsUrl }}dist/fonts/fontello.eot");
+  src:
+    url("{{ assetsUrl }}dist/fonts/fontello.eot?#iefix") format("embedded-opentype"),
+    url("{{ assetsUrl }}dist/fonts/fontello.woff2") format("woff2"),
+    url("{{ assetsUrl }}dist/fonts/fontello.woff") format("woff"),
+    url("{{ assetsUrl }}dist/fonts/fontello.ttf") format("truetype"),
+    url("{{ assetsUrl }}dist/fonts/fontello.svg#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* -- Operator Mono normal */
 
 @font-face {
-    font-family: 'Operator Mono';
-    font-display: swap;
-    src: url('{{ assetsUrl }}dist/fonts/OperatorMonoSSm-Book.eot');
-    src: url('{{ assetsUrl }}dist/fonts/OperatorMonoSSm-Book.eot?#iefix') format('embedded-opentype'),
-    url('{{ assetsUrl }}dist/fonts/OperatorMonoSSm-Book.woff2') format('woff2'),
-    url('{{ assetsUrl }}dist/fonts/OperatorMonoSSm-Book.woff') format('woff'),
-    url('{{ assetsUrl }}dist/fonts/OperatorMonoSSm-Book.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Operator Mono";
+  font-display: swap;
+  src: url("{{ assetsUrl }}dist/fonts/OperatorMonoSSm-Book.eot");
+  src:
+    url("{{ assetsUrl }}dist/fonts/OperatorMonoSSm-Book.eot?#iefix") format("embedded-opentype"),
+    url("{{ assetsUrl }}dist/fonts/OperatorMonoSSm-Book.woff2") format("woff2"),
+    url("{{ assetsUrl }}dist/fonts/OperatorMonoSSm-Book.woff") format("woff"),
+    url("{{ assetsUrl }}dist/fonts/OperatorMonoSSm-Book.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* -- Operator Mono italic */
 
 @font-face {
-    font-family: 'Operator Mono';
-    font-display: swap;
-    src: url('{{ assetsUrl }}dist/fonts/OperatorMonoSSm-BookItalic.eot');
-    src: url('{{ assetsUrl }}dist/fonts/OperatorMonoSSm-BookItalic.eot?#iefix') format('embedded-opentype'),
-    url('{{ assetsUrl }}dist/fonts/OperatorMonoSSm-BookItalic.woff2') format('woff2'),
-    url('{{ assetsUrl }}dist/fonts/OperatorMonoSSm-BookItalic.woff') format('woff'),
-    url('{{ assetsUrl }}dist/fonts/OperatorMonoSSm-BookItalic.ttf') format('truetype');
-    font-weight: normal;
-    font-style: italic;
+  font-family: "Operator Mono";
+  font-display: swap;
+  src: url("{{ assetsUrl }}dist/fonts/OperatorMonoSSm-BookItalic.eot");
+  src:
+    url("{{ assetsUrl }}dist/fonts/OperatorMonoSSm-BookItalic.eot?#iefix") format("embedded-opentype"),
+    url("{{ assetsUrl }}dist/fonts/OperatorMonoSSm-BookItalic.woff2") format("woff2"),
+    url("{{ assetsUrl }}dist/fonts/OperatorMonoSSm-BookItalic.woff") format("woff"),
+    url("{{ assetsUrl }}dist/fonts/OperatorMonoSSm-BookItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
 }

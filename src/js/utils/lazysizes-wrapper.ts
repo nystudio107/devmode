@@ -6,4 +6,5 @@ const main = async() => {
 };
 // Execute async function
 main().then(() => {
+    console.log();
 });

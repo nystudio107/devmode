@@ -56,7 +56,7 @@
     // Our component exports
     export default {
         components: {
-            'vuetable': () => import(/* webpackChunkName: "vuetable" */ '@/vue/Vuetable.vue'),
+            'vuetable': () => import(/* webpackChunkName: "vuetable" */ '@/vue/VueTable.vue'),
             'vuetable-pagination': () => import(/* webpackChunkName: "vuetablepagination" */ '@/vue/VuetablePagination.vue'),
             'vuetable-pagination-info': () => import(/* webpackChunkName: "vuetablepaginationinfo" */ '@/vue/VuetablePaginationInfo.vue'),
             'vuetable-filter-bar': () => import(/* webpackChunkName: "vuetablefilterbar" */ '@/vue/VuetableFilterBar.vue'),
