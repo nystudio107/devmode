@@ -1,7 +1,7 @@
 <template>
   <span
     :style="{ height, width: computedWidth }"
-    class="SkeletonBox"
+    class="skeleton-box"
   />
 </template>
 
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style>
-  .SkeletonBox {
+  .skeleton-box {
     display: inline-block;
     position: relative;
     vertical-align: middle;
@@ -43,7 +43,7 @@ export default {
     background-color: #dddbdd;
   }
 
-  .SkeletonBox::after {
+  .skeleton-box::after {
     position: absolute;
     top: 0;
     right: 0;

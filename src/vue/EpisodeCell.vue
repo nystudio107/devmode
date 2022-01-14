@@ -25,11 +25,26 @@
     export default {
         name: 'EpisodeCell',
         props: {
-            title: String,
-            url: String,
-            postDate: String,
-            episodeNumber: Number,
-            summary: String,
+            title: {
+              type: String,
+              default: '',
+            },
+            url: {
+              type: String,
+              default: '',
+            },
+            postDate: {
+              type: String,
+              default: '',
+            },
+            episodeNumber: {
+              type: Number,
+              default: 1,
+            },
+            summary: {
+              type: String,
+              default: '',
+            },
         },
     }
 </script>

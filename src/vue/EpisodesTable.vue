@@ -86,7 +86,7 @@
         },
         mounted() {
             this.$events.$on('filter-set', eventData => this.onFilterSet(eventData));
-            this.$events.$on('filter-reset', e => this.onFilterReset());
+            this.$events.$on('filter-reset', () => this.onFilterReset());
             this.$events.$on('change-range', eventData => this.onChangeRange(eventData));
         },
         methods: {
@@ -111,7 +111,7 @@
             onChangePage (page) {
                 this.$refs.vuetable.changePage(page);
             },
-            onRowClicked(dataItem, event) {
+            onRowClicked(dataItem) {
                 if (dataItem.detailPageUrl.length) {
                     window.location.href = dataItem.detailPageUrl;
                 }

@@ -1,8 +1,9 @@
 <template>
   <div
     :class="['vuetable-pagination-info', css.infoClass]"
-    v-html="paginationInfo"
-  />
+  >
+    {{ paginationInfo }}
+  </div>
 </template>
 
 <script>
