@@ -3,7 +3,7 @@
 /* -- Fontello normal */
 
 @font-face {
-  font-family: "fontello";
+  font-family: fontello;
   font-display: swap;
   src: url("{{ assetsUrl }}dist/fonts/fontello.eot");
   src:

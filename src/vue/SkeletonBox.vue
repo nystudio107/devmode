@@ -1,7 +1,7 @@
 <template>
   <span
     :style="{ height, width: computedWidth }"
-    class="SkeletonBox"
+    class="skeleton-box"
   />
 </template>
 
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style>
-  .SkeletonBox {
+  .skeleton-box {
     display: inline-block;
     position: relative;
     vertical-align: middle;
@@ -43,14 +43,21 @@ export default {
     background-color: #dddbdd;
   }
 
-  .SkeletonBox::after {
+  .skeleton-box::after {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     transform: translateX(-100%);
-    background-image: linear-gradient(90deg, rgb(255 255 255 / 0%) 0, rgb(255 255 255 / 20%) 20%, rgb(255 255 255 / 50%) 60%, rgb(255 255 255 / 0%));
+    background-image:
+      linear-gradient(
+        90deg,
+        rgb(255 255 255 / 0%) 0,
+        rgb(255 255 255 / 20%) 20%,
+        rgb(255 255 255 / 50%) 60%,
+        rgb(255 255 255 / 0%)
+      );
     animation: shimmer 5s infinite;
     content: "";
   }
