@@ -56,7 +56,7 @@
     // Our component exports
     export default {
         components: {
-            'vuetable': () => import(/* webpackChunkName: "vuetable" */ '@/vue/Vuetable.vue'),
+            'vuetable': () => import(/* webpackChunkName: "vuetable" */ '@/vue/VueTable.vue'),
             'vuetable-pagination': () => import(/* webpackChunkName: "vuetablepagination" */ '@/vue/VuetablePagination.vue'),
             'vuetable-pagination-info': () => import(/* webpackChunkName: "vuetablepaginationinfo" */ '@/vue/VuetablePaginationInfo.vue'),
             'vuetable-filter-bar': () => import(/* webpackChunkName: "vuetablefilterbar" */ '@/vue/VuetableFilterBar.vue'),
@@ -86,7 +86,7 @@
         },
         mounted() {
             this.$events.$on('filter-set', eventData => this.onFilterSet(eventData));
-            this.$events.$on('filter-reset', e => this.onFilterReset());
+            this.$events.$on('filter-reset', () => this.onFilterReset());
             this.$events.$on('change-range', eventData => this.onChangeRange(eventData));
         },
         methods: {
@@ -111,7 +111,7 @@
             onChangePage (page) {
                 this.$refs.vuetable.changePage(page);
             },
-            onRowClicked(dataItem, event) {
+            onRowClicked(dataItem) {
                 if (dataItem.detailPageUrl.length) {
                     window.location.href = dataItem.detailPageUrl;
                 }

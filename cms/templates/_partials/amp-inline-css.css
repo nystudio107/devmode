@@ -1,20 +1,22 @@
 .content-background {
-    background-image: url('{{ backgroundUrl }}');
+  background-image: url("{{ backgroundUrl }}");
 }
+
 .footer-background {
-    background-image: url('{{ footerBackgroundUrl }}');
-    background-size: 600px;
-    min-height: 18rem;
+  background-image: url("{{ footerBackgroundUrl }}");
+  background-size: 600px;
+  min-height: 18rem;
 }
+
 ul.nav-amp {
-    color: #FFF;
-    overflow: hidden;
-    transition: all .3s ease;
-    list-style-type: none;
-    padding: 1rem;
-    margin: 0 auto;
+  color: #fff;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0 auto;
 }
 
 ul.nav-amp li {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }

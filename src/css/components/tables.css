@@ -5,6 +5,8 @@
  *
  */
 
+/* stylelint-disable */
+
 table.vuetable {
   width: 100%;
   padding: 0;
@@ -44,28 +46,18 @@ td.text-right {
   text-align: center;
   vertical-align: baseline;
   white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
+  user-select: none;
+  user-select: none;
+  user-select: none;
   user-select: none;
   cursor: pointer;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  box-sizing: border-box;
   appearance: none;
-  -webkit-box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px rgba(0, 0, 0, 0.025), 0 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px rgba(0, 0, 0, 0.025), 0 1px 1px rgba(0, 0, 0, 0.1);
-}
-
-.btn:not(.submit) {
-  color: #eb5286;
-  background-image: none;
-}
-
-.btn:not(.submit):active, .btn:not(.submit).active {
-  background-color: #f2d024;
-  background-image: none;
+  appearance: none;
+  appearance: none;
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px rgb(0 0 0 / 2.5%), 0 1px 1px rgb(0 0 0 / 10%);
+  box-shadow: inset 0 0 0 1px transparent, 0 0 0 1px rgb(0 0 0 / 2.5%), 0 1px 1px rgb(0 0 0 / 10%);
 }
 
 .btn:hover {
@@ -76,6 +68,18 @@ td.text-right {
   opacity: 0.25;
 }
 
-.disabled, .disabled .btn {
+.disabled,
+.disabled .btn {
   cursor: default;
+}
+
+.btn:not(.submit) {
+  color: #eb5286;
+  background-image: none;
+}
+
+.btn:not(.submit):active,
+.btn:not(.submit).active {
+  background-color: #f2d024;
+  background-image: none;
 }

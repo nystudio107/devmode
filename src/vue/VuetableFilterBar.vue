@@ -1,17 +1,23 @@
 <template>
-    <div class="filter-bar">
-        <div class="pb-4">
-            <div class="text-center">
-                <input type="text"
-                       v-model="filterText"
-                       class="text-xl rounded-full p-2 text-center text-devmode-pink devmode-container"
-                       @keyup="doFilter"
-                       placeholder="search"
-                >
-                <button class="btn delete icon hidden" @click="resetFilter">Reset</button>
-            </div>
-        </div>
+  <div class="filter-bar">
+    <div class="pb-4">
+      <div class="text-center">
+        <input
+          v-model="filterText"
+          type="text"
+          class="text-xl rounded-full p-2 text-center text-devmode-pink devmode-container"
+          placeholder="search"
+          @keyup="doFilter"
+        >
+        <button
+          class="btn delete icon hidden"
+          @click="resetFilter"
+        >
+          Reset
+        </button>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>

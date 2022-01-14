@@ -1,81 +1,81 @@
-
+/* stylelint-disable */
 .webmentions {
-    display: block;
-    text-align: left
+  display: block;
+  text-align: left;
 }
 
 .webmentions__facepile {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-left: 8px;
-    margin-bottom: 1em
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 8px;
+  margin-bottom: 1em;
 }
 
-.webmentions__facepile>h3 {
-    float: left;
-    margin: 0 28px 0 -8px
+.webmentions__facepile > h3 {
+  float: left;
+  margin: 0 28px 0 -8px;
 }
 
 .webmentions__facepile__hedlg {
-    min-width: 180px
+  min-width: 180px;
 }
 
-.webmentions__facepile>a {
-    margin-left: -16px;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    line-height: 1;
-    overflow: hidden;
-    box-sizing: content-box
+.webmentions__facepile > a {
+  margin-left: -16px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  line-height: 1;
+  overflow: hidden;
+  box-sizing: content-box;
 }
 
-.webmentions__facepile>a:hover {
-    position: relative;
-    z-index: 1
+.webmentions__facepile > a:hover {
+  position: relative;
+  z-index: 1;
 }
 
 @supports (object-fit: cover) {
-    .webmentions__face {
-        object-fit:cover;
-        height: 100%;
-        width: 100%
-    }
+  .webmentions__face {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .webmentions__list {
-    list-style-type: none
+  list-style-type: none;
 }
 
 .webmentions__list.webmentions__list.webmentions__list {
-    padding: 0
+  padding: 0;
 }
 
 .webmentions__item {
-    margin-bottom: 1em
+  margin-bottom: 1em;
 }
 
 .form-webmention {
-    margin-bottom: 2rem
+  margin-bottom: 2rem;
 }
 
 .form-webmention label {
-    display: block
+  display: block;
 }
 
 .form-webmention input {
-    height: 2rem
+  height: 2rem;
 }
 
-.form-webmention input[type=url] {
-    width: calc(100% - 13em);
-    max-width: 30em
+.form-webmention input[type="url"] {
+  width: calc(100% - 13em);
+  max-width: 30em;
 }
 
-.form-webmention [type=submit] {
-    -webkit-appearance: none;
-    margin-left: .25em;
-    width: 12em
+.form-webmention [type="submit"] {
+  appearance: none;
+  margin-left: 0.25em;
+  width: 12em;
 }

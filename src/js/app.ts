@@ -2,15 +2,15 @@ import Snowf from 'vue-snowf';
 import '@/css/app.pcss';
 
 // App main
-const main = async() => {
+const main = async () => {
     // Async load the vue module
-    const { default: Vue } = await import(/* webpackChunkName: "vue" */ 'vue');
+    const {default: Vue} = await import(/* webpackChunkName: "vue" */ 'vue');
     // Async load the vue module
-    const { mixin: VueClickaway } = await import(/* webpackChunkName: "vueclickaway" */ 'vue-clickaway');
-    const { default: VueTyper } = await import(/* webpackChunkName: "vuetyper" */ 'vue-typer');
+    const {mixin: VueClickaway} = await import(/* webpackChunkName: "vueclickaway" */ 'vue-clickaway');
+    const {default: VueTyper} = await import(/* webpackChunkName: "vuetyper" */ 'vue-typer');
     Vue.use(VueTyper);
     // Create our vue instance
-    const vm = new Vue({
+    new Vue({
         el: '#page-header',
         delimiters: ['${', '}'],
         components: {
@@ -23,20 +23,20 @@ const main = async() => {
         methods: {
             // Pre-render pages when the user mouses over a link
             // Usage: <a href="" @mouseover="prerenderLink">
-            prerenderLink: function (e : Event) {
+            prerenderLink: function (e: Event) {
                 const head = document.getElementsByTagName("head")[0];
                 const refs = head.childNodes;
                 const ref = refs[refs.length - 1];
 
                 const elements = head.getElementsByTagName("link");
-                Array.prototype.forEach.call(elements, function (el, i) {
+                Array.prototype.forEach.call(elements, function (el) {
                     if (("rel" in el) && (el.rel === "prerender")) {
                         el.parentNode.removeChild(el);
                     }
                 });
 
                 if (ref.parentNode && e.currentTarget) {
-                    const target : HTMLAnchorElement = <HTMLAnchorElement>e.currentTarget;
+                    const target: HTMLAnchorElement = <HTMLAnchorElement>e.currentTarget;
                     const prerenderTag = document.createElement("link");
                     prerenderTag.rel = "prerender";
                     prerenderTag.href = target.href;
@@ -53,5 +53,6 @@ const main = async() => {
     });
 };
 // Execute async function
-main().then((value) => {
+main().then(() => {
+    console.log();
 });
