@@ -6,6 +6,11 @@
     {% include "_boilerplate/_partials/register-service-worker.twig" %}
 {% endif %}
 
+{# -- Partytown.js -- https://partytown.builder.io/html -- #}
+<script>
+    {{ craft.vite.inline("@webroot/dist//~partytown/partytown.js") }}
+</script>
+
 {# -- Handle tabs gracefully as per https://hackernoon.com/removing-that-ugly-focus-ring-and-keeping-it-too-6c8727fefcd2 -- #}
 {% include "_boilerplate/_partials/tab-handler.twig" %}
 
