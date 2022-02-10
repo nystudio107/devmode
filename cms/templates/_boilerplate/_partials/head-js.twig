@@ -8,6 +8,9 @@
 
 {# -- Partytown.js -- https://partytown.builder.io/html -- #}
 <script>
+  window.partytown = {
+    lib: '/dist/~partytown/',
+  };
     {{ craft.vite.inline("@webroot/dist//~partytown/partytown.js") }}
 </script>
 
