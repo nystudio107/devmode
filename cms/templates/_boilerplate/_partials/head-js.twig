@@ -10,6 +10,14 @@
 <script>
   window.partytown = {
     lib: '/dist/~partytown/',
+    resolveUrl: function (url) {
+      if (url.hostname === 'www.google-analytics.com') {
+        var proxyUrl = new URL('https://dbt8fhq6c1i4k.cloudfront.net/');
+        proxyUrl.searchParams.append('url', url);
+        return proxyUrl;
+      }
+      return url;
+    },
   };
   {{ craft.vite.inline("@webroot/dist/~partytown/partytown.js") }}
 </script>
