@@ -1,29 +1,31 @@
 {# -- Root global variables that all templates inherit from -- #}
 {# -- This allows for defining site-wide Twig variables as needed -- #}
 {#
- ┌─────────────────────────────────────────────────────────────────────────────┐
- │                                                                             │
- │                                                                             │
- │                                                                             │
- │                                  htmlPage                                   │
- └─────────────────────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│                                                                             │
+│                                                                             │
+│                                  htmlPage                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
 #}
 {% spaceless %}
 
-{# -- Prefetch & preconnect headers and links -- #}
-{% set prefetchUrls = [
-    alias("@assetsUrl"),
-    alias("@cloudfrontUrl"),
-] %}
-{# -- General global variables -- #}
-{% set baseUrl = alias('@cloudfrontUrl') ~ '/' %}
-{% set assetsUrl = alias('@assetsUrl') ~ '/' %}
-{% set backgroundUrl = "#{baseUrl}site/devmode-fm-light-bg-opaque.svg" %}
-{% set footerBackgroundUrl = "#{baseUrl}site/devmode-fm-dark-bg.svg" %}
-{% set gaTrackingId = getenv('GA_TRACKING_ID') %}
+    {# -- Prefetch & preconnect headers and links -- #}
+    {% set prefetchUrls = [
+        alias("@assetsUrl"),
+        alias("@cloudfrontUrl"),
+        alias("@partytownProxy"),
+        alias("@transcodedEpisodes"),
+    ] %}
+    {# -- General global variables -- #}
+    {% set baseUrl = alias('@cloudfrontUrl') ~ '/' %}
+    {% set assetsUrl = alias('@assetsUrl') ~ '/' %}
+    {% set backgroundUrl = "#{baseUrl}site/devmode-fm-light-bg-opaque.svg" %}
+    {% set footerBackgroundUrl = "#{baseUrl}site/devmode-fm-dark-bg.svg" %}
+    {% set gaTrackingId = getenv('GA_TRACKING_ID') %}
 
-{# -- Twig output from the render; this must be in a block -- #}
-{% block htmlPage %}
-{% endblock %}
+    {# -- Twig output from the render; this must be in a block -- #}
+    {% block htmlPage %}
+    {% endblock %}
 
 {% endspaceless %}

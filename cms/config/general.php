@@ -16,6 +16,7 @@ return [
         '@assetsUrl' => App::env('ASSETS_URL'),
         '@cloudfrontUrl' => App::env('CLOUDFRONT_URL'),
         '@transcodedEpisodes' => 'https://d21kofsrtbjnsd.cloudfront.net/',
+        '@partytownProxy' => 'https://dbt8fhq6c1i4k.cloudfront.net/',
         '@web' => App::env('SITE_URL'),
         '@webroot' => App::env('WEB_ROOT_PATH'),
     ],
@@ -24,7 +25,7 @@ return [
     'backupOnUpdate' => (bool)App::env('BACKUP_ON_UPDATE'),
     'devMode' => (bool)App::env('DEV_MODE'),
     'enableTemplateCaching' => (bool)App::env('ENABLE_TEMPLATE_CACHING'),
-    'resourceBasePath' => App::env('WEB_ROOT_PATH').'/cpresources',
+    'resourceBasePath' => App::env('WEB_ROOT_PATH') . '/cpresources',
     'runQueueAutomatically' => (bool)App::env('RUN_QUEUE_AUTOMATICALLY'),
     'securityKey' => App::env('SECURITY_KEY'),
     // Craft config settings from constants
