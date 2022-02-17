@@ -2,6 +2,7 @@ import {defineConfig} from 'vite';
 import {createVuePlugin} from 'vite-plugin-vue2';
 import legacy from '@vitejs/plugin-legacy';
 import ViteRestart from 'vite-plugin-restart';
+import {partytownVite} from '@builder.io/partytown/utils';
 import viteCompression from 'vite-plugin-compression';
 import manifestSRI from 'vite-plugin-manifest-sri';
 import {visualizer} from 'rollup-plugin-visualizer';
@@ -66,6 +67,9 @@ export default defineConfig(({command}) => ({
       ],
     }),
     createVuePlugin(),
+    partytownVite({
+      dest: path.resolve('../cms/web/dist/', '~partytown'),
+    }),
     viteCompression({
       filter: /\.(js|mjs|json|css|map)$/i
     }),

@@ -38,7 +38,7 @@
     "vuetable-2": "^1.7.5"
   },
   "devDependencies": {
-    "@builder.io/partytown": "^0.3.4",
+    "@builder.io/partytown": "^0.3.6",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
@@ -65,11 +65,10 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "npm run lint && vite build && npm run partytown",
+    "build": "npm run lint && vite build",
     "lint": "npm run lint:ts && npm run lint:js && npm run lint:css",
     "lint:ts": "tsc --noEmit",
     "lint:js": "eslint './src/**/*.{js,ts,vue}' --fix",
-    "lint:css": "stylelint './src/**/*.{css,vue}' --fix",
-    "partytown": "partytown copylib ../cms/web/dist/~partytown"
+    "lint:css": "stylelint './src/**/*.{css,vue}' --fix"
   }
 }
