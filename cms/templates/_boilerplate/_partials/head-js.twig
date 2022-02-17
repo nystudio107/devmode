@@ -10,6 +10,7 @@
 <script>
   window.partytown = {
     lib: '/dist/~partytown/',
+    debug: false,
     resolveUrl: function (url) {
       if (url.hostname === 'www.google-analytics.com') {
         var proxyUrl = new URL('https://dbt8fhq6c1i4k.cloudfront.net/');
