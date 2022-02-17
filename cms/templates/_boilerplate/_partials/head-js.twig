@@ -15,8 +15,10 @@
       if (url.hostname === 'www.google-analytics.com') {
         var proxyUrl = new URL('https://dbt8fhq6c1i4k.cloudfront.net/');
         proxyUrl.searchParams.append('url', url);
+        console.log("Proxied URL: " + proxyUrl);
         return proxyUrl;
       }
+      console.log("Un-proxied URL: " + url);
       return url;
     },
   };
