@@ -16,7 +16,7 @@ return [
         '@assetsUrl' => App::env('ASSETS_URL'),
         '@cloudfrontUrl' => App::env('CLOUDFRONT_URL'),
         '@transcodedEpisodes' => 'https://d21kofsrtbjnsd.cloudfront.net/',
-        '@partytownProxy' => 'https://dbt8fhq6c1i4k.cloudfront.net/',
+        '@ptGoogleAnalyticsProxy' => 'https://dbt8fhq6c1i4k.cloudfront.net/',
         '@web' => App::env('SITE_URL'),
         '@webroot' => App::env('WEB_ROOT_PATH'),
     ],
