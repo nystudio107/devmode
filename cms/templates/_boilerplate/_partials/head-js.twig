@@ -10,15 +10,11 @@
 <script>
   window.partytown = {
     lib: '/dist/~partytown/',
-    debug: false,
     resolveUrl: function (url) {
-      if (url.hostname === 'www.google-analytics.com') {
-        var proxyUrl = new URL('https://dbt8fhq6c1i4k.cloudfront.net/');
-        proxyUrl.searchParams.append('url', url);
-        console.log("Proxied URL: " + proxyUrl);
-        return proxyUrl;
+      const proxyMap = {
+        'www.google-analytics.com': 'dbt8fhq6c1i4k.cloudfront.net',
       }
-      console.log("Un-proxied URL: " + url);
+      url.hostname = proxyMap[url.hostname] || url.hostname;
       return url;
     },
   };
