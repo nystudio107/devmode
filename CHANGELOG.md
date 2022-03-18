@@ -1,5 +1,16 @@
 # nystudio107/craft Change Log
 
+## 2.5.0 - 2022.03.17
+### Changed
+
+### Added
+* Significantly increased startup times via a `composer_install.sh` script that only runs `composer install` at container startup time if `composer.lock` or `vendor/` is missing
+* Significantly increased startup times via a `npm_install.sh` script that only runs `npm install` at container startup time if `package-lock.json` or `node_modules/` is missing
+
+### Changed
+* Added a `sleep 60` in the `run_queue.sh` containers, so they don't run the "keepalive" script until the other containers have started
+* refactor: Remove `tty: true` which causes console output to not appear in Docker Composer API 2.3.0. ref: https://github.com/docker/compose/issues/9288
+
 ## 2.4.0 - 2021.07.01
 ### Changed
 * Updated to Craft CMS 3.7.0-beta.5
