@@ -1,7 +1,5 @@
 FROM nystudio107/node-dev-base:16-alpine
 
-USER node
-
 WORKDIR /var/www/project/buildchain/
 
 # Run our webpack build in debug mode
