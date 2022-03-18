@@ -1,7 +1,11 @@
 # nystudio107/craft Change Log
 
+## 2.5.1 - 2022.03.17
+### Added
+
+* Run migrations / project config changes via the `run_queue.sh` script, only after the db container responds
+
 ## 2.5.0 - 2022.03.17
-### Changed
 
 ### Added
 * Significantly increased startup times via a `composer_install.sh` script that only runs `composer install` at container startup time if `composer.lock` or `vendor/` is missing
