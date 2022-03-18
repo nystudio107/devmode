@@ -56,8 +56,8 @@ RUN chmod a+x run_queue.sh \
     mkdir -p /var/www/project/cms/web/cpresources \
     && \
     chown -R www-data:www-data /var/www/project
-
-WORKDIR /var/www/project/cms
+COPY ./composer_install.sh .
+RUN chmod a+x composer_install.sh
 
 # Force permissions, update Craft, and start php-fpm
 
@@ -70,7 +70,9 @@ WORKDIR /var/www/project/cms
 # when working with teams or multiple environments
 CMD chown -R www-data:www-data /var/www/project \
     && \
-    su-exec www-data composer install --verbose --no-progress --no-scripts --optimize-autoloader --no-interaction \
+    ./composer_install.sh \
+    && \
+    cd /var/www/project/cms \
     && \
     su-exec www-data composer craft-update \
     && \
