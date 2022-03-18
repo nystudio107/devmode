@@ -72,8 +72,4 @@ CMD chown -R www-data:www-data /var/www/project \
     && \
     ./composer_install.sh \
     && \
-    cd /var/www/project/cms \
-    && \
-    su-exec www-data composer craft-update \
-    && \
     php-fpm
