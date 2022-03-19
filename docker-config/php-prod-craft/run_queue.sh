@@ -18,8 +18,8 @@ until eval "PGPASSWORD=$DB_PASSWORD psql -h postgres -U $DB_USER $DB_DATABASE -c
 do
     sleep 1
 done
-# Wait until the `composer install` is done by looking for a `composer.lock` file
-while [ ! -f composer.lock ]
+# Wait until the `composer install` is done by looking for the `vendor/autoload.php` file
+while [ ! -f vendor/autoload.php ]
 do
   sleep 1
 done
