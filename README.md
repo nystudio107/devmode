@@ -22,6 +22,8 @@ There is also a [modular webpack 5 buildchain](https://github.com/nystudio107/de
 
 You'll need [Docker desktop](https://www.docker.com/products/docker-desktop) for your platform installed to run devMode in local development
 
+Ensure you're using the [Docker Compose API v2](https://stackoverflow.com/questions/69464001/docker-compose-container-name-use-dash-instead-of-underscore/70295720#70295720) for the `make` commands to all work properly.
+
 Ensure no other local development environments are running that might have port conflicts, then:
 
 1. Clone the git repo with:
