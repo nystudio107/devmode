@@ -10,7 +10,7 @@
 # @link      https://nystudio107.com/
 # @license   MIT
 
-cd /var/www/project
+cd /var/www/project/buildchain
 if [ ! -f "package-lock.json" ] || [ ! -d "node_modules" ]; then
     npm install
 fi
