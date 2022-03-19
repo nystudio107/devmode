@@ -16,7 +16,7 @@ cd /var/www/project/cms
 # Wait until the Postgres db container responds
 until eval "PGPASSWORD=$DB_PASSWORD psql -h postgres -U $DB_USER $DB_DATABASE -c 'select 1' > /dev/null 2>&1"
 do
-    sleep 1
+  sleep 1
 done
 # Wait until the `composer install` is done by looking for the `vendor/autoload.php` file
 while [ ! -f vendor/autoload.php ]
