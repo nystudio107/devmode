@@ -1,4 +1,4 @@
-# nystudio107/craft Change Log
+# nystudio107/devmode Change Log
 
 ## 2.5.1 - 2022.03.17
 ### Added
