@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47f0795cb4dcf65fd7798714c87377c3",
+    "content-hash": "939e77000a3fb6aea59660d33d958f6c",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.214.0",
+            "version": "3.216.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "a2eacf8c1b55de4733f4cfc315da38f1d4c66501"
+                "reference": "00176c97319448c9520176d7c7d107b04b35406d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/a2eacf8c1b55de4733f4cfc315da38f1d4c66501",
-                "reference": "a2eacf8c1b55de4733f4cfc315da38f1d4c66501",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/00176c97319448c9520176d7c7d107b04b35406d",
+                "reference": "00176c97319448c9520176d7c7d107b04b35406d",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.214.0"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.216.1"
             },
-            "time": "2022-03-16T19:00:00+00:00"
+            "time": "2022-03-24T18:15:20+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -1688,16 +1688,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "7.4.1",
+            "version": "7.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79"
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
-                "reference": "ee0a041b1760e6a53d2a39c8c34115adc2af2c79",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ac1ec1cd9b5624694c3a40be801d94137afb12b4",
+                "reference": "ac1ec1cd9b5624694c3a40be801d94137afb12b4",
                 "shasum": ""
             },
             "require": {
@@ -1792,7 +1792,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/guzzle/issues",
-                "source": "https://github.com/guzzle/guzzle/tree/7.4.1"
+                "source": "https://github.com/guzzle/guzzle/tree/7.4.2"
             },
             "funding": [
                 {
@@ -1808,7 +1808,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-06T18:43:05+00:00"
+            "time": "2022-03-20T14:16:28+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1896,16 +1896,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.1.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72"
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
-                "reference": "089edd38f5b8abba6cb01567c2a8aaa47cec4c72",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c94a94f120803a18554c1805ef2e539f8285f9a2",
+                "reference": "c94a94f120803a18554c1805ef2e539f8285f9a2",
                 "shasum": ""
             },
             "require": {
@@ -1929,7 +1929,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -1991,7 +1991,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.1.0"
+                "source": "https://github.com/guzzle/psr7/tree/2.2.1"
             },
             "funding": [
                 {
@@ -2007,7 +2007,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-06T17:43:30+00:00"
+            "time": "2022-03-20T21:55:58+00:00"
         },
         {
             "name": "imgix/imgix-php",
@@ -3837,16 +3837,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.43",
+            "version": "1.6.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "2b94f4b0985575c4cae1f0e48637893a76274bc0"
+                "reference": "f851e8227f4575f97ea3ecf73df14ab205f420f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/2b94f4b0985575c4cae1f0e48637893a76274bc0",
-                "reference": "2b94f4b0985575c4cae1f0e48637893a76274bc0",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/f851e8227f4575f97ea3ecf73df14ab205f420f0",
+                "reference": "f851e8227f4575f97ea3ecf73df14ab205f420f0",
                 "shasum": ""
             },
             "require": {
@@ -3895,7 +3895,7 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/imageoptimize/documentation",
                 "issues": "https://nystudio107.com/plugins/imageoptimize/support",
-                "source": "https://github.com/nystudio107/craft-imageoptimize/tree/1.6.43"
+                "source": "https://github.com/nystudio107/craft-imageoptimize/tree/1.6.44"
             },
             "funding": [
                 {
@@ -3903,7 +3903,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-14T16:32:36+00:00"
+            "time": "2022-03-24T22:53:05+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -4187,16 +4187,16 @@
         },
         {
             "name": "nystudio107/craft-plugin-vite",
-            "version": "1.0.22",
+            "version": "1.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-vite.git",
-                "reference": "bf6f960ff4da77a4b7ab8771dd39a36272e731ef"
+                "reference": "7e6011c0c6b1a70c2d9fcb0b45d217a07d9bb7ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/bf6f960ff4da77a4b7ab8771dd39a36272e731ef",
-                "reference": "bf6f960ff4da77a4b7ab8771dd39a36272e731ef",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/7e6011c0c6b1a70c2d9fcb0b45d217a07d9bb7ab",
+                "reference": "7e6011c0c6b1a70c2d9fcb0b45d217a07d9bb7ab",
                 "shasum": ""
             },
             "require": {
@@ -4227,7 +4227,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-vite/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.22"
+                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/1.0.23"
             },
             "funding": [
                 {
@@ -4235,7 +4235,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-21T13:17:34+00:00"
+            "time": "2022-03-23T03:42:56+00:00"
         },
         {
             "name": "nystudio107/craft-retour",
@@ -4307,16 +4307,16 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "3.4.27",
+            "version": "3.4.28",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "2a48955e0d6842f308f985b77b0b383c285a9814"
+                "reference": "f77edbc76d29a160415bd819a014945fc300b067"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/2a48955e0d6842f308f985b77b0b383c285a9814",
-                "reference": "2a48955e0d6842f308f985b77b0b383c285a9814",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/f77edbc76d29a160415bd819a014945fc300b067",
+                "reference": "f77edbc76d29a160415bd819a014945fc300b067",
                 "shasum": ""
             },
             "require": {
@@ -4370,7 +4370,7 @@
             "support": {
                 "docs": "https://nystudio107.com/plugins/seomatic/documentation",
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
-                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.4.27"
+                "source": "https://github.com/nystudio107/craft-seomatic/tree/3.4.28"
             },
             "funding": [
                 {
@@ -4378,7 +4378,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-14T02:00:55+00:00"
+            "time": "2022-03-22T20:03:14+00:00"
         },
         {
             "name": "nystudio107/craft-transcoder",
@@ -4518,31 +4518,31 @@
         },
         {
             "name": "nystudio107/craft-vite",
-            "version": "1.0.23",
+            "version": "1.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-vite.git",
-                "reference": "7e633346b4765ff1806203df83506a8f09d72806"
+                "reference": "09a90f2a0cba9d9efdc3a80ec75831e89c684fc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/7e633346b4765ff1806203df83506a8f09d72806",
-                "reference": "7e633346b4765ff1806203df83506a8f09d72806",
+                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/09a90f2a0cba9d9efdc3a80ec75831e89c684fc0",
+                "reference": "09a90f2a0cba9d9efdc3a80ec75831e89c684fc0",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^3.0.0",
-                "nystudio107/craft-plugin-vite": "^1.0.22"
+                "nystudio107/craft-plugin-vite": "^1.0.23"
             },
             "type": "craft-plugin",
             "extra": {
-                "name": "Vite",
-                "handle": "vite",
+                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-vite/v1/CHANGELOG.md",
+                "class": "nystudio107\\vite\\Vite",
                 "developer": "nystudio107",
                 "developerUrl": "https://nystudio107.com",
-                "documentationUrl": "https://github.com/nystudio107/craft-vite/blob/master/README.md",
-                "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-vite/master/CHANGELOG.md",
-                "class": "nystudio107\\vite\\Vite"
+                "documentationUrl": "https://nystudio107.com/docs/vite/",
+                "handle": "vite",
+                "name": "Vite"
             },
             "autoload": {
                 "psr-4": {
@@ -4570,7 +4570,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-vite/blob/master/README.md",
                 "issues": "https://github.com/nystudio107/craft-vite/issues",
-                "source": "https://github.com/nystudio107/craft-vite/tree/1.0.23"
+                "source": "https://github.com/nystudio107/craft-vite/tree/1.0.24"
             },
             "funding": [
                 {
@@ -4578,7 +4578,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-01-21T13:19:25+00:00"
+            "time": "2022-03-23T04:02:17+00:00"
         },
         {
             "name": "nystudio107/craft-webperf",
@@ -7328,16 +7328,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v2.14.11",
+            "version": "v2.14.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "66baa66f29ee30e487e05f1679903e36eb01d727"
+                "reference": "19c898bda30c5edea573bbb9ee1235d8cf6956ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/66baa66f29ee30e487e05f1679903e36eb01d727",
-                "reference": "66baa66f29ee30e487e05f1679903e36eb01d727",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/19c898bda30c5edea573bbb9ee1235d8cf6956ed",
+                "reference": "19c898bda30c5edea573bbb9ee1235d8cf6956ed",
                 "shasum": ""
             },
             "require": {
@@ -7392,7 +7392,7 @@
             ],
             "support": {
                 "issues": "https://github.com/twigphp/Twig/issues",
-                "source": "https://github.com/twigphp/Twig/tree/v2.14.11"
+                "source": "https://github.com/twigphp/Twig/tree/v2.14.12"
             },
             "funding": [
                 {
@@ -7404,7 +7404,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-04T06:57:25+00:00"
+            "time": "2022-03-25T09:34:52+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -9281,5 +9281,5 @@
     "platform-overrides": {
         "php": "7.2.5"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
