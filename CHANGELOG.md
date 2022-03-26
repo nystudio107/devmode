@@ -1,5 +1,10 @@
 # nystudio107/devmode Change Log
 
+## 2.5.2 - 2022.03.26
+### Added
+### Added
+* Dramatically sped up the startup time for the PHP containers by moving the permissions setting script to run asynchronously in the queue container via the `run_queue.sh` script
+
 ## 2.5.1 - 2022.03.17
 ### Added
 
