@@ -19,12 +19,6 @@ if [ ! -f "composer.lock" ] || [ ! -d "vendor" ]; then
     do
       sleep 1
     done
-    # Wait until the `composer install` is done by looking for the `vendor/autoload.php` file
-    echo "### Waiting for vendor/autoload.php"
-    while [ ! -f vendor/autoload.php ]
-    do
-      sleep 1
-    done
     # Run any pending migrations/project config changes
     su-exec www-data composer craft-update
 fi
