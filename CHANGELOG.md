@@ -1,5 +1,9 @@
 # nystudio107/devmode Change Log
 
+## 2.5.5 - 2022.03.28
+### Changed
+* Add `disableProcessTimeout` to the `post-craft-update` Composer scripts, and run Project Config before migrations
+
 ## 2.5.4 - 2022.03.26
 ### Added
 * Ensure permissions on directories Craft needs to write to
