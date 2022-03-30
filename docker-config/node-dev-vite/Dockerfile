@@ -5,6 +5,8 @@ WORKDIR /var/www/project/
 COPY ./npm_install.sh .
 RUN chmod a+x npm_install.sh
 
+WORKDIR /var/www/project/buildchain
+
 # Run our webpack build in debug mode
 
 # We'd normally use `npm ci` here, but by using `install`:
@@ -14,8 +16,6 @@ RUN chmod a+x npm_install.sh
 # This automatic running adds to the startup overhead of `docker-compose up`
 # but saves far more time in not having to deal with out of sync versions
 # when working with teams or multiple environments
-CMD ./npm_install.sh \
-    && \
-    cd /var/www/project/buildchain/ \
+CMD /var/www/project/npm_install.sh \
     && \
     npm run dev
