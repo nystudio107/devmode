@@ -58,7 +58,7 @@ services:
     env_file:
       *env
     environment:
-      POSTGRES_DB: project
+      POSTGRES_DATABASES: "project"
       POSTGRES_USER: project
       POSTGRES_PASSWORD: project
     init: true
