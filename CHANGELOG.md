@@ -1,5 +1,10 @@
 # nystudio107/devmode Change Log
 
+## 2.5.7 - 2022.04.06
+### Changed
+* Updated to latest `composer.json` and `package.json` deps
+* Switched over to using a script for db seeding
+
 ## 2.5.6 - 2022.03.30
 ### Changed
 * Fix `WORKDIR` in `php-prod-craft` container so `make craft` etc. commands work as expected
