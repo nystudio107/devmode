@@ -1,19 +1,6 @@
+fs: devmodeEpisodes
 handle: devmodeEpisodes
 hasUrls: true
 name: 'Devmode Episodes'
-settings:
-  autoFocalPoint: ''
-  bucket: $S3_BUCKET
-  bucketSelectionMode: manual
-  cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
-  cfPrefix: $CLOUDFRONT_PATH_PREFIX
-  expires: '3 months'
-  keyId: $S3_KEY_ID
-  makeUploadsPublic: ''
-  region: $S3_REGION
-  secret: $S3_SECRET
-  storageClass: ''
-  subfolder: episodes
 sortOrder: 4
-type: craft\awss3\Volume
 url: $CLOUDFRONT_URL

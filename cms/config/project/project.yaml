@@ -1,8 +1,78 @@
-dateModified: 1647568977
+dateModified: 1649350836
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  devmodeEpisodes:
+    hasUrls: true
+    name: 'Devmode Episodes'
+    settings:
+      autoFocalPoint: ''
+      bucket: $S3_BUCKET
+      bucketSelectionMode: manual
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: $CLOUDFRONT_PATH_PREFIX
+      expires: '3 months'
+      keyId: $S3_KEY_ID
+      makeUploadsPublic: ''
+      region: $S3_REGION
+      secret: $S3_SECRET
+      subfolder: episodes
+    type: craft\awss3\Fs
+    url: $CLOUDFRONT_URL
+  devmodeSite:
+    hasUrls: true
+    name: 'Devmode Site'
+    settings:
+      autoFocalPoint: ''
+      bucket: $S3_BUCKET
+      bucketSelectionMode: manual
+      cfDistributionId: CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: $CLOUDFRONT_PATH_PREFIX
+      expires: '3 months'
+      keyId: $S3_KEY_ID
+      makeUploadsPublic: ''
+      region: $S3_REGION
+      secret: $S3_SECRET
+      subfolder: site
+    type: craft\awss3\Fs
+    url: $CLOUDFRONT_URL
+  devmodeTranscripts:
+    hasUrls: true
+    name: 'Devmode Transcripts'
+    settings:
+      addSubfolderToRootUrl: '1'
+      autoFocalPoint: ''
+      bucket: $S3_BUCKET
+      bucketSelectionMode: manual
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: $CLOUDFRONT_PATH_PREFIX
+      expires: '3 months'
+      keyId: $S3_KEY_ID
+      makeUploadsPublic: ''
+      region: $S3_REGION
+      secret: $S3_SECRET
+      subfolder: transcripts
+    type: craft\awss3\Fs
+    url: $CLOUDFRONT_URL
+  devmodeUsers:
+    hasUrls: true
+    name: 'Devmode Users'
+    settings:
+      autoFocalPoint: ''
+      bucket: $S3_BUCKET
+      bucketSelectionMode: manual
+      cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
+      cfPrefix: $CLOUDFRONT_PATH_PREFIX
+      expires: '3 months'
+      keyId: $S3_KEY_ID
+      makeUploadsPublic: ''
+      region: $S3_REGION
+      secret: $S3_SECRET
+      subfolder: users
+    type: craft\awss3\Fs
+    url: $CLOUDFRONT_URL
 graphql:
   publicToken:
     enabled: false
@@ -19,18 +89,22 @@ meta:
     8c9dd611-b43b-4e22-b076-3f6a6362c93e: 'Episode Reference Links' # Episode Reference Links
     12aa936c-807f-4ec3-81dc-69283a344171: Profile # Profile
     18d7721b-780b-4a44-976a-716c3df0bb7a: 'Error Headline' # Error Headline
+    19dfdfbb-837c-46d5-87bf-e6540df98dc4: Hosts
     19e4e8ba-93c2-4a86-8c57-9b54d46e0981: Site # Site
     31b8c511-37f9-4d83-956d-5aa215572122: 'Profile URL' # Profile URL
     41fdb4c8-4774-4101-918f-1412190b085b: 'Profile Optimized Images' # Profile Optimized Images
     087ee23d-4f8f-42d4-af12-99fcc2462247: 'Show Info' # Show Info
     88db3e41-57f4-404d-b3ea-762b09c37afe: Errors # Errors
     0090f7a3-1e22-4fb5-9ae0-01de38805601: 'Episode Media' # Episode Media
+    98f56e95-4be6-4238-a110-1f21574fa642: 'Devmode Users'
     324e7a11-3346-41e7-a29d-4636ab907e51: 'Episode Number' # Episode Number
     380e3b7e-07de-4d39-b0e5-360f5e87d00d: 'Profile Title' # Profile Title
     406c20cb-9b86-4b0d-9123-1ce57220e2a8: 'Profile Twitter URL' # Profile Twitter URL
     428ec106-b2d1-4d48-a5fa-de192155dff5: 'Show URL' # Show URL
     913ea665-c268-4177-8054-fe76f80101c6: Episodes # Episodes
     2405ed1c-fd52-4264-a96a-f6e6fab437b5: 'Show Sub-Title' # Show Sub-Title
+    7540db37-7ec3-4471-9de6-36bde06e949a: 'Devmode Site'
+    9436ac5e-44de-4fe9-be59-fd1f0fc26941: Owners
     34348a98-83b9-4f2d-8e14-0437ec964a15: devMode # devMode
     49649e9a-033b-4ddf-9f3d-26a480502993: About # About
     61953a92-8b34-4678-9bae-fd5a45142f26: 'Episode Tags' # Episode Tags
@@ -49,13 +123,14 @@ meta:
     c05161c0-a294-4d47-8909-1cfc88c2f970: 'Profile Company' # Profile Company
     ca279869-925f-4960-865c-96cacd2aa942: 'Show Email' # Show Email
     d6df6fe7-14f3-42a3-9949-dcee7c8c26d9: 'Profile GitHub URL' # Profile GitHub URL
+    e69c8edb-d562-4367-9a05-91a6fd2c7d99: 'Devmode Episodes'
     e1087165-5769-428d-bf14-c98e6011cf5e: 'Error Text' # Error Text
     eecc24bf-e253-43b8-b327-632e0dc07fa6: 'Show Technologies Links' # Show Technologies Links
 plugins:
   aws-s3:
     edition: standard
     enabled: true
-    schemaVersion: '1.2'
+    schemaVersion: '2.0'
   disqus:
     enabled: true
     licenseKey: null
@@ -230,5 +305,5 @@ system:
   live: true
   name: devMode.fm
   retryDuration: 60
-  schemaVersion: 3.7.33
+  schemaVersion: 4.0.0.8
   timeZone: America/New_York

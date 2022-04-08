@@ -18,7 +18,7 @@
         "avatar": "{{ hostPhoto.getUrl() }}"
     },
     "items": [
-        {% spaceless %}
+        {% apply spaceless %}
         {% for episode in craft.entries.section("episodes").all() %}
             {% set summaryText = stringy(episode.episodeSummary).lines()[0] |truncateOnWord(300) |typogrifyFeed %}
             {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
@@ -38,15 +38,15 @@
                 "id": "{{ url(episode.episodeNumber) }}",
                 "url": "{{ episode.url }}",
                 "title": "{{ episode.title }}",
-                "content_html": {% filter json_encode | raw %}{% spaceless %}<p>{{ episode.episodeSummary | typogrifyFeed | nl2br  }}</p>
+                "content_html": {% filter json_encode | raw %}{% apply spaceless %}<p>{{ episode.episodeSummary | typogrifyFeed | nl2br  }}</p>
                 <ul>
                 {% for link in episode.episodeReferenceLinks %}
                 <li>
                 <a href='{{ link.linkUrl }}' >{{ link.linkName }}</a>
                 </li>
                 {% endfor %}
-                </ul>{% endspaceless %}{% endfilter %},
-                "content_text": {% filter json_encode | raw %}{% spaceless %}{{ episode.episodeSummary | striptags | typogrifyFeed | nl2br }}{% endspaceless %}{% endfilter %},
+                </ul>{% endapply %}{% endfilter %},
+                "content_text": {% filter json_encode | raw %}{% apply spaceless %}{{ episode.episodeSummary | striptags | typogrifyFeed | nl2br }}{% endapply %}{% endfilter %},
                 "summary": "{{ summaryText }}",
                 "image": "{{ showInfo.showImage.one().getUrl() }}",
                 "date_published": "{{ episode.postDate | atom }}",
@@ -61,6 +61,6 @@
                     ]
                 }{% if not loop.last %},{% endif %}
         {% endfor %}
-        {% endspaceless %}
+        {% endapply %}
     ]
 }

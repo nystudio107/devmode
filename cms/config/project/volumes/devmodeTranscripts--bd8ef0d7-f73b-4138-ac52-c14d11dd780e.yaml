@@ -23,30 +23,16 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\AssetTitleField
+            type: craft\fieldlayoutelements\assets\AssetTitleField
             warning: null
             width: 100
         name: Content
         sortOrder: 1
+fs: devmodeTranscripts
 handle: devmodeTranscripts
 hasUrls: true
 name: 'Devmode Transcripts'
-settings:
-  addSubfolderToRootUrl: '1'
-  autoFocalPoint: ''
-  bucket: $S3_BUCKET
-  bucketSelectionMode: manual
-  cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
-  cfPrefix: $CLOUDFRONT_PATH_PREFIX
-  expires: '3 months'
-  keyId: $S3_KEY_ID
-  makeUploadsPublic: ''
-  region: $S3_REGION
-  secret: $S3_SECRET
-  storageClass: ''
-  subfolder: transcripts
 sortOrder: 7
 titleTranslationKeyFormat: null
 titleTranslationMethod: null
-type: craft\awss3\Volume
 url: $CLOUDFRONT_URL
