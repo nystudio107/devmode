@@ -24,13 +24,13 @@ class Config
     // Constants
     // =========================================================================
 
-    const PHP_SUFFIX = '.php';
+    protected const PHP_SUFFIX = '.php';
 
     // Static Methods
     // =========================================================================
 
     /**
-     * Loads a config file from, trying @craft/config first, then the modules's
+     * Loads a config file from, trying @craft/config first, then the module's
      * @modules/sitemodule
      *
      * @param string $fileName
@@ -43,10 +43,10 @@ class Config
         $currentEnv = Craft::$app->getConfig()->env;
 
         // Try craft/config first
-        $path = Craft::getAlias('@config/'.$fileName, false);
+        $path = Craft::getAlias('@config/' . $fileName, false);
         if ($path === false || !file_exists($path)) {
             // Now try our own internal config
-            $path = Craft::getAlias('@modules/sitemodule/'.$fileName, false);
+            $path = Craft::getAlias('@modules/sitemodule/' . $fileName, false);
             if ($path === false || !file_exists($path)) {
                 return [];
             }
@@ -79,3 +79,4 @@ class Config
     // Private Methods
     // =========================================================================
 }
+

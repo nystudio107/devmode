@@ -10,7 +10,6 @@
 
 namespace modules\sitemodule\assetbundles\sitemodule;
 
-use Craft;
 use craft\web\AssetBundle;
 use craft\web\assets\cp\CpAsset;
 
@@ -27,7 +26,7 @@ class SiteModuleAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public function init()
+    public function init(): void
     {
         $this->sourcePath = "@modules/sitemodule/assetbundles/sitemodule/dist";
 
@@ -46,3 +45,4 @@ class SiteModuleAsset extends AssetBundle
         parent::init();
     }
 }
+

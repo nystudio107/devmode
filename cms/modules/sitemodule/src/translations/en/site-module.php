@@ -14,5 +14,5 @@
  * @since     1.0.0
  */
 return [
-    'Site plugin loaded' => 'Site plugin loaded',
+    '{name} module loaded' => '{name} module loaded',
 ];

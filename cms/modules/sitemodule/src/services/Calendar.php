@@ -22,7 +22,7 @@ class Calendar extends Component
     // Constants
     // =========================================================================
 
-    const SHOW_ICS_FEED_URL = "https://trello.com/calendar/58818099de7afeb3eccf53c3/596c082de8b3646b91fe224c/a33556c5da5218fe3ed14f368b6b77bc.ics";
+    protected const SHOW_ICS_FEED_URL = "https://trello.com/calendar/58818099de7afeb3eccf53c3/596c082de8b3646b91fe224c/a33556c5da5218fe3ed14f368b6b77bc.ics";
 
     // Public Methods
     // =========================================================================

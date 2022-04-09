@@ -12,6 +12,7 @@ namespace modules\sitemodule\services;
 
 use Craft;
 use craft\base\Component;
+use Throwable;
 
 /**
  * @author    nystudio107
@@ -42,7 +43,7 @@ class RemoteFile extends Component
                 $reason = $response->getReasonPhrase();
                 Craft::error("Invalid response from API: ${reason} -- ${url}", __METHOD__);
             }
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             Craft::error($e->getMessage() . " -- ${url}", 'site-module');
         }
 

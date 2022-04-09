@@ -5,12 +5,6 @@ permissions:
   - accessplugin-retour
   - accessplugin-seomatic
   - accesscp
-  - 'publishentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
-  - 'publishpeerentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
-  - 'editpeerentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
-  - 'publishpeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
-  - 'editpeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
-  - 'editentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
   - 'saveassetinvolume:cd231c31-8caf-4b13-995d-2b84f9750c63'
   - 'viewvolume:cd231c31-8caf-4b13-995d-2b84f9750c63'
   - 'saveassetinvolume:ab5dbb6f-b2fe-4712-9237-d47c3a608050'
@@ -50,3 +44,10 @@ permissions:
   - 'seomatic:tracking-scripts:hubspot'
   - 'seomatic:tracking-scripts'
   - 'seomatic:plugin-settings'
+  - 'viewentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
+  - 'saveentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
+  - 'viewpeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
+  - 'savepeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
+  - 'viewpeerentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
+  - 'savepeerentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
+  - 'assignusergroup:19dfdfbb-837c-46d5-87bf-e6540df98dc4'

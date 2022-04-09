@@ -8,7 +8,7 @@
 │                                  htmlPage                                   │
 └─────────────────────────────────────────────────────────────────────────────┘
 #}
-{% spaceless %}
+{% apply spaceless %}
 
     {# -- Prefetch & preconnect headers and links -- #}
     {% set prefetchUrls = [
@@ -28,4 +28,4 @@
     {% block htmlPage %}
     {% endblock %}
 
-{% endspaceless %}
+{% endapply %}
