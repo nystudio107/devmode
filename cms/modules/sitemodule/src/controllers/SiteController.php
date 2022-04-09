@@ -13,7 +13,6 @@ namespace modules\sitemodule\controllers;
 use Craft;
 use craft\elements\Entry;
 use craft\web\Controller;
-
 use Stringy\Stringy;
 use yii\web\Response;
 
@@ -27,7 +26,7 @@ class SiteController extends Controller
     // Protected Properties
     // =========================================================================
 
-    protected $allowAnonymous = ['episodes', 'get-csrf'];
+    protected int|bool|array $allowAnonymous = ['episodes', 'get-csrf'];
 
     // Public Methods
     // =========================================================================
@@ -36,44 +35,42 @@ class SiteController extends Controller
      * Handle requests for the performance detail table
      *
      * @param string $sort
-     * @param int    $page
-     * @param int    $per_page
+     * @param int $page
+     * @param int $per_page
      * @param string $filter
      *
      * @return Response
      */
     public function actionEpisodes(
         string $sort = 'postDate|DESC',
-        int $page = 1,
-        int $per_page = 20,
-        $filter = ''
-    ): Response {
+        int    $page = 1,
+        int    $per_page = 20,
+        string $filter = ''
+    ): Response
+    {
         $data = [];
         $sortField = 'postDate';
         $sortType = 'DESC';
         // Figure out the sorting type
         if ($sort !== '') {
-            if (strpos($sort, '|') === false) {
+            if (!str_contains($sort, '|')) {
                 $sortField = $sort;
             } else {
-                list($sortField, $sortType) = explode('|', $sort);
+                [$sortField, $sortType] = explode('|', $sort);
             }
         }
         // Query the db table
         $offset = ($page - 1) * $per_page;
         $query = Entry::find()
             ->section('episodes')
-            ->offset($offset)
-        ;
+            ->offset($offset);
         if ($filter !== '') {
             $query
-                ->search($filter)
-            ;
+                ->search($filter);
         }
         $query
             ->orderBy("{$sortField} {$sortType}")
-            ->limit($per_page)
-        ;
+            ->limit($per_page);
         $episodes = $query->all();
         if ($episodes) {
             $stats = [];

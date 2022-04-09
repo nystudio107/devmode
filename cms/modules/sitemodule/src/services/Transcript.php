@@ -11,17 +11,16 @@
 namespace modules\sitemodule\services;
 
 use Composer\Semver\Semver;
-use craft\helpers\ArrayHelper;
-use Jean85\PrettyVersions;
-use modules\sitemodule\SiteModule;
-
 use Craft;
 use craft\base\Component;
-
+use Jean85\PrettyVersions;
 use League\Csv\AbstractCsv;
 use League\Csv\Exception;
 use League\Csv\Reader;
 use League\Csv\Statement;
+use League\Csv\UnableToProcessCsv;
+use modules\sitemodule\SiteModule;
+use Throwable;
 
 /**
  * @author    nystudio107
@@ -33,7 +32,7 @@ class Transcript extends Component
     // Constants
     // =========================================================================
 
-    const LEAGUE_CSV_PACKAGE = 'league/csv';
+    protected const LEAGUE_CSV_PACKAGE = 'league/csv';
 
     // Public Methods
     // =========================================================================
@@ -43,6 +42,7 @@ class Transcript extends Component
      *
      * @param string $url
      * @return array|null
+     * @throws UnableToProcessCsv
      */
     public function fetch(string $url): ?array
     {
@@ -51,6 +51,7 @@ class Transcript extends Component
         $remoteFile = SiteModule::$instance->remoteFile;
         $transcriptContents = $remoteFile->fetch($url);
         if ($transcriptContents) {
+            $csv = null;
             // If your CSV document was created or is read on a Macintosh computer,
             // add the following lines before using the library to help PHP detect line ending in Mac OS X
             if (!ini_get('auto_detect_line_endings')) {
@@ -64,7 +65,7 @@ class Transcript extends Component
                 Craft::error($e, __METHOD__);
             }
             // If we have headers, then we have a file, so parse it
-            if ($headers !== null) {
+            if ($csv !== null && $headers !== null) {
                 switch ($this->getLeagueCsvVersion()) {
                     case 8:
                         $result = $this->importCsvApi8($csv);
@@ -129,7 +130,7 @@ class Transcript extends Component
         try {
             $pv = PrettyVersions::getVersion(self::LEAGUE_CSV_PACKAGE);
             $installedVersion = $pv->getPrettyVersion();
-        } catch (\Throwable $e) {
+        } catch (Throwable $e) {
             Craft::error($e, __METHOD__);
         }
         if ($installedVersion) {

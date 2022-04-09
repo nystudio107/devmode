@@ -10,12 +10,10 @@
 
 namespace modules\sitemodule\variables;
 
-use Craft;
 use craft\helpers\Json;
-
-use yii\base\Exception;
-
+use League\Csv\UnableToProcessCsv;
 use modules\sitemodule\SiteModule;
+use function is_string;
 
 /**
  * @author    nystudio107
@@ -32,7 +30,7 @@ class SiteVariable
      *
      * @return mixed|null
      */
-    public function webmentions(string $url)
+    public function webmentions(string $url): mixed
     {
         $remoteFile = SiteModule::$instance->remoteFile;
         $result = $remoteFile->fetch($url);
@@ -40,7 +38,7 @@ class SiteVariable
             $result = Json::decodeIfJson($result);
         }
         // Return null if the JSON decode fails
-        if (\is_string($result)) {
+        if (is_string($result)) {
             $result = null;
         }
 
@@ -52,12 +50,11 @@ class SiteVariable
      *
      * @param string $url
      * @return array|null
+     * @throws UnableToProcessCsv
      */
     public function getTranscript(string $url): ?array
     {
-        $transcript = SiteModule::$instance->transcript;
-
-        return $transcript->fetch($url);
+        return SiteModule::$instance->transcript->fetch($url);
     }
 
     /**
@@ -67,8 +64,6 @@ class SiteVariable
      */
     public function getCalendarFeedUrl(): string
     {
-        $calendar = SiteModule::$instance->calendar;
-
-        return $calendar->getCalendarFeedUrl();
+        return SiteModule::$instance->calendar->getCalendarFeedUrl();
     }
 }
