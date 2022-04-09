@@ -1,5 +1,9 @@
 # nystudio107/devmode Change Log
 
+## 2.6.0 - 2022.04.08
+### Changed
+* Switched over to Craft CMS 4.0.0-beta.4
+
 ## 2.5.8 - 2022.04.08
 ### Changed
 * Run migrations first via `composer.json` scripts, because Craft won't apply Project Config if there are pending migrations
