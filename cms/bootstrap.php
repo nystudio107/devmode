@@ -20,4 +20,4 @@ if (class_exists('Dotenv\Dotenv')) {
 define('CRAFT_ENVIRONMENT', getenv('ENVIRONMENT') ?: 'production');
 
 // Set license key via .env
-define('CRAFT_LICENSE_KEY', getenv('LICENSE_KEY'));
+define('CRAFT_LICENSE_KEY', trim(getenv('LICENSE_KEY'), '"'));
