@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a888099bd76530384ca146c51b23b8c1",
+    "content-hash": "5340dc5c706ab6445a55de72b7118778",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -4495,16 +4495,16 @@
         },
         {
             "name": "nystudio107/craft-transcoder",
-            "version": "4.0.0-beta.3",
+            "version": "4.0.0-beta.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-transcoder.git",
-                "reference": "2f5b7e76fca1311f7e3bd6f6bd90b473fbce947d"
+                "reference": "c6905ee36f0a6aa0186eacff5ae27f4442ffec70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/2f5b7e76fca1311f7e3bd6f6bd90b473fbce947d",
-                "reference": "2f5b7e76fca1311f7e3bd6f6bd90b473fbce947d",
+                "url": "https://api.github.com/repos/nystudio107/craft-transcoder/zipball/c6905ee36f0a6aa0186eacff5ae27f4442ffec70",
+                "reference": "c6905ee36f0a6aa0186eacff5ae27f4442ffec70",
                 "shasum": ""
             },
             "require": {
@@ -4558,7 +4558,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-17T19:26:47+00:00"
+            "time": "2022-04-09T00:41:09+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
