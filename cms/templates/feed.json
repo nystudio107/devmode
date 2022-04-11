@@ -55,7 +55,7 @@
                         {
                             "url": "{{ transAudioUrl }}",
                             "mime_type": "audio/mpeg",
-                            "size_in_bytes": {{ fileInfo.size }},
+                            "size_in_bytes": {{ fileInfo.size ?? 0 }},
                             "duration_in_seconds": {{ fileInfo.duration ?? 0 | round }}
                         }
                     ]
