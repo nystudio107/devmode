@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a004cc6313463376299f89f14ffe5d8",
+    "content-hash": "451a6a477409c6ea9187dc7dfe5fc47a",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -3814,16 +3814,16 @@
         },
         {
             "name": "nystudio107/craft-disqus",
-            "version": "4.0.0-beta.2",
+            "version": "4.0.0-beta.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-disqus.git",
-                "reference": "646e101d2deecac13ed135e9994a0f947e78d61b"
+                "reference": "03537e693d173753454ac9616b49450279ef3312"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-disqus/zipball/646e101d2deecac13ed135e9994a0f947e78d61b",
-                "reference": "646e101d2deecac13ed135e9994a0f947e78d61b",
+                "url": "https://api.github.com/repos/nystudio107/craft-disqus/zipball/03537e693d173753454ac9616b49450279ef3312",
+                "reference": "03537e693d173753454ac9616b49450279ef3312",
                 "shasum": ""
             },
             "require": {
@@ -3869,7 +3869,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-04-11T18:40:39+00:00"
+            "time": "2022-04-11T18:57:42+00:00"
         },
         {
             "name": "nystudio107/craft-fastcgicachebust",
