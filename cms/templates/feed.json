@@ -19,9 +19,13 @@
     },
     "items": [
         {% apply spaceless %}
-        {% for episode in craft.entries.section("episodes").all() %}
+        {% set episodes = craft.entries.section("episodes").with([
+            'episodeHosts',
+            'episodeMedia',
+        ]).all() %}
+        {% for episode in episodes %}
             {% set summaryText = stringy(episode.episodeSummary).lines()[0] |truncateOnWord(300) |typogrifyFeed %}
-            {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
+            {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia[0], {
                 "audioBitRate": "128k",
                 "audioSampleRate": 44100,
                 "audioChannels": 1
@@ -33,7 +37,7 @@
                 {% set transAudioUrl = "https://chtbl.com/track/81493/#{transAudioUrl}" %}
             {% endif %}
 #}
-            {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
+            {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia[0], true) %}
             {
                 "id": "{{ url(episode.episodeNumber) }}",
                 "url": "{{ episode.url }}",

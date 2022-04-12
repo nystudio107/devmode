@@ -3,20 +3,25 @@
 {% set baseUrl = alias('@cloudfrontUrl') ~ '/' %}
 {% do craft.webperf.includeBeacon(false) %}
 {% do seomatic.config.renderEnabled(false) %}
+{% set showImage = showInfo.showImage.one() %}
 <?xml version="1.0" encoding="UTF-8"?>
 
-<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom/"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
     <channel>
         <title>{{ showInfo.showTitle |typogrifyFeed }}</title>
 
         <link>{{ showInfo.showUrl }}</link>
 
         <language>{{ craft.app.language |slice(0,2) }}</language>
-        <atom:link href="{{ url(craft.app.request.pathInfo) }}" rel="self" type="application/rss+xml" />
+        <atom:link href="{{ url(craft.app.request.pathInfo) }}" rel="self" type="application/rss+xml"/>
         <pubDate>{{ now |rss }}</pubDate>
         <lastBuildDate>{{ now |rss }}</lastBuildDate>
 
-        <copyright>Copyright ©{{ now |date("Y") }} {% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</copyright>
+        <copyright>Copyright
+            ©{{ now |date("Y") }} {% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</copyright>
 
         <itunes:subtitle>{{ showInfo.showSubTitle }}</itunes:subtitle>
         <itunes:summary>{{ showInfo.showDescription |typogrifyFeed }}</itunes:summary>
@@ -25,20 +30,24 @@
         <itunes:author>{% for host in hosts %}{{ host.fullName }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
 
         {% set host = hosts[0] %}
-            <itunes:owner>
-                <itunes:name>{{ host.fullName |typogrifyFeed }}</itunes:name>
-                <itunes:email>{{ host.email }}</itunes:email>
-            </itunes:owner>
+        <itunes:owner>
+            <itunes:name>{{ host.fullName |typogrifyFeed }}</itunes:name>
+            <itunes:email>{{ host.email }}</itunes:email>
+        </itunes:owner>
 
         <itunes:explicit>clean</itunes:explicit>
 
-        <itunes:image href="{{ url(showInfo.showImage.one().getUrl() | split('?') | first) }}" />
+        <itunes:image href="{{ url(showImage.getUrl() | split('?') | first) }}"/>
 
         <itunes:category text="{{ showInfo.showGenre |typogrifyFeed }}">
-            <itunes:category text="Tech News" />
+            <itunes:category text="Tech News"/>
         </itunes:category>
 
-        {% for episode in craft.entries.section("episodes").all() %}
+        {% set episodes = craft.entries.section("episodes").with([
+            'episodeHosts',
+            'episodeMedia',
+        ]).all() %}
+        {% for episode in episodes %}
             <item>
                 {% set summaryText = stringy(episode.episodeSummary).lines()[0] |truncateOnWord(300) |typogrifyFeed %}
 
@@ -48,7 +57,7 @@
                 <itunes:block>No</itunes:block>
                 <link>{{ episode.url }}</link>
 
-                <itunes:author>{% for host in episode.episodeHosts.all() %}{{ host.fullName |typogrifyFeed }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
+                <itunes:author>{% for host in episode.episodeHosts %}{{ host.fullName |typogrifyFeed }}{% if not loop.last %}, {% endif %}{% endfor %}</itunes:author>
 
                 <itunes:summary>
                     {{ summaryText }}
@@ -65,7 +74,7 @@
                     <ul>
                         {% for link in episode.episodeReferenceLinks %}
                             <li>
-                                <a href="{{ link.linkUrl }}" >{{ link.linkName }}</a>
+                                <a href="{{ link.linkUrl }}">{{ link.linkName }}</a>
                             </li>
                         {% endfor %}
                     </ul>
@@ -74,36 +83,36 @@
 
                 <itunes:keywords>{{ seomatic.helper.extractKeywords(episode.episodeSummary) }}</itunes:keywords>
 
-                <itunes:image href="{{ url(showInfo.showImage.one().getUrl() | split('?') | first) | raw }}" />
+                <itunes:image href="{{ url(showImage.getUrl() | split('?') | first) | raw }}"/>
 
                 <itunes:explicit>no</itunes:explicit>
                 <googleplay:explicit>no</googleplay:explicit>
 
                 <pubDate>{{ episode.postDate |rss }}</pubDate>
 
-                {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia.one(), {
+                {% set transAudioUrl = craft.transcoder.getAudioUrl(episode.episodeMedia[0], {
                     "audioBitRate": "128k",
                     "audioSampleRate": 44100,
                     "audioChannels": 1
                 }) %}
                 {% if transAudioUrl |length %}
-{# Disable Chartable tracking; it gets flagged by some ad blockers
+                    {# Disable Chartable tracking; it gets flagged by some ad blockers
                     {% if not craft.app.config.general.devMode %}
                         {% set transAudioUrl = transAudioUrl | replace('/^(http|https):/', '') %}
                         {% set transAudioUrl = transAudioUrl | replace('//', '') %}
                         {% set transAudioUrl = "https://chtbl.com/track/81493/#{transAudioUrl}" %}
                     {% endif %}
-#}
-                    {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia.one(), true) %}
+                    #}
+                    {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia[0], true) %}
 
                     {% if fileInfo | length %}
-                    <enclosure url="{{ url(transAudioUrl) |raw }}" length="{{ fileInfo.size }}" type="audio/mpeg" />
+                        <enclosure url="{{ url(transAudioUrl) |raw }}" length="{{ fileInfo.size }}" type="audio/mpeg"/>
                     {% endif %}
 
                     <guid>{{ url(episode.episodeNumber) }}</guid>
 
                     {% if fileInfo | length %}
-                    <itunes:duration>{{ fileInfo.duration |round }}</itunes:duration>
+                        <itunes:duration>{{ fileInfo.duration |round }}</itunes:duration>
                     {% endif %}
                 {% endif %}
             </item>
