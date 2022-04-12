@@ -103,10 +103,18 @@
                         {% set transAudioUrl = "https://chtbl.com/track/81493/#{transAudioUrl}" %}
                     {% endif %}
                     #}
-                    {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia[0], true) %}
 
+                    {# This takes up too much time to do every iteration through the loop while rendering
+                     # the RSS feed. A better idea would be to cache it at entry save
+                     # @TODO cache the file info so we can use it later
+
+                    {% set fileInfo = craft.transcoder.getFileInfo(episode.episodeMedia[0], true) %}
+                    #}
+                    {% set fileInfo = null %}
                     {% if fileInfo | length %}
                         <enclosure url="{{ url(transAudioUrl) |raw }}" length="{{ fileInfo.size }}" type="audio/mpeg"/>
+                    {% else %}
+                        <enclosure url="{{ url(transAudioUrl) |raw }}" type="audio/mpeg"/>
                     {% endif %}
 
                     <guid>{{ url(episode.episodeNumber) }}</guid>
