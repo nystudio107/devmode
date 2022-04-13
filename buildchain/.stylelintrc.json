@@ -5,16 +5,18 @@
     "stylelint-config-recommended-vue"
   ],
   "rules": {
-    "at-rule-no-unknown": [ true, {
-      "ignoreAtRules": [
-        "apply",
-        "extends",
-        "screen",
-        "responsive",
-        "tailwind"
-      ]
-    }],
-    "max-line-length": null,
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "screen",
+          "extends",
+          "responsive",
+          "tailwind"
+        ]
+      }
+    ],
     "block-no-empty": null
   }
 }
