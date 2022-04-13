@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.219.1",
+            "version": "3.219.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "b35b86022c76c7f6b13d3f1be35cb317f582e253"
+                "reference": "3d0d24d9dad824ea4344cfc711b9989d92070aac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/b35b86022c76c7f6b13d3f1be35cb317f582e253",
-                "reference": "b35b86022c76c7f6b13d3f1be35cb317f582e253",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/3d0d24d9dad824ea4344cfc711b9989d92070aac",
+                "reference": "3d0d24d9dad824ea4344cfc711b9989d92070aac",
                 "shasum": ""
             },
             "require": {
@@ -143,9 +143,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.219.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.219.2"
             },
-            "time": "2022-04-11T18:15:54+00:00"
+            "time": "2022-04-12T19:03:09+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -2106,7 +2106,7 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.7.0",
+            "version": "v9.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
@@ -2161,7 +2161,7 @@
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.7.0",
+            "version": "v9.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2207,7 +2207,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.7.0",
+            "version": "v9.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2255,7 +2255,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.7.0",
+            "version": "v9.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -9035,16 +9035,16 @@
         },
         {
             "name": "whichbrowser/parser",
-            "version": "v2.1.4",
+            "version": "v2.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WhichBrowser/Parser-PHP.git",
-                "reference": "8cb6ffb993f9a7af5673a7e0ac6cf18c42e3e79f"
+                "reference": "344b655d1498d3f26210094e40bb4d43e1c48f1c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WhichBrowser/Parser-PHP/zipball/8cb6ffb993f9a7af5673a7e0ac6cf18c42e3e79f",
-                "reference": "8cb6ffb993f9a7af5673a7e0ac6cf18c42e3e79f",
+                "url": "https://api.github.com/repos/WhichBrowser/Parser-PHP/zipball/344b655d1498d3f26210094e40bb4d43e1c48f1c",
+                "reference": "344b655d1498d3f26210094e40bb4d43e1c48f1c",
                 "shasum": ""
             },
             "require": {
@@ -9093,9 +9093,9 @@
             ],
             "support": {
                 "issues": "https://github.com/WhichBrowser/Parser-PHP/issues",
-                "source": "https://github.com/WhichBrowser/Parser-PHP/tree/v2.1.4"
+                "source": "https://github.com/WhichBrowser/Parser-PHP/tree/v2.1.6"
             },
-            "time": "2022-04-11T21:25:40+00:00"
+            "time": "2022-04-12T14:09:43+00:00"
         },
         {
             "name": "yiisoft/yii2",
