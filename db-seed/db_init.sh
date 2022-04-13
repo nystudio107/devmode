@@ -16,6 +16,6 @@ do
     # Add the database name to the command
     pgsql+=( "$POSTGRES_DB" )
     echo "### Seeding database \`$POSTGRES_DB\`"
-    cat "/docker-entrypoint-initdb.d/$POSTGRES_DB_SEED_DIR/$POSTGRES_DB.sql" | "${pgsql[@]}" >/dev/null
+    zcat "/docker-entrypoint-initdb.d/$POSTGRES_DB_SEED_DIR/$POSTGRES_DB.sql.gz" | "${pgsql[@]}" >/dev/null
     echo "### \`$POSTGRES_DB\` database seeded"
 done
