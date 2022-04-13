@@ -1,5 +1,15 @@
 # nystudio107/devmode Change Log
 
+## 2.6.1 - 2022.04.13
+### Added
+* Added Craft CMS 4 db dump
+* Added `config/custom.php` for custom config settings
+
+### Changed
+* Added compressed `.gz` db dump support
+* Set `enableLogging` and `enableProfiling` in `config/db.php`
+* Use `"eslint": "^7.0.0"` to avoid package version conflicts with `vite-plugin-eslint`
+
 ## 2.6.0 - 2022.04.08
 ### Changed
 * Switched over to Craft CMS 4.0.0-beta.4
