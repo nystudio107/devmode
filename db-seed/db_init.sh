@@ -15,7 +15,15 @@ do
     echo "GRANT ALL PRIVILEGES ON DATABASE $POSTGRES_DB TO $POSTGRES_DB ;" | "${pgsql[@]}"
     # Add the database name to the command
     pgsql+=( "$POSTGRES_DB" )
-    echo "### Seeding database \`$POSTGRES_DB\`"
-    zcat "/docker-entrypoint-initdb.d/$POSTGRES_DB_SEED_DIR/$POSTGRES_DB.sql.gz" | "${pgsql[@]}" >/dev/null
-    echo "### \`$POSTGRES_DB\` database seeded"
+    DB_SEED_PATH="/docker-entrypoint-initdb.d/$POSTGRES_DB_SEED_DIR/$POSTGRES_DB"
+    if [ -f "$DB_SEED_PATH.sql" ]; then
+        echo "### Seeding database with \`$DB_SEED_PATH.sql\`"
+        cat "$DB_SEED_PATH.sql" | "${pgsql[@]}" >/dev/null
+        echo "### \`$POSTGRES_DB\` database seeded"
+    fi
+    if [ -f "$DB_SEED_PATH.sql.gz" ]; then
+        echo "### Seeding database with \`$DB_SEED_PATH.sql.gz\`"
+        zcat "$DB_SEED_PATH.sql.gz" | "${pgsql[@]}" >/dev/null
+        echo "### \`$POSTGRES_DB\` database seeded"
+    fi
 done
