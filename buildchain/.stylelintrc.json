@@ -17,6 +17,7 @@
         ]
       }
     ],
-    "block-no-empty": null
+    "block-no-empty": null,
+    "max-line-length": null
   }
 }
