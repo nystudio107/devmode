@@ -1,8 +1,9 @@
 # nystudio107/devmode Change Log
 
-## 2.6.2 - UNRELEASED
+## 2.6.2 - 2022.04.15
 ### Changed
 * Remove `enableLogging` and `enableProfiling` from `config/db.php` as they've now gone away
+* Changed `bootstrap.php` to allow `.env`-set environment variables override existing injected environment variables ([#82](https://github.com/craftcms/craft/issues/82))
 
 ## 2.6.1 - 2022.04.13
 ### Added
