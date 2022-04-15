@@ -20,6 +20,4 @@ return [
     'password' => App::env('DB_PASSWORD'),
     'schema' => App::env('DB_SCHEMA'),
     'tablePrefix' => App::env('DB_TABLE_PREFIX'),
-    'enableLogging' => false,
-    'enableProfiling' => (bool)App::env('DEV_MODE'),
 ];
