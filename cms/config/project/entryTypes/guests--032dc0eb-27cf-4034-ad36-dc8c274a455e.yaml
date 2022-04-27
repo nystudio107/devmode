@@ -36,6 +36,6 @@ fieldLayouts:
 handle: guests
 hasTitleField: true
 name: Guests
-section: 214e4dc6-a454-4df0-a1f5-cd94ecdab53f
+section: 214e4dc6-a454-4df0-a1f5-cd94ecdab53f # Guests
 sortOrder: 1
 titleFormat: null

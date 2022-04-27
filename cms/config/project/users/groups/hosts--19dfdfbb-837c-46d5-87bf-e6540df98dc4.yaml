@@ -44,10 +44,10 @@ permissions:
   - 'seomatic:tracking-scripts:hubspot'
   - 'seomatic:tracking-scripts'
   - 'seomatic:plugin-settings'
-  - 'viewentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
-  - 'saveentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
-  - 'viewpeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
-  - 'savepeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
-  - 'viewpeerentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
-  - 'savepeerentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2'
-  - 'assignusergroup:19dfdfbb-837c-46d5-87bf-e6540df98dc4'
+  - 'viewentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
+  - 'saveentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
+  - 'viewpeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
+  - 'savepeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
+  - 'viewpeerentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
+  - 'savepeerentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
+  - 'assignusergroup:19dfdfbb-837c-46d5-87bf-e6540df98dc4' # Hosts

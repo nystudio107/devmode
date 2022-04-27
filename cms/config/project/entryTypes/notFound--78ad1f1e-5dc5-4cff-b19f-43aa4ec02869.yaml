@@ -24,6 +24,6 @@ fieldLayouts:
 handle: notFound
 hasTitleField: false
 name: '404 Not Found'
-section: 52b673e7-3d80-44a4-94f7-43eaafcc9d6f
+section: 52b673e7-3d80-44a4-94f7-43eaafcc9d6f # 404 Not Found
 sortOrder: 1
 titleFormat: '{section.name|raw}'

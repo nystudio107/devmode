@@ -17,7 +17,7 @@ settings:
   singleUploadLocationSubpath: ''
   source: null
   sources:
-    - 'volume:7540db37-7ec3-4471-9de6-36bde06e949a'
+    - 'volume:7540db37-7ec3-4471-9de6-36bde06e949a' # Devmode Site
   targetSiteId: null
   useSingleFolder: ''
   validateRelatedElements: ''

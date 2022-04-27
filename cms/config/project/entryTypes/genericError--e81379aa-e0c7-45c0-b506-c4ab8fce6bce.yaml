@@ -24,6 +24,6 @@ fieldLayouts:
 handle: genericError
 hasTitleField: true
 name: 'Generic Error'
-section: 519413e8-a432-4cfe-98c5-5f81e9519f2a
+section: 519413e8-a432-4cfe-98c5-5f81e9519f2a # Generic Error
 sortOrder: 1
 titleFormat: null

@@ -10,7 +10,7 @@ settings:
   allowUploads: true
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:7540db37-7ec3-4471-9de6-36bde06e949a'
+  defaultUploadLocationSource: 'volume:7540db37-7ec3-4471-9de6-36bde06e949a' # Devmode Site
   defaultUploadLocationSubpath: ''
   limit: '1'
   localizeRelations: false
@@ -20,11 +20,11 @@ settings:
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: true
-  singleUploadLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99'
+  singleUploadLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99' # Devmode Episodes
   singleUploadLocationSubpath: ''
   source: null
   sources:
-    - 'volume:7540db37-7ec3-4471-9de6-36bde06e949a'
+    - 'volume:7540db37-7ec3-4471-9de6-36bde06e949a' # Devmode Site
   targetSiteId: null
   useSingleFolder: false
   validateRelatedElements: false
