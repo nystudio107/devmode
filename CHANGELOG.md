@@ -1,5 +1,9 @@
 # nystudio107/devmode Change Log
 
+## 2.6.3 - 2022.04.28
+### Changed
+* Updated to Craft CMS `4.0.0-RC1` & latest Composer deps
+
 ## 2.6.2 - 2022.04.15
 ### Changed
 * Remove `enableLogging` and `enableProfiling` from `config/db.php` as they've now gone away
