@@ -16,6 +16,6 @@ fieldLayouts:
 handle: about
 hasTitleField: true
 name: About
-section: 486a0853-47b2-4509-97ad-43fe3ec42074
+section: 486a0853-47b2-4509-97ad-43fe3ec42074 # About
 sortOrder: 1
 titleFormat: ''

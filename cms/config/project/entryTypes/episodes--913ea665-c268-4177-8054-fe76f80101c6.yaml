@@ -112,7 +112,7 @@ fieldLayouts:
 handle: episodes
 hasTitleField: true
 name: Episodes
-section: c1f6af30-7375-4feb-92ef-a3ed16ba69b2
+section: c1f6af30-7375-4feb-92ef-a3ed16ba69b2 # Episodes
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

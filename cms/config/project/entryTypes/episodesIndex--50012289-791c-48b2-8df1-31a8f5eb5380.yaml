@@ -1,7 +1,7 @@
 handle: episodesIndex
 hasTitleField: false
 name: 'Episodes Index'
-section: 1a66bf43-6fcc-4a78-bf36-0f350b930430
+section: 1a66bf43-6fcc-4a78-bf36-0f350b930430 # Episodes Index
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleLabel: null

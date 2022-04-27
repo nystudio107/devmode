@@ -1,4 +1,4 @@
 handle: owners
 name: Owners
 permissions:
-  - 'assignusergroup:9436ac5e-44de-4fe9-be59-fd1f0fc26941'
+  - 'assignusergroup:9436ac5e-44de-4fe9-be59-fd1f0fc26941' # Owners
