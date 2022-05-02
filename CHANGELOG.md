@@ -1,5 +1,9 @@
 # nystudio107/devmode Change Log
 
+## 2.6.4 - 2022.05.02
+### Fixed
+* Clean up initial check for `composer.lock` or `vendor/autoload.php` to ensure the first-time install is done
+
 ## 2.6.3 - 2022.04.28
 ### Changed
 * Updated to Craft CMS `4.0.0-RC1` & latest Composer deps
