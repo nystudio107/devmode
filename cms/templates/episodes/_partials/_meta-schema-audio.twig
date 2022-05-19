@@ -15,9 +15,9 @@
 
 {# PodcastSeries for the episode to belong to #}
 {% set showImage = showInfo.showImage.one() %}
-{% set radioSeries = seomatic.jsonLd.create({
+{% set podcastSeries = seomatic.jsonLd.create({
     'type': 'PodcastSeries',
-    'id': '{seomatic.site.identity.genericUrl}#radio-series',
+    'id': '{seomatic.site.identity.genericUrl}#podcast-series',
     'name': showInfo.showTitle,
     'description': showInfo.showDescription,
     'url': showInfo.showUrl,
@@ -41,9 +41,9 @@
 }) %}
 
 {# Person array of the episode hosts #}
-{% do addPersonArray(radioSeries, 'actor', craft.users.group("hosts").all()) %}
+{% do addPersonArray(podcastSeries, 'actor', craft.users.group("hosts").all()) %}
 {# Person array of the episode directors #}
-{% do addPersonArray(radioSeries, 'director', craft.users.group("owners").all()) %}
+{% do addPersonArray(podcastSeries, 'director', craft.users.group("owners").all()) %}
 
 {# AudioObject for the episide #}
 {% set audio = seomatic.jsonLd.create({
@@ -55,7 +55,7 @@
     'embedUrl': siteUrl("/player-card/#{episode.slug}"),
     'encodingFormat': 'audio/mpeg',
     'partOfSeries': {
-        'id': '{seomatic.site.identity.genericUrl}#radio-series',
+        'id': '{seomatic.site.identity.genericUrl}#podcast-series',
     },
     'productionCompany': {
         'id': '{seomatic.site.creator.genericUrl}#creator',
