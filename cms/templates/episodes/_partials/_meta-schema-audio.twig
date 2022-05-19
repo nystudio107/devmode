@@ -1,22 +1,22 @@
 {#
- # Add audio schema for the this episode as per:
- # https://schema.org/RadioEpisode
- #
- # @param  episode   the episode Entry for the current page
- # @param  fileInfo  summary of the episode media file info as per:
- #                   https://github.com/nystudio107/craft-transcoder#getting-information-about-a-videoaudio-file
- # @param  showInfo  the showInfo Global for the show
- # @param  audioUrl  the URL to the audio for this episode, wrapped in the
- #                   Chartable.com tracking redirect
- #}
+# Add audio schema for the this episode as per:
+# https://schema.org/PodcastEpisode
+#
+# @param  episode   the episode Entry for the current page
+# @param  fileInfo  summary of the episode media file info as per:
+#                   https://github.com/nystudio107/craft-transcoder#getting-information-about-a-videoaudio-file
+# @param  showInfo  the showInfo Global for the show
+# @param  audioUrl  the URL to the audio for this episode, wrapped in the
+#                   Chartable.com tracking redirect
+#}
 
 {% from "_partials/macros.twig" import addPersonArray %}
 {% from "_partials/macros.twig" import addMentionsArray %}
 
-{# RadioSeries for the episode to belong to #}
+{# PodcastSeries for the episode to belong to #}
 {% set showImage = showInfo.showImage.one() %}
 {% set radioSeries = seomatic.jsonLd.create({
-    'type': 'RadioSeries',
+    'type': 'PodcastSeries',
     'id': '{seomatic.site.identity.genericUrl}#radio-series',
     'name': showInfo.showTitle,
     'description': showInfo.showDescription,
@@ -63,7 +63,7 @@
     'uploadDate': episode.postDate | rss,
 }, false) %}
 
-{# Merge in the additional properties to the RadioEpisode mainEntityOfPage #}
+{# Merge in the additional properties to the PodcastEpisode mainEntityOfPage #}
 {% set mainEntity = seomatic.jsonLd.get('mainEntityOfPage') %}
 {% do mainEntity.setAttributes({
     'audio': audio,

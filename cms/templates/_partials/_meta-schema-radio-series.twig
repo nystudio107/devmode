@@ -1,13 +1,13 @@
 {#
- # Add audio schema for the this episode as per:
- # https://schema.org/RadioSeries
- #
- # @param  showInfo  the showInfo Global for the show
- #}
+# Add audio schema for the this episode as per:
+# https://schema.org/PodcastSeries
+#
+# @param  showInfo  the showInfo Global for the show
+#}
 
 {% from "_partials/macros.twig" import addPersonArray %}
 
-{# Merge in the additional properties to the RadioSeries mainEntityOfPage #}
+{# Merge in the additional properties to the PodcastSeries mainEntityOfPage #}
 {% set mainEntity = seomatic.jsonLd.get('mainEntityOfPage') %}
 {% do mainEntity.setAttributes({
     'genre': showInfo.showGenre,
