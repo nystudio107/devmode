@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.229.2",
+            "version": "3.231.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "142a872fd7172bf5d067f4e30e4f89593296fc8f"
+                "reference": "25f7cf72a1d7cf3075436cfbfdc4caed201df3ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/142a872fd7172bf5d067f4e30e4f89593296fc8f",
-                "reference": "142a872fd7172bf5d067f4e30e4f89593296fc8f",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/25f7cf72a1d7cf3075436cfbfdc4caed201df3ec",
+                "reference": "25f7cf72a1d7cf3075436cfbfdc4caed201df3ec",
                 "shasum": ""
             },
             "require": {
@@ -85,6 +85,7 @@
                 "andrewsville/php-token-reflection": "^1.4",
                 "aws/aws-php-sns-message-validator": "~1.0",
                 "behat/behat": "~3.0",
+                "composer/composer": "^1.10.22",
                 "doctrine/cache": "~1.4",
                 "ext-dom": "*",
                 "ext-openssl": "*",
@@ -143,9 +144,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.229.2"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.231.7"
             },
-            "time": "2022-07-01T18:16:42+00:00"
+            "time": "2022-07-15T18:16:42+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -915,16 +916,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.1.1",
+            "version": "4.1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "39349cb0699dd2bc96c2321269ced69252c985d2"
+                "reference": "51bce4cad7d95e25727fb0943cbdc62e2c5bdd52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/39349cb0699dd2bc96c2321269ced69252c985d2",
-                "reference": "39349cb0699dd2bc96c2321269ced69252c985d2",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/51bce4cad7d95e25727fb0943cbdc62e2c5bdd52",
+                "reference": "51bce4cad7d95e25727fb0943cbdc62e2c5bdd52",
                 "shasum": ""
             },
             "require": {
@@ -1029,7 +1030,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2022-07-05T14:15:29+00:00"
+            "time": "2022-07-13T17:41:28+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -2139,16 +2140,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v9.19.0",
+            "version": "v9.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "253cfce2bf469c340d2268bfbc31d4ad446a1fa7"
+                "reference": "b53d26fbcfb623c4f7538eadd9bc5083e0a59bdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/253cfce2bf469c340d2268bfbc31d4ad446a1fa7",
-                "reference": "253cfce2bf469c340d2268bfbc31d4ad446a1fa7",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/b53d26fbcfb623c4f7538eadd9bc5083e0a59bdd",
+                "reference": "b53d26fbcfb623c4f7538eadd9bc5083e0a59bdd",
                 "shasum": ""
             },
             "require": {
@@ -2190,11 +2191,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-06-28T14:33:19+00:00"
+            "time": "2022-07-01T20:41:17+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v9.19.0",
+            "version": "v9.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2240,7 +2241,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v9.19.0",
+            "version": "v9.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2288,7 +2289,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v9.19.0",
+            "version": "v9.20.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -2546,16 +2547,16 @@
         },
         {
             "name": "johngrogg/ics-parser",
-            "version": "v3.1.1",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/u01jmg3/ics-parser.git",
-                "reference": "8fd2099ed361cf1065d280e97b656726778b0779"
+                "reference": "cc5cc7c6f934ec129c4e207828eb27315e1b61fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/8fd2099ed361cf1065d280e97b656726778b0779",
-                "reference": "8fd2099ed361cf1065d280e97b656726778b0779",
+                "url": "https://api.github.com/repos/u01jmg3/ics-parser/zipball/cc5cc7c6f934ec129c4e207828eb27315e1b61fb",
+                "reference": "cc5cc7c6f934ec129c4e207828eb27315e1b61fb",
                 "shasum": ""
             },
             "require": {
@@ -2563,7 +2564,7 @@
                 "php": ">=5.3.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "^5",
+                "phpunit/phpunit": "^5|^9",
                 "squizlabs/php_codesniffer": "~3.6.0"
             },
             "type": "library",
@@ -2599,7 +2600,7 @@
             ],
             "support": {
                 "issues": "https://github.com/u01jmg3/ics-parser/issues",
-                "source": "https://github.com/u01jmg3/ics-parser/tree/v3.1.1"
+                "source": "https://github.com/u01jmg3/ics-parser/tree/v3.2.0"
             },
             "funding": [
                 {
@@ -2607,7 +2608,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-03-08T12:57:56+00:00"
+            "time": "2022-07-15T18:19:42+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -3997,23 +3998,23 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "4.0.0",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "15c83da6998feaa5db576c57814911b78462c469"
+                "reference": "0cabbdb2cbbc22fc1c49885c64af18737bca3c31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/15c83da6998feaa5db576c57814911b78462c469",
-                "reference": "15c83da6998feaa5db576c57814911b78462c469",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/0cabbdb2cbbc22fc1c49885c64af18737bca3c31",
+                "reference": "0cabbdb2cbbc22fc1c49885c64af18737bca3c31",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^4.0.0",
                 "ksubileau/color-thief-php": "^1.3",
                 "mikehaertl/php-shellcommand": "~1.2",
-                "nystudio107/craft-imageoptimize-imgix": "^4.0.0",
+                "nystudio107/craft-imageoptimize-imgix": "^4.0.1",
                 "nystudio107/craft-imageoptimize-sharp": "^4.0.0",
                 "nystudio107/craft-imageoptimize-thumbor": "^4.0.0",
                 "nystudio107/craft-plugin-vite": "^4.0.0"
@@ -4062,20 +4063,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-06-28T17:27:26+00:00"
+            "time": "2022-07-17T20:27:51+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize-imgix.git",
-                "reference": "e94cd686e043e40c83514cd7d3aee2876af653a1"
+                "reference": "b181cfe7fa3554da9ba70be22a987b6f46eb4cd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/e94cd686e043e40c83514cd7d3aee2876af653a1",
-                "reference": "e94cd686e043e40c83514cd7d3aee2876af653a1",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize-imgix/zipball/b181cfe7fa3554da9ba70be22a987b6f46eb4cd2",
+                "reference": "b181cfe7fa3554da9ba70be22a987b6f46eb4cd2",
                 "shasum": ""
             },
             "require": {
@@ -4108,7 +4109,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-imageoptimize-imgix/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-imageoptimize-imgix/issues",
-                "source": "https://github.com/nystudio107/craft-imageoptimize-imgix/tree/4.0.0"
+                "source": "https://github.com/nystudio107/craft-imageoptimize-imgix/tree/4.0.1"
             },
             "funding": [
                 {
@@ -4116,7 +4117,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-05-25T19:37:53+00:00"
+            "time": "2022-07-06T19:24:40+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-sharp",
@@ -4339,16 +4340,16 @@
         },
         {
             "name": "nystudio107/craft-plugin-vite",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-plugin-vite.git",
-                "reference": "d48aeaf2e6d32825206ce80fc655b60a3d42e1b7"
+                "reference": "e6cdb409cd811bd311d92f55c03aa4eba4061607"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/d48aeaf2e6d32825206ce80fc655b60a3d42e1b7",
-                "reference": "d48aeaf2e6d32825206ce80fc655b60a3d42e1b7",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-vite/zipball/e6cdb409cd811bd311d92f55c03aa4eba4061607",
+                "reference": "e6cdb409cd811bd311d92f55c03aa4eba4061607",
                 "shasum": ""
             },
             "require": {
@@ -4379,7 +4380,7 @@
             "support": {
                 "docs": "https://github.com/nystudio107/craft-plugin-vite/blob/v1/README.md",
                 "issues": "https://github.com/nystudio107/craft-plugin-vite/issues",
-                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/4.0.2"
+                "source": "https://github.com/nystudio107/craft-plugin-vite/tree/4.0.3"
             },
             "funding": [
                 {
@@ -4387,7 +4388,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-06-29T15:21:45+00:00"
+            "time": "2022-07-16T20:51:11+00:00"
         },
         {
             "name": "nystudio107/craft-retour",
@@ -4722,21 +4723,21 @@
         },
         {
             "name": "nystudio107/craft-vite",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-vite.git",
-                "reference": "6f503aac167afce24a78869214dc3233c030e889"
+                "reference": "82bf6aba239e8ee8982887da5a0cc5d28e2c6a60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/6f503aac167afce24a78869214dc3233c030e889",
-                "reference": "6f503aac167afce24a78869214dc3233c030e889",
+                "url": "https://api.github.com/repos/nystudio107/craft-vite/zipball/82bf6aba239e8ee8982887da5a0cc5d28e2c6a60",
+                "reference": "82bf6aba239e8ee8982887da5a0cc5d28e2c6a60",
                 "shasum": ""
             },
             "require": {
                 "craftcms/cms": "^4.0.0",
-                "nystudio107/craft-plugin-vite": "^4.0.2"
+                "nystudio107/craft-plugin-vite": "^4.0.3"
             },
             "type": "craft-plugin",
             "extra": {
@@ -4778,7 +4779,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-06-29T15:33:41+00:00"
+            "time": "2022-07-16T21:02:11+00:00"
         },
         {
             "name": "nystudio107/craft-webperf",
@@ -8405,16 +8406,16 @@
         },
         {
             "name": "voku/arrayy",
-            "version": "7.9.2",
+            "version": "7.9.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/Arrayy.git",
-                "reference": "a3ddfcae4955670840b1534c7ead2cda908111a0"
+                "reference": "41318bd1483a10f133c8214479b3580a3e936a86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/Arrayy/zipball/a3ddfcae4955670840b1534c7ead2cda908111a0",
-                "reference": "a3ddfcae4955670840b1534c7ead2cda908111a0",
+                "url": "https://api.github.com/repos/voku/Arrayy/zipball/41318bd1483a10f133c8214479b3580a3e936a86",
+                "reference": "41318bd1483a10f133c8214479b3580a3e936a86",
                 "shasum": ""
             },
             "require": {
@@ -8484,7 +8485,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-07-05T09:42:30+00:00"
+            "time": "2022-07-06T00:50:30+00:00"
         },
         {
             "name": "voku/email-check",
@@ -10019,5 +10020,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.1.0"
 }
