@@ -4,7 +4,6 @@ import legacy from '@vitejs/plugin-legacy';
 import ViteRestart from 'vite-plugin-restart';
 import {partytownVite} from '@builder.io/partytown/utils';
 import viteCompression from 'vite-plugin-compression';
-import manifestSRI from 'vite-plugin-manifest-sri';
 import {visualizer} from 'rollup-plugin-visualizer';
 import eslintPlugin from 'vite-plugin-eslint';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
@@ -73,7 +72,6 @@ export default defineConfig(({command}) => ({
     viteCompression({
       filter: /\.(js|mjs|json|css|map)$/i
     }),
-    manifestSRI(),
     visualizer({
       filename: '../cms/web/dist/stats.html',
       template: 'treemap',
@@ -96,7 +94,7 @@ export default defineConfig(({command}) => ({
       strict: false
     },
     host: '0.0.0.0',
-    origin: 'http://localhost:3000/',
+    origin: 'http://localhost:3000',
     port: 3000,
     strictPort: true,
   }
