@@ -3,7 +3,7 @@
 ## 2.6.5 - 2022.05.04
 ### Added
 * Determine the container name separator character by checking the Docker Compose API version at runtime
-* 
+
 ### Changed
 * Updated to release version of Craft CMS 4
 
