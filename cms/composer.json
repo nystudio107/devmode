@@ -21,7 +21,7 @@
   "prefer-stable": true,
   "require": {
     "php": "^8.0.2",
-    "craftcms/cms": "^4.1.0",
+    "craftcms/cms": "^4.2.0",
     "craftcms/aws-s3": "^2.0.0",
     "jean85/pretty-package-versions": "^1.5 || ^2.0",
     "league/csv": "^8.2 || ^9.0",
