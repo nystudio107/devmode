@@ -45,7 +45,7 @@ return GeneralConfig::create()
     ])
     ->generateTransformsBeforePageLoad(true)
     ->maxCachedCloudImageSize(3000)
-    ->maxUploadFileSize(100 * 1024 * 1024)
+    ->maxUploadFileSize('100M')
     ->omitScriptNameInUrls(true)
     ->useEmailAsUsername(true)
     ->usePathInfo(true);
