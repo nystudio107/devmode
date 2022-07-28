@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ed159ca1dee219a7d192d40a794dd5c",
+    "content-hash": "a81a01676f80ea7eff161414944ffce0",
     "packages": [
         {
             "name": "aws/aws-crt-php",
@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.231.14",
+            "version": "3.231.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "6b79b9c8204813d9674ffa7badcd567d7f608165"
+                "reference": "ba379285d24b609a997bd8b40933d3e0a3826dfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6b79b9c8204813d9674ffa7badcd567d7f608165",
-                "reference": "6b79b9c8204813d9674ffa7badcd567d7f608165",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ba379285d24b609a997bd8b40933d3e0a3826dfb",
+                "reference": "ba379285d24b609a997bd8b40933d3e0a3826dfb",
                 "shasum": ""
             },
             "require": {
@@ -144,9 +144,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.231.14"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.231.15"
             },
-            "time": "2022-07-26T18:20:14+00:00"
+            "time": "2022-07-27T18:59:36+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -916,16 +916,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.2.0.1",
+            "version": "4.2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "be5dc3ab57c66c80a950556d9eaddcfb194ae0df"
+                "reference": "cf3f39924bddd1a69295b5af03dae2c1b03815ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/be5dc3ab57c66c80a950556d9eaddcfb194ae0df",
-                "reference": "be5dc3ab57c66c80a950556d9eaddcfb194ae0df",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/cf3f39924bddd1a69295b5af03dae2c1b03815ea",
+                "reference": "cf3f39924bddd1a69295b5af03dae2c1b03815ea",
                 "shasum": ""
             },
             "require": {
@@ -1030,7 +1030,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2022-07-27T00:08:54+00:00"
+            "time": "2022-07-27T19:39:59+00:00"
         },
         {
             "name": "craftcms/flysystem",
