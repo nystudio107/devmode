@@ -1,5 +1,9 @@
 # nystudio107/devmode Change Log
 
+## 2.6.6 - 2022.07.30
+### Added
+* Added `docker compose` plugin support
+
 ## 2.6.5 - 2022.05.04
 ### Added
 * Determine the container name separator character by checking the Docker Compose API version at runtime
