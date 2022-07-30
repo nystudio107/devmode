@@ -3,6 +3,7 @@
 ## 2.6.6 - 2022.07.30
 ### Added
 * Added `docker compose` plugin support
+* Suppressed .env copy operating from console output
 
 ## 2.6.5 - 2022.05.04
 ### Added
