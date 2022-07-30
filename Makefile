@@ -55,7 +55,7 @@ nuke: clean
 ssh:
 	docker exec -it $(CONTAINER) su-exec www-data /bin/sh
 up:
-	if [ ! "$$(docker ps -q -f name=$(CONTAINER))" ]; then \
+	@if [ ! "$$(docker ps -q -f name=$(CONTAINER))" ]; then \
 		cp -n cms/example.env cms/.env; \
 		$(DOCKER_COMPOSE_CMD) up; \
     fi
