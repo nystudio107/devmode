@@ -5,7 +5,6 @@ import ViteRestart from 'vite-plugin-restart';
 import {partytownVite} from '@builder.io/partytown/utils';
 import viteCompression from 'vite-plugin-compression';
 import {visualizer} from 'rollup-plugin-visualizer';
-import eslintPlugin from 'vite-plugin-eslint';
 import {nodeResolve} from '@rollup/plugin-node-resolve';
 import critical from 'rollup-plugin-critical';
 import {ViteFaviconsPlugin} from "vite-plugin-favicon2";
@@ -76,9 +75,6 @@ export default defineConfig(({command}) => ({
       filename: '../cms/web/dist/stats.html',
       template: 'treemap',
       sourcemap: true,
-    }),
-    eslintPlugin({
-      cache: false,
     }),
   ],
   publicDir: './src/public',
