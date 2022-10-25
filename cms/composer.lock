@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.239.1",
+            "version": "3.240.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "47aa3e427371af4449cd9cb07af7209376a535bb"
+                "reference": "34c6bf82f337cadf31475c88ca70e8302afc624b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/47aa3e427371af4449cd9cb07af7209376a535bb",
-                "reference": "47aa3e427371af4449cd9cb07af7209376a535bb",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/34c6bf82f337cadf31475c88ca70e8302afc624b",
+                "reference": "34c6bf82f337cadf31475c88ca70e8302afc624b",
                 "shasum": ""
             },
             "require": {
@@ -146,9 +146,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.239.1"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.240.1"
             },
-            "time": "2022-10-19T18:15:49+00:00"
+            "time": "2022-10-24T19:03:23+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -2887,16 +2887,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "3.9.0",
+            "version": "3.10.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "60f3760352fe08e918bc3b1acae4e91af092ebe1"
+                "reference": "9857d7208a94fc63c7bf09caf223280e59ac7274"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/60f3760352fe08e918bc3b1acae4e91af092ebe1",
-                "reference": "60f3760352fe08e918bc3b1acae4e91af092ebe1",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/9857d7208a94fc63c7bf09caf223280e59ac7274",
+                "reference": "9857d7208a94fc63c7bf09caf223280e59ac7274",
                 "shasum": ""
             },
             "require": {
@@ -2912,7 +2912,7 @@
             },
             "require-dev": {
                 "async-aws/s3": "^1.5",
-                "async-aws/simple-s3": "^1.0",
+                "async-aws/simple-s3": "^1.1",
                 "aws/aws-sdk-php": "^3.198.1",
                 "composer/semver": "^3.0",
                 "ext-fileinfo": "*",
@@ -2958,7 +2958,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/3.9.0"
+                "source": "https://github.com/thephpleague/flysystem/tree/3.10.1"
             },
             "funding": [
                 {
@@ -2974,25 +2974,25 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-18T21:02:43+00:00"
+            "time": "2022-10-21T18:57:47+00:00"
         },
         {
             "name": "league/flysystem-aws-s3-v3",
-            "version": "3.8.0",
+            "version": "3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem-aws-s3-v3.git",
-                "reference": "192c0e7f36fe4e5a79cce94f8359076630b641f8"
+                "reference": "95825edc5463006853e64338a4d96a977e8a10ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/192c0e7f36fe4e5a79cce94f8359076630b641f8",
-                "reference": "192c0e7f36fe4e5a79cce94f8359076630b641f8",
+                "url": "https://api.github.com/repos/thephpleague/flysystem-aws-s3-v3/zipball/95825edc5463006853e64338a4d96a977e8a10ca",
+                "reference": "95825edc5463006853e64338a4d96a977e8a10ca",
                 "shasum": ""
             },
             "require": {
                 "aws/aws-sdk-php": "^3.132.4",
-                "league/flysystem": "^3.8.0",
+                "league/flysystem": "^3.10.0",
                 "league/mime-type-detection": "^1.0.0",
                 "php": "^8.0.2"
             },
@@ -3028,7 +3028,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem-aws-s3-v3/issues",
-                "source": "https://github.com/thephpleague/flysystem-aws-s3-v3/tree/3.8.0"
+                "source": "https://github.com/thephpleague/flysystem-aws-s3-v3/tree/3.10.0"
             },
             "funding": [
                 {
@@ -3044,7 +3044,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-18T06:40:06+00:00"
+            "time": "2022-10-20T21:00:57+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -4684,16 +4684,16 @@
         },
         {
             "name": "nystudio107/craft-twigfield",
-            "version": "1.0.16",
+            "version": "1.0.17",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-twigfield.git",
-                "reference": "431572cc5eefd03da662739c9926e86c0809dee5"
+                "reference": "369fe2d7e9b74d391400b56444ef0dbc9b77ded7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-twigfield/zipball/431572cc5eefd03da662739c9926e86c0809dee5",
-                "reference": "431572cc5eefd03da662739c9926e86c0809dee5",
+                "url": "https://api.github.com/repos/nystudio107/craft-twigfield/zipball/369fe2d7e9b74d391400b56444ef0dbc9b77ded7",
+                "reference": "369fe2d7e9b74d391400b56444ef0dbc9b77ded7",
                 "shasum": ""
             },
             "require": {
@@ -4743,7 +4743,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-10-18T22:01:44+00:00"
+            "time": "2022-10-23T19:27:42+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -10074,5 +10074,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.1.0"
 }
