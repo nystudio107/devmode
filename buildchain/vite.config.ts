@@ -77,12 +77,15 @@ export default defineConfig(({command}) => ({
       sourcemap: true,
     }),
   ],
+  optimizeDeps: {
+    include: ['axios'],
+  },
   publicDir: './src/public',
   resolve: {
-    alias: {
-      'vue': 'vue/dist/vue.esm.js',
-      '@': path.resolve(__dirname, '../src')
-    },
+    alias: [
+      {find: '@', replacement: path.resolve(__dirname, '../src')},
+      {find: 'vue', replacement: 'vue/dist/vue.esm.js'},
+    ],
     preserveSymlinks: true,
   },
   server: {
