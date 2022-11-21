@@ -117,7 +117,7 @@
                         <enclosure url="{{ url(transAudioUrl) |raw }}" type="audio/mpeg"/>
                     {% endif %}
 
-                    <guid>{{ url(episode.episodeNumber) }}</guid>
+                    <guid>{{ url(episode.episodeNumber) }}{% if episode.episodeNumber in ['133','134'] %}{{ "-" ~ episode.slug }}{% endif %}</guid>
 
                     {% if fileInfo | length %}
                         <itunes:duration>{{ fileInfo.duration |round }}</itunes:duration>
