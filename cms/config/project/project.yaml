@@ -1,4 +1,4 @@
-dateModified: 1651086403
+dateModified: 1670464815
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -233,7 +233,7 @@ plugins:
   retour:
     enabled: true
     licenseKey: $PLUGIN_RETOUR_LICENSE
-    schemaVersion: 3.0.10
+    schemaVersion: 3.0.11
     settings: null
   seomatic:
     enabled: true
