@@ -2,6 +2,15 @@ FROM nystudio107/node-dev-base:16-alpine
 
 WORKDIR /var/www/project/
 
+# Install packages
+RUN set -eux; \
+    # Packages to install
+    apk add --no-cache \
+    git \
+    && \
+    # Clean out directories that don't need to be part of the image
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+
 COPY ./npm_install.sh .
 RUN chmod a+x npm_install.sh
 
