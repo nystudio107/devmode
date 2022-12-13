@@ -34,7 +34,7 @@ export default defineConfig(({command}) => ({
       criticalUrl: 'https://devmode.fm/',
       criticalBase: '../cms/web/dist/criticalcss/',
       criticalPages: [
-        {uri: '/', template: 'index'},
+        {uri: '', template: 'index'},
         {uri: 'about', template: 'about/index'},
         {uri: 'calendar', template: 'calendar/index'},
         {uri: 'episodes', template: 'episodes/index'},
