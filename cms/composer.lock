@@ -58,16 +58,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.252.4",
+            "version": "3.253.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "ce0b006b73c6ea78eb570aa3fcd838d0df34ec1b"
+                "reference": "1fc9d166dd8ee7c2a187cf8f3ed9342863208865"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/ce0b006b73c6ea78eb570aa3fcd838d0df34ec1b",
-                "reference": "ce0b006b73c6ea78eb570aa3fcd838d0df34ec1b",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/1fc9d166dd8ee7c2a187cf8f3ed9342863208865",
+                "reference": "1fc9d166dd8ee7c2a187cf8f3ed9342863208865",
                 "shasum": ""
             },
             "require": {
@@ -146,9 +146,9 @@
             "support": {
                 "forum": "https://forums.aws.amazon.com/forum.jspa?forumID=80",
                 "issues": "https://github.com/aws/aws-sdk-php/issues",
-                "source": "https://github.com/aws/aws-sdk-php/tree/3.252.4"
+                "source": "https://github.com/aws/aws-sdk-php/tree/3.253.0"
             },
-            "time": "2022-12-07T19:47:20+00:00"
+            "time": "2022-12-12T19:23:54+00:00"
         },
         {
             "name": "cebe/markdown",
@@ -918,16 +918,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "4.3.4",
+            "version": "4.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "f8b4934ef8b8abab5c018c49b6535cbf4f9fe950"
+                "reference": "bb51407401629d763f7936504769f10f336d803a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/f8b4934ef8b8abab5c018c49b6535cbf4f9fe950",
-                "reference": "f8b4934ef8b8abab5c018c49b6535cbf4f9fe950",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/bb51407401629d763f7936504769f10f336d803a",
+                "reference": "bb51407401629d763f7936504769f10f336d803a",
                 "shasum": ""
             },
             "require": {
@@ -1032,7 +1032,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2022-11-29T19:36:01+00:00"
+            "time": "2022-12-13T17:54:12+00:00"
         },
         {
             "name": "craftcms/flysystem",
@@ -4484,16 +4484,16 @@
         },
         {
             "name": "nystudio107/craft-retour",
-            "version": "4.1.8",
+            "version": "4.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-retour.git",
-                "reference": "ea004bf2d50a3e5dabb028f512fb4b3c7602eafe"
+                "reference": "414d3dbe61c6fcaa9eab6fb7e21f8e3f80f0bcbd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/ea004bf2d50a3e5dabb028f512fb4b3c7602eafe",
-                "reference": "ea004bf2d50a3e5dabb028f512fb4b3c7602eafe",
+                "url": "https://api.github.com/repos/nystudio107/craft-retour/zipball/414d3dbe61c6fcaa9eab6fb7e21f8e3f80f0bcbd",
+                "reference": "414d3dbe61c6fcaa9eab6fb7e21f8e3f80f0bcbd",
                 "shasum": ""
             },
             "require": {
@@ -4547,7 +4547,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-12-07T08:09:12+00:00"
+            "time": "2022-12-08T14:45:50+00:00"
         },
         {
             "name": "nystudio107/craft-seomatic",
@@ -10025,5 +10025,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
