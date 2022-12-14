@@ -1,10 +1,19 @@
 # Determine the docker compose API version to get the separator character
-VERSION?=$(shell docker-compose -v)
-ifneq (,$(findstring v2.,$(VERSION)))
-	SEPARATOR:=-
+SEPARATOR:=_
+DOCKER_COMPOSE_CMD=docker-compose
+ifeq (, $(shell which docker-compose))
+    ifneq (,$(findstring Docker Compose version,$(shell docker compose version)))
+        DOCKER_COMPOSE_CMD=docker compose
+    else
+        $(error "No docker compose plugin installed, install either docker-compose or docker-compose-plugin")
+    endif
 else
-	SEPARATOR:=_
+    VERSION?=$(shell docker-compose -v)
+    ifneq (,$(findstring v2.,$(VERSION)))
+        SEPARATOR:=-
+    endif
 endif
+
 CONTAINER?=$(shell basename $(CURDIR))$(SEPARATOR)php$(SEPARATOR)1
 BUILDCHAIN?=$(shell basename $(CURDIR))$(SEPARATOR)vite$(SEPARATOR)1
 
@@ -40,15 +49,15 @@ restoredb: up
 		$(filter-out $@,$(MAKECMDGOALS))
 # Remove the Docker volumes & start clean
 nuke: clean
-	docker-compose down -v
-	docker-compose up --build --force-recreate
+	$(DOCKER_COMPOSE_CMD) down -v
+	$(DOCKER_COMPOSE_CMD) up --build --force-recreate
 # Open up a shell in the PHP container
 ssh:
 	docker exec -it $(CONTAINER) su-exec www-data /bin/sh
 up:
-	if [ ! "$$(docker ps -q -f name=$(CONTAINER))" ]; then \
+	@if [ ! "$$(docker ps -q -f name=$(CONTAINER))" ]; then \
 		cp -n cms/example.env cms/.env; \
-		docker-compose up; \
+		$(DOCKER_COMPOSE_CMD) up; \
     fi
 %:
 	@:
