@@ -1,5 +1,9 @@
 # nystudio107/devmode Change Log
 
+## 2.7.0 - 2022.12.14
+### Changed
+* Move to Vite 4.x
+
 ## 2.6.5 - 2022.05.04
 ### Added
 * Determine the container name separator character by checking the Docker Compose API version at runtime
