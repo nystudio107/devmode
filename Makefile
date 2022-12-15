@@ -22,22 +22,22 @@ clean:
 # Executed a composer command in the PHP container
 composer: up
 	docker exec -it $(CONTAINER) su-exec www-data composer \
-		$(filter-out $@,$(MAKECMDGOALS))
+		$(filter-out $@,$(MAKECMDGOALS)) $(MAKEFLAGS)
 # Executed a craft command in the PHP container
 craft: up
 	docker exec -it $(CONTAINER) su-exec www-data php craft \
-		$(filter-out $@,$(MAKECMDGOALS))
+		$(filter-out $@,$(MAKECMDGOALS)) $(MAKEFLAGS)
 # Start the dev server
 dev: up
 # Executed an npm command in the buildchain container
 npm: up
 	docker exec -it $(BUILDCHAIN) npm \
-		$(filter-out $@,$(MAKECMDGOALS))
+		$(filter-out $@,$(MAKECMDGOALS)) $(MAKEFLAGS)
 pulldb: up
 	cd scripts/ && ./docker_pull_db.sh
 restoredb: up
 	cd scripts/ && ./docker_restore_db.sh \
-		$(filter-out $@,$(MAKECMDGOALS))
+		$(filter-out $@,$(MAKECMDGOALS)) $(MAKEFLAGS)
 # Remove the Docker volumes & start clean
 nuke: clean
 	docker-compose down -v
