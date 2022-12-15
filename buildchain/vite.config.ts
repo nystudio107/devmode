@@ -1,5 +1,5 @@
 import {defineConfig} from 'vite';
-import {createVuePlugin} from 'vite-plugin-vue2';
+import createVuePlugin from '@vitejs/plugin-vue2';
 import legacy from '@vitejs/plugin-legacy';
 import ViteRestart from 'vite-plugin-restart';
 import {partytownVite} from '@builder.io/partytown/utils';
