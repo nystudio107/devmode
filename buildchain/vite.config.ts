@@ -5,7 +5,6 @@ import ViteRestart from 'vite-plugin-restart';
 import {partytownVite} from '@builder.io/partytown/utils';
 import viteCompression from 'vite-plugin-compression';
 import {visualizer} from 'rollup-plugin-visualizer';
-import {nodeResolve} from '@rollup/plugin-node-resolve';
 import critical from 'rollup-plugin-critical';
 import {ViteFaviconsPlugin} from "vite-plugin-favicon2";
 import * as path from 'path';
@@ -49,11 +48,6 @@ export default defineConfig(({command}) => ({
     legacy({
       targets: ['defaults', 'not IE 11']
     }),
-    nodeResolve({
-      moduleDirectories: [
-        path.resolve('./node_modules'),
-      ],
-    }),
     ViteFaviconsPlugin({
       logo: "./src/img/favicon-src.png",
       inject: false,
@@ -83,7 +77,7 @@ export default defineConfig(({command}) => ({
   publicDir: './src/public',
   resolve: {
     alias: [
-      {find: '@', replacement: path.resolve(__dirname, '../src')},
+      {find: '@', replacement: path.resolve(__dirname, './src')},
       {find: 'vue', replacement: 'vue/dist/vue.esm.js'},
     ],
     preserveSymlinks: true,
