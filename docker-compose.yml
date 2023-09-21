@@ -9,6 +9,8 @@ services:
     env_file: &env
       - ./cms/.env
     init: true
+    labels:
+      - dev.orbstack.domains=devmode.local
     ports:
       - "8000:80"
     volumes:
