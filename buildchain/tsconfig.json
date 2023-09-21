@@ -26,9 +26,6 @@
     "strictNullChecks": true,
     "target": "esnext",
     "types": ["vite/client"],
-    "typeRoots": [
-      "node_modules/@types"
-    ]
   },
   "include": [
     "./src/**/*.ts",
