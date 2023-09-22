@@ -2,6 +2,7 @@ fieldLayouts:
   3eb40d2e-5571-4c14-a5df-2a714e403859:
     tabs:
       -
+        elementCondition: null
         elements:
           -
             autocapitalize: true
@@ -9,6 +10,7 @@ fieldLayouts:
             autocorrect: true
             class: null
             disabled: false
+            elementCondition: null
             id: null
             instructions: null
             label: null
@@ -24,15 +26,18 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 71011448-5b56-4440-9f84-b3c21070895e
+            userCondition: null
             warning: null
             width: 100
         name: Content
-        sortOrder: 1
+        uid: 3d04041a-2f11-4290-b572-72d21c4a0308
+        userCondition: null
 fs: devmodeTranscripts
 handle: devmodeTranscripts
-hasUrls: true
 name: 'Devmode Transcripts'
 sortOrder: 7
 titleTranslationKeyFormat: null
-titleTranslationMethod: null
-url: $CLOUDFRONT_URL
+titleTranslationMethod: site
+transformFs: null
+transformSubpath: ''

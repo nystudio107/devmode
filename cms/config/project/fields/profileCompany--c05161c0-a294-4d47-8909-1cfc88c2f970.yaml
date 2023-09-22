@@ -1,15 +1,19 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 12aa936c-807f-4ec3-81dc-69283a344171 # Profile
 handle: profileCompany
-instructions: ''
+instructions: null
 name: 'Profile Company'
 searchable: true
 settings:
-  charLimit: ''
+  byteLimit: null
+  charLimit: null
+  code: false
   columnType: text
-  initialRows: '4'
-  multiline: ''
-  placeholder: ''
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText

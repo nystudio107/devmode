@@ -2,39 +2,131 @@ fieldLayouts:
   ab690904-f712-43ec-828b-85d426e3e778:
     tabs:
       -
-        fields:
-          6def66f0-2a8f-4b88-9435-7f9cc1ccfe9c: # Show Genre
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a8f2ec1a-a218-451c-a658-e3c600ddb5fa # Show Title
+            instructions: null
+            label: null
             required: false
-            sortOrder: 2
-          428ec106-b2d1-4d48-a5fa-de192155dff5: # Show URL
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5084cdc-39fb-43cd-bf13-913a8692bc6d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6def66f0-2a8f-4b88-9435-7f9cc1ccfe9c # Show Genre
+            instructions: null
+            label: null
             required: false
-            sortOrder: 6
-          2405ed1c-fd52-4264-a96a-f6e6fab437b5: # Show Sub-Title
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dbaa6789-2121-4a2c-bddb-7e3db9086f33
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2405ed1c-fd52-4264-a96a-f6e6fab437b5 # Show Sub-Title
+            instructions: null
+            label: null
             required: false
-            sortOrder: 3
-          14605669-4768-4f57-88d6-1f06480a9b80: # Show iTunes URL
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 28c8b52e-79ef-400b-add1-23b9c827b259
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 86909527-3ec4-4d57-a44c-167649eb86bf # Show Description
+            instructions: null
+            label: null
             required: false
-            sortOrder: 8
-          86909527-3ec4-4d57-a44c-167649eb86bf: # Show Description
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42d25a1a-51f5-41d1-af0e-77d30b0f749c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: bda219fa-bace-4d8b-ad3a-08243caaf6ca # Show Image
+            instructions: null
+            label: null
             required: false
-            sortOrder: 4
-          a8f2ec1a-a218-451c-a658-e3c600ddb5fa: # Show Title
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aee62b5f-df86-4c14-b28c-b442b3db97b0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 428ec106-b2d1-4d48-a5fa-de192155dff5 # Show URL
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
-          ab0ca0e9-1308-472f-92a5-2ab0cbd84943: # Show RSS Feed URL
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6aec0b0c-1e09-48e3-812c-e69ac1ca2eda
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ca279869-925f-4960-865c-96cacd2aa942 # Show Email
+            instructions: null
+            label: null
             required: false
-            sortOrder: 9
-          bda219fa-bace-4d8b-ad3a-08243caaf6ca: # Show Image
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9ea2401d-8b12-43f4-8f04-86c9582cad52
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 14605669-4768-4f57-88d6-1f06480a9b80 # Show iTunes URL
+            instructions: null
+            label: null
             required: false
-            sortOrder: 5
-          ca279869-925f-4960-865c-96cacd2aa942: # Show Email
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a67781df-f02d-40c0-b97a-19d995493b45
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ab0ca0e9-1308-472f-92a5-2ab0cbd84943 # Show RSS Feed URL
+            instructions: null
+            label: null
             required: false
-            sortOrder: 7
-          eecc24bf-e253-43b8-b327-632e0dc07fa6: # Show Technologies Links
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fecb9c52-74fd-433f-8307-8a49f3dcf77a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: eecc24bf-e253-43b8-b327-632e0dc07fa6 # Show Technologies Links
+            instructions: null
+            label: null
             required: false
-            sortOrder: 10
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 68c2c58a-62dd-4c3d-88db-9ef80ac9986b
+            userCondition: null
+            warning: null
+            width: 100
         name: Show
-        sortOrder: 1
+        uid: 8d757489-cd9e-4669-bc02-344cee6f98c3
+        userCondition: null
 handle: showInfo
 name: 'Show Info'
 sortOrder: 1

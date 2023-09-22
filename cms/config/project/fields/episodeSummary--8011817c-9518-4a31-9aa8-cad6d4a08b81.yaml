@@ -1,15 +1,19 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9 # Episodes
 handle: episodeSummary
-instructions: ''
+instructions: null
 name: 'Episode Summary'
 searchable: true
 settings:
-  charLimit: ''
+  byteLimit: null
+  charLimit: null
+  code: false
   columnType: text
-  initialRows: '6'
-  multiline: '1'
-  placeholder: ''
+  initialRows: 6
+  multiline: true
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText

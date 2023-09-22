@@ -1,26 +1,37 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: 88db3e41-57f4-404d-b3ea-762b09c37afe # Errors
 handle: errorImage
-instructions: ''
+instructions: null
 name: 'Error Image'
 searchable: true
 settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
   allowedKinds:
     - image
+  branchLimit: null
   defaultUploadLocationSource: 'volume:cd231c31-8caf-4b13-995d-2b84f9750c63'
-  defaultUploadLocationSubpath: ''
-  limit: '1'
+  defaultUploadLocationSubpath: null
   localizeRelations: false
-  restrictFiles: '1'
-  selectionLabel: ''
-  singleUploadLocationSource: 'volume:cd231c31-8caf-4b13-995d-2b84f9750c63'
-  singleUploadLocationSubpath: ''
-  source: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:cd231c31-8caf-4b13-995d-2b84f9750c63'
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
   sources:
     - 'volume:7540db37-7ec3-4471-9de6-36bde06e949a' # Devmode Site
   targetSiteId: null
-  useSingleFolder: ''
-  validateRelatedElements: ''
+  validateRelatedElements: false
   viewMode: large
 translationKeyFormat: null
 translationMethod: site

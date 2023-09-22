@@ -1,25 +1,36 @@
+columnSuffix: null
 contentColumnType: string
 fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9 # Episodes
 handle: episodeMedia
-instructions: ''
+instructions: null
 name: 'Episode Media'
 searchable: true
 settings:
+  allowSelfRelations: false
+  allowSubfolders: false
+  allowUploads: true
   allowedKinds:
     - audio
+  branchLimit: null
   defaultUploadLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99' # Devmode Episodes
-  defaultUploadLocationSubpath: ''
-  limit: '1'
+  defaultUploadLocationSubpath: null
   localizeRelations: false
-  restrictFiles: '1'
-  selectionLabel: ''
-  singleUploadLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99' # Devmode Episodes
-  singleUploadLocationSubpath: ''
-  source: null
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
+  previewMode: full
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99' # Devmode Episodes
+  restrictedLocationSubpath: null
+  selectionLabel: null
+  showSiteMenu: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: true
   sources: '*'
   targetSiteId: null
-  useSingleFolder: ''
-  validateRelatedElements: ''
+  validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null
 translationMethod: site

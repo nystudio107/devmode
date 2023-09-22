@@ -1,7 +1,46 @@
+fieldLayouts:
+  9edff6e0-a6a2-48af-bf47-46bcf0704960:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c069761f-2823-4657-b2b2-ce0b7e896bbd
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f1c94c2b-be68-49aa-9a41-278431d971e8
+        userCondition: null
 handle: calendar
 hasTitleField: true
 name: Calendar
 section: a1eaefb7-b32a-436d-a218-3fc7be02c917 # Calendar
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
-titleLabel: Title
+titleTranslationKeyFormat: null
+titleTranslationMethod: ''
