@@ -1,10 +1,16 @@
+defaultPlacement: end
 enableVersioning: false
 handle: serviceUnavailable
 name: '503 Service Unavailable'
 previewTargets:
   -
-    label: 'Primary entry page'
-    urlFormat: '{url}'
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
 propagationMethod: all
 siteSettings:
   2a4761bd-2461-4db9-96a0-4f52b8cef633: # devMode

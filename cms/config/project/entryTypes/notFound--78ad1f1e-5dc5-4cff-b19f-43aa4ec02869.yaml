@@ -2,28 +2,81 @@ fieldLayouts:
   293a1b30-3925-4331-8e4e-90693d3a8ce5:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
             instructions: null
             label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9f07bd00-0520-4af5-842e-7a62700be400
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 18d7721b-780b-4a44-976a-716c3df0bb7a # Error Headline
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 1824cbce-5bd9-4905-b8e6-4fafb065f561
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: e1087165-5769-428d-bf14-c98e6011cf5e # Error Text
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 99f87eb6-b5fb-479b-bada-bcccadd5dbf1
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 4d90d0e7-b705-4035-b396-2f82ce5bb871 # Error Image
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 3277bb50-4e8d-4991-97dd-113aa721bae6
+            userCondition: null
+            warning: null
+            width: 100
         name: Errors
-        sortOrder: 1
+        uid: b5454a71-e4d2-4839-94d6-b51a8e6d5683
+        userCondition: null
 handle: notFound
 hasTitleField: false
 name: '404 Not Found'
 section: 52b673e7-3d80-44a4-94f7-43eaafcc9d6f # 404 Not Found
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: ''

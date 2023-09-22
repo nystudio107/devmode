@@ -1,53 +1,54 @@
+description: null
 handle: hosts
 name: Hosts
 permissions:
+  - accesscp
   - accesscpwhensystemisoff
   - accessplugin-retour
   - accessplugin-seomatic
-  - accesscp
-  - 'saveassetinvolume:cd231c31-8caf-4b13-995d-2b84f9750c63'
-  - 'viewvolume:cd231c31-8caf-4b13-995d-2b84f9750c63'
-  - 'saveassetinvolume:ab5dbb6f-b2fe-4712-9237-d47c3a608050'
+  - 'assignusergroup:19dfdfbb-837c-46d5-87bf-e6540df98dc4' # Hosts
   - 'createfoldersinvolume:ab5dbb6f-b2fe-4712-9237-d47c3a608050'
-  - 'viewvolume:ab5dbb6f-b2fe-4712-9237-d47c3a608050'
-  - 'saveassetinvolume:808914da-7ca2-4bb3-89ad-6c46b0369470'
-  - 'viewvolume:808914da-7ca2-4bb3-89ad-6c46b0369470'
-  - 'utility:system-report'
-  - 'utility:php-info'
   - 'retour:dashboard'
   - 'retour:redirects'
   - 'retour:settings'
-  - 'seomatic:dashboard'
-  - 'seomatic:global-meta:general'
-  - 'seomatic:global-meta:twitter'
-  - 'seomatic:global-meta:facebook'
-  - 'seomatic:global-meta:robots'
-  - 'seomatic:global-meta:humans'
-  - 'seomatic:global-meta:ads'
-  - 'seomatic:global-meta'
-  - 'seomatic:content-meta:general'
-  - 'seomatic:content-meta:twitter'
-  - 'seomatic:content-meta:facebook'
-  - 'seomatic:content-meta:sitemap'
-  - 'seomatic:content-meta'
-  - 'seomatic:site-settings:identity'
-  - 'seomatic:site-settings:creator'
-  - 'seomatic:site-settings:social'
-  - 'seomatic:site-settings:sitemap'
-  - 'seomatic:site-settings:miscellaneous'
-  - 'seomatic:site-settings'
-  - 'seomatic:tracking-scripts:googleanalytics'
-  - 'seomatic:tracking-scripts:gtag'
-  - 'seomatic:tracking-scripts:googletagmanager'
-  - 'seomatic:tracking-scripts:facebookpixel'
-  - 'seomatic:tracking-scripts:linkedininsight'
-  - 'seomatic:tracking-scripts:hubspot'
-  - 'seomatic:tracking-scripts'
-  - 'seomatic:plugin-settings'
-  - 'viewentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
+  - 'saveassetinvolume:808914da-7ca2-4bb3-89ad-6c46b0369470'
+  - 'saveassetinvolume:ab5dbb6f-b2fe-4712-9237-d47c3a608050'
+  - 'saveassetinvolume:cd231c31-8caf-4b13-995d-2b84f9750c63'
   - 'saveentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
-  - 'viewpeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
-  - 'savepeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
-  - 'viewpeerentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
   - 'savepeerentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
-  - 'assignusergroup:19dfdfbb-837c-46d5-87bf-e6540df98dc4' # Hosts
+  - 'savepeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
+  - 'seomatic:content-meta'
+  - 'seomatic:content-meta:facebook'
+  - 'seomatic:content-meta:general'
+  - 'seomatic:content-meta:sitemap'
+  - 'seomatic:content-meta:twitter'
+  - 'seomatic:dashboard'
+  - 'seomatic:global-meta'
+  - 'seomatic:global-meta:ads'
+  - 'seomatic:global-meta:facebook'
+  - 'seomatic:global-meta:general'
+  - 'seomatic:global-meta:humans'
+  - 'seomatic:global-meta:robots'
+  - 'seomatic:global-meta:twitter'
+  - 'seomatic:plugin-settings'
+  - 'seomatic:site-settings'
+  - 'seomatic:site-settings:creator'
+  - 'seomatic:site-settings:identity'
+  - 'seomatic:site-settings:miscellaneous'
+  - 'seomatic:site-settings:sitemap'
+  - 'seomatic:site-settings:social'
+  - 'seomatic:tracking-scripts'
+  - 'seomatic:tracking-scripts:facebookpixel'
+  - 'seomatic:tracking-scripts:googleanalytics'
+  - 'seomatic:tracking-scripts:googletagmanager'
+  - 'seomatic:tracking-scripts:gtag'
+  - 'seomatic:tracking-scripts:hubspot'
+  - 'seomatic:tracking-scripts:linkedininsight'
+  - 'utility:php-info'
+  - 'utility:system-report'
+  - 'viewentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
+  - 'viewpeerentries:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
+  - 'viewpeerentrydrafts:c1f6af30-7375-4feb-92ef-a3ed16ba69b2' # Episodes
+  - 'viewvolume:808914da-7ca2-4bb3-89ad-6c46b0369470'
+  - 'viewvolume:ab5dbb6f-b2fe-4712-9237-d47c3a608050'
+  - 'viewvolume:cd231c31-8caf-4b13-995d-2b84f9750c63'

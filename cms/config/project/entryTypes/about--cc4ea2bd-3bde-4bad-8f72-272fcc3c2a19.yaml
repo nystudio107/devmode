@@ -2,20 +2,57 @@ fieldLayouts:
   3e41c36a-b6fb-45a8-bef5-a95b1cb9104b:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
             instructions: null
             label: Title
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: fcef76fb-5665-4835-a1b3-6b202de3b3a2
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: b5eb01ec-a6ed-4a08-9438-64e7138b08f0 # FAQs
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: b8abb118-99e0-4dca-beb0-8ae5c731a71b
+            userCondition: null
+            warning: null
+            width: 100
         name: About
-        sortOrder: 1
+        uid: a92f475d-6dda-4c1b-9958-ccc93e4f0aa6
+        userCondition: null
 handle: about
 hasTitleField: true
 name: About
 section: 486a0853-47b2-4509-97ad-43fe3ec42074 # About
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
-titleFormat: ''
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: ''

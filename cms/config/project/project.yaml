@@ -1,4 +1,4 @@
-dateModified: 1670464815
+dateModified: 1695404869
 email:
   fromEmail: andrew@nystudio107.com
   fromName: devMode
@@ -8,16 +8,18 @@ fs:
     hasUrls: true
     name: 'Devmode Episodes'
     settings:
-      autoFocalPoint: ''
+      addSubfolderToRootUrl: true
+      autoFocalPoint: false
       bucket: $S3_BUCKET
       bucketSelectionMode: manual
       cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
       cfPrefix: $CLOUDFRONT_PATH_PREFIX
       expires: '3 months'
       keyId: $S3_KEY_ID
-      makeUploadsPublic: ''
+      makeUploadsPublic: false
       region: $S3_REGION
       secret: $S3_SECRET
+      storageClass: ''
       subfolder: episodes
     type: craft\awss3\Fs
     url: $CLOUDFRONT_URL
@@ -25,16 +27,18 @@ fs:
     hasUrls: true
     name: 'Devmode Site'
     settings:
-      autoFocalPoint: ''
+      addSubfolderToRootUrl: true
+      autoFocalPoint: false
       bucket: $S3_BUCKET
       bucketSelectionMode: manual
       cfDistributionId: CLOUDFRONT_DISTRIBUTION_ID
       cfPrefix: $CLOUDFRONT_PATH_PREFIX
       expires: '3 months'
       keyId: $S3_KEY_ID
-      makeUploadsPublic: ''
+      makeUploadsPublic: false
       region: $S3_REGION
       secret: $S3_SECRET
+      storageClass: ''
       subfolder: site
     type: craft\awss3\Fs
     url: $CLOUDFRONT_URL
@@ -42,17 +46,18 @@ fs:
     hasUrls: true
     name: 'Devmode Transcripts'
     settings:
-      addSubfolderToRootUrl: '1'
-      autoFocalPoint: ''
+      addSubfolderToRootUrl: true
+      autoFocalPoint: false
       bucket: $S3_BUCKET
       bucketSelectionMode: manual
       cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
       cfPrefix: $CLOUDFRONT_PATH_PREFIX
       expires: '3 months'
       keyId: $S3_KEY_ID
-      makeUploadsPublic: ''
+      makeUploadsPublic: false
       region: $S3_REGION
       secret: $S3_SECRET
+      storageClass: ''
       subfolder: transcripts
     type: craft\awss3\Fs
     url: $CLOUDFRONT_URL
@@ -60,16 +65,18 @@ fs:
     hasUrls: true
     name: 'Devmode Users'
     settings:
-      autoFocalPoint: ''
+      addSubfolderToRootUrl: true
+      autoFocalPoint: false
       bucket: $S3_BUCKET
       bucketSelectionMode: manual
       cfDistributionId: $CLOUDFRONT_DISTRIBUTION_ID
       cfPrefix: $CLOUDFRONT_PATH_PREFIX
       expires: '3 months'
       keyId: $S3_KEY_ID
-      makeUploadsPublic: ''
+      makeUploadsPublic: false
       region: $S3_REGION
       secret: $S3_SECRET
+      storageClass: ''
       subfolder: users
     type: craft\awss3\Fs
     url: $CLOUDFRONT_URL
@@ -83,12 +90,15 @@ meta:
     1a66bf43-6fcc-4a78-bf36-0f350b930430: 'Episodes Index' # Episodes Index
     1be1c156-82fa-4f08-bb63-6d3417da2844: 'Optimized Images' # Optimized Images
     2a4761bd-2461-4db9-96a0-4f52b8cef633: devMode # devMode
+    2bb6f342-1735-446e-b9fe-754f94dac82f: Answer # Answer
     4d90d0e7-b705-4035-b396-2f82ce5bb871: 'Error Image' # Error Image
     5f70b9e0-f42b-4fdb-bcf6-5e82691d89de: 'Site Offline' # Site Offline
     6def66f0-2a8f-4b88-9435-7f9cc1ccfe9c: 'Show Genre' # Show Genre
     7e338b73-ac10-44cf-892e-04afc0164991: 'Episode Guests' # Episode Guests
     07f04bdf-277d-4010-9fbe-497cd9593324: 'Related Episodes' # Related Episodes
+    7f6ad724-41b7-4a93-bef9-7de87d1bb23e: Calendar # Calendar
     8c9dd611-b43b-4e22-b076-3f6a6362c93e: 'Episode Reference Links' # Episode Reference Links
+    9aae2c4b-7316-4ee9-a2d1-41474766b361: Homepage # Homepage
     12aa936c-807f-4ec3-81dc-69283a344171: Profile # Profile
     18d7721b-780b-4a44-976a-716c3df0bb7a: 'Error Headline' # Error Headline
     19dfdfbb-837c-46d5-87bf-e6540df98dc4: Hosts # Hosts
@@ -102,6 +112,7 @@ meta:
     087ee23d-4f8f-42d4-af12-99fcc2462247: 'Show Info' # Show Info
     88db3e41-57f4-404d-b3ea-762b09c37afe: Errors # Errors
     0090f7a3-1e22-4fb5-9ae0-01de38805601: 'Episode Media' # Episode Media
+    98dbc824-8c89-4138-9b0f-011a96875a7a: Links # Links
     98f56e95-4be6-4238-a110-1f21574fa642: 'Devmode Users' # Devmode Users
     214e4dc6-a454-4df0-a1f5-cd94ecdab53f: Guests # Guests
     324e7a11-3346-41e7-a29d-4636ab907e51: 'Episode Number' # Episode Number
@@ -122,7 +133,9 @@ meta:
     9089688f-6602-4d69-91cd-ec9a94c4bc6f: '503 Service Unavailable' # 503 Service Unavailable
     9687721c-33b8-4a40-abb7-5c42e07ce274: 'Profile Bio' # Profile Bio
     14605669-4768-4f57-88d6-1f06480a9b80: 'Show iTunes URL' # Show iTunes URL
+    50012289-791c-48b2-8df1-31a8f5eb5380: 'Episodes Index' # Episodes Index
     86909527-3ec4-4d57-a44c-167649eb86bf: 'Show Description' # Show Description
+    a009e969-e0ed-429e-9ab3-98561af05518: FAQs # FAQs
     a1eaefb7-b32a-436d-a218-3fc7be02c917: Calendar # Calendar
     a4be3483-f316-4f96-8820-3914ad7b863a: 'Site Offline' # Site Offline
     a5cf9c0d-1797-4a60-8c47-bc28c5f01a95: 'Episode Hosts' # Episode Hosts
@@ -138,10 +151,12 @@ meta:
     ca279869-925f-4960-865c-96cacd2aa942: 'Show Email' # Show Email
     cc4ea2bd-3bde-4bad-8f72-272fcc3c2a19: About # About
     d6df6fe7-14f3-42a3-9949-dcee7c8c26d9: 'Profile GitHub URL' # Profile GitHub URL
+    e0264ea5-7834-42de-9f8f-c611149453d0: Question # Question
     e69c8edb-d562-4367-9a05-91a6fd2c7d99: 'Devmode Episodes' # Devmode Episodes
     e81379aa-e0c7-45c0-b506-c4ab8fce6bce: 'Generic Error' # Generic Error
     e1087165-5769-428d-bf14-c98e6011cf5e: 'Error Text' # Error Text
     eecc24bf-e253-43b8-b327-632e0dc07fa6: 'Show Technologies Links' # Show Technologies Links
+    fc24a736-c435-4d8a-aeb3-6105afce1d91: Episodes # Episodes
 plugins:
   aws-s3:
     edition: standard
@@ -233,12 +248,12 @@ plugins:
   retour:
     enabled: true
     licenseKey: $PLUGIN_RETOUR_LICENSE
-    schemaVersion: 3.0.11
+    schemaVersion: 3.0.12
     settings: null
   seomatic:
     enabled: true
     licenseKey: $PLUGIN_SEOMATIC_LICENSE
-    schemaVersion: 3.0.11
+    schemaVersion: 3.0.12
     settings:
       addHrefLang: true
       addXDefaultHrefLang: true
@@ -321,5 +336,5 @@ system:
   live: true
   name: devMode.fm
   retryDuration: 60
-  schemaVersion: 4.0.0.9
+  schemaVersion: 4.5.3.0
   timeZone: America/New_York

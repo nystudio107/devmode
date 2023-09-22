@@ -2,28 +2,81 @@ fieldLayouts:
   bf0b0ad9-5882-4afc-9e4d-5b687c94d4ad:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
             instructions: null
             label: Title
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 41ef72dc-911f-4ea2-abf3-883b9cc763c6
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 18d7721b-780b-4a44-976a-716c3df0bb7a # Error Headline
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e72f1fba-f9c6-4f3d-962a-6ceff495e612
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: e1087165-5769-428d-bf14-c98e6011cf5e # Error Text
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 40796b9c-0f29-4e77-8ed1-e7068489c5c8
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 4d90d0e7-b705-4035-b396-2f82ce5bb871 # Error Image
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: f648161a-3871-4135-8d2c-ea4251c2622f
+            userCondition: null
+            warning: null
+            width: 100
         name: Errors
-        sortOrder: 1
+        uid: 696065a4-b286-4619-a93d-d57ba0d91e74
+        userCondition: null
 handle: serviceUnavailable
 hasTitleField: true
 name: '503 Service Unavailable'
 section: 9089688f-6602-4d69-91cd-ec9a94c4bc6f # 503 Service Unavailable
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: ''

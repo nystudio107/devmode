@@ -7,26 +7,30 @@ name: 'Episode Transcript'
 searchable: false
 settings:
   allowSelfRelations: false
+  allowSubfolders: false
   allowUploads: true
   allowedKinds:
     - text
+  branchLimit: null
   defaultUploadLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99' # Devmode Episodes
-  defaultUploadLocationSubpath: ''
-  limit: '1'
+  defaultUploadLocationSubpath: null
   localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: 1
+  minRelations: null
   previewMode: full
-  restrictFiles: '1'
+  restrictFiles: true
+  restrictLocation: false
+  restrictedDefaultUploadSubpath: null
+  restrictedLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99' # Devmode Episodes
+  restrictedLocationSubpath: null
   selectionLabel: 'Choose a CSV Transcript'
   showSiteMenu: false
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
-  singleUploadLocationSource: 'volume:e69c8edb-d562-4367-9a05-91a6fd2c7d99' # Devmode Episodes
-  singleUploadLocationSubpath: ''
-  source: null
   sources:
     - 'volume:bd8ef0d7-f73b-4138-ac52-c14d11dd780e' # Devmode Transcripts
   targetSiteId: null
-  useSingleFolder: false
   validateRelatedElements: false
   viewMode: list
 translationKeyFormat: null

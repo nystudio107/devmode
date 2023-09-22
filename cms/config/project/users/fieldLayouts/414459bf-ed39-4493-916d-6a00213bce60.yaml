@@ -1,23 +1,79 @@
 tabs:
   -
-    fields:
-      31b8c511-37f9-4d83-956d-5aa215572122: # Profile URL
+    elementCondition: null
+    elements:
+      -
+        elementCondition: null
+        fieldUid: c05161c0-a294-4d47-8909-1cfc88c2f970 # Profile Company
+        instructions: null
+        label: null
         required: false
-        sortOrder: 4
-      380e3b7e-07de-4d39-b0e5-360f5e87d00d: # Profile Title
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: c1a2f673-fec8-4c49-b4d1-c418351565f7
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 380e3b7e-07de-4d39-b0e5-360f5e87d00d # Profile Title
+        instructions: null
+        label: null
         required: false
-        sortOrder: 2
-      406c20cb-9b86-4b0d-9123-1ce57220e2a8: # Profile Twitter URL
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 64d5f3f1-35c8-426c-9572-ffa129bee863
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 9687721c-33b8-4a40-abb7-5c42e07ce274 # Profile Bio
+        instructions: null
+        label: null
         required: false
-        sortOrder: 5
-      9687721c-33b8-4a40-abb7-5c42e07ce274: # Profile Bio
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 53c91a02-f5cb-4d3e-92ca-c90d91b235fc
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 31b8c511-37f9-4d83-956d-5aa215572122 # Profile URL
+        instructions: null
+        label: null
         required: false
-        sortOrder: 3
-      c05161c0-a294-4d47-8909-1cfc88c2f970: # Profile Company
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 7834455e-565b-4397-b2a8-572b83ad3020
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: 406c20cb-9b86-4b0d-9123-1ce57220e2a8 # Profile Twitter URL
+        instructions: null
+        label: null
         required: false
-        sortOrder: 1
-      d6df6fe7-14f3-42a3-9949-dcee7c8c26d9: # Profile GitHub URL
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 8a93a1a5-1ba9-40f9-9b94-f2332c96ad45
+        userCondition: null
+        warning: null
+        width: 100
+      -
+        elementCondition: null
+        fieldUid: d6df6fe7-14f3-42a3-9949-dcee7c8c26d9 # Profile GitHub URL
+        instructions: null
+        label: null
         required: false
-        sortOrder: 6
+        tip: null
+        type: craft\fieldlayoutelements\CustomField
+        uid: 6ca34656-fa0f-4762-a507-40e43e22fba3
+        userCondition: null
+        warning: null
+        width: 100
     name: Profile
-    sortOrder: 1
+    uid: 5aa0e98d-2f2b-4800-8f9e-a8f051de8abd
+    userCondition: null

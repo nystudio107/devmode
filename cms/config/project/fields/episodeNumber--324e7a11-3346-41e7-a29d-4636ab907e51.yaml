@@ -1,14 +1,20 @@
+columnSuffix: null
 contentColumnType: integer(10)
 fieldGroup: bfbd2913-36d8-4e54-9f9c-644e793f0ae9 # Episodes
 handle: episodeNumber
-instructions: ''
+instructions: null
 name: 'Episode Number'
 searchable: true
 settings:
-  decimals: '0'
+  decimals: 0
+  defaultValue: null
   max: null
-  min: '1'
-  size: '10'
+  min: 1
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: 10
+  suffix: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Number

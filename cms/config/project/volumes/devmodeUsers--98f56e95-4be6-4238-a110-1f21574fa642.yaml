@@ -2,15 +2,54 @@ fieldLayouts:
   20e7215a-39c8-421f-835a-f14244493bd7:
     tabs:
       -
-        fields:
-          41fdb4c8-4774-4101-918f-1412190b085b: # Profile Optimized Images
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 65c7f274-fec9-4300-a010-a044335719aa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 41fdb4c8-4774-4101-918f-1412190b085b # Profile Optimized Images
+            instructions: null
+            label: null
             required: false
-            sortOrder: 1
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 71a9ed50-c065-4828-beac-73ef05a3dcd7
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
-        sortOrder: 1
+        uid: 1cf35a61-9078-4f4c-8220-cd93ab809da3
+        userCondition: null
 fs: devmodeUsers
 handle: devmodeUsers
-hasUrls: true
 name: 'Devmode Users'
 sortOrder: 6
-url: $CLOUDFRONT_URL
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: null
+transformSubpath: ''

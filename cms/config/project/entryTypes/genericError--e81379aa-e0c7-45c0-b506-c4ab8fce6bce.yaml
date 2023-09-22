@@ -2,28 +2,81 @@ fieldLayouts:
   61fc3656-f394-4474-924b-f4335699573c:
     tabs:
       -
+        elementCondition: null
         elements:
           -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
             instructions: null
             label: Title
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 42d31156-f4c7-4dbe-bfd7-9f39f8cf5ba4
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 18d7721b-780b-4a44-976a-716c3df0bb7a # Error Headline
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 03b77acf-7b5b-47cc-a0a5-2b847ce5ea49
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: e1087165-5769-428d-bf14-c98e6011cf5e # Error Text
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: 9dc7df80-7c68-42c5-bf49-c1fef639b405
+            userCondition: null
+            warning: null
+            width: 100
           -
+            elementCondition: null
             fieldUid: 4d90d0e7-b705-4035-b396-2f82ce5bb871 # Error Image
+            instructions: null
+            label: null
             required: false
+            tip: null
             type: craft\fieldlayoutelements\CustomField
+            uid: e95fee4f-cebd-4c6d-b164-6ef679fdf930
+            userCondition: null
+            warning: null
+            width: 100
         name: Errors
-        sortOrder: 1
+        uid: 3a92f38a-162f-4a0a-b7a8-f3dfd9bd408f
+        userCondition: null
 handle: genericError
 hasTitleField: true
 name: 'Generic Error'
 section: 519413e8-a432-4cfe-98c5-5f81e9519f2a # Generic Error
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: ''

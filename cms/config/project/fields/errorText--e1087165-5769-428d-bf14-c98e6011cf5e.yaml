@@ -1,15 +1,19 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 88db3e41-57f4-404d-b3ea-762b09c37afe # Errors
 handle: errorText
-instructions: ''
+instructions: null
 name: 'Error Text'
 searchable: true
 settings:
-  charLimit: ''
+  byteLimit: null
+  charLimit: null
+  code: false
   columnType: text
-  initialRows: '4'
-  multiline: '1'
-  placeholder: ''
+  initialRows: 4
+  multiline: true
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText

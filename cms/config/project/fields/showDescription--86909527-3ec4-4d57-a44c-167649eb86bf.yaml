@@ -1,15 +1,19 @@
+columnSuffix: null
 contentColumnType: text
 fieldGroup: 0c790066-43c5-4b67-b6d9-8492fa40cf71 # Show
 handle: showDescription
-instructions: ''
+instructions: null
 name: 'Show Description'
 searchable: true
 settings:
-  charLimit: ''
+  byteLimit: null
+  charLimit: null
+  code: false
   columnType: text
-  initialRows: '6'
-  multiline: '1'
-  placeholder: ''
+  initialRows: 6
+  multiline: true
+  placeholder: null
+  uiMode: normal
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText
