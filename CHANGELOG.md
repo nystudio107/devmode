@@ -1,5 +1,12 @@
 # nystudio107/devmode Change Log
 
+## 2.7.1 - 2023.09.22
+### Changed
+* Move the `src/` dir directly into `buildchain/` to avoid issues with `nodeResolve`
+* Updated to the latest db dump
+* Updated to the latest Composer deps
+* Updated to the latest npm deps
+
 ## 2.7.0 - 2022.12.14
 ### Changed
 * Move to Vite 4.x
