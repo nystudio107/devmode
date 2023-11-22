@@ -14,7 +14,7 @@ export default defineConfig(({command}) => ({
   base: command === 'serve' ? '' : '/dist/',
   build: {
     emptyOutDir: true,
-    manifest: true,
+    manifest: 'manifest.json',
     outDir: '../cms/web/dist',
     rollupOptions: {
       input: {

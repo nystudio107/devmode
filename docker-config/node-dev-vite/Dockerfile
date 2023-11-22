@@ -1,4 +1,6 @@
-FROM nystudio107/node-dev-base:16-alpine
+FROM nystudio107/node-dev-base:20-alpine
+
+RUN npm install -g npm@^10.0.0
 
 WORKDIR /var/www/project/
 
