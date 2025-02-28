@@ -1,6 +1,6 @@
 /* Input Range */
-input[type=range] {
-    -webkit-appearance: none;
+input[type="range"] {
+    appearance: none;
     width: 100%;
     border-radius: 10px;
     height: 12px;
@@ -27,17 +27,17 @@ input[type="range"]::-ms-track {
 input[type="range"]:focus {
     outline: none;
     border: none;
-    box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.2);
+    box-shadow: 1px 1px 1px 0 rgb(25 25 25 / 20%);
 }
 
 input[type="range"]::-moz-focus-outer {
     outline: none;
     border: none;
-    box-shadow: 1px 1px 1px 0px rgba(25, 25, 25, 0.2);
+    box-shadow: 1px 1px 1px 0 rgb(25 25 25 / 20%);
 }
 
 input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     background-color: theme('colors.devmode-pink');
     height: 24px;
     width: 24px;
@@ -47,9 +47,8 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]::-moz-range-thumb {
-    -moz-appearance: none;
+    appearance: none;
     background-color: theme('colors.devmode-pink');
-    border: none;
     height: 24px;
     width: 24px;
     border-radius: 50%;
@@ -58,9 +57,8 @@ input[type="range"]::-moz-range-thumb {
 }
 
 input[type="range"]::-ms-thumb {
-    -moz-appearance: none;
+    appearance: none;
     background-color: theme('colors.devmode-pink');
-    border: none;
     height: 24px;
     width: 24px;
     border-radius: 50%;

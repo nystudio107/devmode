@@ -6,16 +6,15 @@
  */
 
 html {
-
     /* -- Font smoothing and ligatures */
     image-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizelegibility;
     font-smooth: always;
     box-sizing: border-box;
-    -webkit-appearance: none;
+    appearance: none;
     appearance: none;
 }
 
@@ -91,6 +90,7 @@ img:hover {
 
 .navbar-link {
     color: theme("colors.devmode-pink");
+
     @apply font-sans text-lg no-underline px-2 py-1 m-1;
 }
 
@@ -123,6 +123,7 @@ img:hover {
 
 .tags-link {
     @apply no-underline font-mono italic font-bold text-xs bg-devmode-yellow text-devmode-pink px-2 py-1 mx-1 my-2 leading-loose;
+
     margin-right: 1px;
     margin-left: 1px;
 }
@@ -175,32 +176,32 @@ html.user-is-tabbing *:focus {
 
 
 .fonts-loaded .font-mono {
-    font-family: "Operator Mono", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace;
+    font-family: "Operator Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /* -- Fontello */
 
-.fonts-loaded [class^="icon-"]:before {
-    font-family: "fontello";
+.fonts-loaded [class^="icon-"]::before {
+    font-family: fontello;
 }
 
-.fonts-loaded [class*=" icon-"]:before {
-    font-family: "fontello";
+.fonts-loaded [class*=" icon-"]::before {
+    font-family: fontello;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+[class^="icon-"]::before, [class*=" icon-"]::before {
     font-style: normal;
     font-weight: normal;
     speak: none;
-
     display: inline-block;
     text-decoration: inherit;
     width: 1em;
     margin-right: .2em;
     text-align: center;
+
     /* opacity: .8; */
 
-    /* For safety - reset parent styles, that can break glyph codes*/
+    /* For safety - reset parent styles, that can break glyph codes */
     font-variant: normal;
     text-transform: none;
 
@@ -208,10 +209,12 @@ html.user-is-tabbing *:focus {
     line-height: 1em;
 
     /* Animation center compensation - margins should be symmetric */
+
     /* remove if not needed */
     margin-left: .2em;
 
     /* you can be more comfortable with increased icons size */
+
     /* font-size: 120%; */
 
     /* Font smoothing. That was taken from TWBS */
@@ -219,6 +222,7 @@ html.user-is-tabbing *:focus {
     -moz-osx-font-smoothing: grayscale;
 
     /* Uncomment for 3D effect */
+
     /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
@@ -275,7 +279,7 @@ div#single-song-player div.bottom-container progress.amplitude-song-played-progr
 
 div#single-song-player div.bottom-container progress.amplitude-song-played-progress {
     background-color: theme("colors.devmode-yellow");
-    -webkit-appearance: none;
+    appearance: none;
     appearance: none;
     width: 100%;
     display: block;
