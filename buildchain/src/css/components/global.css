@@ -15,7 +15,6 @@ html {
     font-smooth: always;
     box-sizing: border-box;
     appearance: none;
-    appearance: none;
 }
 
 /* Disable for always dark mode for snow */
@@ -244,12 +243,6 @@ html.user-is-tabbing *:focus {
     background-size: 600px;
 }
 
-@screen sm {
-    .header-background {
-        background-size: 600px;
-    }
-}
-
 .circle-image-wrapper {
 }
 
@@ -279,7 +272,6 @@ div#single-song-player div.bottom-container progress.amplitude-song-played-progr
 
 div#single-song-player div.bottom-container progress.amplitude-song-played-progress {
     background-color: theme("colors.devmode-yellow");
-    appearance: none;
     appearance: none;
     width: 100%;
     display: block;
