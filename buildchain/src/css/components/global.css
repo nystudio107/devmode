@@ -10,45 +10,49 @@ html {
     image-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    font-smoothing: antialiased;
     text-rendering: optimizelegibility;
-    font-smooth: always;
     box-sizing: border-box;
     appearance: none;
 }
 
 /* Disable for always dark mode for snow */
-
+/* stylelint-disable-next-line no-duplicate-selectors */
 .devmode-container {
     background-color: #f7fafc;
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 .devmode-header-text {
     color: #f7fafc;
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 .devmode-background {
     background-image: url("https://dnzwsrj1eic0g.cloudfront.net/site/devmode-fm-light-bg-opaque.svg");
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 .devmode-aqua-background {
     background-color: #00b2c2;
 }
 
 /* Enable for always dark mode for snow: */
-
+/* stylelint-disable-next-line no-duplicate-selectors */
 .devmode-aqua-background {
     background-color: #3B6471;
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 .devmode-container {
     background-color: #22223A;
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 .devmode-background {
     background-image: url("https://dnzwsrj1eic0g.cloudfront.net/site/devmode-fm-dark-bg.svg");
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 .devmode-header-text {
     opacity: .50;
 }
@@ -62,18 +66,22 @@ img:hover {
 }
 
 @media (prefers-color-scheme: dark) {
+    /* stylelint-disable-next-line no-duplicate-selectors */
     .devmode-aqua-background {
         background-color: #3B6471;
     }
 
+    /* stylelint-disable-next-line no-duplicate-selectors */
     .devmode-container {
         background-color: #22223A;
     }
 
+    /* stylelint-disable-next-line no-duplicate-selectors */
     .devmode-background {
         background-image: url("https://dnzwsrj1eic0g.cloudfront.net/site/devmode-fm-dark-bg.svg");
     }
 
+    /* stylelint-disable-next-line no-duplicate-selectors */
     .devmode-header-text {
         opacity: .50;
     }
@@ -142,7 +150,7 @@ img:hover {
 
 /* -- CSS variables */
 :root {
-    --outlineColor: #5db7a5,
+    --outline-color: #5db7a5,
 }
 
 /* -- For screen readers */
@@ -159,7 +167,7 @@ img:hover {
 
 /* -- A subtle focus style for keyboard-input elements */
 .text-input:focus {
-    outline: 1px solid var(--outlineColor); /* Adjust to suit your tastes */
+    outline: 1px solid var(--outline-color); /* Adjust to suit your tastes */
 }
 
 /* -- No outline for non-keyboard-inputs elements */
@@ -169,7 +177,7 @@ select:focus {
 }
 
 html.user-is-tabbing *:focus {
-    outline: 2px solid var(--outlineColor); /* for non-webkit browsers */
+    outline: 2px solid var(--outline-color); /* for non-webkit browsers */
     outline: 5px auto -webkit-focus-ring-color;
 }
 
