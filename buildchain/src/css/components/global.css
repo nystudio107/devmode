@@ -199,7 +199,7 @@ html.user-is-tabbing *:focus {
 [class^="icon-"]::before, [class*=" icon-"]::before {
     font-style: normal;
     font-weight: normal;
-    speak: none;
+    speak: never;
     display: inline-block;
     text-decoration: inherit;
     width: 1em;
