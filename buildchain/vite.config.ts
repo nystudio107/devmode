@@ -29,22 +29,6 @@ export default defineConfig(({command}) => ({
     }
   },
   plugins: [
-    critical({
-      criticalUrl: 'https://devmode.fm/',
-      criticalBase: '../cms/web/dist/criticalcss/',
-      criticalPages: [
-        {uri: '', template: 'index'},
-        {uri: 'about', template: 'about/index'},
-        {uri: 'calendar', template: 'calendar/index'},
-        {uri: 'episodes', template: 'episodes/index'},
-        {uri: 'episodes/webpack-inside-out-with-sean-larkin', template: 'episodes/_entry'},
-        {uri: 'errors/offline', template: 'errors/offline'},
-        {uri: 'errors/error', template: 'errors/error'},
-        {uri: 'errors/503', template: 'errors/503'},
-        {uri: 'errors/404', template: 'errors/404'},
-      ],
-      criticalConfig: {}
-    }),
     legacy({
       targets: ['defaults', 'not IE 11']
     }),
@@ -93,6 +77,22 @@ export default defineConfig(({command}) => ({
       },
       typescript: true,
       vueTsc: true,
+    }),
+    critical({
+      criticalUrl: 'https://devmode.fm/',
+      criticalBase: '../cms/web/dist/criticalcss/',
+      criticalPages: [
+        {uri: '', template: 'index'},
+        {uri: 'about', template: 'about/index'},
+        {uri: 'calendar', template: 'calendar/index'},
+        {uri: 'episodes', template: 'episodes/index'},
+        {uri: 'episodes/webpack-inside-out-with-sean-larkin', template: 'episodes/_entry'},
+        {uri: 'errors/offline', template: 'errors/offline'},
+        {uri: 'errors/error', template: 'errors/error'},
+        {uri: 'errors/503', template: 'errors/503'},
+        {uri: 'errors/404', template: 'errors/404'},
+      ],
+      criticalConfig: {}
     }),
   ],
   optimizeDeps: {
