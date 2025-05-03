@@ -7,7 +7,6 @@ import ViteRestart from 'vite-plugin-restart';
 import {partytownVite} from '@builder.io/partytown/utils';
 import viteCompression from 'vite-plugin-compression';
 import {visualizer} from 'rollup-plugin-visualizer';
-import critical from 'rollup-plugin-critical';
 import {ViteFaviconsPlugin} from "vite-plugin-favicon2";
 import * as path from 'path';
 
@@ -78,6 +77,7 @@ export default defineConfig(({command}) => ({
       typescript: true,
       vueTsc: true,
     }),
+    /*
     critical({
       criticalUrl: 'https://devmode.fm/',
       criticalBase: '../cms/web/dist/criticalcss/',
@@ -94,6 +94,7 @@ export default defineConfig(({command}) => ({
       ],
       criticalConfig: {}
     }),
+    */
   ],
   optimizeDeps: {
     include: ['axios'],
