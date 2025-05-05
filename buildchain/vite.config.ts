@@ -77,7 +77,6 @@ export default defineConfig(({command}) => ({
       typescript: true,
       vueTsc: true,
     }),
-    /* Temporarily disable critical css to test buddy.works
     critical({
       criticalUrl: 'https://devmode.fm/',
       criticalBase: '../cms/web/dist/criticalcss/',
@@ -94,7 +93,6 @@ export default defineConfig(({command}) => ({
       ],
       criticalConfig: {}
     }),
-    */
   ],
   optimizeDeps: {
     include: ['axios'],
