@@ -90,7 +90,9 @@ export default defineConfig(({command}) => ({
         {uri: 'errors/503', template: 'errors/503'},
         {uri: 'errors/404', template: 'errors/404'},
       ],
-      criticalConfig: {}
+      criticalConfig: {
+        css: [],
+      }
     }),
   ],
   optimizeDeps: {
